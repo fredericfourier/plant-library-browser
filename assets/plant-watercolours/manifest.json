@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "assets": {
+    "salvia-caradonna": {
+      "file": "assets/plant-watercolours/salvia-caradonna.webp",
+      "qaStatus": "warning",
+      "warnings": ["legacy_asset_pending_full_botanical_QA"],
+      "processedAt": "2026-10-12T23:58:00+01:00"
+    }
+  }
+}
