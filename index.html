@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Border Designer · Plant Library</title>
+<style>
+:root{--bg:#f4f2ec;--card:#fffdf8;--ink:#273229;--muted:#69736c;--line:#ddd9cf;--accent:#4e6956}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:14px system-ui,-apple-system,sans-serif}
+header{position:sticky;top:0;z-index:5;padding:14px;background:#f4f2ecf3;border-bottom:1px solid var(--line)}
+.head{max-width:1400px;margin:auto;display:flex;gap:12px;align-items:center}h1{font:600 25px Georgia,serif;margin:0}.meta{font-size:11px;color:var(--muted)}
+input,select{border:1px solid var(--line);background:white;border-radius:10px;padding:10px;font:inherit}.search{flex:1}
+main{max-width:1400px;margin:auto;padding:16px}.tools{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}.tools select{min-width:150px}
+.stats{color:var(--muted);font-size:12px;margin:8px 0 14px}.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(235px,1fr));gap:12px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:15px;overflow:hidden;cursor:pointer}.card:hover{box-shadow:0 7px 24px #0001}
+.art{height:150px;background:#eceee8;display:flex;align-items:center;justify-content:center;position:relative}.art img{width:100%;height:100%;object-fit:contain}.missing{color:#89928b;font-size:12px}
+.body{padding:12px}.bot{font:17px Georgia,serif}.common{color:var(--muted);font-size:12px;margin:2px 0 8px}.pills{display:flex;gap:5px;flex-wrap:wrap}.pill{background:#eceae4;border-radius:7px;padding:4px 6px;font-size:11px}
+dialog{width:min(800px,96vw);border:0;border-radius:16px;padding:0;background:var(--card);color:var(--ink)}dialog::backdrop{background:#17201988}.dh{position:sticky;top:0;background:#fffdf8f5;padding:14px 16px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:10px}.dh h2{font:600 24px Georgia,serif;margin:0}.close{border:0;border-radius:50%;width:36px;height:36px;font-size:20px}
+.dc{padding:14px 16px 30px}.media{display:grid;grid-template-columns:1fr 1fr;gap:10px}.box{border:1px solid var(--line);border-radius:12px;overflow:hidden}.boxt{padding:8px 10px;font-size:11px;font-weight:700;border-bottom:1px solid var(--line)}.stage{height:280px;display:flex;align-items:center;justify-content:center;background:#f0f1eb}.stage img{max-width:100%;max-height:100%;object-fit:contain}
+.attrs{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:12px 0}.attr{border:1px solid var(--line);border-radius:10px;padding:9px}.attr b{display:block;font-size:10px;color:var(--muted);text-transform:uppercase;margin-bottom:3px}
+.rule{background:#edf3ec;border:1px solid #cbd7ca;border-radius:11px;padding:11px;line-height:1.45}.links{display:flex;gap:7px;flex-wrap:wrap}.links a{color:var(--ink);border:1px solid var(--line);border-radius:9px;padding:8px;text-decoration:none;background:white}
+@media(max-width:650px){.head{flex-wrap:wrap}.head>div{width:100%}.grid{grid-template-columns:1fr}.media{grid-template-columns:1fr}.attrs{grid-template-columns:1fr 1fr}.stage{height:240px}}
+</style>
+</head><body>
+<header><div class="head"><div><h1>Plant Library</h1><div id="meta" class="meta">Loading live data…</div></div><input id="q" class="search" placeholder="Search plants…"></div></header>
+<main>
+<div class="tools"><select id="type"><option value="">All plant types</option></select><select id="light"><option value="">All light</option><option value="full_sun">Full sun</option><option value="part_shade">Part shade</option><option value="full_shade">Full shade</option></select><select id="sort"><option value="name">Botanical name</option><option value="height">Height</option><option value="spread">Spread</option></select></div>
+<div id="stats" class="stats"></div><div id="grid" class="grid"></div>
+</main>
+<dialog id="dlg"><div class="dh"><div><h2 id="title"></h2><div id="common" class="meta"></div></div><button class="close" id="close">×</button></div><div class="dc">
+<div class="media"><div class="box"><div class="boxt">Watercolour asset</div><div id="art" class="stage"></div></div><div class="box"><div class="boxt">Real-photo references</div><div class="stage"><div id="refs" class="links"></div></div></div></div>
+<div id="attrs" class="attrs"></div>
+<div class="rule"><b>Asset rule:</b> real photography defines morphology; the database defines physical size. Watercolours must preserve natural habit and are scaled uniformly by the renderer — never stretched to compensate for an inaccurate source silhouette.</div>
+<h3>Description</h3><p id="desc"></p><div id="links" class="links"></div>
+</div></dialog>
+<script>
+const DATA="./data/plants.json", ART="./assets/plant-watercolours/";
+let DB=[], state={q:"",type:"",light:"",sort:"name"};
+const $=s=>document.querySelector(s), esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const title=s=>String(s||"").replaceAll("_"," ").replace(/\b\w/g,c=>c.toUpperCase());
+function vals(v){return Array.isArray(v)?v.join(", "):(v??"—")}
+function filtered(){let a=DB.filter(p=>(!state.q||(p.botanicalName+" "+(p.commonName||"")+" "+(p.description||"")).toLowerCase().includes(state.q))&&(!state.type||p.type===state.type)&&(!state.light||(p.light||[]).includes(state.light)));a.sort((x,y)=>state.sort==="height"?(x.heightCm||0)-(y.heightCm||0):state.sort==="spread"?(x.spreadCm||0)-(y.spreadCm||0):x.botanicalName.localeCompare(y.botanicalName));return a}
+function card(p){return '<article class="card" data-id="'+esc(p.id)+'"><div class="art"><img loading="lazy" src="'+ART+encodeURIComponent(p.id)+'.webp" onerror="this.replaceWith(Object.assign(document.createElement(\\'div\\'),{className:\\'missing\\',textContent:\\'No watercolour yet\\'}))"></div><div class="body"><div class="bot">'+esc(p.botanicalName)+'</div><div class="common">'+esc(p.commonName||"")+'</div><div class="pills"><span class="pill">↕ '+esc(p.heightCm||"?")+' cm</span><span class="pill">↔ '+esc(p.spreadCm||"?")+' cm</span><span class="pill">'+esc(title(p.type))+'</span></div></div></article>'}
+function render(){let a=filtered();$("#stats").textContent=a.length+" of "+DB.length+" plants · live from "+DATA;$("#grid").innerHTML=a.map(card).join("");document.querySelectorAll(".card").forEach(x=>x.onclick=()=>openPlant(x.dataset.id))}
+function attr(k,v){return '<div class="attr"><b>'+esc(k)+'</b><div>'+esc(vals(v))+'</div></div>'}
+function openPlant(id){let p=DB.find(x=>x.id===id);$("#title").textContent=p.botanicalName;$("#common").textContent=p.commonName||"";$("#art").innerHTML='<img src="'+ART+encodeURIComponent(p.id)+'.webp" onerror="this.replaceWith(Object.assign(document.createElement(\\'div\\'),{className:\\'missing\\',textContent:\\'No watercolour asset yet\\'}))">';let ratio=p.heightCm&&p.spreadCm?(p.spreadCm/p.heightCm).toFixed(2):"—";$("#attrs").innerHTML=[attr("Height",(p.heightCm||"—")+" cm"),attr("Spread",(p.spreadCm||"—")+" cm"),attr("Target W/H",ratio),attr("Habit",p.design?.habit),attr("Visual density",p.design?.visualDensity),attr("Light",p.light?.map(title)),attr("Soil",p.soil?.map(title)),attr("Moisture",p.moisture?.map(title)),attr("Flower colours",p.flowerColours?.map(title)),attr("Foliage",title(p.foliage)),attr("Hardiness",p.hardiness),attr("Layer",p.design?.layer)].join("");$("#desc").textContent=p.description||p.notes||"—";let n=encodeURIComponent(p.botanicalName);$("#refs").innerHTML='<a target="_blank" href="https://www.rhs.org.uk/search?query='+n+'">RHS</a><a target="_blank" href="https://commons.wikimedia.org/w/index.php?search='+n+'&title=Special:MediaSearch&type=image">Wikimedia</a><a target="_blank" href="https://www.google.com/search?tbm=isch&q='+n+'">Image search</a>';$("#links").innerHTML='<a target="_blank" href="https://www.rhs.org.uk/search?query='+n+'">Check morphology</a>';$("#dlg").showModal()}
+$("#close").onclick=()=>$("#dlg").close();$("#q").oninput=e=>{state.q=e.target.value.toLowerCase();render()};$("#type").onchange=e=>{state.type=e.target.value;render()};$("#light").onchange=e=>{state.light=e.target.value;render()};$("#sort").onchange=e=>{state.sort=e.target.value;render()};
+fetch(DATA,{cache:"no-store"}).then(r=>{if(!r.ok)throw Error("HTTP "+r.status);return r.json()}).then(j=>{DB=j.plants||[];$("#meta").textContent="Live · schema "+j.schemaVersion+" · updated "+j.updated+" · "+DB.length+" plants";[...new Set(DB.map(p=>p.type).filter(Boolean))].sort().forEach(t=>$("#type").insertAdjacentHTML("beforeend",'<option value="'+esc(t)+'">'+esc(title(t))+'</option>'));render()}).catch(e=>{$("#meta").textContent="Could not load "+DATA;$("#grid").innerHTML='<div class="rule">'+esc(e.message)+'</div>'});
+</script></body></html>
