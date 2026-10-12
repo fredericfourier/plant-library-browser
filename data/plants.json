@@ -1,0 +1,5025 @@
+{
+  "schemaVersion": 4,
+  "updated": "2026-10-02",
+  "plants": [
+    {
+      "id": "salvia-caradonna",
+      "botanicalName": "Salvia nemorosa 'Caradonna'",
+      "commonName": "Balkan clary",
+      "type": "perennial",
+      "heightCm": 60,
+      "spreadCm": 40,
+      "light": [
+        "full_sun"
+      ],
+      "soil": [
+        "clay",
+        "loam",
+        "sandy"
+      ],
+      "moisture": [
+        "dry",
+        "average"
+      ],
+      "flowerColours": [
+        "purple"
+      ],
+      "floweringStart": 6,
+      "floweringEnd": 9,
+      "foliage": "deciduous",
+      "foliageColour": "green",
+      "hardiness": "H7",
+      "maintenance": "low",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "pollinatorValue": 5,
+      "plantsPerSqM": 5,
+      "description": "Upright violet spires on near-black stems. Cut back after the first flush for a second show.",
+      "notes": "",
+      "design": {
+        "styles": [
+          "naturalistic",
+          "cottage",
+          "contemporary"
+        ],
+        "position": [
+          "front_middle",
+          "middle"
+        ],
+        "habit": "upright",
+        "visualDensity": "medium",
+        "placementFlexibility": "medium",
+        "layer": "matrix",
+        "groupingMode": "clump",
+        "allowSingleton": false,
+        "designRoles": [
+          "repetition",
+          "seasonal_interest"
+        ],
+        "roles": {
+          "preferred": "repeated_clump",
+          "supported": [
+            "repeated_clump",
+            "primary_drift"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0.12,
+            0.55
+          ],
+          "hard": [
+            0,
+            0.8
+          ]
+        },
+        "transparency": {
+          "base": 0.15,
+          "upper": 0.45
+        },
+        "spreadHabit": "clumping"
+      }
+    },
+    {
+      "id": "salvia-amistad",
+      "botanicalName": "Salvia 'Amistad'",
+      "commonName": "Sage",
+      "type": "perennial",
+      "heightCm": 120,
+      "spreadCm": 60,
+      "light": [
+        "full_sun"
+      ],
+      "soil": [
+        "loam",
+        "sandy"
+      ],
+      "moisture": [
+        "average"
+      ],
+      "flowerColours": [
+        "purple"
+      ],
+      "floweringStart": 7,
+      "floweringEnd": 10,
+      "foliage": "deciduous",
+      "foliageColour": "green",
+      "hardiness": "H3",
+      "maintenance": "moderate",
+      "requiresStaking": false,
+      "winterProtection": true,
+      "pollinatorValue": 5,
+      "plantsPerSqM": 3,
+      "description": "Deep purple flowers for months on end. Mulch over winter in colder gardens.",
+      "notes": "Borderline hardy in colder areas; lift or mulch heavily in winter.",
+      "design": {
+        "styles": [
+          "cottage",
+          "contemporary"
+        ],
+        "position": [
+          "middle",
+          "middle_back"
+        ],
+        "habit": "upright",
+        "visualDensity": "medium",
+        "placementFlexibility": "medium",
+        "layer": "structural",
+        "groupingMode": "clump",
+        "allowSingleton": false,
+        "designRoles": [
+          "structure",
+          "repetition",
+          "seasonal_interest",
+          "late_season"
+        ],
+        "roles": {
+          "preferred": "repeated_clump",
+          "supported": [
+            "repeated_clump",
+            "primary_drift"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0.4,
+            0.85
+          ],
+          "hard": [
+            0.15,
+            1
+          ]
+        },
+        "transparency": {
+          "base": 0.15,
+          "upper": 0.5
+        },
+        "spreadHabit": "clumping"
+      }
+    },
+    {
+      "id": "geranium-rozanne",
+      "botanicalName": "Geranium 'Rozanne'",
+      "commonName": "Cranesbill",
+      "type": "groundcover",
+      "heightCm": 50,
+      "spreadCm": 80,
+      "light": [
+        "full_sun",
+        "part_shade"
+      ],
+      "soil": [
+        "clay",
+        "loam",
+        "sandy"
+      ],
+      "moisture": [
+        "dry",
+        "average",
+        "moist"
+      ],
+      "flowerColours": [
+        "blue",
+        "purple"
+      ],
+      "floweringStart": 6,
+      "floweringEnd": 10,
+      "foliage": "deciduous",
+      "foliageColour": "green",
+      "hardiness": "H7",
+      "maintenance": "low",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "pollinatorValue": 5,
+      "plantsPerSqM": 3,
+      "description": "Violet-blue saucers from June to the first frosts. Weaves between neighbours.",
+      "notes": "",
+      "design": {
+        "styles": [
+          "naturalistic",
+          "cottage",
+          "contemporary"
+        ],
+        "position": [
+          "front",
+          "front_middle"
+        ],
+        "habit": "spreading",
+        "visualDensity": "high",
+        "placementFlexibility": "low",
+        "layer": "base",
+        "groupingMode": "large_clump",
+        "allowSingleton": false,
+        "designRoles": [
+          "groundcover",
+          "repetition",
+          "seasonal_interest",
+          "late_season"
+        ],
+        "roles": {
+          "preferred": "groundcover",
+          "supported": [
+            "groundcover",
+            "primary_drift",
+            "matrix"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0,
+            0.45
+          ],
+          "hard": [
+            0,
+            0.75
+          ]
+        },
+        "transparency": {
+          "base": 0.1,
+          "upper": 0.25
+        },
+        "spreadHabit": "spreading"
+      }
+    },
+    {
+      "id": "geranium-macrorrhizum",
+      "botanicalName": "Geranium macrorrhizum 'Ingwersen's Variety'",
+      "commonName": "Rock cranesbill",
+      "type": "groundcover",
+      "heightCm": 30,
+      "spreadCm": 60,
+      "light": [
+        "full_sun",
+        "part_shade",
+        "full_shade"
+      ],
+      "soil": [
+        "clay",
+        "loam",
+        "sandy"
+      ],
+      "moisture": [
+        "dry",
+        "average"
+      ],
+      "flowerColours": [
+        "pink"
+      ],
+      "floweringStart": 5,
+      "floweringEnd": 7,
+      "foliage": "semi-evergreen",
+      "foliageColour": "green",
+      "hardiness": "H7",
+      "maintenance": "low",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "pollinatorValue": 3,
+      "plantsPerSqM": 5,
+      "description": "Aromatic, weed-smothering carpet with soft pink flowers. Copes with dry shade.",
+      "notes": "",
+      "design": {
+        "styles": [
+          "naturalistic",
+          "cottage",
+          "contemporary"
+        ],
+        "position": [
+          "front",
+          "front_middle"
+        ],
+        "habit": "groundcover",
+        "visualDensity": "high",
+        "placementFlexibility": "medium",
+        "layer": "base",
+        "groupingMode": "large_clump",
+        "allowSingleton": false,
+        "designRoles": [
+          "groundcover",
+          "repetition",
+          "early_season"
+        ],
+        "roles": {
+          "preferred": "groundcover",
+          "supported": [
+            "groundcover",
+            "matrix"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0,
+            0.4
+          ],
+          "hard": [
+            0,
+            0.85
+          ]
+        },
+        "transparency": {
+          "base": 0,
+          "upper": 0.1
+        },
+        "spreadHabit": "running"
+      }
+    },
+    {
+      "id": "nepeta-walkers-low",
+      "botanicalName": "Nepeta × faassenii 'Walker's Low'",
+      "commonName": "Catmint",
+      "type": "perennial",
+      "heightCm": 60,
+      "spreadCm": 75,
+      "light": [
+        "full_sun",
+        "part_shade"
+      ],
+      "soil": [
+        "clay",
+        "loam",
+        "sandy"
+      ],
+      "moisture": [
+        "dry",
+        "average"
+      ],
+      "flowerColours": [
+        "lavender",
+        "blue"
+      ],
+      "floweringStart": 5,
+      "floweringEnd": 9,
+      "foliage": "deciduous",
+      "foliageColour": "grey-green",
+      "hardiness": "H7",
+      "maintenance": "low",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "pollinatorValue": 5,
+      "plantsPerSqM": 3,
+      "description": "Soft lavender-blue haze with grey, aromatic leaves. A bee favourite.",
+      "notes": "",
+      "design": {
+        "styles": [
+          "cottage",
+          "naturalistic",
+          "contemporary"
+        ],
+        "position": [
+          "front",
+          "front_middle"
+        ],
+        "habit": "spreading",
+        "visualDensity": "high",
+        "placementFlexibility": "medium",
+        "layer": "base",
+        "groupingMode": "large_clump",
+        "allowSingleton": false,
+        "designRoles": [
+          "repetition",
+          "seasonal_interest",
+          "early_season"
+        ],
+        "roles": {
+          "preferred": "primary_drift",
+          "supported": [
+            "primary_drift",
+            "groundcover"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0,
+            0.4
+          ],
+          "hard": [
+            0,
+            0.7
+          ]
+        },
+        "transparency": {
+          "base": 0.2,
+          "upper": 0.5
+        },
+        "spreadHabit": "spreading"
+      }
+    },
+    {
+      "id": "geum-totally-tangerine",
+      "botanicalName": "Geum 'Totally Tangerine'",
+      "commonName": "Avens",
+      "type": "perennial",
+      "heightCm": 80,
+      "spreadCm": 50,
+      "light": [
+        "full_sun",
+        "part_shade"
+      ],
+      "soil": [
+        "clay",
+        "loam"
+      ],
+      "moisture": [
+        "average",
+        "moist"
+      ],
+      "flowerColours": [
+        "apricot",
+        "orange"
+      ],
+      "floweringStart": 5,
+      "floweringEnd": 9,
+      "foliage": "semi-evergreen",
+      "foliageColour": "green",
+      "hardiness": "H6",
+      "maintenance": "low",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "pollinatorValue": 3,
+      "plantsPerSqM": 5,
+      "description": "Apricot flowers held on wiry stems above a neat clump of leaves.",
+      "notes": "",
+      "design": {
+        "styles": [
+          "naturalistic",
+          "cottage",
+          "contemporary"
+        ],
+        "position": [
+          "front",
+          "front_middle",
+          "middle"
+        ],
+        "habit": "clumping",
+        "visualDensity": "low",
+        "placementFlexibility": "high",
+        "layer": "matrix",
+        "groupingMode": "clump",
+        "allowSingleton": false,
+        "designRoles": [
+          "repetition",
+          "seasonal_interest",
+          "early_season"
+        ],
+        "roles": {
+          "preferred": "repeated_clump",
+          "supported": [
+            "repeated_clump",
+            "primary_drift"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0.08,
+            0.5
+          ],
+          "hard": [
+            0,
+            0.75
+          ]
+        },
+        "transparency": {
+          "base": 0.05,
+          "upper": 0.75
+        },
+        "spreadHabit": "clumping"
+      }
+    },
+    {
+      "id": "knautia-macedonica",
+      "botanicalName": "Knautia macedonica",
+      "commonName": "Macedonian scabious",
+      "type": "perennial",
+      "heightCm": 70,
+      "spreadCm": 50,
+      "light": [
+        "full_sun"
+      ],
+      "soil": [
+        "loam",
+        "sandy"
+      ],
+      "moisture": [
+        "dry",
+        "average"
+      ],
+      "flowerColours": [
+        "red",
+        "magenta"
+      ],
+      "floweringStart": 6,
+      "floweringEnd": 9,
+      "foliage": "deciduous",
+      "foliageColour": "green",
+      "hardiness": "H7",
+      "maintenance": "moderate",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "pollinatorValue": 5,
+      "plantsPerSqM": 5,
+      "description": "Crimson pincushions that float and weave through neighbouring plants.",
+      "notes": "",
+      "design": {
+        "styles": [
+          "naturalistic",
+          "cottage"
+        ],
+        "position": [
+          "front_middle",
+          "middle"
+        ],
+        "habit": "airy",
+        "visualDensity": "low",
+        "placementFlexibility": "high",
+        "layer": "matrix",
+        "groupingMode": "clump",
+        "allowSingleton": false,
+        "designRoles": [
+          "repetition",
+          "seasonal_interest"
+        ],
+        "roles": {
+          "preferred": "repeated_clump",
+          "supported": [
+            "repeated_clump",
+            "primary_drift",
+            "emergent"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0.15,
+            0.6
+          ],
+          "hard": [
+            0,
+            0.85
+          ]
+        },
+        "transparency": {
+          "base": 0.3,
+          "upper": 0.75
+        },
+        "spreadHabit": "self_seeding",
+        "roleTraits": {
+          "emergent": {
+            "baseOccupancy": 0.3
+          }
+        }
+      }
+    },
+    {
+      "id": "verbena-bonariensis",
+      "botanicalName": "Verbena bonariensis",
+      "commonName": "Purpletop vervain",
+      "type": "perennial",
+      "heightCm": 150,
+      "spreadCm": 45,
+      "light": [
+        "full_sun"
+      ],
+      "soil": [
+        "loam",
+        "sandy"
+      ],
+      "moisture": [
+        "dry",
+        "average"
+      ],
+      "flowerColours": [
+        "purple",
+        "lavender"
+      ],
+      "floweringStart": 7,
+      "floweringEnd": 10,
+      "foliage": "deciduous",
+      "foliageColour": "green",
+      "hardiness": "H5",
+      "maintenance": "low",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "pollinatorValue": 5,
+      "plantsPerSqM": 5,
+      "description": "Tall, see-through stems topped with purple clusters. Self-seeds gently.",
+      "notes": "",
+      "design": {
+        "styles": [
+          "naturalistic",
+          "cottage"
+        ],
+        "position": [
+          "front_middle",
+          "middle",
+          "middle_back"
+        ],
+        "habit": "airy",
+        "visualDensity": "low",
+        "placementFlexibility": "high",
+        "layer": "emergent",
+        "groupingMode": "emergent_group",
+        "allowSingleton": false,
+        "designRoles": [
+          "emergent",
+          "repetition",
+          "seasonal_interest",
+          "late_season"
+        ],
+        "roles": {
+          "preferred": "emergent",
+          "supported": [
+            "emergent",
+            "repeated_clump"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0.15,
+            0.85
+          ],
+          "hard": [
+            0,
+            1
+          ]
+        },
+        "transparency": {
+          "base": 0.65,
+          "upper": 0.95
+        },
+        "spreadHabit": "self_seeding",
+        "roleTraits": {
+          "emergent": {
+            "baseOccupancy": 0.05
+          }
+        }
+      }
+    },
+    {
+      "id": "echinacea-purpurea",
+      "botanicalName": "Echinacea purpurea",
+      "commonName": "Purple coneflower",
+      "type": "perennial",
+      "heightCm": 100,
+      "spreadCm": 45,
+      "light": [
+        "full_sun"
+      ],
+      "soil": [
+        "clay",
+        "loam",
+        "sandy"
+      ],
+      "moisture": [
+        "dry",
+        "average"
+      ],
+      "flowerColours": [
+        "pink",
+        "magenta"
+      ],
+      "floweringStart": 7,
+      "floweringEnd": 9,
+      "foliage": "deciduous",
+      "foliageColour": "green",
+      "hardiness": "H7",
+      "maintenance": "moderate",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "pollinatorValue": 5,
+      "plantsPerSqM": 5,
+      "description": "Pink daisies with copper cones. Leave seedheads standing for winter birds.",
+      "notes": "",
+      "design": {
+        "styles": [
+          "naturalistic",
+          "cottage",
+          "contemporary"
+        ],
+        "position": [
+          "middle",
+          "middle_back"
+        ],
+        "habit": "upright",
+        "visualDensity": "medium",
+        "placementFlexibility": "medium",
+        "layer": "structural",
+        "groupingMode": "clump",
+        "allowSingleton": false,
+        "designRoles": [
+          "structure",
+          "repetition",
+          "winter_interest"
+        ],
+        "roles": {
+          "preferred": "primary_drift",
+          "supported": [
+            "primary_drift",
+            "repeated_clump"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0.3,
+            0.75
+          ],
+          "hard": [
+            0.1,
+            0.95
+          ]
+        },
+        "transparency": {
+          "base": 0.15,
+          "upper": 0.55
+        },
+        "spreadHabit": "clumping"
+      }
+    },
+    {
+      "id": "echinacea-white-swan",
+      "botanicalName": "Echinacea purpurea 'White Swan'",
+      "commonName": "White coneflower",
+      "type": "perennial",
+      "heightCm": 70,
+      "spreadCm": 45,
+      "light": [
+        "full_sun"
+      ],
+      "soil": [
+        "clay",
+        "loam",
+        "sandy"
+      ],
+      "moisture": [
+        "dry",
+        "average"
+      ],
+      "flowerColours": [
+        "white"
+      ],
+      "floweringStart": 7,
+      "floweringEnd": 9,
+      "foliage": "deciduous",
+      "foliageColour": "green",
+      "hardiness": "H7",
+      "maintenance": "moderate",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "pollinatorValue": 5,
+      "plantsPerSqM": 5,
+      "description": "Creamy white daisies with an orange-brown centre. Loved by butterflies.",
+      "notes": "",
+      "design": {
+        "styles": [
+          "naturalistic",
+          "cottage",
+          "contemporary"
+        ],
+        "position": [
+          "front_middle",
+          "middle"
+        ],
+        "habit": "upright",
+        "visualDensity": "medium",
+        "placementFlexibility": "medium",
+        "layer": "matrix",
+        "groupingMode": "clump",
+        "allowSingleton": false,
+        "designRoles": [
+          "repetition"
+        ],
+        "roles": {
+          "preferred": "repeated_clump",
+          "supported": [
+            "repeated_clump",
+            "primary_drift"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0.15,
+            0.6
+          ],
+          "hard": [
+            0,
+            0.85
+          ]
+        },
+        "transparency": {
+          "base": 0.15,
+          "upper": 0.5
+        },
+        "spreadHabit": "clumping"
+      }
+    },
+    {
+      "id": "achillea-terracotta",
+      "botanicalName": "Achillea millefolium 'Terracotta'",
+      "commonName": "Yarrow",
+      "type": "perennial",
+      "heightCm": 80,
+      "spreadCm": 60,
+      "light": [
+        "full_sun"
+      ],
+      "soil": [
+        "loam",
+        "sandy"
+      ],
+      "moisture": [
+        "dry",
+        "average"
+      ],
+      "flowerColours": [
+        "orange",
+        "apricot"
+      ],
+      "floweringStart": 6,
+      "floweringEnd": 9,
+      "foliage": "deciduous",
+      "foliageColour": "green",
+      "hardiness": "H7",
+      "maintenance": "low",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "pollinatorValue": 5,
+      "plantsPerSqM": 4,
+      "description": "Flat heads that open rust-orange and fade to soft apricot.",
+      "notes": "",
+      "design": {
+        "styles": [
+          "naturalistic",
+          "cottage"
+        ],
+        "position": [
+          "front_middle",
+          "middle"
+        ],
+        "habit": "clumping",
+        "visualDensity": "medium",
+        "placementFlexibility": "medium",
+        "layer": "matrix",
+        "groupingMode": "clump",
+        "allowSingleton": false,
+        "designRoles": [
+          "repetition",
+          "seasonal_interest"
+        ],
+        "roles": {
+          "preferred": "primary_drift",
+          "supported": [
+            "primary_drift",
+            "repeated_clump"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0.15,
+            0.6
+          ],
+          "hard": [
+            0,
+            0.85
+          ]
+        },
+        "transparency": {
+          "base": 0.2,
+          "upper": 0.4
+        },
+        "spreadHabit": "spreading"
+      }
+    },
+    {
+      "id": "achillea-moonshine",
+      "botanicalName": "Achillea 'Moonshine'",
+      "commonName": "Yarrow",
+      "type": "perennial",
+      "heightCm": 60,
+      "spreadCm": 50,
+      "light": [
+        "full_sun"
+      ],
+      "soil": [
+        "loam",
+        "sandy"
+      ],
+      "moisture": [
+        "dry",
+        "average"
+      ],
+      "flowerColours": [
+        "pale-yellow"
+      ],
+      "floweringStart": 6,
+      "floweringEnd": 8,
+      "foliage": "semi-evergreen",
+      "foliageColour": "silver",
+      "hardiness": "H7",
+      "maintenance": "low",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "pollinatorValue": 5,
+      "plantsPerSqM": 5,
+      "description": "Pale lemon flower plates over feathery silver leaves.",
+      "notes": "",
+      "design": {
+        "styles": [
+          "naturalistic",
+          "cottage",
+          "contemporary"
+        ],
+        "position": [
+          "front",
+          "front_middle"
+        ],
+        "habit": "clumping",
+        "visualDensity": "medium",
+        "placementFlexibility": "medium",
+        "layer": "matrix",
+        "groupingMode": "clump",
+        "allowSingleton": false,
+        "designRoles": [
+          "repetition"
+        ],
+        "roles": {
+          "preferred": "repeated_clump",
+          "supported": [
+            "repeated_clump",
+            "primary_drift"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0.05,
+            0.5
+          ],
+          "hard": [
+            0,
+            0.75
+          ]
+        },
+        "transparency": {
+          "base": 0.15,
+          "upper": 0.4
+        },
+        "spreadHabit": "clumping"
+      }
+    },
+    {
+      "id": "astrantia-major",
+      "botanicalName": "Astrantia major 'Roma'",
+      "commonName": "Masterwort",
+      "type": "perennial",
+      "heightCm": 70,
+      "spreadCm": 45,
+      "light": [
+        "full_sun",
+        "part_shade"
+      ],
+      "soil": [
+        "clay",
+        "loam"
+      ],
+      "moisture": [
+        "average",
+        "moist"
+      ],
+      "flowerColours": [
+        "pink"
+      ],
+      "floweringStart": 6,
+      "floweringEnd": 8,
+      "foliage": "deciduous",
+      "foliageColour": "green",
+      "hardiness": "H7",
+      "maintenance": "moderate",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "pollinatorValue": 5,
+      "plantsPerSqM": 5,
+      "description": "Papery, pincushion flowers in soft pink. Good for cutting.",
+      "notes": "",
+      "design": {
+        "styles": [
+          "cottage",
+          "naturalistic"
+        ],
+        "position": [
+          "front_middle",
+          "middle"
+        ],
+        "habit": "clumping",
+        "visualDensity": "medium",
+        "placementFlexibility": "medium",
+        "layer": "matrix",
+        "groupingMode": "clump",
+        "allowSingleton": false,
+        "designRoles": [
+          "repetition"
+        ],
+        "roles": {
+          "preferred": "repeated_clump",
+          "supported": [
+            "repeated_clump",
+            "primary_drift"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0.15,
+            0.6
+          ],
+          "hard": [
+            0,
+            0.85
+          ]
+        },
+        "transparency": {
+          "base": 0.1,
+          "upper": 0.6
+        },
+        "spreadHabit": "clumping"
+      }
+    },
+    {
+      "id": "rudbeckia-goldsturm",
+      "botanicalName": "Rudbeckia fulgida var. sullivantii 'Goldsturm'",
+      "commonName": "Black-eyed Susan",
+      "type": "perennial",
+      "heightCm": 70,
+      "spreadCm": 50,
+      "light": [
+        "full_sun",
+        "part_shade"
+      ],
+      "soil": [
+        "clay",
+        "loam"
+      ],
+      "moisture": [
+        "average",
+        "moist"
+      ],
+      "flowerColours": [
+        "yellow"
+      ],
+      "floweringStart": 8,
+      "floweringEnd": 10,
+      "foliage": "deciduous",
+      "foliageColour": "green",
+      "hardiness": "H7",
+      "maintenance": "low",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "pollinatorValue": 3,
+      "plantsPerSqM": 5,
+      "description": "Golden daisies with dark centres that carry the border into autumn.",
+      "notes": "",
+      "design": {
+        "styles": [
+          "naturalistic",
+          "cottage",
+          "contemporary"
+        ],
+        "position": [
+          "middle"
+        ],
+        "habit": "clumping",
+        "visualDensity": "high",
+        "placementFlexibility": "medium",
+        "layer": "matrix",
+        "groupingMode": "clump",
+        "allowSingleton": false,
+        "designRoles": [
+          "repetition",
+          "late_season"
+        ],
+        "roles": {
+          "preferred": "primary_drift",
+          "supported": [
+            "primary_drift",
+            "repeated_clump"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0.25,
+            0.7
+          ],
+          "hard": [
+            0.05,
+            0.9
+          ]
+        },
+        "transparency": {
+          "base": 0.05,
+          "upper": 0.3
+        },
+        "spreadHabit": "spreading"
+      }
+    },
+    {
+      "id": "helenium-moerheim",
+      "botanicalName": "Helenium 'Moerheim Beauty'",
+      "commonName": "Sneezeweed",
+      "type": "perennial",
+      "heightCm": 90,
+      "spreadCm": 60,
+      "light": [
+        "full_sun"
+      ],
+      "soil": [
+        "clay",
+        "loam"
+      ],
+      "moisture": [
+        "average",
+        "moist"
+      ],
+      "flowerColours": [
+        "red",
+        "orange"
+      ],
+      "floweringStart": 7,
+      "floweringEnd": 9,
+      "foliage": "deciduous",
+      "foliageColour": "green",
+      "hardiness": "H7",
+      "maintenance": "moderate",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "pollinatorValue": 5,
+      "plantsPerSqM": 4,
+      "description": "Coppery-red daisies that fade to burnt orange. Needs reliable moisture.",
+      "notes": "",
+      "design": {
+        "styles": [
+          "naturalistic",
+          "cottage"
+        ],
+        "position": [
+          "middle",
+          "middle_back"
+        ],
+        "habit": "upright",
+        "visualDensity": "high",
+        "placementFlexibility": "low",
+        "layer": "structural",
+        "groupingMode": "clump",
+        "allowSingleton": false,
+        "designRoles": [
+          "structure",
+          "repetition"
+        ],
+        "roles": {
+          "preferred": "primary_drift",
+          "supported": [
+            "primary_drift",
+            "repeated_clump"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0.35,
+            0.8
+          ],
+          "hard": [
+            0.15,
+            1
+          ]
+        },
+        "transparency": {
+          "base": 0.1,
+          "upper": 0.25
+        },
+        "spreadHabit": "clumping"
+      }
+    },
+    {
+      "id": "persicaria-firetail",
+      "botanicalName": "Persicaria amplexicaulis 'Firetail'",
+      "commonName": "Red bistort",
+      "type": "perennial",
+      "heightCm": 120,
+      "spreadCm": 100,
+      "light": [
+        "full_sun",
+        "part_shade"
+      ],
+      "soil": [
+        "clay",
+        "loam"
+      ],
+      "moisture": [
+        "average",
+        "moist"
+      ],
+      "flowerColours": [
+        "red"
+      ],
+      "floweringStart": 7,
+      "floweringEnd": 10,
+      "foliage": "deciduous",
+      "foliageColour": "green",
+      "hardiness": "H7",
+      "maintenance": "low",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "pollinatorValue": 3,
+      "plantsPerSqM": 2,
+      "description": "Slender crimson tapers above a leafy mound, flowering for months.",
+      "notes": "",
+      "design": {
+        "styles": [
+          "naturalistic",
+          "contemporary"
+        ],
+        "position": [
+          "middle_back",
+          "back"
+        ],
+        "habit": "clumping",
+        "visualDensity": "high",
+        "placementFlexibility": "low",
+        "layer": "structural",
+        "groupingMode": "clump",
+        "allowSingleton": false,
+        "designRoles": [
+          "structure",
+          "seasonal_interest",
+          "late_season"
+        ],
+        "roles": {
+          "preferred": "primary_drift",
+          "supported": [
+            "primary_drift",
+            "matrix"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0.45,
+            0.9
+          ],
+          "hard": [
+            0.25,
+            1
+          ]
+        },
+        "transparency": {
+          "base": 0.05,
+          "upper": 0.35
+        },
+        "spreadHabit": "spreading"
+      }
+    },
+    {
+      "id": "anemone-honorine",
+      "botanicalName": "Anemone × hybrida 'Honorine Jobert'",
+      "commonName": "Japanese anemone",
+      "type": "perennial",
+      "heightCm": 120,
+      "spreadCm": 60,
+      "light": [
+        "full_sun",
+        "part_shade"
+      ],
+      "soil": [
+        "clay",
+        "loam"
+      ],
+      "moisture": [
+        "average",
+        "moist"
+      ],
+      "flowerColours": [
+        "white"
+      ],
+      "floweringStart": 8,
+      "floweringEnd": 10,
+      "foliage": "deciduous",
+      "foliageColour": "green",
+      "hardiness": "H7",
+      "maintenance": "low",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "pollinatorValue": 3,
+      "plantsPerSqM": 3,
+      "description": "Pure white flowers on tall stems from late summer. Spreads slowly.",
+      "notes": "",
+      "design": {
+        "styles": [
+          "naturalistic",
+          "cottage",
+          "contemporary"
+        ],
+        "position": [
+          "middle_back",
+          "back"
+        ],
+        "habit": "upright",
+        "visualDensity": "medium",
+        "placementFlexibility": "low",
+        "layer": "structural",
+        "groupingMode": "clump",
+        "allowSingleton": false,
+        "designRoles": [
+          "structure",
+          "repetition",
+          "late_season"
+        ],
+        "roles": {
+          "preferred": "primary_drift",
+          "supported": [
+            "primary_drift"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0.4,
+            0.85
+          ],
+          "hard": [
+            0.2,
+            1
+          ]
+        },
+        "transparency": {
+          "base": 0.05,
+          "upper": 0.6
+        },
+        "spreadHabit": "running"
+      }
+    },
+    {
+      "id": "anemone-hadspen",
+      "botanicalName": "Anemone hupehensis 'Hadspen Abundance'",
+      "commonName": "Japanese anemone",
+      "type": "perennial",
+      "heightCm": 75,
+      "spreadCm": 50,
+      "light": [
+        "full_sun",
+        "part_shade"
+      ],
+      "soil": [
+        "clay",
+        "loam"
+      ],
+      "moisture": [
+        "average",
+        "moist"
+      ],
+      "flowerColours": [
+        "pink"
+      ],
+      "floweringStart": 8,
+      "floweringEnd": 10,
+      "foliage": "deciduous",
+      "foliageColour": "green",
+      "hardiness": "H7",
+      "maintenance": "low",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "pollinatorValue": 3,
+      "plantsPerSqM": 4,
+      "description": "Rose-pink flowers on wiry stems in late summer and autumn.",
+      "notes": "",
+      "design": {
+        "styles": [
+          "cottage",
+          "naturalistic"
+        ],
+        "position": [
+          "middle",
+          "middle_back"
+        ],
+        "habit": "clumping",
+        "visualDensity": "medium",
+        "placementFlexibility": "medium",
+        "layer": "matrix",
+        "groupingMode": "clump",
+        "allowSingleton": false,
+        "designRoles": [
+          "repetition",
+          "late_season"
+        ],
+        "roles": {
+          "preferred": "primary_drift",
+          "supported": [
+            "primary_drift"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0.25,
+            0.7
+          ],
+          "hard": [
+            0.05,
+            0.95
+          ]
+        },
+        "transparency": {
+          "base": 0.05,
+          "upper": 0.55
+        },
+        "spreadHabit": "running"
+      }
+    },
+    {
+      "id": "hylotelephium-herbstfreude",
+      "botanicalName": "Hylotelephium 'Herbstfreude'",
+      "commonName": "Sedum, ice plant",
+      "type": "perennial",
+      "heightCm": 50,
+      "spreadCm": 50,
+      "light": [
+        "full_sun"
+      ],
+      "soil": [
+        "clay",
+        "loam",
+        "sandy"
+      ],
+      "moisture": [
+        "dry",
+        "average"
+      ],
+      "flowerColours": [
+        "pink"
+      ],
+      "floweringStart": 8,
+      "floweringEnd": 10,
+      "foliage": "deciduous",
+      "foliageColour": "green",
+      "hardiness": "H7",
+      "maintenance": "low",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "pollinatorValue": 5,
+      "plantsPerSqM": 5,
+      "description": "Fleshy leaves and flat heads that turn from pink to russet. Good winter outline.",
+      "notes": "",
+      "design": {
+        "styles": [
+          "naturalistic",
+          "contemporary",
+          "cottage"
+        ],
+        "position": [
+          "front",
+          "front_middle"
+        ],
+        "habit": "clumping",
+        "visualDensity": "high",
+        "placementFlexibility": "medium",
+        "layer": "matrix",
+        "groupingMode": "clump",
+        "allowSingleton": false,
+        "designRoles": [
+          "repetition",
+          "late_season",
+          "winter_interest"
+        ],
+        "roles": {
+          "preferred": "repeated_clump",
+          "supported": [
+            "repeated_clump",
+            "primary_drift"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0,
+            0.4
+          ],
+          "hard": [
+            0,
+            0.65
+          ]
+        },
+        "transparency": {
+          "base": 0,
+          "upper": 0.1
+        },
+        "spreadHabit": "clumping"
+      }
+    },
+    {
+      "id": "agastache-blackadder",
+      "botanicalName": "Agastache 'Blackadder'",
+      "commonName": "Giant hyssop",
+      "type": "perennial",
+      "heightCm": 90,
+      "spreadCm": 45,
+      "light": [
+        "full_sun"
+      ],
+      "soil": [
+        "loam",
+        "sandy"
+      ],
+      "moisture": [
+        "dry",
+        "average"
+      ],
+      "flowerColours": [
+        "purple"
+      ],
+      "floweringStart": 7,
+      "floweringEnd": 10,
+      "foliage": "deciduous",
+      "foliageColour": "green",
+      "hardiness": "H4",
+      "maintenance": "moderate",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "pollinatorValue": 5,
+      "plantsPerSqM": 5,
+      "description": "Dense smoky-violet spikes with aniseed-scented leaves. Hates winter wet.",
+      "notes": "Hardy to cold but rots in wet winter soil.",
+      "design": {
+        "styles": [
+          "naturalistic",
+          "contemporary"
+        ],
+        "position": [
+          "middle"
+        ],
+        "habit": "upright",
+        "visualDensity": "medium",
+        "placementFlexibility": "medium",
+        "layer": "structural",
+        "groupingMode": "clump",
+        "allowSingleton": false,
+        "designRoles": [
+          "structure",
+          "repetition",
+          "seasonal_interest",
+          "late_season"
+        ],
+        "roles": {
+          "preferred": "repeated_clump",
+          "supported": [
+            "repeated_clump",
+            "primary_drift"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0.25,
+            0.7
+          ],
+          "hard": [
+            0.05,
+            0.95
+          ]
+        },
+        "transparency": {
+          "base": 0.2,
+          "upper": 0.45
+        },
+        "spreadHabit": "clumping"
+      }
+    },
+    {
+      "id": "gaura-whirling",
+      "botanicalName": "Oenothera lindheimeri 'Whirling Butterflies'",
+      "commonName": "Gaura",
+      "type": "perennial",
+      "heightCm": 90,
+      "spreadCm": 60,
+      "light": [
+        "full_sun"
+      ],
+      "soil": [
+        "loam",
+        "sandy"
+      ],
+      "moisture": [
+        "dry",
+        "average"
+      ],
+      "flowerColours": [
+        "white"
+      ],
+      "floweringStart": 6,
+      "floweringEnd": 10,
+      "foliage": "deciduous",
+      "foliageColour": "green",
+      "hardiness": "H5",
+      "maintenance": "moderate",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "pollinatorValue": 5,
+      "plantsPerSqM": 4,
+      "description": "Airy wands of white flowers that dance in the breeze. Needs good drainage.",
+      "notes": "",
+      "design": {
+        "styles": [
+          "naturalistic",
+          "cottage"
+        ],
+        "position": [
+          "front_middle",
+          "middle"
+        ],
+        "habit": "airy",
+        "visualDensity": "low",
+        "placementFlexibility": "high",
+        "layer": "emergent",
+        "groupingMode": "emergent_group",
+        "allowSingleton": false,
+        "designRoles": [
+          "emergent",
+          "repetition",
+          "seasonal_interest",
+          "late_season"
+        ],
+        "roles": {
+          "preferred": "emergent",
+          "supported": [
+            "emergent",
+            "repeated_clump"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0.05,
+            0.7
+          ],
+          "hard": [
+            0,
+            0.9
+          ]
+        },
+        "transparency": {
+          "base": 0.35,
+          "upper": 0.85
+        },
+        "spreadHabit": "clumping",
+        "roleTraits": {
+          "emergent": {
+            "baseOccupancy": 0.4
+          }
+        }
+      }
+    },
+    {
+      "id": "eryngium-planum",
+      "botanicalName": "Eryngium planum 'Blaukappe'",
+      "commonName": "Sea holly",
+      "type": "perennial",
+      "heightCm": 75,
+      "spreadCm": 45,
+      "light": [
+        "full_sun"
+      ],
+      "soil": [
+        "loam",
+        "sandy"
+      ],
+      "moisture": [
+        "dry",
+        "average"
+      ],
+      "flowerColours": [
+        "blue"
+      ],
+      "floweringStart": 7,
+      "floweringEnd": 9,
+      "foliage": "deciduous",
+      "foliageColour": "green",
+      "hardiness": "H7",
+      "maintenance": "low",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "pollinatorValue": 5,
+      "plantsPerSqM": 5,
+      "description": "Steely-blue thistle-like heads on branching stems. Thrives on neglect.",
+      "notes": "",
+      "design": {
+        "styles": [
+          "naturalistic",
+          "contemporary"
+        ],
+        "position": [
+          "front_middle",
+          "middle"
+        ],
+        "habit": "upright",
+        "visualDensity": "low",
+        "placementFlexibility": "high",
+        "layer": "matrix",
+        "groupingMode": "clump",
+        "allowSingleton": false,
+        "designRoles": [
+          "repetition",
+          "winter_interest"
+        ],
+        "roles": {
+          "preferred": "repeated_clump",
+          "supported": [
+            "repeated_clump",
+            "emergent"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0.1,
+            0.6
+          ],
+          "hard": [
+            0,
+            0.85
+          ]
+        },
+        "transparency": {
+          "base": 0.2,
+          "upper": 0.7
+        },
+        "spreadHabit": "clumping",
+        "roleTraits": {
+          "emergent": {
+            "baseOccupancy": 0.3
+          }
+        }
+      }
+    },
+    {
+      "id": "perovskia-blue-spire",
+      "botanicalName": "Salvia yangii 'Blue Spire'",
+      "commonName": "Russian sage",
+      "type": "perennial",
+      "heightCm": 120,
+      "spreadCm": 90,
+      "light": [
+        "full_sun"
+      ],
+      "soil": [
+        "loam",
+        "sandy"
+      ],
+      "moisture": [
+        "dry"
+      ],
+      "flowerColours": [
+        "lavender",
+        "blue"
+      ],
+      "floweringStart": 8,
+      "floweringEnd": 10,
+      "foliage": "deciduous",
+      "foliageColour": "silver",
+      "hardiness": "H5",
+      "maintenance": "low",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "pollinatorValue": 5,
+      "plantsPerSqM": 2,
+      "description": "Silver stems and a haze of lavender-blue. Cut back hard in spring.",
+      "notes": "",
+      "design": {
+        "styles": [
+          "naturalistic",
+          "contemporary"
+        ],
+        "position": [
+          "middle",
+          "middle_back"
+        ],
+        "habit": "airy",
+        "visualDensity": "medium",
+        "placementFlexibility": "medium",
+        "layer": "emergent",
+        "groupingMode": "emergent_group",
+        "allowSingleton": false,
+        "designRoles": [
+          "emergent",
+          "late_season"
+        ],
+        "roles": {
+          "preferred": "primary_drift",
+          "supported": [
+            "primary_drift",
+            "repeated_clump"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0.3,
+            0.8
+          ],
+          "hard": [
+            0.1,
+            1
+          ]
+        },
+        "transparency": {
+          "base": 0.35,
+          "upper": 0.75
+        },
+        "spreadHabit": "spreading"
+      }
+    },
+    {
+      "id": "lavandula-hidcote",
+      "botanicalName": "Lavandula angustifolia 'Hidcote'",
+      "commonName": "English lavender",
+      "type": "shrub",
+      "heightCm": 50,
+      "spreadCm": 50,
+      "light": [
+        "full_sun"
+      ],
+      "soil": [
+        "loam",
+        "sandy"
+      ],
+      "moisture": [
+        "dry"
+      ],
+      "flowerColours": [
+        "purple"
+      ],
+      "floweringStart": 6,
+      "floweringEnd": 8,
+      "foliage": "evergreen",
+      "foliageColour": "grey-green",
+      "hardiness": "H5",
+      "maintenance": "moderate",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "pollinatorValue": 5,
+      "plantsPerSqM": 4,
+      "description": "Compact, scented and evergreen. Trim after flowering to keep it tidy.",
+      "notes": "",
+      "design": {
+        "styles": [
+          "cottage",
+          "contemporary"
+        ],
+        "position": [
+          "front",
+          "front_middle"
+        ],
+        "habit": "clumping",
+        "visualDensity": "high",
+        "placementFlexibility": "low",
+        "layer": "matrix",
+        "groupingMode": "clump",
+        "allowSingleton": false,
+        "designRoles": [
+          "structure",
+          "repetition",
+          "winter_interest"
+        ],
+        "roles": {
+          "preferred": "repeated_clump",
+          "supported": [
+            "repeated_clump",
+            "primary_drift"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0,
+            0.4
+          ],
+          "hard": [
+            0,
+            0.65
+          ]
+        },
+        "transparency": {
+          "base": 0,
+          "upper": 0.3
+        },
+        "spreadHabit": "clumping"
+      }
+    },
+    {
+      "id": "thalictrum-delavayi",
+      "botanicalName": "Thalictrum delavayi",
+      "commonName": "Chinese meadow rue",
+      "type": "perennial",
+      "heightCm": 150,
+      "spreadCm": 60,
+      "light": [
+        "full_sun",
+        "part_shade"
+      ],
+      "soil": [
+        "clay",
+        "loam"
+      ],
+      "moisture": [
+        "average",
+        "moist"
+      ],
+      "flowerColours": [
+        "lavender"
+      ],
+      "floweringStart": 7,
+      "floweringEnd": 8,
+      "foliage": "deciduous",
+      "foliageColour": "green",
+      "hardiness": "H6",
+      "maintenance": "moderate",
+      "requiresStaking": true,
+      "winterProtection": false,
+      "pollinatorValue": 3,
+      "plantsPerSqM": 3,
+      "description": "A cloud of tiny lilac flowers above fine, fern-like leaves.",
+      "notes": "",
+      "design": {
+        "styles": [
+          "naturalistic",
+          "cottage"
+        ],
+        "position": [
+          "middle",
+          "middle_back",
+          "back"
+        ],
+        "habit": "airy",
+        "visualDensity": "low",
+        "placementFlexibility": "high",
+        "layer": "emergent",
+        "groupingMode": "emergent_group",
+        "allowSingleton": false,
+        "designRoles": [
+          "emergent",
+          "repetition"
+        ],
+        "roles": {
+          "preferred": "emergent",
+          "supported": [
+            "emergent",
+            "repeated_clump"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0.25,
+            0.9
+          ],
+          "hard": [
+            0.05,
+            1
+          ]
+        },
+        "transparency": {
+          "base": 0.4,
+          "upper": 0.9
+        },
+        "spreadHabit": "clumping",
+        "roleTraits": {
+          "emergent": {
+            "baseOccupancy": 0.25
+          }
+        }
+      }
+    },
+    {
+      "id": "sanguisorba-red-thunder",
+      "botanicalName": "Sanguisorba officinalis 'Red Thunder'",
+      "commonName": "Great burnet",
+      "type": "perennial",
+      "heightCm": 120,
+      "spreadCm": 60,
+      "light": [
+        "full_sun",
+        "part_shade"
+      ],
+      "soil": [
+        "clay",
+        "loam"
+      ],
+      "moisture": [
+        "average",
+        "moist"
+      ],
+      "flowerColours": [
+        "red"
+      ],
+      "floweringStart": 7,
+      "floweringEnd": 9,
+      "foliage": "deciduous",
+      "foliageColour": "green",
+      "hardiness": "H7",
+      "maintenance": "low",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "pollinatorValue": 5,
+      "plantsPerSqM": 3,
+      "description": "Small claret bobbles on wiry, see-through stems.",
+      "notes": "",
+      "design": {
+        "styles": [
+          "naturalistic"
+        ],
+        "position": [
+          "middle",
+          "middle_back"
+        ],
+        "habit": "airy",
+        "visualDensity": "low",
+        "placementFlexibility": "high",
+        "layer": "emergent",
+        "groupingMode": "emergent_group",
+        "allowSingleton": false,
+        "designRoles": [
+          "emergent",
+          "repetition"
+        ],
+        "roles": {
+          "preferred": "emergent",
+          "supported": [
+            "emergent",
+            "primary_drift"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0.2,
+            0.85
+          ],
+          "hard": [
+            0.05,
+            1
+          ]
+        },
+        "transparency": {
+          "base": 0.15,
+          "upper": 0.85
+        },
+        "spreadHabit": "clumping",
+        "roleTraits": {
+          "emergent": {
+            "baseOccupancy": 0.35
+          }
+        }
+      }
+    },
+    {
+      "id": "veronicastrum-album",
+      "botanicalName": "Veronicastrum virginicum 'Album'",
+      "commonName": "Culver's root",
+      "type": "perennial",
+      "heightCm": 150,
+      "spreadCm": 60,
+      "light": [
+        "full_sun",
+        "part_shade"
+      ],
+      "soil": [
+        "clay",
+        "loam"
+      ],
+      "moisture": [
+        "average",
+        "moist"
+      ],
+      "flowerColours": [
+        "white"
+      ],
+      "floweringStart": 7,
+      "floweringEnd": 9,
+      "foliage": "deciduous",
+      "foliageColour": "green",
+      "hardiness": "H7",
+      "maintenance": "low",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "pollinatorValue": 5,
+      "plantsPerSqM": 3,
+      "description": "Tall white candles on whorled stems. Strong architecture that needs no staking.",
+      "notes": "",
+      "design": {
+        "styles": [
+          "naturalistic",
+          "contemporary"
+        ],
+        "position": [
+          "middle_back",
+          "back"
+        ],
+        "habit": "vertical_accent",
+        "visualDensity": "medium",
+        "placementFlexibility": "low",
+        "layer": "structural",
+        "groupingMode": "clump",
+        "allowSingleton": false,
+        "designRoles": [
+          "structure",
+          "repetition"
+        ],
+        "roles": {
+          "preferred": "primary_drift",
+          "supported": [
+            "primary_drift",
+            "structural_anchor"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0.5,
+            0.9
+          ],
+          "hard": [
+            0.25,
+            1
+          ]
+        },
+        "transparency": {
+          "base": 0.1,
+          "upper": 0.4
+        },
+        "spreadHabit": "clumping"
+      }
+    },
+    {
+      "id": "eupatorium-atropurpureum",
+      "botanicalName": "Eutrochium maculatum 'Atropurpureum'",
+      "commonName": "Joe Pye weed",
+      "type": "perennial",
+      "heightCm": 200,
+      "spreadCm": 100,
+      "light": [
+        "full_sun",
+        "part_shade"
+      ],
+      "soil": [
+        "clay",
+        "loam"
+      ],
+      "moisture": [
+        "average",
+        "moist"
+      ],
+      "flowerColours": [
+        "pink"
+      ],
+      "floweringStart": 8,
+      "floweringEnd": 9,
+      "foliage": "deciduous",
+      "foliageColour": "green",
+      "hardiness": "H7",
+      "maintenance": "low",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "pollinatorValue": 5,
+      "plantsPerSqM": 1,
+      "description": "A big, late statement with domed dusky-pink heads. Butterflies flock to it.",
+      "notes": "",
+      "design": {
+        "styles": [
+          "naturalistic"
+        ],
+        "position": [
+          "back"
+        ],
+        "habit": "upright",
+        "visualDensity": "high",
+        "placementFlexibility": "low",
+        "layer": "structural",
+        "groupingMode": "specimen",
+        "allowSingleton": true,
+        "designRoles": [
+          "structure",
+          "focal"
+        ],
+        "roles": {
+          "preferred": "structural_anchor",
+          "supported": [
+            "structural_anchor",
+            "primary_drift"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0.6,
+            0.95
+          ],
+          "hard": [
+            0.4,
+            1
+          ]
+        },
+        "transparency": {
+          "base": 0.05,
+          "upper": 0.25
+        },
+        "spreadHabit": "clumping"
+      }
+    },
+    {
+      "id": "leucanthemum-becky",
+      "botanicalName": "Leucanthemum × superbum 'Becky'",
+      "commonName": "Shasta daisy",
+      "type": "perennial",
+      "heightCm": 90,
+      "spreadCm": 60,
+      "light": [
+        "full_sun"
+      ],
+      "soil": [
+        "clay",
+        "loam"
+      ],
+      "moisture": [
+        "average"
+      ],
+      "flowerColours": [
+        "white"
+      ],
+      "floweringStart": 6,
+      "floweringEnd": 9,
+      "foliage": "deciduous",
+      "foliageColour": "green",
+      "hardiness": "H7",
+      "maintenance": "moderate",
+      "requiresStaking": true,
+      "winterProtection": false,
+      "pollinatorValue": 3,
+      "plantsPerSqM": 4,
+      "description": "Classic large white daisies. Deadhead to keep it flowering.",
+      "notes": "",
+      "design": {
+        "styles": [
+          "cottage"
+        ],
+        "position": [
+          "middle"
+        ],
+        "habit": "clumping",
+        "visualDensity": "high",
+        "placementFlexibility": "medium",
+        "layer": "matrix",
+        "groupingMode": "clump",
+        "allowSingleton": false,
+        "designRoles": [
+          "repetition",
+          "seasonal_interest"
+        ],
+        "roles": {
+          "preferred": "repeated_clump",
+          "supported": [
+            "repeated_clump",
+            "primary_drift"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0.25,
+            0.7
+          ],
+          "hard": [
+            0.05,
+            0.9
+          ]
+        },
+        "transparency": {
+          "base": 0.1,
+          "upper": 0.4
+        },
+        "spreadHabit": "clumping"
+      }
+    },
+    {
+      "id": "hemerocallis-stafford",
+      "botanicalName": "Hemerocallis 'Stafford'",
+      "commonName": "Daylily",
+      "type": "perennial",
+      "heightCm": 70,
+      "spreadCm": 60,
+      "light": [
+        "full_sun",
+        "part_shade"
+      ],
+      "soil": [
+        "clay",
+        "loam"
+      ],
+      "moisture": [
+        "average",
+        "moist"
+      ],
+      "flowerColours": [
+        "red"
+      ],
+      "floweringStart": 7,
+      "floweringEnd": 8,
+      "foliage": "deciduous",
+      "foliageColour": "green",
+      "hardiness": "H7",
+      "maintenance": "low",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "pollinatorValue": 1,
+      "plantsPerSqM": 4,
+      "description": "Scarlet trumpets with a yellow throat above arching leaves.",
+      "notes": "",
+      "design": {
+        "styles": [
+          "cottage",
+          "contemporary"
+        ],
+        "position": [
+          "front_middle",
+          "middle"
+        ],
+        "habit": "clumping",
+        "visualDensity": "high",
+        "placementFlexibility": "medium",
+        "layer": "matrix",
+        "groupingMode": "clump",
+        "allowSingleton": false,
+        "designRoles": [
+          "repetition"
+        ],
+        "roles": {
+          "preferred": "repeated_clump",
+          "supported": [
+            "repeated_clump",
+            "primary_drift"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0.1,
+            0.6
+          ],
+          "hard": [
+            0,
+            0.85
+          ]
+        },
+        "transparency": {
+          "base": 0,
+          "upper": 0.55
+        },
+        "spreadHabit": "clumping"
+      }
+    },
+    {
+      "id": "crocosmia-lucifer",
+      "botanicalName": "Crocosmia 'Lucifer'",
+      "commonName": "Montbretia",
+      "type": "perennial",
+      "heightCm": 100,
+      "spreadCm": 30,
+      "light": [
+        "full_sun",
+        "part_shade"
+      ],
+      "soil": [
+        "loam",
+        "sandy"
+      ],
+      "moisture": [
+        "average"
+      ],
+      "flowerColours": [
+        "red"
+      ],
+      "floweringStart": 7,
+      "floweringEnd": 8,
+      "foliage": "deciduous",
+      "foliageColour": "green",
+      "hardiness": "H6",
+      "maintenance": "low",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "pollinatorValue": 3,
+      "plantsPerSqM": 6,
+      "description": "Arching sprays of flame-red flowers over sword-shaped leaves.",
+      "notes": "",
+      "design": {
+        "styles": [
+          "cottage",
+          "contemporary"
+        ],
+        "position": [
+          "middle",
+          "middle_back"
+        ],
+        "habit": "upright",
+        "visualDensity": "medium",
+        "placementFlexibility": "medium",
+        "layer": "structural",
+        "groupingMode": "clump",
+        "allowSingleton": false,
+        "designRoles": [
+          "structure",
+          "repetition"
+        ],
+        "roles": {
+          "preferred": "repeated_clump",
+          "supported": [
+            "repeated_clump",
+            "primary_drift"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0.3,
+            0.8
+          ],
+          "hard": [
+            0.1,
+            1
+          ]
+        },
+        "transparency": {
+          "base": 0.1,
+          "upper": 0.5
+        },
+        "spreadHabit": "naturalising"
+      }
+    },
+    {
+      "id": "aster-little-carlow",
+      "botanicalName": "Symphyotrichum 'Little Carlow'",
+      "commonName": "Aster",
+      "type": "perennial",
+      "heightCm": 90,
+      "spreadCm": 50,
+      "light": [
+        "full_sun",
+        "part_shade"
+      ],
+      "soil": [
+        "clay",
+        "loam"
+      ],
+      "moisture": [
+        "average",
+        "moist"
+      ],
+      "flowerColours": [
+        "blue",
+        "lavender"
+      ],
+      "floweringStart": 9,
+      "floweringEnd": 10,
+      "foliage": "deciduous",
+      "foliageColour": "green",
+      "hardiness": "H7",
+      "maintenance": "low",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "pollinatorValue": 5,
+      "plantsPerSqM": 4,
+      "description": "A mass of small violet-blue daisies in early autumn. Mildew-resistant.",
+      "notes": "",
+      "design": {
+        "styles": [
+          "naturalistic",
+          "cottage"
+        ],
+        "position": [
+          "middle",
+          "middle_back"
+        ],
+        "habit": "clumping",
+        "visualDensity": "high",
+        "placementFlexibility": "medium",
+        "layer": "matrix",
+        "groupingMode": "clump",
+        "allowSingleton": false,
+        "designRoles": [
+          "repetition",
+          "late_season"
+        ],
+        "roles": {
+          "preferred": "primary_drift",
+          "supported": [
+            "primary_drift",
+            "repeated_clump"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0.35,
+            0.8
+          ],
+          "hard": [
+            0.15,
+            1
+          ]
+        },
+        "transparency": {
+          "base": 0.05,
+          "upper": 0.3
+        },
+        "spreadHabit": "clumping"
+      }
+    },
+    {
+      "id": "aster-monch",
+      "botanicalName": "Aster × frikartii 'Mönch'",
+      "commonName": "Aster",
+      "type": "perennial",
+      "heightCm": 70,
+      "spreadCm": 45,
+      "light": [
+        "full_sun",
+        "part_shade"
+      ],
+      "soil": [
+        "loam",
+        "sandy"
+      ],
+      "moisture": [
+        "average"
+      ],
+      "flowerColours": [
+        "lavender"
+      ],
+      "floweringStart": 7,
+      "floweringEnd": 10,
+      "foliage": "deciduous",
+      "foliageColour": "green",
+      "hardiness": "H7",
+      "maintenance": "low",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "pollinatorValue": 5,
+      "plantsPerSqM": 5,
+      "description": "Lavender-blue daisies for a remarkably long season.",
+      "notes": "",
+      "design": {
+        "styles": [
+          "cottage",
+          "naturalistic"
+        ],
+        "position": [
+          "front_middle",
+          "middle"
+        ],
+        "habit": "clumping",
+        "visualDensity": "medium",
+        "placementFlexibility": "medium",
+        "layer": "matrix",
+        "groupingMode": "clump",
+        "allowSingleton": false,
+        "designRoles": [
+          "repetition",
+          "seasonal_interest",
+          "late_season"
+        ],
+        "roles": {
+          "preferred": "repeated_clump",
+          "supported": [
+            "repeated_clump",
+            "primary_drift"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0.1,
+            0.6
+          ],
+          "hard": [
+            0,
+            0.85
+          ]
+        },
+        "transparency": {
+          "base": 0.15,
+          "upper": 0.45
+        },
+        "spreadHabit": "clumping"
+      }
+    },
+    {
+      "id": "penstemon-garnet",
+      "botanicalName": "Penstemon 'Andenken an Friedrich Hahn'",
+      "commonName": "Beardtongue",
+      "type": "perennial",
+      "heightCm": 70,
+      "spreadCm": 50,
+      "light": [
+        "full_sun"
+      ],
+      "soil": [
+        "loam",
+        "sandy"
+      ],
+      "moisture": [
+        "average"
+      ],
+      "flowerColours": [
+        "red"
+      ],
+      "floweringStart": 7,
+      "floweringEnd": 10,
+      "foliage": "semi-evergreen",
+      "foliageColour": "green",
+      "hardiness": "H4",
+      "maintenance": "moderate",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "pollinatorValue": 3,
+      "plantsPerSqM": 4,
+      "description": "Wine-red tubular flowers all summer. Leave old stems until spring.",
+      "notes": "",
+      "design": {
+        "styles": [
+          "cottage"
+        ],
+        "position": [
+          "front_middle",
+          "middle"
+        ],
+        "habit": "upright",
+        "visualDensity": "medium",
+        "placementFlexibility": "medium",
+        "layer": "matrix",
+        "groupingMode": "clump",
+        "allowSingleton": false,
+        "designRoles": [
+          "repetition",
+          "seasonal_interest",
+          "late_season"
+        ],
+        "roles": {
+          "preferred": "repeated_clump",
+          "supported": [
+            "repeated_clump",
+            "primary_drift"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0.1,
+            0.6
+          ],
+          "hard": [
+            0,
+            0.85
+          ]
+        },
+        "transparency": {
+          "base": 0.1,
+          "upper": 0.4
+        },
+        "spreadHabit": "clumping"
+      }
+    },
+    {
+      "id": "erigeron-karvinskianus",
+      "botanicalName": "Erigeron karvinskianus",
+      "commonName": "Mexican fleabane",
+      "type": "groundcover",
+      "heightCm": 25,
+      "spreadCm": 50,
+      "light": [
+        "full_sun"
+      ],
+      "soil": [
+        "loam",
+        "sandy"
+      ],
+      "moisture": [
+        "dry",
+        "average"
+      ],
+      "flowerColours": [
+        "white",
+        "pink"
+      ],
+      "floweringStart": 5,
+      "floweringEnd": 10,
+      "foliage": "semi-evergreen",
+      "foliageColour": "green",
+      "hardiness": "H5",
+      "maintenance": "low",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "pollinatorValue": 3,
+      "plantsPerSqM": 5,
+      "description": "Tiny white-and-pink daisies spilling over edges for months.",
+      "notes": "",
+      "design": {
+        "styles": [
+          "cottage",
+          "naturalistic"
+        ],
+        "position": [
+          "front"
+        ],
+        "habit": "groundcover",
+        "visualDensity": "medium",
+        "placementFlexibility": "low",
+        "layer": "base",
+        "groupingMode": "large_clump",
+        "allowSingleton": false,
+        "designRoles": [
+          "groundcover",
+          "repetition",
+          "seasonal_interest",
+          "early_season",
+          "late_season"
+        ],
+        "roles": {
+          "preferred": "groundcover",
+          "supported": [
+            "groundcover"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0,
+            0.25
+          ],
+          "hard": [
+            0,
+            0.5
+          ]
+        },
+        "transparency": {
+          "base": 0.4,
+          "upper": 0.6
+        },
+        "spreadHabit": "self_seeding"
+      }
+    },
+    {
+      "id": "iris-sibirica",
+      "botanicalName": "Iris sibirica 'Silver Edge'",
+      "commonName": "Siberian iris",
+      "type": "perennial",
+      "heightCm": 90,
+      "spreadCm": 40,
+      "light": [
+        "full_sun",
+        "part_shade"
+      ],
+      "soil": [
+        "clay",
+        "loam"
+      ],
+      "moisture": [
+        "average",
+        "moist"
+      ],
+      "flowerColours": [
+        "blue"
+      ],
+      "floweringStart": 5,
+      "floweringEnd": 6,
+      "foliage": "deciduous",
+      "foliageColour": "green",
+      "hardiness": "H7",
+      "maintenance": "low",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "pollinatorValue": 3,
+      "plantsPerSqM": 5,
+      "description": "Elegant blue flowers in late spring, then upright grassy leaves.",
+      "notes": "",
+      "design": {
+        "styles": [
+          "naturalistic",
+          "contemporary",
+          "cottage"
+        ],
+        "position": [
+          "front_middle",
+          "middle"
+        ],
+        "habit": "upright",
+        "visualDensity": "medium",
+        "placementFlexibility": "medium",
+        "layer": "structural",
+        "groupingMode": "clump",
+        "allowSingleton": false,
+        "designRoles": [
+          "structure",
+          "repetition",
+          "early_season"
+        ],
+        "roles": {
+          "preferred": "repeated_clump",
+          "supported": [
+            "repeated_clump",
+            "primary_drift"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0.15,
+            0.6
+          ],
+          "hard": [
+            0,
+            0.85
+          ]
+        },
+        "transparency": {
+          "base": 0.05,
+          "upper": 0.6
+        },
+        "spreadHabit": "clumping"
+      }
+    },
+    {
+      "id": "allium-purple-sensation",
+      "botanicalName": "Allium hollandicum 'Purple Sensation'",
+      "commonName": "Ornamental onion (bulb)",
+      "type": "bulb",
+      "heightCm": 80,
+      "spreadCm": 20,
+      "light": [
+        "full_sun"
+      ],
+      "soil": [
+        "loam",
+        "sandy"
+      ],
+      "moisture": [
+        "dry",
+        "average"
+      ],
+      "flowerColours": [
+        "purple"
+      ],
+      "floweringStart": 5,
+      "floweringEnd": 6,
+      "foliage": "deciduous",
+      "foliageColour": "green",
+      "hardiness": "H6",
+      "maintenance": "low",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "pollinatorValue": 5,
+      "plantsPerSqM": 12,
+      "description": "Purple drumsticks in May, planted as bulbs in autumn between perennials.",
+      "notes": "",
+      "design": {
+        "styles": [
+          "naturalistic",
+          "contemporary",
+          "cottage"
+        ],
+        "position": [
+          "front_middle",
+          "middle",
+          "middle_back"
+        ],
+        "habit": "bulb",
+        "visualDensity": "low",
+        "placementFlexibility": "high",
+        "layer": "bulb",
+        "groupingMode": "bulb_group",
+        "allowSingleton": false,
+        "designRoles": [
+          "early_season",
+          "seasonal_interest"
+        ],
+        "roles": {
+          "preferred": "seasonal_overlay",
+          "supported": [
+            "seasonal_overlay"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0.15,
+            0.8
+          ],
+          "hard": [
+            0,
+            1
+          ]
+        },
+        "transparency": {
+          "base": 0.7,
+          "upper": 0.95
+        },
+        "spreadHabit": "naturalising"
+      }
+    },
+    {
+      "id": "digitalis-purpurea",
+      "botanicalName": "Digitalis purpurea 'Pam's Choice'",
+      "commonName": "Foxglove",
+      "type": "perennial",
+      "heightCm": 120,
+      "spreadCm": 45,
+      "light": [
+        "full_sun",
+        "part_shade",
+        "full_shade"
+      ],
+      "soil": [
+        "clay",
+        "loam"
+      ],
+      "moisture": [
+        "average",
+        "moist"
+      ],
+      "flowerColours": [
+        "white"
+      ],
+      "floweringStart": 5,
+      "floweringEnd": 7,
+      "foliage": "semi-evergreen",
+      "foliageColour": "green",
+      "hardiness": "H7",
+      "maintenance": "moderate",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "pollinatorValue": 5,
+      "plantsPerSqM": 5,
+      "description": "White spires with maroon-speckled throats. Short-lived but self-seeds.",
+      "notes": "",
+      "design": {
+        "styles": [
+          "cottage",
+          "naturalistic"
+        ],
+        "position": [
+          "middle",
+          "middle_back",
+          "back"
+        ],
+        "habit": "vertical_accent",
+        "visualDensity": "medium",
+        "placementFlexibility": "high",
+        "layer": "structural",
+        "groupingMode": "clump",
+        "allowSingleton": false,
+        "designRoles": [
+          "structure",
+          "repetition",
+          "early_season"
+        ],
+        "roles": {
+          "preferred": "emergent",
+          "supported": [
+            "emergent",
+            "repeated_clump"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0.3,
+            0.85
+          ],
+          "hard": [
+            0.1,
+            1
+          ]
+        },
+        "transparency": {
+          "base": 0.05,
+          "upper": 0.5
+        },
+        "spreadHabit": "self_seeding",
+        "roleTraits": {
+          "emergent": {
+            "baseOccupancy": 0.3
+          }
+        }
+      }
+    },
+    {
+      "id": "aruncus-dioicus",
+      "botanicalName": "Aruncus dioicus",
+      "commonName": "Goat's beard",
+      "type": "perennial",
+      "heightCm": 150,
+      "spreadCm": 100,
+      "light": [
+        "part_shade",
+        "full_shade"
+      ],
+      "soil": [
+        "clay",
+        "loam"
+      ],
+      "moisture": [
+        "average",
+        "moist"
+      ],
+      "flowerColours": [
+        "white"
+      ],
+      "floweringStart": 6,
+      "floweringEnd": 7,
+      "foliage": "deciduous",
+      "foliageColour": "green",
+      "hardiness": "H7",
+      "maintenance": "low",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "pollinatorValue": 3,
+      "plantsPerSqM": 1,
+      "description": "Large creamy plumes above bold leaves. Ideal for the back of a shady border.",
+      "notes": "",
+      "design": {
+        "styles": [
+          "naturalistic",
+          "contemporary"
+        ],
+        "position": [
+          "back"
+        ],
+        "habit": "clumping",
+        "visualDensity": "high",
+        "placementFlexibility": "low",
+        "layer": "structural",
+        "groupingMode": "specimen",
+        "allowSingleton": true,
+        "designRoles": [
+          "structure",
+          "focal"
+        ],
+        "roles": {
+          "preferred": "structural_anchor",
+          "supported": [
+            "structural_anchor",
+            "primary_drift"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0.55,
+            0.95
+          ],
+          "hard": [
+            0.35,
+            1
+          ]
+        },
+        "transparency": {
+          "base": 0.05,
+          "upper": 0.4
+        },
+        "spreadHabit": "clumping"
+      }
+    },
+    {
+      "id": "phlomis-russeliana",
+      "botanicalName": "Phlomis russeliana",
+      "commonName": "Turkish sage",
+      "type": "perennial",
+      "heightCm": 90,
+      "spreadCm": 60,
+      "light": [
+        "full_sun",
+        "part_shade"
+      ],
+      "soil": [
+        "clay",
+        "loam",
+        "sandy"
+      ],
+      "moisture": [
+        "dry",
+        "average"
+      ],
+      "flowerColours": [
+        "pale-yellow"
+      ],
+      "floweringStart": 6,
+      "floweringEnd": 8,
+      "foliage": "evergreen",
+      "foliageColour": "green",
+      "hardiness": "H7",
+      "maintenance": "low",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "pollinatorValue": 5,
+      "plantsPerSqM": 3,
+      "description": "Soft yellow whorls on stiff stems; the seedheads stand all winter.",
+      "notes": "",
+      "design": {
+        "styles": [
+          "naturalistic",
+          "contemporary"
+        ],
+        "position": [
+          "front_middle",
+          "middle"
+        ],
+        "habit": "upright",
+        "visualDensity": "medium",
+        "placementFlexibility": "medium",
+        "layer": "structural",
+        "groupingMode": "clump",
+        "allowSingleton": false,
+        "designRoles": [
+          "structure",
+          "repetition",
+          "winter_interest"
+        ],
+        "roles": {
+          "preferred": "primary_drift",
+          "supported": [
+            "primary_drift",
+            "groundcover",
+            "matrix"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0.1,
+            0.6
+          ],
+          "hard": [
+            0,
+            0.85
+          ]
+        },
+        "transparency": {
+          "base": 0,
+          "upper": 0.55
+        },
+        "spreadHabit": "running"
+      }
+    },
+    {
+      "id": "cenolophium-denudatum",
+      "botanicalName": "Cenolophium denudatum",
+      "commonName": "Baltic parsley",
+      "type": "perennial",
+      "heightCm": 120,
+      "spreadCm": 50,
+      "light": [
+        "full_sun",
+        "part_shade"
+      ],
+      "soil": [
+        "clay",
+        "loam"
+      ],
+      "moisture": [
+        "average",
+        "moist"
+      ],
+      "flowerColours": [
+        "white"
+      ],
+      "floweringStart": 6,
+      "floweringEnd": 8,
+      "foliage": "deciduous",
+      "foliageColour": "green",
+      "hardiness": "H7",
+      "maintenance": "low",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "pollinatorValue": 5,
+      "plantsPerSqM": 3,
+      "description": "Lacy white umbels like a refined cow parsley. Hoverflies love it.",
+      "notes": "",
+      "design": {
+        "styles": [
+          "naturalistic"
+        ],
+        "position": [
+          "middle",
+          "middle_back",
+          "back"
+        ],
+        "habit": "airy",
+        "visualDensity": "low",
+        "placementFlexibility": "high",
+        "layer": "emergent",
+        "groupingMode": "emergent_group",
+        "allowSingleton": false,
+        "designRoles": [
+          "emergent",
+          "repetition"
+        ],
+        "roles": {
+          "preferred": "emergent",
+          "supported": [
+            "emergent",
+            "repeated_clump"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0.2,
+            0.85
+          ],
+          "hard": [
+            0.05,
+            1
+          ]
+        },
+        "transparency": {
+          "base": 0.4,
+          "upper": 0.85
+        },
+        "spreadHabit": "clumping"
+      }
+    },
+    {
+      "id": "euphorbia-wulfenii",
+      "botanicalName": "Euphorbia characias subsp. wulfenii",
+      "commonName": "Mediterranean spurge",
+      "type": "perennial",
+      "heightCm": 120,
+      "spreadCm": 100,
+      "light": [
+        "full_sun"
+      ],
+      "soil": [
+        "loam",
+        "sandy"
+      ],
+      "moisture": [
+        "dry",
+        "average"
+      ],
+      "flowerColours": [
+        "lime"
+      ],
+      "floweringStart": 3,
+      "floweringEnd": 5,
+      "foliage": "evergreen",
+      "foliageColour": "blue-green",
+      "hardiness": "H4",
+      "maintenance": "low",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "pollinatorValue": 1,
+      "plantsPerSqM": 1,
+      "description": "Evergreen blue-grey columns with huge lime heads in spring. Sap irritates skin.",
+      "notes": "",
+      "design": {
+        "styles": [
+          "contemporary",
+          "naturalistic"
+        ],
+        "position": [
+          "middle_back",
+          "back"
+        ],
+        "habit": "clumping",
+        "visualDensity": "high",
+        "placementFlexibility": "low",
+        "layer": "structural",
+        "groupingMode": "specimen",
+        "allowSingleton": true,
+        "designRoles": [
+          "structure",
+          "focal",
+          "early_season",
+          "winter_interest"
+        ],
+        "roles": {
+          "preferred": "structural_anchor",
+          "supported": [
+            "structural_anchor"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0.35,
+            0.8
+          ],
+          "hard": [
+            0.15,
+            1
+          ]
+        },
+        "transparency": {
+          "base": 0.05,
+          "upper": 0.15
+        },
+        "spreadHabit": "clumping"
+      }
+    },
+    {
+      "id": "euphorbia-polychroma",
+      "botanicalName": "Euphorbia epithymoides",
+      "commonName": "Cushion spurge",
+      "type": "perennial",
+      "heightCm": 40,
+      "spreadCm": 50,
+      "light": [
+        "full_sun",
+        "part_shade"
+      ],
+      "soil": [
+        "clay",
+        "loam",
+        "sandy"
+      ],
+      "moisture": [
+        "dry",
+        "average"
+      ],
+      "flowerColours": [
+        "lime",
+        "yellow"
+      ],
+      "floweringStart": 4,
+      "floweringEnd": 5,
+      "foliage": "deciduous",
+      "foliageColour": "green",
+      "hardiness": "H7",
+      "maintenance": "low",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "pollinatorValue": 1,
+      "plantsPerSqM": 5,
+      "description": "Neat domes of acid-yellow in spring, turning red in autumn.",
+      "notes": "",
+      "design": {
+        "styles": [
+          "contemporary",
+          "naturalistic",
+          "cottage"
+        ],
+        "position": [
+          "front"
+        ],
+        "habit": "clumping",
+        "visualDensity": "high",
+        "placementFlexibility": "low",
+        "layer": "base",
+        "groupingMode": "clump",
+        "allowSingleton": false,
+        "designRoles": [
+          "groundcover",
+          "repetition",
+          "early_season"
+        ],
+        "roles": {
+          "preferred": "repeated_clump",
+          "supported": [
+            "repeated_clump",
+            "groundcover"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0,
+            0.35
+          ],
+          "hard": [
+            0,
+            0.6
+          ]
+        },
+        "transparency": {
+          "base": 0,
+          "upper": 0.15
+        },
+        "spreadHabit": "clumping"
+      }
+    },
+    {
+      "id": "alchemilla-mollis",
+      "botanicalName": "Alchemilla mollis",
+      "commonName": "Lady's mantle",
+      "type": "groundcover",
+      "heightCm": 40,
+      "spreadCm": 50,
+      "light": [
+        "full_sun",
+        "part_shade"
+      ],
+      "soil": [
+        "clay",
+        "loam",
+        "sandy"
+      ],
+      "moisture": [
+        "dry",
+        "average",
+        "moist"
+      ],
+      "flowerColours": [
+        "lime"
+      ],
+      "floweringStart": 6,
+      "floweringEnd": 8,
+      "foliage": "deciduous",
+      "foliageColour": "green",
+      "hardiness": "H7",
+      "maintenance": "low",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "pollinatorValue": 3,
+      "plantsPerSqM": 5,
+      "description": "Velvety leaves that hold raindrops, with froths of lime-green flowers.",
+      "notes": "",
+      "design": {
+        "styles": [
+          "cottage",
+          "contemporary"
+        ],
+        "position": [
+          "front",
+          "front_middle"
+        ],
+        "habit": "spreading",
+        "visualDensity": "high",
+        "placementFlexibility": "medium",
+        "layer": "base",
+        "groupingMode": "large_clump",
+        "allowSingleton": false,
+        "designRoles": [
+          "groundcover",
+          "repetition"
+        ],
+        "roles": {
+          "preferred": "groundcover",
+          "supported": [
+            "groundcover",
+            "matrix"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0,
+            0.35
+          ],
+          "hard": [
+            0,
+            0.65
+          ]
+        },
+        "transparency": {
+          "base": 0,
+          "upper": 0.45
+        },
+        "spreadHabit": "self_seeding"
+      }
+    },
+    {
+      "id": "heuchera-palace-purple",
+      "botanicalName": "Heuchera micrantha 'Palace Purple'",
+      "commonName": "Coral bells",
+      "type": "groundcover",
+      "heightCm": 45,
+      "spreadCm": 45,
+      "light": [
+        "full_sun",
+        "part_shade",
+        "full_shade"
+      ],
+      "soil": [
+        "loam"
+      ],
+      "moisture": [
+        "average"
+      ],
+      "flowerColours": [],
+      "floweringStart": null,
+      "floweringEnd": null,
+      "foliage": "evergreen",
+      "foliageColour": "purple",
+      "hardiness": "H7",
+      "maintenance": "low",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "pollinatorValue": 1,
+      "plantsPerSqM": 6,
+      "description": "Glossy bronze-purple leaves all year round; small white flower sprays.",
+      "notes": "",
+      "design": {
+        "styles": [
+          "contemporary",
+          "cottage"
+        ],
+        "position": [
+          "front"
+        ],
+        "habit": "groundcover",
+        "visualDensity": "high",
+        "placementFlexibility": "low",
+        "layer": "base",
+        "groupingMode": "large_clump",
+        "allowSingleton": false,
+        "designRoles": [
+          "groundcover",
+          "repetition",
+          "winter_interest"
+        ],
+        "roles": {
+          "preferred": "groundcover",
+          "supported": [
+            "groundcover",
+            "repeated_clump"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0,
+            0.3
+          ],
+          "hard": [
+            0,
+            0.6
+          ]
+        },
+        "transparency": {
+          "base": 0,
+          "upper": 0.7
+        },
+        "spreadHabit": "clumping"
+      }
+    },
+    {
+      "id": "brunnera-jack-frost",
+      "botanicalName": "Brunnera macrophylla 'Jack Frost'",
+      "commonName": "Siberian bugloss",
+      "type": "groundcover",
+      "heightCm": 40,
+      "spreadCm": 50,
+      "light": [
+        "part_shade",
+        "full_shade"
+      ],
+      "soil": [
+        "clay",
+        "loam"
+      ],
+      "moisture": [
+        "average",
+        "moist"
+      ],
+      "flowerColours": [
+        "blue"
+      ],
+      "floweringStart": 4,
+      "floweringEnd": 5,
+      "foliage": "deciduous",
+      "foliageColour": "silver",
+      "hardiness": "H7",
+      "maintenance": "low",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "pollinatorValue": 3,
+      "plantsPerSqM": 5,
+      "description": "Silver-frosted heart-shaped leaves with forget-me-not flowers.",
+      "notes": "",
+      "design": {
+        "styles": [
+          "contemporary",
+          "naturalistic",
+          "cottage"
+        ],
+        "position": [
+          "front",
+          "front_middle"
+        ],
+        "habit": "groundcover",
+        "visualDensity": "high",
+        "placementFlexibility": "medium",
+        "layer": "base",
+        "groupingMode": "large_clump",
+        "allowSingleton": false,
+        "designRoles": [
+          "groundcover",
+          "repetition",
+          "early_season"
+        ],
+        "roles": {
+          "preferred": "groundcover",
+          "supported": [
+            "groundcover",
+            "repeated_clump"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0,
+            0.4
+          ],
+          "hard": [
+            0,
+            0.75
+          ]
+        },
+        "transparency": {
+          "base": 0,
+          "upper": 0.5
+        },
+        "spreadHabit": "clumping"
+      }
+    },
+    {
+      "id": "pulmonaria-blue-ensign",
+      "botanicalName": "Pulmonaria 'Blue Ensign'",
+      "commonName": "Lungwort",
+      "type": "groundcover",
+      "heightCm": 30,
+      "spreadCm": 45,
+      "light": [
+        "part_shade",
+        "full_shade"
+      ],
+      "soil": [
+        "clay",
+        "loam"
+      ],
+      "moisture": [
+        "average",
+        "moist"
+      ],
+      "flowerColours": [
+        "blue"
+      ],
+      "floweringStart": 3,
+      "floweringEnd": 5,
+      "foliage": "semi-evergreen",
+      "foliageColour": "green",
+      "hardiness": "H7",
+      "maintenance": "low",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "pollinatorValue": 5,
+      "plantsPerSqM": 6,
+      "description": "Gentian-blue flowers in early spring, an important early bee plant.",
+      "notes": "",
+      "design": {
+        "styles": [
+          "cottage",
+          "naturalistic"
+        ],
+        "position": [
+          "front"
+        ],
+        "habit": "groundcover",
+        "visualDensity": "high",
+        "placementFlexibility": "low",
+        "layer": "base",
+        "groupingMode": "large_clump",
+        "allowSingleton": false,
+        "designRoles": [
+          "groundcover",
+          "repetition",
+          "early_season"
+        ],
+        "roles": {
+          "preferred": "groundcover",
+          "supported": [
+            "groundcover"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0,
+            0.35
+          ],
+          "hard": [
+            0,
+            0.7
+          ]
+        },
+        "transparency": {
+          "base": 0,
+          "upper": 0.35
+        },
+        "spreadHabit": "clumping"
+      }
+    },
+    {
+      "id": "helleborus-hybridus",
+      "botanicalName": "Helleborus × hybridus",
+      "commonName": "Lenten rose",
+      "type": "perennial",
+      "heightCm": 45,
+      "spreadCm": 45,
+      "light": [
+        "part_shade",
+        "full_shade"
+      ],
+      "soil": [
+        "clay",
+        "loam"
+      ],
+      "moisture": [
+        "average",
+        "moist"
+      ],
+      "flowerColours": [
+        "pink",
+        "purple"
+      ],
+      "floweringStart": 2,
+      "floweringEnd": 4,
+      "foliage": "evergreen",
+      "foliageColour": "green",
+      "hardiness": "H7",
+      "maintenance": "low",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "pollinatorValue": 5,
+      "plantsPerSqM": 5,
+      "description": "Nodding flowers in late winter. Remove old leaves in January.",
+      "notes": "",
+      "design": {
+        "styles": [
+          "cottage",
+          "naturalistic",
+          "contemporary"
+        ],
+        "position": [
+          "front",
+          "front_middle"
+        ],
+        "habit": "clumping",
+        "visualDensity": "high",
+        "placementFlexibility": "medium",
+        "layer": "base",
+        "groupingMode": "clump",
+        "allowSingleton": false,
+        "designRoles": [
+          "repetition",
+          "early_season",
+          "winter_interest"
+        ],
+        "roles": {
+          "preferred": "repeated_clump",
+          "supported": [
+            "repeated_clump",
+            "groundcover"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0,
+            0.45
+          ],
+          "hard": [
+            0,
+            0.8
+          ]
+        },
+        "transparency": {
+          "base": 0,
+          "upper": 0.2
+        },
+        "spreadHabit": "clumping"
+      }
+    },
+    {
+      "id": "epimedium-sulphureum",
+      "botanicalName": "Epimedium × versicolor 'Sulphureum'",
+      "commonName": "Barrenwort",
+      "type": "groundcover",
+      "heightCm": 30,
+      "spreadCm": 60,
+      "light": [
+        "part_shade",
+        "full_shade"
+      ],
+      "soil": [
+        "clay",
+        "loam"
+      ],
+      "moisture": [
+        "dry",
+        "average"
+      ],
+      "flowerColours": [
+        "pale-yellow"
+      ],
+      "floweringStart": 4,
+      "floweringEnd": 5,
+      "foliage": "evergreen",
+      "foliageColour": "green",
+      "hardiness": "H7",
+      "maintenance": "low",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "pollinatorValue": 3,
+      "plantsPerSqM": 5,
+      "description": "Delicate yellow spring flowers over heart-shaped, bronze-tinted leaves.",
+      "notes": "",
+      "design": {
+        "styles": [
+          "contemporary",
+          "naturalistic"
+        ],
+        "position": [
+          "front",
+          "front_middle"
+        ],
+        "habit": "groundcover",
+        "visualDensity": "high",
+        "placementFlexibility": "medium",
+        "layer": "base",
+        "groupingMode": "large_clump",
+        "allowSingleton": false,
+        "designRoles": [
+          "groundcover",
+          "repetition",
+          "early_season",
+          "winter_interest"
+        ],
+        "roles": {
+          "preferred": "groundcover",
+          "supported": [
+            "groundcover",
+            "matrix"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0,
+            0.45
+          ],
+          "hard": [
+            0,
+            0.9
+          ]
+        },
+        "transparency": {
+          "base": 0.05,
+          "upper": 0.3
+        },
+        "spreadHabit": "running"
+      }
+    },
+    {
+      "id": "stipa-gigantea",
+      "botanicalName": "Stipa gigantea",
+      "commonName": "Golden oats",
+      "type": "grass",
+      "heightCm": 200,
+      "spreadCm": 90,
+      "light": [
+        "full_sun"
+      ],
+      "soil": [
+        "loam",
+        "sandy"
+      ],
+      "moisture": [
+        "dry",
+        "average"
+      ],
+      "flowerColours": [
+        "buff"
+      ],
+      "floweringStart": 6,
+      "floweringEnd": 9,
+      "foliage": "semi-evergreen",
+      "foliageColour": "green",
+      "hardiness": "H6",
+      "maintenance": "low",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "pollinatorValue": 1,
+      "plantsPerSqM": 1,
+      "description": "Huge golden oat-like heads on see-through stems; a focal point that catches the light.",
+      "notes": "",
+      "design": {
+        "styles": [
+          "naturalistic",
+          "contemporary"
+        ],
+        "position": [
+          "middle",
+          "middle_back",
+          "back"
+        ],
+        "habit": "grass",
+        "visualDensity": "medium",
+        "placementFlexibility": "high",
+        "layer": "structural",
+        "groupingMode": "specimen",
+        "allowSingleton": true,
+        "designRoles": [
+          "structure",
+          "focal",
+          "seasonal_interest"
+        ],
+        "roles": {
+          "preferred": "structural_anchor",
+          "supported": [
+            "structural_anchor",
+            "emergent"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0.3,
+            0.8
+          ],
+          "hard": [
+            0.1,
+            1
+          ]
+        },
+        "transparency": {
+          "base": 0.1,
+          "upper": 0.9
+        },
+        "spreadHabit": "clumping",
+        "roleTraits": {
+          "emergent": {
+            "baseOccupancy": 0.5
+          }
+        }
+      }
+    },
+    {
+      "id": "stipa-tenuissima",
+      "botanicalName": "Nassella tenuissima (Stipa tenuissima)",
+      "commonName": "Mexican feather grass",
+      "type": "grass",
+      "heightCm": 60,
+      "spreadCm": 40,
+      "light": [
+        "full_sun"
+      ],
+      "soil": [
+        "loam",
+        "sandy"
+      ],
+      "moisture": [
+        "dry",
+        "average"
+      ],
+      "flowerColours": [
+        "buff"
+      ],
+      "floweringStart": 6,
+      "floweringEnd": 9,
+      "foliage": "semi-evergreen",
+      "foliageColour": "green",
+      "hardiness": "H5",
+      "maintenance": "low",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "pollinatorValue": 1,
+      "plantsPerSqM": 7,
+      "description": "Soft, blonde ponytails that move in every breeze. Comb out old growth in spring.",
+      "notes": "",
+      "design": {
+        "styles": [
+          "naturalistic",
+          "contemporary"
+        ],
+        "position": [
+          "front",
+          "front_middle",
+          "middle"
+        ],
+        "habit": "grass",
+        "visualDensity": "medium",
+        "placementFlexibility": "high",
+        "layer": "matrix",
+        "groupingMode": "matrix",
+        "allowSingleton": false,
+        "designRoles": [
+          "matrix",
+          "repetition",
+          "seasonal_interest"
+        ],
+        "roles": {
+          "preferred": "matrix",
+          "supported": [
+            "matrix",
+            "repeated_clump"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0,
+            0.55
+          ],
+          "hard": [
+            0,
+            0.8
+          ]
+        },
+        "transparency": {
+          "base": 0.4,
+          "upper": 0.75
+        },
+        "spreadHabit": "self_seeding"
+      }
+    },
+    {
+      "id": "calamagrostis-karl-foerster",
+      "botanicalName": "Calamagrostis × acutiflora 'Karl Foerster'",
+      "commonName": "Feather reed grass",
+      "type": "grass",
+      "heightCm": 180,
+      "spreadCm": 60,
+      "light": [
+        "full_sun",
+        "part_shade"
+      ],
+      "soil": [
+        "clay",
+        "loam",
+        "sandy"
+      ],
+      "moisture": [
+        "dry",
+        "average",
+        "moist"
+      ],
+      "flowerColours": [
+        "buff"
+      ],
+      "floweringStart": 6,
+      "floweringEnd": 10,
+      "foliage": "deciduous",
+      "foliageColour": "green",
+      "hardiness": "H7",
+      "maintenance": "low",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "pollinatorValue": 1,
+      "plantsPerSqM": 3,
+      "description": "Bolt-upright buff plumes that stand from June right through winter.",
+      "notes": "",
+      "design": {
+        "styles": [
+          "naturalistic",
+          "contemporary"
+        ],
+        "position": [
+          "middle_back",
+          "back"
+        ],
+        "habit": "grass",
+        "visualDensity": "medium",
+        "placementFlexibility": "low",
+        "layer": "structural",
+        "groupingMode": "clump",
+        "allowSingleton": false,
+        "designRoles": [
+          "structure",
+          "repetition",
+          "seasonal_interest",
+          "late_season",
+          "winter_interest"
+        ],
+        "roles": {
+          "preferred": "repeated_clump",
+          "supported": [
+            "repeated_clump",
+            "structural_anchor"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0.4,
+            0.9
+          ],
+          "hard": [
+            0.2,
+            1
+          ]
+        },
+        "transparency": {
+          "base": 0.1,
+          "upper": 0.4
+        },
+        "spreadHabit": "clumping"
+      }
+    },
+    {
+      "id": "molinia-transparent",
+      "botanicalName": "Molinia caerulea subsp. arundinacea 'Transparent'",
+      "commonName": "Purple moor grass",
+      "type": "grass",
+      "heightCm": 180,
+      "spreadCm": 60,
+      "light": [
+        "full_sun",
+        "part_shade"
+      ],
+      "soil": [
+        "clay",
+        "loam"
+      ],
+      "moisture": [
+        "average",
+        "moist"
+      ],
+      "flowerColours": [
+        "buff"
+      ],
+      "floweringStart": 7,
+      "floweringEnd": 10,
+      "foliage": "deciduous",
+      "foliageColour": "green",
+      "hardiness": "H7",
+      "maintenance": "low",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "pollinatorValue": 1,
+      "plantsPerSqM": 3,
+      "description": "A screen of fine, see-through flower stems that turn gold in autumn.",
+      "notes": "",
+      "design": {
+        "styles": [
+          "naturalistic"
+        ],
+        "position": [
+          "middle",
+          "middle_back",
+          "back"
+        ],
+        "habit": "grass",
+        "visualDensity": "low",
+        "placementFlexibility": "high",
+        "layer": "structural",
+        "groupingMode": "clump",
+        "allowSingleton": false,
+        "designRoles": [
+          "structure",
+          "repetition",
+          "seasonal_interest",
+          "late_season"
+        ],
+        "roles": {
+          "preferred": "emergent",
+          "supported": [
+            "emergent",
+            "repeated_clump"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0.15,
+            0.9
+          ],
+          "hard": [
+            0,
+            1
+          ]
+        },
+        "transparency": {
+          "base": 0.15,
+          "upper": 0.95
+        },
+        "spreadHabit": "clumping",
+        "roleTraits": {
+          "emergent": {
+            "baseOccupancy": 0.45
+          }
+        }
+      }
+    },
+    {
+      "id": "deschampsia-goldtau",
+      "botanicalName": "Deschampsia cespitosa 'Goldtau'",
+      "commonName": "Tufted hair grass",
+      "type": "grass",
+      "heightCm": 70,
+      "spreadCm": 50,
+      "light": [
+        "full_sun",
+        "part_shade"
+      ],
+      "soil": [
+        "clay",
+        "loam"
+      ],
+      "moisture": [
+        "average",
+        "moist"
+      ],
+      "flowerColours": [
+        "buff"
+      ],
+      "floweringStart": 6,
+      "floweringEnd": 9,
+      "foliage": "semi-evergreen",
+      "foliageColour": "green",
+      "hardiness": "H7",
+      "maintenance": "low",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "pollinatorValue": 1,
+      "plantsPerSqM": 5,
+      "description": "Clouds of tiny golden flowers above a neat evergreen tuft.",
+      "notes": "",
+      "design": {
+        "styles": [
+          "naturalistic",
+          "contemporary"
+        ],
+        "position": [
+          "front_middle",
+          "middle"
+        ],
+        "habit": "grass",
+        "visualDensity": "medium",
+        "placementFlexibility": "medium",
+        "layer": "matrix",
+        "groupingMode": "matrix",
+        "allowSingleton": false,
+        "designRoles": [
+          "matrix",
+          "repetition",
+          "seasonal_interest"
+        ],
+        "roles": {
+          "preferred": "matrix",
+          "supported": [
+            "matrix",
+            "repeated_clump"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0.05,
+            0.6
+          ],
+          "hard": [
+            0,
+            0.85
+          ]
+        },
+        "transparency": {
+          "base": 0.1,
+          "upper": 0.8
+        },
+        "spreadHabit": "clumping"
+      }
+    },
+    {
+      "id": "sesleria-autumnalis",
+      "botanicalName": "Sesleria autumnalis",
+      "commonName": "Autumn moor grass",
+      "type": "grass",
+      "heightCm": 40,
+      "spreadCm": 40,
+      "light": [
+        "full_sun",
+        "part_shade"
+      ],
+      "soil": [
+        "clay",
+        "loam",
+        "sandy"
+      ],
+      "moisture": [
+        "dry",
+        "average"
+      ],
+      "flowerColours": [
+        "buff"
+      ],
+      "floweringStart": 8,
+      "floweringEnd": 10,
+      "foliage": "semi-evergreen",
+      "foliageColour": "green",
+      "hardiness": "H7",
+      "maintenance": "low",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "pollinatorValue": 1,
+      "plantsPerSqM": 7,
+      "description": "Lime-green tufts topped with silvery spikes in late summer. A tidy edging grass.",
+      "notes": "",
+      "design": {
+        "styles": [
+          "naturalistic",
+          "contemporary"
+        ],
+        "position": [
+          "front",
+          "front_middle"
+        ],
+        "habit": "grass",
+        "visualDensity": "high",
+        "placementFlexibility": "medium",
+        "layer": "matrix",
+        "groupingMode": "matrix",
+        "allowSingleton": false,
+        "designRoles": [
+          "matrix",
+          "repetition",
+          "late_season"
+        ],
+        "roles": {
+          "preferred": "matrix",
+          "supported": [
+            "matrix",
+            "groundcover",
+            "repeated_clump"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0,
+            0.55
+          ],
+          "hard": [
+            0,
+            0.85
+          ]
+        },
+        "transparency": {
+          "base": 0.15,
+          "upper": 0.4
+        },
+        "spreadHabit": "clumping"
+      }
+    },
+    {
+      "id": "hakonechloa-macra",
+      "botanicalName": "Hakonechloa macra",
+      "commonName": "Japanese forest grass",
+      "type": "grass",
+      "heightCm": 35,
+      "spreadCm": 45,
+      "light": [
+        "part_shade",
+        "full_shade"
+      ],
+      "soil": [
+        "loam"
+      ],
+      "moisture": [
+        "average",
+        "moist"
+      ],
+      "flowerColours": [
+        "buff"
+      ],
+      "floweringStart": 8,
+      "floweringEnd": 10,
+      "foliage": "deciduous",
+      "foliageColour": "green",
+      "hardiness": "H7",
+      "maintenance": "low",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "pollinatorValue": 1,
+      "plantsPerSqM": 5,
+      "description": "Cascading bright green blades that flow like water. Slow to establish.",
+      "notes": "",
+      "design": {
+        "styles": [
+          "contemporary",
+          "naturalistic"
+        ],
+        "position": [
+          "front"
+        ],
+        "habit": "grass",
+        "visualDensity": "high",
+        "placementFlexibility": "low",
+        "layer": "matrix",
+        "groupingMode": "matrix",
+        "allowSingleton": false,
+        "designRoles": [
+          "matrix",
+          "repetition",
+          "late_season"
+        ],
+        "roles": {
+          "preferred": "groundcover",
+          "supported": [
+            "groundcover",
+            "matrix"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0,
+            0.35
+          ],
+          "hard": [
+            0,
+            0.6
+          ]
+        },
+        "transparency": {
+          "base": 0.05,
+          "upper": 0.2
+        },
+        "spreadHabit": "running"
+      }
+    },
+    {
+      "id": "carex-evergold",
+      "botanicalName": "Carex oshimensis 'Evergold'",
+      "commonName": "Japanese sedge",
+      "type": "grass",
+      "heightCm": 30,
+      "spreadCm": 40,
+      "light": [
+        "full_sun",
+        "part_shade",
+        "full_shade"
+      ],
+      "soil": [
+        "clay",
+        "loam"
+      ],
+      "moisture": [
+        "average",
+        "moist"
+      ],
+      "flowerColours": [],
+      "floweringStart": null,
+      "floweringEnd": null,
+      "foliage": "evergreen",
+      "foliageColour": "variegated",
+      "hardiness": "H5",
+      "maintenance": "low",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "pollinatorValue": 1,
+      "plantsPerSqM": 6,
+      "description": "Evergreen cream-and-green striped tufts that brighten dark corners.",
+      "notes": "",
+      "design": {
+        "styles": [
+          "contemporary",
+          "cottage"
+        ],
+        "position": [
+          "front"
+        ],
+        "habit": "grass",
+        "visualDensity": "high",
+        "placementFlexibility": "low",
+        "layer": "matrix",
+        "groupingMode": "matrix",
+        "allowSingleton": false,
+        "designRoles": [
+          "matrix",
+          "repetition",
+          "winter_interest"
+        ],
+        "roles": {
+          "preferred": "groundcover",
+          "supported": [
+            "groundcover",
+            "repeated_clump"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0,
+            0.3
+          ],
+          "hard": [
+            0,
+            0.55
+          ]
+        },
+        "transparency": {
+          "base": 0.05,
+          "upper": 0.15
+        },
+        "spreadHabit": "clumping"
+      }
+    },
+    {
+      "id": "dryopteris-filix-mas",
+      "botanicalName": "Dryopteris filix-mas",
+      "commonName": "Male fern",
+      "type": "fern",
+      "heightCm": 100,
+      "spreadCm": 90,
+      "light": [
+        "part_shade",
+        "full_shade"
+      ],
+      "soil": [
+        "clay",
+        "loam"
+      ],
+      "moisture": [
+        "dry",
+        "average",
+        "moist"
+      ],
+      "flowerColours": [],
+      "floweringStart": null,
+      "floweringEnd": null,
+      "foliage": "deciduous",
+      "foliageColour": "green",
+      "hardiness": "H7",
+      "maintenance": "low",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "pollinatorValue": 1,
+      "plantsPerSqM": 2,
+      "description": "Tough native fern with shuttlecocks of upright fronds. Copes with dry shade.",
+      "notes": "",
+      "design": {
+        "styles": [
+          "naturalistic",
+          "contemporary"
+        ],
+        "position": [
+          "middle_back",
+          "back"
+        ],
+        "habit": "clumping",
+        "visualDensity": "high",
+        "placementFlexibility": "low",
+        "layer": "matrix",
+        "groupingMode": "clump",
+        "allowSingleton": false,
+        "designRoles": [
+          "structure"
+        ],
+        "roles": {
+          "preferred": "repeated_clump",
+          "supported": [
+            "repeated_clump",
+            "structural_anchor"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0.35,
+            0.85
+          ],
+          "hard": [
+            0.1,
+            1
+          ]
+        },
+        "transparency": {
+          "base": 0.1,
+          "upper": 0.3
+        },
+        "spreadHabit": "clumping"
+      }
+    },
+    {
+      "id": "polystichum-setiferum",
+      "botanicalName": "Polystichum setiferum",
+      "commonName": "Soft shield fern",
+      "type": "fern",
+      "heightCm": 60,
+      "spreadCm": 75,
+      "light": [
+        "part_shade",
+        "full_shade"
+      ],
+      "soil": [
+        "clay",
+        "loam"
+      ],
+      "moisture": [
+        "average",
+        "moist"
+      ],
+      "flowerColours": [],
+      "floweringStart": null,
+      "floweringEnd": null,
+      "foliage": "evergreen",
+      "foliageColour": "green",
+      "hardiness": "H7",
+      "maintenance": "low",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "pollinatorValue": 1,
+      "plantsPerSqM": 3,
+      "description": "Evergreen, finely divided fronds with a soft, mossy texture.",
+      "notes": "",
+      "design": {
+        "styles": [
+          "naturalistic",
+          "contemporary",
+          "cottage"
+        ],
+        "position": [
+          "front_middle",
+          "middle"
+        ],
+        "habit": "clumping",
+        "visualDensity": "high",
+        "placementFlexibility": "medium",
+        "layer": "matrix",
+        "groupingMode": "clump",
+        "allowSingleton": false,
+        "designRoles": [
+          "repetition",
+          "winter_interest"
+        ],
+        "roles": {
+          "preferred": "repeated_clump",
+          "supported": [
+            "repeated_clump",
+            "groundcover"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0.05,
+            0.55
+          ],
+          "hard": [
+            0,
+            0.85
+          ]
+        },
+        "transparency": {
+          "base": 0.05,
+          "upper": 0.3
+        },
+        "spreadHabit": "clumping"
+      }
+    },
+    {
+      "id": "kniphofia-tawny-king",
+      "botanicalName": "Kniphofia 'Tawny King'",
+      "commonName": "Red hot poker",
+      "type": "perennial",
+      "heightCm": 100,
+      "spreadCm": 50,
+      "light": [
+        "full_sun"
+      ],
+      "soil": [
+        "loam",
+        "sandy"
+      ],
+      "moisture": [
+        "dry",
+        "average"
+      ],
+      "flowerColours": [
+        "apricot",
+        "orange"
+      ],
+      "floweringStart": 7,
+      "floweringEnd": 10,
+      "foliage": "semi-evergreen",
+      "foliageColour": "green",
+      "hardiness": "H5",
+      "maintenance": "low",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "pollinatorValue": 4,
+      "plantsPerSqM": 4,
+      "description": "Bronze buds opening to soft apricot and cream pokers from midsummer.",
+      "notes": "",
+      "design": {
+        "styles": [
+          "naturalistic",
+          "contemporary"
+        ],
+        "position": [
+          "middle",
+          "middle_back"
+        ],
+        "habit": "vertical_accent",
+        "visualDensity": "medium",
+        "placementFlexibility": "medium",
+        "layer": "structural",
+        "groupingMode": "clump",
+        "allowSingleton": false,
+        "designRoles": [
+          "structure",
+          "repetition",
+          "late_season",
+          "seasonal_interest"
+        ],
+        "roles": {
+          "preferred": "repeated_clump",
+          "supported": [
+            "repeated_clump",
+            "structural_anchor"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0.2,
+            0.7
+          ],
+          "hard": [
+            0.05,
+            0.95
+          ]
+        },
+        "transparency": {
+          "base": 0.05,
+          "upper": 0.6
+        },
+        "spreadHabit": "clumping"
+      }
+    },
+    {
+      "id": "digitalis-ferruginea",
+      "botanicalName": "Digitalis ferruginea",
+      "commonName": "Rusty foxglove",
+      "type": "perennial",
+      "heightCm": 120,
+      "spreadCm": 40,
+      "light": [
+        "full_sun",
+        "part_shade"
+      ],
+      "soil": [
+        "clay",
+        "loam",
+        "sandy"
+      ],
+      "moisture": [
+        "dry",
+        "average"
+      ],
+      "flowerColours": [
+        "apricot"
+      ],
+      "floweringStart": 6,
+      "floweringEnd": 8,
+      "foliage": "semi-evergreen",
+      "foliageColour": "green",
+      "hardiness": "H6",
+      "maintenance": "low",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "pollinatorValue": 5,
+      "plantsPerSqM": 5,
+      "description": "Slim spires of small rust-amber bells. Short-lived but seeds gently.",
+      "notes": "Biennial or short-lived perennial.",
+      "design": {
+        "styles": [
+          "naturalistic"
+        ],
+        "position": [
+          "front_middle",
+          "middle",
+          "middle_back"
+        ],
+        "habit": "airy",
+        "visualDensity": "low",
+        "placementFlexibility": "high",
+        "layer": "emergent",
+        "groupingMode": "emergent_group",
+        "allowSingleton": false,
+        "designRoles": [
+          "emergent",
+          "winter_interest"
+        ],
+        "roles": {
+          "preferred": "emergent",
+          "supported": [
+            "emergent",
+            "repeated_clump"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0.1,
+            0.85
+          ],
+          "hard": [
+            0,
+            1
+          ]
+        },
+        "transparency": {
+          "base": 0.2,
+          "upper": 0.75
+        },
+        "spreadHabit": "self_seeding",
+        "roleTraits": {
+          "emergent": {
+            "baseOccupancy": 0.3
+          }
+        }
+      }
+    },
+    {
+      "id": "euphorbia-fireglow",
+      "botanicalName": "Euphorbia griffithii 'Fireglow'",
+      "commonName": "Griffith’s spurge",
+      "type": "perennial",
+      "heightCm": 90,
+      "spreadCm": 60,
+      "light": [
+        "full_sun",
+        "part_shade"
+      ],
+      "soil": [
+        "clay",
+        "loam"
+      ],
+      "moisture": [
+        "average",
+        "moist"
+      ],
+      "flowerColours": [
+        "orange"
+      ],
+      "floweringStart": 5,
+      "floweringEnd": 7,
+      "foliage": "deciduous",
+      "foliageColour": "green",
+      "hardiness": "H7",
+      "maintenance": "low",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "pollinatorValue": 2,
+      "plantsPerSqM": 3,
+      "description": "Flame-orange heads in early summer on red-ribbed stems. Spreads by runners.",
+      "notes": "Sap is a skin irritant.",
+      "design": {
+        "styles": [
+          "naturalistic",
+          "contemporary"
+        ],
+        "position": [
+          "middle"
+        ],
+        "habit": "clumping",
+        "visualDensity": "high",
+        "placementFlexibility": "medium",
+        "layer": "matrix",
+        "groupingMode": "clump",
+        "allowSingleton": false,
+        "designRoles": [
+          "repetition",
+          "early_season"
+        ],
+        "roles": {
+          "preferred": "primary_drift",
+          "supported": [
+            "primary_drift"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0.25,
+            0.7
+          ],
+          "hard": [
+            0.05,
+            0.95
+          ]
+        },
+        "transparency": {
+          "base": 0.05,
+          "upper": 0.25
+        },
+        "spreadHabit": "running"
+      }
+    },
+    {
+      "id": "geranium-psilostemon",
+      "botanicalName": "Geranium psilostemon",
+      "commonName": "Armenian cranesbill",
+      "type": "perennial",
+      "heightCm": 100,
+      "spreadCm": 90,
+      "light": [
+        "full_sun",
+        "part_shade"
+      ],
+      "soil": [
+        "clay",
+        "loam",
+        "sandy"
+      ],
+      "moisture": [
+        "average",
+        "moist"
+      ],
+      "flowerColours": [
+        "magenta"
+      ],
+      "floweringStart": 6,
+      "floweringEnd": 8,
+      "foliage": "deciduous",
+      "foliageColour": "green",
+      "hardiness": "H7",
+      "maintenance": "low",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "pollinatorValue": 5,
+      "plantsPerSqM": 2,
+      "description": "Vivid magenta flowers with a black eye, scrambling through neighbours.",
+      "notes": "",
+      "design": {
+        "styles": [
+          "cottage",
+          "naturalistic"
+        ],
+        "position": [
+          "middle",
+          "middle_back"
+        ],
+        "habit": "spreading",
+        "visualDensity": "high",
+        "placementFlexibility": "medium",
+        "layer": "base",
+        "groupingMode": "large_clump",
+        "allowSingleton": false,
+        "designRoles": [
+          "repetition"
+        ],
+        "roles": {
+          "preferred": "primary_drift",
+          "supported": [
+            "primary_drift"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0.3,
+            0.75
+          ],
+          "hard": [
+            0.1,
+            0.95
+          ]
+        },
+        "transparency": {
+          "base": 0.05,
+          "upper": 0.35
+        },
+        "spreadHabit": "spreading"
+      }
+    },
+    {
+      "id": "achillea-walther-funcke",
+      "botanicalName": "Achillea 'Walther Funcke'",
+      "commonName": "Yarrow",
+      "type": "perennial",
+      "heightCm": 60,
+      "spreadCm": 50,
+      "light": [
+        "full_sun"
+      ],
+      "soil": [
+        "loam",
+        "sandy"
+      ],
+      "moisture": [
+        "dry",
+        "average"
+      ],
+      "flowerColours": [
+        "orange",
+        "red"
+      ],
+      "floweringStart": 6,
+      "floweringEnd": 9,
+      "foliage": "deciduous",
+      "foliageColour": "grey-green",
+      "hardiness": "H7",
+      "maintenance": "low",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "pollinatorValue": 5,
+      "plantsPerSqM": 5,
+      "description": "Brick-orange flower plates with yellow eyes over grey, feathery foliage.",
+      "notes": "",
+      "design": {
+        "styles": [
+          "cottage",
+          "naturalistic"
+        ],
+        "position": [
+          "front_middle",
+          "middle"
+        ],
+        "habit": "clumping",
+        "visualDensity": "medium",
+        "placementFlexibility": "medium",
+        "layer": "matrix",
+        "groupingMode": "clump",
+        "allowSingleton": false,
+        "designRoles": [
+          "repetition",
+          "seasonal_interest"
+        ],
+        "roles": {
+          "preferred": "repeated_clump",
+          "supported": [
+            "repeated_clump",
+            "primary_drift"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0.05,
+            0.55
+          ],
+          "hard": [
+            0,
+            0.8
+          ]
+        },
+        "transparency": {
+          "base": 0.15,
+          "upper": 0.4
+        },
+        "spreadHabit": "clumping"
+      }
+    }
+  ]
+}
