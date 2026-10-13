@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-10-13T07:08:00+01:00",
+  "updated": "2026-10-13T09:35:00+01:00",
   "assets": {
     "alchemilla-mollis": {
       "file": "assets/plant-watercolours/alchemilla-mollis.webp",
@@ -22,9 +22,14 @@
     },
     "geranium-rozanne": {
       "file": "assets/plant-watercolours/geranium-rozanne.webp",
-      "status": "reprocessed-v2",
+      "status": "warning",
       "pixelsPerCm": 10,
-      "updated": "2026-10-13T07:08:00+01:00"
+      "canonicalHeightPx": 500,
+      "expectedSpreadPx": 800,
+      "actualWidthPx": 959,
+      "actualHeightPx": 500,
+      "ratioErrorRelative": 0.199,
+      "updated": "2026-10-13T09:35:00+01:00"
     },
     "geum-totally-tangerine": {
       "file": "assets/plant-watercolours/geum-totally-tangerine.webp",
