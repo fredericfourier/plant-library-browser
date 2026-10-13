@@ -1,24 +1,39 @@
 {
-  "schemaVersion": 1,
-  "updated": "2026-10-13T09:35:00+01:00",
+  "schemaVersion": 2,
+  "updated": "2026-10-13T10:34:00+01:00",
   "assets": {
     "alchemilla-mollis": {
       "file": "assets/plant-watercolours/alchemilla-mollis.webp",
-      "status": "reprocessed-v2",
+      "status": "ready",
       "pixelsPerCm": 10,
-      "updated": "2026-10-13T07:08:00+01:00"
+      "canonicalHeightPx": 400,
+      "expectedSpreadPx": 500,
+      "actualWidthPx": 467,
+      "actualHeightPx": 400,
+      "ratioErrorRelative": -0.066,
+      "updated": "2026-10-13T10:34:00+01:00"
     },
     "echinacea-purpurea": {
       "file": "assets/plant-watercolours/echinacea-purpurea.webp",
-      "status": "reprocessed-v2",
+      "status": "needs-review",
       "pixelsPerCm": 10,
-      "updated": "2026-10-13T07:08:00+01:00"
+      "canonicalHeightPx": 1000,
+      "expectedSpreadPx": 450,
+      "actualWidthPx": 621,
+      "actualHeightPx": 1000,
+      "ratioErrorRelative": 0.38,
+      "updated": "2026-10-13T10:34:00+01:00"
     },
     "echinacea-white-swan": {
       "file": "assets/plant-watercolours/echinacea-white-swan.webp",
-      "status": "reprocessed-v2",
+      "status": "warning",
       "pixelsPerCm": 10,
-      "updated": "2026-10-13T07:08:00+01:00"
+      "canonicalHeightPx": 700,
+      "expectedSpreadPx": 450,
+      "actualWidthPx": 524,
+      "actualHeightPx": 700,
+      "ratioErrorRelative": 0.164,
+      "updated": "2026-10-13T10:34:00+01:00"
     },
     "geranium-rozanne": {
       "file": "assets/plant-watercolours/geranium-rozanne.webp",
@@ -33,21 +48,36 @@
     },
     "geum-totally-tangerine": {
       "file": "assets/plant-watercolours/geum-totally-tangerine.webp",
-      "status": "reprocessed-v2",
+      "status": "ready",
       "pixelsPerCm": 10,
-      "updated": "2026-10-13T07:08:00+01:00"
+      "canonicalHeightPx": 800,
+      "expectedSpreadPx": 500,
+      "actualWidthPx": 549,
+      "actualHeightPx": 800,
+      "ratioErrorRelative": 0.098,
+      "updated": "2026-10-13T10:34:00+01:00"
     },
     "nepeta-walkers-low": {
       "file": "assets/plant-watercolours/nepeta-walkers-low.webp",
-      "status": "reprocessed-v2",
+      "status": "warning",
       "pixelsPerCm": 10,
-      "updated": "2026-10-13T07:08:00+01:00"
+      "canonicalHeightPx": 600,
+      "expectedSpreadPx": 750,
+      "actualWidthPx": 884,
+      "actualHeightPx": 600,
+      "ratioErrorRelative": 0.179,
+      "updated": "2026-10-13T10:34:00+01:00"
     },
     "salvia-caradonna": {
       "file": "assets/plant-watercolours/salvia-caradonna.webp",
-      "status": "reprocessed-v2",
+      "status": "ready",
       "pixelsPerCm": 10,
-      "updated": "2026-10-13T07:08:00+01:00"
+      "canonicalHeightPx": 600,
+      "expectedSpreadPx": 400,
+      "actualWidthPx": 385,
+      "actualHeightPx": 600,
+      "ratioErrorRelative": -0.037,
+      "updated": "2026-10-13T10:34:00+01:00"
     }
   },
   "pixelsPerCm": 10
