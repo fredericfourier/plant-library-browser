@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 6,
+  "schemaVersion": 7,
   "updated": "2026-10-13",
   "plants": [
     {
@@ -89,6 +89,19 @@
         "hardFailTolerance": 0.25,
         "scaleMode": "uniform",
         "groundAnchor": "bottom"
+      },
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS Plant Finder",
+            "url": "https://www.rhs.org.uk/plants/search-results?query=Salvia%20nemorosa%20'Caradonna'",
+            "checked": "2026-10-13"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS profile/cultivar-group review; 2–5 years is the matching RHS maturity band pending exact-profile refinement"
       }
     },
     {
@@ -177,6 +190,19 @@
         "hardFailTolerance": 0.25,
         "scaleMode": "uniform",
         "groundAnchor": "bottom"
+      },
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS Plant Finder",
+            "url": "https://www.rhs.org.uk/plants/search-results?query=Salvia%20'Amistad'",
+            "checked": "2026-10-13"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS profile/cultivar-group review; 2–5 years is the matching RHS maturity band pending exact-profile refinement"
       }
     },
     {
@@ -272,7 +298,8 @@
             "checked": "2026-10-13"
           }
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "basis": "RHS profile"
       },
       "watercolourEnvelope": {
         "ratio": 1.6,
@@ -376,6 +403,19 @@
         "hardFailTolerance": 0.25,
         "scaleMode": "uniform",
         "groundAnchor": "bottom"
+      },
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS",
+            "url": "https://www.rhs.org.uk/plants/97812/geranium-macrorrhizum-ingwersen-s-variety/details/",
+            "checked": "2026-10-13"
+          }
+        ],
+        "confidence": "high",
+        "basis": "RHS profile"
       }
     },
     {
@@ -468,7 +508,8 @@
             "checked": "2026-10-13"
           }
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "basis": "RHS profile"
       },
       "watercolourEnvelope": {
         "ratio": 1.25,
@@ -572,7 +613,8 @@
             "checked": "2026-10-13"
           }
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "basis": "RHS profile"
       },
       "watercolourEnvelope": {
         "ratio": 0.625,
@@ -678,6 +720,19 @@
         "hardFailTolerance": 0.25,
         "scaleMode": "uniform",
         "groundAnchor": "bottom"
+      },
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS Plant Finder",
+            "url": "https://www.rhs.org.uk/plants/search-results?query=Knautia%20macedonica",
+            "checked": "2026-10-13"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS profile/cultivar-group review; 2–5 years is the matching RHS maturity band pending exact-profile refinement"
       }
     },
     {
@@ -774,6 +829,19 @@
         "hardFailTolerance": 0.25,
         "scaleMode": "uniform",
         "groundAnchor": "bottom"
+      },
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS Plant Finder",
+            "url": "https://www.rhs.org.uk/plants/search-results?query=Verbena%20bonariensis",
+            "checked": "2026-10-13"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS profile/cultivar-group review; 2–5 years is the matching RHS maturity band pending exact-profile refinement"
       }
     },
     {
@@ -865,6 +933,19 @@
         "hardFailTolerance": 0.25,
         "scaleMode": "uniform",
         "groundAnchor": "bottom"
+      },
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS Plant Finder",
+            "url": "https://www.rhs.org.uk/plants/search-results?query=Echinacea%20purpurea",
+            "checked": "2026-10-13"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS profile/cultivar-group review; 2–5 years is the matching RHS maturity band pending exact-profile refinement"
       }
     },
     {
@@ -953,6 +1034,19 @@
         "hardFailTolerance": 0.25,
         "scaleMode": "uniform",
         "groundAnchor": "bottom"
+      },
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS Plant Finder",
+            "url": "https://www.rhs.org.uk/plants/search-results?query=Echinacea%20purpurea%20'White%20Swan'",
+            "checked": "2026-10-13"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS profile/cultivar-group review; 2–5 years is the matching RHS maturity band pending exact-profile refinement"
       }
     },
     {
@@ -1041,6 +1135,19 @@
         "hardFailTolerance": 0.25,
         "scaleMode": "uniform",
         "groundAnchor": "bottom"
+      },
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS Plant Finder",
+            "url": "https://www.rhs.org.uk/plants/search-results?query=Achillea%20millefolium%20'Terracotta'",
+            "checked": "2026-10-13"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS profile/cultivar-group review; 2–5 years is the matching RHS maturity band pending exact-profile refinement"
       }
     },
     {
@@ -1128,6 +1235,19 @@
         "hardFailTolerance": 0.25,
         "scaleMode": "uniform",
         "groundAnchor": "bottom"
+      },
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS Plant Finder",
+            "url": "https://www.rhs.org.uk/plants/search-results?query=Achillea%20'Moonshine'",
+            "checked": "2026-10-13"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS profile/cultivar-group review; 2–5 years is the matching RHS maturity band pending exact-profile refinement"
       }
     },
     {
@@ -1215,6 +1335,19 @@
         "hardFailTolerance": 0.25,
         "scaleMode": "uniform",
         "groundAnchor": "bottom"
+      },
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS Plant Finder",
+            "url": "https://www.rhs.org.uk/plants/search-results?query=Astrantia%20major%20'Roma'",
+            "checked": "2026-10-13"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS profile/cultivar-group review; 2–5 years is the matching RHS maturity band pending exact-profile refinement"
       }
     },
     {
@@ -1303,6 +1436,19 @@
         "hardFailTolerance": 0.25,
         "scaleMode": "uniform",
         "groundAnchor": "bottom"
+      },
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS Plant Finder",
+            "url": "https://www.rhs.org.uk/plants/search-results?query=Rudbeckia%20fulgida%20var.%20sullivantii%20'Goldsturm'",
+            "checked": "2026-10-13"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS profile/cultivar-group review; 2–5 years is the matching RHS maturity band pending exact-profile refinement"
       }
     },
     {
@@ -1391,6 +1537,19 @@
         "hardFailTolerance": 0.25,
         "scaleMode": "uniform",
         "groundAnchor": "bottom"
+      },
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS Plant Finder",
+            "url": "https://www.rhs.org.uk/plants/search-results?query=Helenium%20'Moerheim%20Beauty'",
+            "checked": "2026-10-13"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS profile/cultivar-group review; 2–5 years is the matching RHS maturity band pending exact-profile refinement"
       }
     },
     {
@@ -1480,6 +1639,19 @@
         "hardFailTolerance": 0.25,
         "scaleMode": "uniform",
         "groundAnchor": "bottom"
+      },
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS Plant Finder",
+            "url": "https://www.rhs.org.uk/plants/search-results?query=Persicaria%20amplexicaulis%20'Firetail'",
+            "checked": "2026-10-13"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS profile/cultivar-group review; 2–5 years is the matching RHS maturity band pending exact-profile refinement"
       }
     },
     {
@@ -1569,6 +1741,19 @@
         "hardFailTolerance": 0.25,
         "scaleMode": "uniform",
         "groundAnchor": "bottom"
+      },
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS Plant Finder",
+            "url": "https://www.rhs.org.uk/plants/search-results?query=Anemone%20%C3%97%20hybrida%20'Honorine%20Jobert'",
+            "checked": "2026-10-13"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS profile/cultivar-group review; 2–5 years is the matching RHS maturity band pending exact-profile refinement"
       }
     },
     {
@@ -1656,6 +1841,19 @@
         "hardFailTolerance": 0.25,
         "scaleMode": "uniform",
         "groundAnchor": "bottom"
+      },
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS Plant Finder",
+            "url": "https://www.rhs.org.uk/plants/search-results?query=Anemone%20hupehensis%20'Hadspen%20Abundance'",
+            "checked": "2026-10-13"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS profile/cultivar-group review; 2–5 years is the matching RHS maturity band pending exact-profile refinement"
       }
     },
     {
@@ -1746,6 +1944,19 @@
         "hardFailTolerance": 0.25,
         "scaleMode": "uniform",
         "groundAnchor": "bottom"
+      },
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS Plant Finder",
+            "url": "https://www.rhs.org.uk/plants/search-results?query=Hylotelephium%20'Herbstfreude'",
+            "checked": "2026-10-13"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS profile/cultivar-group review; 2–5 years is the matching RHS maturity band pending exact-profile refinement"
       }
     },
     {
@@ -1834,6 +2045,19 @@
         "hardFailTolerance": 0.25,
         "scaleMode": "uniform",
         "groundAnchor": "bottom"
+      },
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS Plant Finder",
+            "url": "https://www.rhs.org.uk/plants/search-results?query=Agastache%20'Blackadder'",
+            "checked": "2026-10-13"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS profile/cultivar-group review; 2–5 years is the matching RHS maturity band pending exact-profile refinement"
       }
     },
     {
@@ -1928,6 +2152,19 @@
         "hardFailTolerance": 0.25,
         "scaleMode": "uniform",
         "groundAnchor": "bottom"
+      },
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS",
+            "url": "https://www.rhs.org.uk/plants/386413/oenothera-lindheimeri-%28g%29-white-gaura-lindheimer-s-beeblossom/details",
+            "checked": "2026-10-13"
+          }
+        ],
+        "confidence": "high",
+        "basis": "RHS profile"
       }
     },
     {
@@ -2020,6 +2257,19 @@
         "hardFailTolerance": 0.25,
         "scaleMode": "uniform",
         "groundAnchor": "bottom"
+      },
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS Plant Finder",
+            "url": "https://www.rhs.org.uk/plants/search-results?query=Eryngium%20planum%20'Blaukappe'",
+            "checked": "2026-10-13"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS profile/cultivar-group review; 2–5 years is the matching RHS maturity band pending exact-profile refinement"
       }
     },
     {
@@ -2107,6 +2357,19 @@
         "hardFailTolerance": 0.25,
         "scaleMode": "uniform",
         "groundAnchor": "bottom"
+      },
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS",
+            "url": "https://www.rhs.org.uk/plants/383693/salvia-blue-spire-%28pe%29-perovskia-blue-spire-sage-blue-spire/details",
+            "checked": "2026-10-13"
+          }
+        ],
+        "confidence": "high",
+        "basis": "RHS profile"
       }
     },
     {
@@ -2194,6 +2457,19 @@
         "hardFailTolerance": 0.25,
         "scaleMode": "uniform",
         "groundAnchor": "bottom"
+      },
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS Plant Finder",
+            "url": "https://www.rhs.org.uk/plants/search-results?query=Lavandula%20angustifolia%20'Hidcote'",
+            "checked": "2026-10-13"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS profile/cultivar-group review; 2–5 years is the matching RHS maturity band pending exact-profile refinement"
       }
     },
     {
@@ -2288,6 +2564,19 @@
         "hardFailTolerance": 0.25,
         "scaleMode": "uniform",
         "groundAnchor": "bottom"
+      },
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS Plant Finder",
+            "url": "https://www.rhs.org.uk/plants/search-results?query=Thalictrum%20delavayi",
+            "checked": "2026-10-13"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS profile/cultivar-group review; 2–5 years is the matching RHS maturity band pending exact-profile refinement"
       }
     },
     {
@@ -2380,6 +2669,19 @@
         "hardFailTolerance": 0.25,
         "scaleMode": "uniform",
         "groundAnchor": "bottom"
+      },
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS Plant Finder",
+            "url": "https://www.rhs.org.uk/plants/search-results?query=Sanguisorba%20officinalis%20'Red%20Thunder'",
+            "checked": "2026-10-13"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS profile/cultivar-group review; 2–5 years is the matching RHS maturity band pending exact-profile refinement"
       }
     },
     {
@@ -2468,6 +2770,19 @@
         "hardFailTolerance": 0.25,
         "scaleMode": "uniform",
         "groundAnchor": "bottom"
+      },
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS Plant Finder",
+            "url": "https://www.rhs.org.uk/plants/search-results?query=Veronicastrum%20virginicum%20'Album'",
+            "checked": "2026-10-13"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS profile/cultivar-group review; 2–5 years is the matching RHS maturity band pending exact-profile refinement"
       }
     },
     {
@@ -2554,6 +2869,19 @@
         "hardFailTolerance": 0.25,
         "scaleMode": "uniform",
         "groundAnchor": "bottom"
+      },
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS Plant Finder",
+            "url": "https://www.rhs.org.uk/plants/search-results?query=Eutrochium%20maculatum%20'Atropurpureum'",
+            "checked": "2026-10-13"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS profile/cultivar-group review; 2–5 years is the matching RHS maturity band pending exact-profile refinement"
       }
     },
     {
@@ -2638,6 +2966,19 @@
         "hardFailTolerance": 0.25,
         "scaleMode": "uniform",
         "groundAnchor": "bottom"
+      },
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS Plant Finder",
+            "url": "https://www.rhs.org.uk/plants/search-results?query=Leucanthemum%20%C3%97%20superbum%20'Becky'",
+            "checked": "2026-10-13"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS profile/cultivar-group review; 2–5 years is the matching RHS maturity band pending exact-profile refinement"
       }
     },
     {
@@ -2725,6 +3066,19 @@
         "hardFailTolerance": 0.25,
         "scaleMode": "uniform",
         "groundAnchor": "bottom"
+      },
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS Plant Finder",
+            "url": "https://www.rhs.org.uk/plants/search-results?query=Hemerocallis%20'Stafford'",
+            "checked": "2026-10-13"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS profile/cultivar-group review; 2–5 years is the matching RHS maturity band pending exact-profile refinement"
       }
     },
     {
@@ -2812,6 +3166,19 @@
         "hardFailTolerance": 0.25,
         "scaleMode": "uniform",
         "groundAnchor": "bottom"
+      },
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS Plant Finder",
+            "url": "https://www.rhs.org.uk/plants/search-results?query=Crocosmia%20'Lucifer'",
+            "checked": "2026-10-13"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS profile/cultivar-group review; 2–5 years is the matching RHS maturity band pending exact-profile refinement"
       }
     },
     {
@@ -2901,6 +3268,19 @@
         "hardFailTolerance": 0.25,
         "scaleMode": "uniform",
         "groundAnchor": "bottom"
+      },
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS Plant Finder",
+            "url": "https://www.rhs.org.uk/plants/search-results?query=Symphyotrichum%20'Little%20Carlow'",
+            "checked": "2026-10-13"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS profile/cultivar-group review; 2–5 years is the matching RHS maturity band pending exact-profile refinement"
       }
     },
     {
@@ -2989,6 +3369,19 @@
         "hardFailTolerance": 0.25,
         "scaleMode": "uniform",
         "groundAnchor": "bottom"
+      },
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS Plant Finder",
+            "url": "https://www.rhs.org.uk/plants/search-results?query=Aster%20%C3%97%20frikartii%20'M%C3%B6nch'",
+            "checked": "2026-10-13"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS profile/cultivar-group review; 2–5 years is the matching RHS maturity band pending exact-profile refinement"
       }
     },
     {
@@ -3075,6 +3468,19 @@
         "hardFailTolerance": 0.25,
         "scaleMode": "uniform",
         "groundAnchor": "bottom"
+      },
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS Plant Finder",
+            "url": "https://www.rhs.org.uk/plants/search-results?query=Penstemon%20'Andenken%20an%20Friedrich%20Hahn'",
+            "checked": "2026-10-13"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS profile/cultivar-group review; 2–5 years is the matching RHS maturity band pending exact-profile refinement"
       }
     },
     {
@@ -3164,6 +3570,19 @@
         "hardFailTolerance": 0.25,
         "scaleMode": "uniform",
         "groundAnchor": "bottom"
+      },
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS",
+            "url": "https://www.rhs.org.uk/plants/32487/erigeron-karvinskianus/details/",
+            "checked": "2026-10-13"
+          }
+        ],
+        "confidence": "high",
+        "basis": "RHS profile"
       }
     },
     {
@@ -3254,6 +3673,19 @@
         "hardFailTolerance": 0.25,
         "scaleMode": "uniform",
         "groundAnchor": "bottom"
+      },
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS Plant Finder",
+            "url": "https://www.rhs.org.uk/plants/search-results?query=Iris%20sibirica%20'Silver%20Edge'",
+            "checked": "2026-10-13"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS profile/cultivar-group review; 2–5 years is the matching RHS maturity band pending exact-profile refinement"
       }
     },
     {
@@ -3342,6 +3774,19 @@
         "hardFailTolerance": 0.25,
         "scaleMode": "uniform",
         "groundAnchor": "bottom"
+      },
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS",
+            "url": "https://www.rhs.org.uk/plants/57088/allium-hollandicum-purple-sensation/details/",
+            "checked": "2026-10-13"
+          }
+        ],
+        "confidence": "high",
+        "basis": "RHS profile"
       }
     },
     {
@@ -3438,6 +3883,19 @@
         "hardFailTolerance": 0.25,
         "scaleMode": "uniform",
         "groundAnchor": "bottom"
+      },
+      "maturity": {
+        "minYears": 1,
+        "maxYears": 2,
+        "sources": [
+          {
+            "name": "RHS",
+            "url": "https://www.rhs.org.uk/plants/5862/digitalis-purpurea/details/",
+            "checked": "2026-10-13"
+          }
+        ],
+        "confidence": "high",
+        "basis": "RHS profile"
       }
     },
     {
@@ -3525,6 +3983,19 @@
         "hardFailTolerance": 0.25,
         "scaleMode": "uniform",
         "groundAnchor": "bottom"
+      },
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS Plant Finder",
+            "url": "https://www.rhs.org.uk/plants/search-results?query=Aruncus%20dioicus",
+            "checked": "2026-10-13"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS profile/cultivar-group review; 2–5 years is the matching RHS maturity band pending exact-profile refinement"
       }
     },
     {
@@ -3616,6 +4087,19 @@
         "hardFailTolerance": 0.25,
         "scaleMode": "uniform",
         "groundAnchor": "bottom"
+      },
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS Plant Finder",
+            "url": "https://www.rhs.org.uk/plants/search-results?query=Phlomis%20russeliana",
+            "checked": "2026-10-13"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS profile/cultivar-group review; 2–5 years is the matching RHS maturity band pending exact-profile refinement"
       }
     },
     {
@@ -3704,6 +4188,19 @@
         "hardFailTolerance": 0.25,
         "scaleMode": "uniform",
         "groundAnchor": "bottom"
+      },
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS Plant Finder",
+            "url": "https://www.rhs.org.uk/plants/search-results?query=Cenolophium%20denudatum",
+            "checked": "2026-10-13"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS profile/cultivar-group review; 2–5 years is the matching RHS maturity band pending exact-profile refinement"
       }
     },
     {
@@ -3792,6 +4289,19 @@
         "hardFailTolerance": 0.25,
         "scaleMode": "uniform",
         "groundAnchor": "bottom"
+      },
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS Plant Finder",
+            "url": "https://www.rhs.org.uk/plants/search-results?query=Euphorbia%20characias%20subsp.%20wulfenii",
+            "checked": "2026-10-13"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS profile/cultivar-group review; 2–5 years is the matching RHS maturity band pending exact-profile refinement"
       }
     },
     {
@@ -3883,6 +4393,19 @@
         "hardFailTolerance": 0.25,
         "scaleMode": "uniform",
         "groundAnchor": "bottom"
+      },
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS Plant Finder",
+            "url": "https://www.rhs.org.uk/plants/search-results?query=Euphorbia%20epithymoides",
+            "checked": "2026-10-13"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS profile/cultivar-group review; 2–5 years is the matching RHS maturity band pending exact-profile refinement"
       }
     },
     {
@@ -3973,6 +4496,19 @@
         "hardFailTolerance": 0.25,
         "scaleMode": "uniform",
         "groundAnchor": "bottom"
+      },
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS Plant Finder",
+            "url": "https://www.rhs.org.uk/plants/search-results?query=Alchemilla%20mollis",
+            "checked": "2026-10-13"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS profile/cultivar-group review; 2–5 years is the matching RHS maturity band pending exact-profile refinement"
       }
     },
     {
@@ -4058,6 +4594,19 @@
         "hardFailTolerance": 0.25,
         "scaleMode": "uniform",
         "groundAnchor": "bottom"
+      },
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS Plant Finder",
+            "url": "https://www.rhs.org.uk/plants/search-results?query=Heuchera%20micrantha%20'Palace%20Purple'",
+            "checked": "2026-10-13"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS profile/cultivar-group review; 2–5 years is the matching RHS maturity band pending exact-profile refinement"
       }
     },
     {
@@ -4148,6 +4697,19 @@
         "hardFailTolerance": 0.25,
         "scaleMode": "uniform",
         "groundAnchor": "bottom"
+      },
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS Plant Finder",
+            "url": "https://www.rhs.org.uk/plants/search-results?query=Brunnera%20macrophylla%20'Jack%20Frost'",
+            "checked": "2026-10-13"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS profile/cultivar-group review; 2–5 years is the matching RHS maturity band pending exact-profile refinement"
       }
     },
     {
@@ -4235,6 +4797,19 @@
         "hardFailTolerance": 0.25,
         "scaleMode": "uniform",
         "groundAnchor": "bottom"
+      },
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS Plant Finder",
+            "url": "https://www.rhs.org.uk/plants/search-results?query=Pulmonaria%20'Blue%20Ensign'",
+            "checked": "2026-10-13"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS profile/cultivar-group review; 2–5 years is the matching RHS maturity band pending exact-profile refinement"
       }
     },
     {
@@ -4326,6 +4901,19 @@
         "hardFailTolerance": 0.25,
         "scaleMode": "uniform",
         "groundAnchor": "bottom"
+      },
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS Plant Finder",
+            "url": "https://www.rhs.org.uk/plants/search-results?query=Helleborus%20%C3%97%20hybridus",
+            "checked": "2026-10-13"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS profile/cultivar-group review; 2–5 years is the matching RHS maturity band pending exact-profile refinement"
       }
     },
     {
@@ -4416,6 +5004,19 @@
         "hardFailTolerance": 0.25,
         "scaleMode": "uniform",
         "groundAnchor": "bottom"
+      },
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS Plant Finder",
+            "url": "https://www.rhs.org.uk/plants/search-results?query=Epimedium%20%C3%97%20versicolor%20'Sulphureum'",
+            "checked": "2026-10-13"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS profile/cultivar-group review; 2–5 years is the matching RHS maturity band pending exact-profile refinement"
       }
     },
     {
@@ -4510,6 +5111,19 @@
         "hardFailTolerance": 0.25,
         "scaleMode": "uniform",
         "groundAnchor": "bottom"
+      },
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS Plant Finder",
+            "url": "https://www.rhs.org.uk/plants/search-results?query=Stipa%20gigantea",
+            "checked": "2026-10-13"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS profile/cultivar-group review; 2–5 years is the matching RHS maturity band pending exact-profile refinement"
       }
     },
     {
@@ -4599,6 +5213,19 @@
         "hardFailTolerance": 0.25,
         "scaleMode": "uniform",
         "groundAnchor": "bottom"
+      },
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS",
+            "url": "https://www.rhs.org.uk/plants/58857/stipa-tenuissima/details/",
+            "checked": "2026-10-13"
+          }
+        ],
+        "confidence": "high",
+        "basis": "RHS profile"
       }
     },
     {
@@ -4692,6 +5319,19 @@
         "hardFailTolerance": 0.25,
         "scaleMode": "uniform",
         "groundAnchor": "bottom"
+      },
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS Plant Finder",
+            "url": "https://www.rhs.org.uk/plants/search-results?query=Calamagrostis%20%C3%97%20acutiflora%20'Karl%20Foerster'",
+            "checked": "2026-10-13"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS profile/cultivar-group review; 2–5 years is the matching RHS maturity band pending exact-profile refinement"
       }
     },
     {
@@ -4787,6 +5427,19 @@
         "hardFailTolerance": 0.25,
         "scaleMode": "uniform",
         "groundAnchor": "bottom"
+      },
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS",
+            "url": "https://www.rhs.org.uk/plants/48168/molinia-caerulea-subsp-arundinacea/details/",
+            "checked": "2026-10-13"
+          }
+        ],
+        "confidence": "high",
+        "basis": "RHS profile"
       }
     },
     {
@@ -4876,6 +5529,19 @@
         "hardFailTolerance": 0.25,
         "scaleMode": "uniform",
         "groundAnchor": "bottom"
+      },
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS",
+            "url": "https://www.rhs.org.uk/plants/114437/deschampsia-cespitosa-goldtau/details/",
+            "checked": "2026-10-13"
+          }
+        ],
+        "confidence": "high",
+        "basis": "RHS profile"
       }
     },
     {
@@ -4967,6 +5633,19 @@
         "hardFailTolerance": 0.25,
         "scaleMode": "uniform",
         "groundAnchor": "bottom"
+      },
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS",
+            "url": "https://www.rhs.org.uk/plants/71003/sesleria-autumnalis/details/",
+            "checked": "2026-10-13"
+          }
+        ],
+        "confidence": "high",
+        "basis": "RHS profile"
       }
     },
     {
@@ -5054,6 +5733,19 @@
         "hardFailTolerance": 0.25,
         "scaleMode": "uniform",
         "groundAnchor": "bottom"
+      },
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS",
+            "url": "https://www.rhs.org.uk/plants/33668/hakonechloa-macra/details/",
+            "checked": "2026-10-13"
+          }
+        ],
+        "confidence": "high",
+        "basis": "RHS profile"
       }
     },
     {
@@ -5141,6 +5833,19 @@
         "hardFailTolerance": 0.25,
         "scaleMode": "uniform",
         "groundAnchor": "bottom"
+      },
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS Plant Finder",
+            "url": "https://www.rhs.org.uk/plants/search-results?query=Carex%20oshimensis%20'Evergold'",
+            "checked": "2026-10-13"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS profile/cultivar-group review; 2–5 years is the matching RHS maturity band pending exact-profile refinement"
       }
     },
     {
@@ -5227,6 +5932,19 @@
         "hardFailTolerance": 0.25,
         "scaleMode": "uniform",
         "groundAnchor": "bottom"
+      },
+      "maturity": {
+        "minYears": 5,
+        "maxYears": 10,
+        "sources": [
+          {
+            "name": "RHS",
+            "url": "https://www.rhs.org.uk/plants/114462/i-dryopteris-filix-mas-i/details/",
+            "checked": "2026-10-13"
+          }
+        ],
+        "confidence": "high",
+        "basis": "RHS profile"
       }
     },
     {
@@ -5314,6 +6032,19 @@
         "hardFailTolerance": 0.25,
         "scaleMode": "uniform",
         "groundAnchor": "bottom"
+      },
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS Plant Finder",
+            "url": "https://www.rhs.org.uk/plants/search-results?query=Polystichum%20setiferum",
+            "checked": "2026-10-13"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS profile/cultivar-group review; 2–5 years is the matching RHS maturity band pending exact-profile refinement"
       }
     },
     {
@@ -5404,6 +6135,19 @@
         "hardFailTolerance": 0.25,
         "scaleMode": "uniform",
         "groundAnchor": "bottom"
+      },
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS",
+            "url": "https://www.rhs.org.uk/plants/115125/kniphofia-tawny-king/details/",
+            "checked": "2026-10-13"
+          }
+        ],
+        "confidence": "high",
+        "basis": "RHS profile"
       }
     },
     {
@@ -5498,6 +6242,19 @@
         "hardFailTolerance": 0.25,
         "scaleMode": "uniform",
         "groundAnchor": "bottom"
+      },
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS",
+            "url": "https://www.rhs.org.uk/plants/41734/digitalis-ferruginea/details",
+            "checked": "2026-10-13"
+          }
+        ],
+        "confidence": "high",
+        "basis": "RHS profile"
       }
     },
     {
@@ -5584,6 +6341,19 @@
         "hardFailTolerance": 0.25,
         "scaleMode": "uniform",
         "groundAnchor": "bottom"
+      },
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS Plant Finder",
+            "url": "https://www.rhs.org.uk/plants/search-results?query=Euphorbia%20griffithii%20'Fireglow'",
+            "checked": "2026-10-13"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS profile/cultivar-group review; 2–5 years is the matching RHS maturity band pending exact-profile refinement"
       }
     },
     {
@@ -5671,6 +6441,19 @@
         "hardFailTolerance": 0.25,
         "scaleMode": "uniform",
         "groundAnchor": "bottom"
+      },
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS",
+            "url": "https://www.rhs.org.uk/plants/7919/i-geranium-psilostemon-i/details/",
+            "checked": "2026-10-13"
+          }
+        ],
+        "confidence": "high",
+        "basis": "RHS profile"
       }
     },
     {
@@ -5757,6 +6540,124 @@
         "expectedSpreadPx": 500,
         "ratioTolerance": 0.12,
         "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
+      },
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS Plant Finder",
+            "url": "https://www.rhs.org.uk/plants/search-results?query=Achillea%20'Walther%20Funcke'",
+            "checked": "2026-10-13"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS profile/cultivar-group review; 2–5 years is the matching RHS maturity band pending exact-profile refinement"
+      }
+    },
+    {
+      "id": "taxus-baccata-topiary",
+      "botanicalName": "Taxus baccata",
+      "commonName": "Clipped yew topiary ball",
+      "type": "shrub",
+      "heightCm": 100,
+      "spreadCm": 100,
+      "light": [
+        "full_sun",
+        "part_shade",
+        "full_shade"
+      ],
+      "soil": [
+        "clay",
+        "loam",
+        "sandy"
+      ],
+      "moisture": [
+        "average"
+      ],
+      "flowerColours": [],
+      "floweringStart": 3,
+      "floweringEnd": 4,
+      "foliage": "evergreen",
+      "foliageColour": "dark-green",
+      "hardiness": "H7",
+      "maintenance": "moderate",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "pollinatorValue": 1,
+      "plantsPerSqM": 1,
+      "description": "Dense evergreen yew maintained by clipping as an approximately 1 m topiary ball. The outline should be rounded but naturally irregular rather than geometrically perfect.",
+      "notes": "Maintained topiary dimensions, not the natural unpruned size of Taxus baccata.",
+      "design": {
+        "styles": [
+          "cottage",
+          "contemporary"
+        ],
+        "position": [
+          "middle",
+          "back"
+        ],
+        "habit": "clumping",
+        "visualDensity": "high",
+        "placementFlexibility": "low",
+        "layer": "structural",
+        "groupingMode": "specimen",
+        "allowSingleton": true,
+        "designRoles": [
+          "structure",
+          "winter_interest",
+          "focal"
+        ],
+        "roles": {
+          "preferred": "structural_anchor",
+          "supported": [
+            "structural_anchor"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0.45,
+            0.9
+          ],
+          "hard": [
+            0.25,
+            1
+          ]
+        },
+        "transparency": {
+          "base": 0,
+          "upper": 0.05
+        },
+        "spreadHabit": "clumping"
+      },
+      "maturity": {
+        "minYears": 5,
+        "maxYears": 10,
+        "sources": [
+          {
+            "name": "RHS",
+            "url": "https://www.rhs.org.uk/plants/345992/taxus-%C3%97-media-kazio/details",
+            "checked": "2026-10-13"
+          },
+          {
+            "name": "RHS topiary guide",
+            "url": "https://www.rhs.org.uk/plants/types/hedges/topiary",
+            "checked": "2026-10-13"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "Maintained 1 m topiary form; natural Taxus baccata itself is much slower and larger"
+      },
+      "watercolourEnvelope": {
+        "ratio": 1,
+        "shapeClass": "balanced_mounded",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 1000,
+        "expectedSpreadPx": 1000,
+        "ratioTolerance": 0.2,
+        "hardFailTolerance": 0.3,
         "scaleMode": "uniform",
         "groundAnchor": "bottom"
       }
