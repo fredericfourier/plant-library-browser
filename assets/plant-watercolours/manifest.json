@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "updated": "2026-10-13T10:34:00+01:00",
+  "updated": "2026-10-13T10:36:00+01:00",
   "assets": {
     "alchemilla-mollis": {
       "file": "assets/plant-watercolours/alchemilla-mollis.webp",
@@ -81,17 +81,15 @@
     },
     "taxus-baccata-topiary": {
       "file": "assets/plant-watercolours/taxus-baccata-topiary.webp",
-      "status": "ready-preview",
+      "status": "ready",
       "pixelsPerCm": 10,
       "canonicalHeightPx": 1000,
       "expectedSpreadPx": 1000,
-      "canonicalActualWidthPx": 1126,
-      "canonicalActualHeightPx": 1000,
+      "actualWidthPx": 1126,
+      "actualHeightPx": 1000,
       "ratioErrorRelative": 0.126,
-      "publicPreviewWidthPx": 181,
-      "publicPreviewHeightPx": 160,
-      "previewOnly": true,
-      "updated": "2026-10-13T10:34:00+01:00"
+      "previewOnly": false,
+      "updated": "2026-10-13T10:36:00+01:00"
     }
   },
   "pixelsPerCm": 10
