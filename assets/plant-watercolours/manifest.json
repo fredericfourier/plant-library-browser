@@ -1,34 +1,49 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-10-12",
+  "updated": "2026-10-13T07:08:00+01:00",
   "assets": {
     "alchemilla-mollis": {
       "file": "assets/plant-watercolours/alchemilla-mollis.webp",
-      "status": "prototype"
+      "status": "reprocessed-v2",
+      "pixelsPerCm": 10,
+      "updated": "2026-10-13T07:08:00+01:00"
     },
     "echinacea-purpurea": {
       "file": "assets/plant-watercolours/echinacea-purpurea.webp",
-      "status": "prototype"
+      "status": "reprocessed-v2",
+      "pixelsPerCm": 10,
+      "updated": "2026-10-13T07:08:00+01:00"
     },
     "echinacea-white-swan": {
       "file": "assets/plant-watercolours/echinacea-white-swan.webp",
-      "status": "prototype"
+      "status": "reprocessed-v2",
+      "pixelsPerCm": 10,
+      "updated": "2026-10-13T07:08:00+01:00"
     },
     "geranium-rozanne": {
       "file": "assets/plant-watercolours/geranium-rozanne.webp",
-      "status": "prototype"
+      "status": "reprocessed-v2",
+      "pixelsPerCm": 10,
+      "updated": "2026-10-13T07:08:00+01:00"
     },
     "geum-totally-tangerine": {
       "file": "assets/plant-watercolours/geum-totally-tangerine.webp",
-      "status": "prototype"
+      "status": "reprocessed-v2",
+      "pixelsPerCm": 10,
+      "updated": "2026-10-13T07:08:00+01:00"
     },
     "nepeta-walkers-low": {
       "file": "assets/plant-watercolours/nepeta-walkers-low.webp",
-      "status": "prototype"
+      "status": "reprocessed-v2",
+      "pixelsPerCm": 10,
+      "updated": "2026-10-13T07:08:00+01:00"
     },
     "salvia-caradonna": {
       "file": "assets/plant-watercolours/salvia-caradonna.webp",
-      "status": "prototype"
+      "status": "reprocessed-v2",
+      "pixelsPerCm": 10,
+      "updated": "2026-10-13T07:08:00+01:00"
     }
-  }
+  },
+  "pixelsPerCm": 10
 }
