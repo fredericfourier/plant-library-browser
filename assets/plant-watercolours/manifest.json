@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "updated": "2026-10-13T10:36:00+01:00",
+  "updated": "2026-10-13T14:12:00+01:00",
   "assets": {
     "alchemilla-mollis": {
       "file": "assets/plant-watercolours/alchemilla-mollis.webp",
@@ -26,14 +26,15 @@
     },
     "echinacea-white-swan": {
       "file": "assets/plant-watercolours/echinacea-white-swan.webp",
-      "status": "warning",
+      "status": "ready",
       "pixelsPerCm": 10,
       "canonicalHeightPx": 700,
       "expectedSpreadPx": 450,
-      "actualWidthPx": 524,
+      "actualWidthPx": 531,
       "actualHeightPx": 700,
-      "ratioErrorRelative": 0.164,
-      "updated": "2026-10-13T10:34:00+01:00"
+      "ratioErrorRelative": 0.18,
+      "userApprovedMorphology": true,
+      "updated": "2026-10-13T14:12:00+01:00"
     },
     "geranium-rozanne": {
       "file": "assets/plant-watercolours/geranium-rozanne.webp",
