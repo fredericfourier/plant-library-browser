@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 5,
+  "schemaVersion": 6,
   "updated": "2026-10-13",
   "plants": [
     {
@@ -78,6 +78,17 @@
           "upper": 0.45
         },
         "spreadHabit": "clumping"
+      },
+      "watercolourEnvelope": {
+        "ratio": 0.667,
+        "shapeClass": "narrow_upright",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 600,
+        "expectedSpreadPx": 400,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
       }
     },
     {
@@ -155,6 +166,17 @@
           "upper": 0.5
         },
         "spreadHabit": "clumping"
+      },
+      "watercolourEnvelope": {
+        "ratio": 0.5,
+        "shapeClass": "very_narrow_upright",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 1200,
+        "expectedSpreadPx": 600,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
       }
     },
     {
@@ -251,6 +273,17 @@
           }
         ],
         "confidence": "high"
+      },
+      "watercolourEnvelope": {
+        "ratio": 1.6,
+        "shapeClass": "broad_spreading",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 500,
+        "expectedSpreadPx": 800,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
       }
     },
     {
@@ -332,6 +365,17 @@
           "upper": 0.1
         },
         "spreadHabit": "running"
+      },
+      "watercolourEnvelope": {
+        "ratio": 2,
+        "shapeClass": "broad_spreading",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 300,
+        "expectedSpreadPx": 600,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
       }
     },
     {
@@ -425,6 +469,17 @@
           }
         ],
         "confidence": "high"
+      },
+      "watercolourEnvelope": {
+        "ratio": 1.25,
+        "shapeClass": "broad_mounded",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 600,
+        "expectedSpreadPx": 750,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
       }
     },
     {
@@ -518,6 +573,17 @@
           }
         ],
         "confidence": "high"
+      },
+      "watercolourEnvelope": {
+        "ratio": 0.625,
+        "shapeClass": "narrow_upright",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 800,
+        "expectedSpreadPx": 500,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
       }
     },
     {
@@ -601,6 +667,17 @@
             "baseOccupancy": 0.3
           }
         }
+      },
+      "watercolourEnvelope": {
+        "ratio": 0.714,
+        "shapeClass": "narrow_upright",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 700,
+        "expectedSpreadPx": 500,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
       }
     },
     {
@@ -686,6 +763,17 @@
             "baseOccupancy": 0.05
           }
         }
+      },
+      "watercolourEnvelope": {
+        "ratio": 0.3,
+        "shapeClass": "very_narrow_upright",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 1500,
+        "expectedSpreadPx": 450,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
       }
     },
     {
@@ -766,6 +854,17 @@
           "upper": 0.55
         },
         "spreadHabit": "clumping"
+      },
+      "watercolourEnvelope": {
+        "ratio": 0.45,
+        "shapeClass": "very_narrow_upright",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 1000,
+        "expectedSpreadPx": 450,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
       }
     },
     {
@@ -843,6 +942,17 @@
           "upper": 0.5
         },
         "spreadHabit": "clumping"
+      },
+      "watercolourEnvelope": {
+        "ratio": 0.643,
+        "shapeClass": "narrow_upright",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 700,
+        "expectedSpreadPx": 450,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
       }
     },
     {
@@ -920,6 +1030,17 @@
           "upper": 0.4
         },
         "spreadHabit": "spreading"
+      },
+      "watercolourEnvelope": {
+        "ratio": 0.75,
+        "shapeClass": "narrow_upright",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 800,
+        "expectedSpreadPx": 600,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
       }
     },
     {
@@ -996,6 +1117,17 @@
           "upper": 0.4
         },
         "spreadHabit": "clumping"
+      },
+      "watercolourEnvelope": {
+        "ratio": 0.833,
+        "shapeClass": "balanced_mounded",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 600,
+        "expectedSpreadPx": 500,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
       }
     },
     {
@@ -1072,6 +1204,17 @@
           "upper": 0.6
         },
         "spreadHabit": "clumping"
+      },
+      "watercolourEnvelope": {
+        "ratio": 0.643,
+        "shapeClass": "narrow_upright",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 700,
+        "expectedSpreadPx": 450,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
       }
     },
     {
@@ -1149,6 +1292,17 @@
           "upper": 0.3
         },
         "spreadHabit": "spreading"
+      },
+      "watercolourEnvelope": {
+        "ratio": 0.714,
+        "shapeClass": "narrow_upright",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 700,
+        "expectedSpreadPx": 500,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
       }
     },
     {
@@ -1226,6 +1380,17 @@
           "upper": 0.25
         },
         "spreadHabit": "clumping"
+      },
+      "watercolourEnvelope": {
+        "ratio": 0.667,
+        "shapeClass": "narrow_upright",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 900,
+        "expectedSpreadPx": 600,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
       }
     },
     {
@@ -1304,6 +1469,17 @@
           "upper": 0.35
         },
         "spreadHabit": "spreading"
+      },
+      "watercolourEnvelope": {
+        "ratio": 0.833,
+        "shapeClass": "balanced_mounded",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 1200,
+        "expectedSpreadPx": 1000,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
       }
     },
     {
@@ -1382,6 +1558,17 @@
           "upper": 0.6
         },
         "spreadHabit": "running"
+      },
+      "watercolourEnvelope": {
+        "ratio": 0.5,
+        "shapeClass": "very_narrow_upright",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 1200,
+        "expectedSpreadPx": 600,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
       }
     },
     {
@@ -1458,6 +1645,17 @@
           "upper": 0.55
         },
         "spreadHabit": "running"
+      },
+      "watercolourEnvelope": {
+        "ratio": 0.667,
+        "shapeClass": "narrow_upright",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 750,
+        "expectedSpreadPx": 500,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
       }
     },
     {
@@ -1537,6 +1735,17 @@
           "upper": 0.1
         },
         "spreadHabit": "clumping"
+      },
+      "watercolourEnvelope": {
+        "ratio": 1,
+        "shapeClass": "balanced_mounded",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 500,
+        "expectedSpreadPx": 500,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
       }
     },
     {
@@ -1614,6 +1823,17 @@
           "upper": 0.45
         },
         "spreadHabit": "clumping"
+      },
+      "watercolourEnvelope": {
+        "ratio": 0.5,
+        "shapeClass": "very_narrow_upright",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 900,
+        "expectedSpreadPx": 450,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
       }
     },
     {
@@ -1697,6 +1917,17 @@
             "baseOccupancy": 0.4
           }
         }
+      },
+      "watercolourEnvelope": {
+        "ratio": 0.667,
+        "shapeClass": "narrow_upright",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 900,
+        "expectedSpreadPx": 600,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
       }
     },
     {
@@ -1778,6 +2009,17 @@
             "baseOccupancy": 0.3
           }
         }
+      },
+      "watercolourEnvelope": {
+        "ratio": 0.6,
+        "shapeClass": "very_narrow_upright",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 750,
+        "expectedSpreadPx": 450,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
       }
     },
     {
@@ -1854,6 +2096,17 @@
           "upper": 0.75
         },
         "spreadHabit": "spreading"
+      },
+      "watercolourEnvelope": {
+        "ratio": 0.75,
+        "shapeClass": "narrow_upright",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 1200,
+        "expectedSpreadPx": 900,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
       }
     },
     {
@@ -1930,6 +2183,17 @@
           "upper": 0.3
         },
         "spreadHabit": "clumping"
+      },
+      "watercolourEnvelope": {
+        "ratio": 1,
+        "shapeClass": "balanced_mounded",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 500,
+        "expectedSpreadPx": 500,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
       }
     },
     {
@@ -2013,6 +2277,17 @@
             "baseOccupancy": 0.25
           }
         }
+      },
+      "watercolourEnvelope": {
+        "ratio": 0.4,
+        "shapeClass": "very_narrow_upright",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 1500,
+        "expectedSpreadPx": 600,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
       }
     },
     {
@@ -2094,6 +2369,17 @@
             "baseOccupancy": 0.35
           }
         }
+      },
+      "watercolourEnvelope": {
+        "ratio": 0.5,
+        "shapeClass": "very_narrow_upright",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 1200,
+        "expectedSpreadPx": 600,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
       }
     },
     {
@@ -2171,6 +2457,17 @@
           "upper": 0.4
         },
         "spreadHabit": "clumping"
+      },
+      "watercolourEnvelope": {
+        "ratio": 0.4,
+        "shapeClass": "very_narrow_upright",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 1500,
+        "expectedSpreadPx": 600,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
       }
     },
     {
@@ -2246,6 +2543,17 @@
           "upper": 0.25
         },
         "spreadHabit": "clumping"
+      },
+      "watercolourEnvelope": {
+        "ratio": 0.5,
+        "shapeClass": "very_narrow_upright",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 2000,
+        "expectedSpreadPx": 1000,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
       }
     },
     {
@@ -2319,6 +2627,17 @@
           "upper": 0.4
         },
         "spreadHabit": "clumping"
+      },
+      "watercolourEnvelope": {
+        "ratio": 0.667,
+        "shapeClass": "narrow_upright",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 900,
+        "expectedSpreadPx": 600,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
       }
     },
     {
@@ -2395,6 +2714,17 @@
           "upper": 0.55
         },
         "spreadHabit": "clumping"
+      },
+      "watercolourEnvelope": {
+        "ratio": 0.857,
+        "shapeClass": "balanced_mounded",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 700,
+        "expectedSpreadPx": 600,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
       }
     },
     {
@@ -2471,6 +2801,17 @@
           "upper": 0.5
         },
         "spreadHabit": "naturalising"
+      },
+      "watercolourEnvelope": {
+        "ratio": 0.3,
+        "shapeClass": "very_narrow_upright",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 1000,
+        "expectedSpreadPx": 300,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
       }
     },
     {
@@ -2549,6 +2890,17 @@
           "upper": 0.3
         },
         "spreadHabit": "clumping"
+      },
+      "watercolourEnvelope": {
+        "ratio": 0.556,
+        "shapeClass": "very_narrow_upright",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 900,
+        "expectedSpreadPx": 500,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
       }
     },
     {
@@ -2626,6 +2978,17 @@
           "upper": 0.45
         },
         "spreadHabit": "clumping"
+      },
+      "watercolourEnvelope": {
+        "ratio": 0.643,
+        "shapeClass": "narrow_upright",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 700,
+        "expectedSpreadPx": 450,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
       }
     },
     {
@@ -2701,6 +3064,17 @@
           "upper": 0.4
         },
         "spreadHabit": "clumping"
+      },
+      "watercolourEnvelope": {
+        "ratio": 0.714,
+        "shapeClass": "narrow_upright",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 700,
+        "expectedSpreadPx": 500,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
       }
     },
     {
@@ -2779,6 +3153,17 @@
           "upper": 0.6
         },
         "spreadHabit": "self_seeding"
+      },
+      "watercolourEnvelope": {
+        "ratio": 2,
+        "shapeClass": "broad_spreading",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 250,
+        "expectedSpreadPx": 500,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
       }
     },
     {
@@ -2858,6 +3243,17 @@
           "upper": 0.6
         },
         "spreadHabit": "clumping"
+      },
+      "watercolourEnvelope": {
+        "ratio": 0.444,
+        "shapeClass": "very_narrow_upright",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 900,
+        "expectedSpreadPx": 400,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
       }
     },
     {
@@ -2935,6 +3331,17 @@
           "upper": 0.95
         },
         "spreadHabit": "naturalising"
+      },
+      "watercolourEnvelope": {
+        "ratio": 0.25,
+        "shapeClass": "very_narrow_upright",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 800,
+        "expectedSpreadPx": 200,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
       }
     },
     {
@@ -3020,6 +3427,17 @@
             "baseOccupancy": 0.3
           }
         }
+      },
+      "watercolourEnvelope": {
+        "ratio": 0.375,
+        "shapeClass": "very_narrow_upright",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 1200,
+        "expectedSpreadPx": 450,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
       }
     },
     {
@@ -3096,6 +3514,17 @@
           "upper": 0.4
         },
         "spreadHabit": "clumping"
+      },
+      "watercolourEnvelope": {
+        "ratio": 0.667,
+        "shapeClass": "narrow_upright",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 1500,
+        "expectedSpreadPx": 1000,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
       }
     },
     {
@@ -3176,6 +3605,17 @@
           "upper": 0.55
         },
         "spreadHabit": "running"
+      },
+      "watercolourEnvelope": {
+        "ratio": 0.667,
+        "shapeClass": "narrow_upright",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 900,
+        "expectedSpreadPx": 600,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
       }
     },
     {
@@ -3253,6 +3693,17 @@
           "upper": 0.85
         },
         "spreadHabit": "clumping"
+      },
+      "watercolourEnvelope": {
+        "ratio": 0.417,
+        "shapeClass": "very_narrow_upright",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 1200,
+        "expectedSpreadPx": 500,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
       }
     },
     {
@@ -3330,6 +3781,17 @@
           "upper": 0.15
         },
         "spreadHabit": "clumping"
+      },
+      "watercolourEnvelope": {
+        "ratio": 0.833,
+        "shapeClass": "balanced_mounded",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 1200,
+        "expectedSpreadPx": 1000,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
       }
     },
     {
@@ -3410,6 +3872,17 @@
           "upper": 0.15
         },
         "spreadHabit": "clumping"
+      },
+      "watercolourEnvelope": {
+        "ratio": 1.25,
+        "shapeClass": "broad_mounded",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 400,
+        "expectedSpreadPx": 500,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
       }
     },
     {
@@ -3489,6 +3962,17 @@
           "upper": 0.45
         },
         "spreadHabit": "self_seeding"
+      },
+      "watercolourEnvelope": {
+        "ratio": 1.25,
+        "shapeClass": "broad_mounded",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 400,
+        "expectedSpreadPx": 500,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
       }
     },
     {
@@ -3563,6 +4047,17 @@
           "upper": 0.7
         },
         "spreadHabit": "clumping"
+      },
+      "watercolourEnvelope": {
+        "ratio": 1,
+        "shapeClass": "balanced_mounded",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 450,
+        "expectedSpreadPx": 450,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
       }
     },
     {
@@ -3642,6 +4137,17 @@
           "upper": 0.5
         },
         "spreadHabit": "clumping"
+      },
+      "watercolourEnvelope": {
+        "ratio": 1.25,
+        "shapeClass": "broad_mounded",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 400,
+        "expectedSpreadPx": 500,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
       }
     },
     {
@@ -3718,6 +4224,17 @@
           "upper": 0.35
         },
         "spreadHabit": "clumping"
+      },
+      "watercolourEnvelope": {
+        "ratio": 1.5,
+        "shapeClass": "broad_spreading",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 300,
+        "expectedSpreadPx": 450,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
       }
     },
     {
@@ -3798,6 +4315,17 @@
           "upper": 0.2
         },
         "spreadHabit": "clumping"
+      },
+      "watercolourEnvelope": {
+        "ratio": 1,
+        "shapeClass": "balanced_mounded",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 450,
+        "expectedSpreadPx": 450,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
       }
     },
     {
@@ -3877,6 +4405,17 @@
           "upper": 0.3
         },
         "spreadHabit": "running"
+      },
+      "watercolourEnvelope": {
+        "ratio": 2,
+        "shapeClass": "broad_spreading",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 300,
+        "expectedSpreadPx": 600,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
       }
     },
     {
@@ -3960,6 +4499,17 @@
             "baseOccupancy": 0.5
           }
         }
+      },
+      "watercolourEnvelope": {
+        "ratio": 0.45,
+        "shapeClass": "very_narrow_upright",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 2000,
+        "expectedSpreadPx": 900,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
       }
     },
     {
@@ -4038,6 +4588,17 @@
           "upper": 0.75
         },
         "spreadHabit": "self_seeding"
+      },
+      "watercolourEnvelope": {
+        "ratio": 0.667,
+        "shapeClass": "narrow_upright",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 600,
+        "expectedSpreadPx": 400,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
       }
     },
     {
@@ -4120,6 +4681,17 @@
           "upper": 0.4
         },
         "spreadHabit": "clumping"
+      },
+      "watercolourEnvelope": {
+        "ratio": 0.333,
+        "shapeClass": "very_narrow_upright",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 1800,
+        "expectedSpreadPx": 600,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
       }
     },
     {
@@ -4204,6 +4776,17 @@
             "baseOccupancy": 0.45
           }
         }
+      },
+      "watercolourEnvelope": {
+        "ratio": 0.333,
+        "shapeClass": "very_narrow_upright",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 1800,
+        "expectedSpreadPx": 600,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
       }
     },
     {
@@ -4282,6 +4865,17 @@
           "upper": 0.8
         },
         "spreadHabit": "clumping"
+      },
+      "watercolourEnvelope": {
+        "ratio": 0.714,
+        "shapeClass": "narrow_upright",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 700,
+        "expectedSpreadPx": 500,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
       }
     },
     {
@@ -4362,6 +4956,17 @@
           "upper": 0.4
         },
         "spreadHabit": "clumping"
+      },
+      "watercolourEnvelope": {
+        "ratio": 1,
+        "shapeClass": "balanced_mounded",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 400,
+        "expectedSpreadPx": 400,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
       }
     },
     {
@@ -4438,6 +5043,17 @@
           "upper": 0.2
         },
         "spreadHabit": "running"
+      },
+      "watercolourEnvelope": {
+        "ratio": 1.286,
+        "shapeClass": "broad_mounded",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 350,
+        "expectedSpreadPx": 450,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
       }
     },
     {
@@ -4514,6 +5130,17 @@
           "upper": 0.15
         },
         "spreadHabit": "clumping"
+      },
+      "watercolourEnvelope": {
+        "ratio": 1.333,
+        "shapeClass": "broad_mounded",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 300,
+        "expectedSpreadPx": 400,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
       }
     },
     {
@@ -4589,6 +5216,17 @@
           "upper": 0.3
         },
         "spreadHabit": "clumping"
+      },
+      "watercolourEnvelope": {
+        "ratio": 0.9,
+        "shapeClass": "balanced_mounded",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 1000,
+        "expectedSpreadPx": 900,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
       }
     },
     {
@@ -4665,6 +5303,17 @@
           "upper": 0.3
         },
         "spreadHabit": "clumping"
+      },
+      "watercolourEnvelope": {
+        "ratio": 1.25,
+        "shapeClass": "broad_mounded",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 600,
+        "expectedSpreadPx": 750,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
       }
     },
     {
@@ -4744,6 +5393,17 @@
           "upper": 0.6
         },
         "spreadHabit": "clumping"
+      },
+      "watercolourEnvelope": {
+        "ratio": 0.5,
+        "shapeClass": "very_narrow_upright",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 1000,
+        "expectedSpreadPx": 500,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
       }
     },
     {
@@ -4827,6 +5487,17 @@
             "baseOccupancy": 0.3
           }
         }
+      },
+      "watercolourEnvelope": {
+        "ratio": 0.333,
+        "shapeClass": "very_narrow_upright",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 1200,
+        "expectedSpreadPx": 400,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
       }
     },
     {
@@ -4902,6 +5573,17 @@
           "upper": 0.25
         },
         "spreadHabit": "running"
+      },
+      "watercolourEnvelope": {
+        "ratio": 0.667,
+        "shapeClass": "narrow_upright",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 900,
+        "expectedSpreadPx": 600,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
       }
     },
     {
@@ -4978,6 +5660,17 @@
           "upper": 0.35
         },
         "spreadHabit": "spreading"
+      },
+      "watercolourEnvelope": {
+        "ratio": 0.9,
+        "shapeClass": "balanced_mounded",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 1000,
+        "expectedSpreadPx": 900,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
       }
     },
     {
@@ -5055,6 +5748,17 @@
           "upper": 0.4
         },
         "spreadHabit": "clumping"
+      },
+      "watercolourEnvelope": {
+        "ratio": 0.833,
+        "shapeClass": "balanced_mounded",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 600,
+        "expectedSpreadPx": 500,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
       }
     }
   ]
