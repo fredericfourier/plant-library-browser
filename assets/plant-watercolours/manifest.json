@@ -78,6 +78,20 @@
       "actualHeightPx": 600,
       "ratioErrorRelative": -0.037,
       "updated": "2026-10-13T10:34:00+01:00"
+    },
+    "taxus-baccata-topiary": {
+      "file": "assets/plant-watercolours/taxus-baccata-topiary.webp",
+      "status": "ready-preview",
+      "pixelsPerCm": 10,
+      "canonicalHeightPx": 1000,
+      "expectedSpreadPx": 1000,
+      "canonicalActualWidthPx": 1126,
+      "canonicalActualHeightPx": 1000,
+      "ratioErrorRelative": 0.126,
+      "publicPreviewWidthPx": 181,
+      "publicPreviewHeightPx": 160,
+      "previewOnly": true,
+      "updated": "2026-10-13T10:34:00+01:00"
     }
   },
   "pixelsPerCm": 10
