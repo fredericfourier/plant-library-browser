@@ -1,6 +1,6 @@
 {
-  "schemaVersion": 4,
-  "updated": "2026-10-02",
+  "schemaVersion": 5,
+  "updated": "2026-10-13",
   "plants": [
     {
       "id": "salvia-caradonna",
@@ -239,6 +239,18 @@
           "upper": 0.25
         },
         "spreadHabit": "spreading"
+      },
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS",
+            "url": "https://www.rhs.org.uk/Plants/153768/geranium-rozanne-gerwat-pbr-/Details",
+            "checked": "2026-10-13"
+          }
+        ],
+        "confidence": "high"
       }
     },
     {
@@ -401,6 +413,18 @@
           "upper": 0.5
         },
         "spreadHabit": "spreading"
+      },
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS",
+            "url": "https://www.rhs.org.uk/plants/55055/nepeta-racemosa-walker-s-low/details/",
+            "checked": "2026-10-13"
+          }
+        ],
+        "confidence": "high"
       }
     },
     {
@@ -482,6 +506,18 @@
           "upper": 0.75
         },
         "spreadHabit": "clumping"
+      },
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS",
+            "url": "https://www.rhs.org.uk/plants/286070/geum-totally-tangerine/details",
+            "checked": "2026-10-13"
+          }
+        ],
+        "confidence": "high"
       }
     },
     {
