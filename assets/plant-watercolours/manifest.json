@@ -154,11 +154,11 @@
           "status": "canonical",
           "productionReady": false,
           "canonicalScaleApplied": false,
-          "originalWidthPx": 1254,
-          "originalHeightPx": 1254,
+          "originalWidthPx": 1536,
+          "originalHeightPx": 1024,
           "transparent": true,
-          "sha256": "41734bd53354b6bc6301ba362729dd0f8cfb92428f631aa665a0eab099217341",
-          "silhouetteRatioErrorRelative": 0.2,
+          "sha256": "4f6b96cee38b11fe1f0bbd35344dcd00cc15416c65adb4b38514d1e1d03de4ca",
+          "silhouetteRatioErrorRelative": 0.287,
           "warnings": [
             "silhouette_ratio_needs_review"
           ]
