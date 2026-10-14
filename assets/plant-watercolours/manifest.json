@@ -11,7 +11,24 @@
       "actualWidthPx": 467,
       "actualHeightPx": 400,
       "ratioErrorRelative": -0.066,
-      "updated": "2026-10-13T10:34:00+01:00"
+      "updated": "2026-10-13T10:34:00+01:00",
+      "variants": {
+        "watercolourA": {
+          "label": "Watercolour A — Loose Botanical",
+          "style": "Loose Botanical",
+          "file": "assets/plant-watercolours/alchemilla-mollis-watercolour-a.webp",
+          "status": "candidate",
+          "approvedStyle": true,
+          "productionReady": false,
+          "canonicalScaleApplied": false,
+          "originalWidthPx": 1402,
+          "originalHeightPx": 1122,
+          "transparent": true,
+          "sha256": "74c740b6d20e22ff22fa9443b9f49fe94cdc1cd80bfbef433d6df9da1b89bf57",
+          "silhouetteRatioErrorRelative": 0.048,
+          "warnings": []
+        }
+      }
     },
     "echinacea-purpurea": {
       "file": "assets/plant-watercolours/echinacea-purpurea.webp",
@@ -22,7 +39,26 @@
       "actualWidthPx": 621,
       "actualHeightPx": 1000,
       "ratioErrorRelative": 0.38,
-      "updated": "2026-10-13T10:34:00+01:00"
+      "updated": "2026-10-13T10:34:00+01:00",
+      "variants": {
+        "watercolourA": {
+          "label": "Watercolour A — Loose Botanical",
+          "style": "Loose Botanical",
+          "file": "assets/plant-watercolours/echinacea-purpurea-watercolour-a.webp",
+          "status": "candidate",
+          "approvedStyle": true,
+          "productionReady": false,
+          "canonicalScaleApplied": false,
+          "originalWidthPx": 1122,
+          "originalHeightPx": 1402,
+          "transparent": true,
+          "sha256": "8fdea74f25a12c81abb413527bf02c2fb8a0f278e426aa5eabc399306b624562",
+          "silhouetteRatioErrorRelative": 0.646,
+          "warnings": [
+            "silhouette_ratio_needs_review"
+          ]
+        }
+      }
     },
     "echinacea-white-swan": {
       "file": "assets/plant-watercolours/echinacea-white-swan.webp",
@@ -34,7 +70,26 @@
       "actualHeightPx": 700,
       "ratioErrorRelative": 0.18,
       "userApprovedMorphology": true,
-      "updated": "2026-10-13T14:12:00+01:00"
+      "updated": "2026-10-13T14:12:00+01:00",
+      "variants": {
+        "watercolourA": {
+          "label": "Watercolour A — Loose Botanical",
+          "style": "Loose Botanical",
+          "file": "assets/plant-watercolours/echinacea-white-swan-watercolour-a.webp",
+          "status": "candidate",
+          "approvedStyle": true,
+          "productionReady": false,
+          "canonicalScaleApplied": false,
+          "originalWidthPx": 1122,
+          "originalHeightPx": 1402,
+          "transparent": true,
+          "sha256": "a437dd69842273e2c59181ca75f90817986fa585f50eb2e5e9e1e7f5d97386fb",
+          "silhouetteRatioErrorRelative": 0.198,
+          "warnings": [
+            "silhouette_ratio_needs_review"
+          ]
+        }
+      }
     },
     "geranium-rozanne": {
       "file": "assets/plant-watercolours/geranium-rozanne.webp",
@@ -45,7 +100,24 @@
       "actualWidthPx": 959,
       "actualHeightPx": 500,
       "ratioErrorRelative": 0.199,
-      "updated": "2026-10-13T09:35:00+01:00"
+      "updated": "2026-10-13T09:35:00+01:00",
+      "variants": {
+        "watercolourA": {
+          "label": "Watercolour A — Loose Botanical",
+          "style": "Loose Botanical",
+          "file": "assets/plant-watercolours/geranium-rozanne-watercolour-a.webp",
+          "status": "candidate",
+          "approvedStyle": true,
+          "productionReady": false,
+          "canonicalScaleApplied": false,
+          "originalWidthPx": 1448,
+          "originalHeightPx": 1086,
+          "transparent": true,
+          "sha256": "4feb29a0245d3974026a074f05986521e0f3edda8ca9a03c77e114d13cef2962",
+          "silhouetteRatioErrorRelative": -0.069,
+          "warnings": []
+        }
+      }
     },
     "geum-totally-tangerine": {
       "file": "assets/plant-watercolours/geum-totally-tangerine.webp",
@@ -56,7 +128,26 @@
       "actualWidthPx": 549,
       "actualHeightPx": 800,
       "ratioErrorRelative": 0.098,
-      "updated": "2026-10-13T10:34:00+01:00"
+      "updated": "2026-10-13T10:34:00+01:00",
+      "variants": {
+        "watercolourA": {
+          "label": "Watercolour A — Loose Botanical",
+          "style": "Loose Botanical",
+          "file": "assets/plant-watercolours/geum-totally-tangerine-watercolour-a.webp",
+          "status": "candidate",
+          "approvedStyle": true,
+          "productionReady": false,
+          "canonicalScaleApplied": false,
+          "originalWidthPx": 1122,
+          "originalHeightPx": 1402,
+          "transparent": true,
+          "sha256": "be80a76dd3f709bd5699037ad56f3a061a4257d20113d1e36b072388e0b2e45f",
+          "silhouetteRatioErrorRelative": 0.266,
+          "warnings": [
+            "silhouette_ratio_needs_review"
+          ]
+        }
+      }
     },
     "nepeta-walkers-low": {
       "file": "assets/plant-watercolours/nepeta-walkers-low.webp",
@@ -81,7 +172,8 @@
           "originalWidthPx": 855,
           "originalHeightPx": 680,
           "transparent": true,
-          "originalGitBlobSha": "670a63e201a0d6c1d5b39a1274f7f5aa673e8b5f"
+          "originalGitBlobSha": "670a63e201a0d6c1d5b39a1274f7f5aa673e8b5f",
+          "sha256": "57c10ca3461636d3b996fabde132cca27b2c2dab4bee6a594ae656db89c5702c"
         },
         "watercolourB": {
           "label": "Watercolour B — Soft Loose",
@@ -108,7 +200,26 @@
       "actualWidthPx": 385,
       "actualHeightPx": 600,
       "ratioErrorRelative": -0.037,
-      "updated": "2026-10-13T10:34:00+01:00"
+      "updated": "2026-10-13T10:34:00+01:00",
+      "variants": {
+        "watercolourA": {
+          "label": "Watercolour A — Loose Botanical",
+          "style": "Loose Botanical",
+          "file": "assets/plant-watercolours/salvia-caradonna-watercolour-a.webp",
+          "status": "candidate",
+          "approvedStyle": true,
+          "productionReady": false,
+          "canonicalScaleApplied": false,
+          "originalWidthPx": 1122,
+          "originalHeightPx": 1402,
+          "transparent": true,
+          "sha256": "572802ce60ef8c1c8d6ee84e33ecaec1c27053657e1078f3de833d4269bc9eac",
+          "silhouetteRatioErrorRelative": 0.171,
+          "warnings": [
+            "silhouette_ratio_needs_review"
+          ]
+        }
+      }
     },
     "taxus-baccata-topiary": {
       "file": "assets/plant-watercolours/taxus-baccata-topiary.webp",
@@ -120,7 +231,24 @@
       "actualHeightPx": 1000,
       "ratioErrorRelative": 0.126,
       "previewOnly": false,
-      "updated": "2026-10-13T10:36:00+01:00"
+      "updated": "2026-10-13T10:36:00+01:00",
+      "variants": {
+        "watercolourA": {
+          "label": "Watercolour A — Loose Botanical",
+          "style": "Loose Botanical",
+          "file": "assets/plant-watercolours/taxus-baccata-topiary-watercolour-a.webp",
+          "status": "candidate",
+          "approvedStyle": true,
+          "productionReady": false,
+          "canonicalScaleApplied": false,
+          "originalWidthPx": 1254,
+          "originalHeightPx": 1254,
+          "transparent": true,
+          "sha256": "300d05d1706b7ebfc28b9ebcd85aea5086541114dc88e3270aee61a02a002238",
+          "silhouetteRatioErrorRelative": 0.012,
+          "warnings": []
+        }
+      }
     }
   },
   "pixelsPerCm": 10
