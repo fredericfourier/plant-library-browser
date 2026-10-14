@@ -11,7 +11,7 @@
       "actualWidthPx": 467,
       "actualHeightPx": 400,
       "ratioErrorRelative": -0.066,
-      "updated": "2026-10-13T10:34:00+01:00",
+      "updated": "2026-10-14T14:42:37+00:00",
       "variants": {
         "watercolour": {
           "label": "Watercolour",
@@ -19,11 +19,11 @@
           "status": "canonical",
           "productionReady": false,
           "canonicalScaleApplied": false,
-          "originalWidthPx": 1402,
-          "originalHeightPx": 1122,
+          "originalWidthPx": 1254,
+          "originalHeightPx": 1254,
           "transparent": true,
-          "sha256": "74c740b6d20e22ff22fa9443b9f49fe94cdc1cd80bfbef433d6df9da1b89bf57",
-          "silhouetteRatioErrorRelative": 0.048,
+          "sha256": "e6b4b0e311341b381b99593874f4af653dac9c41e53c37d59a01d8daaafd878f",
+          "silhouetteRatioErrorRelative": -0.088,
           "warnings": []
         }
       }
@@ -34,10 +34,10 @@
       "pixelsPerCm": 10,
       "canonicalHeightPx": 1000,
       "expectedSpreadPx": 450,
-      "actualWidthPx": 621,
+      "actualWidthPx": 630,
       "actualHeightPx": 1000,
-      "ratioErrorRelative": 0.38,
-      "updated": "2026-10-13T10:34:00+01:00",
+      "ratioErrorRelative": 0.4,
+      "updated": "2026-10-14T14:42:37+00:00",
       "variants": {
         "watercolour": {
           "label": "Watercolour",
@@ -45,11 +45,11 @@
           "status": "canonical",
           "productionReady": false,
           "canonicalScaleApplied": false,
-          "originalWidthPx": 1122,
-          "originalHeightPx": 1402,
+          "originalWidthPx": 1254,
+          "originalHeightPx": 1254,
           "transparent": true,
-          "sha256": "8fdea74f25a12c81abb413527bf02c2fb8a0f278e426aa5eabc399306b624562",
-          "silhouetteRatioErrorRelative": 0.646,
+          "sha256": "998e33748344e8a42a067374bfb91355fe68bc71336efaab721a107fda9c35ca",
+          "silhouetteRatioErrorRelative": 0.538,
           "warnings": [
             "silhouette_ratio_needs_review"
           ]
@@ -62,11 +62,11 @@
       "pixelsPerCm": 10,
       "canonicalHeightPx": 700,
       "expectedSpreadPx": 450,
-      "actualWidthPx": 531,
+      "actualWidthPx": 457,
       "actualHeightPx": 700,
-      "ratioErrorRelative": 0.18,
+      "ratioErrorRelative": 0.015,
       "userApprovedMorphology": true,
-      "updated": "2026-10-13T14:12:00+01:00",
+      "updated": "2026-10-14T14:42:37+00:00",
       "variants": {
         "watercolour": {
           "label": "Watercolour",
@@ -74,14 +74,12 @@
           "status": "canonical",
           "productionReady": false,
           "canonicalScaleApplied": false,
-          "originalWidthPx": 1122,
-          "originalHeightPx": 1402,
+          "originalWidthPx": 1254,
+          "originalHeightPx": 1254,
           "transparent": true,
-          "sha256": "a437dd69842273e2c59181ca75f90817986fa585f50eb2e5e9e1e7f5d97386fb",
-          "silhouetteRatioErrorRelative": 0.198,
-          "warnings": [
-            "silhouette_ratio_needs_review"
-          ]
+          "sha256": "87a319e39396a371634171f9a184708827e9bba937068027112bcb80d274d849",
+          "silhouetteRatioErrorRelative": 0.031,
+          "warnings": []
         }
       }
     },
@@ -145,10 +143,10 @@
       "pixelsPerCm": 10,
       "canonicalHeightPx": 600,
       "expectedSpreadPx": 750,
-      "actualWidthPx": 884,
+      "actualWidthPx": 827,
       "actualHeightPx": 600,
-      "ratioErrorRelative": 0.179,
-      "updated": "2026-10-13T10:34:00+01:00",
+      "ratioErrorRelative": 0.103,
+      "updated": "2026-10-14T14:42:37+00:00",
       "variants": {
         "watercolour": {
           "label": "Watercolour",
@@ -156,12 +154,14 @@
           "status": "canonical",
           "productionReady": false,
           "canonicalScaleApplied": false,
-          "originalWidthPx": 1448,
-          "originalHeightPx": 1086,
+          "originalWidthPx": 1254,
+          "originalHeightPx": 1254,
           "transparent": true,
-          "sha256": "64fd5c6a2c912733fa2ee5b97acc79ab1cb07eb6be54b49ead8b23fedd2f19e6",
-          "silhouetteRatioErrorRelative": 0.059,
-          "warnings": []
+          "sha256": "41734bd53354b6bc6301ba362729dd0f8cfb92428f631aa665a0eab099217341",
+          "silhouetteRatioErrorRelative": 0.2,
+          "warnings": [
+            "silhouette_ratio_needs_review"
+          ]
         }
       }
     },
@@ -171,10 +171,10 @@
       "pixelsPerCm": 10,
       "canonicalHeightPx": 600,
       "expectedSpreadPx": 400,
-      "actualWidthPx": 385,
+      "actualWidthPx": 380,
       "actualHeightPx": 600,
-      "ratioErrorRelative": -0.037,
-      "updated": "2026-10-13T10:34:00+01:00",
+      "ratioErrorRelative": -0.049,
+      "updated": "2026-10-14T14:42:37+00:00",
       "variants": {
         "watercolour": {
           "label": "Watercolour",
@@ -182,14 +182,12 @@
           "status": "canonical",
           "productionReady": false,
           "canonicalScaleApplied": false,
-          "originalWidthPx": 1122,
-          "originalHeightPx": 1402,
+          "originalWidthPx": 1254,
+          "originalHeightPx": 1254,
           "transparent": true,
-          "sha256": "572802ce60ef8c1c8d6ee84e33ecaec1c27053657e1078f3de833d4269bc9eac",
-          "silhouetteRatioErrorRelative": 0.171,
-          "warnings": [
-            "silhouette_ratio_needs_review"
-          ]
+          "sha256": "adcf9e5b8cb3b1d86da48871a2b8980e0e195f7847da94802951533c3d2f8ee4",
+          "silhouetteRatioErrorRelative": -0.071,
+          "warnings": []
         }
       }
     },
@@ -199,11 +197,11 @@
       "pixelsPerCm": 10,
       "canonicalHeightPx": 1000,
       "expectedSpreadPx": 1000,
-      "actualWidthPx": 1126,
+      "actualWidthPx": 605,
       "actualHeightPx": 1000,
-      "ratioErrorRelative": 0.126,
+      "ratioErrorRelative": -0.395,
       "previewOnly": false,
-      "updated": "2026-10-13T10:36:00+01:00",
+      "updated": "2026-10-14T14:42:37+00:00",
       "variants": {
         "watercolour": {
           "label": "Watercolour",
@@ -214,9 +212,11 @@
           "originalWidthPx": 1254,
           "originalHeightPx": 1254,
           "transparent": true,
-          "sha256": "300d05d1706b7ebfc28b9ebcd85aea5086541114dc88e3270aee61a02a002238",
-          "silhouetteRatioErrorRelative": 0.012,
-          "warnings": []
+          "sha256": "8b504647fb1789047a42678be74dbfb9c1cb95455a342168d3fafc63eccaa673",
+          "silhouetteRatioErrorRelative": -0.444,
+          "warnings": [
+            "silhouette_ratio_needs_review"
+          ]
         }
       }
     }
