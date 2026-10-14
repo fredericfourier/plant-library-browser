@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "updated": "2026-10-13T14:12:00+01:00",
+  "updated": "2026-10-14",
   "assets": {
     "alchemilla-mollis": {
       "file": "assets/plant-watercolours/alchemilla-mollis.webp",
@@ -67,7 +67,37 @@
       "actualWidthPx": 884,
       "actualHeightPx": 600,
       "ratioErrorRelative": 0.179,
-      "updated": "2026-10-13T10:34:00+01:00"
+      "updated": "2026-10-13T10:34:00+01:00",
+      "variants": {
+        "watercolourA": {
+          "label": "Watercolour A — Loose Botanical",
+          "style": "Loose Botanical",
+          "referencePanel": "BEFORE",
+          "file": "assets/plant-watercolours/nepeta-before-extracted-transparent.webp",
+          "status": "approved-reference",
+          "approvedStyle": true,
+          "productionReady": false,
+          "canonicalScaleApplied": false,
+          "originalWidthPx": 855,
+          "originalHeightPx": 680,
+          "transparent": true,
+          "originalGitBlobSha": "670a63e201a0d6c1d5b39a1274f7f5aa673e8b5f"
+        },
+        "watercolourB": {
+          "label": "Watercolour B — Soft Loose",
+          "style": "Soft Loose",
+          "referencePanel": "AFTER",
+          "file": "assets/plant-watercolours/nepeta-after-extracted-transparent.webp",
+          "status": "approved-reference",
+          "approvedStyle": true,
+          "productionReady": false,
+          "canonicalScaleApplied": false,
+          "originalWidthPx": 855,
+          "originalHeightPx": 680,
+          "transparent": true,
+          "originalGitBlobSha": "e72ede41f48eb9123a9e61e4a2e501528a9801fe"
+        }
+      }
     },
     "salvia-caradonna": {
       "file": "assets/plant-watercolours/salvia-caradonna.webp",
