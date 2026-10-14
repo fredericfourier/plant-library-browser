@@ -19,3 +19,6 @@ Older watercolour A/B variants were consolidated into this single watercolour pe
 
 ## Asset rule
 Real photography defines morphology. Database height/spread defines physical scale. Watercolour assets are scaled uniformly and should never be stretched or squashed to compensate for inaccurate source proportions.
+
+## Contact sheet
+The contact-sheet popup shows a dynamic title ("Botanical contact sheet" / "Watercolour contact sheet") and a `Botanical | Watercolour` switcher that re-renders in place (popup, browser filters, selection and scroll are kept). Images come from the manifest; a plant without the chosen type shows "Illustration unavailable" and is never substituted.
