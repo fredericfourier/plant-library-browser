@@ -156,11 +156,11 @@
           "status": "canonical",
           "productionReady": false,
           "canonicalScaleApplied": false,
-          "originalWidthPx": 855,
-          "originalHeightPx": 680,
+          "originalWidthPx": 1448,
+          "originalHeightPx": 1086,
           "transparent": true,
-          "sha256": "57c10ca3461636d3b996fabde132cca27b2c2dab4bee6a594ae656db89c5702c",
-          "silhouetteRatioErrorRelative": -0.002,
+          "sha256": "64fd5c6a2c912733fa2ee5b97acc79ab1cb07eb6be54b49ead8b23fedd2f19e6",
+          "silhouetteRatioErrorRelative": 0.059,
           "warnings": []
         }
       }

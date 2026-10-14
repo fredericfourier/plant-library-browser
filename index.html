@@ -75,7 +75,7 @@ let DB=[], state={q:"",type:"",art:"",light:"",sort:"name",variant:"botanical"},
 const $=s=>document.querySelector(s), esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const title=s=>String(s||"").replaceAll("_"," ").replace(/\b\w/g,c=>c.toUpperCase());
 function vals(v){return Array.isArray(v)?v.join(", "):(v??"—")}
-function assetUrl(p,variant=state.variant){let alt=p._variants?.[variant]?.file;if(variant!=="botanical"&&!alt)return "";let base=alt?("./"+alt):ART+encodeURIComponent(p.id)+".webp";return p._assetVersion?base+"?v="+encodeURIComponent(p._assetVersion):base}
+function assetUrl(p,variant=state.variant){let alt=p._variants?.[variant]?.file;if(variant!=="botanical"&&!alt)return "";let base=alt?("./"+alt):ART+encodeURIComponent(p.id)+".webp";let ver=(p._variants?.[variant]?.sha256||"").slice(0,12)||p._assetVersion;return ver?base+"?v="+encodeURIComponent(ver):base}
 function availableVariants(p){return ["botanical",...["watercolour"].filter(v=>p._variants?.[v]?.file)]}
 function variantName(p,v){return v==="botanical"?"Botanical illustration":p._variants?.[v]?.label||"Botanical illustration"}
 function cycleVariant(dir){let p=DB.find(x=>x.id===$("#imageDlg").dataset.plantId);if(!p)return;let variants=availableVariants(p),i=variants.indexOf($("#imageDlg").dataset.variant||"botanical");if(variants.length<2){toast("No alternative image for this plant");return}let next=variants[(i+dir+variants.length)%variants.length];$("#imageDlg").dataset.variant=next;$("#fullImage").src=assetUrl(p,next);$("#imageVariantLabel").textContent=variantName(p,next);$("#imageMeta").textContent=imageMeta(p,next)}
