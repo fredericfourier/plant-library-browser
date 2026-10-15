@@ -19,11 +19,11 @@
           "status": "awaiting_review",
           "productionReady": false,
           "canonicalScaleApplied": false,
-          "originalWidthPx": 1122,
-          "originalHeightPx": 1402,
+          "originalWidthPx": 1254,
+          "originalHeightPx": 1254,
           "transparent": true,
-          "sha256": "a9fc689e6096158842fac7c14b6ed7717975b4836dea9479d394991c50ac8baa",
-          "pngSha256": "80c220acf587a5b49c28f066fe501fa96581c998b9e53cc9698abe305666c034",
+          "sha256": "7680e2443f8e0590455bbea6fcf1417b335f36791fa7bdea769bb44f676d2bf9",
+          "pngSha256": "d9546181f891934b95ea847ee043efd5b83606d79eb796b8f29f5aff37caf213",
           "warnings": []
         }
       },
@@ -155,11 +155,11 @@
           "status": "awaiting_review",
           "productionReady": false,
           "canonicalScaleApplied": false,
-          "originalWidthPx": 1122,
-          "originalHeightPx": 1402,
+          "originalWidthPx": 1536,
+          "originalHeightPx": 1024,
           "transparent": true,
-          "sha256": "af180d401ae622aae4d61756a16901ab287f682afc071f276d96db744130bd00",
-          "pngSha256": "c5d7ebcf5b9f9d1331b2973647d2f4c19ba383a6c166dfb744cf50553b57ed94",
+          "sha256": "ce2a5ecc57a9596aee80b28ac31c577bc4c172c91dd8c917fec97a863b61e5b1",
+          "pngSha256": "3bef7a18975926fa75389e5783a4c9449b92b051e52be0bb5a93bce77d4c2875",
           "warnings": []
         }
       },
@@ -210,11 +210,11 @@
           "status": "awaiting_review",
           "productionReady": false,
           "canonicalScaleApplied": false,
-          "originalWidthPx": 1122,
-          "originalHeightPx": 1402,
+          "originalWidthPx": 1536,
+          "originalHeightPx": 1024,
           "transparent": true,
-          "sha256": "16a894d652279b2e5169258ec2ec46d787d0ee3aa9620f902e4a0b046a5e6b49",
-          "pngSha256": "12b0e17f39e3391a6269821482704c8fdee39d460b20ff4102bec036591b7969",
+          "sha256": "dc1527d0df3abbe4f6e3fe18af154525241db0e2b80263913430c059a04d9179",
+          "pngSha256": "d3c7da444fca90ee3b178552908f260ac9ed81badb2b7c6e0a8afef7e1653f62",
           "warnings": []
         }
       },
@@ -487,11 +487,11 @@
     "brunnera-jack-frost": {
       "file": "assets/plant-watercolours/brunnera-jack-frost.webp",
       "status": "imported",
-      "actualWidthPx": 1254,
-      "actualHeightPx": 1254,
-      "ratioErrorRelative": -0.206,
-      "sha256": "74456e86c2f4f73af9c9576f622adbc19927ad50105aa993b8435b4695ffc38b",
-      "updated": "2026-10-15T06:36:06Z",
+      "actualWidthPx": 1448,
+      "actualHeightPx": 1086,
+      "ratioErrorRelative": 0.118,
+      "sha256": "8fa057237d754369015358e537ceff875d94ee2fa833b63b81886a99d2beab15",
+      "updated": "2026-10-15T20:22:03Z",
       "variants": {
         "watercolour": {
           "label": "Watercolour",
@@ -499,11 +499,11 @@
           "status": "awaiting_review",
           "productionReady": false,
           "canonicalScaleApplied": false,
-          "originalWidthPx": 1122,
-          "originalHeightPx": 1402,
+          "originalWidthPx": 1390,
+          "originalHeightPx": 1132,
           "transparent": true,
-          "sha256": "d7b6d1b6e9c4e939efdcfec1011a8227088a593ac6c070648a5cef5c205780bb",
-          "pngSha256": "0a9410787a4ecba6883910807f6cd632f31453cf5b169e5c6fd7af181fc947cf",
+          "sha256": "ce911942e1cd413d744c840e21e0d1fc782e2b6c27ce57eda33c8aa40c926947",
+          "pngSha256": "d024104e75d7eba4069795c40cd38423b6f0f1d1dc0ee59940f8fe42f6d739c9",
           "warnings": []
         }
       }
@@ -535,11 +535,11 @@
     "carex-evergold": {
       "file": "assets/plant-watercolours/carex-evergold.webp",
       "status": "imported",
-      "actualWidthPx": 1254,
-      "actualHeightPx": 1254,
-      "ratioErrorRelative": -0.215,
-      "sha256": "c5cd7415d386fe778c93ac0cd08d134bcbf5ff91cbc6f8e5466b61fe93d1f9e2",
-      "updated": "2026-10-15T06:36:06Z",
+      "actualWidthPx": 1448,
+      "actualHeightPx": 1086,
+      "ratioErrorRelative": 0.178,
+      "sha256": "608ceb12b19a16e6cb63cb968ad8ea704908a229eea5d87326f6d4cfbe6943a6",
+      "updated": "2026-10-15T20:22:03Z",
       "variants": {
         "watercolour": {
           "label": "Watercolour",
@@ -547,11 +547,11 @@
           "status": "awaiting_review",
           "productionReady": false,
           "canonicalScaleApplied": false,
-          "originalWidthPx": 1122,
-          "originalHeightPx": 1402,
+          "originalWidthPx": 1461,
+          "originalHeightPx": 1076,
           "transparent": true,
-          "sha256": "702ece4f774577ae4d2ad8fce57333952c54eeac83725fbbd4b97d4ea9658f8f",
-          "pngSha256": "628eed99930af745e277affe603d5cb6fd1b044e4d4da4b6ca0411075ad59cf0",
+          "sha256": "906655ddff3fd1c945186515aba1c8040e3681e39331bce04ffe7973f0cf1ade",
+          "pngSha256": "6f4a220176c93af2a462f625a22e1fa08537952b182db3fdf0532d8b9c08f106",
           "warnings": []
         }
       }
@@ -670,8 +670,8 @@
           "originalWidthPx": 1122,
           "originalHeightPx": 1402,
           "transparent": true,
-          "sha256": "52ce6c604d013b1e14955f45b80f10b20b3724852d01b7942ec47dadff60af2d",
-          "pngSha256": "ff3f00de584b4bdcb13270f03fc3fcdae089764890f00707439c14450574eeea",
+          "sha256": "bad48e8d5971ce7343d4c3dd40f8b4e8d0a17dad5a73e9c5c08817003c3e20e0",
+          "pngSha256": "2c8734a05b91502d20c52a31c721e5a0cf8eb67c9c80802ef26cc21fac780916",
           "warnings": []
         }
       }
@@ -703,11 +703,11 @@
     "epimedium-sulphureum": {
       "file": "assets/plant-watercolours/epimedium-sulphureum.webp",
       "status": "imported",
-      "actualWidthPx": 1254,
-      "actualHeightPx": 1254,
-      "ratioErrorRelative": -0.488,
-      "sha256": "088756844d99a16a4ae59933fe4d3e3b1b0d2c75d307d5e851118400becf6143",
-      "updated": "2026-10-15T06:36:06Z",
+      "actualWidthPx": 1448,
+      "actualHeightPx": 1086,
+      "ratioErrorRelative": -0.2,
+      "sha256": "3551947232fb48723975dc658989e1e4c43d23a0f2717f0abb61c5a7467acb08",
+      "updated": "2026-10-15T20:22:03Z",
       "variants": {
         "watercolour": {
           "label": "Watercolour",
@@ -715,11 +715,11 @@
           "status": "awaiting_review",
           "productionReady": false,
           "canonicalScaleApplied": false,
-          "originalWidthPx": 1122,
-          "originalHeightPx": 1402,
+          "originalWidthPx": 1254,
+          "originalHeightPx": 1254,
           "transparent": true,
-          "sha256": "f52f118e71c6a5339c8af557b0f1bd74f2e0f07d3b195e3401d2bc6e4bb01897",
-          "pngSha256": "dc3a9a29fe0af961757d0e8f39f92a81c35498f97c3e5509709f9d7c45328fe8",
+          "sha256": "1f6f085209f79c42347a9870db00b1edca070f7427b28d0eec394984e1071a27",
+          "pngSha256": "d6d441a39e8bc32274692341cacc80ca3807fd02262cd19cee372d104c904c38",
           "warnings": []
         }
       }
@@ -727,11 +727,11 @@
     "erigeron-karvinskianus": {
       "file": "assets/plant-watercolours/erigeron-karvinskianus.webp",
       "status": "imported",
-      "actualWidthPx": 1122,
-      "actualHeightPx": 1402,
-      "ratioErrorRelative": -0.567,
-      "sha256": "5ed17d41503b610d61a8996c485e44989e06eeb1aad73223cb09c39911dff91e",
-      "updated": "2026-10-15T06:36:06Z",
+      "actualWidthPx": 1254,
+      "actualHeightPx": 1254,
+      "ratioErrorRelative": -0.282,
+      "sha256": "035aeaf729239ed5a596b3d85f09ae67f2f9e3f7f32cf3aa6ae9df986ee3a867",
+      "updated": "2026-10-15T20:22:03Z",
       "variants": {
         "watercolour": {
           "label": "Watercolour",
@@ -739,11 +739,11 @@
           "status": "awaiting_review",
           "productionReady": false,
           "canonicalScaleApplied": false,
-          "originalWidthPx": 1122,
-          "originalHeightPx": 1402,
+          "originalWidthPx": 1536,
+          "originalHeightPx": 1024,
           "transparent": true,
-          "sha256": "de2d0c14fee9e73253dd3f871d047235ba4e0dcecae5c625c5a6abad6b92340d",
-          "pngSha256": "f2e9d7c39a2e2a3ed7f7164a39ea3997c1e9af6412a74486b7a6163682bf2fb2",
+          "sha256": "cb454949027a08a77a0733cac23c5ad4166b09f582ca5ee6e7cf27da0a915268",
+          "pngSha256": "c0585792e4ca1e8d028299147c5abe39e40d5bc8d33b7ee1667a695eefbd1927",
           "warnings": []
         }
       }
@@ -823,11 +823,11 @@
     "euphorbia-polychroma": {
       "file": "assets/plant-watercolours/euphorbia-polychroma.webp",
       "status": "imported",
-      "actualWidthPx": 1122,
-      "actualHeightPx": 1402,
-      "ratioErrorRelative": -0.231,
-      "sha256": "cafc00fe41df477d34785f273f3166c435a3946d69191186435f0f1ec6b2b98b",
-      "updated": "2026-10-15T07:08:42Z",
+      "actualWidthPx": 1448,
+      "actualHeightPx": 1086,
+      "ratioErrorRelative": 0.404,
+      "sha256": "f8318c05e62ed962d6cca9fdf3fe99d876def7a06c24ce07ff760494860bc047",
+      "updated": "2026-10-15T20:22:03Z",
       "variants": {
         "watercolour": {
           "label": "Watercolour",
@@ -835,11 +835,11 @@
           "status": "awaiting_review",
           "productionReady": false,
           "canonicalScaleApplied": false,
-          "originalWidthPx": 1122,
-          "originalHeightPx": 1402,
+          "originalWidthPx": 1536,
+          "originalHeightPx": 1024,
           "transparent": true,
-          "sha256": "ae72e68cfd74b02531464d4422eabd0982857ed3d13acfee54e967655742f963",
-          "pngSha256": "5591a00fd562618fb268c79871917648ffd1876f84ce061775d00a02afadf51c",
+          "sha256": "30e073b5d1bf047e2c906defcc373d80e6ad800fbf1e7c535d7dad9bae906008",
+          "pngSha256": "d01075cc3233426bde7779d4d4ccbb913dc5e435b29d48b5d7ec168b44c8ec1c",
           "warnings": []
         }
       }
@@ -897,9 +897,9 @@
       "status": "imported",
       "actualWidthPx": 1254,
       "actualHeightPx": 1254,
-      "ratioErrorRelative": -0.428,
-      "sha256": "b4ac7c4b5fd6afb7d25a4eb39c053b65680b118062d58dc23b34ac7065ea49b1",
-      "updated": "2026-10-15T07:08:42Z",
+      "ratioErrorRelative": -0.208,
+      "sha256": "5a75d2ecea17b4f8f1934fecdbb106b2df92aa0e2cddda9aa70be61578733f91",
+      "updated": "2026-10-15T20:22:03Z",
       "variants": {
         "watercolour": {
           "label": "Watercolour",
@@ -910,8 +910,8 @@
           "originalWidthPx": 1448,
           "originalHeightPx": 1086,
           "transparent": true,
-          "sha256": "2e2e1e175d117df7a22afa9fecfa3eb1de01502f230097d591265b4014fef9f0",
-          "pngSha256": "2dc3690d99bd9bbb568dc369489072c2bdaa8345567bd1f0982fbd1c34bb5d2c",
+          "sha256": "33489f6d24825fb9f5670016f001b79ff04124cfff54f6deae0e74bdbc33fc49",
+          "pngSha256": "4e7a6e5b05ec554fff1cd13ef23d0f017dadcb14430d1d45eb2566a56bcd24c2",
           "warnings": []
         }
       }
@@ -1075,11 +1075,11 @@
           "status": "awaiting_review",
           "productionReady": false,
           "canonicalScaleApplied": false,
-          "originalWidthPx": 1122,
-          "originalHeightPx": 1402,
+          "originalWidthPx": 1402,
+          "originalHeightPx": 1122,
           "transparent": true,
-          "sha256": "8a3e0234084eadd78ae3f8b8802046a2f02c826371004d98d64a5ad61889dd54",
-          "pngSha256": "9f74f903c03ab686d9532d2b379e42f945a2b1d532b4c2edb8ac125e71c2d6c1",
+          "sha256": "9f6c74f45bd3a58b02a83b663a77530738f24e4accbbb3c1398a855e6e63815b",
+          "pngSha256": "3fc05bef43854e2b1ddb96afb8b4781f88051d2a7a1fe06fe397c9a9bf5cae39",
           "warnings": []
         }
       }
@@ -1327,11 +1327,11 @@
     "polystichum-setiferum": {
       "file": "assets/plant-watercolours/polystichum-setiferum.webp",
       "status": "imported",
-      "actualWidthPx": 1254,
-      "actualHeightPx": 1254,
-      "ratioErrorRelative": -0.209,
-      "sha256": "627cf86b3320226104ef332c286924322c144812a99b9fbea6e3c481dcfaeff0",
-      "updated": "2026-10-15T07:10:00Z",
+      "actualWidthPx": 1536,
+      "actualHeightPx": 1024,
+      "ratioErrorRelative": 0.213,
+      "sha256": "df36203d7c61b2eb45f538aef8e44edf86c9b55013dab051c7a2cd017b666109",
+      "updated": "2026-10-15T20:22:03Z",
       "variants": {
         "watercolour": {
           "label": "Watercolour",
@@ -1339,11 +1339,11 @@
           "status": "awaiting_review",
           "productionReady": false,
           "canonicalScaleApplied": false,
-          "originalWidthPx": 1122,
-          "originalHeightPx": 1402,
+          "originalWidthPx": 1536,
+          "originalHeightPx": 1024,
           "transparent": true,
-          "sha256": "f400a70504f6d32dbcc30577b3c521a3debc480375e10e2410e8dbe9e3b714f2",
-          "pngSha256": "252c47ff3518fdb1deb424e4d0f05ed084331a598ee5711626f854b3d87970fa",
+          "sha256": "62bcb0daaea08ac7d23e9780154403b6ea19b6dcbd6e78221a43f27906e14268",
+          "pngSha256": "cfaa5de71d3cac44248d0e855d30238e05934a4b0d16dde8f2f2c18d737cbc00",
           "warnings": []
         }
       }
@@ -1531,11 +1531,11 @@
           "status": "awaiting_review",
           "productionReady": false,
           "canonicalScaleApplied": false,
-          "originalWidthPx": 1086,
-          "originalHeightPx": 1448,
+          "originalWidthPx": 1024,
+          "originalHeightPx": 1536,
           "transparent": true,
-          "sha256": "8ce95ecd4d93f883fc2504b3fee79441560a260fb77c29f2de6e9be65f1ad419",
-          "pngSha256": "17e67a45570774c84b475ea96fc1b0e17c139fbe317dad07fb4623428ca040f5",
+          "sha256": "94654df6dd559b21a5055c33153e0269387faae49b7472065cdb111db97a27ee",
+          "pngSha256": "b81e99b874e5886504de2040153093b72f7ca3be62f03928fd80cc55eca6bb93",
           "warnings": []
         }
       }
@@ -1555,11 +1555,11 @@
           "status": "awaiting_review",
           "productionReady": false,
           "canonicalScaleApplied": false,
-          "originalWidthPx": 1122,
-          "originalHeightPx": 1402,
+          "originalWidthPx": 1024,
+          "originalHeightPx": 1536,
           "transparent": true,
-          "sha256": "33fc205742f1974d77aebc04db79160e2e1e9c4ddc39bda5b32af24098831ba5",
-          "pngSha256": "a94efbd891df33db3d6692a751c20212a0159412876c1a0f5d9c7e57239478b2",
+          "sha256": "0122dad1831dc98ba71a467842d51436e217719ec9c1cf4c630eb7ddcf77a718",
+          "pngSha256": "1485a71e09f2d1b302da50bd82fd67206ef117a8fe6d2429347e73460309473c",
           "warnings": []
         }
       }
@@ -1579,11 +1579,11 @@
           "status": "awaiting_review",
           "productionReady": false,
           "canonicalScaleApplied": false,
-          "originalWidthPx": 1086,
-          "originalHeightPx": 1448,
+          "originalWidthPx": 1024,
+          "originalHeightPx": 1536,
           "transparent": true,
-          "sha256": "55d6d1fd31d9ce6421efcf79f81f690ce06dc96a3e5edbaab1d8268401c28af1",
-          "pngSha256": "eaa04ca06152084023cee1c6222a96da4d7ec23764cf84f84ba1d2c33017635d",
+          "sha256": "0cc8951b50aaff3d1b13ba4446bedd39348c84a720403ebea5d2a7493683064f",
+          "pngSha256": "9df960b46effc8851b8f9779149692a75db234e7d7e08673e1810d182026f33d",
           "warnings": []
         }
       }
