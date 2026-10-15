@@ -1,0 +1,4 @@
+{
+  "apiBase": "",
+  "note": "URL of the botanical-image approval service (see docs/BOTANICAL_VERIFICATION.md). Empty = no approval service deployed: images stay pending_review and the Approve button is disabled. Never put a GitHub token here."
+}

@@ -1,0 +1,227 @@
+{
+  "schemaVersion": 1,
+  "description": "Botanical image verification baseline. A plant is pending_review until an approval pinned to the same imageSha256 exists in the approval service; changed image bytes invalidate approvals.",
+  "statusMap": {
+    "provisional_cultivar_or_species_check": "pending_review",
+    "filename_match_unreviewed": "confirmed"
+  },
+  "plants": {
+    "achillea-moonshine": {
+      "status": "pending_review",
+      "imageSha256": "ce9a4dd3e2a2d1be971886d4a7165be5dabd041277cc38288ffbf8b7ec69fad9",
+      "pngSha256": "e86987aa2c794fa4aaa87ca54335e6aea6baa0a22a9791ac61e01b23c03f68a5",
+      "bundleMatchStatus": "provisional_cultivar_or_species_check",
+      "sourceFilename": "golden_yarrow_botanical_specimen.png",
+      "importedAt": "2026-10-15T06:30:03Z"
+    },
+    "achillea-terracotta": {
+      "status": "confirmed",
+      "imageSha256": "ab13d5fc41777d7cf22209265f1b273cf89b8524457633e37abcb1e7319e99c6",
+      "pngSha256": "e8a632914766c219bde521f9f524d3c2a4dbf478863d6bb72a332dedc7b63c22",
+      "bundleMatchStatus": "filename_match_unreviewed",
+      "sourceFilename": "terracotta_yarrow_botanical_cutout.png",
+      "importedAt": "2026-10-15T06:30:03Z"
+    },
+    "achillea-walther-funcke": {
+      "status": "pending_review",
+      "imageSha256": "a95f93e25eaabeb840fec3f636eb6d58522329aad8d8b2d2ef83150d32077370",
+      "pngSha256": "248eab1fa48ca161f857d330661b4b478162a4ecd9bf499fc580b1423aa71fae",
+      "bundleMatchStatus": "provisional_cultivar_or_species_check",
+      "sourceFilename": "rainbow_yarrow_botanical_specimen.png",
+      "importedAt": "2026-10-15T06:30:03Z"
+    },
+    "agastache-blackadder": {
+      "status": "confirmed",
+      "imageSha256": "1b8a070eeb0e93c0c8ef02a2855da0de83cea1d33619d6c16117db5b066440ca",
+      "pngSha256": "c242d05d42cac87cecbdbb4a47ae78f746b65d90a3d1a5ad978d2b7b12e91115",
+      "bundleMatchStatus": "filename_match_unreviewed",
+      "sourceFilename": "isolated_purple_agastache_flowering_plant.png",
+      "importedAt": "2026-10-15T06:30:03Z"
+    },
+    "alchemilla-mollis": {
+      "status": "confirmed",
+      "imageSha256": "93ec65808a07faa986f7dd76cfbcdc3411df11a6f96e15dae773997ea014e482",
+      "pngSha256": "790e50e047aa67132993e930a4eb7b651ada421220a35ad8faee46a08fccff77",
+      "bundleMatchStatus": "filename_match_unreviewed",
+      "sourceFilename": "isolated_lady_s_mantle_in_bloom.png",
+      "importedAt": "2026-10-15T06:30:03Z"
+    },
+    "allium-purple-sensation": {
+      "status": "confirmed",
+      "imageSha256": "7dc93a6d090df2e01a7d43bad4be6df98a3aedd32e2734e4371d21588e624aa7",
+      "pngSha256": "697c9979ea9e5157998ad0af17bf8c448821dc926d3db50a9e9b52b0858636a7",
+      "bundleMatchStatus": "filename_match_unreviewed",
+      "sourceFilename": "purple_allium_blossom_cluster.png",
+      "importedAt": "2026-10-15T06:30:03Z"
+    },
+    "anemone-hadspen": {
+      "status": "confirmed",
+      "imageSha256": "cdc3f22bc2ffbbf720a7756b07b5430e8ef1f928bdfa5294539a322dcf070432",
+      "pngSha256": "7983937ed91ef11c828641d61c4fb6ba1106210dcda04520ea72554b94be4df5",
+      "bundleMatchStatus": "filename_match_unreviewed",
+      "sourceFilename": "pink_japanese_anemone_botanical_cutout.png",
+      "importedAt": "2026-10-15T06:30:03Z"
+    },
+    "anemone-honorine": {
+      "status": "confirmed",
+      "imageSha256": "b94f4f019a1c8aebbbf65f7ee3ca3f7849c4205bfa296fc5ac1d40d09e53a0b6",
+      "pngSha256": "125124ebf2051d025f7e9e50ee46fa392eb63bc2b49356dec584056dac1659d9",
+      "bundleMatchStatus": "filename_match_unreviewed",
+      "sourceFilename": "white_japanese_anemone_plant_cutout.png",
+      "importedAt": "2026-10-15T06:30:03Z"
+    },
+    "aruncus-dioicus": {
+      "status": "confirmed",
+      "imageSha256": "dd77b98fe8b611f140c2ada2005be49de96c63912786bb090c2f5bf32d9bed9d",
+      "pngSha256": "a19cf2ed75c5808287d9282ce00d90bc5ef5c35ceddb7d7412b4812f24a2ff7a",
+      "bundleMatchStatus": "filename_match_unreviewed",
+      "sourceFilename": "isolated_goatsbeard_botanical_cutout.png",
+      "importedAt": "2026-10-15T06:30:03Z"
+    },
+    "aster-little-carlow": {
+      "status": "pending_review",
+      "imageSha256": "1119f5d7a8c959e8fe7ff0bd1a692d8ca7898cdb621b78386a3468438ed94ad2",
+      "pngSha256": "2728dc3adb906302570373573e7c3bfaad12c148ad71d4afc2a082dc9e17a363",
+      "bundleMatchStatus": "provisional_cultivar_or_species_check",
+      "sourceFilename": "lavender_aster_in_full_bloom.png",
+      "importedAt": "2026-10-15T06:30:03Z"
+    },
+    "aster-monch": {
+      "status": "confirmed",
+      "imageSha256": "1c249bbebbef53d18ba5a00089493ff157c716e1b92a84fbc9cb45f473a74ac7",
+      "pngSha256": "0c1233f5bc62a5fe5e855b789d9e3dce989c8e0e9b7d8daac73092ffed3a8c6a",
+      "bundleMatchStatus": "filename_match_unreviewed",
+      "sourceFilename": "lavender_aster_mönch_plant_cutout.png",
+      "importedAt": "2026-10-15T06:30:03Z"
+    },
+    "astrantia-major": {
+      "status": "pending_review",
+      "imageSha256": "9ffe9c6a10adddfdbb5854dd04ed80b18cd66e049f0c8638ea03f45e6d8d1671",
+      "pngSha256": "85f57b188ad678ee9f06e6f6e8b17e5e957bb3481ff0a315bab869297b4488c9",
+      "bundleMatchStatus": "provisional_cultivar_or_species_check",
+      "sourceFilename": "astrantia_masterwort_botanical_cutout.png",
+      "importedAt": "2026-10-15T06:30:03Z"
+    },
+    "brunnera-jack-frost": {
+      "status": "confirmed",
+      "imageSha256": "74456e86c2f4f73af9c9576f622adbc19927ad50105aa993b8435b4695ffc38b",
+      "pngSha256": "198602230c4542d101e6b52c19a544493d27b07b3780374829bdf7365a612c1d",
+      "bundleMatchStatus": "filename_match_unreviewed",
+      "sourceFilename": "variegated_brunnera_with_blue_flowers.png",
+      "importedAt": "2026-10-15T06:36:06Z"
+    },
+    "calamagrostis-karl-foerster": {
+      "status": "confirmed",
+      "imageSha256": "ee8eccc39dc9e31d6016413cbf5307781fcbb2532e23688f1ed15e3684f87229",
+      "pngSha256": "b352f931449851b55f1067cd51224d2ffc30e3761e305b954c58338bd11166ed",
+      "bundleMatchStatus": "filename_match_unreviewed",
+      "sourceFilename": "isolated_feather_reed_grass_clump.png",
+      "importedAt": "2026-10-15T06:36:06Z"
+    },
+    "carex-evergold": {
+      "status": "confirmed",
+      "imageSha256": "c5cd7415d386fe778c93ac0cd08d134bcbf5ff91cbc6f8e5466b61fe93d1f9e2",
+      "pngSha256": "ff5e767764e8a59f77434732bc08fa04dd6744d5559805c3569f4435a2e8e439",
+      "bundleMatchStatus": "filename_match_unreviewed",
+      "sourceFilename": "variegated_sedge_fountain_clump.png",
+      "importedAt": "2026-10-15T06:36:06Z"
+    },
+    "cenolophium-denudatum": {
+      "status": "pending_review",
+      "imageSha256": "a05cc276defd4abbb127c93e7a2169c6154f5b49e4a1bf8a014a1fd5c821a492",
+      "pngSha256": "40263b1eee257c2f1879bb2b7a4739395f24fbdca96d81bf50e560e94c0b09be",
+      "bundleMatchStatus": "provisional_cultivar_or_species_check",
+      "sourceFilename": "detailed_white_umbel_wildflower_cutout.png",
+      "importedAt": "2026-10-15T06:36:06Z"
+    },
+    "crocosmia-lucifer": {
+      "status": "confirmed",
+      "imageSha256": "2a0b2298708821e01fdaa5e763b0cd9fd3b057c74b54496a4cd217d2239da4e1",
+      "pngSha256": "69d235f812a5182c36ae2526d65f4821412c6f5b523638a26169f39f905308df",
+      "bundleMatchStatus": "filename_match_unreviewed",
+      "sourceFilename": "scarlet_crocosmia_in_bloom.png",
+      "importedAt": "2026-10-15T06:36:06Z"
+    },
+    "deschampsia-goldtau": {
+      "status": "pending_review",
+      "imageSha256": "539dee4baecc1d6313981267fa97c4544fe0e33c5c021bfc31a878a02ee1d5de",
+      "pngSha256": "067318d3298653651148b5b960e576d84a6c20fcf817237f6d02fd62733d5d83",
+      "bundleMatchStatus": "provisional_cultivar_or_species_check",
+      "sourceFilename": "golden_meadow_grass_tuft_cutout.png",
+      "importedAt": "2026-10-15T06:36:06Z"
+    },
+    "digitalis-ferruginea": {
+      "status": "confirmed",
+      "imageSha256": "e62a0822cf201f698bdae09b095be288af8938601bdbbcc513424effd3eabb3c",
+      "pngSha256": "18f0f6209f86f5795de6ac328d958371f91c8cffa4e1fbffdd785f56fadd4bbf",
+      "bundleMatchStatus": "filename_match_unreviewed",
+      "sourceFilename": "rusty_foxglove_botanical_specimen.png",
+      "importedAt": "2026-10-15T06:36:06Z"
+    },
+    "digitalis-purpurea": {
+      "status": "pending_review",
+      "imageSha256": "a7eab811d7d13f1e64a6dec5b194bab34077c9e45bdb8c2f1328b46ff859a3db",
+      "pngSha256": "f5b11e6b891dd31349ee3fe2fc1c2dcdb9d2f4140901fdc8013b4eff8c4d5e55",
+      "bundleMatchStatus": "provisional_cultivar_or_species_check",
+      "sourceFilename": "isolated_pink_foxglove_plant.png",
+      "importedAt": "2026-10-15T06:36:06Z"
+    },
+    "dryopteris-filix-mas": {
+      "status": "pending_review",
+      "imageSha256": "c84b1259876dfb41a8b13e1936d99714b17356a56fe2afac7d08339f2872152e",
+      "pngSha256": "cacb76abca3fcd25e250391abe9068548319fd96ec6b9689bf16125e13688fa3",
+      "bundleMatchStatus": "provisional_cultivar_or_species_check",
+      "sourceFilename": "photorealistic_fern_cutout_on_transparency.png",
+      "importedAt": "2026-10-15T06:36:06Z"
+    },
+    "echinacea-purpurea": {
+      "status": "confirmed",
+      "imageSha256": "f611151decf7b5e448d960174385e7663214a344a1d68dce9e087df803b8a2f0",
+      "pngSha256": "a68f48e021ba752d8514dc31ef9bb49e82d6234ce42baac0a6ad6452ba89563a",
+      "bundleMatchStatus": "filename_match_unreviewed",
+      "sourceFilename": "purple_coneflower_botanical_cluster.png",
+      "importedAt": "2026-10-15T06:36:06Z"
+    },
+    "echinacea-white-swan": {
+      "status": "confirmed",
+      "imageSha256": "3efc8b7d3c80902e00c3eb772d4eada51d4eda83aa81085ca43bc0ba8b8445ed",
+      "pngSha256": "c48d17b36446b8bfd47498729843f531f288357ef6f0aab09eb72c00da566be9",
+      "bundleMatchStatus": "filename_match_unreviewed",
+      "sourceFilename": "white_coneflower_botanical_cutout.png",
+      "importedAt": "2026-10-15T06:36:06Z"
+    },
+    "epimedium-sulphureum": {
+      "status": "pending_review",
+      "imageSha256": "088756844d99a16a4ae59933fe4d3e3b1b0d2c75d307d5e851118400becf6143",
+      "pngSha256": "c5474446f4436f4b7d274811a413fd05872f7ff3e155f976cfb67e93c60be12e",
+      "bundleMatchStatus": "provisional_cultivar_or_species_check",
+      "sourceFilename": "epimedium_fairy_wings_in_bloom.png",
+      "importedAt": "2026-10-15T06:36:06Z"
+    },
+    "erigeron-karvinskianus": {
+      "status": "confirmed",
+      "imageSha256": "5ed17d41503b610d61a8996c485e44989e06eeb1aad73223cb09c39911dff91e",
+      "pngSha256": "ada0eecd30b3470d40c2a53b1781e8ffb0f55302faf3da5115fa5748174ccf10",
+      "bundleMatchStatus": "filename_match_unreviewed",
+      "sourceFilename": "mexican_fleabane_blossom_mound.png",
+      "importedAt": "2026-10-15T06:36:06Z"
+    },
+    "eryngium-planum": {
+      "status": "confirmed",
+      "imageSha256": "daf68791f07458836b5d7f1bb0ad1de15ca1e41d28c6f1e68f04a4bfe63c6845",
+      "pngSha256": "e6de1a8b522b08b18b57b945c18d8a124353aa0c13bde3f3237f600136edf5b7",
+      "bundleMatchStatus": "filename_match_unreviewed",
+      "sourceFilename": "blue_eryngium_sea_holly_botanical_cutout.png",
+      "importedAt": "2026-10-15T06:36:06Z"
+    },
+    "eupatorium-atropurpureum": {
+      "status": "pending_review",
+      "imageSha256": "5ed65f9ac5e6267521befb3a52803cdaec31efd25f1e960508c9ae9a1cc37d33",
+      "pngSha256": "adff092a1e3ffb03f70ae4f31090f4690e2cd9526fef0ef99b83166449ed37ba",
+      "bundleMatchStatus": "provisional_cultivar_or_species_check",
+      "sourceFilename": "mauve_joe_pye_weed_botanical_cutout.png",
+      "importedAt": "2026-10-15T06:36:06Z"
+    }
+  },
+  "updated": "2026-10-15T06:36:06Z"
+}

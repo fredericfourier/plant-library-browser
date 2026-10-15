@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "updated": "2026-10-14",
+  "updated": "2026-10-15",
   "assets": {
     "alchemilla-mollis": {
       "file": "assets/plant-watercolours/alchemilla-mollis.webp",
@@ -8,10 +8,10 @@
       "pixelsPerCm": 10,
       "canonicalHeightPx": 400,
       "expectedSpreadPx": 500,
-      "actualWidthPx": 467,
-      "actualHeightPx": 400,
-      "ratioErrorRelative": -0.066,
-      "updated": "2026-10-14T14:42:37+00:00",
+      "actualWidthPx": 1448,
+      "actualHeightPx": 1086,
+      "ratioErrorRelative": 0.127,
+      "updated": "2026-10-15T06:30:03Z",
       "variants": {
         "watercolour": {
           "label": "Watercolour",
@@ -26,7 +26,8 @@
           "silhouetteRatioErrorRelative": -0.088,
           "warnings": []
         }
-      }
+      },
+      "sha256": "93ec65808a07faa986f7dd76cfbcdc3411df11a6f96e15dae773997ea014e482"
     },
     "echinacea-purpurea": {
       "file": "assets/plant-watercolours/echinacea-purpurea.webp",
@@ -34,10 +35,10 @@
       "pixelsPerCm": 10,
       "canonicalHeightPx": 1000,
       "expectedSpreadPx": 450,
-      "actualWidthPx": 630,
-      "actualHeightPx": 1000,
-      "ratioErrorRelative": 0.4,
-      "updated": "2026-10-14T14:42:37+00:00",
+      "actualWidthPx": 1086,
+      "actualHeightPx": 1448,
+      "ratioErrorRelative": 0.329,
+      "updated": "2026-10-15T06:36:06Z",
       "variants": {
         "watercolour": {
           "label": "Watercolour",
@@ -54,7 +55,8 @@
             "silhouette_ratio_needs_review"
           ]
         }
-      }
+      },
+      "sha256": "f611151decf7b5e448d960174385e7663214a344a1d68dce9e087df803b8a2f0"
     },
     "echinacea-white-swan": {
       "file": "assets/plant-watercolours/echinacea-white-swan.webp",
@@ -62,11 +64,11 @@
       "pixelsPerCm": 10,
       "canonicalHeightPx": 700,
       "expectedSpreadPx": 450,
-      "actualWidthPx": 457,
-      "actualHeightPx": 700,
-      "ratioErrorRelative": 0.015,
+      "actualWidthPx": 1086,
+      "actualHeightPx": 1448,
+      "ratioErrorRelative": 0.072,
       "userApprovedMorphology": true,
-      "updated": "2026-10-14T14:42:37+00:00",
+      "updated": "2026-10-15T06:36:06Z",
       "variants": {
         "watercolour": {
           "label": "Watercolour",
@@ -81,7 +83,8 @@
           "silhouetteRatioErrorRelative": 0.031,
           "warnings": []
         }
-      }
+      },
+      "sha256": "3efc8b7d3c80902e00c3eb772d4eada51d4eda83aa81085ca43bc0ba8b8445ed"
     },
     "geranium-rozanne": {
       "file": "assets/plant-watercolours/geranium-rozanne.webp",
@@ -219,6 +222,222 @@
           ]
         }
       }
+    },
+    "achillea-moonshine": {
+      "file": "assets/plant-watercolours/achillea-moonshine.webp",
+      "status": "imported",
+      "actualWidthPx": 1122,
+      "actualHeightPx": 1402,
+      "ratioErrorRelative": -0.104,
+      "sha256": "ce9a4dd3e2a2d1be971886d4a7165be5dabd041277cc38288ffbf8b7ec69fad9",
+      "updated": "2026-10-15T06:30:03Z"
+    },
+    "achillea-terracotta": {
+      "file": "assets/plant-watercolours/achillea-terracotta.webp",
+      "status": "imported",
+      "actualWidthPx": 1122,
+      "actualHeightPx": 1402,
+      "ratioErrorRelative": 0.051,
+      "sha256": "ab13d5fc41777d7cf22209265f1b273cf89b8524457633e37abcb1e7319e99c6",
+      "updated": "2026-10-15T06:30:03Z"
+    },
+    "achillea-walther-funcke": {
+      "file": "assets/plant-watercolours/achillea-walther-funcke.webp",
+      "status": "imported",
+      "actualWidthPx": 1254,
+      "actualHeightPx": 1254,
+      "ratioErrorRelative": 0.187,
+      "sha256": "a95f93e25eaabeb840fec3f636eb6d58522329aad8d8b2d2ef83150d32077370",
+      "updated": "2026-10-15T06:30:03Z"
+    },
+    "agastache-blackadder": {
+      "file": "assets/plant-watercolours/agastache-blackadder.webp",
+      "status": "imported",
+      "actualWidthPx": 1086,
+      "actualHeightPx": 1448,
+      "ratioErrorRelative": 0.292,
+      "sha256": "1b8a070eeb0e93c0c8ef02a2855da0de83cea1d33619d6c16117db5b066440ca",
+      "updated": "2026-10-15T06:30:03Z"
+    },
+    "allium-purple-sensation": {
+      "file": "assets/plant-watercolours/allium-purple-sensation.webp",
+      "status": "imported",
+      "actualWidthPx": 1122,
+      "actualHeightPx": 1402,
+      "ratioErrorRelative": 1.933,
+      "sha256": "7dc93a6d090df2e01a7d43bad4be6df98a3aedd32e2734e4371d21588e624aa7",
+      "updated": "2026-10-15T06:30:03Z"
+    },
+    "anemone-hadspen": {
+      "file": "assets/plant-watercolours/anemone-hadspen.webp",
+      "status": "imported",
+      "actualWidthPx": 1122,
+      "actualHeightPx": 1402,
+      "ratioErrorRelative": 0.148,
+      "sha256": "cdc3f22bc2ffbbf720a7756b07b5430e8ef1f928bdfa5294539a322dcf070432",
+      "updated": "2026-10-15T06:30:03Z"
+    },
+    "anemone-honorine": {
+      "file": "assets/plant-watercolours/anemone-honorine.webp",
+      "status": "imported",
+      "actualWidthPx": 1122,
+      "actualHeightPx": 1402,
+      "ratioErrorRelative": 0.592,
+      "sha256": "b94f4f019a1c8aebbbf65f7ee3ca3f7849c4205bfa296fc5ac1d40d09e53a0b6",
+      "updated": "2026-10-15T06:30:03Z"
+    },
+    "aruncus-dioicus": {
+      "file": "assets/plant-watercolours/aruncus-dioicus.webp",
+      "status": "imported",
+      "actualWidthPx": 1122,
+      "actualHeightPx": 1402,
+      "ratioErrorRelative": 0.204,
+      "sha256": "dd77b98fe8b611f140c2ada2005be49de96c63912786bb090c2f5bf32d9bed9d",
+      "updated": "2026-10-15T06:30:03Z"
+    },
+    "aster-little-carlow": {
+      "file": "assets/plant-watercolours/aster-little-carlow.webp",
+      "status": "imported",
+      "actualWidthPx": 1122,
+      "actualHeightPx": 1402,
+      "ratioErrorRelative": 0.461,
+      "sha256": "1119f5d7a8c959e8fe7ff0bd1a692d8ca7898cdb621b78386a3468438ed94ad2",
+      "updated": "2026-10-15T06:30:03Z"
+    },
+    "aster-monch": {
+      "file": "assets/plant-watercolours/aster-monch.webp",
+      "status": "imported",
+      "actualWidthPx": 1122,
+      "actualHeightPx": 1402,
+      "ratioErrorRelative": 0.242,
+      "sha256": "1c249bbebbef53d18ba5a00089493ff157c716e1b92a84fbc9cb45f473a74ac7",
+      "updated": "2026-10-15T06:30:03Z"
+    },
+    "astrantia-major": {
+      "file": "assets/plant-watercolours/astrantia-major.webp",
+      "status": "imported",
+      "actualWidthPx": 1086,
+      "actualHeightPx": 1448,
+      "ratioErrorRelative": 0.09,
+      "sha256": "9ffe9c6a10adddfdbb5854dd04ed80b18cd66e049f0c8638ea03f45e6d8d1671",
+      "updated": "2026-10-15T06:30:03Z"
+    },
+    "brunnera-jack-frost": {
+      "file": "assets/plant-watercolours/brunnera-jack-frost.webp",
+      "status": "imported",
+      "actualWidthPx": 1254,
+      "actualHeightPx": 1254,
+      "ratioErrorRelative": -0.206,
+      "sha256": "74456e86c2f4f73af9c9576f622adbc19927ad50105aa993b8435b4695ffc38b",
+      "updated": "2026-10-15T06:36:06Z"
+    },
+    "calamagrostis-karl-foerster": {
+      "file": "assets/plant-watercolours/calamagrostis-karl-foerster.webp",
+      "status": "imported",
+      "actualWidthPx": 1086,
+      "actualHeightPx": 1448,
+      "ratioErrorRelative": 0.497,
+      "sha256": "ee8eccc39dc9e31d6016413cbf5307781fcbb2532e23688f1ed15e3684f87229",
+      "updated": "2026-10-15T06:36:06Z"
+    },
+    "carex-evergold": {
+      "file": "assets/plant-watercolours/carex-evergold.webp",
+      "status": "imported",
+      "actualWidthPx": 1254,
+      "actualHeightPx": 1254,
+      "ratioErrorRelative": -0.215,
+      "sha256": "c5cd7415d386fe778c93ac0cd08d134bcbf5ff91cbc6f8e5466b61fe93d1f9e2",
+      "updated": "2026-10-15T06:36:06Z"
+    },
+    "cenolophium-denudatum": {
+      "file": "assets/plant-watercolours/cenolophium-denudatum.webp",
+      "status": "imported",
+      "actualWidthPx": 1122,
+      "actualHeightPx": 1402,
+      "ratioErrorRelative": 0.787,
+      "sha256": "a05cc276defd4abbb127c93e7a2169c6154f5b49e4a1bf8a014a1fd5c821a492",
+      "updated": "2026-10-15T06:36:06Z"
+    },
+    "crocosmia-lucifer": {
+      "file": "assets/plant-watercolours/crocosmia-lucifer.webp",
+      "status": "imported",
+      "actualWidthPx": 1122,
+      "actualHeightPx": 1402,
+      "ratioErrorRelative": 1.647,
+      "sha256": "2a0b2298708821e01fdaa5e763b0cd9fd3b057c74b54496a4cd217d2239da4e1",
+      "updated": "2026-10-15T06:36:06Z"
+    },
+    "deschampsia-goldtau": {
+      "file": "assets/plant-watercolours/deschampsia-goldtau.webp",
+      "status": "imported",
+      "actualWidthPx": 1122,
+      "actualHeightPx": 1402,
+      "ratioErrorRelative": 0.077,
+      "sha256": "539dee4baecc1d6313981267fa97c4544fe0e33c5c021bfc31a878a02ee1d5de",
+      "updated": "2026-10-15T06:36:06Z"
+    },
+    "digitalis-ferruginea": {
+      "file": "assets/plant-watercolours/digitalis-ferruginea.webp",
+      "status": "imported",
+      "actualWidthPx": 1254,
+      "actualHeightPx": 1254,
+      "ratioErrorRelative": 0.98,
+      "sha256": "e62a0822cf201f698bdae09b095be288af8938601bdbbcc513424effd3eabb3c",
+      "updated": "2026-10-15T06:36:06Z"
+    },
+    "digitalis-purpurea": {
+      "file": "assets/plant-watercolours/digitalis-purpurea.webp",
+      "status": "imported",
+      "actualWidthPx": 1086,
+      "actualHeightPx": 1448,
+      "ratioErrorRelative": 0.268,
+      "sha256": "a7eab811d7d13f1e64a6dec5b194bab34077c9e45bdb8c2f1328b46ff859a3db",
+      "updated": "2026-10-15T06:36:06Z"
+    },
+    "dryopteris-filix-mas": {
+      "file": "assets/plant-watercolours/dryopteris-filix-mas.webp",
+      "status": "imported",
+      "actualWidthPx": 1254,
+      "actualHeightPx": 1254,
+      "ratioErrorRelative": 0.118,
+      "sha256": "c84b1259876dfb41a8b13e1936d99714b17356a56fe2afac7d08339f2872152e",
+      "updated": "2026-10-15T06:36:06Z"
+    },
+    "epimedium-sulphureum": {
+      "file": "assets/plant-watercolours/epimedium-sulphureum.webp",
+      "status": "imported",
+      "actualWidthPx": 1254,
+      "actualHeightPx": 1254,
+      "ratioErrorRelative": -0.488,
+      "sha256": "088756844d99a16a4ae59933fe4d3e3b1b0d2c75d307d5e851118400becf6143",
+      "updated": "2026-10-15T06:36:06Z"
+    },
+    "erigeron-karvinskianus": {
+      "file": "assets/plant-watercolours/erigeron-karvinskianus.webp",
+      "status": "imported",
+      "actualWidthPx": 1122,
+      "actualHeightPx": 1402,
+      "ratioErrorRelative": -0.567,
+      "sha256": "5ed17d41503b610d61a8996c485e44989e06eeb1aad73223cb09c39911dff91e",
+      "updated": "2026-10-15T06:36:06Z"
+    },
+    "eryngium-planum": {
+      "file": "assets/plant-watercolours/eryngium-planum.webp",
+      "status": "imported",
+      "actualWidthPx": 1122,
+      "actualHeightPx": 1402,
+      "ratioErrorRelative": 0.028,
+      "sha256": "daf68791f07458836b5d7f1bb0ad1de15ca1e41d28c6f1e68f04a4bfe63c6845",
+      "updated": "2026-10-15T06:36:06Z"
+    },
+    "eupatorium-atropurpureum": {
+      "file": "assets/plant-watercolours/eupatorium-atropurpureum.webp",
+      "status": "imported",
+      "actualWidthPx": 1122,
+      "actualHeightPx": 1402,
+      "ratioErrorRelative": 0.263,
+      "sha256": "5ed65f9ac5e6267521befb3a52803cdaec31efd25f1e960508c9ae9a1cc37d33",
+      "updated": "2026-10-15T06:36:06Z"
     }
   },
   "pixelsPerCm": 10,
