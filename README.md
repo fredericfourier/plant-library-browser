@@ -25,4 +25,4 @@ The contact-sheet popup shows a dynamic title ("Botanical contact sheet" / "Wate
 
 ## Botanical verification
 Plants whose botanical image still needs a human check carry an orange "Needs verification" label (status in `data/botanical-verification.json`);
-see `docs/BOTANICAL_VERIFICATION.md`. Cards also outline the visible content of each illustration ("Show bounding boxes" toggle, data in `data/illustration-bounds.json`).
+see `docs/BOTANICAL_VERIFICATION.md`. Cards show the same dotted mature-envelope box as the contact sheet ("Show bounding boxes" toggle, default on).

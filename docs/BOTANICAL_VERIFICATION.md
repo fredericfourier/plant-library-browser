@@ -8,7 +8,6 @@ To approve a plant, ask for it to be approved (or run `python3 tools/set_verific
 the label disappears after the GitHub Pages deployment. When an image is re-imported with different bytes the importer resets the
 record to its manifest status and keeps the old one under `previous`.
 
-## Visible-content bounding boxes
-`data/illustration-bounds.json` stores the bounding box of the non-transparent pixels (alpha > 8) of each illustration. The browser
-draws it as a thin outline over each card image (toggle "Show bounding boxes"). Regenerate after changing any illustration:
-`python3 tools/compute_visible_bounds.py`.
+## Bounding boxes
+Each card draws the same dotted mature-envelope box as the contact sheet (database spread x height, scaled; the illustration is placed in it
+by the shared `placeInEnvelope` silhouette logic). The "Show bounding boxes" toggle (default on) only shows or hides the dotted lines.
