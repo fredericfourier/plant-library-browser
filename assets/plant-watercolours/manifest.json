@@ -395,9 +395,9 @@
       "status": "imported",
       "actualWidthPx": 1086,
       "actualHeightPx": 1448,
-      "ratioErrorRelative": 0.268,
-      "sha256": "a7eab811d7d13f1e64a6dec5b194bab34077c9e45bdb8c2f1328b46ff859a3db",
-      "updated": "2026-10-15T06:36:06Z"
+      "ratioErrorRelative": 0.565,
+      "sha256": "91c512e788b1597d7135464242f5e20a34bac8b631b75e7e0494c8301cc2cb6d",
+      "updated": "2026-10-15T08:19:09Z"
     },
     "dryopteris-filix-mas": {
       "file": "assets/plant-watercolours/dryopteris-filix-mas.webp",
