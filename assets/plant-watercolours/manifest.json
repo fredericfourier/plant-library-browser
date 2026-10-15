@@ -1587,6 +1587,42 @@
           "warnings": []
         }
       }
+    },
+    "rosa-bonica": {
+      "file": "assets/plant-watercolours/rosa-bonica.webp",
+      "status": "imported",
+      "actualWidthPx": 1254,
+      "actualHeightPx": 1254,
+      "ratioErrorRelative": 0.151,
+      "sha256": "c56f1b467899270e44ecced142e004809a545353f529443bb61f485142e17ed9",
+      "updated": "2026-10-15T22:37:18Z"
+    },
+    "philadelphus-manteau-dhermine": {
+      "file": "assets/plant-watercolours/philadelphus-manteau-dhermine.webp",
+      "status": "imported",
+      "actualWidthPx": 1254,
+      "actualHeightPx": 1254,
+      "ratioErrorRelative": -0.016,
+      "sha256": "ca7ed06a35a70e9afa542a2312b2971e40d8da54e031bba1ee5b511fe9bdfa5f",
+      "updated": "2026-10-15T22:37:18Z"
+    },
+    "phlox-blue-paradise": {
+      "file": "assets/plant-watercolours/phlox-blue-paradise.webp",
+      "status": "imported",
+      "actualWidthPx": 1254,
+      "actualHeightPx": 1254,
+      "ratioErrorRelative": 0.037,
+      "sha256": "af50d7f6f4108039c92ed619dd3183ae8581ccd4da1f957659a4aac755801114",
+      "updated": "2026-10-15T22:37:18Z"
+    },
+    "paeonia-duchesse-de-nemours": {
+      "file": "assets/plant-watercolours/paeonia-duchesse-de-nemours.webp",
+      "status": "imported",
+      "actualWidthPx": 1254,
+      "actualHeightPx": 1254,
+      "ratioErrorRelative": -0.109,
+      "sha256": "13d100fc903569b978374e9ee9793229b4b1b2432e998c03ca10a76c1c29d362",
+      "updated": "2026-10-15T22:37:18Z"
     }
   },
   "pixelsPerCm": 10,

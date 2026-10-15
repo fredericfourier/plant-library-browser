@@ -1127,6 +1127,38 @@
           "supersededAt": "2026-10-15T20:21:46Z"
         }
       }
+    },
+    "rosa-bonica": {
+      "status": "pending_review",
+      "imageSha256": "c56f1b467899270e44ecced142e004809a545353f529443bb61f485142e17ed9",
+      "pngSha256": "7694045b77dee3c72642c310e8cc01753a37f4ccbbd360b87aa31e5064ea508c",
+      "bundleMatchStatus": "filename_match_unreviewed",
+      "sourceFilename": "rosa-bonica.png",
+      "importedAt": "2026-10-15T22:37:18Z"
+    },
+    "philadelphus-manteau-dhermine": {
+      "status": "pending_review",
+      "imageSha256": "ca7ed06a35a70e9afa542a2312b2971e40d8da54e031bba1ee5b511fe9bdfa5f",
+      "pngSha256": "4f3446feb3f3786256eaa79f98cce537a83874e44abfa059cb93b076751b50ea",
+      "bundleMatchStatus": "filename_match_unreviewed",
+      "sourceFilename": "philadelphus-manteau-dhermine.png",
+      "importedAt": "2026-10-15T22:37:18Z"
+    },
+    "phlox-blue-paradise": {
+      "status": "pending_review",
+      "imageSha256": "af50d7f6f4108039c92ed619dd3183ae8581ccd4da1f957659a4aac755801114",
+      "pngSha256": "05343606051d43592431e9a467abe73eace8cb4d7a4fdd49a267cb5debccf77c",
+      "bundleMatchStatus": "filename_match_unreviewed",
+      "sourceFilename": "phlox-blue-paradise.png",
+      "importedAt": "2026-10-15T22:37:18Z"
+    },
+    "paeonia-duchesse-de-nemours": {
+      "status": "pending_review",
+      "imageSha256": "13d100fc903569b978374e9ee9793229b4b1b2432e998c03ca10a76c1c29d362",
+      "pngSha256": "3d565c73a54939298bb998681853e94478b56808a6ff263e3b7346c43e871221",
+      "bundleMatchStatus": "filename_match_unreviewed",
+      "sourceFilename": "paeonia-duchesse-de-nemours.png",
+      "importedAt": "2026-10-15T22:37:18Z"
     }
   },
   "updated": "2026-10-15T20:21:46Z",
