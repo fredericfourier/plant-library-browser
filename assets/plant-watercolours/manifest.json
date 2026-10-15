@@ -16,14 +16,14 @@
         "watercolour": {
           "label": "Watercolour",
           "file": "assets/plant-watercolours/alchemilla-mollis-watercolour.webp",
-          "status": "canonical",
+          "status": "awaiting_review",
           "productionReady": false,
           "canonicalScaleApplied": false,
-          "originalWidthPx": 1254,
-          "originalHeightPx": 1254,
+          "originalWidthPx": 1122,
+          "originalHeightPx": 1402,
           "transparent": true,
-          "sha256": "e6b4b0e311341b381b99593874f4af653dac9c41e53c37d59a01d8daaafd878f",
-          "silhouetteRatioErrorRelative": -0.088,
+          "sha256": "a9fc689e6096158842fac7c14b6ed7717975b4836dea9479d394991c50ac8baa",
+          "pngSha256": "80c220acf587a5b49c28f066fe501fa96581c998b9e53cc9698abe305666c034",
           "warnings": []
         }
       },
@@ -43,17 +43,15 @@
         "watercolour": {
           "label": "Watercolour",
           "file": "assets/plant-watercolours/echinacea-purpurea-watercolour.webp",
-          "status": "canonical",
+          "status": "awaiting_review",
           "productionReady": false,
           "canonicalScaleApplied": false,
-          "originalWidthPx": 1254,
-          "originalHeightPx": 1254,
+          "originalWidthPx": 1122,
+          "originalHeightPx": 1402,
           "transparent": true,
-          "sha256": "998e33748344e8a42a067374bfb91355fe68bc71336efaab721a107fda9c35ca",
-          "silhouetteRatioErrorRelative": 0.538,
-          "warnings": [
-            "silhouette_ratio_needs_review"
-          ]
+          "sha256": "9cf90c1348e452bfa3f9a6afadf2a8bd766ded0a46dc67397380809b35f49cae",
+          "pngSha256": "0755ff6f522d44f6c76c44b3003b92e7190ec7dc35ccc783246ed5aabb8fd7b4",
+          "warnings": []
         }
       },
       "sha256": "f611151decf7b5e448d960174385e7663214a344a1d68dce9e087df803b8a2f0"
@@ -73,14 +71,14 @@
         "watercolour": {
           "label": "Watercolour",
           "file": "assets/plant-watercolours/echinacea-white-swan-watercolour.webp",
-          "status": "canonical",
+          "status": "awaiting_review",
           "productionReady": false,
           "canonicalScaleApplied": false,
-          "originalWidthPx": 1254,
-          "originalHeightPx": 1254,
+          "originalWidthPx": 1122,
+          "originalHeightPx": 1402,
           "transparent": true,
-          "sha256": "87a319e39396a371634171f9a184708827e9bba937068027112bcb80d274d849",
-          "silhouetteRatioErrorRelative": 0.031,
+          "sha256": "da963850792eb0471e7895daf501b9fa54ba82ee01da5da1738710c87f9af33a",
+          "pngSha256": "24e159fde89895eab8f5f3dbde4bf4260bdfabda8c94b46f63afb608387d9fa0",
           "warnings": []
         }
       },
@@ -100,14 +98,14 @@
         "watercolour": {
           "label": "Watercolour",
           "file": "assets/plant-watercolours/geranium-rozanne-watercolour.webp",
-          "status": "canonical",
+          "status": "awaiting_review",
           "productionReady": false,
           "canonicalScaleApplied": false,
           "originalWidthPx": 1448,
           "originalHeightPx": 1086,
           "transparent": true,
-          "sha256": "4feb29a0245d3974026a074f05986521e0f3edda8ca9a03c77e114d13cef2962",
-          "silhouetteRatioErrorRelative": -0.069,
+          "sha256": "b59ddadcc4a6287490ea4523a1e9c483a9ccbd6ba95fe86b88ad6317e5fdb311",
+          "pngSha256": "8266315331ea076c13d306c61faeedda0892d6f8aed2f57e1309ecc296a871e0",
           "warnings": []
         }
       },
@@ -127,17 +125,15 @@
         "watercolour": {
           "label": "Watercolour",
           "file": "assets/plant-watercolours/geum-totally-tangerine-watercolour.webp",
-          "status": "canonical",
+          "status": "awaiting_review",
           "productionReady": false,
           "canonicalScaleApplied": false,
           "originalWidthPx": 1122,
           "originalHeightPx": 1402,
           "transparent": true,
-          "sha256": "be80a76dd3f709bd5699037ad56f3a061a4257d20113d1e36b072388e0b2e45f",
-          "silhouetteRatioErrorRelative": 0.266,
-          "warnings": [
-            "silhouette_ratio_needs_review"
-          ]
+          "sha256": "9829794ee2553223762b1a64553759b5023724565f7ce3f72d92718296f424df",
+          "pngSha256": "4b79731cf925905f729feae198b4414c62f1cf1609c26efe9640c1069166e46b",
+          "warnings": []
         }
       },
       "sha256": "b3726324216159dbeefdb8198831e52e2b0e90990e1021898d916b3b944f7e84"
@@ -156,17 +152,15 @@
         "watercolour": {
           "label": "Watercolour",
           "file": "assets/plant-watercolours/nepeta-walkers-low-watercolour.webp",
-          "status": "canonical",
+          "status": "awaiting_review",
           "productionReady": false,
           "canonicalScaleApplied": false,
-          "originalWidthPx": 1536,
-          "originalHeightPx": 1024,
+          "originalWidthPx": 1122,
+          "originalHeightPx": 1402,
           "transparent": true,
-          "sha256": "4f6b96cee38b11fe1f0bbd35344dcd00cc15416c65adb4b38514d1e1d03de4ca",
-          "silhouetteRatioErrorRelative": 0.287,
-          "warnings": [
-            "silhouette_ratio_needs_review"
-          ]
+          "sha256": "af180d401ae622aae4d61756a16901ab287f682afc071f276d96db744130bd00",
+          "pngSha256": "c5d7ebcf5b9f9d1331b2973647d2f4c19ba383a6c166dfb744cf50553b57ed94",
+          "warnings": []
         }
       },
       "sha256": "3afab6091d044ba526d7c0bf23da139104344727d16fa3f9b4a237fe90ad1d70"
@@ -185,14 +179,14 @@
         "watercolour": {
           "label": "Watercolour",
           "file": "assets/plant-watercolours/salvia-caradonna-watercolour.webp",
-          "status": "canonical",
+          "status": "awaiting_review",
           "productionReady": false,
           "canonicalScaleApplied": false,
-          "originalWidthPx": 1254,
-          "originalHeightPx": 1254,
+          "originalWidthPx": 1122,
+          "originalHeightPx": 1402,
           "transparent": true,
-          "sha256": "adcf9e5b8cb3b1d86da48871a2b8980e0e195f7847da94802951533c3d2f8ee4",
-          "silhouetteRatioErrorRelative": -0.071,
+          "sha256": "cce6310da8b85152c377c7bb221349c8daccb71f73c054f8909ab0af971268df",
+          "pngSha256": "c87bcb96fed969c67cd6971f1c35e467fa0a02335115f98e96eeb15c0e68c7b1",
           "warnings": []
         }
       },
@@ -213,17 +207,15 @@
         "watercolour": {
           "label": "Watercolour",
           "file": "assets/plant-watercolours/taxus-baccata-topiary-watercolour.webp",
-          "status": "canonical",
+          "status": "awaiting_review",
           "productionReady": false,
           "canonicalScaleApplied": false,
-          "originalWidthPx": 1254,
-          "originalHeightPx": 1254,
+          "originalWidthPx": 1122,
+          "originalHeightPx": 1402,
           "transparent": true,
-          "sha256": "8b504647fb1789047a42678be74dbfb9c1cb95455a342168d3fafc63eccaa673",
-          "silhouetteRatioErrorRelative": -0.444,
-          "warnings": [
-            "silhouette_ratio_needs_review"
-          ]
+          "sha256": "16a894d652279b2e5169258ec2ec46d787d0ee3aa9620f902e4a0b046a5e6b49",
+          "pngSha256": "12b0e17f39e3391a6269821482704c8fdee39d460b20ff4102bec036591b7969",
+          "warnings": []
         }
       },
       "sha256": "4a87d71ceab84cca7c4490739ea1f0ae4223f9a38aa106f4878c8febd95da286"
@@ -235,7 +227,22 @@
       "actualHeightPx": 1402,
       "ratioErrorRelative": -0.104,
       "sha256": "ce9a4dd3e2a2d1be971886d4a7165be5dabd041277cc38288ffbf8b7ec69fad9",
-      "updated": "2026-10-15T06:30:03Z"
+      "updated": "2026-10-15T06:30:03Z",
+      "variants": {
+        "watercolour": {
+          "label": "Watercolour",
+          "file": "assets/plant-watercolours/achillea-moonshine-watercolour.webp",
+          "status": "awaiting_review",
+          "productionReady": false,
+          "canonicalScaleApplied": false,
+          "originalWidthPx": 1122,
+          "originalHeightPx": 1402,
+          "transparent": true,
+          "sha256": "06fe5826035cf6e07f5c71713d82a2bca2532deeb8a2ca58cfbf173e1896e375",
+          "pngSha256": "f3f0b3848a9e22384b09861eab1ef653eb4ddc347ea1467f7fe34bbf25922b65",
+          "warnings": []
+        }
+      }
     },
     "achillea-terracotta": {
       "file": "assets/plant-watercolours/achillea-terracotta.webp",
@@ -244,7 +251,22 @@
       "actualHeightPx": 1402,
       "ratioErrorRelative": 0.051,
       "sha256": "ab13d5fc41777d7cf22209265f1b273cf89b8524457633e37abcb1e7319e99c6",
-      "updated": "2026-10-15T06:30:03Z"
+      "updated": "2026-10-15T06:30:03Z",
+      "variants": {
+        "watercolour": {
+          "label": "Watercolour",
+          "file": "assets/plant-watercolours/achillea-terracotta-watercolour.webp",
+          "status": "awaiting_review",
+          "productionReady": false,
+          "canonicalScaleApplied": false,
+          "originalWidthPx": 1122,
+          "originalHeightPx": 1402,
+          "transparent": true,
+          "sha256": "7dbc9c22037599d22788c8f440274820b40c345dd4b6ab5e908b0352ef740164",
+          "pngSha256": "9f23d1f4cd106d48e74685e933b264115d48530ab3eda871dae828358906d97a",
+          "warnings": []
+        }
+      }
     },
     "achillea-walther-funcke": {
       "file": "assets/plant-watercolours/achillea-walther-funcke.webp",
@@ -253,7 +275,22 @@
       "actualHeightPx": 1254,
       "ratioErrorRelative": 0.187,
       "sha256": "a95f93e25eaabeb840fec3f636eb6d58522329aad8d8b2d2ef83150d32077370",
-      "updated": "2026-10-15T06:30:03Z"
+      "updated": "2026-10-15T06:30:03Z",
+      "variants": {
+        "watercolour": {
+          "label": "Watercolour",
+          "file": "assets/plant-watercolours/achillea-walther-funcke-watercolour.webp",
+          "status": "awaiting_review",
+          "productionReady": false,
+          "canonicalScaleApplied": false,
+          "originalWidthPx": 1122,
+          "originalHeightPx": 1402,
+          "transparent": true,
+          "sha256": "0dfcd2b225334d0e284bc360fcc9098270b0ec638a9622c93c2d47b7302143bf",
+          "pngSha256": "3043ccb3563d3411b7858cff01a51d691cdc590b53df6dbb1c7a5c86b692928e",
+          "warnings": []
+        }
+      }
     },
     "agastache-blackadder": {
       "file": "assets/plant-watercolours/agastache-blackadder.webp",
@@ -262,7 +299,22 @@
       "actualHeightPx": 1448,
       "ratioErrorRelative": 0.292,
       "sha256": "1b8a070eeb0e93c0c8ef02a2855da0de83cea1d33619d6c16117db5b066440ca",
-      "updated": "2026-10-15T06:30:03Z"
+      "updated": "2026-10-15T06:30:03Z",
+      "variants": {
+        "watercolour": {
+          "label": "Watercolour",
+          "file": "assets/plant-watercolours/agastache-blackadder-watercolour.webp",
+          "status": "awaiting_review",
+          "productionReady": false,
+          "canonicalScaleApplied": false,
+          "originalWidthPx": 1122,
+          "originalHeightPx": 1402,
+          "transparent": true,
+          "sha256": "bb059b37fdee0609673c002adf6d9be49a8632679b3fb7ee1f268be942bde677",
+          "pngSha256": "26594b9799e658fbcbfcdf07f5c61be0534d867187eff8c11cd1e1121c09569c",
+          "warnings": []
+        }
+      }
     },
     "allium-purple-sensation": {
       "file": "assets/plant-watercolours/allium-purple-sensation.webp",
@@ -271,7 +323,22 @@
       "actualHeightPx": 1402,
       "ratioErrorRelative": 1.933,
       "sha256": "7dc93a6d090df2e01a7d43bad4be6df98a3aedd32e2734e4371d21588e624aa7",
-      "updated": "2026-10-15T06:30:03Z"
+      "updated": "2026-10-15T06:30:03Z",
+      "variants": {
+        "watercolour": {
+          "label": "Watercolour",
+          "file": "assets/plant-watercolours/allium-purple-sensation-watercolour.webp",
+          "status": "awaiting_review",
+          "productionReady": false,
+          "canonicalScaleApplied": false,
+          "originalWidthPx": 1122,
+          "originalHeightPx": 1402,
+          "transparent": true,
+          "sha256": "04df55b9494852ebaa2f23e123a6456d92c55c0bc1f8ec9141b3cbcfc78517fe",
+          "pngSha256": "29140be0f4a289e238f1e4147e8cb2a995e151f7470f995a0aca98f14ee6b460",
+          "warnings": []
+        }
+      }
     },
     "anemone-hadspen": {
       "file": "assets/plant-watercolours/anemone-hadspen.webp",
@@ -280,7 +347,22 @@
       "actualHeightPx": 1402,
       "ratioErrorRelative": 0.148,
       "sha256": "cdc3f22bc2ffbbf720a7756b07b5430e8ef1f928bdfa5294539a322dcf070432",
-      "updated": "2026-10-15T06:30:03Z"
+      "updated": "2026-10-15T06:30:03Z",
+      "variants": {
+        "watercolour": {
+          "label": "Watercolour",
+          "file": "assets/plant-watercolours/anemone-hadspen-watercolour.webp",
+          "status": "awaiting_review",
+          "productionReady": false,
+          "canonicalScaleApplied": false,
+          "originalWidthPx": 1122,
+          "originalHeightPx": 1402,
+          "transparent": true,
+          "sha256": "13a8ec32511ccfd118924605655faacb28f6ff13e5cd29b88da88323262eced0",
+          "pngSha256": "81f47057a6de054742a13b52c5743640a92f782850c8baf04d002c9316f98a2e",
+          "warnings": []
+        }
+      }
     },
     "anemone-honorine": {
       "file": "assets/plant-watercolours/anemone-honorine.webp",
@@ -289,7 +371,22 @@
       "actualHeightPx": 1402,
       "ratioErrorRelative": 0.592,
       "sha256": "b94f4f019a1c8aebbbf65f7ee3ca3f7849c4205bfa296fc5ac1d40d09e53a0b6",
-      "updated": "2026-10-15T06:30:03Z"
+      "updated": "2026-10-15T06:30:03Z",
+      "variants": {
+        "watercolour": {
+          "label": "Watercolour",
+          "file": "assets/plant-watercolours/anemone-honorine-watercolour.webp",
+          "status": "awaiting_review",
+          "productionReady": false,
+          "canonicalScaleApplied": false,
+          "originalWidthPx": 1122,
+          "originalHeightPx": 1402,
+          "transparent": true,
+          "sha256": "a66b09f8830d6db1f3e1729a9d844fb400811e3aa5d6a766ba9d7bac70a65284",
+          "pngSha256": "b4ae52236d9bb3441cea47d0aeadae0b0c14f678be2505a843846dac6d83097f",
+          "warnings": []
+        }
+      }
     },
     "aruncus-dioicus": {
       "file": "assets/plant-watercolours/aruncus-dioicus.webp",
@@ -298,7 +395,22 @@
       "actualHeightPx": 1402,
       "ratioErrorRelative": 0.204,
       "sha256": "dd77b98fe8b611f140c2ada2005be49de96c63912786bb090c2f5bf32d9bed9d",
-      "updated": "2026-10-15T06:30:03Z"
+      "updated": "2026-10-15T06:30:03Z",
+      "variants": {
+        "watercolour": {
+          "label": "Watercolour",
+          "file": "assets/plant-watercolours/aruncus-dioicus-watercolour.webp",
+          "status": "awaiting_review",
+          "productionReady": false,
+          "canonicalScaleApplied": false,
+          "originalWidthPx": 1122,
+          "originalHeightPx": 1402,
+          "transparent": true,
+          "sha256": "6d3fff6d0dff32535249b4be2427b106925cf7a9bf60d95e4bc6d926f207db38",
+          "pngSha256": "be23db5ca245aaa093d3dbf74b88c57312f07cd94c68ea8b0d2fb0864eb95c32",
+          "warnings": []
+        }
+      }
     },
     "aster-little-carlow": {
       "file": "assets/plant-watercolours/aster-little-carlow.webp",
@@ -307,7 +419,22 @@
       "actualHeightPx": 1402,
       "ratioErrorRelative": 0.461,
       "sha256": "1119f5d7a8c959e8fe7ff0bd1a692d8ca7898cdb621b78386a3468438ed94ad2",
-      "updated": "2026-10-15T06:30:03Z"
+      "updated": "2026-10-15T06:30:03Z",
+      "variants": {
+        "watercolour": {
+          "label": "Watercolour",
+          "file": "assets/plant-watercolours/aster-little-carlow-watercolour.webp",
+          "status": "awaiting_review",
+          "productionReady": false,
+          "canonicalScaleApplied": false,
+          "originalWidthPx": 1122,
+          "originalHeightPx": 1402,
+          "transparent": true,
+          "sha256": "c973b0f62f1a941dc4f8f8c90f1d7e3a66d34989584047a7802d04ebde067a7f",
+          "pngSha256": "170a6f6cf67578884855fd4430280c045b865939eeb72a568a9420b14b172659",
+          "warnings": []
+        }
+      }
     },
     "aster-monch": {
       "file": "assets/plant-watercolours/aster-monch.webp",
@@ -316,7 +443,22 @@
       "actualHeightPx": 1402,
       "ratioErrorRelative": 0.242,
       "sha256": "1c249bbebbef53d18ba5a00089493ff157c716e1b92a84fbc9cb45f473a74ac7",
-      "updated": "2026-10-15T06:30:03Z"
+      "updated": "2026-10-15T06:30:03Z",
+      "variants": {
+        "watercolour": {
+          "label": "Watercolour",
+          "file": "assets/plant-watercolours/aster-monch-watercolour.webp",
+          "status": "awaiting_review",
+          "productionReady": false,
+          "canonicalScaleApplied": false,
+          "originalWidthPx": 1122,
+          "originalHeightPx": 1402,
+          "transparent": true,
+          "sha256": "7dd7a726eef2ef3b6fcbefb27091c9fbf0dbcc85672b13520c82b1663c53b8ad",
+          "pngSha256": "7cab6a338b1c8973a4b3480c800b7d70803afde772f0250fff1a9774546bd84b",
+          "warnings": []
+        }
+      }
     },
     "astrantia-major": {
       "file": "assets/plant-watercolours/astrantia-major.webp",
@@ -325,7 +467,22 @@
       "actualHeightPx": 1448,
       "ratioErrorRelative": 0.09,
       "sha256": "9ffe9c6a10adddfdbb5854dd04ed80b18cd66e049f0c8638ea03f45e6d8d1671",
-      "updated": "2026-10-15T06:30:03Z"
+      "updated": "2026-10-15T06:30:03Z",
+      "variants": {
+        "watercolour": {
+          "label": "Watercolour",
+          "file": "assets/plant-watercolours/astrantia-major-watercolour.webp",
+          "status": "awaiting_review",
+          "productionReady": false,
+          "canonicalScaleApplied": false,
+          "originalWidthPx": 1122,
+          "originalHeightPx": 1402,
+          "transparent": true,
+          "sha256": "a52795e9710702351094eaf1a9ff78732195e70606438ce9bb43fd0a0c848b12",
+          "pngSha256": "89d2c3f1da57e02f4cbb72136409cd5db08ec76e2045f0a1128d3e7177bd678b",
+          "warnings": []
+        }
+      }
     },
     "brunnera-jack-frost": {
       "file": "assets/plant-watercolours/brunnera-jack-frost.webp",
@@ -334,7 +491,22 @@
       "actualHeightPx": 1254,
       "ratioErrorRelative": -0.206,
       "sha256": "74456e86c2f4f73af9c9576f622adbc19927ad50105aa993b8435b4695ffc38b",
-      "updated": "2026-10-15T06:36:06Z"
+      "updated": "2026-10-15T06:36:06Z",
+      "variants": {
+        "watercolour": {
+          "label": "Watercolour",
+          "file": "assets/plant-watercolours/brunnera-jack-frost-watercolour.webp",
+          "status": "awaiting_review",
+          "productionReady": false,
+          "canonicalScaleApplied": false,
+          "originalWidthPx": 1122,
+          "originalHeightPx": 1402,
+          "transparent": true,
+          "sha256": "d7b6d1b6e9c4e939efdcfec1011a8227088a593ac6c070648a5cef5c205780bb",
+          "pngSha256": "0a9410787a4ecba6883910807f6cd632f31453cf5b169e5c6fd7af181fc947cf",
+          "warnings": []
+        }
+      }
     },
     "calamagrostis-karl-foerster": {
       "file": "assets/plant-watercolours/calamagrostis-karl-foerster.webp",
@@ -343,7 +515,22 @@
       "actualHeightPx": 1448,
       "ratioErrorRelative": 0.497,
       "sha256": "ee8eccc39dc9e31d6016413cbf5307781fcbb2532e23688f1ed15e3684f87229",
-      "updated": "2026-10-15T06:36:06Z"
+      "updated": "2026-10-15T06:36:06Z",
+      "variants": {
+        "watercolour": {
+          "label": "Watercolour",
+          "file": "assets/plant-watercolours/calamagrostis-karl-foerster-watercolour.webp",
+          "status": "awaiting_review",
+          "productionReady": false,
+          "canonicalScaleApplied": false,
+          "originalWidthPx": 1122,
+          "originalHeightPx": 1402,
+          "transparent": true,
+          "sha256": "6a669b2673651df9ef7b826ecd26980c7104d49aeff0230e3d73a46a6d7c68e5",
+          "pngSha256": "a6df1e676175ce79684ecaebab1a1d4e0c022e3eec61aa89e828822ec7a1d9a4",
+          "warnings": []
+        }
+      }
     },
     "carex-evergold": {
       "file": "assets/plant-watercolours/carex-evergold.webp",
@@ -352,7 +539,22 @@
       "actualHeightPx": 1254,
       "ratioErrorRelative": -0.215,
       "sha256": "c5cd7415d386fe778c93ac0cd08d134bcbf5ff91cbc6f8e5466b61fe93d1f9e2",
-      "updated": "2026-10-15T06:36:06Z"
+      "updated": "2026-10-15T06:36:06Z",
+      "variants": {
+        "watercolour": {
+          "label": "Watercolour",
+          "file": "assets/plant-watercolours/carex-evergold-watercolour.webp",
+          "status": "awaiting_review",
+          "productionReady": false,
+          "canonicalScaleApplied": false,
+          "originalWidthPx": 1122,
+          "originalHeightPx": 1402,
+          "transparent": true,
+          "sha256": "702ece4f774577ae4d2ad8fce57333952c54eeac83725fbbd4b97d4ea9658f8f",
+          "pngSha256": "628eed99930af745e277affe603d5cb6fd1b044e4d4da4b6ca0411075ad59cf0",
+          "warnings": []
+        }
+      }
     },
     "cenolophium-denudatum": {
       "file": "assets/plant-watercolours/cenolophium-denudatum.webp",
@@ -361,7 +563,22 @@
       "actualHeightPx": 1402,
       "ratioErrorRelative": 0.787,
       "sha256": "a05cc276defd4abbb127c93e7a2169c6154f5b49e4a1bf8a014a1fd5c821a492",
-      "updated": "2026-10-15T06:36:06Z"
+      "updated": "2026-10-15T06:36:06Z",
+      "variants": {
+        "watercolour": {
+          "label": "Watercolour",
+          "file": "assets/plant-watercolours/cenolophium-denudatum-watercolour.webp",
+          "status": "awaiting_review",
+          "productionReady": false,
+          "canonicalScaleApplied": false,
+          "originalWidthPx": 1122,
+          "originalHeightPx": 1402,
+          "transparent": true,
+          "sha256": "4ef47148a1026f00fc94bc445bcc9175fd8df1914237b65e56364a1d520fcd29",
+          "pngSha256": "3c931c387441f52ccf0b69c16fe45efcba2485c516e4900df626d6736741c2da",
+          "warnings": []
+        }
+      }
     },
     "crocosmia-lucifer": {
       "file": "assets/plant-watercolours/crocosmia-lucifer.webp",
@@ -370,7 +587,22 @@
       "actualHeightPx": 1402,
       "ratioErrorRelative": 1.647,
       "sha256": "2a0b2298708821e01fdaa5e763b0cd9fd3b057c74b54496a4cd217d2239da4e1",
-      "updated": "2026-10-15T06:36:06Z"
+      "updated": "2026-10-15T06:36:06Z",
+      "variants": {
+        "watercolour": {
+          "label": "Watercolour",
+          "file": "assets/plant-watercolours/crocosmia-lucifer-watercolour.webp",
+          "status": "awaiting_review",
+          "productionReady": false,
+          "canonicalScaleApplied": false,
+          "originalWidthPx": 1122,
+          "originalHeightPx": 1402,
+          "transparent": true,
+          "sha256": "5eefb7a3f84731cdfee42d631d212ef656bf1e8a89c5d4ffdb753bd9ea5f1b1b",
+          "pngSha256": "a2867b87f8c5eb9ee72053129b6478310ce0227416c0e1dfa22f3b2143bbcee7",
+          "warnings": []
+        }
+      }
     },
     "deschampsia-goldtau": {
       "file": "assets/plant-watercolours/deschampsia-goldtau.webp",
@@ -379,7 +611,22 @@
       "actualHeightPx": 1402,
       "ratioErrorRelative": 0.077,
       "sha256": "539dee4baecc1d6313981267fa97c4544fe0e33c5c021bfc31a878a02ee1d5de",
-      "updated": "2026-10-15T06:36:06Z"
+      "updated": "2026-10-15T06:36:06Z",
+      "variants": {
+        "watercolour": {
+          "label": "Watercolour",
+          "file": "assets/plant-watercolours/deschampsia-goldtau-watercolour.webp",
+          "status": "awaiting_review",
+          "productionReady": false,
+          "canonicalScaleApplied": false,
+          "originalWidthPx": 1122,
+          "originalHeightPx": 1402,
+          "transparent": true,
+          "sha256": "a8765fb48401cb263563161be6349844eb3f4089c2192814991575338c93d970",
+          "pngSha256": "262183018543e84e6db7caa1d9aa9d4872a7ac52b6abdf7b098aecd615f3e4fa",
+          "warnings": []
+        }
+      }
     },
     "digitalis-ferruginea": {
       "file": "assets/plant-watercolours/digitalis-ferruginea.webp",
@@ -388,7 +635,22 @@
       "actualHeightPx": 1254,
       "ratioErrorRelative": 0.98,
       "sha256": "e62a0822cf201f698bdae09b095be288af8938601bdbbcc513424effd3eabb3c",
-      "updated": "2026-10-15T06:36:06Z"
+      "updated": "2026-10-15T06:36:06Z",
+      "variants": {
+        "watercolour": {
+          "label": "Watercolour",
+          "file": "assets/plant-watercolours/digitalis-ferruginea-watercolour.webp",
+          "status": "awaiting_review",
+          "productionReady": false,
+          "canonicalScaleApplied": false,
+          "originalWidthPx": 1122,
+          "originalHeightPx": 1402,
+          "transparent": true,
+          "sha256": "dc0c29454b96f5b354a9d5b8234f09be5cea3e6e74ee429603f594667bd688d8",
+          "pngSha256": "d798ae04539f84178b79b8cc7154f3a8a377bcf95cb6914cc93539f5f84fddcd",
+          "warnings": []
+        }
+      }
     },
     "digitalis-purpurea": {
       "file": "assets/plant-watercolours/digitalis-purpurea.webp",
@@ -397,7 +659,22 @@
       "actualHeightPx": 1448,
       "ratioErrorRelative": 0.565,
       "sha256": "91c512e788b1597d7135464242f5e20a34bac8b631b75e7e0494c8301cc2cb6d",
-      "updated": "2026-10-15T08:19:09Z"
+      "updated": "2026-10-15T08:19:09Z",
+      "variants": {
+        "watercolour": {
+          "label": "Watercolour",
+          "file": "assets/plant-watercolours/digitalis-purpurea-watercolour.webp",
+          "status": "awaiting_review",
+          "productionReady": false,
+          "canonicalScaleApplied": false,
+          "originalWidthPx": 1122,
+          "originalHeightPx": 1402,
+          "transparent": true,
+          "sha256": "52ce6c604d013b1e14955f45b80f10b20b3724852d01b7942ec47dadff60af2d",
+          "pngSha256": "ff3f00de584b4bdcb13270f03fc3fcdae089764890f00707439c14450574eeea",
+          "warnings": []
+        }
+      }
     },
     "dryopteris-filix-mas": {
       "file": "assets/plant-watercolours/dryopteris-filix-mas.webp",
@@ -406,7 +683,22 @@
       "actualHeightPx": 1254,
       "ratioErrorRelative": 0.118,
       "sha256": "c84b1259876dfb41a8b13e1936d99714b17356a56fe2afac7d08339f2872152e",
-      "updated": "2026-10-15T06:36:06Z"
+      "updated": "2026-10-15T06:36:06Z",
+      "variants": {
+        "watercolour": {
+          "label": "Watercolour",
+          "file": "assets/plant-watercolours/dryopteris-filix-mas-watercolour.webp",
+          "status": "awaiting_review",
+          "productionReady": false,
+          "canonicalScaleApplied": false,
+          "originalWidthPx": 1122,
+          "originalHeightPx": 1402,
+          "transparent": true,
+          "sha256": "09824b7bfc87a9ad0a8d5593e19ab21e6c0e778a2b6a3b4b64ec7e0435d019a1",
+          "pngSha256": "09361c5b1da04e978f3611a64f04e1af3e8d31426369aee249d42ed3bcf02251",
+          "warnings": []
+        }
+      }
     },
     "epimedium-sulphureum": {
       "file": "assets/plant-watercolours/epimedium-sulphureum.webp",
@@ -415,7 +707,22 @@
       "actualHeightPx": 1254,
       "ratioErrorRelative": -0.488,
       "sha256": "088756844d99a16a4ae59933fe4d3e3b1b0d2c75d307d5e851118400becf6143",
-      "updated": "2026-10-15T06:36:06Z"
+      "updated": "2026-10-15T06:36:06Z",
+      "variants": {
+        "watercolour": {
+          "label": "Watercolour",
+          "file": "assets/plant-watercolours/epimedium-sulphureum-watercolour.webp",
+          "status": "awaiting_review",
+          "productionReady": false,
+          "canonicalScaleApplied": false,
+          "originalWidthPx": 1122,
+          "originalHeightPx": 1402,
+          "transparent": true,
+          "sha256": "f52f118e71c6a5339c8af557b0f1bd74f2e0f07d3b195e3401d2bc6e4bb01897",
+          "pngSha256": "dc3a9a29fe0af961757d0e8f39f92a81c35498f97c3e5509709f9d7c45328fe8",
+          "warnings": []
+        }
+      }
     },
     "erigeron-karvinskianus": {
       "file": "assets/plant-watercolours/erigeron-karvinskianus.webp",
@@ -424,7 +731,22 @@
       "actualHeightPx": 1402,
       "ratioErrorRelative": -0.567,
       "sha256": "5ed17d41503b610d61a8996c485e44989e06eeb1aad73223cb09c39911dff91e",
-      "updated": "2026-10-15T06:36:06Z"
+      "updated": "2026-10-15T06:36:06Z",
+      "variants": {
+        "watercolour": {
+          "label": "Watercolour",
+          "file": "assets/plant-watercolours/erigeron-karvinskianus-watercolour.webp",
+          "status": "awaiting_review",
+          "productionReady": false,
+          "canonicalScaleApplied": false,
+          "originalWidthPx": 1122,
+          "originalHeightPx": 1402,
+          "transparent": true,
+          "sha256": "de2d0c14fee9e73253dd3f871d047235ba4e0dcecae5c625c5a6abad6b92340d",
+          "pngSha256": "f2e9d7c39a2e2a3ed7f7164a39ea3997c1e9af6412a74486b7a6163682bf2fb2",
+          "warnings": []
+        }
+      }
     },
     "eryngium-planum": {
       "file": "assets/plant-watercolours/eryngium-planum.webp",
@@ -433,7 +755,22 @@
       "actualHeightPx": 1402,
       "ratioErrorRelative": 0.028,
       "sha256": "daf68791f07458836b5d7f1bb0ad1de15ca1e41d28c6f1e68f04a4bfe63c6845",
-      "updated": "2026-10-15T06:36:06Z"
+      "updated": "2026-10-15T06:36:06Z",
+      "variants": {
+        "watercolour": {
+          "label": "Watercolour",
+          "file": "assets/plant-watercolours/eryngium-planum-watercolour.webp",
+          "status": "awaiting_review",
+          "productionReady": false,
+          "canonicalScaleApplied": false,
+          "originalWidthPx": 1086,
+          "originalHeightPx": 1448,
+          "transparent": true,
+          "sha256": "64305a9c4522192d306ce673ece3025b1a10e792c6eeb7cd4ac25104be8322bf",
+          "pngSha256": "0070760b75920ed39a6c79b6d84a86fe68fb98f192f3bd60874d7b40fc455c8a",
+          "warnings": []
+        }
+      }
     },
     "eupatorium-atropurpureum": {
       "file": "assets/plant-watercolours/eupatorium-atropurpureum.webp",
@@ -442,7 +779,22 @@
       "actualHeightPx": 1402,
       "ratioErrorRelative": 0.263,
       "sha256": "5ed65f9ac5e6267521befb3a52803cdaec31efd25f1e960508c9ae9a1cc37d33",
-      "updated": "2026-10-15T06:36:06Z"
+      "updated": "2026-10-15T06:36:06Z",
+      "variants": {
+        "watercolour": {
+          "label": "Watercolour",
+          "file": "assets/plant-watercolours/eupatorium-atropurpureum-watercolour.webp",
+          "status": "awaiting_review",
+          "productionReady": false,
+          "canonicalScaleApplied": false,
+          "originalWidthPx": 1086,
+          "originalHeightPx": 1448,
+          "transparent": true,
+          "sha256": "a06b4676de4ec2c687da52310d34b26ddd11307f29d7dc58c35b1eb9bf3159c9",
+          "pngSha256": "05ce1d0b518dfda3d3c5048018d22c2bc48218c0105d763f0cdf3573e6cb0432",
+          "warnings": []
+        }
+      }
     },
     "euphorbia-fireglow": {
       "file": "assets/plant-watercolours/euphorbia-fireglow.webp",
@@ -451,7 +803,22 @@
       "actualHeightPx": 1254,
       "ratioErrorRelative": 0.519,
       "sha256": "c5efcd8c697d097f68d5e398dd8853edc96ad1949f09d6ed349b9bcc51ad6143",
-      "updated": "2026-10-15T07:08:42Z"
+      "updated": "2026-10-15T07:08:42Z",
+      "variants": {
+        "watercolour": {
+          "label": "Watercolour",
+          "file": "assets/plant-watercolours/euphorbia-fireglow-watercolour.webp",
+          "status": "awaiting_review",
+          "productionReady": false,
+          "canonicalScaleApplied": false,
+          "originalWidthPx": 1122,
+          "originalHeightPx": 1402,
+          "transparent": true,
+          "sha256": "08fa40e7fd776d37ba21177807ca204e7d2f7c2197db92914a6e1b35baee21b9",
+          "pngSha256": "dc1b666b666b815c272f0d2870e280f73ae8acb772d02ea50a84180077560674",
+          "warnings": []
+        }
+      }
     },
     "euphorbia-polychroma": {
       "file": "assets/plant-watercolours/euphorbia-polychroma.webp",
@@ -460,7 +827,22 @@
       "actualHeightPx": 1402,
       "ratioErrorRelative": -0.231,
       "sha256": "cafc00fe41df477d34785f273f3166c435a3946d69191186435f0f1ec6b2b98b",
-      "updated": "2026-10-15T07:08:42Z"
+      "updated": "2026-10-15T07:08:42Z",
+      "variants": {
+        "watercolour": {
+          "label": "Watercolour",
+          "file": "assets/plant-watercolours/euphorbia-polychroma-watercolour.webp",
+          "status": "awaiting_review",
+          "productionReady": false,
+          "canonicalScaleApplied": false,
+          "originalWidthPx": 1122,
+          "originalHeightPx": 1402,
+          "transparent": true,
+          "sha256": "ae72e68cfd74b02531464d4422eabd0982857ed3d13acfee54e967655742f963",
+          "pngSha256": "5591a00fd562618fb268c79871917648ffd1876f84ce061775d00a02afadf51c",
+          "warnings": []
+        }
+      }
     },
     "euphorbia-wulfenii": {
       "file": "assets/plant-watercolours/euphorbia-wulfenii.webp",
@@ -469,7 +851,22 @@
       "actualHeightPx": 1402,
       "ratioErrorRelative": -0.05,
       "sha256": "6f1dd374f55ab574068b5222e35bdfa0fe81f156e28240b93a9fa6ddacc2bcd7",
-      "updated": "2026-10-15T07:08:42Z"
+      "updated": "2026-10-15T07:08:42Z",
+      "variants": {
+        "watercolour": {
+          "label": "Watercolour",
+          "file": "assets/plant-watercolours/euphorbia-wulfenii-watercolour.webp",
+          "status": "awaiting_review",
+          "productionReady": false,
+          "canonicalScaleApplied": false,
+          "originalWidthPx": 1122,
+          "originalHeightPx": 1402,
+          "transparent": true,
+          "sha256": "58ca957459c21ff738f0427cc2d24524b7366cc644b89c3373fbe84257528341",
+          "pngSha256": "02dbe8512680baa9e32bc56a4231cedf99c670bba5786dd999dc46de63321631",
+          "warnings": []
+        }
+      }
     },
     "gaura-whirling": {
       "file": "assets/plant-watercolours/gaura-whirling.webp",
@@ -478,7 +875,22 @@
       "actualHeightPx": 1402,
       "ratioErrorRelative": 0.102,
       "sha256": "efba0fb32b68cd160fc9c230115b72354747c05650eb1919c140fbab00ee9990",
-      "updated": "2026-10-15T07:08:42Z"
+      "updated": "2026-10-15T07:08:42Z",
+      "variants": {
+        "watercolour": {
+          "label": "Watercolour",
+          "file": "assets/plant-watercolours/gaura-whirling-watercolour.webp",
+          "status": "awaiting_review",
+          "productionReady": false,
+          "canonicalScaleApplied": false,
+          "originalWidthPx": 1086,
+          "originalHeightPx": 1448,
+          "transparent": true,
+          "sha256": "d5a6a564002877c9b88af4106b20f373a43b91c75a1aaa0e98f60bf4eb7bc9c1",
+          "pngSha256": "0913fc2a33eb9925c273b5290ee9efa530411fa68f9af0f813a398799c830c46",
+          "warnings": []
+        }
+      }
     },
     "geranium-macrorrhizum": {
       "file": "assets/plant-watercolours/geranium-macrorrhizum.webp",
@@ -487,7 +899,22 @@
       "actualHeightPx": 1254,
       "ratioErrorRelative": -0.428,
       "sha256": "b4ac7c4b5fd6afb7d25a4eb39c053b65680b118062d58dc23b34ac7065ea49b1",
-      "updated": "2026-10-15T07:08:42Z"
+      "updated": "2026-10-15T07:08:42Z",
+      "variants": {
+        "watercolour": {
+          "label": "Watercolour",
+          "file": "assets/plant-watercolours/geranium-macrorrhizum-watercolour.webp",
+          "status": "awaiting_review",
+          "productionReady": false,
+          "canonicalScaleApplied": false,
+          "originalWidthPx": 1448,
+          "originalHeightPx": 1086,
+          "transparent": true,
+          "sha256": "2e2e1e175d117df7a22afa9fecfa3eb1de01502f230097d591265b4014fef9f0",
+          "pngSha256": "2dc3690d99bd9bbb568dc369489072c2bdaa8345567bd1f0982fbd1c34bb5d2c",
+          "warnings": []
+        }
+      }
     },
     "geranium-psilostemon": {
       "file": "assets/plant-watercolours/geranium-psilostemon.webp",
@@ -496,7 +923,22 @@
       "actualHeightPx": 1254,
       "ratioErrorRelative": 0.091,
       "sha256": "6224a67c4304d08d19f502a91a16887e534da4db911a9de50e100086d5b1f317",
-      "updated": "2026-10-15T07:08:42Z"
+      "updated": "2026-10-15T07:08:42Z",
+      "variants": {
+        "watercolour": {
+          "label": "Watercolour",
+          "file": "assets/plant-watercolours/geranium-psilostemon-watercolour.webp",
+          "status": "awaiting_review",
+          "productionReady": false,
+          "canonicalScaleApplied": false,
+          "originalWidthPx": 1122,
+          "originalHeightPx": 1402,
+          "transparent": true,
+          "sha256": "5fe29032a810893baea1d3f70fda43795c01cf7ade15819176cebc3f44073c5c",
+          "pngSha256": "2cf5fcd3f3bb682742cadce6442a0ce2dd964c512e4d9d1ef2020c08619d3ad1",
+          "warnings": []
+        }
+      }
     },
     "hakonechloa-macra": {
       "file": "assets/plant-watercolours/hakonechloa-macra.webp",
@@ -505,7 +947,22 @@
       "actualHeightPx": 1254,
       "ratioErrorRelative": -0.175,
       "sha256": "eca0d84d4b5b728ccfa7c41cfcabc571056a19399324740a0944e05a44dcd327",
-      "updated": "2026-10-15T07:08:42Z"
+      "updated": "2026-10-15T07:08:42Z",
+      "variants": {
+        "watercolour": {
+          "label": "Watercolour",
+          "file": "assets/plant-watercolours/hakonechloa-macra-watercolour.webp",
+          "status": "awaiting_review",
+          "productionReady": false,
+          "canonicalScaleApplied": false,
+          "originalWidthPx": 1122,
+          "originalHeightPx": 1402,
+          "transparent": true,
+          "sha256": "f01ff2fc40f4cb99f6b928187febe90780658c237d86e5deaa650803744ca1a3",
+          "pngSha256": "042438e2818c6a10bf70c482ac23b3c8f8b73b4c1e3e1d63172b54109ef001b2",
+          "warnings": []
+        }
+      }
     },
     "helenium-moerheim": {
       "file": "assets/plant-watercolours/helenium-moerheim.webp",
@@ -514,7 +971,22 @@
       "actualHeightPx": 1402,
       "ratioErrorRelative": 0.164,
       "sha256": "8093a837f7c4b4c9d3e60683a62599cc2c698f1379aff5bffdabc30f7a7b109a",
-      "updated": "2026-10-15T07:08:42Z"
+      "updated": "2026-10-15T07:08:42Z",
+      "variants": {
+        "watercolour": {
+          "label": "Watercolour",
+          "file": "assets/plant-watercolours/helenium-moerheim-watercolour.webp",
+          "status": "awaiting_review",
+          "productionReady": false,
+          "canonicalScaleApplied": false,
+          "originalWidthPx": 1122,
+          "originalHeightPx": 1402,
+          "transparent": true,
+          "sha256": "f1a002085f6687843b45ac26674cc97e461db5422365946e61884d338c7c070d",
+          "pngSha256": "086d34612acda726646732a768a41c86d108a98b0468872d39412d75b14c63fc",
+          "warnings": []
+        }
+      }
     },
     "helleborus-hybridus": {
       "file": "assets/plant-watercolours/helleborus-hybridus.webp",
@@ -523,7 +995,22 @@
       "actualHeightPx": 1254,
       "ratioErrorRelative": -0.002,
       "sha256": "48b8decaed15b19e38194d90910da2972d7d53a4814d1745cb0fa935849582bc",
-      "updated": "2026-10-15T07:08:42Z"
+      "updated": "2026-10-15T07:08:42Z",
+      "variants": {
+        "watercolour": {
+          "label": "Watercolour",
+          "file": "assets/plant-watercolours/helleborus-hybridus-watercolour.webp",
+          "status": "awaiting_review",
+          "productionReady": false,
+          "canonicalScaleApplied": false,
+          "originalWidthPx": 1122,
+          "originalHeightPx": 1402,
+          "transparent": true,
+          "sha256": "1740d76281c88e26f72439d7a346fbd92d236bf33ac56fb404ab40b71594b11c",
+          "pngSha256": "e36dff0c0759a00fdf1e6630c81e505e68217896dd8f78a657f8bc606fe4a9e4",
+          "warnings": []
+        }
+      }
     },
     "hemerocallis-stafford": {
       "file": "assets/plant-watercolours/hemerocallis-stafford.webp",
@@ -532,7 +1019,22 @@
       "actualHeightPx": 1402,
       "ratioErrorRelative": -0.074,
       "sha256": "b91c7542f70ca72d84fab5e77eee85bfa94074ce734519aed2f3e22e346291eb",
-      "updated": "2026-10-15T07:08:42Z"
+      "updated": "2026-10-15T07:08:42Z",
+      "variants": {
+        "watercolour": {
+          "label": "Watercolour",
+          "file": "assets/plant-watercolours/hemerocallis-stafford-watercolour.webp",
+          "status": "awaiting_review",
+          "productionReady": false,
+          "canonicalScaleApplied": false,
+          "originalWidthPx": 1086,
+          "originalHeightPx": 1448,
+          "transparent": true,
+          "sha256": "e9a65d559a2497740c4b5b538a7a4835882c3a42e620bffb62047379abbbbb23",
+          "pngSha256": "c5af9296189fd4e7ad674b21cea82afcbb392e63da90f8a03be01feb9d7e593c",
+          "warnings": []
+        }
+      }
     },
     "heuchera-palace-purple": {
       "file": "assets/plant-watercolours/heuchera-palace-purple.webp",
@@ -541,7 +1043,22 @@
       "actualHeightPx": 1254,
       "ratioErrorRelative": -0.07,
       "sha256": "53a47b2dbe74853bf42607078ef40015a083393e06d51320f49c0351dc3d2ec0",
-      "updated": "2026-10-15T07:08:42Z"
+      "updated": "2026-10-15T07:08:42Z",
+      "variants": {
+        "watercolour": {
+          "label": "Watercolour",
+          "file": "assets/plant-watercolours/heuchera-palace-purple-watercolour.webp",
+          "status": "awaiting_review",
+          "productionReady": false,
+          "canonicalScaleApplied": false,
+          "originalWidthPx": 1122,
+          "originalHeightPx": 1402,
+          "transparent": true,
+          "sha256": "861e2f8fd248a2416f3282602c2e29d490b52fd7344be1e0600b89d8d4c6db29",
+          "pngSha256": "8dde8fb6468703c888bbcc19700205d089ec2144a4ae17c377c2f01cda3d5551",
+          "warnings": []
+        }
+      }
     },
     "hylotelephium-herbstfreude": {
       "file": "assets/plant-watercolours/hylotelephium-herbstfreude.webp",
@@ -550,7 +1067,22 @@
       "actualHeightPx": 1086,
       "ratioErrorRelative": 0.345,
       "sha256": "c4f05190fcb4e65310687c4791b3087f9715157129e99958c4f853a34e402e0f",
-      "updated": "2026-10-15T07:08:42Z"
+      "updated": "2026-10-15T07:08:42Z",
+      "variants": {
+        "watercolour": {
+          "label": "Watercolour",
+          "file": "assets/plant-watercolours/hylotelephium-herbstfreude-watercolour.webp",
+          "status": "awaiting_review",
+          "productionReady": false,
+          "canonicalScaleApplied": false,
+          "originalWidthPx": 1122,
+          "originalHeightPx": 1402,
+          "transparent": true,
+          "sha256": "8a3e0234084eadd78ae3f8b8802046a2f02c826371004d98d64a5ad61889dd54",
+          "pngSha256": "9f74f903c03ab686d9532d2b379e42f945a2b1d532b4c2edb8ac125e71c2d6c1",
+          "warnings": []
+        }
+      }
     },
     "iris-sibirica": {
       "file": "assets/plant-watercolours/iris-sibirica.webp",
@@ -559,7 +1091,22 @@
       "actualHeightPx": 1402,
       "ratioErrorRelative": 0.78,
       "sha256": "cdfbf96ecf920dc62c13298e1eaa35ecc5348f53967f4d450fd2d5642fd32195",
-      "updated": "2026-10-15T07:10:00Z"
+      "updated": "2026-10-15T07:10:00Z",
+      "variants": {
+        "watercolour": {
+          "label": "Watercolour",
+          "file": "assets/plant-watercolours/iris-sibirica-watercolour.webp",
+          "status": "awaiting_review",
+          "productionReady": false,
+          "canonicalScaleApplied": false,
+          "originalWidthPx": 1122,
+          "originalHeightPx": 1402,
+          "transparent": true,
+          "sha256": "fae30267692fee3ad9c7484fac7dc6a12a1966105d7efac7350e4073cad67ae9",
+          "pngSha256": "fa5d39b0c2a2b18f4c4620cdd30d62fcb190b82c3ac3835484dc37aeebe84952",
+          "warnings": []
+        }
+      }
     },
     "knautia-macedonica": {
       "file": "assets/plant-watercolours/knautia-macedonica.webp",
@@ -568,7 +1115,22 @@
       "actualHeightPx": 1448,
       "ratioErrorRelative": -0.129,
       "sha256": "095057297c6c1a6bfb07410b076cf4618c513fe5474ca3bfaf1d8815907db1a4",
-      "updated": "2026-10-15T07:10:00Z"
+      "updated": "2026-10-15T07:10:00Z",
+      "variants": {
+        "watercolour": {
+          "label": "Watercolour",
+          "file": "assets/plant-watercolours/knautia-macedonica-watercolour.webp",
+          "status": "awaiting_review",
+          "productionReady": false,
+          "canonicalScaleApplied": false,
+          "originalWidthPx": 1122,
+          "originalHeightPx": 1402,
+          "transparent": true,
+          "sha256": "8414c61fa30f3f5b60858464fc8c2586340e8e0771a9f9b6eff3b0ca08262ccd",
+          "pngSha256": "16b678ecc1645f20bdd04889933c06d37e8e7d9c983602326f6f961d2b7129eb",
+          "warnings": []
+        }
+      }
     },
     "kniphofia-tawny-king": {
       "file": "assets/plant-watercolours/kniphofia-tawny-king.webp",
@@ -577,7 +1139,22 @@
       "actualHeightPx": 1254,
       "ratioErrorRelative": 0.891,
       "sha256": "b7751e168c35417360f7b77afb4a3802da490ba3fec79f236eaef66de2962c5c",
-      "updated": "2026-10-15T07:10:00Z"
+      "updated": "2026-10-15T07:10:00Z",
+      "variants": {
+        "watercolour": {
+          "label": "Watercolour",
+          "file": "assets/plant-watercolours/kniphofia-tawny-king-watercolour.webp",
+          "status": "awaiting_review",
+          "productionReady": false,
+          "canonicalScaleApplied": false,
+          "originalWidthPx": 1122,
+          "originalHeightPx": 1402,
+          "transparent": true,
+          "sha256": "dd639aaf1b59251db7f82cb9c53ad28662c433c47e906a4d2b0c255f1b5dc2f4",
+          "pngSha256": "d900f6b803e847862e47fbb5d58d867c64afc0d1d5fbb8324b7a363793addfee",
+          "warnings": []
+        }
+      }
     },
     "lavandula-hidcote": {
       "file": "assets/plant-watercolours/lavandula-hidcote.webp",
@@ -586,7 +1163,22 @@
       "actualHeightPx": 1254,
       "ratioErrorRelative": -0.002,
       "sha256": "13651a3c3712f2b490225a6d823e604d75c19ddf5ced77ca324cc514ae6b91d6",
-      "updated": "2026-10-15T07:10:00Z"
+      "updated": "2026-10-15T07:10:00Z",
+      "variants": {
+        "watercolour": {
+          "label": "Watercolour",
+          "file": "assets/plant-watercolours/lavandula-hidcote-watercolour.webp",
+          "status": "awaiting_review",
+          "productionReady": false,
+          "canonicalScaleApplied": false,
+          "originalWidthPx": 1086,
+          "originalHeightPx": 1448,
+          "transparent": true,
+          "sha256": "4ffcd5ffc9890b29571fa01e8f7c52a21eb66dc19c00f44d912140872b81d393",
+          "pngSha256": "df0353676d5b9ab850dd35496820fa8398fbc2542516384a8e3783432f14eec5",
+          "warnings": []
+        }
+      }
     },
     "leucanthemum-becky": {
       "file": "assets/plant-watercolours/leucanthemum-becky.webp",
@@ -595,7 +1187,22 @@
       "actualHeightPx": 1402,
       "ratioErrorRelative": 0.174,
       "sha256": "6a87c8cf5de23aac29aa9bc8a75e12ffb4392982bf32c150fdc33dcd3599bda5",
-      "updated": "2026-10-15T07:10:00Z"
+      "updated": "2026-10-15T07:10:00Z",
+      "variants": {
+        "watercolour": {
+          "label": "Watercolour",
+          "file": "assets/plant-watercolours/leucanthemum-becky-watercolour.webp",
+          "status": "awaiting_review",
+          "productionReady": false,
+          "canonicalScaleApplied": false,
+          "originalWidthPx": 1086,
+          "originalHeightPx": 1448,
+          "transparent": true,
+          "sha256": "d4c3b7fb772b5202bce7094213bc1048fff97000aae56e095c8e5e40e91c2c2c",
+          "pngSha256": "c066278058ff407427ee7ae315c4ab600e05d785ec417c2f0efb96a20c5c9e89",
+          "warnings": []
+        }
+      }
     },
     "molinia-transparent": {
       "file": "assets/plant-watercolours/molinia-transparent.webp",
@@ -604,7 +1211,22 @@
       "actualHeightPx": 1402,
       "ratioErrorRelative": 0.834,
       "sha256": "f0af2ccc3a896497546feaeeb8136a6948dd9f2d3e52e2d6a58f19e2bc34774f",
-      "updated": "2026-10-15T07:10:00Z"
+      "updated": "2026-10-15T07:10:00Z",
+      "variants": {
+        "watercolour": {
+          "label": "Watercolour",
+          "file": "assets/plant-watercolours/molinia-transparent-watercolour.webp",
+          "status": "awaiting_review",
+          "productionReady": false,
+          "canonicalScaleApplied": false,
+          "originalWidthPx": 1122,
+          "originalHeightPx": 1402,
+          "transparent": true,
+          "sha256": "11cedd7d6eb19dad8264c13a6f8fd8b3add91b6e4358ab3a9644461dbb65a491",
+          "pngSha256": "d69d859cce754e1ef0de36e51c9172b05d9e70d0d8ad9c78446c590f8772d825",
+          "warnings": []
+        }
+      }
     },
     "penstemon-garnet": {
       "file": "assets/plant-watercolours/penstemon-garnet.webp",
@@ -613,7 +1235,22 @@
       "actualHeightPx": 1448,
       "ratioErrorRelative": -0.081,
       "sha256": "ed99745b5a7ea1d23c23c0d6894c6cd92ff86bffedf0d923042e1c6b4f2a061c",
-      "updated": "2026-10-15T07:10:00Z"
+      "updated": "2026-10-15T07:10:00Z",
+      "variants": {
+        "watercolour": {
+          "label": "Watercolour",
+          "file": "assets/plant-watercolours/penstemon-garnet-watercolour.webp",
+          "status": "awaiting_review",
+          "productionReady": false,
+          "canonicalScaleApplied": false,
+          "originalWidthPx": 1122,
+          "originalHeightPx": 1402,
+          "transparent": true,
+          "sha256": "1be86f7b83f0fceb830c21fb5ec078fc31c675891889493f0c96d399741a9138",
+          "pngSha256": "32855b87ecc9dc0f79377afcaa09903e8745a5056619204d655cdc78a952986a",
+          "warnings": []
+        }
+      }
     },
     "perovskia-blue-spire": {
       "file": "assets/plant-watercolours/perovskia-blue-spire.webp",
@@ -622,7 +1259,22 @@
       "actualHeightPx": 1402,
       "ratioErrorRelative": 0.059,
       "sha256": "511b0be8acb096c69a59523d2bca7ad19a37d7b4d8b25a7a6113778c04c30a90",
-      "updated": "2026-10-15T07:10:00Z"
+      "updated": "2026-10-15T07:10:00Z",
+      "variants": {
+        "watercolour": {
+          "label": "Watercolour",
+          "file": "assets/plant-watercolours/perovskia-blue-spire-watercolour.webp",
+          "status": "awaiting_review",
+          "productionReady": false,
+          "canonicalScaleApplied": false,
+          "originalWidthPx": 1086,
+          "originalHeightPx": 1448,
+          "transparent": true,
+          "sha256": "0023d6495d76601bf3373eb36a5e642c6327cb6813e1dc0e289af66c8f34b25b",
+          "pngSha256": "d7afad8679fab74de2e488e0bb5f3270ea7d4359650d904cb3e39f41c3d46acb",
+          "warnings": []
+        }
+      }
     },
     "persicaria-firetail": {
       "file": "assets/plant-watercolours/persicaria-firetail.webp",
@@ -631,7 +1283,22 @@
       "actualHeightPx": 1448,
       "ratioErrorRelative": -0.205,
       "sha256": "4532372ae8015e5f17a0f94cbafe71d1e2193fcd0d094c7e50a34ead3cc270e9",
-      "updated": "2026-10-15T07:10:00Z"
+      "updated": "2026-10-15T07:10:00Z",
+      "variants": {
+        "watercolour": {
+          "label": "Watercolour",
+          "file": "assets/plant-watercolours/persicaria-firetail-watercolour.webp",
+          "status": "awaiting_review",
+          "productionReady": false,
+          "canonicalScaleApplied": false,
+          "originalWidthPx": 1122,
+          "originalHeightPx": 1402,
+          "transparent": true,
+          "sha256": "caa6fbee596837aa38be545e39b06d1f76f553d931b22d5712fb7b1eea19aa42",
+          "pngSha256": "60c46a98ffcc5e6a849c87cbc17aeae0dd2035f2b06d01dbbb121a70ca512839",
+          "warnings": []
+        }
+      }
     },
     "phlomis-russeliana": {
       "file": "assets/plant-watercolours/phlomis-russeliana.webp",
@@ -640,7 +1307,22 @@
       "actualHeightPx": 1448,
       "ratioErrorRelative": 0.047,
       "sha256": "f343b35e73c3397a6c8392875fd16f63a7654ca3832492b7e07bacb3bad48109",
-      "updated": "2026-10-15T07:10:00Z"
+      "updated": "2026-10-15T07:10:00Z",
+      "variants": {
+        "watercolour": {
+          "label": "Watercolour",
+          "file": "assets/plant-watercolours/phlomis-russeliana-watercolour.webp",
+          "status": "awaiting_review",
+          "productionReady": false,
+          "canonicalScaleApplied": false,
+          "originalWidthPx": 1122,
+          "originalHeightPx": 1402,
+          "transparent": true,
+          "sha256": "ed6859fbd7a13a7c2c6ab600969a7b1ae1469e20763490c09363da32a77f5cff",
+          "pngSha256": "14aab4a6c7d1657b3ef16959c9ba1101cc7d2793edd9dc3a255a46d8774d0096",
+          "warnings": []
+        }
+      }
     },
     "polystichum-setiferum": {
       "file": "assets/plant-watercolours/polystichum-setiferum.webp",
@@ -649,7 +1331,22 @@
       "actualHeightPx": 1254,
       "ratioErrorRelative": -0.209,
       "sha256": "627cf86b3320226104ef332c286924322c144812a99b9fbea6e3c481dcfaeff0",
-      "updated": "2026-10-15T07:10:00Z"
+      "updated": "2026-10-15T07:10:00Z",
+      "variants": {
+        "watercolour": {
+          "label": "Watercolour",
+          "file": "assets/plant-watercolours/polystichum-setiferum-watercolour.webp",
+          "status": "awaiting_review",
+          "productionReady": false,
+          "canonicalScaleApplied": false,
+          "originalWidthPx": 1122,
+          "originalHeightPx": 1402,
+          "transparent": true,
+          "sha256": "f400a70504f6d32dbcc30577b3c521a3debc480375e10e2410e8dbe9e3b714f2",
+          "pngSha256": "252c47ff3518fdb1deb424e4d0f05ed084331a598ee5711626f854b3d87970fa",
+          "warnings": []
+        }
+      }
     },
     "pulmonaria-blue-ensign": {
       "file": "assets/plant-watercolours/pulmonaria-blue-ensign.webp",
@@ -658,7 +1355,22 @@
       "actualHeightPx": 1254,
       "ratioErrorRelative": -0.32,
       "sha256": "dd3bc94db1e5789b12aecbd1b26a589adf472302c0776cc716a65779b783fa92",
-      "updated": "2026-10-15T07:10:00Z"
+      "updated": "2026-10-15T07:10:00Z",
+      "variants": {
+        "watercolour": {
+          "label": "Watercolour",
+          "file": "assets/plant-watercolours/pulmonaria-blue-ensign-watercolour.webp",
+          "status": "awaiting_review",
+          "productionReady": false,
+          "canonicalScaleApplied": false,
+          "originalWidthPx": 1122,
+          "originalHeightPx": 1402,
+          "transparent": true,
+          "sha256": "703fec36bee9b9dd2333edfb44f2c3009772f0525780697d97e50000c244b1f4",
+          "pngSha256": "ff12a87f849b84d5771d9616890620cc81318cfbb269c5c9c8dba98e58c22026",
+          "warnings": []
+        }
+      }
     },
     "rudbeckia-goldsturm": {
       "file": "assets/plant-watercolours/rudbeckia-goldsturm.webp",
@@ -667,7 +1379,22 @@
       "actualHeightPx": 1448,
       "ratioErrorRelative": 0.031,
       "sha256": "b2e1f6616a78895f98765f79d563cccf345474519b7a4023042e171a3fb02032",
-      "updated": "2026-10-15T07:10:00Z"
+      "updated": "2026-10-15T07:10:00Z",
+      "variants": {
+        "watercolour": {
+          "label": "Watercolour",
+          "file": "assets/plant-watercolours/rudbeckia-goldsturm-watercolour.webp",
+          "status": "awaiting_review",
+          "productionReady": false,
+          "canonicalScaleApplied": false,
+          "originalWidthPx": 1122,
+          "originalHeightPx": 1402,
+          "transparent": true,
+          "sha256": "bfff5e0a5cd859e13644126591c313fa96ef53abbd59e1ea629610ba551c61c5",
+          "pngSha256": "29414832e39cfd32cb7a95c7bfeab917aa5aba3223d99218953096fd29f6dc45",
+          "warnings": []
+        }
+      }
     },
     "salvia-amistad": {
       "file": "assets/plant-watercolours/salvia-amistad.webp",
@@ -676,7 +1403,22 @@
       "actualHeightPx": 1402,
       "ratioErrorRelative": 0.648,
       "sha256": "aab88297dca97ac3df6c2ff6d01be32778485fd7935e1ccac41c780738510e11",
-      "updated": "2026-10-15T07:10:00Z"
+      "updated": "2026-10-15T07:10:00Z",
+      "variants": {
+        "watercolour": {
+          "label": "Watercolour",
+          "file": "assets/plant-watercolours/salvia-amistad-watercolour.webp",
+          "status": "awaiting_review",
+          "productionReady": false,
+          "canonicalScaleApplied": false,
+          "originalWidthPx": 1122,
+          "originalHeightPx": 1402,
+          "transparent": true,
+          "sha256": "638e53963fee8b37acc0b98bdec28255d94e925bbcdb856ce94f80cb94724b4f",
+          "pngSha256": "b818df0aee141508f8e5f615ff5846c8636524c2d2ce9188c26c53e2e28a5365",
+          "warnings": []
+        }
+      }
     },
     "sanguisorba-red-thunder": {
       "file": "assets/plant-watercolours/sanguisorba-red-thunder.webp",
@@ -685,7 +1427,22 @@
       "actualHeightPx": 1402,
       "ratioErrorRelative": 0.004,
       "sha256": "5919e10b550e518dfacc13e6a3c26e2bd6a1d2447ab14c56180171667faae4ba",
-      "updated": "2026-10-15T07:10:00Z"
+      "updated": "2026-10-15T07:10:00Z",
+      "variants": {
+        "watercolour": {
+          "label": "Watercolour",
+          "file": "assets/plant-watercolours/sanguisorba-red-thunder-watercolour.webp",
+          "status": "awaiting_review",
+          "productionReady": false,
+          "canonicalScaleApplied": false,
+          "originalWidthPx": 1086,
+          "originalHeightPx": 1448,
+          "transparent": true,
+          "sha256": "3af2386c4b30439c4d42b79cb2944f14bd5cd217d27d0a51abd5c62f1a6e5086",
+          "pngSha256": "d28abc7d16684768a2c3f324e0c24ba6ef0b07523be31a33f4de7f74f56b0469",
+          "warnings": []
+        }
+      }
     },
     "sesleria-autumnalis": {
       "file": "assets/plant-watercolours/sesleria-autumnalis.webp",
@@ -694,7 +1451,22 @@
       "actualHeightPx": 1254,
       "ratioErrorRelative": 0.002,
       "sha256": "ef90d117158a5c2e2c1e33f940a4c973ee95082a1d588e4a3247369828a646e2",
-      "updated": "2026-10-15T07:10:00Z"
+      "updated": "2026-10-15T07:10:00Z",
+      "variants": {
+        "watercolour": {
+          "label": "Watercolour",
+          "file": "assets/plant-watercolours/sesleria-autumnalis-watercolour.webp",
+          "status": "awaiting_review",
+          "productionReady": false,
+          "canonicalScaleApplied": false,
+          "originalWidthPx": 1122,
+          "originalHeightPx": 1402,
+          "transparent": true,
+          "sha256": "8d4becf53e280f28c6ba5a04a52d1a9cabc51d88e8b39c60d993940778791135",
+          "pngSha256": "0034a767011d1cf2f53ab3875fbcb5bd580eeca21afc6322bc94652e01ea47d1",
+          "warnings": []
+        }
+      }
     },
     "stipa-gigantea": {
       "file": "assets/plant-watercolours/stipa-gigantea.webp",
@@ -703,7 +1475,22 @@
       "actualHeightPx": 1402,
       "ratioErrorRelative": 0.735,
       "sha256": "4a406f6e37b25a94202f11930a34cecdf48e2e130e5b75664d9b38a815db9f7a",
-      "updated": "2026-10-15T07:10:00Z"
+      "updated": "2026-10-15T07:10:00Z",
+      "variants": {
+        "watercolour": {
+          "label": "Watercolour",
+          "file": "assets/plant-watercolours/stipa-gigantea-watercolour.webp",
+          "status": "awaiting_review",
+          "productionReady": false,
+          "canonicalScaleApplied": false,
+          "originalWidthPx": 1086,
+          "originalHeightPx": 1448,
+          "transparent": true,
+          "sha256": "38d0e8440f3d4d883500ec834afa0bd9a37d7a788f3df1ee0297a991b182a2f2",
+          "pngSha256": "8ec9047dd7a7d1b828979ca0067e152bf6ff70463b9596f89b0a81ba66433d56",
+          "warnings": []
+        }
+      }
     },
     "stipa-tenuissima": {
       "file": "assets/plant-watercolours/stipa-tenuissima.webp",
@@ -712,7 +1499,22 @@
       "actualHeightPx": 1402,
       "ratioErrorRelative": 0.166,
       "sha256": "cbe5e059356aace5d5c0398545bcab411bb193d57509c0c42ba67c667f45318d",
-      "updated": "2026-10-15T07:10:00Z"
+      "updated": "2026-10-15T07:10:00Z",
+      "variants": {
+        "watercolour": {
+          "label": "Watercolour",
+          "file": "assets/plant-watercolours/stipa-tenuissima-watercolour.webp",
+          "status": "awaiting_review",
+          "productionReady": false,
+          "canonicalScaleApplied": false,
+          "originalWidthPx": 1122,
+          "originalHeightPx": 1402,
+          "transparent": true,
+          "sha256": "96cf32ef8af2401a7efb62da52aae47125aca78585b391c210887d5bb4436838",
+          "pngSha256": "d4851bcfe8ebc533d60570719bdd5a3034409aa2b2d6afe352a0d1dcf9e18fe0",
+          "warnings": []
+        }
+      }
     },
     "thalictrum-delavayi": {
       "file": "assets/plant-watercolours/thalictrum-delavayi.webp",
@@ -721,7 +1523,22 @@
       "actualHeightPx": 1402,
       "ratioErrorRelative": 0.157,
       "sha256": "d4e24e29945e9458697244a5119175fdc21c347179f18d085294a39039181b94",
-      "updated": "2026-10-15T07:10:00Z"
+      "updated": "2026-10-15T07:10:00Z",
+      "variants": {
+        "watercolour": {
+          "label": "Watercolour",
+          "file": "assets/plant-watercolours/thalictrum-delavayi-watercolour.webp",
+          "status": "awaiting_review",
+          "productionReady": false,
+          "canonicalScaleApplied": false,
+          "originalWidthPx": 1086,
+          "originalHeightPx": 1448,
+          "transparent": true,
+          "sha256": "8ce95ecd4d93f883fc2504b3fee79441560a260fb77c29f2de6e9be65f1ad419",
+          "pngSha256": "17e67a45570774c84b475ea96fc1b0e17c139fbe317dad07fb4623428ca040f5",
+          "warnings": []
+        }
+      }
     },
     "verbena-bonariensis": {
       "file": "assets/plant-watercolours/verbena-bonariensis.webp",
@@ -730,7 +1547,22 @@
       "actualHeightPx": 1536,
       "ratioErrorRelative": 0.78,
       "sha256": "c02b3c67a6e1b52e7ef9abbc28669f3b2209657b6623fb3c1d49ae7c7306c499",
-      "updated": "2026-10-15T07:10:00Z"
+      "updated": "2026-10-15T07:10:00Z",
+      "variants": {
+        "watercolour": {
+          "label": "Watercolour",
+          "file": "assets/plant-watercolours/verbena-bonariensis-watercolour.webp",
+          "status": "awaiting_review",
+          "productionReady": false,
+          "canonicalScaleApplied": false,
+          "originalWidthPx": 1122,
+          "originalHeightPx": 1402,
+          "transparent": true,
+          "sha256": "33fc205742f1974d77aebc04db79160e2e1e9c4ddc39bda5b32af24098831ba5",
+          "pngSha256": "a94efbd891df33db3d6692a751c20212a0159412876c1a0f5d9c7e57239478b2",
+          "warnings": []
+        }
+      }
     },
     "veronicastrum-album": {
       "file": "assets/plant-watercolours/veronicastrum-album.webp",
@@ -739,7 +1571,22 @@
       "actualHeightPx": 1402,
       "ratioErrorRelative": -0.125,
       "sha256": "1c1ae626d9377b3b8aca7947c90fd4bdafd1daee5de82ba985bbf5006bee1101",
-      "updated": "2026-10-15T07:10:00Z"
+      "updated": "2026-10-15T07:10:00Z",
+      "variants": {
+        "watercolour": {
+          "label": "Watercolour",
+          "file": "assets/plant-watercolours/veronicastrum-album-watercolour.webp",
+          "status": "awaiting_review",
+          "productionReady": false,
+          "canonicalScaleApplied": false,
+          "originalWidthPx": 1086,
+          "originalHeightPx": 1448,
+          "transparent": true,
+          "sha256": "55d6d1fd31d9ce6421efcf79f81f690ce06dc96a3e5edbaab1d8268401c28af1",
+          "pngSha256": "eaa04ca06152084023cee1c6222a96da4d7ec23764cf84f84ba1d2c33017635d",
+          "warnings": []
+        }
+      }
     }
   },
   "pixelsPerCm": 10,
