@@ -24,5 +24,5 @@ Real photography defines morphology. Database height/spread defines physical sca
 The contact-sheet popup shows a dynamic title ("Botanical contact sheet" / "Watercolour contact sheet") and a `Botanical | Watercolour` switcher that re-renders in place (popup, browser filters, selection and scroll are kept). Images come from the manifest; a plant without the chosen type shows "Illustration unavailable" and is never substituted.
 
 ## Botanical verification
-`data/botanical-verification.json` tracks which botanical images are `confirmed` or `pending_review`. Pending plants show an orange
-"Verify botanical image" button; approvals are saved by an external service, see `docs/BOTANICAL_VERIFICATION.md`.
+Plants whose botanical image still needs a human check carry an orange "Needs verification" label (status in `data/botanical-verification.json`);
+see `docs/BOTANICAL_VERIFICATION.md`. Cards also outline the visible content of each illustration ("Show bounding boxes" toggle, data in `data/illustration-bounds.json`).
