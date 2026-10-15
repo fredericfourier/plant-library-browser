@@ -1,6 +1,6 @@
 {
   "schemaVersion": 7,
-  "updated": "2026-10-13",
+  "updated": "2026-10-15",
   "plants": [
     {
       "id": "salvia-caradonna",
@@ -6660,6 +6660,418 @@
         "hardFailTolerance": 0.3,
         "scaleMode": "uniform",
         "groundAnchor": "bottom"
+      }
+    },
+    {
+      "id": "rosa-bonica",
+      "botanicalName": "Rosa 'Bonica'",
+      "commonName": "Shrub rose 'Bonica'",
+      "type": "shrub",
+      "heightCm": 100,
+      "spreadCm": 100,
+      "light": [
+        "full_sun"
+      ],
+      "soil": [
+        "clay",
+        "loam",
+        "sandy"
+      ],
+      "moisture": [
+        "average",
+        "moist"
+      ],
+      "flowerColours": [
+        "pink"
+      ],
+      "floweringStart": 6,
+      "floweringEnd": 10,
+      "foliage": "deciduous",
+      "foliageColour": "dark-green",
+      "hardiness": "H6",
+      "maintenance": "moderate",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "pollinatorValue": 3,
+      "plantsPerSqM": 1,
+      "description": "Repeat-flowering pink semi-double shrub rose, bushy and slightly scented, with dark glossy leaves. Prune in late winter.",
+      "notes": "E2.7 engine catalogue record (code R, research supplement): engine working size 100 × 100 cm (upper end of RHS 0.5–1 m) kept unchanged. pollinatorValue, plantsPerSqM and design attributes are design judgements, not source data. Illustrations not yet created. Cultivar name 'Bonica' (RHS Rosa 'Meidomonac'). RHS gives repeat flowering 'summer into autumn' without months: 6–10 is an interpretation. RHS pruning group 19; susceptible to black spot, rust and mildew. Staking and winter protection not stated by RHS (recorded as false).",
+      "design": {
+        "styles": [
+          "cottage"
+        ],
+        "position": [
+          "middle",
+          "back"
+        ],
+        "habit": "clumping",
+        "visualDensity": "high",
+        "placementFlexibility": "low",
+        "layer": "structural",
+        "groupingMode": "specimen",
+        "allowSingleton": true,
+        "designRoles": [
+          "structure",
+          "focal",
+          "seasonal_interest"
+        ],
+        "roles": {
+          "preferred": "structural_anchor",
+          "supported": [
+            "structural_anchor"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0.45,
+            0.9
+          ],
+          "hard": [
+            0.25,
+            1
+          ]
+        },
+        "transparency": {
+          "base": 0.05,
+          "upper": 0.15
+        },
+        "spreadHabit": "clumping"
+      },
+      "watercolourEnvelope": {
+        "ratio": 1,
+        "shapeClass": "balanced_mounded",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 1000,
+        "expectedSpreadPx": 1000,
+        "ratioTolerance": 0.2,
+        "hardFailTolerance": 0.3,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
+      },
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS",
+            "url": "https://www.rhs.org.uk/plants/96430/rosa-bonica-meidomonac-gc/details",
+            "checked": "2026-10-15"
+          }
+        ],
+        "confidence": "high",
+        "basis": "RHS profile: time to maturity 2–5 years; H6; full sun; chalk/clay/loam/sand; moist but well-drained"
+      }
+    },
+    {
+      "id": "philadelphus-manteau-dhermine",
+      "botanicalName": "Philadelphus 'Manteau d'Hermine'",
+      "commonName": "Mock orange 'Manteau d'Hermine'",
+      "type": "shrub",
+      "heightCm": 100,
+      "spreadCm": 150,
+      "light": [
+        "full_sun",
+        "part_shade"
+      ],
+      "soil": [
+        "clay",
+        "loam",
+        "sandy"
+      ],
+      "moisture": [
+        "average",
+        "moist"
+      ],
+      "flowerColours": [
+        "white"
+      ],
+      "floweringStart": 6,
+      "floweringEnd": 7,
+      "foliage": "deciduous",
+      "foliageColour": "green",
+      "hardiness": "H6",
+      "maintenance": "moderate",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "pollinatorValue": 2,
+      "plantsPerSqM": 1,
+      "description": "Compact, arching mock orange smothered in double, creamy-white, orange-blossom-scented flowers in early summer. Prune straight after flowering.",
+      "notes": "E2.7 engine catalogue record (code M, research supplement): engine working size 100 × 150 cm (upper end of the 0.5–1 m high, 1–1.5 m spread range) kept unchanged. pollinatorValue, plantsPerSqM and design attributes are design judgements, not source data. Illustrations not yet created. Exact cultivar as named in the E2.7 fixture and benchmark mapping. RHS profile 91218: H6, AGM, pruning group 2, 5–10 years to ultimate size; RHS flowering is 'summer', June–July is from nursery listings. Staking and winter protection not required (RHS notes container damage only).",
+      "design": {
+        "styles": [
+          "cottage"
+        ],
+        "position": [
+          "middle",
+          "back"
+        ],
+        "habit": "spreading",
+        "visualDensity": "high",
+        "placementFlexibility": "low",
+        "layer": "structural",
+        "groupingMode": "specimen",
+        "allowSingleton": true,
+        "designRoles": [
+          "structure",
+          "focal"
+        ],
+        "roles": {
+          "preferred": "structural_anchor",
+          "supported": [
+            "structural_anchor"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0.45,
+            0.9
+          ],
+          "hard": [
+            0.25,
+            1
+          ]
+        },
+        "transparency": {
+          "base": 0.1,
+          "upper": 0.25
+        },
+        "spreadHabit": "spreading"
+      },
+      "watercolourEnvelope": {
+        "ratio": 1.5,
+        "shapeClass": "broad_spreading",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 1000,
+        "expectedSpreadPx": 1500,
+        "ratioTolerance": 0.2,
+        "hardFailTolerance": 0.3,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
+      },
+      "maturity": {
+        "minYears": 5,
+        "maxYears": 10,
+        "sources": [
+          {
+            "name": "RHS",
+            "url": "https://www.rhs.org.uk/plants/91218/philadelphus-manteau-dhermine-d/details",
+            "checked": "2026-10-15"
+          },
+          {
+            "name": "Palmstead Nurseries",
+            "url": "https://www.palmstead.co.uk/product/index/31843-philadelphus%20'manteau%20d'hermine'-2%20litre-40-60%20cm",
+            "checked": "2026-10-15"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS profile: ultimate size 0.5–1 m by 1–1.5 m in 5–10 years; engine uses the upper end"
+      }
+    },
+    {
+      "id": "phlox-blue-paradise",
+      "botanicalName": "Phlox paniculata 'Blue Paradise'",
+      "commonName": "Violet-blue border phlox",
+      "type": "perennial",
+      "heightCm": 120,
+      "spreadCm": 60,
+      "light": [
+        "full_sun",
+        "part_shade"
+      ],
+      "soil": [
+        "clay",
+        "loam"
+      ],
+      "moisture": [
+        "average",
+        "moist"
+      ],
+      "flowerColours": [
+        "blue",
+        "purple"
+      ],
+      "floweringStart": 7,
+      "floweringEnd": 9,
+      "foliage": "deciduous",
+      "foliageColour": "green",
+      "hardiness": "H7",
+      "maintenance": "moderate",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "pollinatorValue": 4,
+      "plantsPerSqM": 3,
+      "description": "Fragrant clusters of dark-eyed violet-blue flowers from midsummer into early autumn. Loved by bees and butterflies. Keep the soil moist but free-draining.",
+      "notes": "E2.7 engine catalogue record (code P, research supplement): engine working size 120 × 60 cm kept unchanged. pollinatorValue, plantsPerSqM and design attributes are design judgements, not source data. Illustrations not yet created. Sources differ: RHS height 1–1.5 m and spread 0.1–0.5 m, Proctors 90 × 60 cm. Engine size (RHS description height, Proctors spread) kept; do not treat as reconciled. RHS: H7, full sun or partial shade, chalk/clay/loam, moist but well-drained, flowers July–September. Staking not stated in sources (recorded as false).",
+      "design": {
+        "styles": [
+          "cottage"
+        ],
+        "position": [
+          "middle_back",
+          "back"
+        ],
+        "habit": "upright",
+        "visualDensity": "medium",
+        "placementFlexibility": "medium",
+        "layer": "structural",
+        "groupingMode": "clump",
+        "allowSingleton": false,
+        "designRoles": [
+          "structure",
+          "repetition",
+          "late_season"
+        ],
+        "roles": {
+          "preferred": "repeated_clump",
+          "supported": [
+            "repeated_clump",
+            "primary_drift"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0.4,
+            0.85
+          ],
+          "hard": [
+            0.15,
+            1
+          ]
+        },
+        "transparency": {
+          "base": 0.1,
+          "upper": 0.4
+        },
+        "spreadHabit": "clumping"
+      },
+      "watercolourEnvelope": {
+        "ratio": 0.5,
+        "shapeClass": "very_narrow_upright",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 1200,
+        "expectedSpreadPx": 600,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
+      },
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS",
+            "url": "https://www.rhs.org.uk/plants/50575/phlox-paniculata-blue-paradise/details",
+            "checked": "2026-10-15"
+          },
+          {
+            "name": "Proctors Nursery",
+            "url": "https://proctorsnursery.co.uk/product/phlox-blue-paradise/",
+            "checked": "2026-10-15"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS profile: time to maturity 2–5 years; height/spread sources differ between RHS and nursery"
+      }
+    },
+    {
+      "id": "paeonia-duchesse-de-nemours",
+      "botanicalName": "Paeonia lactiflora 'Duchesse de Nemours'",
+      "commonName": "Peony 'Duchesse de Nemours'",
+      "type": "perennial",
+      "heightCm": 80,
+      "spreadCm": 100,
+      "light": [
+        "full_sun",
+        "part_shade"
+      ],
+      "soil": [
+        "clay",
+        "loam",
+        "sandy"
+      ],
+      "moisture": [
+        "average",
+        "moist"
+      ],
+      "flowerColours": [
+        "white"
+      ],
+      "floweringStart": 5,
+      "floweringEnd": 6,
+      "foliage": "deciduous",
+      "foliageColour": "dark-green",
+      "hardiness": "H6",
+      "maintenance": "moderate",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "pollinatorValue": 2,
+      "plantsPerSqM": 1,
+      "description": "Fragrant, fully double white flowers 15–20 cm across over dark green, divided foliage. Long-lived and best left undisturbed once planted.",
+      "notes": "E2.7 engine catalogue record (code W, research supplement): engine working size 80 × 100 cm (RHS height 'to 80 cm', upper end of the 0.5–1 m spread band) kept unchanged. pollinatorValue, plantsPerSqM and design attributes are design judgements, not source data. Illustrations not yet created. RHS profile 96414: H6, full sun or partial shade, chalk/clay/loam/sand, moist but well-drained, 2–5 years to maturity. RHS flowering months were not retrievable; May–June is from nursery listings. Staking not stated in sources (recorded as false; heavy double flowers may benefit from support).",
+      "design": {
+        "styles": [
+          "cottage"
+        ],
+        "position": [
+          "middle",
+          "back"
+        ],
+        "habit": "clumping",
+        "visualDensity": "high",
+        "placementFlexibility": "low",
+        "layer": "structural",
+        "groupingMode": "specimen",
+        "allowSingleton": true,
+        "designRoles": [
+          "structure",
+          "focal"
+        ],
+        "roles": {
+          "preferred": "structural_anchor",
+          "supported": [
+            "structural_anchor"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0.45,
+            0.9
+          ],
+          "hard": [
+            0.25,
+            1
+          ]
+        },
+        "transparency": {
+          "base": 0.1,
+          "upper": 0.3
+        },
+        "spreadHabit": "clumping"
+      },
+      "watercolourEnvelope": {
+        "ratio": 1.25,
+        "shapeClass": "broad_mounded",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 800,
+        "expectedSpreadPx": 1000,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
+      },
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS",
+            "url": "https://www.rhs.org.uk/plants/96414/paeonia-lactiflora-duchesse-de-nemours/details",
+            "checked": "2026-10-15"
+          }
+        ],
+        "confidence": "high",
+        "basis": "RHS profile: time to maturity 2–5 years; description 'to 80cm'"
       }
     }
   ]
