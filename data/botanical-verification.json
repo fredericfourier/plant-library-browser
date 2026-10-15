@@ -333,7 +333,199 @@
       "bundleMatchStatus": "filename_match_unreviewed",
       "sourceFilename": "autumn_stonecrop_in_full_bloom.png",
       "importedAt": "2026-10-15T07:08:42Z"
+    },
+    "iris-sibirica": {
+      "status": "confirmed",
+      "imageSha256": "cdfbf96ecf920dc62c13298e1eaa35ecc5348f53967f4d450fd2d5642fd32195",
+      "pngSha256": "af635444c261e88bdf352a5eb01d65d77ddcf698a1b932f4ddc677496ca08e7c",
+      "bundleMatchStatus": "filename_match_unreviewed",
+      "sourceFilename": "silver_edge_siberian_iris_clump.png",
+      "importedAt": "2026-10-15T07:10:00Z"
+    },
+    "knautia-macedonica": {
+      "status": "confirmed",
+      "imageSha256": "095057297c6c1a6bfb07410b076cf4618c513fe5474ca3bfaf1d8815907db1a4",
+      "pngSha256": "b25ad101922a852e5db385098b4500a88caf4b9bdcb05760473640e23c088196",
+      "bundleMatchStatus": "filename_match_unreviewed",
+      "sourceFilename": "macedonian_scabious_in_bloom.png",
+      "importedAt": "2026-10-15T07:10:00Z"
+    },
+    "kniphofia-tawny-king": {
+      "status": "confirmed",
+      "imageSha256": "b7751e168c35417360f7b77afb4a3802da490ba3fec79f236eaef66de2962c5c",
+      "pngSha256": "55561c16c5a7a45145db1e6b6efd05f0c61d8772fbcbd15a825147ddc01a86c9",
+      "bundleMatchStatus": "filename_match_unreviewed",
+      "sourceFilename": "tawny_king_red_hot_poker_plant.png",
+      "importedAt": "2026-10-15T07:10:00Z"
+    },
+    "lavandula-hidcote": {
+      "status": "pending_review",
+      "imageSha256": "13651a3c3712f2b490225a6d823e604d75c19ddf5ced77ca324cc514ae6b91d6",
+      "pngSha256": "a02299bf798db83672219c0ff58a5a94a3d2520cc03cb42929a25aaad19f9c59",
+      "bundleMatchStatus": "provisional_cultivar_or_species_check",
+      "sourceFilename": "realistic_lavender_bush_cutout.png",
+      "importedAt": "2026-10-15T07:10:00Z"
+    },
+    "leucanthemum-becky": {
+      "status": "pending_review",
+      "imageSha256": "6a87c8cf5de23aac29aa9bc8a75e12ffb4392982bf32c150fdc33dcd3599bda5",
+      "pngSha256": "acc991a729bd120ad393f82b19146fd3dcd5c0cbf06bfd5eec5d89c5cec19bcd",
+      "bundleMatchStatus": "provisional_cultivar_or_species_check",
+      "sourceFilename": "white_daisy_clump_botanical_cutout.png",
+      "importedAt": "2026-10-15T07:10:00Z"
+    },
+    "molinia-transparent": {
+      "status": "pending_review",
+      "imageSha256": "f0af2ccc3a896497546feaeeb8136a6948dd9f2d3e52e2d6a58f19e2bc34774f",
+      "pngSha256": "dd26796705325f776c9d2bfc89e36ff6f553d40a7f05a2dc110db6ed14205d4f",
+      "bundleMatchStatus": "provisional_cultivar_or_species_check",
+      "sourceFilename": "airy_ornamental_grass_botanical_cutout.png",
+      "importedAt": "2026-10-15T07:10:00Z"
+    },
+    "nepeta-walkers-low": {
+      "status": "confirmed",
+      "imageSha256": "3afab6091d044ba526d7c0bf23da139104344727d16fa3f9b4a237fe90ad1d70",
+      "pngSha256": "3a862db9109b5947781aa4e208bd8c599bee4c236b90695af3c12b1a39991a96",
+      "bundleMatchStatus": "filename_match_unreviewed",
+      "sourceFilename": "isolated_lavender_catmint_blooming_clump.png",
+      "importedAt": "2026-10-15T07:10:00Z"
+    },
+    "penstemon-garnet": {
+      "status": "confirmed",
+      "imageSha256": "ed99745b5a7ea1d23c23c0d6894c6cd92ff86bffedf0d923042e1c6b4f2a061c",
+      "pngSha256": "e1f2c60fa3d49025cc93375d4959de07e27ae034151629060df536924fe1be6b",
+      "bundleMatchStatus": "filename_match_unreviewed",
+      "sourceFilename": "burgundy_penstemon_plant_cutout.png",
+      "importedAt": "2026-10-15T07:10:00Z"
+    },
+    "perovskia-blue-spire": {
+      "status": "pending_review",
+      "imageSha256": "511b0be8acb096c69a59523d2bca7ad19a37d7b4d8b25a7a6113778c04c30a90",
+      "pngSha256": "22bac632b7a169e264c055a6ba2ec4176c139f3fd33a3b3d7ffa890b02f0a276",
+      "bundleMatchStatus": "provisional_cultivar_or_species_check",
+      "sourceFilename": "silvery_lavender_blue_flowering_shrub.png",
+      "importedAt": "2026-10-15T07:10:00Z"
+    },
+    "persicaria-firetail": {
+      "status": "confirmed",
+      "imageSha256": "4532372ae8015e5f17a0f94cbafe71d1e2193fcd0d094c7e50a34ead3cc270e9",
+      "pngSha256": "3e49fd13f5f3b9647e51c14a45e53dda3fd847f63aa0f3be467bf2a3bc373287",
+      "bundleMatchStatus": "filename_match_unreviewed",
+      "sourceFilename": "red_bistort_firetail_botanical_cutout.png",
+      "importedAt": "2026-10-15T07:10:00Z"
+    },
+    "phlomis-russeliana": {
+      "status": "confirmed",
+      "imageSha256": "f343b35e73c3397a6c8392875fd16f63a7654ca3832492b7e07bacb3bad48109",
+      "pngSha256": "03282f73985b6f7cc74bafb095116ab3ba85fe76338107b4d5f9d30175d198ec",
+      "bundleMatchStatus": "filename_match_unreviewed",
+      "sourceFilename": "tiered_yellow_phlomis_botanical_cutout.png",
+      "importedAt": "2026-10-15T07:10:00Z"
+    },
+    "polystichum-setiferum": {
+      "status": "pending_review",
+      "imageSha256": "627cf86b3320226104ef332c286924322c144812a99b9fbea6e3c481dcfaeff0",
+      "pngSha256": "9e766dab2879ba272a4bebdf3971c003c865dfe36e01b442f2545b15166e5996",
+      "bundleMatchStatus": "provisional_cultivar_or_species_check",
+      "sourceFilename": "lush_fountain_fern_cutout.png",
+      "importedAt": "2026-10-15T07:10:00Z"
+    },
+    "pulmonaria-blue-ensign": {
+      "status": "confirmed",
+      "imageSha256": "dd3bc94db1e5789b12aecbd1b26a589adf472302c0776cc716a65779b783fa92",
+      "pngSha256": "f425fd9d0057477beae0ca0402f3c0d6ae4249b3a6f2708cf135cf774717fd06",
+      "bundleMatchStatus": "filename_match_unreviewed",
+      "sourceFilename": "blue_lungwort_flowering_clump.png",
+      "importedAt": "2026-10-15T07:10:00Z"
+    },
+    "rudbeckia-goldsturm": {
+      "status": "confirmed",
+      "imageSha256": "b2e1f6616a78895f98765f79d563cccf345474519b7a4023042e171a3fb02032",
+      "pngSha256": "116293576cc01ba1707ca1ecbef53628717ed308ce9e413f91124f6c68ea380f",
+      "bundleMatchStatus": "filename_match_unreviewed",
+      "sourceFilename": "golden_black_eyed_susan_clump.png",
+      "importedAt": "2026-10-15T07:10:00Z"
+    },
+    "salvia-amistad": {
+      "status": "pending_review",
+      "imageSha256": "aab88297dca97ac3df6c2ff6d01be32778485fd7935e1ccac41c780738510e11",
+      "pngSha256": "95b7842f2c28a4eba4ae858630257b88207ccc0e53319195786bd33befc08025",
+      "bundleMatchStatus": "provisional_cultivar_or_species_check",
+      "sourceFilename": "purple_mexican_bush_sage_in_bloom.png",
+      "importedAt": "2026-10-15T07:10:00Z"
+    },
+    "salvia-caradonna": {
+      "status": "confirmed",
+      "imageSha256": "abe33d30f028c443880bbd3fe3a3ef3acf51a5ab03ca58e83612f856fbf155e9",
+      "pngSha256": "d519bb9b27ea121e70fb231891091b68621f30017d053773742d2638eec95783",
+      "bundleMatchStatus": "filename_match_unreviewed",
+      "sourceFilename": "purple_salvia_flowering_clump.png",
+      "importedAt": "2026-10-15T07:10:00Z"
+    },
+    "sanguisorba-red-thunder": {
+      "status": "pending_review",
+      "imageSha256": "5919e10b550e518dfacc13e6a3c26e2bd6a1d2447ab14c56180171667faae4ba",
+      "pngSha256": "3e8e299c63c38a452b9110a39de6df3c97e8b110ae5e45084e65f50697387a89",
+      "bundleMatchStatus": "provisional_cultivar_or_species_check",
+      "sourceFilename": "burgundy_bottlebrush_burnet_plant_cutout.png",
+      "importedAt": "2026-10-15T07:10:00Z"
+    },
+    "sesleria-autumnalis": {
+      "status": "pending_review",
+      "imageSha256": "ef90d117158a5c2e2c1e33f940a4c973ee95082a1d588e4a3247369828a646e2",
+      "pngSha256": "244f098d3bef257e501614000cb15ab7be6a1b40a1f0ce9eb9df84c18708665f",
+      "bundleMatchStatus": "provisional_cultivar_or_species_check",
+      "sourceFilename": "tufted_ornamental_grass_cutout.png",
+      "importedAt": "2026-10-15T07:10:00Z"
+    },
+    "stipa-gigantea": {
+      "status": "confirmed",
+      "imageSha256": "4a406f6e37b25a94202f11930a34cecdf48e2e130e5b75664d9b38a815db9f7a",
+      "pngSha256": "90319c0ff9337f0b0b33da51ea2eade461819ca9c7db5003b61f75faf278185c",
+      "bundleMatchStatus": "filename_match_unreviewed",
+      "sourceFilename": "stipa_gigantea_feather_grass_clump.png",
+      "importedAt": "2026-10-15T07:10:00Z"
+    },
+    "stipa-tenuissima": {
+      "status": "pending_review",
+      "imageSha256": "cbe5e059356aace5d5c0398545bcab411bb193d57509c0c42ba67c667f45318d",
+      "pngSha256": "923a95f55deacc569f0a50ce36962224d7e817f5e6c8a51ff1c850ec07b86da2",
+      "bundleMatchStatus": "provisional_cultivar_or_species_check",
+      "sourceFilename": "wispy_golden_needle_grass_clump.png",
+      "importedAt": "2026-10-15T07:10:00Z"
+    },
+    "taxus-baccata-topiary": {
+      "status": "confirmed",
+      "imageSha256": "4a87d71ceab84cca7c4490739ea1f0ae4223f9a38aa106f4878c8febd95da286",
+      "pngSha256": "7cd90b2dee10f2243cb410b31b8c85ef4d618d512619c328ff6976be92037a3a",
+      "bundleMatchStatus": "filename_match_unreviewed",
+      "sourceFilename": "isolated_evergreen_topiary_bush.png",
+      "importedAt": "2026-10-15T07:10:00Z"
+    },
+    "thalictrum-delavayi": {
+      "status": "confirmed",
+      "imageSha256": "d4e24e29945e9458697244a5119175fdc21c347179f18d085294a39039181b94",
+      "pngSha256": "67ed58f4f3bca5e3eb7459868bed8ef6f7d91320952416b1886b4f49fe7777d0",
+      "bundleMatchStatus": "filename_match_unreviewed",
+      "sourceFilename": "airy_lilac_meadow_rue_botanical_cutout.png",
+      "importedAt": "2026-10-15T07:10:00Z"
+    },
+    "verbena-bonariensis": {
+      "status": "confirmed",
+      "imageSha256": "c02b3c67a6e1b52e7ef9abbc28669f3b2209657b6623fb3c1d49ae7c7306c499",
+      "pngSha256": "5ce3d6006d73a550549c5ffcc14e9764e1206ebc371c6bf74dc126d5f6b8423f",
+      "bundleMatchStatus": "filename_match_unreviewed",
+      "sourceFilename": "airy_lavender_verbena_plant_cutout.png",
+      "importedAt": "2026-10-15T07:10:00Z"
+    },
+    "veronicastrum-album": {
+      "status": "confirmed",
+      "imageSha256": "1c1ae626d9377b3b8aca7947c90fd4bdafd1daee5de82ba985bbf5006bee1101",
+      "pngSha256": "26d7dc19887f95a2018e703da0c1a6724e0abeb86e4cc0a70da260a773fff458",
+      "bundleMatchStatus": "filename_match_unreviewed",
+      "sourceFilename": "white_veronicastrum_flowering_perennial.png",
+      "importedAt": "2026-10-15T07:10:00Z"
     }
   },
-  "updated": "2026-10-15T07:08:42Z"
+  "updated": "2026-10-15T07:10:00Z"
 }

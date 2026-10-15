@@ -148,10 +148,10 @@
       "pixelsPerCm": 10,
       "canonicalHeightPx": 600,
       "expectedSpreadPx": 750,
-      "actualWidthPx": 827,
-      "actualHeightPx": 600,
-      "ratioErrorRelative": 0.103,
-      "updated": "2026-10-14T14:42:37+00:00",
+      "actualWidthPx": 1448,
+      "actualHeightPx": 1086,
+      "ratioErrorRelative": 0.206,
+      "updated": "2026-10-15T07:10:00Z",
       "variants": {
         "watercolour": {
           "label": "Watercolour",
@@ -168,7 +168,8 @@
             "silhouette_ratio_needs_review"
           ]
         }
-      }
+      },
+      "sha256": "3afab6091d044ba526d7c0bf23da139104344727d16fa3f9b4a237fe90ad1d70"
     },
     "salvia-caradonna": {
       "file": "assets/plant-watercolours/salvia-caradonna.webp",
@@ -176,10 +177,10 @@
       "pixelsPerCm": 10,
       "canonicalHeightPx": 600,
       "expectedSpreadPx": 400,
-      "actualWidthPx": 380,
-      "actualHeightPx": 600,
-      "ratioErrorRelative": -0.049,
-      "updated": "2026-10-14T14:42:37+00:00",
+      "actualWidthPx": 1086,
+      "actualHeightPx": 1448,
+      "ratioErrorRelative": -0.06,
+      "updated": "2026-10-15T07:10:00Z",
       "variants": {
         "watercolour": {
           "label": "Watercolour",
@@ -194,7 +195,8 @@
           "silhouetteRatioErrorRelative": -0.071,
           "warnings": []
         }
-      }
+      },
+      "sha256": "abe33d30f028c443880bbd3fe3a3ef3acf51a5ab03ca58e83612f856fbf155e9"
     },
     "taxus-baccata-topiary": {
       "file": "assets/plant-watercolours/taxus-baccata-topiary.webp",
@@ -202,11 +204,11 @@
       "pixelsPerCm": 10,
       "canonicalHeightPx": 1000,
       "expectedSpreadPx": 1000,
-      "actualWidthPx": 605,
-      "actualHeightPx": 1000,
-      "ratioErrorRelative": -0.395,
+      "actualWidthPx": 1254,
+      "actualHeightPx": 1254,
+      "ratioErrorRelative": 0.136,
       "previewOnly": false,
-      "updated": "2026-10-14T14:42:37+00:00",
+      "updated": "2026-10-15T07:10:00Z",
       "variants": {
         "watercolour": {
           "label": "Watercolour",
@@ -223,7 +225,8 @@
             "silhouette_ratio_needs_review"
           ]
         }
-      }
+      },
+      "sha256": "4a87d71ceab84cca7c4490739ea1f0ae4223f9a38aa106f4878c8febd95da286"
     },
     "achillea-moonshine": {
       "file": "assets/plant-watercolours/achillea-moonshine.webp",
@@ -548,6 +551,195 @@
       "ratioErrorRelative": 0.345,
       "sha256": "c4f05190fcb4e65310687c4791b3087f9715157129e99958c4f853a34e402e0f",
       "updated": "2026-10-15T07:08:42Z"
+    },
+    "iris-sibirica": {
+      "file": "assets/plant-watercolours/iris-sibirica.webp",
+      "status": "imported",
+      "actualWidthPx": 1122,
+      "actualHeightPx": 1402,
+      "ratioErrorRelative": 0.78,
+      "sha256": "cdfbf96ecf920dc62c13298e1eaa35ecc5348f53967f4d450fd2d5642fd32195",
+      "updated": "2026-10-15T07:10:00Z"
+    },
+    "knautia-macedonica": {
+      "file": "assets/plant-watercolours/knautia-macedonica.webp",
+      "status": "imported",
+      "actualWidthPx": 1086,
+      "actualHeightPx": 1448,
+      "ratioErrorRelative": -0.129,
+      "sha256": "095057297c6c1a6bfb07410b076cf4618c513fe5474ca3bfaf1d8815907db1a4",
+      "updated": "2026-10-15T07:10:00Z"
+    },
+    "kniphofia-tawny-king": {
+      "file": "assets/plant-watercolours/kniphofia-tawny-king.webp",
+      "status": "imported",
+      "actualWidthPx": 1254,
+      "actualHeightPx": 1254,
+      "ratioErrorRelative": 0.891,
+      "sha256": "b7751e168c35417360f7b77afb4a3802da490ba3fec79f236eaef66de2962c5c",
+      "updated": "2026-10-15T07:10:00Z"
+    },
+    "lavandula-hidcote": {
+      "file": "assets/plant-watercolours/lavandula-hidcote.webp",
+      "status": "imported",
+      "actualWidthPx": 1254,
+      "actualHeightPx": 1254,
+      "ratioErrorRelative": -0.002,
+      "sha256": "13651a3c3712f2b490225a6d823e604d75c19ddf5ced77ca324cc514ae6b91d6",
+      "updated": "2026-10-15T07:10:00Z"
+    },
+    "leucanthemum-becky": {
+      "file": "assets/plant-watercolours/leucanthemum-becky.webp",
+      "status": "imported",
+      "actualWidthPx": 1122,
+      "actualHeightPx": 1402,
+      "ratioErrorRelative": 0.174,
+      "sha256": "6a87c8cf5de23aac29aa9bc8a75e12ffb4392982bf32c150fdc33dcd3599bda5",
+      "updated": "2026-10-15T07:10:00Z"
+    },
+    "molinia-transparent": {
+      "file": "assets/plant-watercolours/molinia-transparent.webp",
+      "status": "imported",
+      "actualWidthPx": 1122,
+      "actualHeightPx": 1402,
+      "ratioErrorRelative": 0.834,
+      "sha256": "f0af2ccc3a896497546feaeeb8136a6948dd9f2d3e52e2d6a58f19e2bc34774f",
+      "updated": "2026-10-15T07:10:00Z"
+    },
+    "penstemon-garnet": {
+      "file": "assets/plant-watercolours/penstemon-garnet.webp",
+      "status": "imported",
+      "actualWidthPx": 1086,
+      "actualHeightPx": 1448,
+      "ratioErrorRelative": -0.081,
+      "sha256": "ed99745b5a7ea1d23c23c0d6894c6cd92ff86bffedf0d923042e1c6b4f2a061c",
+      "updated": "2026-10-15T07:10:00Z"
+    },
+    "perovskia-blue-spire": {
+      "file": "assets/plant-watercolours/perovskia-blue-spire.webp",
+      "status": "imported",
+      "actualWidthPx": 1122,
+      "actualHeightPx": 1402,
+      "ratioErrorRelative": 0.059,
+      "sha256": "511b0be8acb096c69a59523d2bca7ad19a37d7b4d8b25a7a6113778c04c30a90",
+      "updated": "2026-10-15T07:10:00Z"
+    },
+    "persicaria-firetail": {
+      "file": "assets/plant-watercolours/persicaria-firetail.webp",
+      "status": "imported",
+      "actualWidthPx": 1086,
+      "actualHeightPx": 1448,
+      "ratioErrorRelative": -0.205,
+      "sha256": "4532372ae8015e5f17a0f94cbafe71d1e2193fcd0d094c7e50a34ead3cc270e9",
+      "updated": "2026-10-15T07:10:00Z"
+    },
+    "phlomis-russeliana": {
+      "file": "assets/plant-watercolours/phlomis-russeliana.webp",
+      "status": "imported",
+      "actualWidthPx": 1086,
+      "actualHeightPx": 1448,
+      "ratioErrorRelative": 0.047,
+      "sha256": "f343b35e73c3397a6c8392875fd16f63a7654ca3832492b7e07bacb3bad48109",
+      "updated": "2026-10-15T07:10:00Z"
+    },
+    "polystichum-setiferum": {
+      "file": "assets/plant-watercolours/polystichum-setiferum.webp",
+      "status": "imported",
+      "actualWidthPx": 1254,
+      "actualHeightPx": 1254,
+      "ratioErrorRelative": -0.209,
+      "sha256": "627cf86b3320226104ef332c286924322c144812a99b9fbea6e3c481dcfaeff0",
+      "updated": "2026-10-15T07:10:00Z"
+    },
+    "pulmonaria-blue-ensign": {
+      "file": "assets/plant-watercolours/pulmonaria-blue-ensign.webp",
+      "status": "imported",
+      "actualWidthPx": 1254,
+      "actualHeightPx": 1254,
+      "ratioErrorRelative": -0.32,
+      "sha256": "dd3bc94db1e5789b12aecbd1b26a589adf472302c0776cc716a65779b783fa92",
+      "updated": "2026-10-15T07:10:00Z"
+    },
+    "rudbeckia-goldsturm": {
+      "file": "assets/plant-watercolours/rudbeckia-goldsturm.webp",
+      "status": "imported",
+      "actualWidthPx": 1086,
+      "actualHeightPx": 1448,
+      "ratioErrorRelative": 0.031,
+      "sha256": "b2e1f6616a78895f98765f79d563cccf345474519b7a4023042e171a3fb02032",
+      "updated": "2026-10-15T07:10:00Z"
+    },
+    "salvia-amistad": {
+      "file": "assets/plant-watercolours/salvia-amistad.webp",
+      "status": "imported",
+      "actualWidthPx": 1122,
+      "actualHeightPx": 1402,
+      "ratioErrorRelative": 0.648,
+      "sha256": "aab88297dca97ac3df6c2ff6d01be32778485fd7935e1ccac41c780738510e11",
+      "updated": "2026-10-15T07:10:00Z"
+    },
+    "sanguisorba-red-thunder": {
+      "file": "assets/plant-watercolours/sanguisorba-red-thunder.webp",
+      "status": "imported",
+      "actualWidthPx": 1122,
+      "actualHeightPx": 1402,
+      "ratioErrorRelative": 0.004,
+      "sha256": "5919e10b550e518dfacc13e6a3c26e2bd6a1d2447ab14c56180171667faae4ba",
+      "updated": "2026-10-15T07:10:00Z"
+    },
+    "sesleria-autumnalis": {
+      "file": "assets/plant-watercolours/sesleria-autumnalis.webp",
+      "status": "imported",
+      "actualWidthPx": 1254,
+      "actualHeightPx": 1254,
+      "ratioErrorRelative": 0.002,
+      "sha256": "ef90d117158a5c2e2c1e33f940a4c973ee95082a1d588e4a3247369828a646e2",
+      "updated": "2026-10-15T07:10:00Z"
+    },
+    "stipa-gigantea": {
+      "file": "assets/plant-watercolours/stipa-gigantea.webp",
+      "status": "imported",
+      "actualWidthPx": 1122,
+      "actualHeightPx": 1402,
+      "ratioErrorRelative": 0.735,
+      "sha256": "4a406f6e37b25a94202f11930a34cecdf48e2e130e5b75664d9b38a815db9f7a",
+      "updated": "2026-10-15T07:10:00Z"
+    },
+    "stipa-tenuissima": {
+      "file": "assets/plant-watercolours/stipa-tenuissima.webp",
+      "status": "imported",
+      "actualWidthPx": 1122,
+      "actualHeightPx": 1402,
+      "ratioErrorRelative": 0.166,
+      "sha256": "cbe5e059356aace5d5c0398545bcab411bb193d57509c0c42ba67c667f45318d",
+      "updated": "2026-10-15T07:10:00Z"
+    },
+    "thalictrum-delavayi": {
+      "file": "assets/plant-watercolours/thalictrum-delavayi.webp",
+      "status": "imported",
+      "actualWidthPx": 1122,
+      "actualHeightPx": 1402,
+      "ratioErrorRelative": 0.157,
+      "sha256": "d4e24e29945e9458697244a5119175fdc21c347179f18d085294a39039181b94",
+      "updated": "2026-10-15T07:10:00Z"
+    },
+    "verbena-bonariensis": {
+      "file": "assets/plant-watercolours/verbena-bonariensis.webp",
+      "status": "imported",
+      "actualWidthPx": 1024,
+      "actualHeightPx": 1536,
+      "ratioErrorRelative": 0.78,
+      "sha256": "c02b3c67a6e1b52e7ef9abbc28669f3b2209657b6623fb3c1d49ae7c7306c499",
+      "updated": "2026-10-15T07:10:00Z"
+    },
+    "veronicastrum-album": {
+      "file": "assets/plant-watercolours/veronicastrum-album.webp",
+      "status": "imported",
+      "actualWidthPx": 1122,
+      "actualHeightPx": 1402,
+      "ratioErrorRelative": -0.125,
+      "sha256": "1c1ae626d9377b3b8aca7947c90fd4bdafd1daee5de82ba985bbf5006bee1101",
+      "updated": "2026-10-15T07:10:00Z"
     }
   },
   "pixelsPerCm": 10,
