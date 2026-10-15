@@ -92,10 +92,10 @@
       "pixelsPerCm": 10,
       "canonicalHeightPx": 500,
       "expectedSpreadPx": 800,
-      "actualWidthPx": 959,
-      "actualHeightPx": 500,
-      "ratioErrorRelative": 0.199,
-      "updated": "2026-10-13T09:35:00+01:00",
+      "actualWidthPx": 1448,
+      "actualHeightPx": 1086,
+      "ratioErrorRelative": 0.104,
+      "updated": "2026-10-15T07:08:42Z",
       "variants": {
         "watercolour": {
           "label": "Watercolour",
@@ -110,7 +110,8 @@
           "silhouetteRatioErrorRelative": -0.069,
           "warnings": []
         }
-      }
+      },
+      "sha256": "6f53924d062c64c22967371c94713eb24bda63d0bc1e5acbcfbfae9cdb7aa613"
     },
     "geum-totally-tangerine": {
       "file": "assets/plant-watercolours/geum-totally-tangerine.webp",
@@ -118,10 +119,10 @@
       "pixelsPerCm": 10,
       "canonicalHeightPx": 800,
       "expectedSpreadPx": 500,
-      "actualWidthPx": 549,
-      "actualHeightPx": 800,
-      "ratioErrorRelative": 0.098,
-      "updated": "2026-10-13T10:34:00+01:00",
+      "actualWidthPx": 1086,
+      "actualHeightPx": 1448,
+      "ratioErrorRelative": 0.183,
+      "updated": "2026-10-15T07:08:42Z",
       "variants": {
         "watercolour": {
           "label": "Watercolour",
@@ -138,7 +139,8 @@
             "silhouette_ratio_needs_review"
           ]
         }
-      }
+      },
+      "sha256": "b3726324216159dbeefdb8198831e52e2b0e90990e1021898d916b3b944f7e84"
     },
     "nepeta-walkers-low": {
       "file": "assets/plant-watercolours/nepeta-walkers-low.webp",
@@ -438,6 +440,114 @@
       "ratioErrorRelative": 0.263,
       "sha256": "5ed65f9ac5e6267521befb3a52803cdaec31efd25f1e960508c9ae9a1cc37d33",
       "updated": "2026-10-15T06:36:06Z"
+    },
+    "euphorbia-fireglow": {
+      "file": "assets/plant-watercolours/euphorbia-fireglow.webp",
+      "status": "imported",
+      "actualWidthPx": 1254,
+      "actualHeightPx": 1254,
+      "ratioErrorRelative": 0.519,
+      "sha256": "c5efcd8c697d097f68d5e398dd8853edc96ad1949f09d6ed349b9bcc51ad6143",
+      "updated": "2026-10-15T07:08:42Z"
+    },
+    "euphorbia-polychroma": {
+      "file": "assets/plant-watercolours/euphorbia-polychroma.webp",
+      "status": "imported",
+      "actualWidthPx": 1122,
+      "actualHeightPx": 1402,
+      "ratioErrorRelative": -0.231,
+      "sha256": "cafc00fe41df477d34785f273f3166c435a3946d69191186435f0f1ec6b2b98b",
+      "updated": "2026-10-15T07:08:42Z"
+    },
+    "euphorbia-wulfenii": {
+      "file": "assets/plant-watercolours/euphorbia-wulfenii.webp",
+      "status": "imported",
+      "actualWidthPx": 1122,
+      "actualHeightPx": 1402,
+      "ratioErrorRelative": -0.05,
+      "sha256": "6f1dd374f55ab574068b5222e35bdfa0fe81f156e28240b93a9fa6ddacc2bcd7",
+      "updated": "2026-10-15T07:08:42Z"
+    },
+    "gaura-whirling": {
+      "file": "assets/plant-watercolours/gaura-whirling.webp",
+      "status": "imported",
+      "actualWidthPx": 1122,
+      "actualHeightPx": 1402,
+      "ratioErrorRelative": 0.102,
+      "sha256": "efba0fb32b68cd160fc9c230115b72354747c05650eb1919c140fbab00ee9990",
+      "updated": "2026-10-15T07:08:42Z"
+    },
+    "geranium-macrorrhizum": {
+      "file": "assets/plant-watercolours/geranium-macrorrhizum.webp",
+      "status": "imported",
+      "actualWidthPx": 1254,
+      "actualHeightPx": 1254,
+      "ratioErrorRelative": -0.428,
+      "sha256": "b4ac7c4b5fd6afb7d25a4eb39c053b65680b118062d58dc23b34ac7065ea49b1",
+      "updated": "2026-10-15T07:08:42Z"
+    },
+    "geranium-psilostemon": {
+      "file": "assets/plant-watercolours/geranium-psilostemon.webp",
+      "status": "imported",
+      "actualWidthPx": 1254,
+      "actualHeightPx": 1254,
+      "ratioErrorRelative": 0.091,
+      "sha256": "6224a67c4304d08d19f502a91a16887e534da4db911a9de50e100086d5b1f317",
+      "updated": "2026-10-15T07:08:42Z"
+    },
+    "hakonechloa-macra": {
+      "file": "assets/plant-watercolours/hakonechloa-macra.webp",
+      "status": "imported",
+      "actualWidthPx": 1254,
+      "actualHeightPx": 1254,
+      "ratioErrorRelative": -0.175,
+      "sha256": "eca0d84d4b5b728ccfa7c41cfcabc571056a19399324740a0944e05a44dcd327",
+      "updated": "2026-10-15T07:08:42Z"
+    },
+    "helenium-moerheim": {
+      "file": "assets/plant-watercolours/helenium-moerheim.webp",
+      "status": "imported",
+      "actualWidthPx": 1122,
+      "actualHeightPx": 1402,
+      "ratioErrorRelative": 0.164,
+      "sha256": "8093a837f7c4b4c9d3e60683a62599cc2c698f1379aff5bffdabc30f7a7b109a",
+      "updated": "2026-10-15T07:08:42Z"
+    },
+    "helleborus-hybridus": {
+      "file": "assets/plant-watercolours/helleborus-hybridus.webp",
+      "status": "imported",
+      "actualWidthPx": 1254,
+      "actualHeightPx": 1254,
+      "ratioErrorRelative": -0.002,
+      "sha256": "48b8decaed15b19e38194d90910da2972d7d53a4814d1745cb0fa935849582bc",
+      "updated": "2026-10-15T07:08:42Z"
+    },
+    "hemerocallis-stafford": {
+      "file": "assets/plant-watercolours/hemerocallis-stafford.webp",
+      "status": "imported",
+      "actualWidthPx": 1122,
+      "actualHeightPx": 1402,
+      "ratioErrorRelative": -0.074,
+      "sha256": "b91c7542f70ca72d84fab5e77eee85bfa94074ce734519aed2f3e22e346291eb",
+      "updated": "2026-10-15T07:08:42Z"
+    },
+    "heuchera-palace-purple": {
+      "file": "assets/plant-watercolours/heuchera-palace-purple.webp",
+      "status": "imported",
+      "actualWidthPx": 1254,
+      "actualHeightPx": 1254,
+      "ratioErrorRelative": -0.07,
+      "sha256": "53a47b2dbe74853bf42607078ef40015a083393e06d51320f49c0351dc3d2ec0",
+      "updated": "2026-10-15T07:08:42Z"
+    },
+    "hylotelephium-herbstfreude": {
+      "file": "assets/plant-watercolours/hylotelephium-herbstfreude.webp",
+      "status": "imported",
+      "actualWidthPx": 1448,
+      "actualHeightPx": 1086,
+      "ratioErrorRelative": 0.345,
+      "sha256": "c4f05190fcb4e65310687c4791b3087f9715157129e99958c4f853a34e402e0f",
+      "updated": "2026-10-15T07:08:42Z"
     }
   },
   "pixelsPerCm": 10,
