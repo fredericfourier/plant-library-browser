@@ -1,6 +1,6 @@
 {
   "schemaVersion": 7,
-  "updated": "2026-10-15",
+  "updated": "2026-10-16",
   "plants": [
     {
       "id": "salvia-caradonna",
@@ -7072,6 +7072,220 @@
         ],
         "confidence": "high",
         "basis": "RHS profile: time to maturity 2–5 years; description 'to 80cm'"
+      }
+    },
+    {
+      "id": "echinacea-powwow-white",
+      "botanicalName": "Echinacea purpurea 'PowWow White'",
+      "commonName": "White coneflower 'PowWow White'",
+      "type": "perennial",
+      "heightCm": 60,
+      "spreadCm": 40,
+      "light": [
+        "full_sun"
+      ],
+      "soil": [
+        "clay",
+        "loam",
+        "sandy"
+      ],
+      "moisture": [
+        "dry",
+        "average"
+      ],
+      "flowerColours": [
+        "white"
+      ],
+      "floweringStart": 7,
+      "floweringEnd": 9,
+      "foliage": "deciduous",
+      "foliageColour": "green",
+      "hardiness": "H7",
+      "maintenance": "moderate",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "pollinatorValue": 5,
+      "plantsPerSqM": 5,
+      "description": "Compact coneflower with creamy-white daisies around a golden-orange cone, from midsummer into autumn. Loved by bees and butterflies.",
+      "notes": "E2.7 engine catalogue record (code X, research supplement): exact cultivar and engine working size 60 × 40 cm. pollinatorValue, plantsPerSqM and design attributes are design judgements, not source data. Illustrations not yet created. RHS descriptive height 60 cm; breeder product width 30–41 cm, working spread 40 cm used (RHS spread band 10–50 cm). RHS and the breeder list different PowWow cultivar codes: marketed-name identity needs reconciliation. Flowering months, hardiness and soil are by analogy with Echinacea purpurea records in this library, to be verified. Staking not stated (false).",
+      "design": {
+        "styles": [
+          "cottage",
+          "naturalistic",
+          "contemporary"
+        ],
+        "position": [
+          "front_middle",
+          "middle"
+        ],
+        "habit": "upright",
+        "visualDensity": "medium",
+        "placementFlexibility": "medium",
+        "layer": "matrix",
+        "groupingMode": "clump",
+        "allowSingleton": false,
+        "designRoles": [
+          "repetition",
+          "late_season"
+        ],
+        "roles": {
+          "preferred": "repeated_clump",
+          "supported": [
+            "repeated_clump",
+            "primary_drift"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0.15,
+            0.6
+          ],
+          "hard": [
+            0,
+            0.85
+          ]
+        },
+        "transparency": {
+          "base": 0.15,
+          "upper": 0.5
+        },
+        "spreadHabit": "clumping"
+      },
+      "watercolourEnvelope": {
+        "ratio": 0.667,
+        "shapeClass": "narrow_upright",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 600,
+        "expectedSpreadPx": 400,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
+      },
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS",
+            "url": "https://www.rhs.org.uk/plants/318457/echinacea-purpurea-powwow-white-pas709018-powwow-series/details",
+            "checked": "2026-10-15"
+          },
+          {
+            "name": "Pan American Seed",
+            "url": "https://www.panamseed.com/Products/024101714005863/echinacea-powwow-white/",
+            "checked": "2026-10-15"
+          }
+        ],
+        "confidence": "low",
+        "basis": "Maturity band by analogy with other Echinacea purpurea records; RHS and breeder cultivar codes differ; to be verified"
+      }
+    },
+    {
+      "id": "digitalis-purpurea-alba",
+      "botanicalName": "Digitalis purpurea 'Alba'",
+      "commonName": "White foxglove",
+      "type": "perennial",
+      "heightCm": 250,
+      "spreadCm": 50,
+      "light": [
+        "full_sun",
+        "part_shade"
+      ],
+      "soil": [
+        "clay",
+        "loam"
+      ],
+      "moisture": [
+        "average",
+        "moist"
+      ],
+      "flowerColours": [
+        "white"
+      ],
+      "floweringStart": 5,
+      "floweringEnd": 7,
+      "foliage": "semi-evergreen",
+      "foliageColour": "green",
+      "hardiness": "H7",
+      "maintenance": "moderate",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "pollinatorValue": 5,
+      "plantsPerSqM": 3,
+      "description": "Tall, elegant spires of pure white bells in early summer, loved by bees. Short-lived: renew from seed or replace.",
+      "notes": "E2.7 engine catalogue record (code F, research supplement): exact cultivar and engine working size 250 × 50 cm. pollinatorValue, plantsPerSqM and design attributes are design judgements, not source data. Illustrations not yet created. Working sizes are the upper limits of the RHS bands (height 1.5–2.5 m, spread 0.1–0.5 m); this is a flowering-year circle, not a permanent structural size. Biennial/short-lived: needs renewal by seed or replacement. Supplier Alba forms differ, verify identity before buying. Flowering months, soil and hardiness by analogy with the 'Pam's Choice' record, to be verified.",
+      "design": {
+        "styles": [
+          "cottage",
+          "naturalistic"
+        ],
+        "position": [
+          "middle_back",
+          "back"
+        ],
+        "habit": "vertical_accent",
+        "visualDensity": "low",
+        "placementFlexibility": "high",
+        "layer": "structural",
+        "groupingMode": "clump",
+        "allowSingleton": false,
+        "designRoles": [
+          "structure",
+          "repetition",
+          "early_season"
+        ],
+        "roles": {
+          "preferred": "emergent",
+          "supported": [
+            "emergent",
+            "repeated_clump"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0.4,
+            0.9
+          ],
+          "hard": [
+            0.15,
+            1
+          ]
+        },
+        "transparency": {
+          "base": 0.05,
+          "upper": 0.5
+        },
+        "spreadHabit": "self_seeding",
+        "roleTraits": {
+          "emergent": {
+            "baseOccupancy": 0.3
+          }
+        }
+      },
+      "watercolourEnvelope": {
+        "ratio": 0.2,
+        "shapeClass": "very_narrow_upright",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 2500,
+        "expectedSpreadPx": 500,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
+      },
+      "maturity": {
+        "minYears": 1,
+        "maxYears": 2,
+        "sources": [
+          {
+            "name": "RHS",
+            "url": "https://www.rhs.org.uk/plants/41905/digitalis-purpurea-alba/details",
+            "checked": "2026-10-15"
+          }
+        ],
+        "confidence": "low",
+        "basis": "Short-lived biennial/perennial: flowers in its second year; by analogy with the Digitalis purpurea record, to be verified"
       }
     }
   ]
