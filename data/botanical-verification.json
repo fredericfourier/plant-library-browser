@@ -166,7 +166,7 @@
       "imageSha256": "1c249bbebbef53d18ba5a00089493ff157c716e1b92a84fbc9cb45f473a74ac7",
       "pngSha256": "0c1233f5bc62a5fe5e855b789d9e3dce989c8e0e9b7d8daac73092ffed3a8c6a",
       "bundleMatchStatus": "filename_match_unreviewed",
-      "sourceFilename": "lavender_aster_mönch_plant_cutout.png",
+      "sourceFilename": "lavender_aster_m\u00f6nch_plant_cutout.png",
       "importedAt": "2026-10-15T06:30:03Z",
       "watercolour": {
         "status": "awaiting_review",
@@ -1183,8 +1183,36 @@
         "pngSha256": "efc9dab79442d6257b3283f829ff4cd849d6bd20b39c5e1cf587065b53d24cfa",
         "importedAt": "2026-10-16T08:27:52Z"
       }
+    },
+    "digitalis-purpurea-alba": {
+      "status": "pending_review",
+      "imageSha256": "0c0eded90de7e25736e9c9bf8a7e7b2ab468ff2e9d66cddd0481cbbb437294c6",
+      "pngSha256": "19cc19cac6d3532806e5bfadbfcc6d6416d430adc980020c83f7d1278193b30d",
+      "bundleMatchStatus": "filename_match_unreviewed",
+      "sourceFilename": "digitalis-purpurea-alba-latest.png",
+      "importedAt": "2026-10-16T10:32:47Z",
+      "watercolour": {
+        "status": "awaiting_review",
+        "imageSha256": "663e9949164555cda0c4d78bc23a2de76bdd735a5f4cc1c27511721bef84ce4a",
+        "pngSha256": "d1bd77c74c026fa96aea8da020ecbcbd474bda2661b25c62cf76aa4f171b8cf7",
+        "importedAt": "2026-10-16T10:32:47Z"
+      }
+    },
+    "echinacea-powwow-white": {
+      "status": "pending_review",
+      "imageSha256": "c2172f70e51e2e44e64afba42b019cc947d2248d6ad2ceea33f463176057290e",
+      "pngSha256": "f5c4985cfe9add83b578361c5a8fb64ece37348037398ac21ebf0d8052484d15",
+      "bundleMatchStatus": "filename_match_unreviewed",
+      "sourceFilename": "echinacea-powwow-white-latest.png",
+      "importedAt": "2026-10-16T10:32:47Z",
+      "watercolour": {
+        "status": "awaiting_review",
+        "imageSha256": "21732d10e3b1b91c0e1bf422fd20f7b44660d30fb40fe4ef295cd35c2d86b153",
+        "pngSha256": "11d503b95a2ef43fa6597f67a72de94af3457ac592f736331f5b292819287923",
+        "importedAt": "2026-10-16T10:32:47Z"
+      }
     }
   },
-  "updated": "2026-10-16T08:27:52Z",
+  "updated": "2026-10-16T10:32:47Z",
   "watercolourNote": "plants[id].watercolour.status is awaiting_review until approved by editing this file (never automatically)."
 }

@@ -1683,6 +1683,52 @@
           "warnings": []
         }
       }
+    },
+    "digitalis-purpurea-alba": {
+      "file": "assets/plant-watercolours/digitalis-purpurea-alba.webp",
+      "status": "imported",
+      "actualWidthPx": 1086,
+      "actualHeightPx": 1448,
+      "sha256": "0c0eded90de7e25736e9c9bf8a7e7b2ab468ff2e9d66cddd0481cbbb437294c6",
+      "updated": "2026-10-16T10:32:47Z",
+      "variants": {
+        "watercolour": {
+          "label": "Watercolour",
+          "file": "assets/plant-watercolours/digitalis-purpurea-alba-watercolour.webp",
+          "status": "awaiting_review",
+          "productionReady": false,
+          "canonicalScaleApplied": false,
+          "originalWidthPx": 1122,
+          "originalHeightPx": 1402,
+          "transparent": true,
+          "sha256": "663e9949164555cda0c4d78bc23a2de76bdd735a5f4cc1c27511721bef84ce4a",
+          "pngSha256": "d1bd77c74c026fa96aea8da020ecbcbd474bda2661b25c62cf76aa4f171b8cf7",
+          "warnings": []
+        }
+      }
+    },
+    "echinacea-powwow-white": {
+      "file": "assets/plant-watercolours/echinacea-powwow-white.webp",
+      "status": "imported",
+      "actualWidthPx": 1312,
+      "actualHeightPx": 1199,
+      "sha256": "c2172f70e51e2e44e64afba42b019cc947d2248d6ad2ceea33f463176057290e",
+      "updated": "2026-10-16T10:32:47Z",
+      "variants": {
+        "watercolour": {
+          "label": "Watercolour",
+          "file": "assets/plant-watercolours/echinacea-powwow-white-watercolour.webp",
+          "status": "awaiting_review",
+          "productionReady": false,
+          "canonicalScaleApplied": false,
+          "originalWidthPx": 1254,
+          "originalHeightPx": 1254,
+          "transparent": true,
+          "sha256": "21732d10e3b1b91c0e1bf422fd20f7b44660d30fb40fe4ef295cd35c2d86b153",
+          "pngSha256": "11d503b95a2ef43fa6597f67a72de94af3457ac592f736331f5b292819287923",
+          "warnings": []
+        }
+      }
     }
   },
   "pixelsPerCm": 10,
