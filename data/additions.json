@@ -1,0 +1,11 @@
+{
+  "note": "Records which plants were added to the library in which batch. Used only by the browser's 'Newly added' filter; plants.json is unchanged.",
+  "batches": [
+    {
+      "id": "2026-10-15-e27-engine-plants",
+      "label": "Added 15 Oct 2026",
+      "date": "2026-10-15",
+      "plantIds": ["rosa-bonica", "philadelphus-manteau-dhermine", "phlox-blue-paradise", "paeonia-duchesse-de-nemours"]
+    }
+  ]
+}
