@@ -1134,7 +1134,13 @@
       "pngSha256": "7694045b77dee3c72642c310e8cc01753a37f4ccbbd360b87aa31e5064ea508c",
       "bundleMatchStatus": "filename_match_unreviewed",
       "sourceFilename": "rosa-bonica.png",
-      "importedAt": "2026-10-15T22:37:18Z"
+      "importedAt": "2026-10-15T22:37:18Z",
+      "watercolour": {
+        "status": "awaiting_review",
+        "imageSha256": "cc53a8f4b8cd68b5482f84ef7fb31dbda73aa14a749a7816a5128b966898f7a5",
+        "pngSha256": "862af3dbfe293674adc9e1be0fec4847b7c3df05fb56a38b44d721af586940e2",
+        "importedAt": "2026-10-16T08:27:52Z"
+      }
     },
     "philadelphus-manteau-dhermine": {
       "status": "pending_review",
@@ -1142,7 +1148,13 @@
       "pngSha256": "4f3446feb3f3786256eaa79f98cce537a83874e44abfa059cb93b076751b50ea",
       "bundleMatchStatus": "filename_match_unreviewed",
       "sourceFilename": "philadelphus-manteau-dhermine.png",
-      "importedAt": "2026-10-15T22:37:18Z"
+      "importedAt": "2026-10-15T22:37:18Z",
+      "watercolour": {
+        "status": "awaiting_review",
+        "imageSha256": "8965666286a7728e216fa62cf777c425209265ef49ad03a1ecdfd9b053420b34",
+        "pngSha256": "1fd4a3187664c5a07f05c0755adbdf0a46d0afdf7ddda3ea8df462ebfadc21f0",
+        "importedAt": "2026-10-16T08:27:52Z"
+      }
     },
     "phlox-blue-paradise": {
       "status": "pending_review",
@@ -1150,7 +1162,13 @@
       "pngSha256": "05343606051d43592431e9a467abe73eace8cb4d7a4fdd49a267cb5debccf77c",
       "bundleMatchStatus": "filename_match_unreviewed",
       "sourceFilename": "phlox-blue-paradise.png",
-      "importedAt": "2026-10-15T22:37:18Z"
+      "importedAt": "2026-10-15T22:37:18Z",
+      "watercolour": {
+        "status": "awaiting_review",
+        "imageSha256": "69e43ea0c714b057962d097201e7cadfc8ac9642e3d7a819b38156d936fb417e",
+        "pngSha256": "307803acfe9675e35c421ff416a4846b79a4b5bffdbe6816e928f80ca5b72982",
+        "importedAt": "2026-10-16T08:27:52Z"
+      }
     },
     "paeonia-duchesse-de-nemours": {
       "status": "pending_review",
@@ -1158,9 +1176,15 @@
       "pngSha256": "3d565c73a54939298bb998681853e94478b56808a6ff263e3b7346c43e871221",
       "bundleMatchStatus": "filename_match_unreviewed",
       "sourceFilename": "paeonia-duchesse-de-nemours.png",
-      "importedAt": "2026-10-15T22:37:18Z"
+      "importedAt": "2026-10-15T22:37:18Z",
+      "watercolour": {
+        "status": "awaiting_review",
+        "imageSha256": "cabde12216d018cbc5ff81e7d1fe16f038b36cd332e1786bc7f389b28a23665d",
+        "pngSha256": "efc9dab79442d6257b3283f829ff4cd849d6bd20b39c5e1cf587065b53d24cfa",
+        "importedAt": "2026-10-16T08:27:52Z"
+      }
     }
   },
-  "updated": "2026-10-15T20:21:46Z",
+  "updated": "2026-10-16T08:27:52Z",
   "watercolourNote": "plants[id].watercolour.status is awaiting_review until approved by editing this file (never automatically)."
 }

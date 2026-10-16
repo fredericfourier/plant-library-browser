@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "updated": "2026-10-15",
+  "updated": "2026-10-16",
   "assets": {
     "alchemilla-mollis": {
       "file": "assets/plant-watercolours/alchemilla-mollis.webp",
@@ -1595,7 +1595,22 @@
       "actualHeightPx": 1254,
       "ratioErrorRelative": 0.151,
       "sha256": "c56f1b467899270e44ecced142e004809a545353f529443bb61f485142e17ed9",
-      "updated": "2026-10-15T22:37:18Z"
+      "updated": "2026-10-15T22:37:18Z",
+      "variants": {
+        "watercolour": {
+          "label": "Watercolour",
+          "file": "assets/plant-watercolours/rosa-bonica-watercolour.webp",
+          "status": "awaiting_review",
+          "productionReady": false,
+          "canonicalScaleApplied": false,
+          "originalWidthPx": 1254,
+          "originalHeightPx": 1254,
+          "transparent": true,
+          "sha256": "cc53a8f4b8cd68b5482f84ef7fb31dbda73aa14a749a7816a5128b966898f7a5",
+          "pngSha256": "862af3dbfe293674adc9e1be0fec4847b7c3df05fb56a38b44d721af586940e2",
+          "warnings": []
+        }
+      }
     },
     "philadelphus-manteau-dhermine": {
       "file": "assets/plant-watercolours/philadelphus-manteau-dhermine.webp",
@@ -1604,7 +1619,22 @@
       "actualHeightPx": 1254,
       "ratioErrorRelative": -0.016,
       "sha256": "ca7ed06a35a70e9afa542a2312b2971e40d8da54e031bba1ee5b511fe9bdfa5f",
-      "updated": "2026-10-15T22:37:18Z"
+      "updated": "2026-10-15T22:37:18Z",
+      "variants": {
+        "watercolour": {
+          "label": "Watercolour",
+          "file": "assets/plant-watercolours/philadelphus-manteau-dhermine-watercolour.webp",
+          "status": "awaiting_review",
+          "productionReady": false,
+          "canonicalScaleApplied": false,
+          "originalWidthPx": 1448,
+          "originalHeightPx": 1086,
+          "transparent": true,
+          "sha256": "8965666286a7728e216fa62cf777c425209265ef49ad03a1ecdfd9b053420b34",
+          "pngSha256": "1fd4a3187664c5a07f05c0755adbdf0a46d0afdf7ddda3ea8df462ebfadc21f0",
+          "warnings": []
+        }
+      }
     },
     "phlox-blue-paradise": {
       "file": "assets/plant-watercolours/phlox-blue-paradise.webp",
@@ -1613,7 +1643,22 @@
       "actualHeightPx": 1254,
       "ratioErrorRelative": 0.037,
       "sha256": "af50d7f6f4108039c92ed619dd3183ae8581ccd4da1f957659a4aac755801114",
-      "updated": "2026-10-15T22:37:18Z"
+      "updated": "2026-10-15T22:37:18Z",
+      "variants": {
+        "watercolour": {
+          "label": "Watercolour",
+          "file": "assets/plant-watercolours/phlox-blue-paradise-watercolour.webp",
+          "status": "awaiting_review",
+          "productionReady": false,
+          "canonicalScaleApplied": false,
+          "originalWidthPx": 1122,
+          "originalHeightPx": 1402,
+          "transparent": true,
+          "sha256": "69e43ea0c714b057962d097201e7cadfc8ac9642e3d7a819b38156d936fb417e",
+          "pngSha256": "307803acfe9675e35c421ff416a4846b79a4b5bffdbe6816e928f80ca5b72982",
+          "warnings": []
+        }
+      }
     },
     "paeonia-duchesse-de-nemours": {
       "file": "assets/plant-watercolours/paeonia-duchesse-de-nemours.webp",
@@ -1622,7 +1667,22 @@
       "actualHeightPx": 1254,
       "ratioErrorRelative": -0.109,
       "sha256": "13d100fc903569b978374e9ee9793229b4b1b2432e998c03ca10a76c1c29d362",
-      "updated": "2026-10-15T22:37:18Z"
+      "updated": "2026-10-15T22:37:18Z",
+      "variants": {
+        "watercolour": {
+          "label": "Watercolour",
+          "file": "assets/plant-watercolours/paeonia-duchesse-de-nemours-watercolour.webp",
+          "status": "awaiting_review",
+          "productionReady": false,
+          "canonicalScaleApplied": false,
+          "originalWidthPx": 1254,
+          "originalHeightPx": 1254,
+          "transparent": true,
+          "sha256": "cabde12216d018cbc5ff81e7d1fe16f038b36cd332e1786bc7f389b28a23665d",
+          "pngSha256": "efc9dab79442d6257b3283f829ff4cd849d6bd20b39c5e1cf587065b53d24cfa",
+          "warnings": []
+        }
+      }
     }
   },
   "pixelsPerCm": 10,
