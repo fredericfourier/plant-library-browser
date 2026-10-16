@@ -15,10 +15,11 @@
       "importedAt": "2026-10-15T06:30:03Z",
       "approvedAt": "2026-10-15T08:19:20Z",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "imageSha256": "06fe5826035cf6e07f5c71713d82a2bca2532deeb8a2ca58cfbf173e1896e375",
         "pngSha256": "f3f0b3848a9e22384b09861eab1ef653eb4ddc347ea1467f7fe34bbf25922b65",
-        "importedAt": "2026-10-15T13:44:49Z"
+        "importedAt": "2026-10-15T13:44:49Z",
+        "approvedAt": "2026-10-16T10:47:39Z"
       }
     },
     "achillea-terracotta": {
@@ -29,10 +30,11 @@
       "sourceFilename": "terracotta_yarrow_botanical_cutout.png",
       "importedAt": "2026-10-15T06:30:03Z",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "imageSha256": "7dbc9c22037599d22788c8f440274820b40c345dd4b6ab5e908b0352ef740164",
         "pngSha256": "9f23d1f4cd106d48e74685e933b264115d48530ab3eda871dae828358906d97a",
-        "importedAt": "2026-10-15T13:44:49Z"
+        "importedAt": "2026-10-15T13:44:49Z",
+        "approvedAt": "2026-10-16T10:47:39Z"
       }
     },
     "achillea-walther-funcke": {
@@ -44,10 +46,11 @@
       "importedAt": "2026-10-15T06:30:03Z",
       "approvedAt": "2026-10-15T08:19:20Z",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "imageSha256": "0dfcd2b225334d0e284bc360fcc9098270b0ec638a9622c93c2d47b7302143bf",
         "pngSha256": "3043ccb3563d3411b7858cff01a51d691cdc590b53df6dbb1c7a5c86b692928e",
-        "importedAt": "2026-10-15T13:44:49Z"
+        "importedAt": "2026-10-15T13:44:49Z",
+        "approvedAt": "2026-10-16T10:47:39Z"
       }
     },
     "agastache-blackadder": {
@@ -58,10 +61,11 @@
       "sourceFilename": "isolated_purple_agastache_flowering_plant.png",
       "importedAt": "2026-10-15T06:30:03Z",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "imageSha256": "bb059b37fdee0609673c002adf6d9be49a8632679b3fb7ee1f268be942bde677",
         "pngSha256": "26594b9799e658fbcbfcdf07f5c61be0534d867187eff8c11cd1e1121c09569c",
-        "importedAt": "2026-10-15T13:44:49Z"
+        "importedAt": "2026-10-15T13:44:49Z",
+        "approvedAt": "2026-10-16T10:47:39Z"
       }
     },
     "alchemilla-mollis": {
@@ -72,7 +76,7 @@
       "sourceFilename": "isolated_lady_s_mantle_in_bloom.png",
       "importedAt": "2026-10-15T06:30:03Z",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "imageSha256": "7680e2443f8e0590455bbea6fcf1417b335f36791fa7bdea769bb44f676d2bf9",
         "pngSha256": "d9546181f891934b95ea847ee043efd5b83606d79eb796b8f29f5aff37caf213",
         "importedAt": "2026-10-15T20:21:46Z",
@@ -87,7 +91,8 @@
             "supersededAt": "2026-10-15T13:44:49Z"
           },
           "supersededAt": "2026-10-15T20:21:46Z"
-        }
+        },
+        "approvedAt": "2026-10-16T10:47:39Z"
       }
     },
     "allium-purple-sensation": {
@@ -98,10 +103,11 @@
       "sourceFilename": "purple_allium_blossom_cluster.png",
       "importedAt": "2026-10-15T06:30:03Z",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "imageSha256": "04df55b9494852ebaa2f23e123a6456d92c55c0bc1f8ec9141b3cbcfc78517fe",
         "pngSha256": "29140be0f4a289e238f1e4147e8cb2a995e151f7470f995a0aca98f14ee6b460",
-        "importedAt": "2026-10-15T13:44:49Z"
+        "importedAt": "2026-10-15T13:44:49Z",
+        "approvedAt": "2026-10-16T10:47:39Z"
       }
     },
     "anemone-hadspen": {
@@ -112,10 +118,11 @@
       "sourceFilename": "pink_japanese_anemone_botanical_cutout.png",
       "importedAt": "2026-10-15T06:30:03Z",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "imageSha256": "a66b09f8830d6db1f3e1729a9d844fb400811e3aa5d6a766ba9d7bac70a65284",
         "pngSha256": "b4ae52236d9bb3441cea47d0aeadae0b0c14f678be2505a843846dac6d83097f",
-        "importedAt": "2026-10-15T13:44:49Z"
+        "importedAt": "2026-10-15T13:44:49Z",
+        "approvedAt": "2026-10-16T10:47:39Z"
       }
     },
     "anemone-honorine": {
@@ -126,10 +133,11 @@
       "sourceFilename": "white_japanese_anemone_plant_cutout.png",
       "importedAt": "2026-10-15T06:30:03Z",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "imageSha256": "13a8ec32511ccfd118924605655faacb28f6ff13e5cd29b88da88323262eced0",
         "pngSha256": "81f47057a6de054742a13b52c5743640a92f782850c8baf04d002c9316f98a2e",
-        "importedAt": "2026-10-15T13:44:49Z"
+        "importedAt": "2026-10-15T13:44:49Z",
+        "approvedAt": "2026-10-16T10:47:39Z"
       }
     },
     "aruncus-dioicus": {
@@ -140,10 +148,11 @@
       "sourceFilename": "isolated_goatsbeard_botanical_cutout.png",
       "importedAt": "2026-10-15T06:30:03Z",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "imageSha256": "6d3fff6d0dff32535249b4be2427b106925cf7a9bf60d95e4bc6d926f207db38",
         "pngSha256": "be23db5ca245aaa093d3dbf74b88c57312f07cd94c68ea8b0d2fb0864eb95c32",
-        "importedAt": "2026-10-15T13:44:49Z"
+        "importedAt": "2026-10-15T13:44:49Z",
+        "approvedAt": "2026-10-16T10:47:39Z"
       }
     },
     "aster-little-carlow": {
@@ -155,10 +164,11 @@
       "importedAt": "2026-10-15T06:30:03Z",
       "approvedAt": "2026-10-15T08:19:20Z",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "imageSha256": "c973b0f62f1a941dc4f8f8c90f1d7e3a66d34989584047a7802d04ebde067a7f",
         "pngSha256": "170a6f6cf67578884855fd4430280c045b865939eeb72a568a9420b14b172659",
-        "importedAt": "2026-10-15T13:44:49Z"
+        "importedAt": "2026-10-15T13:44:49Z",
+        "approvedAt": "2026-10-16T10:47:39Z"
       }
     },
     "aster-monch": {
@@ -166,13 +176,14 @@
       "imageSha256": "1c249bbebbef53d18ba5a00089493ff157c716e1b92a84fbc9cb45f473a74ac7",
       "pngSha256": "0c1233f5bc62a5fe5e855b789d9e3dce989c8e0e9b7d8daac73092ffed3a8c6a",
       "bundleMatchStatus": "filename_match_unreviewed",
-      "sourceFilename": "lavender_aster_m\u00f6nch_plant_cutout.png",
+      "sourceFilename": "lavender_aster_mönch_plant_cutout.png",
       "importedAt": "2026-10-15T06:30:03Z",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "imageSha256": "7dd7a726eef2ef3b6fcbefb27091c9fbf0dbcc85672b13520c82b1663c53b8ad",
         "pngSha256": "7cab6a338b1c8973a4b3480c800b7d70803afde772f0250fff1a9774546bd84b",
-        "importedAt": "2026-10-15T13:44:49Z"
+        "importedAt": "2026-10-15T13:44:49Z",
+        "approvedAt": "2026-10-16T10:47:39Z"
       }
     },
     "astrantia-major": {
@@ -184,14 +195,15 @@
       "importedAt": "2026-10-15T06:30:03Z",
       "approvedAt": "2026-10-15T08:19:20Z",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "imageSha256": "a52795e9710702351094eaf1a9ff78732195e70606438ce9bb43fd0a0c848b12",
         "pngSha256": "89d2c3f1da57e02f4cbb72136409cd5db08ec76e2045f0a1128d3e7177bd678b",
-        "importedAt": "2026-10-15T13:44:49Z"
+        "importedAt": "2026-10-15T13:44:49Z",
+        "approvedAt": "2026-10-16T10:47:39Z"
       }
     },
     "brunnera-jack-frost": {
-      "status": "pending_review",
+      "status": "confirmed",
       "imageSha256": "8fa057237d754369015358e537ceff875d94ee2fa833b63b81886a99d2beab15",
       "pngSha256": "24c566ef8f141acf30588f9425c4a1d743f4752b881a6f1a7460fb123c4c8970",
       "bundleMatchStatus": "filename_match_unreviewed",
@@ -204,7 +216,7 @@
         "supersededAt": "2026-10-15T20:22:03Z"
       },
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "imageSha256": "ce911942e1cd413d744c840e21e0d1fc782e2b6c27ce57eda33c8aa40c926947",
         "pngSha256": "d024104e75d7eba4069795c40cd38423b6f0f1d1dc0ee59940f8fe42f6d739c9",
         "importedAt": "2026-10-15T20:21:46Z",
@@ -214,8 +226,10 @@
           "pngSha256": "0a9410787a4ecba6883910807f6cd632f31453cf5b169e5c6fd7af181fc947cf",
           "importedAt": "2026-10-15T13:44:49Z",
           "supersededAt": "2026-10-15T20:21:46Z"
-        }
-      }
+        },
+        "approvedAt": "2026-10-16T10:47:39Z"
+      },
+      "approvedAt": "2026-10-16T10:47:39Z"
     },
     "calamagrostis-karl-foerster": {
       "status": "confirmed",
@@ -225,14 +239,15 @@
       "sourceFilename": "isolated_feather_reed_grass_clump.png",
       "importedAt": "2026-10-15T06:36:06Z",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "imageSha256": "6a669b2673651df9ef7b826ecd26980c7104d49aeff0230e3d73a46a6d7c68e5",
         "pngSha256": "a6df1e676175ce79684ecaebab1a1d4e0c022e3eec61aa89e828822ec7a1d9a4",
-        "importedAt": "2026-10-15T13:44:49Z"
+        "importedAt": "2026-10-15T13:44:49Z",
+        "approvedAt": "2026-10-16T10:47:39Z"
       }
     },
     "carex-evergold": {
-      "status": "pending_review",
+      "status": "confirmed",
       "imageSha256": "608ceb12b19a16e6cb63cb968ad8ea704908a229eea5d87326f6d4cfbe6943a6",
       "pngSha256": "86db274ae03d43fdfa0917776b13b28a54309f45326d6af760853be2e1ea77dd",
       "bundleMatchStatus": "filename_match_unreviewed",
@@ -245,7 +260,7 @@
         "supersededAt": "2026-10-15T20:22:03Z"
       },
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "imageSha256": "906655ddff3fd1c945186515aba1c8040e3681e39331bce04ffe7973f0cf1ade",
         "pngSha256": "6f4a220176c93af2a462f625a22e1fa08537952b182db3fdf0532d8b9c08f106",
         "importedAt": "2026-10-15T20:21:46Z",
@@ -255,8 +270,10 @@
           "pngSha256": "628eed99930af745e277affe603d5cb6fd1b044e4d4da4b6ca0411075ad59cf0",
           "importedAt": "2026-10-15T13:44:49Z",
           "supersededAt": "2026-10-15T20:21:46Z"
-        }
-      }
+        },
+        "approvedAt": "2026-10-16T10:47:39Z"
+      },
+      "approvedAt": "2026-10-16T10:47:39Z"
     },
     "cenolophium-denudatum": {
       "status": "confirmed",
@@ -267,10 +284,11 @@
       "importedAt": "2026-10-15T06:36:06Z",
       "approvedAt": "2026-10-15T08:19:20Z",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "imageSha256": "4ef47148a1026f00fc94bc445bcc9175fd8df1914237b65e56364a1d520fcd29",
         "pngSha256": "3c931c387441f52ccf0b69c16fe45efcba2485c516e4900df626d6736741c2da",
-        "importedAt": "2026-10-15T13:44:49Z"
+        "importedAt": "2026-10-15T13:44:49Z",
+        "approvedAt": "2026-10-16T10:47:39Z"
       }
     },
     "crocosmia-lucifer": {
@@ -281,10 +299,11 @@
       "sourceFilename": "scarlet_crocosmia_in_bloom.png",
       "importedAt": "2026-10-15T06:36:06Z",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "imageSha256": "5eefb7a3f84731cdfee42d631d212ef656bf1e8a89c5d4ffdb753bd9ea5f1b1b",
         "pngSha256": "a2867b87f8c5eb9ee72053129b6478310ce0227416c0e1dfa22f3b2143bbcee7",
-        "importedAt": "2026-10-15T13:44:49Z"
+        "importedAt": "2026-10-15T13:44:49Z",
+        "approvedAt": "2026-10-16T10:47:39Z"
       }
     },
     "deschampsia-goldtau": {
@@ -296,10 +315,11 @@
       "importedAt": "2026-10-15T06:36:06Z",
       "approvedAt": "2026-10-15T08:19:20Z",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "imageSha256": "a8765fb48401cb263563161be6349844eb3f4089c2192814991575338c93d970",
         "pngSha256": "262183018543e84e6db7caa1d9aa9d4872a7ac52b6abdf7b098aecd615f3e4fa",
-        "importedAt": "2026-10-15T13:44:49Z"
+        "importedAt": "2026-10-15T13:44:49Z",
+        "approvedAt": "2026-10-16T10:47:39Z"
       }
     },
     "digitalis-ferruginea": {
@@ -310,10 +330,11 @@
       "sourceFilename": "rusty_foxglove_botanical_specimen.png",
       "importedAt": "2026-10-15T06:36:06Z",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "imageSha256": "dc0c29454b96f5b354a9d5b8234f09be5cea3e6e74ee429603f594667bd688d8",
         "pngSha256": "d798ae04539f84178b79b8cc7154f3a8a377bcf95cb6914cc93539f5f84fddcd",
-        "importedAt": "2026-10-15T13:44:49Z"
+        "importedAt": "2026-10-15T13:44:49Z",
+        "approvedAt": "2026-10-16T10:47:39Z"
       }
     },
     "digitalis-purpurea": {
@@ -331,7 +352,7 @@
       },
       "approvedAt": "2026-10-15T08:19:20Z",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "imageSha256": "bad48e8d5971ce7343d4c3dd40f8b4e8d0a17dad5a73e9c5c08817003c3e20e0",
         "pngSha256": "2c8734a05b91502d20c52a31c721e5a0cf8eb67c9c80802ef26cc21fac780916",
         "importedAt": "2026-10-15T20:21:46Z",
@@ -341,7 +362,8 @@
           "pngSha256": "ff3f00de584b4bdcb13270f03fc3fcdae089764890f00707439c14450574eeea",
           "importedAt": "2026-10-15T13:44:49Z",
           "supersededAt": "2026-10-15T20:21:46Z"
-        }
+        },
+        "approvedAt": "2026-10-16T10:47:39Z"
       }
     },
     "dryopteris-filix-mas": {
@@ -353,10 +375,11 @@
       "importedAt": "2026-10-15T06:36:06Z",
       "approvedAt": "2026-10-15T08:19:20Z",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "imageSha256": "09824b7bfc87a9ad0a8d5593e19ab21e6c0e778a2b6a3b4b64ec7e0435d019a1",
         "pngSha256": "09361c5b1da04e978f3611a64f04e1af3e8d31426369aee249d42ed3bcf02251",
-        "importedAt": "2026-10-15T13:44:49Z"
+        "importedAt": "2026-10-15T13:44:49Z",
+        "approvedAt": "2026-10-16T10:47:39Z"
       }
     },
     "echinacea-purpurea": {
@@ -367,7 +390,7 @@
       "sourceFilename": "purple_coneflower_botanical_cluster.png",
       "importedAt": "2026-10-15T06:36:06Z",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "imageSha256": "9cf90c1348e452bfa3f9a6afadf2a8bd766ded0a46dc67397380809b35f49cae",
         "pngSha256": "0755ff6f522d44f6c76c44b3003b92e7190ec7dc35ccc783246ed5aabb8fd7b4",
         "importedAt": "2026-10-15T13:44:49Z",
@@ -375,7 +398,8 @@
           "status": "canonical",
           "imageSha256": "998e33748344e8a42a067374bfb91355fe68bc71336efaab721a107fda9c35ca",
           "supersededAt": "2026-10-15T13:44:49Z"
-        }
+        },
+        "approvedAt": "2026-10-16T10:47:39Z"
       }
     },
     "echinacea-white-swan": {
@@ -386,7 +410,7 @@
       "sourceFilename": "white_coneflower_botanical_cutout.png",
       "importedAt": "2026-10-15T06:36:06Z",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "imageSha256": "da963850792eb0471e7895daf501b9fa54ba82ee01da5da1738710c87f9af33a",
         "pngSha256": "24e159fde89895eab8f5f3dbde4bf4260bdfabda8c94b46f63afb608387d9fa0",
         "importedAt": "2026-10-15T13:44:49Z",
@@ -394,11 +418,12 @@
           "status": "canonical",
           "imageSha256": "87a319e39396a371634171f9a184708827e9bba937068027112bcb80d274d849",
           "supersededAt": "2026-10-15T13:44:49Z"
-        }
+        },
+        "approvedAt": "2026-10-16T10:47:39Z"
       }
     },
     "epimedium-sulphureum": {
-      "status": "pending_review",
+      "status": "confirmed",
       "imageSha256": "3551947232fb48723975dc658989e1e4c43d23a0f2717f0abb61c5a7467acb08",
       "pngSha256": "d1f438d9d2ce1b921a40241b9319b186d4508f8980167853c8ffa8a06681d169",
       "bundleMatchStatus": "provisional_cultivar_or_species_check",
@@ -411,7 +436,7 @@
         "supersededAt": "2026-10-15T20:22:03Z"
       },
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "imageSha256": "1f6f085209f79c42347a9870db00b1edca070f7427b28d0eec394984e1071a27",
         "pngSha256": "d6d441a39e8bc32274692341cacc80ca3807fd02262cd19cee372d104c904c38",
         "importedAt": "2026-10-15T20:21:46Z",
@@ -421,11 +446,13 @@
           "pngSha256": "dc3a9a29fe0af961757d0e8f39f92a81c35498f97c3e5509709f9d7c45328fe8",
           "importedAt": "2026-10-15T13:44:49Z",
           "supersededAt": "2026-10-15T20:21:46Z"
-        }
-      }
+        },
+        "approvedAt": "2026-10-16T10:47:39Z"
+      },
+      "approvedAt": "2026-10-16T10:47:39Z"
     },
     "erigeron-karvinskianus": {
-      "status": "pending_review",
+      "status": "confirmed",
       "imageSha256": "035aeaf729239ed5a596b3d85f09ae67f2f9e3f7f32cf3aa6ae9df986ee3a867",
       "pngSha256": "62355b04bb80384674c60ebc5d30ee432e99c22ae3e112fef927f8dd9dc70236",
       "bundleMatchStatus": "filename_match_unreviewed",
@@ -438,7 +465,7 @@
         "supersededAt": "2026-10-15T20:22:03Z"
       },
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "imageSha256": "cb454949027a08a77a0733cac23c5ad4166b09f582ca5ee6e7cf27da0a915268",
         "pngSha256": "c0585792e4ca1e8d028299147c5abe39e40d5bc8d33b7ee1667a695eefbd1927",
         "importedAt": "2026-10-15T20:21:46Z",
@@ -448,8 +475,10 @@
           "pngSha256": "f2e9d7c39a2e2a3ed7f7164a39ea3997c1e9af6412a74486b7a6163682bf2fb2",
           "importedAt": "2026-10-15T13:44:49Z",
           "supersededAt": "2026-10-15T20:21:46Z"
-        }
-      }
+        },
+        "approvedAt": "2026-10-16T10:47:39Z"
+      },
+      "approvedAt": "2026-10-16T10:47:39Z"
     },
     "eryngium-planum": {
       "status": "confirmed",
@@ -459,10 +488,11 @@
       "sourceFilename": "blue_eryngium_sea_holly_botanical_cutout.png",
       "importedAt": "2026-10-15T06:36:06Z",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "imageSha256": "64305a9c4522192d306ce673ece3025b1a10e792c6eeb7cd4ac25104be8322bf",
         "pngSha256": "0070760b75920ed39a6c79b6d84a86fe68fb98f192f3bd60874d7b40fc455c8a",
-        "importedAt": "2026-10-15T13:44:49Z"
+        "importedAt": "2026-10-15T13:44:49Z",
+        "approvedAt": "2026-10-16T10:47:39Z"
       }
     },
     "eupatorium-atropurpureum": {
@@ -474,10 +504,11 @@
       "importedAt": "2026-10-15T06:36:06Z",
       "approvedAt": "2026-10-15T08:19:20Z",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "imageSha256": "a06b4676de4ec2c687da52310d34b26ddd11307f29d7dc58c35b1eb9bf3159c9",
         "pngSha256": "05ce1d0b518dfda3d3c5048018d22c2bc48218c0105d763f0cdf3573e6cb0432",
-        "importedAt": "2026-10-15T13:44:49Z"
+        "importedAt": "2026-10-15T13:44:49Z",
+        "approvedAt": "2026-10-16T10:47:39Z"
       }
     },
     "euphorbia-fireglow": {
@@ -488,14 +519,15 @@
       "sourceFilename": "fireglow_euphorbia_botanical_cutout.png",
       "importedAt": "2026-10-15T07:08:42Z",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "imageSha256": "08fa40e7fd776d37ba21177807ca204e7d2f7c2197db92914a6e1b35baee21b9",
         "pngSha256": "dc1b666b666b815c272f0d2870e280f73ae8acb772d02ea50a84180077560674",
-        "importedAt": "2026-10-15T13:44:49Z"
+        "importedAt": "2026-10-15T13:44:49Z",
+        "approvedAt": "2026-10-16T10:47:39Z"
       }
     },
     "euphorbia-polychroma": {
-      "status": "pending_review",
+      "status": "confirmed",
       "imageSha256": "f8318c05e62ed962d6cca9fdf3fe99d876def7a06c24ce07ff760494860bc047",
       "pngSha256": "f54f8423e564ff730ea3d436abb3ab7ae858f3610fcf825c07b31b65e017a7b4",
       "bundleMatchStatus": "filename_match_unreviewed",
@@ -508,7 +540,7 @@
         "supersededAt": "2026-10-15T20:22:03Z"
       },
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "imageSha256": "30e073b5d1bf047e2c906defcc373d80e6ad800fbf1e7c535d7dad9bae906008",
         "pngSha256": "d01075cc3233426bde7779d4d4ccbb913dc5e435b29d48b5d7ec168b44c8ec1c",
         "importedAt": "2026-10-15T20:21:46Z",
@@ -518,8 +550,10 @@
           "pngSha256": "5591a00fd562618fb268c79871917648ffd1876f84ce061775d00a02afadf51c",
           "importedAt": "2026-10-15T13:44:49Z",
           "supersededAt": "2026-10-15T20:21:46Z"
-        }
-      }
+        },
+        "approvedAt": "2026-10-16T10:47:39Z"
+      },
+      "approvedAt": "2026-10-16T10:47:39Z"
     },
     "euphorbia-wulfenii": {
       "status": "confirmed",
@@ -529,10 +563,11 @@
       "sourceFilename": "chartreuse_mediterranean_spurge_clump.png",
       "importedAt": "2026-10-15T07:08:42Z",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "imageSha256": "58ca957459c21ff738f0427cc2d24524b7366cc644b89c3373fbe84257528341",
         "pngSha256": "02dbe8512680baa9e32bc56a4231cedf99c670bba5786dd999dc46de63321631",
-        "importedAt": "2026-10-15T13:44:49Z"
+        "importedAt": "2026-10-15T13:44:49Z",
+        "approvedAt": "2026-10-16T10:47:39Z"
       }
     },
     "gaura-whirling": {
@@ -543,14 +578,15 @@
       "sourceFilename": "white_gaura_butterfly_flower_specimen.png",
       "importedAt": "2026-10-15T07:08:42Z",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "imageSha256": "d5a6a564002877c9b88af4106b20f373a43b91c75a1aaa0e98f60bf4eb7bc9c1",
         "pngSha256": "0913fc2a33eb9925c273b5290ee9efa530411fa68f9af0f813a398799c830c46",
-        "importedAt": "2026-10-15T13:44:49Z"
+        "importedAt": "2026-10-15T13:44:49Z",
+        "approvedAt": "2026-10-16T10:47:39Z"
       }
     },
     "geranium-macrorrhizum": {
-      "status": "pending_review",
+      "status": "confirmed",
       "imageSha256": "5a75d2ecea17b4f8f1934fecdbb106b2df92aa0e2cddda9aa70be61578733f91",
       "pngSha256": "be7da8c46f897496761a27968be8a61eb35246e85e9d1b7e2bc7f7bfd9f79d2a",
       "bundleMatchStatus": "provisional_cultivar_or_species_check",
@@ -563,7 +599,7 @@
         "supersededAt": "2026-10-15T20:22:03Z"
       },
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "imageSha256": "33489f6d24825fb9f5670016f001b79ff04124cfff54f6deae0e74bdbc33fc49",
         "pngSha256": "4e7a6e5b05ec554fff1cd13ef23d0f017dadcb14430d1d45eb2566a56bcd24c2",
         "importedAt": "2026-10-15T20:21:46Z",
@@ -573,8 +609,10 @@
           "pngSha256": "2dc3690d99bd9bbb568dc369489072c2bdaa8345567bd1f0982fbd1c34bb5d2c",
           "importedAt": "2026-10-15T13:44:49Z",
           "supersededAt": "2026-10-15T20:21:46Z"
-        }
-      }
+        },
+        "approvedAt": "2026-10-16T10:47:39Z"
+      },
+      "approvedAt": "2026-10-16T10:47:39Z"
     },
     "geranium-psilostemon": {
       "status": "confirmed",
@@ -584,10 +622,11 @@
       "sourceFilename": "geranium_cranesbill_in_full_bloom.png",
       "importedAt": "2026-10-15T07:08:42Z",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "imageSha256": "5fe29032a810893baea1d3f70fda43795c01cf7ade15819176cebc3f44073c5c",
         "pngSha256": "2cf5fcd3f3bb682742cadce6442a0ce2dd964c512e4d9d1ef2020c08619d3ad1",
-        "importedAt": "2026-10-15T13:44:49Z"
+        "importedAt": "2026-10-15T13:44:49Z",
+        "approvedAt": "2026-10-16T10:47:39Z"
       }
     },
     "geranium-rozanne": {
@@ -598,7 +637,7 @@
       "sourceFilename": "geranium_rozanne_flowering_mound.png",
       "importedAt": "2026-10-15T07:08:42Z",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "imageSha256": "b59ddadcc4a6287490ea4523a1e9c483a9ccbd6ba95fe86b88ad6317e5fdb311",
         "pngSha256": "8266315331ea076c13d306c61faeedda0892d6f8aed2f57e1309ecc296a871e0",
         "importedAt": "2026-10-15T13:44:49Z",
@@ -606,7 +645,8 @@
           "status": "canonical",
           "imageSha256": "4feb29a0245d3974026a074f05986521e0f3edda8ca9a03c77e114d13cef2962",
           "supersededAt": "2026-10-15T13:44:49Z"
-        }
+        },
+        "approvedAt": "2026-10-16T10:47:39Z"
       }
     },
     "geum-totally-tangerine": {
@@ -617,7 +657,7 @@
       "sourceFilename": "tangerine_geum_flowering_perennial_cutout.png",
       "importedAt": "2026-10-15T07:08:42Z",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "imageSha256": "9829794ee2553223762b1a64553759b5023724565f7ce3f72d92718296f424df",
         "pngSha256": "4b79731cf925905f729feae198b4414c62f1cf1609c26efe9640c1069166e46b",
         "importedAt": "2026-10-15T13:44:49Z",
@@ -625,7 +665,8 @@
           "status": "canonical",
           "imageSha256": "be80a76dd3f709bd5699037ad56f3a061a4257d20113d1e36b072388e0b2e45f",
           "supersededAt": "2026-10-15T13:44:49Z"
-        }
+        },
+        "approvedAt": "2026-10-16T10:47:39Z"
       }
     },
     "hakonechloa-macra": {
@@ -636,10 +677,11 @@
       "sourceFilename": "cascading_hakone_grass_mound.png",
       "importedAt": "2026-10-15T07:08:42Z",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "imageSha256": "f01ff2fc40f4cb99f6b928187febe90780658c237d86e5deaa650803744ca1a3",
         "pngSha256": "042438e2818c6a10bf70c482ac23b3c8f8b73b4c1e3e1d63172b54109ef001b2",
-        "importedAt": "2026-10-15T13:44:49Z"
+        "importedAt": "2026-10-15T13:44:49Z",
+        "approvedAt": "2026-10-16T10:47:39Z"
       }
     },
     "helenium-moerheim": {
@@ -651,10 +693,11 @@
       "importedAt": "2026-10-15T07:08:42Z",
       "approvedAt": "2026-10-15T08:19:20Z",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "imageSha256": "f1a002085f6687843b45ac26674cc97e461db5422365946e61884d338c7c070d",
         "pngSha256": "086d34612acda726646732a768a41c86d108a98b0468872d39412d75b14c63fc",
-        "importedAt": "2026-10-15T13:44:49Z"
+        "importedAt": "2026-10-15T13:44:49Z",
+        "approvedAt": "2026-10-16T10:47:39Z"
       }
     },
     "helleborus-hybridus": {
@@ -665,10 +708,11 @@
       "sourceFilename": "realistic_lenten_rose_botanical_cutout.png",
       "importedAt": "2026-10-15T07:08:42Z",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "imageSha256": "1740d76281c88e26f72439d7a346fbd92d236bf33ac56fb404ab40b71594b11c",
         "pngSha256": "e36dff0c0759a00fdf1e6630c81e505e68217896dd8f78a657f8bc606fe4a9e4",
-        "importedAt": "2026-10-15T13:44:49Z"
+        "importedAt": "2026-10-15T13:44:49Z",
+        "approvedAt": "2026-10-16T10:47:39Z"
       }
     },
     "hemerocallis-stafford": {
@@ -680,10 +724,11 @@
       "importedAt": "2026-10-15T07:08:42Z",
       "approvedAt": "2026-10-15T08:19:20Z",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "imageSha256": "e9a65d559a2497740c4b5b538a7a4835882c3a42e620bffb62047379abbbbb23",
         "pngSha256": "c5af9296189fd4e7ad674b21cea82afcbb392e63da90f8a03be01feb9d7e593c",
-        "importedAt": "2026-10-15T13:44:49Z"
+        "importedAt": "2026-10-15T13:44:49Z",
+        "approvedAt": "2026-10-16T10:47:39Z"
       }
     },
     "heuchera-palace-purple": {
@@ -694,10 +739,11 @@
       "sourceFilename": "burgundy_heuchera_with_delicate_bell_flowers.png",
       "importedAt": "2026-10-15T07:08:42Z",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "imageSha256": "861e2f8fd248a2416f3282602c2e29d490b52fd7344be1e0600b89d8d4c6db29",
         "pngSha256": "8dde8fb6468703c888bbcc19700205d089ec2144a4ae17c377c2f01cda3d5551",
-        "importedAt": "2026-10-15T13:44:49Z"
+        "importedAt": "2026-10-15T13:44:49Z",
+        "approvedAt": "2026-10-16T10:47:39Z"
       }
     },
     "hylotelephium-herbstfreude": {
@@ -708,7 +754,7 @@
       "sourceFilename": "autumn_stonecrop_in_full_bloom.png",
       "importedAt": "2026-10-15T07:08:42Z",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "imageSha256": "9f6c74f45bd3a58b02a83b663a77530738f24e4accbbb3c1398a855e6e63815b",
         "pngSha256": "3fc05bef43854e2b1ddb96afb8b4781f88051d2a7a1fe06fe397c9a9bf5cae39",
         "importedAt": "2026-10-15T20:21:46Z",
@@ -718,7 +764,8 @@
           "pngSha256": "9f74f903c03ab686d9532d2b379e42f945a2b1d532b4c2edb8ac125e71c2d6c1",
           "importedAt": "2026-10-15T13:44:49Z",
           "supersededAt": "2026-10-15T20:21:46Z"
-        }
+        },
+        "approvedAt": "2026-10-16T10:47:39Z"
       }
     },
     "iris-sibirica": {
@@ -729,10 +776,11 @@
       "sourceFilename": "silver_edge_siberian_iris_clump.png",
       "importedAt": "2026-10-15T07:10:00Z",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "imageSha256": "fae30267692fee3ad9c7484fac7dc6a12a1966105d7efac7350e4073cad67ae9",
         "pngSha256": "fa5d39b0c2a2b18f4c4620cdd30d62fcb190b82c3ac3835484dc37aeebe84952",
-        "importedAt": "2026-10-15T13:44:49Z"
+        "importedAt": "2026-10-15T13:44:49Z",
+        "approvedAt": "2026-10-16T10:47:39Z"
       }
     },
     "knautia-macedonica": {
@@ -743,10 +791,11 @@
       "sourceFilename": "macedonian_scabious_in_bloom.png",
       "importedAt": "2026-10-15T07:10:00Z",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "imageSha256": "8414c61fa30f3f5b60858464fc8c2586340e8e0771a9f9b6eff3b0ca08262ccd",
         "pngSha256": "16b678ecc1645f20bdd04889933c06d37e8e7d9c983602326f6f961d2b7129eb",
-        "importedAt": "2026-10-15T13:44:49Z"
+        "importedAt": "2026-10-15T13:44:49Z",
+        "approvedAt": "2026-10-16T10:47:39Z"
       }
     },
     "kniphofia-tawny-king": {
@@ -757,10 +806,11 @@
       "sourceFilename": "tawny_king_red_hot_poker_plant.png",
       "importedAt": "2026-10-15T07:10:00Z",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "imageSha256": "dd639aaf1b59251db7f82cb9c53ad28662c433c47e906a4d2b0c255f1b5dc2f4",
         "pngSha256": "d900f6b803e847862e47fbb5d58d867c64afc0d1d5fbb8324b7a363793addfee",
-        "importedAt": "2026-10-15T13:44:49Z"
+        "importedAt": "2026-10-15T13:44:49Z",
+        "approvedAt": "2026-10-16T10:47:39Z"
       }
     },
     "lavandula-hidcote": {
@@ -772,10 +822,11 @@
       "importedAt": "2026-10-15T07:10:00Z",
       "approvedAt": "2026-10-15T08:19:20Z",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "imageSha256": "4ffcd5ffc9890b29571fa01e8f7c52a21eb66dc19c00f44d912140872b81d393",
         "pngSha256": "df0353676d5b9ab850dd35496820fa8398fbc2542516384a8e3783432f14eec5",
-        "importedAt": "2026-10-15T13:44:49Z"
+        "importedAt": "2026-10-15T13:44:49Z",
+        "approvedAt": "2026-10-16T10:47:39Z"
       }
     },
     "leucanthemum-becky": {
@@ -787,10 +838,11 @@
       "importedAt": "2026-10-15T07:10:00Z",
       "approvedAt": "2026-10-15T08:19:20Z",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "imageSha256": "d4c3b7fb772b5202bce7094213bc1048fff97000aae56e095c8e5e40e91c2c2c",
         "pngSha256": "c066278058ff407427ee7ae315c4ab600e05d785ec417c2f0efb96a20c5c9e89",
-        "importedAt": "2026-10-15T13:44:49Z"
+        "importedAt": "2026-10-15T13:44:49Z",
+        "approvedAt": "2026-10-16T10:47:39Z"
       }
     },
     "molinia-transparent": {
@@ -802,10 +854,11 @@
       "importedAt": "2026-10-15T07:10:00Z",
       "approvedAt": "2026-10-15T08:19:20Z",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "imageSha256": "11cedd7d6eb19dad8264c13a6f8fd8b3add91b6e4358ab3a9644461dbb65a491",
         "pngSha256": "d69d859cce754e1ef0de36e51c9172b05d9e70d0d8ad9c78446c590f8772d825",
-        "importedAt": "2026-10-15T13:44:49Z"
+        "importedAt": "2026-10-15T13:44:49Z",
+        "approvedAt": "2026-10-16T10:47:39Z"
       }
     },
     "nepeta-walkers-low": {
@@ -816,7 +869,7 @@
       "sourceFilename": "isolated_lavender_catmint_blooming_clump.png",
       "importedAt": "2026-10-15T07:10:00Z",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "imageSha256": "ce2a5ecc57a9596aee80b28ac31c577bc4c172c91dd8c917fec97a863b61e5b1",
         "pngSha256": "3bef7a18975926fa75389e5783a4c9449b92b051e52be0bb5a93bce77d4c2875",
         "importedAt": "2026-10-15T20:21:46Z",
@@ -831,7 +884,8 @@
             "supersededAt": "2026-10-15T13:44:49Z"
           },
           "supersededAt": "2026-10-15T20:21:46Z"
-        }
+        },
+        "approvedAt": "2026-10-16T10:47:39Z"
       }
     },
     "penstemon-garnet": {
@@ -842,10 +896,11 @@
       "sourceFilename": "burgundy_penstemon_plant_cutout.png",
       "importedAt": "2026-10-15T07:10:00Z",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "imageSha256": "1be86f7b83f0fceb830c21fb5ec078fc31c675891889493f0c96d399741a9138",
         "pngSha256": "32855b87ecc9dc0f79377afcaa09903e8745a5056619204d655cdc78a952986a",
-        "importedAt": "2026-10-15T13:44:49Z"
+        "importedAt": "2026-10-15T13:44:49Z",
+        "approvedAt": "2026-10-16T10:47:39Z"
       }
     },
     "perovskia-blue-spire": {
@@ -857,10 +912,11 @@
       "importedAt": "2026-10-15T07:10:00Z",
       "approvedAt": "2026-10-15T08:19:20Z",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "imageSha256": "0023d6495d76601bf3373eb36a5e642c6327cb6813e1dc0e289af66c8f34b25b",
         "pngSha256": "d7afad8679fab74de2e488e0bb5f3270ea7d4359650d904cb3e39f41c3d46acb",
-        "importedAt": "2026-10-15T13:44:49Z"
+        "importedAt": "2026-10-15T13:44:49Z",
+        "approvedAt": "2026-10-16T10:47:39Z"
       }
     },
     "persicaria-firetail": {
@@ -871,10 +927,11 @@
       "sourceFilename": "red_bistort_firetail_botanical_cutout.png",
       "importedAt": "2026-10-15T07:10:00Z",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "imageSha256": "caa6fbee596837aa38be545e39b06d1f76f553d931b22d5712fb7b1eea19aa42",
         "pngSha256": "60c46a98ffcc5e6a849c87cbc17aeae0dd2035f2b06d01dbbb121a70ca512839",
-        "importedAt": "2026-10-15T13:44:49Z"
+        "importedAt": "2026-10-15T13:44:49Z",
+        "approvedAt": "2026-10-16T10:47:39Z"
       }
     },
     "phlomis-russeliana": {
@@ -885,14 +942,15 @@
       "sourceFilename": "tiered_yellow_phlomis_botanical_cutout.png",
       "importedAt": "2026-10-15T07:10:00Z",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "imageSha256": "ed6859fbd7a13a7c2c6ab600969a7b1ae1469e20763490c09363da32a77f5cff",
         "pngSha256": "14aab4a6c7d1657b3ef16959c9ba1101cc7d2793edd9dc3a255a46d8774d0096",
-        "importedAt": "2026-10-15T13:44:49Z"
+        "importedAt": "2026-10-15T13:44:49Z",
+        "approvedAt": "2026-10-16T10:47:39Z"
       }
     },
     "polystichum-setiferum": {
-      "status": "pending_review",
+      "status": "confirmed",
       "imageSha256": "df36203d7c61b2eb45f538aef8e44edf86c9b55013dab051c7a2cd017b666109",
       "pngSha256": "7b5e651d6fb6ca33018379836f2b7a8e9e6cd33b97163446b6caf4ebab013b40",
       "bundleMatchStatus": "provisional_cultivar_or_species_check",
@@ -905,7 +963,7 @@
         "supersededAt": "2026-10-15T20:22:03Z"
       },
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "imageSha256": "62bcb0daaea08ac7d23e9780154403b6ea19b6dcbd6e78221a43f27906e14268",
         "pngSha256": "cfaa5de71d3cac44248d0e855d30238e05934a4b0d16dde8f2f2c18d737cbc00",
         "importedAt": "2026-10-15T20:21:46Z",
@@ -915,8 +973,10 @@
           "pngSha256": "252c47ff3518fdb1deb424e4d0f05ed084331a598ee5711626f854b3d87970fa",
           "importedAt": "2026-10-15T13:44:49Z",
           "supersededAt": "2026-10-15T20:21:46Z"
-        }
-      }
+        },
+        "approvedAt": "2026-10-16T10:47:39Z"
+      },
+      "approvedAt": "2026-10-16T10:47:39Z"
     },
     "pulmonaria-blue-ensign": {
       "status": "confirmed",
@@ -926,10 +986,11 @@
       "sourceFilename": "blue_lungwort_flowering_clump.png",
       "importedAt": "2026-10-15T07:10:00Z",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "imageSha256": "703fec36bee9b9dd2333edfb44f2c3009772f0525780697d97e50000c244b1f4",
         "pngSha256": "ff12a87f849b84d5771d9616890620cc81318cfbb269c5c9c8dba98e58c22026",
-        "importedAt": "2026-10-15T13:44:49Z"
+        "importedAt": "2026-10-15T13:44:49Z",
+        "approvedAt": "2026-10-16T10:47:39Z"
       }
     },
     "rudbeckia-goldsturm": {
@@ -940,10 +1001,11 @@
       "sourceFilename": "golden_black_eyed_susan_clump.png",
       "importedAt": "2026-10-15T07:10:00Z",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "imageSha256": "bfff5e0a5cd859e13644126591c313fa96ef53abbd59e1ea629610ba551c61c5",
         "pngSha256": "29414832e39cfd32cb7a95c7bfeab917aa5aba3223d99218953096fd29f6dc45",
-        "importedAt": "2026-10-15T13:44:49Z"
+        "importedAt": "2026-10-15T13:44:49Z",
+        "approvedAt": "2026-10-16T10:47:39Z"
       }
     },
     "salvia-amistad": {
@@ -955,10 +1017,11 @@
       "importedAt": "2026-10-15T07:10:00Z",
       "approvedAt": "2026-10-15T08:19:20Z",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "imageSha256": "638e53963fee8b37acc0b98bdec28255d94e925bbcdb856ce94f80cb94724b4f",
         "pngSha256": "b818df0aee141508f8e5f615ff5846c8636524c2d2ce9188c26c53e2e28a5365",
-        "importedAt": "2026-10-15T13:44:49Z"
+        "importedAt": "2026-10-15T13:44:49Z",
+        "approvedAt": "2026-10-16T10:47:39Z"
       }
     },
     "salvia-caradonna": {
@@ -969,7 +1032,7 @@
       "sourceFilename": "purple_salvia_flowering_clump.png",
       "importedAt": "2026-10-15T07:10:00Z",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "imageSha256": "cce6310da8b85152c377c7bb221349c8daccb71f73c054f8909ab0af971268df",
         "pngSha256": "c87bcb96fed969c67cd6971f1c35e467fa0a02335115f98e96eeb15c0e68c7b1",
         "importedAt": "2026-10-15T13:44:49Z",
@@ -977,7 +1040,8 @@
           "status": "canonical",
           "imageSha256": "adcf9e5b8cb3b1d86da48871a2b8980e0e195f7847da94802951533c3d2f8ee4",
           "supersededAt": "2026-10-15T13:44:49Z"
-        }
+        },
+        "approvedAt": "2026-10-16T10:47:39Z"
       }
     },
     "sanguisorba-red-thunder": {
@@ -989,10 +1053,11 @@
       "importedAt": "2026-10-15T07:10:00Z",
       "approvedAt": "2026-10-15T08:19:20Z",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "imageSha256": "3af2386c4b30439c4d42b79cb2944f14bd5cd217d27d0a51abd5c62f1a6e5086",
         "pngSha256": "d28abc7d16684768a2c3f324e0c24ba6ef0b07523be31a33f4de7f74f56b0469",
-        "importedAt": "2026-10-15T13:44:49Z"
+        "importedAt": "2026-10-15T13:44:49Z",
+        "approvedAt": "2026-10-16T10:47:39Z"
       }
     },
     "sesleria-autumnalis": {
@@ -1004,10 +1069,11 @@
       "importedAt": "2026-10-15T07:10:00Z",
       "approvedAt": "2026-10-15T08:19:20Z",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "imageSha256": "8d4becf53e280f28c6ba5a04a52d1a9cabc51d88e8b39c60d993940778791135",
         "pngSha256": "0034a767011d1cf2f53ab3875fbcb5bd580eeca21afc6322bc94652e01ea47d1",
-        "importedAt": "2026-10-15T13:44:49Z"
+        "importedAt": "2026-10-15T13:44:49Z",
+        "approvedAt": "2026-10-16T10:47:39Z"
       }
     },
     "stipa-gigantea": {
@@ -1018,10 +1084,11 @@
       "sourceFilename": "stipa_gigantea_feather_grass_clump.png",
       "importedAt": "2026-10-15T07:10:00Z",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "imageSha256": "38d0e8440f3d4d883500ec834afa0bd9a37d7a788f3df1ee0297a991b182a2f2",
         "pngSha256": "8ec9047dd7a7d1b828979ca0067e152bf6ff70463b9596f89b0a81ba66433d56",
-        "importedAt": "2026-10-15T13:44:49Z"
+        "importedAt": "2026-10-15T13:44:49Z",
+        "approvedAt": "2026-10-16T10:47:39Z"
       }
     },
     "stipa-tenuissima": {
@@ -1033,10 +1100,11 @@
       "importedAt": "2026-10-15T07:10:00Z",
       "approvedAt": "2026-10-15T08:19:20Z",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "imageSha256": "96cf32ef8af2401a7efb62da52aae47125aca78585b391c210887d5bb4436838",
         "pngSha256": "d4851bcfe8ebc533d60570719bdd5a3034409aa2b2d6afe352a0d1dcf9e18fe0",
-        "importedAt": "2026-10-15T13:44:49Z"
+        "importedAt": "2026-10-15T13:44:49Z",
+        "approvedAt": "2026-10-16T10:47:39Z"
       }
     },
     "taxus-baccata-topiary": {
@@ -1047,7 +1115,7 @@
       "sourceFilename": "isolated_evergreen_topiary_bush.png",
       "importedAt": "2026-10-15T07:10:00Z",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "imageSha256": "dc1527d0df3abbe4f6e3fe18af154525241db0e2b80263913430c059a04d9179",
         "pngSha256": "d3c7da444fca90ee3b178552908f260ac9ed81badb2b7c6e0a8afef7e1653f62",
         "importedAt": "2026-10-15T20:21:46Z",
@@ -1062,7 +1130,8 @@
             "supersededAt": "2026-10-15T13:44:49Z"
           },
           "supersededAt": "2026-10-15T20:21:46Z"
-        }
+        },
+        "approvedAt": "2026-10-16T10:47:39Z"
       }
     },
     "thalictrum-delavayi": {
@@ -1073,7 +1142,7 @@
       "sourceFilename": "airy_lilac_meadow_rue_botanical_cutout.png",
       "importedAt": "2026-10-15T07:10:00Z",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "imageSha256": "94654df6dd559b21a5055c33153e0269387faae49b7472065cdb111db97a27ee",
         "pngSha256": "b81e99b874e5886504de2040153093b72f7ca3be62f03928fd80cc55eca6bb93",
         "importedAt": "2026-10-15T20:21:46Z",
@@ -1083,7 +1152,8 @@
           "pngSha256": "17e67a45570774c84b475ea96fc1b0e17c139fbe317dad07fb4623428ca040f5",
           "importedAt": "2026-10-15T13:44:49Z",
           "supersededAt": "2026-10-15T20:21:46Z"
-        }
+        },
+        "approvedAt": "2026-10-16T10:47:39Z"
       }
     },
     "verbena-bonariensis": {
@@ -1094,7 +1164,7 @@
       "sourceFilename": "airy_lavender_verbena_plant_cutout.png",
       "importedAt": "2026-10-15T07:10:00Z",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "imageSha256": "0122dad1831dc98ba71a467842d51436e217719ec9c1cf4c630eb7ddcf77a718",
         "pngSha256": "1485a71e09f2d1b302da50bd82fd67206ef117a8fe6d2429347e73460309473c",
         "importedAt": "2026-10-15T20:21:46Z",
@@ -1104,7 +1174,8 @@
           "pngSha256": "a94efbd891df33db3d6692a751c20212a0159412876c1a0f5d9c7e57239478b2",
           "importedAt": "2026-10-15T13:44:49Z",
           "supersededAt": "2026-10-15T20:21:46Z"
-        }
+        },
+        "approvedAt": "2026-10-16T10:47:39Z"
       }
     },
     "veronicastrum-album": {
@@ -1115,7 +1186,7 @@
       "sourceFilename": "white_veronicastrum_flowering_perennial.png",
       "importedAt": "2026-10-15T07:10:00Z",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "imageSha256": "0cc8951b50aaff3d1b13ba4446bedd39348c84a720403ebea5d2a7493683064f",
         "pngSha256": "9df960b46effc8851b8f9779149692a75db234e7d7e08673e1810d182026f33d",
         "importedAt": "2026-10-15T20:21:46Z",
@@ -1125,94 +1196,107 @@
           "pngSha256": "eaa04ca06152084023cee1c6222a96da4d7ec23764cf84f84ba1d2c33017635d",
           "importedAt": "2026-10-15T13:44:49Z",
           "supersededAt": "2026-10-15T20:21:46Z"
-        }
+        },
+        "approvedAt": "2026-10-16T10:47:39Z"
       }
     },
     "rosa-bonica": {
-      "status": "pending_review",
+      "status": "confirmed",
       "imageSha256": "c56f1b467899270e44ecced142e004809a545353f529443bb61f485142e17ed9",
       "pngSha256": "7694045b77dee3c72642c310e8cc01753a37f4ccbbd360b87aa31e5064ea508c",
       "bundleMatchStatus": "filename_match_unreviewed",
       "sourceFilename": "rosa-bonica.png",
       "importedAt": "2026-10-15T22:37:18Z",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "imageSha256": "cc53a8f4b8cd68b5482f84ef7fb31dbda73aa14a749a7816a5128b966898f7a5",
         "pngSha256": "862af3dbfe293674adc9e1be0fec4847b7c3df05fb56a38b44d721af586940e2",
-        "importedAt": "2026-10-16T08:27:52Z"
-      }
+        "importedAt": "2026-10-16T08:27:52Z",
+        "approvedAt": "2026-10-16T10:47:39Z"
+      },
+      "approvedAt": "2026-10-16T10:47:39Z"
     },
     "philadelphus-manteau-dhermine": {
-      "status": "pending_review",
+      "status": "confirmed",
       "imageSha256": "ca7ed06a35a70e9afa542a2312b2971e40d8da54e031bba1ee5b511fe9bdfa5f",
       "pngSha256": "4f3446feb3f3786256eaa79f98cce537a83874e44abfa059cb93b076751b50ea",
       "bundleMatchStatus": "filename_match_unreviewed",
       "sourceFilename": "philadelphus-manteau-dhermine.png",
       "importedAt": "2026-10-15T22:37:18Z",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "imageSha256": "8965666286a7728e216fa62cf777c425209265ef49ad03a1ecdfd9b053420b34",
         "pngSha256": "1fd4a3187664c5a07f05c0755adbdf0a46d0afdf7ddda3ea8df462ebfadc21f0",
-        "importedAt": "2026-10-16T08:27:52Z"
-      }
+        "importedAt": "2026-10-16T08:27:52Z",
+        "approvedAt": "2026-10-16T10:47:39Z"
+      },
+      "approvedAt": "2026-10-16T10:47:39Z"
     },
     "phlox-blue-paradise": {
-      "status": "pending_review",
+      "status": "confirmed",
       "imageSha256": "af50d7f6f4108039c92ed619dd3183ae8581ccd4da1f957659a4aac755801114",
       "pngSha256": "05343606051d43592431e9a467abe73eace8cb4d7a4fdd49a267cb5debccf77c",
       "bundleMatchStatus": "filename_match_unreviewed",
       "sourceFilename": "phlox-blue-paradise.png",
       "importedAt": "2026-10-15T22:37:18Z",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "imageSha256": "69e43ea0c714b057962d097201e7cadfc8ac9642e3d7a819b38156d936fb417e",
         "pngSha256": "307803acfe9675e35c421ff416a4846b79a4b5bffdbe6816e928f80ca5b72982",
-        "importedAt": "2026-10-16T08:27:52Z"
-      }
+        "importedAt": "2026-10-16T08:27:52Z",
+        "approvedAt": "2026-10-16T10:47:39Z"
+      },
+      "approvedAt": "2026-10-16T10:47:39Z"
     },
     "paeonia-duchesse-de-nemours": {
-      "status": "pending_review",
+      "status": "confirmed",
       "imageSha256": "13d100fc903569b978374e9ee9793229b4b1b2432e998c03ca10a76c1c29d362",
       "pngSha256": "3d565c73a54939298bb998681853e94478b56808a6ff263e3b7346c43e871221",
       "bundleMatchStatus": "filename_match_unreviewed",
       "sourceFilename": "paeonia-duchesse-de-nemours.png",
       "importedAt": "2026-10-15T22:37:18Z",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "imageSha256": "cabde12216d018cbc5ff81e7d1fe16f038b36cd332e1786bc7f389b28a23665d",
         "pngSha256": "efc9dab79442d6257b3283f829ff4cd849d6bd20b39c5e1cf587065b53d24cfa",
-        "importedAt": "2026-10-16T08:27:52Z"
-      }
+        "importedAt": "2026-10-16T08:27:52Z",
+        "approvedAt": "2026-10-16T10:47:39Z"
+      },
+      "approvedAt": "2026-10-16T10:47:39Z"
     },
     "digitalis-purpurea-alba": {
-      "status": "pending_review",
+      "status": "confirmed",
       "imageSha256": "0c0eded90de7e25736e9c9bf8a7e7b2ab468ff2e9d66cddd0481cbbb437294c6",
       "pngSha256": "19cc19cac6d3532806e5bfadbfcc6d6416d430adc980020c83f7d1278193b30d",
       "bundleMatchStatus": "filename_match_unreviewed",
       "sourceFilename": "digitalis-purpurea-alba-latest.png",
       "importedAt": "2026-10-16T10:32:47Z",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "imageSha256": "663e9949164555cda0c4d78bc23a2de76bdd735a5f4cc1c27511721bef84ce4a",
         "pngSha256": "d1bd77c74c026fa96aea8da020ecbcbd474bda2661b25c62cf76aa4f171b8cf7",
-        "importedAt": "2026-10-16T10:32:47Z"
-      }
+        "importedAt": "2026-10-16T10:32:47Z",
+        "approvedAt": "2026-10-16T10:47:39Z"
+      },
+      "approvedAt": "2026-10-16T10:47:39Z"
     },
     "echinacea-powwow-white": {
-      "status": "pending_review",
+      "status": "confirmed",
       "imageSha256": "c2172f70e51e2e44e64afba42b019cc947d2248d6ad2ceea33f463176057290e",
       "pngSha256": "f5c4985cfe9add83b578361c5a8fb64ece37348037398ac21ebf0d8052484d15",
       "bundleMatchStatus": "filename_match_unreviewed",
       "sourceFilename": "echinacea-powwow-white-latest.png",
       "importedAt": "2026-10-16T10:32:47Z",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "imageSha256": "21732d10e3b1b91c0e1bf422fd20f7b44660d30fb40fe4ef295cd35c2d86b153",
         "pngSha256": "11d503b95a2ef43fa6597f67a72de94af3457ac592f736331f5b292819287923",
-        "importedAt": "2026-10-16T10:32:47Z"
-      }
+        "importedAt": "2026-10-16T10:32:47Z",
+        "approvedAt": "2026-10-16T10:47:39Z"
+      },
+      "approvedAt": "2026-10-16T10:47:39Z"
     }
   },
-  "updated": "2026-10-16T10:32:47Z",
+  "updated": "2026-10-16T10:47:39Z",
   "watercolourNote": "plants[id].watercolour.status is awaiting_review until approved by editing this file (never automatically)."
 }
