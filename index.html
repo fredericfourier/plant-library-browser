@@ -44,7 +44,24 @@ dialog{width:min(850px,96vw);border:0;border-radius:16px;padding:0;background:va
 .toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,20px);background:#273229;color:white;padding:10px 14px;border-radius:10px;box-shadow:var(--shadow);opacity:0;pointer-events:none;transition:.2s;z-index:30}.toast.show{opacity:1;transform:translate(-50%,0)}
 @media(max-width:650px){.head{flex-wrap:wrap}.head>div{width:100%}.grid{grid-template-columns:1fr}.media{grid-template-columns:1fr}.attrs{grid-template-columns:1fr 1fr}.stage{min-height:240px}.photoGrid{grid-template-columns:1fr 1fr}.tools>*{flex:1 1 145px}.actionBtn{justify-content:center}.contactSheet{grid-template-columns:repeat(2,minmax(0,1fr));padding:10px;gap:9px}.sheetCard{min-height:220px}.sheetArt{height:145px}}
 @media print{body>*:not(#sheetDlg){display:none!important}#sheetDlg{display:block!important;position:static!important;width:100%!important;max-width:none!important;box-shadow:none!important}.dh{position:static}.sheetToolbar .actionBtn,.close{display:none!important}.contactSheet{grid-template-columns:repeat(4,1fr);background:white}.sheetCard{break-inside:avoid}}
-.variantNav{display:flex;align-items:center;justify-content:center;gap:16px;margin:5px 0 12px}.variantNav button{min-width:46px;justify-content:center}.variantNav span{min-width:145px;text-align:center;font-weight:600}</style>
+.variantNav{display:flex;align-items:center;justify-content:center;gap:16px;margin:5px 0 12px}.variantNav button{min-width:46px;justify-content:center}.variantNav span{min-width:145px;text-align:center;font-weight:600}
+/* Optional grouped botanical browsing; the canonical plant records are unchanged. */
+.groupModeBar{display:flex;align-items:center;gap:10px;margin:4px 0 14px;flex-wrap:wrap}
+.groupModeLabel{font-size:12px;color:var(--muted);font-weight:600}
+.groupModeSwitch{display:inline-flex;gap:3px;padding:3px;border:1px solid var(--line);border-radius:11px;background:#fffdf8}
+.groupModeSwitch button{border:0;border-radius:8px;background:transparent;padding:7px 13px;cursor:pointer;color:var(--muted)}
+.groupModeSwitch button[aria-pressed="true"]{background:var(--accent-soft);color:var(--ink);font-weight:650}
+.groupModeSwitch button:focus-visible,.genusHead:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.groupList{display:grid;gap:10px}
+.genusGroup{border:1px solid var(--line);border-radius:14px;background:var(--card);overflow:hidden}
+.genusHead{display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;padding:15px 16px;border:0;background:transparent;text-align:left;cursor:pointer}
+.genusHead:hover{background:var(--accent-soft)}
+.genusHeadLabel{display:flex;align-items:center;gap:10px;font:600 19px Georgia,serif}
+.genusChevron{display:inline-block;min-width:14px;color:var(--accent);font:700 18px system-ui,sans-serif}
+.genusCount{white-space:nowrap;color:var(--muted);font-size:12px}
+.genusGrid{padding:0 12px 12px}
+#grid[hidden],#groups[hidden]{display:none}
+</style>
 </head><body>
 <header><div class="head"><div><h1>Plant Library</h1><div id="meta" class="meta">Loading live data…</div></div><input id="q" class="search" placeholder="Search plants…"></div></header>
 <main>
@@ -57,7 +74,8 @@ dialog{width:min(850px,96vw);border:0;border-radius:16px;padding:0;background:va
 <button id="contactBtn" class="actionBtn">▦ Contact sheet</button>
 </div>
 <div class="boxRow"><label class="bboxTog"><input type="checkbox" id="bboxToggle" checked> Show bounding boxes</label><label class="bboxTog"><input type="checkbox" id="cmpToggle"> Compare images</label></div>
-<div id="stats" class="stats"></div><div id="grid" class="grid"></div>
+<div class="groupModeBar"><span class="groupModeLabel">View</span><div class="groupModeSwitch" role="group" aria-label="Plant library view"><button type="button" data-view="all" aria-pressed="true">All plants</button><button type="button" data-view="genus" aria-pressed="false">By genus</button></div></div>
+<div id="stats" class="stats"></div><div id="grid" class="grid"></div><div id="groups" class="groupList" hidden></div>
 </main>
 
 <dialog id="dlg">
@@ -90,7 +108,7 @@ dialog{width:min(850px,96vw);border:0;border-radius:16px;padding:0;background:va
 
 <script>
 const DATA="./data/plants.json", ART="./assets/plant-watercolours/", ASSET_MANIFEST="./assets/plant-watercolours/manifest.json";
-let DB=[], state={q:"",type:"",art:"",added:"",light:"",sort:"name",dir:"asc",variant:"botanical"}, imageNavIds=[], detailNavIds=[];
+let DB=[], state={q:"",type:"",art:"",added:"",light:"",sort:"name",dir:"asc",variant:"botanical",view:"all"}, imageNavIds=[], detailNavIds=[];
 const $=s=>document.querySelector(s), esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const title=s=>String(s||"").replaceAll("_"," ").replace(/\b\w/g,c=>c.toUpperCase());
 function vals(v){return Array.isArray(v)?v.join(", "):(v??"—")}
@@ -102,6 +120,12 @@ function toast(msg){let t=$("#toast");t.textContent=msg;t.classList.add("show");
 function sortCmp(x,y){let k=state.sort==="height"?"heightCm":state.sort==="spread"?"spreadCm":"",d=state.dir==="desc"?-1:1,c=k?((x[k]||0)-(y[k]||0))*d:x.botanicalName.localeCompare(y.botanicalName)*d;return c||x.botanicalName.localeCompare(y.botanicalName)||String(x.id).localeCompare(String(y.id))}
 function sortDesc(){let d=state.dir==="desc",f=state.sort;return f==="height"?(d?"tallest to shortest":"shortest to tallest"):f==="spread"?(d?"widest to narrowest":"narrowest to widest"):(d?"Z–A":"A–Z")}
 function syncSortBtn(){let d=state.dir==="desc",b=$("#sortDir");b.setAttribute("aria-label",d?"Sort descending ("+sortDesc()+"). Switch to ascending":"Sort ascending ("+sortDesc()+"). Switch to descending");b.title=d?"Descending ("+sortDesc()+"): click for ascending":"Ascending ("+sortDesc()+"): click for descending";b.dataset.dir=state.dir;$("#sortArrow").setAttribute("d",d?"M8 3v10M4 9l4 4 4-4":"M8 13V3M4 7l4-4 4 4")}
+
+/* A genus groups related species and named hybrids without pretending that all cultivars
+   in a genus belong to the same botanical species. No plant-record migration is needed. */
+const expandedGenera=new Set(), closedSearchGenera=new Set();
+function genusOf(p){let m=String(p.botanicalName||"").trim().match(/^(?:×\s*)?([A-Za-z][A-Za-z-]*)/);return m?m[1]:"Other"}
+function groupedPlants(plants){let groups=new Map();for(let p of plants){let genus=genusOf(p);if(!groups.has(genus))groups.set(genus,[]);groups.get(genus).push(p)}let direction=state.sort==="name"&&state.dir==="desc"?-1:1;return [...groups.entries()].sort((a,b)=>a[0].localeCompare(b[0])*direction)}
 function filtered(){let a=DB.filter(p=>(!state.q||(p.botanicalName+" "+(p.commonName||"")+" "+(p.description||"")).toLowerCase().includes(state.q))&&(!state.type||p.type===state.type)&&(!state.art||(state.art==="with"?p._hasIllustration:!p._hasIllustration))&&(!state.light||(p.light||[]).includes(state.light))&&(!state.added||((ADD.batches||[]).find(b=>b.id===state.added)?.plantIds||[]).includes(p.id)));a.sort(sortCmp);return a}
 let gridScale=1;const boxH=p=>Math.max(28,(p.heightCm||1)*gridScale),boxW=p=>Math.max(28,(p.spreadCm||1)*gridScale);
 const CMP={on:false};
@@ -109,7 +133,43 @@ function pane(p,v){let u=assetUrl(p,v),av=availableVariants(p).includes(v)&&u,la
 function missingArt(p){let b=!!p._hasWatercolour,w=!!p._variants?.watercolour?.file,t=!b&&!w?"No illustrations yet":!w?"Watercolour not yet available":"Botanical not yet available";return '<div class="missing noArt" data-missing-art="'+esc(p.id)+'"><b>'+t+'</b><span data-art-state="botanical">Botanical: '+(b?"available":"missing")+'</span><span data-art-state="watercolour">Watercolour: '+(w?"available":"missing")+'</span></div>'}
 function card(p){if(CMP.on&&p._hasWatercolour)return cardShell(p,'<div class="art cmp">'+pane(p,"botanical")+pane(p,"watercolour")+'</div>');let art=p._hasWatercolour&&assetUrl(p)?'<img data-env-h="'+boxH(p).toFixed(2)+'" style="visibility:hidden" data-zoom="'+esc(p.id)+'" src="'+assetUrl(p)+'" alt="'+esc(p.botanicalName)+' illustration" onerror="this.replaceWith(Object.assign(document.createElement(\'div\'),{className:\'missing\',textContent:\'Illustration file unavailable\'}))">':missingArt(p);return cardShell(p,'<div class="art">'+art+(p._hasWatercolour&&assetUrl(p)?'<div class="envBox" title="Expected '+esc(p.spreadCm||"?")+' × '+esc(p.heightCm||"?")+' cm mature envelope" style="width:'+boxW(p).toFixed(0)+'px;height:'+boxH(p).toFixed(0)+'px"></div>':'')+(reviewLabel(p)?'<span class="needsVerify" data-needs-verification="'+esc(p.id)+'">'+reviewLabel(p)+'</span>':'')+'</div>')}
 function cardShell(p,artHtml){return '<article class="card" data-id="'+esc(p.id)+'">'+artHtml+'<div class="body"><div class="nameBlock"><div class="bot">'+esc(p.botanicalName)+'</div><div class="common">'+esc(p.commonName||"")+'</div></div><div class="pills"><span class="pill">↕ '+esc(p.heightCm||"?")+' cm</span><span class="pill">↔ '+esc(p.spreadCm||"?")+' cm</span><span class="pill">'+esc(title(p.type))+'</span></div></div>'+'</article>'}
-function render(){let a=filtered();$("#grid").classList.toggle("cmp",CMP.on);gridScale=Math.min(1.6,214/Math.max(...DB.flatMap(p=>[p.heightCm||1,p.spreadCm||1])));if(CMP.on){let W=$("#grid").clientWidth,n=Math.max(1,Math.floor((W+12)/332)),cw=(W-(n-1)*12)/n;gridScale=Math.min(gridScale,(cw/2-10)/Math.max(...DB.map(p=>p.spreadCm||1)))}$("#stats").textContent=a.length+" of "+DB.length+" plants · "+DB.filter(p=>p._hasIllustration).length+" with illustrations"+(DB.some(isPending)?" · "+DB.filter(isPending).length+" awaiting botanical verification":"")+(DB.some(wcAwaiting)?" · "+DB.filter(wcAwaiting).length+" watercolours awaiting review":"")+" · live from "+DATA;$("#grid").innerHTML=a.map(card).join("");document.querySelectorAll(".card").forEach(x=>x.onclick=e=>{if(e.target.closest("[data-zoom]"))return;if(CMP.on){openImage(x.dataset.id,filtered().filter(p=>p._hasWatercolour).map(p=>p.id));return}openPlant(x.dataset.id,filtered().map(p=>p.id))});document.querySelectorAll("[data-zoom]").forEach(img=>{img.onclick=e=>{e.stopPropagation();openImage(img.dataset.zoom,filtered().filter(p=>p._hasWatercolour).map(p=>p.id))};});document.querySelectorAll("#grid img[data-env-h]").forEach(placeInEnvelope);document.body.classList.toggle("showBoxes",BB.show)}
+function render(){
+  let a=filtered(),byGenus=state.view==="genus",flatGrid=$("#grid"),groupList=$("#groups");
+  flatGrid.hidden=byGenus;groupList.hidden=!byGenus;
+  flatGrid.classList.toggle("cmp",CMP.on);
+  document.querySelectorAll("[data-view]").forEach(b=>b.setAttribute("aria-pressed",b.dataset.view===state.view?"true":"false"));
+  gridScale=Math.min(1.6,214/Math.max(...DB.flatMap(p=>[p.heightCm||1,p.spreadCm||1])));
+  if(CMP.on){let width=(byGenus?groupList:flatGrid).clientWidth,n=Math.max(1,Math.floor((width+12)/332)),cw=(width-(n-1)*12)/n;gridScale=Math.min(gridScale,(cw/2-10)/Math.max(...DB.map(p=>p.spreadCm||1)))}
+  $("#stats").textContent=a.length+" of "+DB.length+" plants · "+DB.filter(p=>p._hasIllustration).length+" with illustrations"+(DB.some(isPending)?" · "+DB.filter(isPending).length+" awaiting botanical verification":"")+(DB.some(wcAwaiting)?" · "+DB.filter(wcAwaiting).length+" watercolours awaiting review":"")+" · live from "+DATA;
+  let active=byGenus?groupList:flatGrid;
+  if(byGenus){
+    let totals=new Map();for(let p of DB){let g=genusOf(p);totals.set(g,(totals.get(g)||0)+1)}
+    groupList.innerHTML=groupedPlants(a).map(([genus,plants])=>{
+      let opened=state.q?!closedSearchGenera.has(genus):expandedGenera.has(genus),count=plants.length,total=totals.get(genus);
+      return '<section class="genusGroup"><button type="button" class="genusHead" data-genus="'+esc(genus)+'" aria-expanded="'+opened+'"><span class="genusHeadLabel"><span class="genusChevron" aria-hidden="true">'+(opened?'▾':'▸')+'</span>'+esc(genus)+'</span><span class="genusCount">'+count+(count!==total?' of '+total:'')+' plant'+(count===1?'':'s')+'</span></button>'+(opened?'<div class="genusGrid grid'+(CMP.on?' cmp':'')+'">'+plants.map(card).join("")+'</div>':'')+'</section>'
+    }).join("");
+    flatGrid.innerHTML="";
+    groupList.querySelectorAll(".genusHead").forEach(b=>b.onclick=()=>{
+      let g=b.dataset.genus,target=state.q?closedSearchGenera:expandedGenera;
+      if(target.has(g))target.delete(g);else target.add(g);
+      render();
+    });
+  }else{
+    flatGrid.innerHTML=a.map(card).join("");
+    groupList.innerHTML="";
+  }
+  active.querySelectorAll(".card").forEach(x=>x.onclick=e=>{
+    if(e.target.closest("[data-zoom]"))return;
+    if(CMP.on){openImage(x.dataset.id,filtered().filter(p=>p._hasWatercolour).map(p=>p.id));return}
+    openPlant(x.dataset.id,filtered().map(p=>p.id))
+  });
+  active.querySelectorAll("[data-zoom]").forEach(img=>img.onclick=e=>{
+    e.stopPropagation();
+    openImage(img.dataset.zoom,filtered().filter(p=>p._hasWatercolour).map(p=>p.id))
+  });
+  active.querySelectorAll("img[data-env-h]").forEach(placeInEnvelope);
+  document.body.classList.toggle("showBoxes",BB.show)
+}
 function attr(k,v){return '<div class="attr"><b>'+esc(k)+'</b><div>'+esc(vals(v))+'</div></div>'}
 function stepSequence(ids,currentId,dir){let i=ids.indexOf(currentId),n=i+dir;return i>=0&&n>=0&&n<ids.length?ids[n]:null}
 function attrsHtml(p){let ratio=p.heightCm&&p.spreadCm?(p.spreadCm/p.heightCm).toFixed(2):"—";return [attr("Height",(p.heightCm||"—")+" cm"),attr("Spread",(p.spreadCm||"—")+" cm"),attr("Target W/H",ratio),attr("Canonical height",p.heightCm?((p.heightCm*10)+" px @ 10 px/cm"):"—"),attr("Time to maturity",p.maturity?(p.maturity.minYears+"–"+p.maturity.maxYears+" years"):"—"),attr("Habit",p.design?.habit),attr("Visual density",p.design?.visualDensity),attr("Light",p.light?.map(title)),attr("Soil",p.soil?.map(title)),attr("Moisture",p.moisture?.map(title)),attr("Flower colours",p.flowerColours?.map(title)),attr("Foliage",title(p.foliage)),attr("Hardiness",p.hardiness),attr("Layer",p.design?.layer)].join("")}
@@ -140,8 +200,9 @@ document.querySelectorAll("[data-iv-variant]").forEach(b=>b.onclick=()=>setViewe
 $("#ivInfoBtn").onclick=()=>{let box=$("#ivInfo"),open=box.hidden;box.hidden=!open;$("#ivInfoBtn").setAttribute("aria-expanded",open?"true":"false");$("#ivInfoBtn").textContent=open?"Info ▴":"Info ▾"};
 if(window.ResizeObserver)new ResizeObserver(layoutViewer).observe($(".ivStage"));window.addEventListener("resize",layoutViewer);
 let swipeX=null;$("#swipeStage").addEventListener("touchstart",e=>{swipeX=e.changedTouches[0].screenX},{passive:true});$("#swipeStage").addEventListener("touchend",e=>{if(swipeX===null)return;let delta=e.changedTouches[0].screenX-swipeX;swipeX=null;if(Math.abs(delta)>55)navigateImage(delta<0?1:-1)},{passive:true});
+document.querySelectorAll("[data-view]").forEach(b=>b.onclick=()=>{state.view=b.dataset.view;render()});
 $("#variant").onchange=e=>{state.variant=e.target.value;render();if($("#dlg").open)openPlant($("#dlg").dataset.plantId,detailNavIds)};
-$("#q").oninput=e=>{state.q=e.target.value.toLowerCase();render()};$("#type").onchange=e=>{state.type=e.target.value;render()};$("#artFilter").onchange=e=>{state.art=e.target.value;render()};$("#newFilter").onchange=e=>{state.added=e.target.value;render()};$("#light").onchange=e=>{state.light=e.target.value;render()};$("#sort").onchange=e=>{state.sort=e.target.value;syncSortBtn();render();if($("#sheetDlg").open)renderContactSheet()};$("#sortDir").onclick=()=>{state.dir=state.dir==="desc"?"asc":"desc";syncSortBtn();render();if($("#sheetDlg").open)renderContactSheet()};syncSortBtn();
+$("#q").oninput=e=>{state.q=e.target.value.toLowerCase();closedSearchGenera.clear();render()};$("#type").onchange=e=>{state.type=e.target.value;render()};$("#artFilter").onchange=e=>{state.art=e.target.value;render()};$("#newFilter").onchange=e=>{state.added=e.target.value;render()};$("#light").onchange=e=>{state.light=e.target.value;render()};$("#sort").onchange=e=>{state.sort=e.target.value;syncSortBtn();render();if($("#sheetDlg").open)renderContactSheet()};$("#sortDir").onclick=()=>{state.dir=state.dir==="desc"?"asc":"desc";syncSortBtn();render();if($("#sheetDlg").open)renderContactSheet()};syncSortBtn();
 /* ---- botanical image verification ---------------------------------------------------------------------------------
    Status lives in the repo: data/botanical-verification.json (plants[id].status = "confirmed" | "pending_review").
    Approving a plant = editing that record and pushing; the "Needs verification" label disappears after deployment. */
