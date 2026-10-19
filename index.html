@@ -58,7 +58,7 @@ dialog{width:min(850px,96vw);border:0;border-radius:16px;padding:0;background:va
 .genusHead:hover{background:var(--accent-soft)}
 .genusHeadLabel{display:flex;align-items:center;gap:8px;font:600 15px/1.2 Georgia,serif}
 .genusChevron{display:inline-block;min-width:11px;color:var(--accent);font:700 14px system-ui,sans-serif}
-.genusCount{white-space:nowrap;color:var(--muted);font-size:11px}
+.genusCount{white-space:nowrap;color:var(--accent);background:var(--accent-soft);padding:2px 7px;border-radius:999px;font:600 11px/1.3 system-ui,sans-serif}
 .genusGrid{padding:0 10px 10px}
 #grid[hidden],#groups[hidden]{display:none}
 </style>
@@ -146,7 +146,7 @@ function render(){
     let totals=new Map();for(let p of DB){let g=genusOf(p);totals.set(g,(totals.get(g)||0)+1)}
     groupList.innerHTML=groupedPlants(a).map(([genus,plants])=>{
       let opened=state.q?!closedSearchGenera.has(genus):expandedGenera.has(genus),count=plants.length,total=totals.get(genus);
-      return '<section class="genusGroup"><button type="button" class="genusHead" data-genus="'+esc(genus)+'" aria-expanded="'+opened+'"><span class="genusHeadLabel"><span class="genusChevron" aria-hidden="true">'+(opened?'▾':'▸')+'</span>'+esc(genus)+'</span><span class="genusCount">'+count+(count!==total?' of '+total:'')+' plant'+(count===1?'':'s')+'</span></button>'+(opened?'<div class="genusGrid grid'+(CMP.on?' cmp':'')+'">'+plants.map(card).join("")+'</div>':'')+'</section>'
+      return '<section class="genusGroup"><button type="button" class="genusHead" data-genus="'+esc(genus)+'" aria-expanded="'+opened+'"><span class="genusHeadLabel"><span class="genusChevron" aria-hidden="true">'+(opened?'▾':'▸')+'</span>'+esc(genus)+'<span class="genusCount">'+count+(count!==total?' of '+total:'')+' plant'+(count===1?'':'s')+'</span></span></button>'+(opened?'<div class="genusGrid grid'+(CMP.on?' cmp':'')+'">'+plants.map(card).join("")+'</div>':'')+'</section>'
     }).join("");
     flatGrid.innerHTML="";
     groupList.querySelectorAll(".genusHead").forEach(b=>b.onclick=()=>{
