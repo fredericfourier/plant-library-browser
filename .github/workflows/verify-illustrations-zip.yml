@@ -1,0 +1,42 @@
+name: Validate illustrations ZIP
+
+on:
+  pull_request:
+    paths:
+      - 'tools/build_illustrations_zip.py'
+      - 'data/plants.json'
+      - 'assets/plant-watercolours/**'
+      - '.github/workflows/verify-illustrations-zip.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Build and verify downloadable ZIP
+        run: python3 tools/build_illustrations_zip.py
+      - name: Confirm ZIP contents and reproducibility
+        run: |
+          python3 - <<'PY'
+          import hashlib, json, subprocess, zipfile
+          from pathlib import Path
+          path = Path('downloads/border-designer-plant-illustrations.zip')
+          with zipfile.ZipFile(path) as archive:
+              assert archive.testzip() is None
+              data = json.loads(archive.read('illustrations-manifest.json'))
+              expected = data['counts']['illustrations'] + 3
+              assert len(archive.namelist()) == expected, (len(archive.namelist()), expected)
+              for plant in data['plants']:
+                  for item in plant['files'].values():
+                      assert hashlib.sha256(archive.read(item['path'])).hexdigest() == item['sha256']
+          before = hashlib.sha256(path.read_bytes()).hexdigest()
+          subprocess.run(['python3', 'tools/build_illustrations_zip.py'], check=True)
+          after = hashlib.sha256(path.read_bytes()).hexdigest()
+          assert before == after, 'Archive must be byte-for-byte deterministic'
+          print('Verified', data['counts'])
+          PY
