@@ -80,7 +80,8 @@ def main():
             info = ZipInfo(dest, STAMP)
             info.compress_type = ZIP_STORED  # WebP is already compressed
             info.external_attr = 0o644 << 16
-            with src.open('rb') as f, zf.open(info, 'w', force_zip64=True) as z:
+            info.file_size = src.stat().st_size
+            with src.open('rb') as f, zf.open(info, 'w') as z:
                 while chunk := f.read(1024 * 1024):
                     z.write(chunk)
         add_bytes(zf, 'plant-data.json', catalog_bytes)
