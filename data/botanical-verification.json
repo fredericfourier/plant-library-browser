@@ -1115,23 +1115,30 @@
       "sourceFilename": "isolated_evergreen_topiary_bush.png",
       "importedAt": "2026-10-15T07:10:00Z",
       "watercolour": {
-        "status": "confirmed",
-        "imageSha256": "dc1527d0df3abbe4f6e3fe18af154525241db0e2b80263913430c059a04d9179",
-        "pngSha256": "d3c7da444fca90ee3b178552908f260ac9ed81badb2b7c6e0a8afef7e1653f62",
-        "importedAt": "2026-10-15T20:21:46Z",
+        "status": "awaiting_review",
+        "imageSha256": "a66083704f41efd4ecd0c6b59062ca01d22489a056cc0eb360b7738c6bfac6ff",
+        "pngSha256": "d6faffa1228d5a76e69f83a7c0d602536b261f24277379d5d77654f3cdcb1221",
+        "importedAt": "2026-10-21T00:04:45Z",
         "previous": {
-          "status": "awaiting_review",
-          "imageSha256": "16a894d652279b2e5169258ec2ec46d787d0ee3aa9620f902e4a0b046a5e6b49",
-          "pngSha256": "12b0e17f39e3391a6269821482704c8fdee39d460b20ff4102bec036591b7969",
-          "importedAt": "2026-10-15T13:44:49Z",
+          "status": "confirmed",
+          "imageSha256": "dc1527d0df3abbe4f6e3fe18af154525241db0e2b80263913430c059a04d9179",
+          "pngSha256": "d3c7da444fca90ee3b178552908f260ac9ed81badb2b7c6e0a8afef7e1653f62",
+          "importedAt": "2026-10-15T20:21:46Z",
           "previous": {
-            "status": "canonical",
-            "imageSha256": "8b504647fb1789047a42678be74dbfb9c1cb95455a342168d3fafc63eccaa673",
-            "supersededAt": "2026-10-15T13:44:49Z"
+            "status": "awaiting_review",
+            "imageSha256": "16a894d652279b2e5169258ec2ec46d787d0ee3aa9620f902e4a0b046a5e6b49",
+            "pngSha256": "12b0e17f39e3391a6269821482704c8fdee39d460b20ff4102bec036591b7969",
+            "importedAt": "2026-10-15T13:44:49Z",
+            "previous": {
+              "status": "canonical",
+              "imageSha256": "8b504647fb1789047a42678be74dbfb9c1cb95455a342168d3fafc63eccaa673",
+              "supersededAt": "2026-10-15T13:44:49Z"
+            },
+            "supersededAt": "2026-10-15T20:21:46Z"
           },
-          "supersededAt": "2026-10-15T20:21:46Z"
-        },
-        "approvedAt": "2026-10-16T10:47:39Z"
+          "approvedAt": "2026-10-16T10:47:39Z",
+          "supersededAt": "2026-10-21T00:04:45Z"
+        }
       }
     },
     "thalictrum-delavayi": {
@@ -1297,6 +1304,6 @@
       "approvedAt": "2026-10-16T10:47:39Z"
     }
   },
-  "updated": "2026-10-16T10:47:39Z",
+  "updated": "2026-10-21T00:04:45Z",
   "watercolourNote": "plants[id].watercolour.status is awaiting_review until approved by editing this file (never automatically)."
 }

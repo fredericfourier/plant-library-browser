@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "updated": "2026-10-16",
+  "updated": "2026-10-21",
   "assets": {
     "alchemilla-mollis": {
       "file": "assets/plant-watercolours/alchemilla-mollis.webp",
@@ -210,11 +210,11 @@
           "status": "awaiting_review",
           "productionReady": false,
           "canonicalScaleApplied": false,
-          "originalWidthPx": 1536,
-          "originalHeightPx": 1024,
+          "originalWidthPx": 1254,
+          "originalHeightPx": 1254,
           "transparent": true,
-          "sha256": "dc1527d0df3abbe4f6e3fe18af154525241db0e2b80263913430c059a04d9179",
-          "pngSha256": "d3c7da444fca90ee3b178552908f260ac9ed81badb2b7c6e0a8afef7e1653f62",
+          "sha256": "a66083704f41efd4ecd0c6b59062ca01d22489a056cc0eb360b7738c6bfac6ff",
+          "pngSha256": "d6faffa1228d5a76e69f83a7c0d602536b261f24277379d5d77654f3cdcb1221",
           "warnings": []
         }
       },
