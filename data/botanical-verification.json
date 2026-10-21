@@ -1115,10 +1115,11 @@
       "sourceFilename": "isolated_evergreen_topiary_bush.png",
       "importedAt": "2026-10-15T07:10:00Z",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "imageSha256": "a66083704f41efd4ecd0c6b59062ca01d22489a056cc0eb360b7738c6bfac6ff",
         "pngSha256": "d6faffa1228d5a76e69f83a7c0d602536b261f24277379d5d77654f3cdcb1221",
         "importedAt": "2026-10-21T00:04:45Z",
+        "approvedAt": "2026-10-21T09:25:15Z",
         "previous": {
           "status": "confirmed",
           "imageSha256": "dc1527d0df3abbe4f6e3fe18af154525241db0e2b80263913430c059a04d9179",
