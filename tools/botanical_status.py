@@ -109,9 +109,11 @@ def build(prev, bd=None, bd_ref=None):
         pid = p["id"]
         webp, wc = ASSETS / f"{pid}{V['suffix']}.webp", ASSETS / f"{pid}-watercolour.webp"
         v, notes = ver.get(pid), []
+        if v is not None and "status" not in v:  # watercolour-only record (no botanical review yet) is not a botanical record
+            v = None
         asset = amf.get(pid, {})
         if is_wc():  # watercolour approval and file facts live under the watercolour variant only
-            v = (v or {}).get("watercolour")
+            v = (ver.get(pid) or {}).get("watercolour")
             asset = asset.get("variants", {}).get("watercolour", {})
         o = old.get(pid, {})
         if masters is not None:
@@ -261,7 +263,7 @@ def check(today):
             errs.append(f"{pid}: bad png master path {p['pngMasterPath']}")
         if is_wc():
             claimed.add(f"assets/plant-watercolours/{pid}.webp")  # botanical files are another manifest's concern, not orphans
-        if p["status"] == "missing" and (p["assetForm"] != "none" or w or c or p["pngMasterPath"]):
+        if p["status"] == "missing" and (p["assetForm"] != "none" or (c if is_wc() else w) or p["pngMasterPath"]):
             errs.append(f"{pid}: status missing but an asset exists")
         if p["status"] == "approved" and (p["approvalBasis"] != "explicit_manual_approval" or not p["manualApprovalAt"] or p["assetForm"] != "both"):
             errs.append(f"{pid}: approved without explicit manual approval and both files")
@@ -310,6 +312,41 @@ def require_fresh(cur, today=None):
                      + "; ".join(f"{p['plantId']} (batch {p['reservation']['batchId']}, expired {p['reservation']['expiresAt']})" for p in late)
                      + ".\nA generated package may still exist: import the images and `build`, or `renew --batch <B>`, or `release --batch <B>` "
                        "if the package is lost or rejected. No IDs were returned.")
+
+
+def fresh_masters(cur, bd, ref):
+    """Refuse when the PNG masters in border-designer <ref> disagree with the committed manifest (exit 2, no IDs)."""
+    new = build(cur, bd, ref)
+    a, b = json.loads(dump(new)), json.loads(dump(cur))
+    for d in (a, b):
+        (d.get("pngMasters") or {}).pop("commit", None)
+    if a != b:
+        diff = [p["plantId"] for p, q in zip(new["plants"], cur["plants"]) if p != q]
+        stop("STOP: PNG masters / brief in border-designer " + ref + " differ from the committed manifest"
+             + (f" (plants: {', '.join(diff[:12])}{' ...' if len(diff) > 12 else ''})" if diff else "") + ".\n"
+             "Run `python3 tools/botanical_status.py" + (" --type watercolour" if is_wc() else "") + f" build --bd {bd} --bd-ref {ref}`, review and commit "
+             + V["manifest"] + ", then repeat. No IDs were returned.")
+
+
+def sync_problems():
+    """Why the manifest cannot be presented as synchronised across sessions: uncommitted, unpushed, or behind upstream."""
+    rel = V["manifest"]
+    g = lambda *x: subprocess.run(["git", "-C", str(ROOT), *x], capture_output=True, text=True)
+    if g("rev-parse", "--git-dir").returncode:
+        return ["not a git checkout"]
+    out = []
+    if g("status", "--porcelain", "--", rel).stdout.strip():
+        out.append(f"{rel} has uncommitted changes (a local reservation is invisible to other sessions)")
+    if g("ls-files", "--error-unmatch", rel).returncode:
+        out.append(f"{rel} is not tracked by git")
+    if g("rev-parse", "--abbrev-ref", "@{u}").returncode:
+        out.append("current branch has no upstream: cannot confirm the manifest is pushed")
+    else:
+        if g("rev-list", "@{u}..HEAD", "--", rel).stdout.strip():
+            out.append(f"{rel} has local commits not pushed to the upstream branch")
+        if g("rev-list", "HEAD..@{u}", "--", rel).stdout.strip():
+            out.append(f"upstream has newer changes to {rel} (fetch and merge before queueing)")
+    return out
 
 
 def queue(cur, n, skip):
@@ -362,8 +399,12 @@ def main():
     sub = ap.add_subparsers(dest="cmd", required=True)
     day = lambda x: x.add_argument("--today", help="override today's date (YYYY-MM-DD), for tests")
     b = sub.add_parser("build"); b.add_argument("--bd"); b.add_argument("--bd-ref", default="origin/main")
-    day(sub.add_parser("check")); sub.add_parser("summary"); day(sub.add_parser("reservations"))
+    day(sub.add_parser("check")); sub.add_parser("summary"); sub.add_parser("sync"); day(sub.add_parser("reservations"))
     q = sub.add_parser("queue"); q.add_argument("n", nargs="?", type=int, default=10); q.add_argument("--skip", type=int, default=0); q.add_argument("--json", action="store_true")
+    q.add_argument("--bd", help="border-designer checkout: also refuse when its PNG masters/brief differ from the manifest")
+    q.add_argument("--bd-ref", default="origin/main")
+    q.add_argument("--require-synced", action="store_true",
+                   help="also refuse unless the manifest is committed and in step with its upstream branch (no uncommitted/unpushed reservations)")
     q.add_argument("--detail", action="store_true", help="print generation metadata for each queued plant as JSON"); day(q)
     s = sub.add_parser("set"); s.add_argument("status", choices=MANUAL); s.add_argument("ids", nargs="+"); s.add_argument("--note", default="")
     r = sub.add_parser("reserve"); r.add_argument("ids", nargs="+"); r.add_argument("--batch", required=True); r.add_argument("--source", default="")
@@ -388,11 +429,22 @@ def main():
         print(json.dumps(prev["summary"]))
     elif a.cmd == "queue":
         require_fresh(prev, today)
+        if a.bd:
+            fresh_masters(prev, a.bd, a.bd_ref)
+        if a.require_synced:
+            bad = sync_problems()
+            if bad:
+                stop("STOP: status manifest is not synchronised: " + "; ".join(bad) + ".\nCommit (and push, when sessions share the branch) the manifest, "
+                     "then repeat. No IDs were returned.")
         ids = queue(prev, a.n, a.skip)
         if a.detail:
             print(json.dumps(detail(prev, ids), indent=2, ensure_ascii=False))
         else:
             print(json.dumps(ids) if a.json else "\n".join(ids))
+    elif a.cmd == "sync":
+        bad = sync_problems()
+        print("\n".join(bad) if bad else "OK: manifest committed and in step with upstream", file=sys.stderr if bad else sys.stdout)
+        sys.exit(3 if bad else 0)
     elif a.cmd == "reservations":
         for p in prev["plants"]:
             if "reservation" in p:
