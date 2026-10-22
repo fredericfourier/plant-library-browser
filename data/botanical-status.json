@@ -15,7 +15,7 @@
   "pngMasters": {
     "repo": "fredericfourier/border-designer",
     "ref": "claude/botanical-masters-34",
-    "commit": "d33e88f5a9bcd7541b8a5ec9eb4b96051c18231a",
+    "commit": "078abc321d5fab26c4d9a734f02d8e03ac550031",
     "dir": "assets/plant-watercolours/masters"
   },
   "brief": {
@@ -23,7 +23,7 @@
     "file": "docs/briefs/BOTANICAL_ASSET_BRIEF.md",
     "version": "35ac6dd"
   },
-  "updated": "2026-10-22T13:24:00Z",
+  "updated": "2026-10-22T15:42:22Z",
   "summary": {
     "total": 105,
     "missing": 0,
@@ -1820,9 +1820,9 @@
       "expectsWatercolour": true,
       "assetForm": "both",
       "pngMasterPath": "assets/plant-watercolours/masters/lupinus-gallery-blue.png",
-      "pngSha256": "e85d2520031eb13d172b678c775c6a2ad137adc06f156dcee9107bc29afae7c1",
+      "pngSha256": "66f940a9a0ab365dbf5ce96a352a5cc9bf65b8e1f1cff5329574dcc34950744c",
       "webpPath": "assets/plant-watercolours/lupinus-gallery-blue.webp",
-      "webpSha256": "7434cc5d4746f0c7710528a61e483167a29cd8c569aa15753b214fb2cf44629c",
+      "webpSha256": "0d1d3a27393031993c366782144954100eabda2d92af6f5483c4fc15d73a010c",
       "verificationState": "pending_review",
       "approvalBasis": null,
       "matchConfidence": "provisional_cultivar_or_species_check",
@@ -1833,7 +1833,7 @@
       },
       "manualApprovalAt": null,
       "notes": "",
-      "lastUpdated": "2026-10-22T13:24:00Z"
+      "lastUpdated": "2026-10-22T15:42:22Z"
     },
     {
       "order": 76,
@@ -1892,9 +1892,9 @@
       "expectsWatercolour": true,
       "assetForm": "both",
       "pngMasterPath": "assets/plant-watercolours/masters/centaurea-montana.png",
-      "pngSha256": "d3ed23b5c54127fc8cb49036339b4f92662788edfaee61c7568ea37e95114b65",
+      "pngSha256": "9d5a580cbd3dd8f8e72df26da4f5f29a8a0c9e08fbbab1dfbce51574d9066de2",
       "webpPath": "assets/plant-watercolours/centaurea-montana.webp",
-      "webpSha256": "4b82ca75c974660060ccbc42eb823176ec8106ad4dca122ab0396bda11b02e53",
+      "webpSha256": "2dcdfef08ec5713e8557776e0d07730b91f1471ba9327a4522254bc88241db28",
       "verificationState": "pending_review",
       "approvalBasis": null,
       "matchConfidence": "provisional_cultivar_or_species_check",
@@ -1905,7 +1905,7 @@
       },
       "manualApprovalAt": null,
       "notes": "",
-      "lastUpdated": "2026-10-22T13:24:00Z"
+      "lastUpdated": "2026-10-22T15:42:22Z"
     },
     {
       "order": 79,
@@ -1988,9 +1988,9 @@
       "expectsWatercolour": true,
       "assetForm": "both",
       "pngMasterPath": "assets/plant-watercolours/masters/cerastium-tomentosum.png",
-      "pngSha256": "b6d759cb355ba4a8894479067854edb24a9217ca721448d9dea72d548a6d69a2",
+      "pngSha256": "15c660686daa737d4016988c1a00008fa61ea4f9dee31efbc202cffd1e8dd4c0",
       "webpPath": "assets/plant-watercolours/cerastium-tomentosum.webp",
-      "webpSha256": "cac21492f3e240aa3515b21842c4c9f90d0b56cc2bc7ea0e40e47146d1b46ad7",
+      "webpSha256": "1272a94294512a10b90874d81a0ac42d91922433b7085d8c9709eba8185d7398",
       "verificationState": "pending_review",
       "approvalBasis": null,
       "matchConfidence": "provisional_cultivar_or_species_check",
@@ -2001,7 +2001,7 @@
       },
       "manualApprovalAt": null,
       "notes": "",
-      "lastUpdated": "2026-10-22T13:24:00Z"
+      "lastUpdated": "2026-10-22T15:42:22Z"
     },
     {
       "order": 83,
@@ -2108,9 +2108,9 @@
       "expectsWatercolour": true,
       "assetForm": "both",
       "pngMasterPath": "assets/plant-watercolours/masters/campanula-persicifolia-alba.png",
-      "pngSha256": "97fd30e009c63285f190aabcf53234bcfc16adc4b8b4c296e6215c9df80b629c",
+      "pngSha256": "a364b92b56f8101030cf2252ff35c2e59ccb67e4fe582d329ad87cba6b65e0b5",
       "webpPath": "assets/plant-watercolours/campanula-persicifolia-alba.webp",
-      "webpSha256": "fe0426c794f37abdb0ab2169c19337564355221d6d9587a24db3d59cebee7878",
+      "webpSha256": "66eb9305328f318e60d9eac5cdebb3cf7297be375fb479ad34447435b755ed41",
       "verificationState": "pending_review",
       "approvalBasis": null,
       "matchConfidence": "provisional_cultivar_or_species_check",
@@ -2121,7 +2121,7 @@
       },
       "manualApprovalAt": null,
       "notes": "",
-      "lastUpdated": "2026-10-22T13:24:00Z"
+      "lastUpdated": "2026-10-22T15:42:22Z"
     },
     {
       "order": 88,
@@ -2132,9 +2132,9 @@
       "expectsWatercolour": true,
       "assetForm": "both",
       "pngMasterPath": "assets/plant-watercolours/masters/digitalis-lutea.png",
-      "pngSha256": "f30c9052a44023d50a38dd856081c10a75bddda553749424eb966527925681b7",
+      "pngSha256": "41e26b40835139b4a919269c1edf95ecbed602b95ee274c02bc3d359c802ded9",
       "webpPath": "assets/plant-watercolours/digitalis-lutea.webp",
-      "webpSha256": "2f4924714527e0f6ed74f7694ff220348124774d5d6723276eb8fe12f18b8406",
+      "webpSha256": "1e02cfc9b23451fe801204bfb3abcf90a73d02dcc358c198a2b0d8c26e070d39",
       "verificationState": "pending_review",
       "approvalBasis": null,
       "matchConfidence": "provisional_cultivar_or_species_check",
@@ -2145,7 +2145,7 @@
       },
       "manualApprovalAt": null,
       "notes": "",
-      "lastUpdated": "2026-10-22T13:24:00Z"
+      "lastUpdated": "2026-10-22T15:42:22Z"
     },
     {
       "order": 89,
@@ -2252,9 +2252,9 @@
       "expectsWatercolour": true,
       "assetForm": "both",
       "pngMasterPath": "assets/plant-watercolours/masters/betonica-officinalis-hummelo.png",
-      "pngSha256": "a73c9fac9664fc28219fd5219123eaf2581ef9d64f1f451e3a933b098e789378",
+      "pngSha256": "12c64f09bc12d5fdff94df19dd771215f069b0591f77d99ff60fe39c196c7c28",
       "webpPath": "assets/plant-watercolours/betonica-officinalis-hummelo.webp",
-      "webpSha256": "22b38a9fd7f2e29c2f3122be8f8a312681d6dd82399138fd66f1ca4377de999f",
+      "webpSha256": "7b225c20c8728496b78e9486bba5ee931729edc0dbef3db4bec9bdbd7ae4e1db",
       "verificationState": "pending_review",
       "approvalBasis": null,
       "matchConfidence": "provisional_cultivar_or_species_check",
@@ -2265,7 +2265,7 @@
       },
       "manualApprovalAt": null,
       "notes": "",
-      "lastUpdated": "2026-10-22T13:24:00Z"
+      "lastUpdated": "2026-10-22T15:42:22Z"
     },
     {
       "order": 94,
@@ -2348,9 +2348,9 @@
       "expectsWatercolour": true,
       "assetForm": "both",
       "pngMasterPath": "assets/plant-watercolours/masters/geranium-sanguineum-max-frei.png",
-      "pngSha256": "26a281655c6aa3a7c2c26ecf68f81faf72c829a8c899a25e326562f6174105e1",
+      "pngSha256": "8558eaecfeedc0d5f7104303295e72f0a941876049ef7d241580853bb41feb49",
       "webpPath": "assets/plant-watercolours/geranium-sanguineum-max-frei.webp",
-      "webpSha256": "b50726a1316158cebc084930bbef2a6a6ec7e6242a3cf881d574dae7fb78679a",
+      "webpSha256": "94f1288c66aadc8dd0f57ff553a9b42380daa7ed15335c51913ad7d2759b8d19",
       "verificationState": "pending_review",
       "approvalBasis": null,
       "matchConfidence": "provisional_cultivar_or_species_check",
@@ -2361,7 +2361,7 @@
       },
       "manualApprovalAt": null,
       "notes": "",
-      "lastUpdated": "2026-10-22T13:24:00Z"
+      "lastUpdated": "2026-10-22T15:42:22Z"
     },
     {
       "order": 98,
@@ -2372,9 +2372,9 @@
       "expectsWatercolour": true,
       "assetForm": "both",
       "pngMasterPath": "assets/plant-watercolours/masters/stachys-byzantina-silver-carpet.png",
-      "pngSha256": "3e8be6d94cd9ddd92d679f9ed7fbfdea21e58a778ece9872da3cd87a68c6f9af",
+      "pngSha256": "2123772d5c5832c18ccb4be095acdab4cf0fb7bde0805ef384319c0f52bf4cfa",
       "webpPath": "assets/plant-watercolours/stachys-byzantina-silver-carpet.webp",
-      "webpSha256": "5ff99da585926ce33b9aa64906911ea0a3c943df77d7494fb537d94d28ca0c3b",
+      "webpSha256": "f9ff77d10eac395ebd9c3a020340b8a28f1373226b34859b1dc7792bd4ed55dd",
       "verificationState": "pending_review",
       "approvalBasis": null,
       "matchConfidence": "provisional_cultivar_or_species_check",
@@ -2385,7 +2385,7 @@
       },
       "manualApprovalAt": null,
       "notes": "",
-      "lastUpdated": "2026-10-22T13:24:00Z"
+      "lastUpdated": "2026-10-22T15:42:22Z"
     },
     {
       "order": 99,
@@ -2396,9 +2396,9 @@
       "expectsWatercolour": true,
       "assetForm": "both",
       "pngMasterPath": "assets/plant-watercolours/masters/bergenia-bressingham-white.png",
-      "pngSha256": "a3772b52257afaaf07882585b0d90487c2cdaa987c2ef33298935386db72eb2f",
+      "pngSha256": "a380b5f6176f3ed6afc070dd89cd85645acc8518b0d79807676012c243002de3",
       "webpPath": "assets/plant-watercolours/bergenia-bressingham-white.webp",
-      "webpSha256": "07383257006f6f78ed0ea154fc2f0eb44fc9b1c230d516a5edee5baa0aa65903",
+      "webpSha256": "925a281ce0939e737ec7bfb524819e05fb5cd23cb79d9b0f79285a4178678dab",
       "verificationState": "pending_review",
       "approvalBasis": null,
       "matchConfidence": "provisional_cultivar_or_species_check",
@@ -2409,7 +2409,7 @@
       },
       "manualApprovalAt": null,
       "notes": "",
-      "lastUpdated": "2026-10-22T13:24:00Z"
+      "lastUpdated": "2026-10-22T15:42:22Z"
     },
     {
       "order": 100,
@@ -2420,9 +2420,9 @@
       "expectsWatercolour": true,
       "assetForm": "both",
       "pngMasterPath": "assets/plant-watercolours/masters/phlox-subulata-emerald-cushion-blue.png",
-      "pngSha256": "f6a94a5db470613f8115fe9804b42c2cd7b834fc1a7634689390ccd4a99f0ea8",
+      "pngSha256": "7c4235edf2b63389f35ce002d4b630ca5f622c6b6b432538c57c107967189019",
       "webpPath": "assets/plant-watercolours/phlox-subulata-emerald-cushion-blue.webp",
-      "webpSha256": "f47323d3672591d78c4c3c8acf219fa8eb7eaca05eb8d58c10b7fa3e5f14a145",
+      "webpSha256": "62295ca0a3a4674a06af15a3272d1f154e1063ede6bc69b1e3936c9a5039b310",
       "verificationState": "pending_review",
       "approvalBasis": null,
       "matchConfidence": "provisional_cultivar_or_species_check",
@@ -2433,7 +2433,7 @@
       },
       "manualApprovalAt": null,
       "notes": "",
-      "lastUpdated": "2026-10-22T13:24:00Z"
+      "lastUpdated": "2026-10-22T15:42:22Z"
     },
     {
       "order": 101,

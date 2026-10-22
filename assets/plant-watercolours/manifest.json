@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "updated": "2026-10-22T13:24:00Z",
+  "updated": "2026-10-22T15:42:22Z",
   "assets": {
     "alchemilla-mollis": {
       "file": "assets/plant-watercolours/alchemilla-mollis.webp",
@@ -1750,9 +1750,9 @@
       "expectedSpreadPx": 500,
       "actualWidthPx": 1254,
       "actualHeightPx": 1254,
-      "ratioErrorRelative": -0.09,
-      "updated": "2026-10-22T13:24:00Z",
-      "sha256": "4b82ca75c974660060ccbc42eb823176ec8106ad4dca122ab0396bda11b02e53"
+      "ratioErrorRelative": -0.055,
+      "updated": "2026-10-22T15:42:22Z",
+      "sha256": "2dcdfef08ec5713e8557776e0d07730b91f1471ba9327a4522254bc88241db28"
     },
     "delphinium-black-knight": {
       "file": "assets/plant-watercolours/delphinium-black-knight.webp",
@@ -1796,11 +1796,11 @@
       "pixelsPerCm": 10,
       "canonicalHeightPx": 500,
       "expectedSpreadPx": 500,
-      "actualWidthPx": 1122,
-      "actualHeightPx": 1402,
-      "ratioErrorRelative": -0.262,
-      "updated": "2026-10-22T13:24:00Z",
-      "sha256": "7434cc5d4746f0c7710528a61e483167a29cd8c569aa15753b214fb2cf44629c"
+      "actualWidthPx": 1254,
+      "actualHeightPx": 1254,
+      "ratioErrorRelative": -0.011,
+      "updated": "2026-10-22T15:42:22Z",
+      "sha256": "0d1d3a27393031993c366782144954100eabda2d92af6f5483c4fc15d73a010c"
     },
     "lupinus-the-governor": {
       "file": "assets/plant-watercolours/lupinus-the-governor.webp",
@@ -1892,11 +1892,11 @@
       "pixelsPerCm": 10,
       "canonicalHeightPx": 750,
       "expectedSpreadPx": 500,
-      "actualWidthPx": 1122,
-      "actualHeightPx": 1402,
-      "ratioErrorRelative": -0.345,
-      "updated": "2026-10-22T13:24:00Z",
-      "sha256": "fe0426c794f37abdb0ab2169c19337564355221d6d9587a24db3d59cebee7878"
+      "actualWidthPx": 1086,
+      "actualHeightPx": 1448,
+      "ratioErrorRelative": -0.002,
+      "updated": "2026-10-22T15:42:22Z",
+      "sha256": "66eb9305328f318e60d9eac5cdebb3cf7297be375fb479ad34447435b755ed41"
     },
     "cerastium-tomentosum": {
       "file": "assets/plant-watercolours/cerastium-tomentosum.webp",
@@ -1904,11 +1904,11 @@
       "pixelsPerCm": 10,
       "canonicalHeightPx": 200,
       "expectedSpreadPx": 500,
-      "actualWidthPx": 1402,
-      "actualHeightPx": 1122,
-      "ratioErrorRelative": -0.266,
-      "updated": "2026-10-22T13:24:00Z",
-      "sha256": "cac21492f3e240aa3515b21842c4c9f90d0b56cc2bc7ea0e40e47146d1b46ad7"
+      "actualWidthPx": 1536,
+      "actualHeightPx": 1024,
+      "ratioErrorRelative": -0.05,
+      "updated": "2026-10-22T15:42:22Z",
+      "sha256": "1272a94294512a10b90874d81a0ac42d91922433b7085d8c9709eba8185d7398"
     },
     "digitalis-lutea": {
       "file": "assets/plant-watercolours/digitalis-lutea.webp",
@@ -1916,11 +1916,11 @@
       "pixelsPerCm": 10,
       "canonicalHeightPx": 600,
       "expectedSpreadPx": 400,
-      "actualWidthPx": 1122,
-      "actualHeightPx": 1402,
-      "ratioErrorRelative": -0.308,
-      "updated": "2026-10-22T13:24:00Z",
-      "sha256": "2f4924714527e0f6ed74f7694ff220348124774d5d6723276eb8fe12f18b8406"
+      "actualWidthPx": 1086,
+      "actualHeightPx": 1448,
+      "ratioErrorRelative": 0.119,
+      "updated": "2026-10-22T15:42:22Z",
+      "sha256": "1e02cfc9b23451fe801204bfb3abcf90a73d02dcc358c198a2b0d8c26e070d39"
     },
     "gillenia-trifoliata": {
       "file": "assets/plant-watercolours/gillenia-trifoliata.webp",
@@ -1976,11 +1976,11 @@
       "pixelsPerCm": 10,
       "canonicalHeightPx": 300,
       "expectedSpreadPx": 400,
-      "actualWidthPx": 1254,
-      "actualHeightPx": 1254,
-      "ratioErrorRelative": -0.126,
-      "updated": "2026-10-22T13:24:00Z",
-      "sha256": "07383257006f6f78ed0ea154fc2f0eb44fc9b1c230d516a5edee5baa0aa65903"
+      "actualWidthPx": 1448,
+      "actualHeightPx": 1086,
+      "ratioErrorRelative": 0.077,
+      "updated": "2026-10-22T15:42:22Z",
+      "sha256": "925a281ce0939e737ec7bfb524819e05fb5cd23cb79d9b0f79285a4178678dab"
     },
     "betonica-officinalis-hummelo": {
       "file": "assets/plant-watercolours/betonica-officinalis-hummelo.webp",
@@ -1990,9 +1990,9 @@
       "expectedSpreadPx": 450,
       "actualWidthPx": 1254,
       "actualHeightPx": 1254,
-      "ratioErrorRelative": -0.122,
-      "updated": "2026-10-22T13:24:00Z",
-      "sha256": "22b38a9fd7f2e29c2f3122be8f8a312681d6dd82399138fd66f1ca4377de999f"
+      "ratioErrorRelative": 0.062,
+      "updated": "2026-10-22T15:42:22Z",
+      "sha256": "7b225c20c8728496b78e9486bba5ee931729edc0dbef3db4bec9bdbd7ae4e1db"
     },
     "geranium-nodosum": {
       "file": "assets/plant-watercolours/geranium-nodosum.webp",
@@ -2024,11 +2024,11 @@
       "pixelsPerCm": 10,
       "canonicalHeightPx": 200,
       "expectedSpreadPx": 500,
-      "actualWidthPx": 1254,
-      "actualHeightPx": 1254,
-      "ratioErrorRelative": -0.408,
-      "updated": "2026-10-22T13:24:00Z",
-      "sha256": "b50726a1316158cebc084930bbef2a6a6ec7e6242a3cf881d574dae7fb78679a"
+      "actualWidthPx": 1536,
+      "actualHeightPx": 1024,
+      "ratioErrorRelative": -0.114,
+      "updated": "2026-10-22T15:42:22Z",
+      "sha256": "94f1288c66aadc8dd0f57ff553a9b42380daa7ed15335c51913ad7d2759b8d19"
     },
     "geum-rivale-leonards-variety": {
       "file": "assets/plant-watercolours/geum-rivale-leonards-variety.webp",
@@ -2060,11 +2060,11 @@
       "pixelsPerCm": 10,
       "canonicalHeightPx": 100,
       "expectedSpreadPx": 500,
-      "actualWidthPx": 1254,
-      "actualHeightPx": 1254,
-      "ratioErrorRelative": -0.629,
-      "updated": "2026-10-22T13:24:00Z",
-      "sha256": "f47323d3672591d78c4c3c8acf219fa8eb7eaca05eb8d58c10b7fa3e5f14a145"
+      "actualWidthPx": 1672,
+      "actualHeightPx": 941,
+      "ratioErrorRelative": -0.376,
+      "updated": "2026-10-22T15:42:22Z",
+      "sha256": "62295ca0a3a4674a06af15a3272d1f154e1063ede6bc69b1e3936c9a5039b310"
     },
     "scabiosa-butterfly-blue": {
       "file": "assets/plant-watercolours/scabiosa-butterfly-blue.webp",
@@ -2084,11 +2084,11 @@
       "pixelsPerCm": 10,
       "canonicalHeightPx": 200,
       "expectedSpreadPx": 500,
-      "actualWidthPx": 1254,
-      "actualHeightPx": 1254,
-      "ratioErrorRelative": -0.274,
-      "updated": "2026-10-22T13:24:00Z",
-      "sha256": "5ff99da585926ce33b9aa64906911ea0a3c943df77d7494fb537d94d28ca0c3b"
+      "actualWidthPx": 1536,
+      "actualHeightPx": 1024,
+      "ratioErrorRelative": -0.088,
+      "updated": "2026-10-22T15:42:22Z",
+      "sha256": "f9ff77d10eac395ebd9c3a020340b8a28f1373226b34859b1dc7792bd4ed55dd"
     },
     "briza-media": {
       "file": "assets/plant-watercolours/briza-media.webp",
