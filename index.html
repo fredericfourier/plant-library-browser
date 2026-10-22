@@ -243,7 +243,7 @@ const expectedBox=p=>p&&p.heightCm>0&&p.spreadCm>0?{w:p.spreadCm,h:p.heightCm}:n
 function layoutExpectedBox(p,sil,W,H,aw,ah,pad,fixedK){
   const box=expectedBox(p);if(!box||!(W>0&&H>0))return null;
   const s=sil||{x0:0,y0:0,x1:1,y1:1},c=box.h/((s.y1-s.y0)*H),iw=W*c,ih=H*c,silW=(s.x1-s.x0)*iw,ext=Math.max(box.w,silW)/2;
-  const k=fixedK||Math.min(Math.max(1,aw-2*pad)/(2*ext),Math.max(1,ah-2*pad)/box.h),bw=box.w*k,bh=box.h*k,bx=(aw-bw)/2,by=(ah-bh)/2,w=iw*k,h=ih*k;
+  const k=fixedK||Math.min(Math.max(1,aw-2*pad)/(2*ext),Math.max(1,ah-2*pad)/box.h),bw=box.w*k,bh=box.h*k,bx=(aw-bw)/2,by=fixedK?ah-pad-bh:(ah-bh)/2,w=iw*k,h=ih*k;
   return {k,box:{x:bx,y:by,w:bw,h:bh},img:{x:aw/2-((s.x0+s.x1)/2)*w,y:by+bh-s.y1*h,w,h}};
 }
 function setRect(el,r){el.style.left=r.x.toFixed(2)+"px";el.style.top=r.y.toFixed(2)+"px";el.style.width=r.w.toFixed(2)+"px";el.style.height=r.h.toFixed(2)+"px"}
