@@ -1756,8 +1756,8 @@
       "matchConfidence": "provisional_cultivar_or_species_check",
       "pipelineQa": "imported",
       "watercolour": {
-        "status": "missing",
-        "webpPath": null
+        "status": "awaiting_review",
+        "webpPath": "assets/plant-watercolours/delphinium-black-knight-watercolour.webp"
       },
       "manualApprovalAt": null,
       "notes": "",
@@ -1780,8 +1780,8 @@
       "matchConfidence": "provisional_cultivar_or_species_check",
       "pipelineQa": "imported",
       "watercolour": {
-        "status": "missing",
-        "webpPath": null
+        "status": "awaiting_review",
+        "webpPath": "assets/plant-watercolours/alcea-rosea-halo-white-watercolour.webp"
       },
       "manualApprovalAt": null,
       "notes": "",
@@ -1804,8 +1804,8 @@
       "matchConfidence": "provisional_cultivar_or_species_check",
       "pipelineQa": "imported",
       "watercolour": {
-        "status": "missing",
-        "webpPath": null
+        "status": "awaiting_review",
+        "webpPath": "assets/plant-watercolours/lupinus-the-governor-watercolour.webp"
       },
       "manualApprovalAt": null,
       "notes": "",
@@ -1828,8 +1828,8 @@
       "matchConfidence": "provisional_cultivar_or_species_check",
       "pipelineQa": "imported",
       "watercolour": {
-        "status": "missing",
-        "webpPath": null
+        "status": "awaiting_review",
+        "webpPath": "assets/plant-watercolours/lupinus-gallery-blue-watercolour.webp"
       },
       "manualApprovalAt": null,
       "notes": "",
@@ -1852,8 +1852,8 @@
       "matchConfidence": "provisional_cultivar_or_species_check",
       "pipelineQa": "imported",
       "watercolour": {
-        "status": "missing",
-        "webpPath": null
+        "status": "awaiting_review",
+        "webpPath": "assets/plant-watercolours/hydrangea-paniculata-little-lime-watercolour.webp"
       },
       "manualApprovalAt": null,
       "notes": "",
@@ -1876,8 +1876,8 @@
       "matchConfidence": "provisional_cultivar_or_species_check",
       "pipelineQa": "imported",
       "watercolour": {
-        "status": "missing",
-        "webpPath": null
+        "status": "awaiting_review",
+        "webpPath": "assets/plant-watercolours/syringa-meyeri-palibin-watercolour.webp"
       },
       "manualApprovalAt": null,
       "notes": "",
@@ -1900,8 +1900,8 @@
       "matchConfidence": "provisional_cultivar_or_species_check",
       "pipelineQa": "imported",
       "watercolour": {
-        "status": "missing",
-        "webpPath": null
+        "status": "awaiting_review",
+        "webpPath": "assets/plant-watercolours/centaurea-montana-watercolour.webp"
       },
       "manualApprovalAt": null,
       "notes": "",
@@ -1924,8 +1924,8 @@
       "matchConfidence": "provisional_cultivar_or_species_check",
       "pipelineQa": "imported",
       "watercolour": {
-        "status": "missing",
-        "webpPath": null
+        "status": "awaiting_review",
+        "webpPath": "assets/plant-watercolours/lychnis-coronaria-watercolour.webp"
       },
       "manualApprovalAt": null,
       "notes": "",
@@ -1948,8 +1948,8 @@
       "matchConfidence": "provisional_cultivar_or_species_check",
       "pipelineQa": "imported",
       "watercolour": {
-        "status": "missing",
-        "webpPath": null
+        "status": "awaiting_review",
+        "webpPath": "assets/plant-watercolours/polemonium-caeruleum-watercolour.webp"
       },
       "manualApprovalAt": null,
       "notes": "",
@@ -1972,8 +1972,8 @@
       "matchConfidence": "provisional_cultivar_or_species_check",
       "pipelineQa": "imported",
       "watercolour": {
-        "status": "missing",
-        "webpPath": null
+        "status": "awaiting_review",
+        "webpPath": "assets/plant-watercolours/linaria-purpurea-watercolour.webp"
       },
       "manualApprovalAt": null,
       "notes": "",
@@ -1996,8 +1996,8 @@
       "matchConfidence": "provisional_cultivar_or_species_check",
       "pipelineQa": "imported",
       "watercolour": {
-        "status": "missing",
-        "webpPath": null
+        "status": "awaiting_review",
+        "webpPath": "assets/plant-watercolours/cerastium-tomentosum-watercolour.webp"
       },
       "manualApprovalAt": null,
       "notes": "",
@@ -2020,8 +2020,8 @@
       "matchConfidence": "provisional_cultivar_or_species_check",
       "pipelineQa": "imported",
       "watercolour": {
-        "status": "missing",
-        "webpPath": null
+        "status": "awaiting_review",
+        "webpPath": "assets/plant-watercolours/malva-sylvestris-watercolour.webp"
       },
       "manualApprovalAt": null,
       "notes": "",
@@ -2044,8 +2044,8 @@
       "matchConfidence": "provisional_cultivar_or_species_check",
       "pipelineQa": "imported",
       "watercolour": {
-        "status": "missing",
-        "webpPath": null
+        "status": "awaiting_review",
+        "webpPath": "assets/plant-watercolours/veronica-longifolia-watercolour.webp"
       },
       "manualApprovalAt": null,
       "notes": "",
@@ -2068,8 +2068,8 @@
       "matchConfidence": "provisional_cultivar_or_species_check",
       "pipelineQa": "imported",
       "watercolour": {
-        "status": "missing",
-        "webpPath": null
+        "status": "awaiting_review",
+        "webpPath": "assets/plant-watercolours/acanthus-mollis-watercolour.webp"
       },
       "manualApprovalAt": null,
       "notes": "",
@@ -2092,8 +2092,8 @@
       "matchConfidence": "provisional_cultivar_or_species_check",
       "pipelineQa": "imported",
       "watercolour": {
-        "status": "missing",
-        "webpPath": null
+        "status": "awaiting_review",
+        "webpPath": "assets/plant-watercolours/campanula-lactiflora-prichards-variety-watercolour.webp"
       },
       "manualApprovalAt": null,
       "notes": "",
@@ -2116,8 +2116,8 @@
       "matchConfidence": "provisional_cultivar_or_species_check",
       "pipelineQa": "imported",
       "watercolour": {
-        "status": "missing",
-        "webpPath": null
+        "status": "awaiting_review",
+        "webpPath": "assets/plant-watercolours/campanula-persicifolia-alba-watercolour.webp"
       },
       "manualApprovalAt": null,
       "notes": "",
@@ -2140,8 +2140,8 @@
       "matchConfidence": "provisional_cultivar_or_species_check",
       "pipelineQa": "imported",
       "watercolour": {
-        "status": "missing",
-        "webpPath": null
+        "status": "awaiting_review",
+        "webpPath": "assets/plant-watercolours/digitalis-lutea-watercolour.webp"
       },
       "manualApprovalAt": null,
       "notes": "",
@@ -2164,8 +2164,8 @@
       "matchConfidence": "provisional_cultivar_or_species_check",
       "pipelineQa": "imported",
       "watercolour": {
-        "status": "missing",
-        "webpPath": null
+        "status": "awaiting_review",
+        "webpPath": "assets/plant-watercolours/verbascum-chaixii-album-watercolour.webp"
       },
       "manualApprovalAt": null,
       "notes": "",
@@ -2188,8 +2188,8 @@
       "matchConfidence": "provisional_cultivar_or_species_check",
       "pipelineQa": "imported",
       "watercolour": {
-        "status": "missing",
-        "webpPath": null
+        "status": "awaiting_review",
+        "webpPath": "assets/plant-watercolours/aquilegia-vulgaris-nora-barlow-watercolour.webp"
       },
       "manualApprovalAt": null,
       "notes": "",
@@ -2212,8 +2212,8 @@
       "matchConfidence": "provisional_cultivar_or_species_check",
       "pipelineQa": "imported",
       "watercolour": {
-        "status": "missing",
-        "webpPath": null
+        "status": "awaiting_review",
+        "webpPath": "assets/plant-watercolours/gillenia-trifoliata-watercolour.webp"
       },
       "manualApprovalAt": null,
       "notes": "",
@@ -2236,8 +2236,8 @@
       "matchConfidence": "provisional_cultivar_or_species_check",
       "pipelineQa": "imported",
       "watercolour": {
-        "status": "missing",
-        "webpPath": null
+        "status": "awaiting_review",
+        "webpPath": "assets/plant-watercolours/scabiosa-butterfly-blue-watercolour.webp"
       },
       "manualApprovalAt": null,
       "notes": "",
@@ -2260,8 +2260,8 @@
       "matchConfidence": "provisional_cultivar_or_species_check",
       "pipelineQa": "imported",
       "watercolour": {
-        "status": "missing",
-        "webpPath": null
+        "status": "awaiting_review",
+        "webpPath": "assets/plant-watercolours/betonica-officinalis-hummelo-watercolour.webp"
       },
       "manualApprovalAt": null,
       "notes": "",
@@ -2284,8 +2284,8 @@
       "matchConfidence": "provisional_cultivar_or_species_check",
       "pipelineQa": "imported",
       "watercolour": {
-        "status": "missing",
-        "webpPath": null
+        "status": "awaiting_review",
+        "webpPath": "assets/plant-watercolours/geum-rivale-leonards-variety-watercolour.webp"
       },
       "manualApprovalAt": null,
       "notes": "",
@@ -2308,8 +2308,8 @@
       "matchConfidence": "provisional_cultivar_or_species_check",
       "pipelineQa": "imported",
       "watercolour": {
-        "status": "missing",
-        "webpPath": null
+        "status": "awaiting_review",
+        "webpPath": "assets/plant-watercolours/geranium-nodosum-watercolour.webp"
       },
       "manualApprovalAt": null,
       "notes": "",
@@ -2332,8 +2332,8 @@
       "matchConfidence": "provisional_cultivar_or_species_check",
       "pipelineQa": "imported",
       "watercolour": {
-        "status": "missing",
-        "webpPath": null
+        "status": "awaiting_review",
+        "webpPath": "assets/plant-watercolours/geranium-phaeum-samobor-watercolour.webp"
       },
       "manualApprovalAt": null,
       "notes": "",
@@ -2356,8 +2356,8 @@
       "matchConfidence": "provisional_cultivar_or_species_check",
       "pipelineQa": "imported",
       "watercolour": {
-        "status": "missing",
-        "webpPath": null
+        "status": "awaiting_review",
+        "webpPath": "assets/plant-watercolours/geranium-sanguineum-max-frei-watercolour.webp"
       },
       "manualApprovalAt": null,
       "notes": "",
@@ -2380,8 +2380,8 @@
       "matchConfidence": "provisional_cultivar_or_species_check",
       "pipelineQa": "imported",
       "watercolour": {
-        "status": "missing",
-        "webpPath": null
+        "status": "awaiting_review",
+        "webpPath": "assets/plant-watercolours/stachys-byzantina-silver-carpet-watercolour.webp"
       },
       "manualApprovalAt": null,
       "notes": "",
@@ -2404,8 +2404,8 @@
       "matchConfidence": "provisional_cultivar_or_species_check",
       "pipelineQa": "imported",
       "watercolour": {
-        "status": "missing",
-        "webpPath": null
+        "status": "awaiting_review",
+        "webpPath": "assets/plant-watercolours/bergenia-bressingham-white-watercolour.webp"
       },
       "manualApprovalAt": null,
       "notes": "",
@@ -2428,8 +2428,8 @@
       "matchConfidence": "provisional_cultivar_or_species_check",
       "pipelineQa": "imported",
       "watercolour": {
-        "status": "missing",
-        "webpPath": null
+        "status": "awaiting_review",
+        "webpPath": "assets/plant-watercolours/phlox-subulata-emerald-cushion-blue-watercolour.webp"
       },
       "manualApprovalAt": null,
       "notes": "",
@@ -2452,8 +2452,8 @@
       "matchConfidence": "provisional_cultivar_or_species_check",
       "pipelineQa": "imported",
       "watercolour": {
-        "status": "missing",
-        "webpPath": null
+        "status": "awaiting_review",
+        "webpPath": "assets/plant-watercolours/iberis-sempervirens-snowflake-watercolour.webp"
       },
       "manualApprovalAt": null,
       "notes": "",
@@ -2476,8 +2476,8 @@
       "matchConfidence": "provisional_cultivar_or_species_check",
       "pipelineQa": "imported",
       "watercolour": {
-        "status": "missing",
-        "webpPath": null
+        "status": "awaiting_review",
+        "webpPath": "assets/plant-watercolours/briza-media-watercolour.webp"
       },
       "manualApprovalAt": null,
       "notes": "",
@@ -2500,8 +2500,8 @@
       "matchConfidence": "provisional_cultivar_or_species_check",
       "pipelineQa": "imported",
       "watercolour": {
-        "status": "missing",
-        "webpPath": null
+        "status": "awaiting_review",
+        "webpPath": "assets/plant-watercolours/luzula-nivea-watercolour.webp"
       },
       "manualApprovalAt": null,
       "notes": "",
@@ -2524,8 +2524,8 @@
       "matchConfidence": "provisional_cultivar_or_species_check",
       "pipelineQa": "imported",
       "watercolour": {
-        "status": "missing",
-        "webpPath": null
+        "status": "awaiting_review",
+        "webpPath": "assets/plant-watercolours/rosa-the-fairy-watercolour.webp"
       },
       "manualApprovalAt": null,
       "notes": "",
@@ -2548,8 +2548,8 @@
       "matchConfidence": "provisional_cultivar_or_species_check",
       "pipelineQa": "imported",
       "watercolour": {
-        "status": "missing",
-        "webpPath": null
+        "status": "awaiting_review",
+        "webpPath": "assets/plant-watercolours/dianthus-mrs-sinkins-watercolour.webp"
       },
       "manualApprovalAt": null,
       "notes": "",
