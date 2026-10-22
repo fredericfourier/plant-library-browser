@@ -31,7 +31,7 @@ Right after receiving a package, record it:
 python3 tools/botanical_status.py reserve <id> [<id> ...] --batch ZIP-2026-10-22-A --source gen-A.zip   # default expiry 14 days
 ```
 Each reserved plant becomes `pending_review` with `assetForm: none` and a `reservation` (`batchId`, `source`, `reservedAt`, `expiresAt`);
-`queue` skips it. Only `missing` plants (or ones whose reservation expired) can be reserved. Nothing is published or approved.
+`queue` skips it. Only `missing` plants can be reserved (a plant with an active or expired reservation must first be renewed or released). Nothing is published or approved.
 - **Import** the images and run `build --bd ...`: the reservation clears itself and the status follows the files and the verification record.
 - **ZIP lost or rejected:** `release --batch <B>` (or `release <ids>`) returns the plants to `missing` at once.
 - **Needs more time:** `renew --batch <B> [--days N]`.
@@ -61,7 +61,7 @@ python3 tools/botanical_status.py reserve|release|renew|reservations ...   # see
 
 ## Workflow
 1. "Generate the next 10 missing botanical illustrations" means `queue 10`: the first 10 plants still to generate, in catalogue order
-   (`missing`, plus any expired reservation). Generate with `docs/briefs/BOTANICAL_ASSET_BRIEF.md` in border-designer (its last commit is `brief.version`).
+   (status `missing` only; active reservations are excluded, and expired ones stop the queue until reconciled). Generate with `docs/briefs/BOTANICAL_ASSET_BRIEF.md` in border-designer (its last commit is `brief.version`).
 2. When the ZIP arrives, `reserve` those IDs (commit the manifest). The next `queue` request then returns the following plants.
 3. Import: PNG master to border-designer `assets/plant-watercolours/masters/<id>.png`, WebP to `assets/plant-watercolours/<id>.webp` here,
    with the plant's record in `data/botanical-verification.json` and `assets/plant-watercolours/manifest.json`.
