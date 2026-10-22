@@ -75,3 +75,20 @@ whenever a file, record or catalogue entry changes without a rebuild.
 
 PNG masters live in the private border-designer repository (`pngMasters` in the manifest records repo, ref and commit read), so `check`
 here cannot re-read them; they are verified by `build --bd`.
+
+## Watercolour variant (`--type watercolour`)
+The same tool, statuses, reservations, safety stops and queue ordering run over the watercolour illustrations. Put `--type watercolour` **before** the subcommand;
+the default (`botanical`) is unchanged. State is independent: `data/watercolour-status.json` is built only from `<id>-watercolour.webp`, the private
+`<id>-watercolour.png` masters (border-designer, `assets/plant-watercolours/masters/`) and `plants[id].watercolour` in `data/botanical-verification.json`
+(`confirmed` + `approvedAt` = approved; `awaiting_review` = pending_review). A botanical image never counts as a watercolour and vice versa; reservations are per type.
+```bash
+python3 tools/botanical_status.py --type watercolour check
+python3 tools/botanical_status.py --type watercolour queue 10                # "Generate the next 10 missing watercolour illustrations"
+python3 tools/botanical_status.py --type watercolour queue 10 --detail       # + height/spread, filenames, brief, reference image
+python3 tools/botanical_status.py --type watercolour reserve <ids> --batch WC-ZIP-A --source gen.zip   # right after receiving a generated ZIP
+python3 tools/botanical_status.py --type watercolour build --bd <border-designer checkout> --bd-ref origin/main   # after importing
+python3 tools/test_illustration_status.py                                    # queue/idempotency/independence tests (sandbox copies only)
+```
+Brief: `docs/briefs/WATERCOLOUR_B_ASSET_BRIEF.md` with the approved style reference `docs/references/nepeta-watercolour-very-wet-approved.png` (both in border-designer;
+the image must be attached to the generator, a path in a prompt sends no pixels). `pipelineQa` in a watercolour record is the recorded `variants.watercolour.status`
+of `assets/plant-watercolours/manifest.json` (still `awaiting_review` there for imported images); approval comes only from the verification file.
