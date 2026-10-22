@@ -243,8 +243,15 @@ const expectedBox=p=>p&&p.heightCm>0&&p.spreadCm>0?{w:p.spreadCm,h:p.heightCm}:n
 function layoutExpectedBox(p,sil,W,H,aw,ah,pad,fixedK){
   const box=expectedBox(p);if(!box||!(W>0&&H>0))return null;
   const s=sil||{x0:0,y0:0,x1:1,y1:1},c=box.h/((s.y1-s.y0)*H),iw=W*c,ih=H*c,silW=(s.x1-s.x0)*iw,ext=Math.max(box.w,silW)/2;
-  const k=fixedK||Math.min(Math.max(1,aw-2*pad)/(2*ext),Math.max(1,ah-2*pad)/box.h),bw=box.w*k,bh=box.h*k,bx=(aw-bw)/2,by=fixedK?ah-pad-bh:(ah-bh)/2,w=iw*k,h=ih*k;
-  return {k,box:{x:bx,y:by,w:bw,h:bh},img:{x:aw/2-((s.x0+s.x1)/2)*w,y:by+bh-s.y1*h,w,h}};
+  // For viewers, fit the union of the catalogue box and the COMPLETE image canvas.
+  // Transparent margins and faint washes must not be cropped. Fixed-scale cards are unchanged.
+  const ix=-((s.x0+s.x1)/2)*iw,iy=box.h-s.y1*ih;
+  const minX=Math.min(-box.w/2,ix),maxX=Math.max(box.w/2,ix+iw);
+  const minY=Math.min(0,iy),maxY=Math.max(box.h,iy+ih);
+  const k=fixedK||Math.min(Math.max(1,aw-2*pad)/(maxX-minX),Math.max(1,ah-2*pad)/(maxY-minY));
+  const originX=fixedK?aw/2:(aw-(maxX-minX)*k)/2-minX*k;
+  const originY=fixedK?ah-pad-box.h*k:(ah-(maxY-minY)*k)/2-minY*k;
+  return {k,box:{x:originX-box.w*k/2,y:originY,w:box.w*k,h:box.h*k},img:{x:originX+ix*k,y:originY+iy*k,w:iw*k,h:ih*k}};
 }
 function setRect(el,r){el.style.left=r.x.toFixed(2)+"px";el.style.top=r.y.toFixed(2)+"px";el.style.width=r.w.toFixed(2)+"px";el.style.height=r.h.toFixed(2)+"px"}
 function composeCard(img){
