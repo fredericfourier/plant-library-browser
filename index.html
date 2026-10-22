@@ -63,23 +63,61 @@ dialog{width:min(850px,96vw);border:0;border-radius:16px;padding:0;background:va
 .genusCount{white-space:nowrap;color:var(--muted);font:500 11px/1.3 system-ui,sans-serif}
 .genusGrid{padding:0 10px 10px}
 #grid[hidden],#groups[hidden]{display:none}
+
+/* Compact, clearly grouped plant library controls. */
+.controlPanel{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 16px;margin-bottom:12px}
+.controlSection+.controlSection{border-top:1px solid var(--line);padding-top:11px;margin-top:11px}
+.controlHeading{color:var(--muted);font-size:10px;font-weight:750;letter-spacing:.095em;margin-bottom:8px}
+.filterControls{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.filterControls .search{flex:2 1 245px;min-width:180px}
+.filterControls select{flex:1 1 145px;min-width:130px}
+.filterControls select[hidden]{display:none}
+.displayControls{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.displayControls .groupModeBar{margin:0}
+.displayRight{display:flex;align-items:center;gap:7px;flex-wrap:wrap}
+.inlineControl{font-size:12px;color:var(--muted)}
+.displayRight select{min-width:145px}
+.controlPanel .boxRow{margin:10px 0 0}
+.exportSection{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.exportSection .controlHeading{margin-bottom:0}
+@media(max-width:650px){
+.controlPanel{padding:11px}
+.filterControls .search{flex-basis:100%}
+.filterControls select{flex:1 1 calc(50% - 8px);min-width:0}
+.displayControls,.displayRight{align-items:stretch}
+.displayRight{width:100%}
+.displayRight .inlineControl{align-self:center}
+.displayRight select{min-width:0;max-width:100%}
+.exportSection .downloadActions{width:100%}
+.exportSection .actionBtn{flex:1 1 145px;justify-content:center;white-space:normal;text-align:center}
+}
 </style>
 </head><body>
-<header><div class="head"><div><h1>Plant Library</h1><div id="meta" class="meta">Loading live data…</div></div><input id="q" class="search" placeholder="Search plants…"></div></header>
+<header><div class="head"><div><h1>Plant Library</h1><div id="meta" class="meta">Loading live data…</div></div></div></header>
 <main>
-<div class="tools">
+<section class="controlPanel" aria-label="Plant library controls">
+<div class="controlSection"><div class="controlHeading">FILTER &amp; FIND</div>
+<div class="filterControls">
+<input id="q" class="search" type="search" placeholder="Search plants…" aria-label="Search plants">
 <select id="type"><option value="">All plant types</option></select>
-<select id="variant"><option value="botanical">Botanical illustration</option><option value="watercolour">Watercolour</option></select>
-<select id="artFilter"><option value="">All</option><option value="with">With illustrations</option><option value="missing">Without illustrations</option></select><select id="newFilter" hidden aria-label="Newly added"></select>
+<select id="artFilter" aria-label="Illustration availability"><option value="">All</option><option value="with">With illustrations</option><option value="missing">Without illustrations</option></select>
+<select id="newFilter" hidden aria-label="Newly added"></select>
 <select id="light"><option value="">All light</option><option value="full_sun">Full sun</option><option value="part_shade">Part shade</option><option value="full_shade">Full shade</option></select>
-<span class="sortGrp"><select id="sort" aria-label="Sort by"><option value="name">Botanical name</option><option value="height">Height</option><option value="spread">Spread</option></select><button type="button" id="sortDir" class="sortDir" aria-label="Sort ascending" title="Ascending: click to sort descending"><svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path id="sortArrow" d="M8 13V3M4 7l4-4 4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button></span>
+</div></div>
+<div class="controlSection"><div class="controlHeading">DISPLAY &amp; SORT</div>
+<div class="displayControls">
+<div class="groupModeBar"><span class="groupModeLabel">View</span><div class="groupModeSwitch" role="group" aria-label="Plant library view"><button type="button" data-view="all" aria-pressed="true">All plants</button><button type="button" data-view="genus" aria-pressed="false">By genus</button></div></div>
+<div class="displayRight"><label class="inlineControl" for="variant">Illustration</label><select id="variant"><option value="botanical">Botanical illustration</option><option value="watercolour">Watercolour</option></select><label class="inlineControl" for="sort">Sort by</label>
+<span class="sortGrp"><select id="sort" aria-label="Sort by"><option value="name">Botanical name</option><option value="height">Height</option><option value="spread">Spread</option></select><button type="button" id="sortDir" class="sortDir" aria-label="Sort ascending" title="Ascending: click to sort descending"><svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path id="sortArrow" d="M8 13V3M4 7l4-4 4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button></span></div>
+</div>
+<div class="boxRow"><label class="bboxTog"><input type="checkbox" id="bboxToggle" checked> Show bounding boxes</label><label class="bboxTog"><input type="checkbox" id="cmpToggle"> Compare images</label></div>
+</div>
+<div class="controlSection exportSection"><div class="controlHeading">EXPORT &amp; TOOLS</div>
 <div class="downloadActions">
 <button id="contactBtn" class="actionBtn">▦ Contact sheet</button>
 <a class="actionBtn" href="./downloads/border-designer-plant-illustrations.zip" download="border-designer-plant-illustrations.zip" title="Download the entire catalogue of Botanical and Watercolour WebP illustrations, plus plant data and manifest" aria-label="Download all Botanical and Watercolour illustrations as a ZIP">↓ Download all illustrations (ZIP)</a>
-</div>
-</div>
-<div class="boxRow"><label class="bboxTog"><input type="checkbox" id="bboxToggle" checked> Show bounding boxes</label><label class="bboxTog"><input type="checkbox" id="cmpToggle"> Compare images</label></div>
-<div class="groupModeBar"><span class="groupModeLabel">View</span><div class="groupModeSwitch" role="group" aria-label="Plant library view"><button type="button" data-view="all" aria-pressed="true">All plants</button><button type="button" data-view="genus" aria-pressed="false">By genus</button></div></div>
+</div></div>
+</section>
 <div id="stats" class="stats"></div><div id="grid" class="grid"></div><div id="groups" class="groupList" hidden></div>
 </main>
 
