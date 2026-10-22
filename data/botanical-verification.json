@@ -1313,11 +1313,11 @@
     },
     "centaurea-montana": {
       "status": "pending_review",
-      "imageSha256": "4b82ca75c974660060ccbc42eb823176ec8106ad4dca122ab0396bda11b02e53",
-      "pngSha256": "d3ed23b5c54127fc8cb49036339b4f92662788edfaee61c7568ea37e95114b65",
+      "imageSha256": "2dcdfef08ec5713e8557776e0d07730b91f1471ba9327a4522254bc88241db28",
+      "pngSha256": "9d5a580cbd3dd8f8e72df26da4f5f29a8a0c9e08fbbab1dfbce51574d9066de2",
       "bundleMatchStatus": "provisional_cultivar_or_species_check",
       "sourceFilename": "centaurea-montana.png",
-      "importedAt": "2026-10-22T13:24:00Z"
+      "importedAt": "2026-10-22T15:42:22Z"
     },
     "delphinium-black-knight": {
       "status": "pending_review",
@@ -1345,11 +1345,11 @@
     },
     "lupinus-gallery-blue": {
       "status": "pending_review",
-      "imageSha256": "7434cc5d4746f0c7710528a61e483167a29cd8c569aa15753b214fb2cf44629c",
-      "pngSha256": "e85d2520031eb13d172b678c775c6a2ad137adc06f156dcee9107bc29afae7c1",
+      "imageSha256": "0d1d3a27393031993c366782144954100eabda2d92af6f5483c4fc15d73a010c",
+      "pngSha256": "66f940a9a0ab365dbf5ce96a352a5cc9bf65b8e1f1cff5329574dcc34950744c",
       "bundleMatchStatus": "provisional_cultivar_or_species_check",
       "sourceFilename": "lupinus-gallery-blue.png",
-      "importedAt": "2026-10-22T13:24:00Z"
+      "importedAt": "2026-10-22T15:42:22Z"
     },
     "lupinus-the-governor": {
       "status": "pending_review",
@@ -1409,27 +1409,27 @@
     },
     "campanula-persicifolia-alba": {
       "status": "pending_review",
-      "imageSha256": "fe0426c794f37abdb0ab2169c19337564355221d6d9587a24db3d59cebee7878",
-      "pngSha256": "97fd30e009c63285f190aabcf53234bcfc16adc4b8b4c296e6215c9df80b629c",
+      "imageSha256": "66eb9305328f318e60d9eac5cdebb3cf7297be375fb479ad34447435b755ed41",
+      "pngSha256": "a364b92b56f8101030cf2252ff35c2e59ccb67e4fe582d329ad87cba6b65e0b5",
       "bundleMatchStatus": "provisional_cultivar_or_species_check",
       "sourceFilename": "campanula-persicifolia-alba.png",
-      "importedAt": "2026-10-22T13:24:00Z"
+      "importedAt": "2026-10-22T15:42:22Z"
     },
     "cerastium-tomentosum": {
       "status": "pending_review",
-      "imageSha256": "cac21492f3e240aa3515b21842c4c9f90d0b56cc2bc7ea0e40e47146d1b46ad7",
-      "pngSha256": "b6d759cb355ba4a8894479067854edb24a9217ca721448d9dea72d548a6d69a2",
+      "imageSha256": "1272a94294512a10b90874d81a0ac42d91922433b7085d8c9709eba8185d7398",
+      "pngSha256": "15c660686daa737d4016988c1a00008fa61ea4f9dee31efbc202cffd1e8dd4c0",
       "bundleMatchStatus": "provisional_cultivar_or_species_check",
       "sourceFilename": "cerastium-tomentosum.png",
-      "importedAt": "2026-10-22T13:24:00Z"
+      "importedAt": "2026-10-22T15:42:22Z"
     },
     "digitalis-lutea": {
       "status": "pending_review",
-      "imageSha256": "2f4924714527e0f6ed74f7694ff220348124774d5d6723276eb8fe12f18b8406",
-      "pngSha256": "f30c9052a44023d50a38dd856081c10a75bddda553749424eb966527925681b7",
+      "imageSha256": "1e02cfc9b23451fe801204bfb3abcf90a73d02dcc358c198a2b0d8c26e070d39",
+      "pngSha256": "41e26b40835139b4a919269c1edf95ecbed602b95ee274c02bc3d359c802ded9",
       "bundleMatchStatus": "provisional_cultivar_or_species_check",
       "sourceFilename": "digitalis-lutea.png",
-      "importedAt": "2026-10-22T13:24:00Z"
+      "importedAt": "2026-10-22T15:42:22Z"
     },
     "gillenia-trifoliata": {
       "status": "pending_review",
@@ -1465,19 +1465,19 @@
     },
     "bergenia-bressingham-white": {
       "status": "pending_review",
-      "imageSha256": "07383257006f6f78ed0ea154fc2f0eb44fc9b1c230d516a5edee5baa0aa65903",
-      "pngSha256": "a3772b52257afaaf07882585b0d90487c2cdaa987c2ef33298935386db72eb2f",
+      "imageSha256": "925a281ce0939e737ec7bfb524819e05fb5cd23cb79d9b0f79285a4178678dab",
+      "pngSha256": "a380b5f6176f3ed6afc070dd89cd85645acc8518b0d79807676012c243002de3",
       "bundleMatchStatus": "provisional_cultivar_or_species_check",
       "sourceFilename": "bergenia-bressingham-white.png",
-      "importedAt": "2026-10-22T13:24:00Z"
+      "importedAt": "2026-10-22T15:42:22Z"
     },
     "betonica-officinalis-hummelo": {
       "status": "pending_review",
-      "imageSha256": "22b38a9fd7f2e29c2f3122be8f8a312681d6dd82399138fd66f1ca4377de999f",
-      "pngSha256": "a73c9fac9664fc28219fd5219123eaf2581ef9d64f1f451e3a933b098e789378",
+      "imageSha256": "7b225c20c8728496b78e9486bba5ee931729edc0dbef3db4bec9bdbd7ae4e1db",
+      "pngSha256": "12c64f09bc12d5fdff94df19dd771215f069b0591f77d99ff60fe39c196c7c28",
       "bundleMatchStatus": "provisional_cultivar_or_species_check",
       "sourceFilename": "betonica-officinalis-hummelo.png",
-      "importedAt": "2026-10-22T13:24:00Z"
+      "importedAt": "2026-10-22T15:42:22Z"
     },
     "geranium-nodosum": {
       "status": "pending_review",
@@ -1497,11 +1497,11 @@
     },
     "geranium-sanguineum-max-frei": {
       "status": "pending_review",
-      "imageSha256": "b50726a1316158cebc084930bbef2a6a6ec7e6242a3cf881d574dae7fb78679a",
-      "pngSha256": "26a281655c6aa3a7c2c26ecf68f81faf72c829a8c899a25e326562f6174105e1",
+      "imageSha256": "94f1288c66aadc8dd0f57ff553a9b42380daa7ed15335c51913ad7d2759b8d19",
+      "pngSha256": "8558eaecfeedc0d5f7104303295e72f0a941876049ef7d241580853bb41feb49",
       "bundleMatchStatus": "provisional_cultivar_or_species_check",
       "sourceFilename": "geranium-sanguineum-max-frei.png",
-      "importedAt": "2026-10-22T13:24:00Z"
+      "importedAt": "2026-10-22T15:42:22Z"
     },
     "geum-rivale-leonards-variety": {
       "status": "pending_review",
@@ -1521,11 +1521,11 @@
     },
     "phlox-subulata-emerald-cushion-blue": {
       "status": "pending_review",
-      "imageSha256": "f47323d3672591d78c4c3c8acf219fa8eb7eaca05eb8d58c10b7fa3e5f14a145",
-      "pngSha256": "f6a94a5db470613f8115fe9804b42c2cd7b834fc1a7634689390ccd4a99f0ea8",
+      "imageSha256": "62295ca0a3a4674a06af15a3272d1f154e1063ede6bc69b1e3936c9a5039b310",
+      "pngSha256": "7c4235edf2b63389f35ce002d4b630ca5f622c6b6b432538c57c107967189019",
       "bundleMatchStatus": "provisional_cultivar_or_species_check",
       "sourceFilename": "phlox-subulata-emerald-cushion-blue.png",
-      "importedAt": "2026-10-22T13:24:00Z"
+      "importedAt": "2026-10-22T15:42:22Z"
     },
     "scabiosa-butterfly-blue": {
       "status": "pending_review",
@@ -1537,11 +1537,11 @@
     },
     "stachys-byzantina-silver-carpet": {
       "status": "pending_review",
-      "imageSha256": "5ff99da585926ce33b9aa64906911ea0a3c943df77d7494fb537d94d28ca0c3b",
-      "pngSha256": "3e8be6d94cd9ddd92d679f9ed7fbfdea21e58a778ece9872da3cd87a68c6f9af",
+      "imageSha256": "f9ff77d10eac395ebd9c3a020340b8a28f1373226b34859b1dc7792bd4ed55dd",
+      "pngSha256": "2123772d5c5832c18ccb4be095acdab4cf0fb7bde0805ef384319c0f52bf4cfa",
       "bundleMatchStatus": "provisional_cultivar_or_species_check",
       "sourceFilename": "stachys-byzantina-silver-carpet.png",
-      "importedAt": "2026-10-22T13:24:00Z"
+      "importedAt": "2026-10-22T15:42:22Z"
     },
     "briza-media": {
       "status": "pending_review",
@@ -1576,6 +1576,6 @@
       "importedAt": "2026-10-22T13:24:00Z"
     }
   },
-  "updated": "2026-10-22T13:24:00Z",
+  "updated": "2026-10-22T15:42:22Z",
   "watercolourNote": "plants[id].watercolour.status is awaiting_review until approved by editing this file (never automatically)."
 }
