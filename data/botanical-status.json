@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "description": "Botanical illustration status per catalogue plant, in catalogue order. Derived from repository state by tools/botanical_status.py; see docs/BOTANICAL_STATUS.md. Only status=missing (or an expired reservation) enters the generation queue.",
+  "description": "Botanical illustration status per catalogue plant, in catalogue order. Derived from repository state by tools/botanical_status.py; see docs/BOTANICAL_STATUS.md. Only status=missing enters the generation queue.",
   "statusDefinitions": {
     "missing": "no botanical PNG master and no botanical WebP in either repository and no reservation; the status the generation queue picks up",
     "pending_review": "not approved by a person: a generated image delivered but not imported yet (reservation, assetForm none), an imported image awaiting approval, an image confirmed by filename match only (approvalBasis=filename_match_only), or a half-published image",

@@ -7,8 +7,8 @@ count as botanical. `tools/botanical_status.py` (stdlib only) builds, validates 
 ## Statuses
 | status | meaning | enters generation queue? |
 | --- | --- | --- |
-| `missing` | no botanical PNG master, no botanical WebP and no reservation | **yes** |
-| `pending_review` | not approved by a person: a generated image delivered but not imported yet (a *reservation*, `assetForm` none), an imported image awaiting approval, an image confirmed by filename match only, or a half-published image | no (an expired reservation returns to the queue, see below) |
+| `missing` | no botanical PNG master, no botanical WebP and no reservation | **yes, the only one** |
+| `pending_review` | not approved by a person: a generated image delivered but not imported yet (a *reservation*, `assetForm` none), an imported image awaiting approval, an image confirmed by filename match only, or a half-published image | no |
 | `approved` | PNG master and WebP exist, hashes agree, and `data/botanical-verification.json` carries an explicit manual approval (`approvedAt`) | no |
 | `rejected` | manual flag: regenerate only when explicitly requested | no |
 | `uncertain_match` | manual flag, or an automatic hash mismatch between files and records; never counted as approved | no |
@@ -35,14 +35,22 @@ Each reserved plant becomes `pending_review` with `assetForm: none` and a `reser
 - **Import** the images and run `build --bd ...`: the reservation clears itself and the status follows the files and the verification record.
 - **ZIP lost or rejected:** `release --batch <B>` (or `release <ids>`) returns the plants to `missing` at once.
 - **Needs more time:** `renew --batch <B> [--days N]`.
-- **Forgotten:** after `expiresAt` the plants stop blocking and reappear in `queue` with a warning on stderr (a package may still exist), and
-  `check` fails until each reservation is imported, renewed or released. Nothing is blocked silently, and nothing is regenerated silently.
+- **Forgotten:** after `expiresAt`, `queue` refuses to run (exit 2, no IDs) and `check` fails until each expired reservation is imported,
+  renewed or released. Expired reservations are never re-queued automatically: a generated package may still exist, so a person decides.
 `reservations` lists them with active/expired state.
+
+## Safety stops
+`queue` and `reserve` first check that the manifest is fresh and exit 2 without returning any ID when it is not:
+- the catalogue (`data/plants.json`) and the manifest list different plants (the message names the new or removed IDs), or
+- files, verification records or the asset manifest changed since the last `build`, or
+- (`queue` only) any reservation is expired.
+The message says what to do: `build --bd <border-designer checkout>`, review and commit the manifest diff, then repeat; or renew/release/import.
+PNG masters in the private repo cannot be re-read without `--bd`, so freshness against them is only checked when you rebuild with it.
 
 ## Commands
 ```bash
-python3 tools/botanical_status.py check                    # validate (exit 1 on any problem, including a stale manifest)
-python3 tools/botanical_status.py queue 10                 # first 10 missing plant IDs, catalogue order
+python3 tools/botanical_status.py check                    # validate (exit 1 on any problem, including a stale manifest or an expired reservation)
+python3 tools/botanical_status.py queue 10                 # first 10 missing plant IDs, catalogue order (refuses if stale)
 python3 tools/botanical_status.py queue 20 --skip 10       # the next 20
 python3 tools/botanical_status.py summary
 python3 tools/botanical_status.py build                    # recompute from repository state (keeps recorded PNG master fields)

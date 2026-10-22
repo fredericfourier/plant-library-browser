@@ -3,7 +3,7 @@
 
   botanical_status.py build [--bd <border-designer checkout> --bd-ref <ref>]   regenerate data/botanical-status.json
   botanical_status.py check                                                      validate manifest against the repo (exit 1 on any problem)
-  botanical_status.py queue [N] [--skip K] [--json]                              first N plants still to generate, catalogue order
+  botanical_status.py queue [N] [--skip K] [--json]                              first N plants still to generate (status missing), catalogue order; refuses stale manifests
   botanical_status.py summary                                                    status counts
   botanical_status.py set rejected|uncertain_match <plant-id> [...] [--note T]   pin a manual status (kept by later builds)
   botanical_status.py reserve <plant-id> [...] --batch B [--source ZIP] [--days N]   record a delivered generation package (not yet imported)
@@ -11,9 +11,10 @@
   botanical_status.py renew (<plant-id> [...] | --batch B) [--days N]            extend a reservation
   botanical_status.py reservations                                               list reservations (active / expired)
 
-A reservation marks a plant generated-but-not-imported: status pending_review with assetForm none, skipped by `queue` until it expires
-(default 14 days). Expired reservations stop blocking, are listed by `queue` on stderr and fail `check`, so none blocks a plant silently.
-Importing the image clears the reservation automatically (the status then follows the files and verification record).
+A reservation marks a plant generated-but-not-imported: status pending_review with assetForm none, skipped by `queue` (default expiry 14 days).
+`queue` and `reserve` refuse to run (exit 2, no IDs) when the manifest is stale against the catalogue or files; `queue` also refuses while any
+reservation is expired, and `check` fails: expired reservations are never re-queued automatically, they need an explicit `renew`, `release`,
+or import followed by `build`. Importing the image clears the reservation automatically.
 `approved` requires an explicit manual approval (approvedAt in data/botanical-verification.json); a record confirmed by filename match only
 stays pending_review with approvalBasis=filename_match_only. This tool never writes data/botanical-verification.json.
 
@@ -151,7 +152,7 @@ def build(prev, bd=None, bd_ref=None):
     return {
         "schemaVersion": 1,
         "description": "Botanical illustration status per catalogue plant, in catalogue order. Derived from repository state by tools/botanical_status.py; "
-                       "see docs/BOTANICAL_STATUS.md. Only status=missing (or an expired reservation) enters the generation queue.",
+                       "see docs/BOTANICAL_STATUS.md. Only status=missing enters the generation queue.",
         "statusDefinitions": {
             "missing": "no botanical PNG master and no botanical WebP in either repository and no reservation; the status the generation queue picks up",
             "pending_review": "not approved by a person: a generated image delivered but not imported yet (reservation, assetForm none), an imported image "
@@ -227,9 +228,38 @@ def check(today):
     return errs
 
 
-def queue(cur, n, skip, today):
-    """Plants to generate next: status missing, plus plants whose reservation has expired (reported on stderr by main)."""
-    return [p["plantId"] for p in cur["plants"] if p["status"] == "missing" or expired(p, today)][skip:skip + n]
+def stop(msg):
+    print(msg, file=sys.stderr)
+    sys.exit(2)
+
+
+def require_fresh(cur, today=None):
+    """Refuse to act on a manifest that no longer matches the repository (exit 2 with the fix). With `today`, also refuse expired reservations."""
+    cat = [p["id"] for p in load(ROOT / "data/plants.json")["plants"]]
+    ids = [p["plantId"] for p in cur["plants"]]
+    problems = []
+    if ids != cat:
+        new, gone = [i for i in cat if i not in ids], [i for i in ids if i not in cat]
+        problems.append(f"the catalogue (data/plants.json, {len(cat)} plants) and the manifest ({len(ids)}) differ"
+                        + (f"; not in manifest: {', '.join(new)}" if new else "") + (f"; not in catalogue: {', '.join(gone)}" if gone else ""))
+    elif dump(build(cur)) != dump(cur):
+        problems.append("files or verification records changed since the manifest was built")
+    if problems:
+        stop("STOP: botanical status manifest is stale: " + "; ".join(problems) + ".\n"
+                 "Run `python3 tools/botanical_status.py build --bd <border-designer checkout>`, review `git diff data/botanical-status.json`, "
+                 "commit it, then repeat this command. No IDs were returned.")
+    if today:
+        late = [p for p in cur["plants"] if expired(p, today)]
+        if late:
+            stop("STOP: expired reservations must be reconciled before the queue can be trusted: "
+                     + "; ".join(f"{p['plantId']} (batch {p['reservation']['batchId']}, expired {p['reservation']['expiresAt']})" for p in late)
+                     + ".\nA generated package may still exist: import the images and `build`, or `renew --batch <B>`, or `release --batch <B>` "
+                       "if the package is lost or rejected. No IDs were returned.")
+
+
+def queue(cur, n, skip):
+    """Plants still to generate: status missing, in catalogue order. Reserved plants (active or expired) are never returned."""
+    return [p["plantId"] for p in cur["plants"] if p["status"] == "missing"][skip:skip + n]
 
 
 def pick(prev, a):
@@ -273,13 +303,9 @@ def main():
     elif a.cmd == "summary":
         print(json.dumps(prev["summary"]))
     elif a.cmd == "queue":
-        ids = queue(prev, a.n, a.skip, today)
+        require_fresh(prev, today)
+        ids = queue(prev, a.n, a.skip)
         print(json.dumps(ids) if a.json else "\n".join(ids))
-        stale = [p for p in prev["plants"] if expired(p, today) and p["plantId"] in ids]
-        if stale:
-            print("WARNING: queued plants with an expired reservation (a generated package may still exist): "
-                  + ", ".join(f"{p['plantId']} (batch {p['reservation']['batchId']}, expired {p['reservation']['expiresAt']})" for p in stale),
-                  file=sys.stderr)
     elif a.cmd == "reservations":
         for p in prev["plants"]:
             if "reservation" in p:
@@ -296,14 +322,15 @@ def main():
         save(build(prev))
         print(a.status, a.ids)
     elif a.cmd == "reserve":
+        require_fresh(prev)
         by = {p["plantId"]: p for p in prev["plants"]}
         unknown = [i for i in a.ids if i not in by]
         if unknown:
             sys.exit(f"unknown plant ids: {unknown}")
-        refused = [f"{i} ({by[i]['status']}{', reserved in batch ' + by[i]['reservation']['batchId'] if 'reservation' in by[i] and not expired(by[i], today) else ''})"
-                   for i in a.ids if by[i]["status"] != "missing" and not expired(by[i], today)]
+        refused = [f"{i} ({by[i]['status']}{', reserved in batch ' + by[i]['reservation']['batchId'] if 'reservation' in by[i] else ''})"
+                   for i in a.ids if by[i]["status"] != "missing"]
         if refused:
-            sys.exit("only plants with status missing (or an expired reservation) can be reserved; refused: " + "; ".join(refused))
+            sys.exit("only plants with status missing can be reserved (renew or release an existing reservation first); refused: " + "; ".join(refused))
         for i in a.ids:
             by[i]["reservation"] = {"batchId": a.batch, "source": a.source, "reservedAt": today, "expiresAt": add_days(today, a.days)}
             by[i]["status"] = "missing"  # let build re-derive pending_review from the reservation
