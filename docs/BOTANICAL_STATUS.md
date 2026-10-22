@@ -112,6 +112,11 @@ After importing the images (public WebP + private PNG master in border-designer)
 itself and the status follows the files and approval records. Without `--bd` the private repository cannot be seen, so a master added only there is not detected: always pass `--bd` for a new
 generation cycle. `--require-synced` is opt-in; without it `queue` keeps its previous behaviour.
 
-Known limitation: `tools/import_watercolour_assets.py` indexes `manifest.json[id]` and `botanical-verification.json[id]` directly, so importing a watercolour for a plant that has no botanical
-record yet fails with KeyError (by reading the code; not changed here). Import the botanical image first or create the records. The status tool itself accepts a watercolour-only
-verification record (`plants[id]` with only `watercolour`), and the botanical build ignores it.
+Importing watercolours (`tools/import_watercolour_assets.py <plb> <bd|-> data/plants.json report.json <part-dir>...`) accepts catalogue plants that have no botanical image or
+records: it creates `assets[id] = {variants: {watercolour}}` and `plants[id] = {watercolour}` and leaves every botanical field alone. Everything is validated before any write; writes are
+staged and rolled back together on failure; re-importing identical PNG+WebP bytes changes nothing (an approved watercolour stays approved); changed bytes reset only the watercolour
+review to `awaiting_review` and keep the old state under `previous`. Tests: `python3 tools/test_watercolour_import.py`. The status tool accepts a watercolour-only verification record
+and the botanical build ignores it.
+
+Browser caveat (index.html, not changed): the page treats any `assets[id]` entry as "has an illustration" for its default (botanical) view, so a watercolour-only plant shows a
+missing-image placeholder under the Botanical view until its botanical image exists; its Watercolour view works.
