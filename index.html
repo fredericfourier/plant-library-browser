@@ -216,7 +216,7 @@ function render(){
     e.stopPropagation();
     openImage(img.dataset.zoom,filtered().filter(p=>p._hasWatercolour).map(p=>p.id))
   });
-  active.querySelectorAll("img[data-compose]").forEach(composeCard);
+  cardK=0;active.querySelectorAll("img[data-compose]").forEach(composeCard);
   document.body.classList.toggle("showBoxes",BB.show)
 }
 function attr(k,v){return '<div class="attr"><b>'+esc(k)+'</b><div>'+esc(vals(v))+'</div></div>'}
@@ -237,13 +237,13 @@ function navigatePlant(dir){let dlg=$("#dlg"),next=stepSequence(detailNavIds,dlg
 /* Single geometry model for every view that draws the expected-size box (cards, compare panes, single viewer, compare viewer).
    The box comes ONLY from the catalogue: width = spreadCm, height = heightCm, one px-per-cm scale on both axes. The illustration is then
    placed in that same composition (silhouette height = box height, centred on the box, bottom-aligned) and the whole composition is
-   scaled to fit the available area, so the full box is always visible. The silhouette is used to position the artwork and for the
+   scaled to fit the available area (viewers) or to the shared thumbnail scale (cards), so the full box is always visible. The silhouette is used to position the artwork and for the
    size-mismatch warning, never to set the box dimensions. */
 const expectedBox=p=>p&&p.heightCm>0&&p.spreadCm>0?{w:p.spreadCm,h:p.heightCm}:null;
-function layoutExpectedBox(p,sil,W,H,aw,ah,pad){
+function layoutExpectedBox(p,sil,W,H,aw,ah,pad,fixedK){
   const box=expectedBox(p);if(!box||!(W>0&&H>0))return null;
   const s=sil||{x0:0,y0:0,x1:1,y1:1},c=box.h/((s.y1-s.y0)*H),iw=W*c,ih=H*c,silW=(s.x1-s.x0)*iw,ext=Math.max(box.w,silW)/2;
-  const k=Math.min(Math.max(1,aw-2*pad)/(2*ext),Math.max(1,ah-2*pad)/box.h),bw=box.w*k,bh=box.h*k,bx=(aw-bw)/2,by=(ah-bh)/2,w=iw*k,h=ih*k;
+  const k=fixedK||Math.min(Math.max(1,aw-2*pad)/(2*ext),Math.max(1,ah-2*pad)/box.h),bw=box.w*k,bh=box.h*k,bx=(aw-bw)/2,by=(ah-bh)/2,w=iw*k,h=ih*k;
   return {k,box:{x:bx,y:by,w:bw,h:bh},img:{x:aw/2-((s.x0+s.x1)/2)*w,y:by+bh-s.y1*h,w,h}};
 }
 function setRect(el,r){el.style.left=r.x.toFixed(2)+"px";el.style.top=r.y.toFixed(2)+"px";el.style.width=r.w.toFixed(2)+"px";el.style.height=r.h.toFixed(2)+"px"}
@@ -251,7 +251,7 @@ function composeCard(img){
   const go=()=>{
     const wrap=img.closest(".pane,.art"),box=wrap&&wrap.querySelector(".envBox"),p=DB.find(x=>x.id===img.dataset.zoom),W=img.naturalWidth,H=img.naturalHeight;
     let s=null;try{s=silhouette(img)}catch(e){}
-    const r=wrap&&p&&layoutExpectedBox(p,s,W,H,wrap.clientWidth,wrap.clientHeight,8);
+    const r=wrap&&p&&layoutExpectedBox(p,s,W,H,wrap.clientWidth,wrap.clientHeight,8,getCardScale());
     if(!r){img.style.visibility="visible";img.dataset.silhouette="fallback";if(box)box.style.display="none";return}
     img.style.cssText="position:absolute;z-index:1;max-width:none;visibility:visible";setRect(img,r.img);
     if(box){box.style.removeProperty("display");setRect(box,r.box)}
@@ -260,7 +260,18 @@ function composeCard(img){
   };
   img.complete&&img.naturalWidth?go():img.addEventListener("load",go,{once:true});
 }
-const composeAllCards=()=>document.querySelectorAll("img[data-compose]").forEach(composeCard);
+/* Thumbnails (cards and compare cards) share ONE px-per-cm scale so plants keep their real relative sizes: it is the largest scale at which the
+   catalogue's tallest plant and widest spread both fit the smallest card area. It depends on the whole catalogue, never on the current
+   filter or on an individual plant, and is applied identically to width and height. The enlarged viewer still fits each plant to the screen. */
+let cardK=0;
+function getCardScale(){
+  if(cardK)return cardK;
+  const wraps=[...document.querySelectorAll(".card .pane, .card .art:not(.cmp)")].filter(w=>w.clientWidth>0&&w.clientHeight>0);
+  if(!wraps.length)return 0.8;
+  const w=Math.min(...wraps.map(x=>x.clientWidth)),h=Math.min(...wraps.map(x=>x.clientHeight)),maxH=Math.max(...DB.map(p=>p.heightCm||0)),maxW=Math.max(...DB.map(p=>p.spreadCm||0));
+  return cardK=Math.floor(Math.min((h-16)/maxH,(w-16)/maxW)*1000)/1000;
+}
+const composeAllCards=()=>{cardK=0;document.querySelectorAll("img[data-compose]").forEach(composeCard)};
 /* Shared, deterministic scaling for every illustration type: the meaningful silhouette (alpha mask, small detached specks such
    as watercolour splashes ignored) is scaled uniformly to the database envelope height and anchored bottom-centre; the
    transparent canvas margin and faint washes simply extend beyond it. */
