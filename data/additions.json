@@ -20,6 +20,47 @@
         "echinacea-powwow-white",
         "digitalis-purpurea-alba"
       ]
+    },
+    {
+      "id": "2026-10-22-e3-catalogue-v1-0-browser-integration",
+      "label": "Added 22 Oct 2026",
+      "date": "2026-10-22",
+      "plantIds": [
+        "delphinium-black-knight",
+        "alcea-rosea-halo-white",
+        "lupinus-the-governor",
+        "lupinus-gallery-blue",
+        "hydrangea-paniculata-little-lime",
+        "syringa-meyeri-palibin",
+        "centaurea-montana",
+        "lychnis-coronaria",
+        "polemonium-caeruleum",
+        "linaria-purpurea",
+        "cerastium-tomentosum",
+        "malva-sylvestris",
+        "veronica-longifolia",
+        "acanthus-mollis",
+        "campanula-lactiflora-prichards-variety",
+        "campanula-persicifolia-alba",
+        "digitalis-lutea",
+        "verbascum-chaixii-album",
+        "aquilegia-vulgaris-nora-barlow",
+        "gillenia-trifoliata",
+        "scabiosa-butterfly-blue",
+        "betonica-officinalis-hummelo",
+        "geum-rivale-leonards-variety",
+        "geranium-nodosum",
+        "geranium-phaeum-samobor",
+        "geranium-sanguineum-max-frei",
+        "stachys-byzantina-silver-carpet",
+        "bergenia-bressingham-white",
+        "phlox-subulata-emerald-cushion-blue",
+        "iberis-sempervirens-snowflake",
+        "briza-media",
+        "luzula-nivea",
+        "rosa-the-fairy",
+        "dianthus-mrs-sinkins"
+      ]
     }
   ]
 }

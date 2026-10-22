@@ -1,6 +1,6 @@
 {
   "schemaVersion": 7,
-  "updated": "2026-10-16",
+  "updated": "2026-10-22",
   "plants": [
     {
       "id": "salvia-caradonna",
@@ -7286,6 +7286,3485 @@
         ],
         "confidence": "low",
         "basis": "Short-lived biennial/perennial: flowers in its second year; by analogy with the Digitalis purpurea record, to be verified"
+      }
+    },
+    {
+      "id": "delphinium-black-knight",
+      "botanicalName": "Delphinium Black Knight Group",
+      "commonName": "Delphinium 'Black Knight'",
+      "type": "perennial",
+      "heightCm": 150,
+      "spreadCm": 65,
+      "light": [
+        "full_sun"
+      ],
+      "soil": [
+        "loam",
+        "sandy"
+      ],
+      "moisture": [
+        "average",
+        "dry"
+      ],
+      "flowerColours": [
+        "blue",
+        "purple"
+      ],
+      "floweringStart": 6,
+      "floweringEnd": 7,
+      "foliage": "deciduous",
+      "foliageColour": "green",
+      "hardiness": "H5",
+      "requiresStaking": true,
+      "winterProtection": false,
+      "maintenance": "moderate",
+      "pollinatorValue": 3,
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS",
+            "url": "https://www.rhs.org.uk/plants/101297/details",
+            "checked": "2026-10-21"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS time to ultimate height 2-5 years"
+      },
+      "design": {
+        "styles": [
+          "cottage"
+        ],
+        "position": [
+          "middle_back",
+          "back"
+        ],
+        "habit": "vertical_accent",
+        "visualDensity": "medium",
+        "placementFlexibility": "low",
+        "layer": "structural",
+        "groupingMode": "clump",
+        "allowSingleton": false,
+        "designRoles": [
+          "structure",
+          "repetition"
+        ],
+        "roles": {
+          "preferred": "repeated_clump",
+          "supported": [
+            "repeated_clump",
+            "structural_anchor"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0.45,
+            0.9
+          ],
+          "hard": [
+            0.2,
+            1
+          ]
+        },
+        "transparency": {
+          "base": 0.1,
+          "upper": 0.45
+        },
+        "spreadHabit": "clumping"
+      },
+      "plantsPerSqM": 3,
+      "description": "Tall spires of deep midnight-blue flowers with black eyes in early summer. Needs staking.",
+      "notes": "Analogue: Veronicastrum/Phlox back-border spires. Tall: avoid in very shallow borders.",
+      "watercolourEnvelope": {
+        "ratio": 0.433,
+        "shapeClass": "very_narrow_upright",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 1500,
+        "expectedSpreadPx": 650,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
+      }
+    },
+    {
+      "id": "alcea-rosea-halo-white",
+      "botanicalName": "Alcea rosea 'Halo White'",
+      "commonName": "Hollyhock 'Halo White'",
+      "type": "perennial",
+      "heightCm": 200,
+      "spreadCm": 75,
+      "light": [
+        "full_sun"
+      ],
+      "soil": [
+        "loam",
+        "sandy"
+      ],
+      "moisture": [
+        "average",
+        "dry"
+      ],
+      "flowerColours": [
+        "white",
+        "yellow"
+      ],
+      "floweringStart": 6,
+      "floweringEnd": 8,
+      "foliage": "deciduous",
+      "foliageColour": "green",
+      "hardiness": "H5",
+      "requiresStaking": true,
+      "winterProtection": false,
+      "maintenance": "moderate",
+      "pollinatorValue": 4,
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS",
+            "url": "https://www.rhs.org.uk/plants/315086/details",
+            "checked": "2026-10-21"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS time to ultimate height 2-5 years"
+      },
+      "design": {
+        "styles": [
+          "cottage"
+        ],
+        "position": [
+          "middle_back",
+          "back"
+        ],
+        "habit": "vertical_accent",
+        "visualDensity": "low",
+        "placementFlexibility": "medium",
+        "layer": "structural",
+        "groupingMode": "clump",
+        "allowSingleton": false,
+        "designRoles": [
+          "structure",
+          "repetition"
+        ],
+        "roles": {
+          "preferred": "repeated_clump",
+          "supported": [
+            "repeated_clump",
+            "emergent"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0.55,
+            0.95
+          ],
+          "hard": [
+            0.3,
+            1
+          ]
+        },
+        "transparency": {
+          "base": 0.1,
+          "upper": 0.5
+        },
+        "spreadHabit": "self_seeding",
+        "roleTraits": {
+          "emergent": {
+            "baseOccupancy": 0.3
+          }
+        }
+      },
+      "plantsPerSqM": 3,
+      "description": "Tall spikes of large single white flowers with a yellow halo in summer.",
+      "notes": "RHS name status Unresolved; cultivar dimensions rest on RHS bands and a sister cultivar only. Short-lived; often grown as a biennial to limit rust.",
+      "watercolourEnvelope": {
+        "ratio": 0.375,
+        "shapeClass": "very_narrow_upright",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 2000,
+        "expectedSpreadPx": 750,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
+      }
+    },
+    {
+      "id": "lupinus-the-governor",
+      "botanicalName": "Lupinus 'The Governor'",
+      "commonName": "Lupin 'The Governor'",
+      "type": "perennial",
+      "heightCm": 90,
+      "spreadCm": 60,
+      "light": [
+        "full_sun",
+        "part_shade"
+      ],
+      "soil": [
+        "loam",
+        "sandy"
+      ],
+      "moisture": [
+        "average",
+        "dry"
+      ],
+      "flowerColours": [
+        "blue",
+        "white"
+      ],
+      "floweringStart": 6,
+      "floweringEnd": 7,
+      "foliage": "deciduous",
+      "foliageColour": "green",
+      "hardiness": "H5",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "maintenance": "low",
+      "pollinatorValue": 3,
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS",
+            "url": "https://www.rhs.org.uk/plants/45712/details",
+            "checked": "2026-10-21"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS time to ultimate height 2-5 years"
+      },
+      "design": {
+        "styles": [
+          "cottage"
+        ],
+        "position": [
+          "middle",
+          "middle_back"
+        ],
+        "habit": "vertical_accent",
+        "visualDensity": "medium",
+        "placementFlexibility": "medium",
+        "layer": "structural",
+        "groupingMode": "clump",
+        "allowSingleton": false,
+        "designRoles": [
+          "structure",
+          "repetition",
+          "early_season"
+        ],
+        "roles": {
+          "preferred": "repeated_clump",
+          "supported": [
+            "repeated_clump",
+            "primary_drift"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0.3,
+            0.8
+          ],
+          "hard": [
+            0.1,
+            1
+          ]
+        },
+        "transparency": {
+          "base": 0.1,
+          "upper": 0.45
+        },
+        "spreadHabit": "clumping"
+      },
+      "plantsPerSqM": 4,
+      "description": "Dense blue and white flower spikes in early summer; cut back after flowering for a second flush.",
+      "notes": "Band of Nobles Series. Spread evidence conflicts (RHS band 0.1-0.5 m vs one nursery 70 cm).",
+      "watercolourEnvelope": {
+        "ratio": 0.667,
+        "shapeClass": "narrow_upright",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 900,
+        "expectedSpreadPx": 600,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
+      }
+    },
+    {
+      "id": "lupinus-gallery-blue",
+      "botanicalName": "Lupinus 'Gallery Blue'",
+      "commonName": "Lupin 'Gallery Blue'",
+      "type": "perennial",
+      "heightCm": 50,
+      "spreadCm": 50,
+      "light": [
+        "full_sun",
+        "part_shade"
+      ],
+      "soil": [
+        "loam",
+        "sandy"
+      ],
+      "moisture": [
+        "average",
+        "dry"
+      ],
+      "flowerColours": [
+        "blue",
+        "purple",
+        "white"
+      ],
+      "floweringStart": 5,
+      "floweringEnd": 7,
+      "foliage": "deciduous",
+      "foliageColour": "green",
+      "hardiness": "H5",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "maintenance": "low",
+      "pollinatorValue": 3,
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS",
+            "url": "https://www.rhs.org.uk/plants/126531/details",
+            "checked": "2026-10-21"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS time to ultimate height 2-5 years"
+      },
+      "design": {
+        "styles": [
+          "cottage"
+        ],
+        "position": [
+          "front_middle",
+          "middle"
+        ],
+        "habit": "upright",
+        "visualDensity": "medium",
+        "placementFlexibility": "medium",
+        "layer": "matrix",
+        "groupingMode": "clump",
+        "allowSingleton": false,
+        "designRoles": [
+          "repetition",
+          "early_season"
+        ],
+        "roles": {
+          "preferred": "repeated_clump",
+          "supported": [
+            "repeated_clump",
+            "primary_drift"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0.1,
+            0.6
+          ],
+          "hard": [
+            0,
+            0.85
+          ]
+        },
+        "transparency": {
+          "base": 0.1,
+          "upper": 0.4
+        },
+        "spreadHabit": "clumping"
+      },
+      "plantsPerSqM": 5,
+      "description": "Compact lupin with short blue spires in early summer; suits small borders.",
+      "notes": "Gallery Series dwarf lupin.",
+      "watercolourEnvelope": {
+        "ratio": 1,
+        "shapeClass": "balanced_mounded",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 500,
+        "expectedSpreadPx": 500,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
+      }
+    },
+    {
+      "id": "hydrangea-paniculata-little-lime",
+      "botanicalName": "Hydrangea paniculata Little Lime ('Jane')",
+      "commonName": "Panicle hydrangea 'Little Lime'",
+      "type": "shrub",
+      "heightCm": 120,
+      "spreadCm": 120,
+      "light": [
+        "full_sun",
+        "part_shade"
+      ],
+      "soil": [
+        "clay",
+        "loam",
+        "sandy"
+      ],
+      "moisture": [
+        "average",
+        "dry"
+      ],
+      "flowerColours": [
+        "lime",
+        "pink",
+        "white"
+      ],
+      "floweringStart": 7,
+      "floweringEnd": 9,
+      "foliage": "deciduous",
+      "foliageColour": "green",
+      "hardiness": "H5",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "maintenance": "moderate",
+      "pollinatorValue": 3,
+      "maturity": {
+        "minYears": 5,
+        "maxYears": 10,
+        "sources": [
+          {
+            "name": "RHS",
+            "url": "https://www.rhs.org.uk/plants/336749/details",
+            "checked": "2026-10-21"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS time to ultimate height 5-10 years"
+      },
+      "design": {
+        "styles": [
+          "cottage",
+          "contemporary"
+        ],
+        "position": [
+          "middle",
+          "back"
+        ],
+        "habit": "clumping",
+        "visualDensity": "high",
+        "placementFlexibility": "low",
+        "layer": "structural",
+        "groupingMode": "specimen",
+        "allowSingleton": true,
+        "designRoles": [
+          "structure",
+          "focal",
+          "late_season",
+          "seasonal_interest"
+        ],
+        "roles": {
+          "preferred": "structural_anchor",
+          "supported": [
+            "structural_anchor"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0.45,
+            0.9
+          ],
+          "hard": [
+            0.25,
+            1
+          ]
+        },
+        "transparency": {
+          "base": 0.05,
+          "upper": 0.15
+        },
+        "spreadHabit": "clumping"
+      },
+      "plantsPerSqM": 1,
+      "description": "Compact shrub with lime-green flower cones from midsummer that age to cream and pink.",
+      "notes": "RHS accepted name Hydrangea paniculata 'Jane' PBR; Little Lime is the trade name.",
+      "watercolourEnvelope": {
+        "ratio": 1,
+        "shapeClass": "balanced_mounded",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 1200,
+        "expectedSpreadPx": 1200,
+        "ratioTolerance": 0.2,
+        "hardFailTolerance": 0.3,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
+      }
+    },
+    {
+      "id": "syringa-meyeri-palibin",
+      "botanicalName": "Syringa meyeri 'Palibin'",
+      "commonName": "Dwarf Korean lilac 'Palibin'",
+      "type": "shrub",
+      "heightCm": 150,
+      "spreadCm": 150,
+      "light": [
+        "full_sun"
+      ],
+      "soil": [
+        "clay",
+        "loam",
+        "sandy"
+      ],
+      "moisture": [
+        "average",
+        "dry"
+      ],
+      "flowerColours": [
+        "pink",
+        "purple"
+      ],
+      "floweringStart": 5,
+      "floweringEnd": 6,
+      "foliage": "deciduous",
+      "foliageColour": "green",
+      "hardiness": "H5",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "maintenance": "moderate",
+      "pollinatorValue": 3,
+      "maturity": {
+        "minYears": 10,
+        "maxYears": 20,
+        "sources": [
+          {
+            "name": "RHS",
+            "url": "https://www.rhs.org.uk/plants/202850/details",
+            "checked": "2026-10-21"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS time to ultimate height 10-20 years"
+      },
+      "design": {
+        "styles": [
+          "cottage"
+        ],
+        "position": [
+          "middle_back",
+          "back"
+        ],
+        "habit": "clumping",
+        "visualDensity": "high",
+        "placementFlexibility": "low",
+        "layer": "structural",
+        "groupingMode": "specimen",
+        "allowSingleton": true,
+        "designRoles": [
+          "structure",
+          "focal",
+          "early_season"
+        ],
+        "roles": {
+          "preferred": "structural_anchor",
+          "supported": [
+            "structural_anchor"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0.5,
+            0.95
+          ],
+          "hard": [
+            0.3,
+            1
+          ]
+        },
+        "transparency": {
+          "base": 0.05,
+          "upper": 0.15
+        },
+        "spreadHabit": "clumping"
+      },
+      "plantsPerSqM": 1,
+      "description": "Slow, compact lilac with fragrant lilac-pink flowers in late spring.",
+      "notes": "Shrub: avoid in very small borders. Flowering month conflict (GW Jun-Jul vs May elsewhere).",
+      "watercolourEnvelope": {
+        "ratio": 1,
+        "shapeClass": "balanced_mounded",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 1500,
+        "expectedSpreadPx": 1500,
+        "ratioTolerance": 0.2,
+        "hardFailTolerance": 0.3,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
+      }
+    },
+    {
+      "id": "centaurea-montana",
+      "botanicalName": "Centaurea montana",
+      "commonName": "Perennial cornflower",
+      "type": "perennial",
+      "heightCm": 45,
+      "spreadCm": 50,
+      "light": [
+        "full_sun",
+        "part_shade"
+      ],
+      "soil": [
+        "clay",
+        "loam",
+        "sandy"
+      ],
+      "moisture": [
+        "average",
+        "moist"
+      ],
+      "flowerColours": [
+        "blue",
+        "red"
+      ],
+      "floweringStart": 7,
+      "floweringEnd": 8,
+      "foliage": "deciduous",
+      "foliageColour": "green",
+      "hardiness": "H7",
+      "requiresStaking": true,
+      "winterProtection": false,
+      "maintenance": "moderate",
+      "pollinatorValue": 5,
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS",
+            "url": "https://www.rhs.org.uk/plants/3364/details",
+            "checked": "2026-10-21"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS time to ultimate height 2-5 years"
+      },
+      "design": {
+        "styles": [
+          "cottage",
+          "naturalistic"
+        ],
+        "position": [
+          "front",
+          "front_middle"
+        ],
+        "habit": "spreading",
+        "visualDensity": "medium",
+        "placementFlexibility": "medium",
+        "layer": "base",
+        "groupingMode": "large_clump",
+        "allowSingleton": false,
+        "designRoles": [
+          "repetition",
+          "early_season"
+        ],
+        "roles": {
+          "preferred": "primary_drift",
+          "supported": [
+            "primary_drift",
+            "groundcover"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0,
+            0.45
+          ],
+          "hard": [
+            0,
+            0.75
+          ]
+        },
+        "transparency": {
+          "base": 0.15,
+          "upper": 0.45
+        },
+        "spreadHabit": "running"
+      },
+      "plantsPerSqM": 5,
+      "description": "Spidery blue cornflowers from late spring; cut back after flowering for fresh leaves and more flowers.",
+      "notes": "Rhizomatous and can flop; RHS says needs staking.",
+      "watercolourEnvelope": {
+        "ratio": 1.111,
+        "shapeClass": "broad_mounded",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 450,
+        "expectedSpreadPx": 500,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
+      }
+    },
+    {
+      "id": "lychnis-coronaria",
+      "botanicalName": "Silene coronaria",
+      "commonName": "Rose campion",
+      "type": "perennial",
+      "heightCm": 80,
+      "spreadCm": 45,
+      "light": [
+        "full_sun",
+        "part_shade"
+      ],
+      "soil": [
+        "clay",
+        "loam",
+        "sandy"
+      ],
+      "moisture": [
+        "average",
+        "dry"
+      ],
+      "flowerColours": [
+        "purple"
+      ],
+      "floweringStart": 7,
+      "floweringEnd": 9,
+      "foliage": "semi-evergreen",
+      "foliageColour": "silver",
+      "hardiness": "H7",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "maintenance": "moderate",
+      "pollinatorValue": 5,
+      "maturity": {
+        "minYears": 1,
+        "maxYears": 2,
+        "sources": [
+          {
+            "name": "RHS",
+            "url": "https://www.rhs.org.uk/plants/518096/details",
+            "checked": "2026-10-21"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS time to ultimate height 1-2 years"
+      },
+      "design": {
+        "styles": [
+          "cottage",
+          "naturalistic"
+        ],
+        "position": [
+          "front_middle",
+          "middle"
+        ],
+        "habit": "upright",
+        "visualDensity": "low",
+        "placementFlexibility": "high",
+        "layer": "matrix",
+        "groupingMode": "clump",
+        "allowSingleton": false,
+        "designRoles": [
+          "repetition",
+          "seasonal_interest"
+        ],
+        "roles": {
+          "preferred": "repeated_clump",
+          "supported": [
+            "repeated_clump",
+            "emergent"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0.1,
+            0.6
+          ],
+          "hard": [
+            0,
+            0.85
+          ]
+        },
+        "transparency": {
+          "base": 0.25,
+          "upper": 0.65
+        },
+        "spreadHabit": "self_seeding"
+      },
+      "plantsPerSqM": 5,
+      "description": "Silver felted leaves and vivid magenta flowers in summer; self-seeds gently.",
+      "notes": "Accepted name Silene coronaria; id keeps the familiar Lychnis slug. Biennial or short-lived perennial.",
+      "watercolourEnvelope": {
+        "ratio": 0.562,
+        "shapeClass": "very_narrow_upright",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 800,
+        "expectedSpreadPx": 450,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
+      }
+    },
+    {
+      "id": "polemonium-caeruleum",
+      "botanicalName": "Polemonium caeruleum",
+      "commonName": "Jacob's ladder",
+      "type": "perennial",
+      "heightCm": 60,
+      "spreadCm": 35,
+      "light": [
+        "full_sun",
+        "part_shade"
+      ],
+      "soil": [
+        "clay",
+        "loam",
+        "sandy"
+      ],
+      "moisture": [
+        "average"
+      ],
+      "flowerColours": [
+        "blue"
+      ],
+      "floweringStart": 6,
+      "floweringEnd": 7,
+      "foliage": "deciduous",
+      "foliageColour": "green",
+      "hardiness": "H7",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "maintenance": "low",
+      "pollinatorValue": 4,
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS",
+            "url": "https://www.rhs.org.uk/plants/13380/details",
+            "checked": "2026-10-21"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS time to ultimate height 2-5 years"
+      },
+      "design": {
+        "styles": [
+          "cottage",
+          "naturalistic"
+        ],
+        "position": [
+          "front_middle",
+          "middle"
+        ],
+        "habit": "upright",
+        "visualDensity": "medium",
+        "placementFlexibility": "high",
+        "layer": "matrix",
+        "groupingMode": "clump",
+        "allowSingleton": false,
+        "designRoles": [
+          "repetition",
+          "early_season"
+        ],
+        "roles": {
+          "preferred": "repeated_clump",
+          "supported": [
+            "repeated_clump",
+            "primary_drift"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0.1,
+            0.6
+          ],
+          "hard": [
+            0,
+            0.85
+          ]
+        },
+        "transparency": {
+          "base": 0.15,
+          "upper": 0.5
+        },
+        "spreadHabit": "self_seeding"
+      },
+      "plantsPerSqM": 5,
+      "description": "Ladder-like leaves and sprays of blue flowers in early summer; seeds about freely.",
+      "notes": "",
+      "watercolourEnvelope": {
+        "ratio": 0.583,
+        "shapeClass": "very_narrow_upright",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 600,
+        "expectedSpreadPx": 350,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
+      }
+    },
+    {
+      "id": "linaria-purpurea",
+      "botanicalName": "Linaria purpurea",
+      "commonName": "Purple toadflax",
+      "type": "perennial",
+      "heightCm": 75,
+      "spreadCm": 50,
+      "light": [
+        "full_sun"
+      ],
+      "soil": [
+        "sandy"
+      ],
+      "moisture": [
+        "average",
+        "dry"
+      ],
+      "flowerColours": [
+        "purple"
+      ],
+      "floweringStart": 7,
+      "floweringEnd": 10,
+      "foliage": "deciduous",
+      "foliageColour": "grey-green",
+      "hardiness": "H6",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "maintenance": "low",
+      "pollinatorValue": 5,
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS",
+            "url": "https://www.rhs.org.uk/plants/10291/details",
+            "checked": "2026-10-21"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS time to ultimate height 2-5 years"
+      },
+      "design": {
+        "styles": [
+          "cottage",
+          "naturalistic"
+        ],
+        "position": [
+          "front_middle",
+          "middle"
+        ],
+        "habit": "airy",
+        "visualDensity": "low",
+        "placementFlexibility": "high",
+        "layer": "emergent",
+        "groupingMode": "emergent_group",
+        "allowSingleton": false,
+        "designRoles": [
+          "emergent",
+          "repetition",
+          "seasonal_interest",
+          "late_season"
+        ],
+        "roles": {
+          "preferred": "emergent",
+          "supported": [
+            "emergent",
+            "repeated_clump"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0.1,
+            0.75
+          ],
+          "hard": [
+            0,
+            0.95
+          ]
+        },
+        "transparency": {
+          "base": 0.4,
+          "upper": 0.8
+        },
+        "spreadHabit": "self_seeding"
+      },
+      "plantsPerSqM": 5,
+      "description": "Slender spires of small violet-purple flowers through summer into autumn; self-seeds.",
+      "notes": "",
+      "watercolourEnvelope": {
+        "ratio": 0.667,
+        "shapeClass": "narrow_upright",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 750,
+        "expectedSpreadPx": 500,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
+      }
+    },
+    {
+      "id": "cerastium-tomentosum",
+      "botanicalName": "Cerastium tomentosum",
+      "commonName": "Snow-in-summer",
+      "type": "groundcover",
+      "heightCm": 20,
+      "spreadCm": 50,
+      "light": [
+        "full_sun"
+      ],
+      "soil": [
+        "clay",
+        "loam",
+        "sandy"
+      ],
+      "moisture": [
+        "average",
+        "dry"
+      ],
+      "flowerColours": [
+        "white"
+      ],
+      "floweringStart": 5,
+      "floweringEnd": 6,
+      "foliage": "deciduous",
+      "foliageColour": "silver",
+      "hardiness": "H7",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "maintenance": "low",
+      "pollinatorValue": 3,
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS",
+            "url": "https://www.rhs.org.uk/plants/3401/details",
+            "checked": "2026-10-21"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS time to ultimate height 2-5 years"
+      },
+      "design": {
+        "styles": [
+          "cottage"
+        ],
+        "position": [
+          "front"
+        ],
+        "habit": "groundcover",
+        "visualDensity": "high",
+        "placementFlexibility": "low",
+        "layer": "base",
+        "groupingMode": "large_clump",
+        "allowSingleton": false,
+        "designRoles": [
+          "groundcover",
+          "repetition",
+          "early_season"
+        ],
+        "roles": {
+          "preferred": "groundcover",
+          "supported": [
+            "groundcover"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0,
+            0.25
+          ],
+          "hard": [
+            0,
+            0.4
+          ]
+        },
+        "transparency": {
+          "base": 0,
+          "upper": 0.2
+        },
+        "spreadHabit": "running"
+      },
+      "plantsPerSqM": 5,
+      "description": "Low silver mat covered in white flowers in late spring and early summer.",
+      "notes": "Vigorous, can be invasive: front edge only, avoid among small plants in tiny borders. Working footprint is a design planting spacing; the mat spreads much further (RHS 1-1.5 m).",
+      "watercolourEnvelope": {
+        "ratio": 2.5,
+        "shapeClass": "broad_spreading",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 200,
+        "expectedSpreadPx": 500,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
+      }
+    },
+    {
+      "id": "malva-sylvestris",
+      "botanicalName": "Malva sylvestris",
+      "commonName": "Common mallow",
+      "type": "perennial",
+      "heightCm": 120,
+      "spreadCm": 80,
+      "light": [
+        "full_sun"
+      ],
+      "soil": [
+        "clay",
+        "loam",
+        "sandy"
+      ],
+      "moisture": [
+        "average",
+        "dry"
+      ],
+      "flowerColours": [
+        "pink"
+      ],
+      "floweringStart": 7,
+      "floweringEnd": 9,
+      "foliage": "semi-evergreen",
+      "foliageColour": "green",
+      "hardiness": "H5",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "maintenance": "low",
+      "pollinatorValue": 4,
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS",
+            "url": "https://www.rhs.org.uk/plants/10799/details",
+            "checked": "2026-10-21"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS time to ultimate height 2-5 years"
+      },
+      "design": {
+        "styles": [
+          "cottage",
+          "naturalistic"
+        ],
+        "position": [
+          "middle",
+          "middle_back"
+        ],
+        "habit": "upright",
+        "visualDensity": "medium",
+        "placementFlexibility": "high",
+        "layer": "matrix",
+        "groupingMode": "clump",
+        "allowSingleton": false,
+        "designRoles": [
+          "repetition",
+          "seasonal_interest",
+          "late_season"
+        ],
+        "roles": {
+          "preferred": "repeated_clump",
+          "supported": [
+            "repeated_clump",
+            "emergent"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0.3,
+            0.85
+          ],
+          "hard": [
+            0.1,
+            1
+          ]
+        },
+        "transparency": {
+          "base": 0.15,
+          "upper": 0.5
+        },
+        "spreadHabit": "self_seeding"
+      },
+      "plantsPerSqM": 3,
+      "description": "Tall stems of pink, dark-veined flowers from midsummer into autumn.",
+      "notes": "Native wildflower; self-seeds.",
+      "watercolourEnvelope": {
+        "ratio": 0.667,
+        "shapeClass": "narrow_upright",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 1200,
+        "expectedSpreadPx": 800,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
+      }
+    },
+    {
+      "id": "veronica-longifolia",
+      "botanicalName": "Veronica longifolia",
+      "commonName": "Long-leaved speedwell",
+      "type": "perennial",
+      "heightCm": 90,
+      "spreadCm": 40,
+      "light": [
+        "full_sun",
+        "part_shade"
+      ],
+      "soil": [
+        "loam"
+      ],
+      "moisture": [
+        "average"
+      ],
+      "flowerColours": [
+        "blue"
+      ],
+      "floweringStart": 7,
+      "floweringEnd": 9,
+      "foliage": "deciduous",
+      "foliageColour": "green",
+      "hardiness": "H7",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "maintenance": "low",
+      "pollinatorValue": 4,
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS",
+            "url": "https://www.rhs.org.uk/plants/18847/details",
+            "checked": "2026-10-21"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS time to ultimate height 2-5 years"
+      },
+      "design": {
+        "styles": [
+          "naturalistic",
+          "cottage"
+        ],
+        "position": [
+          "middle",
+          "middle_back"
+        ],
+        "habit": "upright",
+        "visualDensity": "medium",
+        "placementFlexibility": "medium",
+        "layer": "matrix",
+        "groupingMode": "clump",
+        "allowSingleton": false,
+        "designRoles": [
+          "repetition",
+          "late_season"
+        ],
+        "roles": {
+          "preferred": "repeated_clump",
+          "supported": [
+            "repeated_clump",
+            "primary_drift"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0.25,
+            0.75
+          ],
+          "hard": [
+            0.05,
+            0.95
+          ]
+        },
+        "transparency": {
+          "base": 0.15,
+          "upper": 0.5
+        },
+        "spreadHabit": "clumping"
+      },
+      "plantsPerSqM": 4,
+      "description": "Dense purplish-blue spikes in late summer and early autumn.",
+      "notes": "Species record; only RHS plus one tertiary source found for size.",
+      "watercolourEnvelope": {
+        "ratio": 0.444,
+        "shapeClass": "very_narrow_upright",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 900,
+        "expectedSpreadPx": 400,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
+      }
+    },
+    {
+      "id": "acanthus-mollis",
+      "botanicalName": "Acanthus mollis",
+      "commonName": "Bear's breeches",
+      "type": "perennial",
+      "heightCm": 150,
+      "spreadCm": 90,
+      "light": [
+        "full_shade",
+        "full_sun",
+        "part_shade"
+      ],
+      "soil": [
+        "clay",
+        "loam",
+        "sandy"
+      ],
+      "moisture": [
+        "average",
+        "dry"
+      ],
+      "flowerColours": [
+        "purple",
+        "white"
+      ],
+      "floweringStart": 6,
+      "floweringEnd": 9,
+      "foliage": "deciduous",
+      "foliageColour": "green",
+      "hardiness": "H6",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "maintenance": "low",
+      "pollinatorValue": 4,
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS",
+            "url": "https://www.rhs.org.uk/plants/155/details",
+            "checked": "2026-10-21"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS time to ultimate height 2-5 years"
+      },
+      "design": {
+        "styles": [
+          "naturalistic",
+          "contemporary",
+          "cottage"
+        ],
+        "position": [
+          "middle_back",
+          "back"
+        ],
+        "habit": "clumping",
+        "visualDensity": "high",
+        "placementFlexibility": "low",
+        "layer": "structural",
+        "groupingMode": "specimen",
+        "allowSingleton": true,
+        "designRoles": [
+          "structure",
+          "focal"
+        ],
+        "roles": {
+          "preferred": "structural_anchor",
+          "supported": [
+            "structural_anchor",
+            "primary_drift"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0.45,
+            0.9
+          ],
+          "hard": [
+            0.25,
+            1
+          ]
+        },
+        "transparency": {
+          "base": 0.05,
+          "upper": 0.35
+        },
+        "spreadHabit": "running"
+      },
+      "plantsPerSqM": 1,
+      "description": "Large glossy architectural leaves and tall white-and-purple flower spikes in summer.",
+      "notes": "Spreads by roots and hard to remove: avoid in small borders.",
+      "watercolourEnvelope": {
+        "ratio": 0.6,
+        "shapeClass": "very_narrow_upright",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 1500,
+        "expectedSpreadPx": 900,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
+      }
+    },
+    {
+      "id": "campanula-lactiflora-prichards-variety",
+      "botanicalName": "Campanula lactiflora 'Prichard's Variety'",
+      "commonName": "Milky bellflower 'Prichard's Variety'",
+      "type": "perennial",
+      "heightCm": 80,
+      "spreadCm": 60,
+      "light": [
+        "full_sun",
+        "part_shade"
+      ],
+      "soil": [
+        "loam"
+      ],
+      "moisture": [
+        "average",
+        "dry",
+        "moist"
+      ],
+      "flowerColours": [
+        "blue"
+      ],
+      "floweringStart": 7,
+      "floweringEnd": 9,
+      "foliage": "deciduous",
+      "foliageColour": "green",
+      "hardiness": "H7",
+      "requiresStaking": true,
+      "winterProtection": false,
+      "maintenance": "moderate",
+      "pollinatorValue": 5,
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS",
+            "url": "https://www.rhs.org.uk/plants/64301/details",
+            "checked": "2026-10-21"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS time to ultimate height 2-5 years"
+      },
+      "design": {
+        "styles": [
+          "cottage",
+          "naturalistic"
+        ],
+        "position": [
+          "middle",
+          "middle_back"
+        ],
+        "habit": "upright",
+        "visualDensity": "medium",
+        "placementFlexibility": "medium",
+        "layer": "structural",
+        "groupingMode": "clump",
+        "allowSingleton": false,
+        "designRoles": [
+          "repetition",
+          "seasonal_interest"
+        ],
+        "roles": {
+          "preferred": "repeated_clump",
+          "supported": [
+            "repeated_clump",
+            "primary_drift"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0.35,
+            0.8
+          ],
+          "hard": [
+            0.15,
+            1
+          ]
+        },
+        "transparency": {
+          "base": 0.05,
+          "upper": 0.4
+        },
+        "spreadHabit": "clumping"
+      },
+      "plantsPerSqM": 3,
+      "description": "Tall clumps topped with broad heads of violet-blue bells in early to midsummer.",
+      "notes": "May need support on exposed sites; cut back after flowering.",
+      "watercolourEnvelope": {
+        "ratio": 0.75,
+        "shapeClass": "narrow_upright",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 800,
+        "expectedSpreadPx": 600,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
+      }
+    },
+    {
+      "id": "campanula-persicifolia-alba",
+      "botanicalName": "Campanula persicifolia var. alba",
+      "commonName": "White peach-leaved bellflower",
+      "type": "perennial",
+      "heightCm": 75,
+      "spreadCm": 50,
+      "light": [
+        "full_sun",
+        "part_shade"
+      ],
+      "soil": [
+        "clay",
+        "loam",
+        "sandy"
+      ],
+      "moisture": [
+        "average"
+      ],
+      "flowerColours": [
+        "white"
+      ],
+      "floweringStart": 6,
+      "floweringEnd": 8,
+      "foliage": "deciduous",
+      "foliageColour": "green",
+      "hardiness": "H7",
+      "requiresStaking": true,
+      "winterProtection": false,
+      "maintenance": "moderate",
+      "pollinatorValue": 4,
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS",
+            "url": "https://www.rhs.org.uk/plants/198336/details",
+            "checked": "2026-10-21"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS time to ultimate height 2-5 years"
+      },
+      "design": {
+        "styles": [
+          "cottage",
+          "naturalistic"
+        ],
+        "position": [
+          "front_middle",
+          "middle"
+        ],
+        "habit": "airy",
+        "visualDensity": "low",
+        "placementFlexibility": "high",
+        "layer": "emergent",
+        "groupingMode": "emergent_group",
+        "allowSingleton": false,
+        "designRoles": [
+          "emergent",
+          "repetition"
+        ],
+        "roles": {
+          "preferred": "emergent",
+          "supported": [
+            "emergent",
+            "repeated_clump"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0.1,
+            0.7
+          ],
+          "hard": [
+            0,
+            0.9
+          ]
+        },
+        "transparency": {
+          "base": 0.2,
+          "upper": 0.7
+        },
+        "spreadHabit": "self_seeding",
+        "roleTraits": {
+          "emergent": {
+            "baseOccupancy": 0.3
+          }
+        }
+      },
+      "plantsPerSqM": 5,
+      "description": "Slender stems of open white cup-shaped bells above low evergreen rosettes in early summer.",
+      "notes": "Self-seeds gently; deadhead for later flowers.",
+      "watercolourEnvelope": {
+        "ratio": 0.667,
+        "shapeClass": "narrow_upright",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 750,
+        "expectedSpreadPx": 500,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
+      }
+    },
+    {
+      "id": "digitalis-lutea",
+      "botanicalName": "Digitalis lutea",
+      "commonName": "Small yellow foxglove",
+      "type": "perennial",
+      "heightCm": 60,
+      "spreadCm": 40,
+      "light": [
+        "full_shade",
+        "full_sun",
+        "part_shade"
+      ],
+      "soil": [
+        "clay",
+        "loam",
+        "sandy"
+      ],
+      "moisture": [
+        "average",
+        "dry"
+      ],
+      "flowerColours": [
+        "yellow"
+      ],
+      "floweringStart": 5,
+      "floweringEnd": 7,
+      "foliage": "deciduous",
+      "foliageColour": "green",
+      "hardiness": "H6",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "maintenance": "low",
+      "pollinatorValue": 4,
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS",
+            "url": "https://www.rhs.org.uk/plants/20080/details",
+            "checked": "2026-10-21"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS time to ultimate height 2-5 years"
+      },
+      "design": {
+        "styles": [
+          "naturalistic",
+          "cottage"
+        ],
+        "position": [
+          "front_middle",
+          "middle"
+        ],
+        "habit": "airy",
+        "visualDensity": "low",
+        "placementFlexibility": "high",
+        "layer": "emergent",
+        "groupingMode": "emergent_group",
+        "allowSingleton": false,
+        "designRoles": [
+          "emergent"
+        ],
+        "roles": {
+          "preferred": "emergent",
+          "supported": [
+            "emergent",
+            "repeated_clump"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0.1,
+            0.75
+          ],
+          "hard": [
+            0,
+            0.95
+          ]
+        },
+        "transparency": {
+          "base": 0.2,
+          "upper": 0.75
+        },
+        "spreadHabit": "self_seeding",
+        "roleTraits": {
+          "emergent": {
+            "baseOccupancy": 0.3
+          }
+        }
+      },
+      "plantsPerSqM": 5,
+      "description": "Slim spires of small pale-yellow foxglove flowers in early to midsummer; happy in part shade.",
+      "notes": "Perennial rather than biennial (Beth Chatto); self-seeds.",
+      "watercolourEnvelope": {
+        "ratio": 0.667,
+        "shapeClass": "narrow_upright",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 600,
+        "expectedSpreadPx": 400,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
+      }
+    },
+    {
+      "id": "verbascum-chaixii-album",
+      "botanicalName": "Verbascum chaixii 'Album'",
+      "commonName": "White nettle-leaved mullein",
+      "type": "perennial",
+      "heightCm": 95,
+      "spreadCm": 40,
+      "light": [
+        "full_sun"
+      ],
+      "soil": [
+        "loam"
+      ],
+      "moisture": [
+        "average",
+        "dry"
+      ],
+      "flowerColours": [
+        "purple",
+        "white"
+      ],
+      "floweringStart": 6,
+      "floweringEnd": 8,
+      "foliage": "semi-evergreen",
+      "foliageColour": "grey-green",
+      "hardiness": "H6",
+      "requiresStaking": true,
+      "winterProtection": false,
+      "maintenance": "moderate",
+      "pollinatorValue": 4,
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS",
+            "url": "https://www.rhs.org.uk/plants/78507/details",
+            "checked": "2026-10-21"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS time to ultimate height 2-5 years"
+      },
+      "design": {
+        "styles": [
+          "naturalistic",
+          "cottage",
+          "contemporary"
+        ],
+        "position": [
+          "front_middle",
+          "middle",
+          "middle_back"
+        ],
+        "habit": "vertical_accent",
+        "visualDensity": "low",
+        "placementFlexibility": "high",
+        "layer": "emergent",
+        "groupingMode": "emergent_group",
+        "allowSingleton": false,
+        "designRoles": [
+          "emergent",
+          "repetition"
+        ],
+        "roles": {
+          "preferred": "emergent",
+          "supported": [
+            "emergent",
+            "repeated_clump"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0.15,
+            0.8
+          ],
+          "hard": [
+            0,
+            1
+          ]
+        },
+        "transparency": {
+          "base": 0.15,
+          "upper": 0.6
+        },
+        "spreadHabit": "self_seeding",
+        "roleTraits": {
+          "emergent": {
+            "baseOccupancy": 0.3
+          }
+        }
+      },
+      "plantsPerSqM": 5,
+      "description": "Slender candles of white flowers with mauve centres over grey-green rosettes in midsummer.",
+      "notes": "Self-seeds lightly; Gardeners' World page is for the species only.",
+      "watercolourEnvelope": {
+        "ratio": 0.421,
+        "shapeClass": "very_narrow_upright",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 950,
+        "expectedSpreadPx": 400,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
+      }
+    },
+    {
+      "id": "aquilegia-vulgaris-nora-barlow",
+      "botanicalName": "Aquilegia vulgaris var. stellata 'Nora Barlow' (Barlow Series)",
+      "commonName": "Columbine 'Nora Barlow'",
+      "type": "perennial",
+      "heightCm": 80,
+      "spreadCm": 45,
+      "light": [
+        "full_sun",
+        "part_shade"
+      ],
+      "soil": [
+        "clay",
+        "loam",
+        "sandy"
+      ],
+      "moisture": [
+        "average"
+      ],
+      "flowerColours": [
+        "lime",
+        "pink"
+      ],
+      "floweringStart": 5,
+      "floweringEnd": 7,
+      "foliage": "deciduous",
+      "foliageColour": "green",
+      "hardiness": "H7",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "maintenance": "low",
+      "pollinatorValue": 4,
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS",
+            "url": "https://www.rhs.org.uk/plants/131118/details",
+            "checked": "2026-10-21"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS time to ultimate height 2-5 years"
+      },
+      "design": {
+        "styles": [
+          "cottage"
+        ],
+        "position": [
+          "front_middle",
+          "middle"
+        ],
+        "habit": "airy",
+        "visualDensity": "low",
+        "placementFlexibility": "high",
+        "layer": "emergent",
+        "groupingMode": "emergent_group",
+        "allowSingleton": false,
+        "designRoles": [
+          "early_season",
+          "emergent"
+        ],
+        "roles": {
+          "preferred": "emergent",
+          "supported": [
+            "emergent",
+            "repeated_clump"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0.1,
+            0.65
+          ],
+          "hard": [
+            0,
+            0.85
+          ]
+        },
+        "transparency": {
+          "base": 0.2,
+          "upper": 0.7
+        },
+        "spreadHabit": "self_seeding",
+        "roleTraits": {
+          "emergent": {
+            "baseOccupancy": 0.35
+          }
+        }
+      },
+      "plantsPerSqM": 5,
+      "description": "Double spurless pompon flowers in red, pink and green over ferny leaves in late spring.",
+      "notes": "Self-seeds; seedlings vary from the parent.",
+      "watercolourEnvelope": {
+        "ratio": 0.562,
+        "shapeClass": "very_narrow_upright",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 800,
+        "expectedSpreadPx": 450,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
+      }
+    },
+    {
+      "id": "gillenia-trifoliata",
+      "botanicalName": "Gillenia trifoliata",
+      "commonName": "Bowman's root",
+      "type": "perennial",
+      "heightCm": 100,
+      "spreadCm": 60,
+      "light": [
+        "part_shade"
+      ],
+      "soil": [
+        "clay",
+        "loam",
+        "sandy"
+      ],
+      "moisture": [
+        "average"
+      ],
+      "flowerColours": [
+        "white"
+      ],
+      "floweringStart": 5,
+      "floweringEnd": 8,
+      "foliage": "deciduous",
+      "foliageColour": "green",
+      "hardiness": "H7",
+      "requiresStaking": true,
+      "winterProtection": false,
+      "maintenance": "moderate",
+      "pollinatorValue": 3,
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS",
+            "url": "https://www.rhs.org.uk/plants/7989/details",
+            "checked": "2026-10-21"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS time to ultimate height 2-5 years"
+      },
+      "design": {
+        "styles": [
+          "naturalistic",
+          "cottage"
+        ],
+        "position": [
+          "middle"
+        ],
+        "habit": "airy",
+        "visualDensity": "low",
+        "placementFlexibility": "medium",
+        "layer": "matrix",
+        "groupingMode": "clump",
+        "allowSingleton": false,
+        "designRoles": [
+          "repetition",
+          "seasonal_interest"
+        ],
+        "roles": {
+          "preferred": "repeated_clump",
+          "supported": [
+            "repeated_clump",
+            "emergent"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0.3,
+            0.75
+          ],
+          "hard": [
+            0.1,
+            0.95
+          ]
+        },
+        "transparency": {
+          "base": 0.1,
+          "upper": 0.6
+        },
+        "spreadHabit": "clumping",
+        "roleTraits": {
+          "emergent": {
+            "baseOccupancy": 0.4
+          }
+        }
+      },
+      "plantsPerSqM": 3,
+      "description": "Airy clouds of starry white flowers on wiry red stems in early summer; good autumn leaf colour.",
+      "notes": "Slow to establish, then long-lived.",
+      "watercolourEnvelope": {
+        "ratio": 0.6,
+        "shapeClass": "very_narrow_upright",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 1000,
+        "expectedSpreadPx": 600,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
+      }
+    },
+    {
+      "id": "scabiosa-butterfly-blue",
+      "botanicalName": "Scabiosa 'Butterfly Blue'",
+      "commonName": "Scabious 'Butterfly Blue'",
+      "type": "perennial",
+      "heightCm": 40,
+      "spreadCm": 35,
+      "light": [
+        "full_sun"
+      ],
+      "soil": [
+        "loam",
+        "sandy"
+      ],
+      "moisture": [
+        "average",
+        "dry"
+      ],
+      "flowerColours": [
+        "blue"
+      ],
+      "floweringStart": 7,
+      "floweringEnd": 9,
+      "foliage": "deciduous",
+      "foliageColour": "grey-green",
+      "hardiness": "H4",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "maintenance": "low",
+      "pollinatorValue": 5,
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS",
+            "url": "https://www.rhs.org.uk/plants/140073/details",
+            "checked": "2026-10-21"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS time to ultimate height 2-5 years"
+      },
+      "design": {
+        "styles": [
+          "cottage",
+          "naturalistic",
+          "contemporary"
+        ],
+        "position": [
+          "front",
+          "front_middle"
+        ],
+        "habit": "clumping",
+        "visualDensity": "medium",
+        "placementFlexibility": "high",
+        "layer": "matrix",
+        "groupingMode": "clump",
+        "allowSingleton": false,
+        "designRoles": [
+          "repetition",
+          "seasonal_interest"
+        ],
+        "roles": {
+          "preferred": "repeated_clump",
+          "supported": [
+            "repeated_clump",
+            "primary_drift"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0,
+            0.4
+          ],
+          "hard": [
+            0,
+            0.6
+          ]
+        },
+        "transparency": {
+          "base": 0.1,
+          "upper": 0.5
+        },
+        "spreadHabit": "clumping"
+      },
+      "plantsPerSqM": 5,
+      "description": "Compact mounds with lavender-blue pincushion flowers over a long summer season.",
+      "notes": "Deadhead to prolong flowering; needs good drainage.",
+      "watercolourEnvelope": {
+        "ratio": 0.875,
+        "shapeClass": "balanced_mounded",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 400,
+        "expectedSpreadPx": 350,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
+      }
+    },
+    {
+      "id": "betonica-officinalis-hummelo",
+      "botanicalName": "Betonica officinalis 'Hummelo'",
+      "commonName": "Betony 'Hummelo'",
+      "type": "perennial",
+      "heightCm": 50,
+      "spreadCm": 45,
+      "light": [
+        "full_sun",
+        "part_shade"
+      ],
+      "soil": [
+        "loam",
+        "sandy"
+      ],
+      "moisture": [
+        "average",
+        "dry"
+      ],
+      "flowerColours": [
+        "pink"
+      ],
+      "floweringStart": 7,
+      "floweringEnd": 8,
+      "foliage": "semi-evergreen",
+      "foliageColour": "green",
+      "hardiness": "H7",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "maintenance": "low",
+      "pollinatorValue": 4,
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS",
+            "url": "https://www.rhs.org.uk/plants/377707/details",
+            "checked": "2026-10-21"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS time to ultimate height 2-5 years"
+      },
+      "design": {
+        "styles": [
+          "naturalistic",
+          "cottage",
+          "contemporary"
+        ],
+        "position": [
+          "front_middle",
+          "middle"
+        ],
+        "habit": "upright",
+        "visualDensity": "medium",
+        "placementFlexibility": "high",
+        "layer": "matrix",
+        "groupingMode": "clump",
+        "allowSingleton": false,
+        "designRoles": [
+          "repetition",
+          "matrix"
+        ],
+        "roles": {
+          "preferred": "primary_drift",
+          "supported": [
+            "primary_drift",
+            "repeated_clump",
+            "matrix"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0.1,
+            0.55
+          ],
+          "hard": [
+            0,
+            0.8
+          ]
+        },
+        "transparency": {
+          "base": 0.05,
+          "upper": 0.45
+        },
+        "spreadHabit": "clumping"
+      },
+      "plantsPerSqM": 5,
+      "description": "Neat clumps of glossy leaves topped by dense lilac-pink spikes through summer.",
+      "notes": "Long-flowering pollinator plant; also sold as Stachys officinalis or S. monieri 'Hummelo'.",
+      "watercolourEnvelope": {
+        "ratio": 0.9,
+        "shapeClass": "balanced_mounded",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 500,
+        "expectedSpreadPx": 450,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
+      }
+    },
+    {
+      "id": "geum-rivale-leonards-variety",
+      "botanicalName": "Geum rivale 'Leonard's Variety'",
+      "commonName": "Water avens 'Leonard's Variety'",
+      "type": "perennial",
+      "heightCm": 45,
+      "spreadCm": 45,
+      "light": [
+        "full_sun",
+        "part_shade"
+      ],
+      "soil": [
+        "loam",
+        "sandy"
+      ],
+      "moisture": [
+        "average"
+      ],
+      "flowerColours": [
+        "orange",
+        "pink"
+      ],
+      "floweringStart": 5,
+      "floweringEnd": 8,
+      "foliage": "deciduous",
+      "foliageColour": "green",
+      "hardiness": "H7",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "maintenance": "low",
+      "pollinatorValue": 4,
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS",
+            "url": "https://www.rhs.org.uk/plants/90048/details",
+            "checked": "2026-10-21"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS time to ultimate height 2-5 years"
+      },
+      "design": {
+        "styles": [
+          "cottage",
+          "naturalistic"
+        ],
+        "position": [
+          "front",
+          "front_middle"
+        ],
+        "habit": "clumping",
+        "visualDensity": "medium",
+        "placementFlexibility": "high",
+        "layer": "base",
+        "groupingMode": "large_clump",
+        "allowSingleton": false,
+        "designRoles": [
+          "early_season",
+          "repetition"
+        ],
+        "roles": {
+          "preferred": "repeated_clump",
+          "supported": [
+            "repeated_clump",
+            "groundcover"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0,
+            0.4
+          ],
+          "hard": [
+            0,
+            0.65
+          ]
+        },
+        "transparency": {
+          "base": 0.1,
+          "upper": 0.6
+        },
+        "spreadHabit": "clumping"
+      },
+      "plantsPerSqM": 6,
+      "description": "Nodding coppery-pink bells on dark stems above leafy rosettes, late spring to early summer.",
+      "notes": "Prefers moist soil; cut back after flowering.",
+      "watercolourEnvelope": {
+        "ratio": 1,
+        "shapeClass": "balanced_mounded",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 450,
+        "expectedSpreadPx": 450,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
+      }
+    },
+    {
+      "id": "geranium-nodosum",
+      "botanicalName": "Geranium nodosum",
+      "commonName": "Knotted cranesbill",
+      "type": "perennial",
+      "heightCm": 45,
+      "spreadCm": 60,
+      "light": [
+        "full_shade",
+        "full_sun",
+        "part_shade"
+      ],
+      "soil": [
+        "clay",
+        "loam",
+        "sandy"
+      ],
+      "moisture": [
+        "average",
+        "dry"
+      ],
+      "flowerColours": [
+        "pink"
+      ],
+      "floweringStart": 5,
+      "floweringEnd": 9,
+      "foliage": "deciduous",
+      "foliageColour": "green",
+      "hardiness": "H5",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "maintenance": "low",
+      "pollinatorValue": 4,
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS",
+            "url": "https://www.rhs.org.uk/plants/7900/details",
+            "checked": "2026-10-21"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS time to ultimate height 2-5 years"
+      },
+      "design": {
+        "styles": [
+          "naturalistic",
+          "cottage"
+        ],
+        "position": [
+          "front",
+          "front_middle"
+        ],
+        "habit": "spreading",
+        "visualDensity": "high",
+        "placementFlexibility": "medium",
+        "layer": "base",
+        "groupingMode": "large_clump",
+        "allowSingleton": false,
+        "designRoles": [
+          "groundcover",
+          "repetition"
+        ],
+        "roles": {
+          "preferred": "groundcover",
+          "supported": [
+            "groundcover",
+            "matrix"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0,
+            0.45
+          ],
+          "hard": [
+            0,
+            0.8
+          ]
+        },
+        "transparency": {
+          "base": 0,
+          "upper": 0.25
+        },
+        "spreadHabit": "spreading"
+      },
+      "plantsPerSqM": 5,
+      "description": "Glossy lobed leaves and small lilac-pink flowers from late spring to autumn; copes with dry shade.",
+      "notes": "Spreads and self-seeds; useful under shrubs.",
+      "watercolourEnvelope": {
+        "ratio": 1.333,
+        "shapeClass": "broad_mounded",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 450,
+        "expectedSpreadPx": 600,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
+      }
+    },
+    {
+      "id": "geranium-phaeum-samobor",
+      "botanicalName": "Geranium phaeum var. phaeum 'Samobor'",
+      "commonName": "Dusky cranesbill 'Samobor'",
+      "type": "perennial",
+      "heightCm": 70,
+      "spreadCm": 50,
+      "light": [
+        "full_shade",
+        "full_sun",
+        "part_shade"
+      ],
+      "soil": [
+        "clay",
+        "loam",
+        "sandy"
+      ],
+      "moisture": [
+        "average",
+        "dry"
+      ],
+      "flowerColours": [
+        "purple"
+      ],
+      "floweringStart": 5,
+      "floweringEnd": 8,
+      "foliage": "deciduous",
+      "foliageColour": "green",
+      "hardiness": "H7",
+      "requiresStaking": true,
+      "winterProtection": false,
+      "maintenance": "moderate",
+      "pollinatorValue": 4,
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS",
+            "url": "https://www.rhs.org.uk/plants/65850/details",
+            "checked": "2026-10-21"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS time to ultimate height 2-5 years"
+      },
+      "design": {
+        "styles": [
+          "cottage",
+          "naturalistic"
+        ],
+        "position": [
+          "front_middle",
+          "middle"
+        ],
+        "habit": "clumping",
+        "visualDensity": "high",
+        "placementFlexibility": "medium",
+        "layer": "base",
+        "groupingMode": "large_clump",
+        "allowSingleton": false,
+        "designRoles": [
+          "early_season",
+          "repetition"
+        ],
+        "roles": {
+          "preferred": "primary_drift",
+          "supported": [
+            "primary_drift",
+            "groundcover"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0.1,
+            0.55
+          ],
+          "hard": [
+            0,
+            0.8
+          ]
+        },
+        "transparency": {
+          "base": 0.05,
+          "upper": 0.5
+        },
+        "spreadHabit": "clumping"
+      },
+      "plantsPerSqM": 5,
+      "description": "Leaves marked with a bold maroon band and small dark purple flowers on upright stems in late spring.",
+      "notes": "Shade tolerant; cut back after flowering for fresh leaves.",
+      "watercolourEnvelope": {
+        "ratio": 0.714,
+        "shapeClass": "narrow_upright",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 700,
+        "expectedSpreadPx": 500,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
+      }
+    },
+    {
+      "id": "geranium-sanguineum-max-frei",
+      "botanicalName": "Geranium sanguineum 'Max Frei'",
+      "commonName": "Bloody cranesbill 'Max Frei'",
+      "type": "groundcover",
+      "heightCm": 20,
+      "spreadCm": 50,
+      "light": [
+        "full_sun",
+        "part_shade"
+      ],
+      "soil": [
+        "clay",
+        "loam",
+        "sandy"
+      ],
+      "moisture": [
+        "average",
+        "dry"
+      ],
+      "flowerColours": [
+        "pink"
+      ],
+      "floweringStart": 5,
+      "floweringEnd": 9,
+      "foliage": "deciduous",
+      "foliageColour": "green",
+      "hardiness": "H7",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "maintenance": "low",
+      "pollinatorValue": 4,
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS",
+            "url": "https://www.rhs.org.uk/plants/85308/details",
+            "checked": "2026-10-21"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS time to ultimate height 2-5 years"
+      },
+      "design": {
+        "styles": [
+          "cottage",
+          "naturalistic",
+          "contemporary"
+        ],
+        "position": [
+          "front"
+        ],
+        "habit": "groundcover",
+        "visualDensity": "high",
+        "placementFlexibility": "medium",
+        "layer": "base",
+        "groupingMode": "large_clump",
+        "allowSingleton": false,
+        "designRoles": [
+          "groundcover",
+          "repetition"
+        ],
+        "roles": {
+          "preferred": "groundcover",
+          "supported": [
+            "groundcover",
+            "repeated_clump"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0,
+            0.3
+          ],
+          "hard": [
+            0,
+            0.5
+          ]
+        },
+        "transparency": {
+          "base": 0,
+          "upper": 0.2
+        },
+        "spreadHabit": "spreading"
+      },
+      "plantsPerSqM": 6,
+      "description": "Low compact mound covered with magenta flowers from early summer, with red autumn leaves.",
+      "notes": "Tough in sun and dry soil.",
+      "watercolourEnvelope": {
+        "ratio": 2.5,
+        "shapeClass": "broad_spreading",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 200,
+        "expectedSpreadPx": 500,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
+      }
+    },
+    {
+      "id": "stachys-byzantina-silver-carpet",
+      "botanicalName": "Stachys byzantina 'Silver Carpet'",
+      "commonName": "Lamb's ears 'Silver Carpet'",
+      "type": "groundcover",
+      "heightCm": 20,
+      "spreadCm": 50,
+      "light": [
+        "full_sun"
+      ],
+      "soil": [
+        "loam",
+        "sandy"
+      ],
+      "moisture": [
+        "average",
+        "dry"
+      ],
+      "flowerColours": [],
+      "floweringStart": null,
+      "floweringEnd": null,
+      "foliage": "evergreen",
+      "foliageColour": "silver",
+      "hardiness": "H7",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "maintenance": "low",
+      "pollinatorValue": 4,
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS",
+            "url": "https://www.rhs.org.uk/plants/94455/details",
+            "checked": "2026-10-21"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS time to ultimate height 2-5 years"
+      },
+      "design": {
+        "styles": [
+          "cottage",
+          "contemporary",
+          "naturalistic"
+        ],
+        "position": [
+          "front"
+        ],
+        "habit": "groundcover",
+        "visualDensity": "high",
+        "placementFlexibility": "medium",
+        "layer": "base",
+        "groupingMode": "large_clump",
+        "allowSingleton": false,
+        "designRoles": [
+          "groundcover",
+          "repetition"
+        ],
+        "roles": {
+          "preferred": "groundcover",
+          "supported": [
+            "groundcover"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0,
+            0.3
+          ],
+          "hard": [
+            0,
+            0.45
+          ]
+        },
+        "transparency": {
+          "base": 0,
+          "upper": 0.1
+        },
+        "spreadHabit": "running"
+      },
+      "plantsPerSqM": 5,
+      "description": "Dense carpet of soft, woolly silver leaves; a mostly non-flowering form grown for foliage.",
+      "notes": "Needs sharp drainage and sun. Working footprint is a design planting spacing; the mat spreads further (published 60-90 cm).",
+      "watercolourEnvelope": {
+        "ratio": 2.5,
+        "shapeClass": "broad_spreading",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 200,
+        "expectedSpreadPx": 500,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
+      }
+    },
+    {
+      "id": "bergenia-bressingham-white",
+      "botanicalName": "Bergenia 'Bressingham White'",
+      "commonName": "Elephant's ears 'Bressingham White'",
+      "type": "perennial",
+      "heightCm": 30,
+      "spreadCm": 40,
+      "light": [
+        "full_sun",
+        "part_shade"
+      ],
+      "soil": [
+        "clay",
+        "loam",
+        "sandy"
+      ],
+      "moisture": [
+        "average"
+      ],
+      "flowerColours": [
+        "white"
+      ],
+      "floweringStart": 4,
+      "floweringEnd": 5,
+      "foliage": "evergreen",
+      "foliageColour": "green",
+      "hardiness": "H6",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "maintenance": "low",
+      "pollinatorValue": 4,
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS",
+            "url": "https://www.rhs.org.uk/plants/48270/details",
+            "checked": "2026-10-21"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS time to ultimate height 2-5 years"
+      },
+      "design": {
+        "styles": [
+          "contemporary",
+          "cottage",
+          "naturalistic"
+        ],
+        "position": [
+          "front"
+        ],
+        "habit": "clumping",
+        "visualDensity": "high",
+        "placementFlexibility": "medium",
+        "layer": "base",
+        "groupingMode": "large_clump",
+        "allowSingleton": false,
+        "designRoles": [
+          "groundcover",
+          "early_season",
+          "winter_interest"
+        ],
+        "roles": {
+          "preferred": "groundcover",
+          "supported": [
+            "groundcover",
+            "repeated_clump"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0,
+            0.35
+          ],
+          "hard": [
+            0,
+            0.6
+          ]
+        },
+        "transparency": {
+          "base": 0,
+          "upper": 0.2
+        },
+        "spreadHabit": "spreading"
+      },
+      "plantsPerSqM": 5,
+      "description": "Bold, glossy evergreen leaves with white flowers on thick stems in spring.",
+      "notes": "Tolerates shade and poor soil.",
+      "watercolourEnvelope": {
+        "ratio": 1.333,
+        "shapeClass": "broad_mounded",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 300,
+        "expectedSpreadPx": 400,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
+      }
+    },
+    {
+      "id": "phlox-subulata-emerald-cushion-blue",
+      "botanicalName": "Phlox subulata 'Emerald Cushion Blue'",
+      "commonName": "Moss phlox 'Emerald Cushion Blue'",
+      "type": "groundcover",
+      "heightCm": 10,
+      "spreadCm": 50,
+      "light": [
+        "full_sun",
+        "part_shade"
+      ],
+      "soil": [
+        "loam",
+        "sandy"
+      ],
+      "moisture": [
+        "average",
+        "dry"
+      ],
+      "flowerColours": [
+        "blue",
+        "purple"
+      ],
+      "floweringStart": 4,
+      "floweringEnd": 6,
+      "foliage": "evergreen",
+      "foliageColour": "green",
+      "hardiness": "H6",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "maintenance": "low",
+      "pollinatorValue": 3,
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS",
+            "url": "https://www.rhs.org.uk/plants/75702/details",
+            "checked": "2026-10-21"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS time to ultimate height 2-5 years"
+      },
+      "design": {
+        "styles": [
+          "cottage",
+          "contemporary"
+        ],
+        "position": [
+          "front"
+        ],
+        "habit": "groundcover",
+        "visualDensity": "high",
+        "placementFlexibility": "low",
+        "layer": "base",
+        "groupingMode": "large_clump",
+        "allowSingleton": false,
+        "designRoles": [
+          "groundcover",
+          "early_season"
+        ],
+        "roles": {
+          "preferred": "groundcover",
+          "supported": [
+            "groundcover"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0,
+            0.2
+          ],
+          "hard": [
+            0,
+            0.35
+          ]
+        },
+        "transparency": {
+          "base": 0,
+          "upper": 0.1
+        },
+        "spreadHabit": "spreading"
+      },
+      "plantsPerSqM": 5,
+      "description": "Low evergreen mat smothered in lavender-blue flowers in spring.",
+      "notes": "Front edge only, in full sun with sharp drainage.",
+      "watercolourEnvelope": {
+        "ratio": 5,
+        "shapeClass": "broad_spreading",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 100,
+        "expectedSpreadPx": 500,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
+      }
+    },
+    {
+      "id": "iberis-sempervirens-snowflake",
+      "botanicalName": "Iberis sempervirens 'Snowflake'",
+      "commonName": "Perennial candytuft 'Snowflake'",
+      "type": "shrub",
+      "heightCm": 25,
+      "spreadCm": 45,
+      "light": [
+        "full_sun"
+      ],
+      "soil": [
+        "loam",
+        "sandy"
+      ],
+      "moisture": [
+        "average"
+      ],
+      "flowerColours": [
+        "white"
+      ],
+      "floweringStart": 3,
+      "floweringEnd": 7,
+      "foliage": "evergreen",
+      "foliageColour": "green",
+      "hardiness": "H5",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "maintenance": "moderate",
+      "pollinatorValue": 4,
+      "maturity": {
+        "minYears": 5,
+        "maxYears": 10,
+        "sources": [
+          {
+            "name": "RHS",
+            "url": "https://www.rhs.org.uk/plants/104665/details",
+            "checked": "2026-10-21"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS time to ultimate height 5-10 years"
+      },
+      "design": {
+        "styles": [
+          "cottage",
+          "contemporary"
+        ],
+        "position": [
+          "front"
+        ],
+        "habit": "groundcover",
+        "visualDensity": "high",
+        "placementFlexibility": "low",
+        "layer": "base",
+        "groupingMode": "large_clump",
+        "allowSingleton": false,
+        "designRoles": [
+          "groundcover",
+          "early_season",
+          "winter_interest"
+        ],
+        "roles": {
+          "preferred": "groundcover",
+          "supported": [
+            "groundcover"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0,
+            0.25
+          ],
+          "hard": [
+            0,
+            0.4
+          ]
+        },
+        "transparency": {
+          "base": 0,
+          "upper": 0.15
+        },
+        "spreadHabit": "clumping"
+      },
+      "plantsPerSqM": 5,
+      "description": "Low evergreen sub-shrub covered with white flowers in spring.",
+      "notes": "Trim after flowering to keep compact.",
+      "watercolourEnvelope": {
+        "ratio": 1.8,
+        "shapeClass": "broad_spreading",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 250,
+        "expectedSpreadPx": 450,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
+      }
+    },
+    {
+      "id": "briza-media",
+      "botanicalName": "Briza media",
+      "commonName": "Quaking grass",
+      "type": "grass",
+      "heightCm": 60,
+      "spreadCm": 35,
+      "light": [
+        "full_sun"
+      ],
+      "soil": [
+        "clay",
+        "loam",
+        "sandy"
+      ],
+      "moisture": [
+        "average",
+        "dry"
+      ],
+      "flowerColours": [
+        "lime",
+        "purple"
+      ],
+      "floweringStart": 5,
+      "floweringEnd": 8,
+      "foliage": "semi-evergreen",
+      "foliageColour": "blue-green",
+      "hardiness": "H7",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "maintenance": "moderate",
+      "pollinatorValue": 3,
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS",
+            "url": "https://www.rhs.org.uk/plants/2406/details",
+            "checked": "2026-10-21"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS time to ultimate height 2-5 years"
+      },
+      "design": {
+        "styles": [
+          "naturalistic",
+          "cottage"
+        ],
+        "position": [
+          "front",
+          "front_middle"
+        ],
+        "habit": "grass",
+        "visualDensity": "low",
+        "placementFlexibility": "high",
+        "layer": "matrix",
+        "groupingMode": "matrix",
+        "allowSingleton": false,
+        "designRoles": [
+          "matrix",
+          "repetition"
+        ],
+        "roles": {
+          "preferred": "matrix",
+          "supported": [
+            "matrix",
+            "repeated_clump",
+            "emergent"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0,
+            0.5
+          ],
+          "hard": [
+            0,
+            0.75
+          ]
+        },
+        "transparency": {
+          "base": 0.2,
+          "upper": 0.75
+        },
+        "spreadHabit": "clumping",
+        "roleTraits": {
+          "emergent": {
+            "baseOccupancy": 0.4
+          }
+        }
+      },
+      "plantsPerSqM": 5,
+      "description": "Tufted grass with dangling heart-shaped seed heads that tremble in the breeze through summer.",
+      "notes": "Seed heads dry well; cut back in late winter.",
+      "watercolourEnvelope": {
+        "ratio": 0.583,
+        "shapeClass": "very_narrow_upright",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 600,
+        "expectedSpreadPx": 350,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
+      }
+    },
+    {
+      "id": "luzula-nivea",
+      "botanicalName": "Luzula nivea",
+      "commonName": "Snowy woodrush",
+      "type": "grass",
+      "heightCm": 60,
+      "spreadCm": 45,
+      "light": [
+        "full_shade",
+        "full_sun",
+        "part_shade"
+      ],
+      "soil": [
+        "clay",
+        "loam",
+        "sandy"
+      ],
+      "moisture": [
+        "average",
+        "dry"
+      ],
+      "flowerColours": [
+        "white"
+      ],
+      "floweringStart": 6,
+      "floweringEnd": 7,
+      "foliage": "evergreen",
+      "foliageColour": "green",
+      "hardiness": "H5",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "maintenance": "low",
+      "pollinatorValue": 3,
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS",
+            "url": "https://www.rhs.org.uk/plants/10577/details",
+            "checked": "2026-10-21"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS time to ultimate height 2-5 years"
+      },
+      "design": {
+        "styles": [
+          "naturalistic",
+          "cottage"
+        ],
+        "position": [
+          "front",
+          "front_middle"
+        ],
+        "habit": "grass",
+        "visualDensity": "medium",
+        "placementFlexibility": "high",
+        "layer": "matrix",
+        "groupingMode": "matrix",
+        "allowSingleton": false,
+        "designRoles": [
+          "groundcover",
+          "winter_interest"
+        ],
+        "roles": {
+          "preferred": "groundcover",
+          "supported": [
+            "groundcover",
+            "matrix"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0,
+            0.4
+          ],
+          "hard": [
+            0,
+            0.7
+          ]
+        },
+        "transparency": {
+          "base": 0.05,
+          "upper": 0.5
+        },
+        "spreadHabit": "clumping"
+      },
+      "plantsPerSqM": 6,
+      "description": "Evergreen tufts of soft hairy leaves with heads of white flowers in early summer; good in shade.",
+      "notes": "A woodrush (Juncaceae), used like a grass.",
+      "watercolourEnvelope": {
+        "ratio": 0.75,
+        "shapeClass": "narrow_upright",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 600,
+        "expectedSpreadPx": 450,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
+      }
+    },
+    {
+      "id": "rosa-the-fairy",
+      "botanicalName": "Rosa 'The Fairy'",
+      "commonName": "Rose 'The Fairy'",
+      "type": "shrub",
+      "heightCm": 60,
+      "spreadCm": 90,
+      "light": [
+        "full_sun",
+        "part_shade"
+      ],
+      "soil": [
+        "clay",
+        "loam",
+        "sandy"
+      ],
+      "moisture": [
+        "average",
+        "dry"
+      ],
+      "flowerColours": [
+        "pink"
+      ],
+      "floweringStart": 6,
+      "floweringEnd": 11,
+      "foliage": "deciduous",
+      "foliageColour": "green",
+      "hardiness": "H6",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "maintenance": "moderate",
+      "pollinatorValue": 3,
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS",
+            "url": "https://www.rhs.org.uk/plants/84140/details",
+            "checked": "2026-10-21"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS time to ultimate height 2-5 years"
+      },
+      "design": {
+        "styles": [
+          "cottage"
+        ],
+        "position": [
+          "front_middle",
+          "middle"
+        ],
+        "habit": "spreading",
+        "visualDensity": "high",
+        "placementFlexibility": "low",
+        "layer": "structural",
+        "groupingMode": "specimen",
+        "allowSingleton": true,
+        "designRoles": [
+          "structure",
+          "seasonal_interest",
+          "late_season"
+        ],
+        "roles": {
+          "preferred": "structural_anchor",
+          "supported": [
+            "structural_anchor",
+            "repeated_clump"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0.2,
+            0.6
+          ],
+          "hard": [
+            0.05,
+            0.85
+          ]
+        },
+        "transparency": {
+          "base": 0.05,
+          "upper": 0.2
+        },
+        "spreadHabit": "clumping"
+      },
+      "plantsPerSqM": 1,
+      "description": "Low, spreading polyantha rose with sprays of small double pink flowers from midsummer into autumn.",
+      "notes": "Repeat-flowering; prune lightly in late winter.",
+      "watercolourEnvelope": {
+        "ratio": 1.5,
+        "shapeClass": "broad_spreading",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 600,
+        "expectedSpreadPx": 900,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
+      }
+    },
+    {
+      "id": "dianthus-mrs-sinkins",
+      "botanicalName": "Dianthus 'Mrs Sinkins'",
+      "commonName": "Pink 'Mrs Sinkins'",
+      "type": "perennial",
+      "heightCm": 35,
+      "spreadCm": 35,
+      "light": [
+        "full_sun"
+      ],
+      "soil": [
+        "loam",
+        "sandy"
+      ],
+      "moisture": [
+        "average",
+        "dry"
+      ],
+      "flowerColours": [
+        "white"
+      ],
+      "floweringStart": 5,
+      "floweringEnd": 6,
+      "foliage": "evergreen",
+      "foliageColour": "silver",
+      "hardiness": "H6",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "maintenance": "low",
+      "pollinatorValue": 3,
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS",
+            "url": "https://www.rhs.org.uk/plants/70503/details",
+            "checked": "2026-10-21"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS time to ultimate height 2-5 years"
+      },
+      "design": {
+        "styles": [
+          "cottage"
+        ],
+        "position": [
+          "front"
+        ],
+        "habit": "clumping",
+        "visualDensity": "medium",
+        "placementFlexibility": "medium",
+        "layer": "base",
+        "groupingMode": "large_clump",
+        "allowSingleton": false,
+        "designRoles": [
+          "repetition",
+          "groundcover"
+        ],
+        "roles": {
+          "preferred": "groundcover",
+          "supported": [
+            "groundcover",
+            "repeated_clump"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0,
+            0.25
+          ],
+          "hard": [
+            0,
+            0.4
+          ]
+        },
+        "transparency": {
+          "base": 0,
+          "upper": 0.25
+        },
+        "spreadHabit": "clumping"
+      },
+      "plantsPerSqM": 6,
+      "description": "Grey-blue evergreen tufts with very fragrant, double white fringed flowers in early summer.",
+      "notes": "Front edge in sun with sharp drainage.",
+      "watercolourEnvelope": {
+        "ratio": 1,
+        "shapeClass": "balanced_mounded",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 350,
+        "expectedSpreadPx": 350,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
       }
     }
   ]
