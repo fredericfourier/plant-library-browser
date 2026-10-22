@@ -75,3 +75,48 @@ whenever a file, record or catalogue entry changes without a rebuild.
 
 PNG masters live in the private border-designer repository (`pngMasters` in the manifest records repo, ref and commit read), so `check`
 here cannot re-read them; they are verified by `build --bd`.
+
+## Watercolour variant (`--type watercolour`)
+The same tool, statuses, reservations, safety stops and queue ordering run over the watercolour illustrations. Put `--type watercolour` **before** the subcommand;
+the default (`botanical`) is unchanged. State is independent: `data/watercolour-status.json` is built only from `<id>-watercolour.webp`, the private
+`<id>-watercolour.png` masters (border-designer, `assets/plant-watercolours/masters/`) and `plants[id].watercolour` in `data/botanical-verification.json`
+(`confirmed` + `approvedAt` = approved; `awaiting_review` = pending_review). A botanical image never counts as a watercolour and vice versa; reservations are per type.
+```bash
+python3 tools/botanical_status.py --type watercolour check
+python3 tools/botanical_status.py --type watercolour queue 10                # "Generate the next 10 missing watercolour illustrations"
+python3 tools/botanical_status.py --type watercolour queue 10 --detail       # + height/spread, filenames, brief, reference image
+python3 tools/botanical_status.py --type watercolour reserve <ids> --batch WC-ZIP-A --source gen.zip   # right after receiving a generated ZIP
+python3 tools/botanical_status.py --type watercolour build --bd <border-designer checkout> --bd-ref origin/main   # after importing
+python3 tools/test_illustration_status.py                                    # queue/idempotency/independence tests (sandbox copies only)
+```
+Brief: `docs/briefs/WATERCOLOUR_B_ASSET_BRIEF.md` with the approved style reference `docs/references/nepeta-watercolour-very-wet-approved.png` (both in border-designer;
+the image must be attached to the generator, a path in a prompt sends no pixels). `pipelineQa` in a watercolour record is the recorded `variants.watercolour.status`
+of `assets/plant-watercolours/manifest.json` (still `awaiting_review` there for imported images); approval comes only from the verification file.
+
+### Batch handoff (both types): queue → generate → deliver → reserve → commit → next queue
+A reservation exists only in `data/<type>-status.json`. If it is not committed (and pushed, when other sessions use the branch) it is invisible to them and the same IDs
+can be handed out twice. Run the sequence in this order, with `T="python3 tools/botanical_status.py --type watercolour"` (omit `--type` for botanical):
+```bash
+git fetch origin && git pull --ff-only                         # 0. latest manifest from the shared branch
+git -C <border-designer> fetch origin                          # 0. latest PNG masters
+$T build --bd <border-designer> --bd-ref origin/main           # 0. refresh PNG-master info; commit the diff if any
+$T queue 10 --bd <border-designer> --bd-ref origin/main --require-synced   # 1. queue: refuses (exit 2, no IDs) if masters/brief differ from the manifest,
+                                                                           #    or the manifest is uncommitted, unpushed or behind upstream
+# 2. generate (outside the repo)   3. deliver the ZIP
+$T reserve <ids> --batch WC-ZIP-YYYY-MM-DD-A --source <zip>   # 4. reserve immediately
+git add data/watercolour-status.json && git commit -m "Reserve WC-ZIP-…-A" && git push   # 5. commit + push
+$T sync                                                        # exit 0 only when committed and in step with upstream (exit 3 otherwise)
+$T queue 10 --bd <border-designer> --bd-ref origin/main --require-synced   # 6. next queue: excludes the reserved IDs
+```
+After importing the images (public WebP + private PNG master in border-designer): `build --bd … --bd-ref <ref containing the masters>`, `check`, commit, push. The reservation clears
+itself and the status follows the files and approval records. Without `--bd` the private repository cannot be seen, so a master added only there is not detected: always pass `--bd` for a new
+generation cycle. `--require-synced` is opt-in; without it `queue` keeps its previous behaviour.
+
+Importing watercolours (`tools/import_watercolour_assets.py <plb> <bd|-> data/plants.json report.json <part-dir>...`) accepts catalogue plants that have no botanical image or
+records: it creates `assets[id] = {variants: {watercolour}}` and `plants[id] = {watercolour}` and leaves every botanical field alone. Everything is validated before any write; writes are
+staged and rolled back together on failure; re-importing identical PNG+WebP bytes changes nothing (an approved watercolour stays approved); changed bytes reset only the watercolour
+review to `awaiting_review` and keep the old state under `previous`. Tests: `python3 tools/test_watercolour_import.py`. The status tool accepts a watercolour-only verification record
+and the botanical build ignores it.
+
+Browser caveat (index.html, not changed): the page treats any `assets[id]` entry as "has an illustration" for its default (botanical) view, so a watercolour-only plant shows a
+missing-image placeholder under the Botanical view until its botanical image exists; its Watercolour view works.

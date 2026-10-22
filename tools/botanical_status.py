@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Deterministic botanical illustration status manifest and generation queue.
 
-  botanical_status.py build [--bd <border-designer checkout> --bd-ref <ref>]   regenerate data/botanical-status.json
+  botanical_status.py [--type botanical|watercolour] build [--bd <border-designer checkout> --bd-ref <ref>]   regenerate data/botanical-status.json
   botanical_status.py check                                                      validate manifest against the repo (exit 1 on any problem)
   botanical_status.py queue [N] [--skip K] [--json]                              first N plants still to generate (status missing), catalogue order; refuses stale manifests
   botanical_status.py summary                                                    status counts
@@ -22,6 +22,10 @@ The manifest is derived from repository state, never from memory: the catalogue 
 the published WebPs plus data/botanical-verification.json and assets/plant-watercolours/manifest.json fix what exists and what is
 approved, and the private PNG masters are read from a border-designer ref when --bd is given (otherwise the recorded values are kept).
 Botanical files are <id>.webp / <id>.png; watercolour files are <id>-watercolour.* and are tracked separately, never as botanical.
+`--type watercolour` (before the subcommand) runs the same machinery over the watercolour variant: manifest data/watercolour-status.json, files
+<id>-watercolour.webp / <id>-watercolour.png, approval from plants[id].watercolour in data/botanical-verification.json. The default type is
+botanical and its behaviour and manifest are unchanged. The two statuses never read each other's files. `queue N --detail` prints the generation
+metadata (dimensions, brief, reference image, expected filenames) for each queued plant.
 Only `rejected` and `uncertain_match` are manual; everything else is recomputed. Stdlib only.
 """
 import argparse, datetime, hashlib, json, subprocess, sys
@@ -34,6 +38,24 @@ STATUSES = ("missing", "pending_review", "approved", "rejected", "uncertain_matc
 MANUAL = ("rejected", "uncertain_match")
 MASTER_DIR = "assets/plant-watercolours/masters"
 BRIEF = "docs/briefs/BOTANICAL_ASSET_BRIEF.md"
+WC_BRIEF = "docs/briefs/WATERCOLOUR_B_ASSET_BRIEF.md"
+WC_REFERENCE = "docs/references/nepeta-watercolour-very-wet-approved.png"
+# Per-variant naming. Module-level so every command shares one selection; set once from --type in main().
+VARIANTS = {
+    "botanical": {"suffix": "", "manifest": "data/botanical-status.json", "brief": BRIEF, "word": "botanical"},
+    "watercolour": {"suffix": "-watercolour", "manifest": "data/watercolour-status.json", "brief": WC_BRIEF, "word": "watercolour"},
+}
+V = VARIANTS["botanical"]
+
+
+def set_variant(name):
+    global V, MANIFEST
+    V = VARIANTS[name]
+    MANIFEST = ROOT / V["manifest"]
+
+
+def is_wc():
+    return V["suffix"] != ""
 RESERVE_DAYS = 14
 
 
@@ -50,12 +72,16 @@ def git(repo, *a):
 
 
 def read_masters(bd, ref):
-    """{plant-id: (path, sha256)} for botanical PNG masters (not *-watercolour.png) at <ref> in the border-designer checkout."""
+    """{plant-id: (path, sha256)} for PNG masters of the active variant at <ref> in the border-designer checkout.
+
+    Botanical: <id>.png (never *-watercolour.png). Watercolour: <id>-watercolour.png only."""
     out = {}
+    sfx = V["suffix"]
     for line in git(bd, "ls-tree", "-r", "--name-only", ref, "--", MASTER_DIR).decode().splitlines():
         name = line.rsplit("/", 1)[-1]
-        if name.endswith(".png") and not name.endswith("-watercolour.png"):
-            out[name[:-4]] = (line, hashlib.sha256(git(bd, "show", f"{ref}:{line}")).hexdigest())
+        if not name.endswith(sfx + ".png") or (not sfx and name.endswith("-watercolour.png")):
+            continue
+        out[name[:-len(sfx + ".png")]] = (line, hashlib.sha256(git(bd, "show", f"{ref}:{line}")).hexdigest())
     return out, git(bd, "rev-parse", ref).decode().strip()
 
 
@@ -72,14 +98,23 @@ def build(prev, bd=None, bd_ref=None):
         masters, repo = None, (prev or {}).get("pngMasters")
     brief_commit = None
     if bd:
-        brief_commit = git(bd, "log", "-1", "--format=%h", bd_ref, "--", BRIEF).decode().strip()
-    brief = {"repo": "fredericfourier/border-designer", "file": BRIEF,
+        brief_commit = git(bd, "log", "-1", "--format=%h", bd_ref, "--", V["brief"]).decode().strip()
+    brief = {"repo": "fredericfourier/border-designer", "file": V["brief"],
              "version": brief_commit or (prev or {}).get("brief", {}).get("version")}
+    if is_wc():
+        ref_sha = hashlib.sha256(git(bd, "show", f"{bd_ref}:{WC_REFERENCE}")).hexdigest() if bd else (prev or {}).get("brief", {}).get("referenceImage", {}).get("sha256")
+        brief["referenceImage"] = {"repo": "fredericfourier/border-designer", "file": WC_REFERENCE, "sha256": ref_sha}
     plants = []
     for n, p in enumerate(cat, 1):
         pid = p["id"]
-        webp, wc = ASSETS / f"{pid}.webp", ASSETS / f"{pid}-watercolour.webp"
+        webp, wc = ASSETS / f"{pid}{V['suffix']}.webp", ASSETS / f"{pid}-watercolour.webp"
         v, notes = ver.get(pid), []
+        if v is not None and "status" not in v:  # watercolour-only record (no botanical review yet) is not a botanical record
+            v = None
+        asset = amf.get(pid, {})
+        if is_wc():  # watercolour approval and file facts live under the watercolour variant only
+            v = (ver.get(pid) or {}).get("watercolour")
+            asset = asset.get("variants", {}).get("watercolour", {})
         o = old.get(pid, {})
         if masters is not None:
             png_path, png_sha = masters.get(pid, (None, None))
@@ -92,14 +127,14 @@ def build(prev, bd=None, bd_ref=None):
         if v and v["status"] == "confirmed":
             basis = "explicit_manual_approval" if v.get("approvedAt") else "filename_match_only"
         if basis == "filename_match_only":
-            notes.append("manual botanical approval absent: confirmed in botanical-verification.json by filename match only; "
+            notes.append(f"manual {V['word']} approval absent: confirmed in botanical-verification.json by filename match only; "
                          "not a verified match, keeps its image, not regenerated")
         problems = []
         if v and webp_sha and v.get("imageSha256") != webp_sha:
             problems.append("webp hash differs from botanical-verification.json")
         if v and png_sha and v.get("pngSha256") and v["pngSha256"] != png_sha:
             problems.append("png master hash differs from botanical-verification.json")
-        if webp_sha and amf.get(pid, {}).get("sha256") not in (None, webp_sha):
+        if webp_sha and asset.get("sha256") not in (None, webp_sha):
             problems.append("webp hash differs from assets manifest")
         if form == "none":
             status = "missing"
@@ -120,19 +155,19 @@ def build(prev, bd=None, bd_ref=None):
         if man and (man.get("imageSha256") == webp_sha):
             status = man["status"]
             notes.append("manual " + man["status"] + (": " + man["note"] if man.get("note") else ""))
-        qa = amf.get(pid, {}).get("status")
+        qa = asset.get("status")
         if qa in ("warning", "needs-review"):
-            notes.append(f"pipeline QA: {qa} (ratio error {amf[pid].get('ratioErrorRelative')})")
+            notes.append(f"pipeline QA: {qa} (ratio error {asset.get('ratioErrorRelative')})")
         if v and v.get("previous"):
             notes.append("earlier image version superseded (hash history in botanical-verification.json)")
         if status == "missing":
-            notes.append("no botanical asset in either repository; new in E3 catalogue v1.0")
+            notes.append(f"no {V['word']} asset in either repository; new in E3 catalogue v1.0")
         stamps = [t for t in ((v or {}).get("importedAt"), (v or {}).get("approvedAt")) if t]
         rec = {
             "order": n, "plantId": pid, "botanicalName": p["botanicalName"], "status": status,
             "expectsBotanical": True, "expectsWatercolour": True, "assetForm": form,
             "pngMasterPath": png_path, "pngSha256": png_sha,
-            "webpPath": f"assets/plant-watercolours/{pid}.webp" if webp_sha else None, "webpSha256": webp_sha,
+            "webpPath": f"assets/plant-watercolours/{pid}{V['suffix']}.webp" if webp_sha else None, "webpSha256": webp_sha,
             "verificationState": vstate, "approvalBasis": basis,
             "matchConfidence": (v or {}).get("bundleMatchStatus"), "pipelineQa": qa,
             "watercolour": {"status": ((v or {}).get("watercolour") or {}).get("status", "missing") if wc.is_file() else "missing",
@@ -141,6 +176,10 @@ def build(prev, bd=None, bd_ref=None):
             "notes": "; ".join(notes),
             "lastUpdated": max(stamps) if stamps else (res["reservedAt"] if res else added.get(pid, "")) + "T00:00:00Z",
         }
+        if is_wc():  # variant-neutral record: drop the botanical-shaped cross-reference keys, mark the type
+            for k in ("expectsBotanical", "matchConfidence", "watercolour"):
+                rec.pop(k)
+            rec["illustrationType"] = "watercolour"
         if res:
             rec["reservation"] = res
         if man and man.get("imageSha256") == webp_sha:
@@ -149,7 +188,7 @@ def build(prev, bd=None, bd_ref=None):
     counts = {s: sum(r["status"] == s for r in plants) for s in STATUSES}
     counts["reserved_not_imported"] = sum("reservation" in r for r in plants)
     counts["filename_match_only"] =sum(r["approvalBasis"] == "filename_match_only" for r in plants)
-    return {
+    out = {
         "schemaVersion": 1,
         "description": "Botanical illustration status per catalogue plant, in catalogue order. Derived from repository state by tools/botanical_status.py; "
                        "see docs/BOTANICAL_STATUS.md. Only status=missing enters the generation queue.",
@@ -166,6 +205,20 @@ def build(prev, bd=None, bd_ref=None):
         "summary": {"total": len(plants), **counts},
         "plants": plants,
     }
+    if is_wc():
+        keep = ("tools/botanical_status.py", "data/botanical-verification.json")  # file names are not variant words
+        def word(t):
+            for i, k in enumerate(keep):
+                t = t.replace(k, f"@@{i}@@")
+            t = t.replace("Botanical", "Watercolour").replace("botanical", "watercolour")
+            t = t.replace("@@1@@ carries", "@@1@@ plants[id].watercolour carries")
+            for i, k in enumerate(keep):
+                t = t.replace(f"@@{i}@@", k)
+            return t
+        out["illustrationType"] = "watercolour"
+        out["description"] = word(out["description"])
+        out["statusDefinitions"] = {k: word(t) for k, t in out["statusDefinitions"].items()}
+    return out
 
 
 def dump(d):
@@ -195,7 +248,9 @@ def check(today):
     claimed = set()
     for p in cur["plants"]:
         pid = p["plantId"]
-        w, c = p["webpPath"], p["watercolour"]["webpPath"]
+        w, c = p["webpPath"], p.get("watercolour", {}).get("webpPath")
+        if is_wc():
+            w, c = None, w  # a watercolour manifest only vouches for watercolour files
         if w:
             claimed.add(w)
             if w != f"assets/plant-watercolours/{pid}.webp" or w.endswith("-watercolour.webp") or not (ROOT / w).is_file():
@@ -204,9 +259,11 @@ def check(today):
             claimed.add(c)
             if c != f"assets/plant-watercolours/{pid}-watercolour.webp" or not (ROOT / c).is_file():
                 errs.append(f"{pid}: bad watercolour webp path {c}")
-        if p["pngMasterPath"] and (p["pngMasterPath"].endswith("-watercolour.png") or p["pngMasterPath"] != f"{MASTER_DIR}/{pid}.png"):
+        if p["pngMasterPath"] and (p["pngMasterPath"] != f"{MASTER_DIR}/{pid}{V['suffix']}.png" or (not is_wc() and p["pngMasterPath"].endswith("-watercolour.png"))):
             errs.append(f"{pid}: bad png master path {p['pngMasterPath']}")
-        if p["status"] == "missing" and (p["assetForm"] != "none" or w or p["pngMasterPath"]):
+        if is_wc():
+            claimed.add(f"assets/plant-watercolours/{pid}.webp")  # botanical files are another manifest's concern, not orphans
+        if p["status"] == "missing" and (p["assetForm"] != "none" or (c if is_wc() else w) or p["pngMasterPath"]):
             errs.append(f"{pid}: status missing but an asset exists")
         if p["status"] == "approved" and (p["approvalBasis"] != "explicit_manual_approval" or not p["manualApprovalAt"] or p["assetForm"] != "both"):
             errs.append(f"{pid}: approved without explicit manual approval and both files")
@@ -224,7 +281,7 @@ def check(today):
     if orphans:
         errs.append(f"webp files not claimed by any plant: {orphans}")
     if cur["summary"] != build(cur)["summary"] or dump(build(cur)) != dump(cur):
-        errs.append("manifest is stale: run `python3 tools/botanical_status.py build` (PNG master fields are kept as recorded)")
+        errs.append(f"manifest is stale: run `python3 tools/botanical_status.py{' --type watercolour' if is_wc() else ''} build` (PNG master fields are kept as recorded)")
     return errs
 
 
@@ -246,7 +303,7 @@ def require_fresh(cur, today=None):
         problems.append("files or verification records changed since the manifest was built")
     if problems:
         stop("STOP: botanical status manifest is stale: " + "; ".join(problems) + ".\n"
-                 "Run `python3 tools/botanical_status.py build --bd <border-designer checkout>`, review `git diff data/botanical-status.json`, "
+                 "Run `python3 tools/botanical_status.py" + (" --type watercolour" if is_wc() else "") + " build --bd <border-designer checkout>`, review `git diff " + V["manifest"] + "`, "
                  "commit it, then repeat this command. No IDs were returned.")
     if today:
         late = [p for p in cur["plants"] if expired(p, today)]
@@ -257,9 +314,70 @@ def require_fresh(cur, today=None):
                        "if the package is lost or rejected. No IDs were returned.")
 
 
+def fresh_masters(cur, bd, ref):
+    """Refuse when the PNG masters in border-designer <ref> disagree with the committed manifest (exit 2, no IDs)."""
+    new = build(cur, bd, ref)
+    a, b = json.loads(dump(new)), json.loads(dump(cur))
+    for d in (a, b):
+        (d.get("pngMasters") or {}).pop("commit", None)
+    if a != b:
+        diff = [p["plantId"] for p, q in zip(new["plants"], cur["plants"]) if p != q]
+        stop("STOP: PNG masters / brief in border-designer " + ref + " differ from the committed manifest"
+             + (f" (plants: {', '.join(diff[:12])}{' ...' if len(diff) > 12 else ''})" if diff else "") + ".\n"
+             "Run `python3 tools/botanical_status.py" + (" --type watercolour" if is_wc() else "") + f" build --bd {bd} --bd-ref {ref}`, review and commit "
+             + V["manifest"] + ", then repeat. No IDs were returned.")
+
+
+def sync_problems():
+    """Why the manifest cannot be presented as synchronised across sessions: uncommitted, unpushed, or behind upstream."""
+    rel = V["manifest"]
+    g = lambda *x: subprocess.run(["git", "-C", str(ROOT), *x], capture_output=True, text=True)
+    if g("rev-parse", "--git-dir").returncode:
+        return ["not a git checkout"]
+    out = []
+    if g("status", "--porcelain", "--", rel).stdout.strip():
+        out.append(f"{rel} has uncommitted changes (a local reservation is invisible to other sessions)")
+    if g("ls-files", "--error-unmatch", rel).returncode:
+        out.append(f"{rel} is not tracked by git")
+    if g("rev-parse", "--abbrev-ref", "@{u}").returncode:
+        out.append("current branch has no upstream: cannot confirm the manifest is pushed")
+    else:
+        if g("rev-list", "@{u}..HEAD", "--", rel).stdout.strip():
+            out.append(f"{rel} has local commits not pushed to the upstream branch")
+        if g("rev-list", "HEAD..@{u}", "--", rel).stdout.strip():
+            out.append(f"upstream has newer changes to {rel} (fetch and merge before queueing)")
+    return out
+
+
 def queue(cur, n, skip):
     """Plants still to generate: status missing, in catalogue order. Reserved plants (active or expired) are never returned."""
     return [p["plantId"] for p in cur["plants"] if p["status"] == "missing"][skip:skip + n]
+
+
+def detail(cur, ids):
+    """Generation metadata for queued plants: catalogue facts, expected filenames, brief and reference image."""
+    by = {p["id"]: p for p in load(ROOT / "data/plants.json")["plants"]}
+    rec = {p["plantId"]: p for p in cur["plants"]}
+    brief = cur["brief"]
+    out = []
+    for pid in ids:
+        c, h, w = by[pid], by[pid]["heightCm"], by[pid]["spreadCm"]
+        entry = {
+            "plantId": pid, "order": rec[pid]["order"], "botanicalName": c["botanicalName"], "commonName": c.get("commonName"),
+            "illustrationType": V["word"], "heightCm": h, "spreadCm": w,
+            "spreadToHeightRatio": round(w / h, 3), "proportions": f"{w} cm spread x {h} cm height (spread:height = {w / h:.2f}:1)",
+            "status": rec[pid]["status"],
+            "brief": {"file": brief["file"], "version": brief["version"]},
+            "pngFilename": f"{pid}{V['suffix']}.png", "webpFilename": f"{pid}{V['suffix']}.webp",
+            "pngMasterPath": f"{MASTER_DIR}/{pid}{V['suffix']}.png", "webpPath": f"assets/plant-watercolours/{pid}{V['suffix']}.webp",
+            "catalogueRecordPath": f"data/plants.json#{pid}",
+        }
+        if brief.get("referenceImage"):
+            entry["referenceImage"] = brief["referenceImage"]
+        if "watercolourEnvelope" in c and is_wc():
+            entry["watercolourEnvelope"] = c["watercolourEnvelope"]
+        out.append(entry)
+    return out
 
 
 def pick(prev, a):
@@ -277,11 +395,17 @@ def add_days(date, days):
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap.add_argument("--type", choices=sorted(VARIANTS), default="botanical", help="illustration variant (default botanical)")
     sub = ap.add_subparsers(dest="cmd", required=True)
     day = lambda x: x.add_argument("--today", help="override today's date (YYYY-MM-DD), for tests")
     b = sub.add_parser("build"); b.add_argument("--bd"); b.add_argument("--bd-ref", default="origin/main")
-    day(sub.add_parser("check")); sub.add_parser("summary"); day(sub.add_parser("reservations"))
-    q = sub.add_parser("queue"); q.add_argument("n", nargs="?", type=int, default=10); q.add_argument("--skip", type=int, default=0); q.add_argument("--json", action="store_true"); day(q)
+    day(sub.add_parser("check")); sub.add_parser("summary"); sub.add_parser("sync"); day(sub.add_parser("reservations"))
+    q = sub.add_parser("queue"); q.add_argument("n", nargs="?", type=int, default=10); q.add_argument("--skip", type=int, default=0); q.add_argument("--json", action="store_true")
+    q.add_argument("--bd", help="border-designer checkout: also refuse when its PNG masters/brief differ from the manifest")
+    q.add_argument("--bd-ref", default="origin/main")
+    q.add_argument("--require-synced", action="store_true",
+                   help="also refuse unless the manifest is committed and in step with its upstream branch (no uncommitted/unpushed reservations)")
+    q.add_argument("--detail", action="store_true", help="print generation metadata for each queued plant as JSON"); day(q)
     s = sub.add_parser("set"); s.add_argument("status", choices=MANUAL); s.add_argument("ids", nargs="+"); s.add_argument("--note", default="")
     r = sub.add_parser("reserve"); r.add_argument("ids", nargs="+"); r.add_argument("--batch", required=True); r.add_argument("--source", default="")
     r.add_argument("--days", type=int, default=RESERVE_DAYS); day(r)
@@ -290,6 +414,7 @@ def main():
         if name == "renew":
             x.add_argument("--days", type=int, default=RESERVE_DAYS); day(x)
     a = ap.parse_args()
+    set_variant(a.type)
     prev = load(MANIFEST) if MANIFEST.is_file() else None
     today = today_str(a)
     save = lambda d: MANIFEST.write_text(dump(d), encoding="utf-8")
@@ -304,8 +429,22 @@ def main():
         print(json.dumps(prev["summary"]))
     elif a.cmd == "queue":
         require_fresh(prev, today)
+        if a.bd:
+            fresh_masters(prev, a.bd, a.bd_ref)
+        if a.require_synced:
+            bad = sync_problems()
+            if bad:
+                stop("STOP: status manifest is not synchronised: " + "; ".join(bad) + ".\nCommit (and push, when sessions share the branch) the manifest, "
+                     "then repeat. No IDs were returned.")
         ids = queue(prev, a.n, a.skip)
-        print(json.dumps(ids) if a.json else "\n".join(ids))
+        if a.detail:
+            print(json.dumps(detail(prev, ids), indent=2, ensure_ascii=False))
+        else:
+            print(json.dumps(ids) if a.json else "\n".join(ids))
+    elif a.cmd == "sync":
+        bad = sync_problems()
+        print("\n".join(bad) if bad else "OK: manifest committed and in step with upstream", file=sys.stderr if bad else sys.stdout)
+        sys.exit(3 if bad else 0)
     elif a.cmd == "reservations":
         for p in prev["plants"]:
             if "reservation" in p:
