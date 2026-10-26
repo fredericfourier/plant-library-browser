@@ -18,19 +18,6 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-      - name: Diagnostic SHA-256 for latest approved illustrations
-        run: |
-          python3 - <<'PY'
-          import hashlib
-          import json
-          from pathlib import Path
-          data = json.loads(Path('assets/plant-watercolours/manifest.json').read_text())
-          for pid in ('alchemilla-mollis', 'digitalis-purpurea'):
-              item = data['assets'][pid]['variants']['watercolour']
-              path = Path(item['file'])
-              actual = hashlib.sha256(path.read_bytes()).hexdigest()
-              print(f'ILLUSTRATION_SHA256 {pid} expected={item.get("sha256")} actual={actual}', flush=True)
-          PY
       - name: Build and verify downloadable ZIP
         run: python3 tools/build_illustrations_zip.py
       - name: Confirm ZIP contents and reproducibility
