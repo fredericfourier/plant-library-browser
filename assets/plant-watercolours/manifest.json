@@ -23,7 +23,7 @@
           "originalHeightPx": 1254,
           "transparent": true,
           "sha256": "87cddd289fd2fe8dcbf87abf39f3f958ed70ecbb12cc687736126f8fb5e3f8cd",
-          "pngSha256": "d9546181f891934b95ea847ee043efd5b83606d79eb796b8f29f5aff37caf213",
+          "pngSha256": "cb143065fe620db5cf5687d74dfb22ed9d5a880ddc850dd6d1ab67eb819ecd20",
           "warnings": []
         }
       },
@@ -101,11 +101,11 @@
           "status": "awaiting_review",
           "productionReady": false,
           "canonicalScaleApplied": false,
-          "originalWidthPx": 1448,
-          "originalHeightPx": 1086,
+          "originalWidthPx": 1536,
+          "originalHeightPx": 1024,
           "transparent": true,
-          "sha256": "b59ddadcc4a6287490ea4523a1e9c483a9ccbd6ba95fe86b88ad6317e5fdb311",
-          "pngSha256": "8266315331ea076c13d306c61faeedda0892d6f8aed2f57e1309ecc296a871e0",
+          "sha256": "4f694a94cacf5e16367cd805fda72a40f57d3aef5f0fd2dabfdfcfc15ca6041e",
+          "pngSha256": "8cd5424f3d35fbfc778ab52c4c724f613a364470b1da9155cf186d8f811c3c03",
           "warnings": []
         }
       },
@@ -155,11 +155,11 @@
           "status": "awaiting_review",
           "productionReady": false,
           "canonicalScaleApplied": false,
-          "originalWidthPx": 1536,
-          "originalHeightPx": 1024,
+          "originalWidthPx": 1446,
+          "originalHeightPx": 1087,
           "transparent": true,
-          "sha256": "ce2a5ecc57a9596aee80b28ac31c577bc4c172c91dd8c917fec97a863b61e5b1",
-          "pngSha256": "3bef7a18975926fa75389e5783a4c9449b92b051e52be0bb5a93bce77d4c2875",
+          "sha256": "b70b7b79fe5277105b56e4b2293f03edfb842eb7bb6a0567dec3d8c70136c282",
+          "pngSha256": "0249b2de9cab173dd6f33aa9433a815eaaa962d374d9af0330ccb9743cb85d4c",
           "warnings": []
         }
       },
@@ -213,8 +213,8 @@
           "originalWidthPx": 1254,
           "originalHeightPx": 1254,
           "transparent": true,
-          "sha256": "a66083704f41efd4ecd0c6b59062ca01d22489a056cc0eb360b7738c6bfac6ff",
-          "pngSha256": "d6faffa1228d5a76e69f83a7c0d602536b261f24277379d5d77654f3cdcb1221",
+          "sha256": "d1b080e59b6bb62ce8af5ab39809537df03260ab7551376ccb0395b1c91cd685",
+          "pngSha256": "f8e6922acd2dc3d9fbbd267fd6a4da8addddf8504aa4823f6c907ac763edb7cd",
           "warnings": []
         }
       },
@@ -334,8 +334,8 @@
           "originalWidthPx": 1122,
           "originalHeightPx": 1402,
           "transparent": true,
-          "sha256": "04df55b9494852ebaa2f23e123a6456d92c55c0bc1f8ec9141b3cbcfc78517fe",
-          "pngSha256": "29140be0f4a289e238f1e4147e8cb2a995e151f7470f995a0aca98f14ee6b460",
+          "sha256": "6de092c34b7516198abe0dd23caa198b0c168f8b6fd5b04921ff7e9e7498ebb6",
+          "pngSha256": "978a777db40cd9254efc926c480270c8ed7433c3876eb04c2512ce6f762a42cf",
           "warnings": []
         }
       }
@@ -547,11 +547,11 @@
           "status": "awaiting_review",
           "productionReady": false,
           "canonicalScaleApplied": false,
-          "originalWidthPx": 1461,
-          "originalHeightPx": 1076,
+          "originalWidthPx": 1470,
+          "originalHeightPx": 1070,
           "transparent": true,
-          "sha256": "906655ddff3fd1c945186515aba1c8040e3681e39331bce04ffe7973f0cf1ade",
-          "pngSha256": "6f4a220176c93af2a462f625a22e1fa08537952b182db3fdf0532d8b9c08f106",
+          "sha256": "b44e0726a3a4837920c7fdcef15d5b132bc8b9ab9e8d63948c62e71772a4af5b",
+          "pngSha256": "538edf4612c1e3cf4a2b23e9965940cfba4e8fc2d4fcec3d05bfbdc808a1358e",
           "warnings": []
         }
       }
@@ -643,11 +643,11 @@
           "status": "awaiting_review",
           "productionReady": false,
           "canonicalScaleApplied": false,
-          "originalWidthPx": 1122,
-          "originalHeightPx": 1402,
+          "originalWidthPx": 1127,
+          "originalHeightPx": 1395,
           "transparent": true,
-          "sha256": "dc0c29454b96f5b354a9d5b8234f09be5cea3e6e74ee429603f594667bd688d8",
-          "pngSha256": "d798ae04539f84178b79b8cc7154f3a8a377bcf95cb6914cc93539f5f84fddcd",
+          "sha256": "574e6905d9e22c82bacaa5a68c25064e18cdc60bd020166b265ef587080a05fe",
+          "pngSha256": "35f7c84113de4b8eaf239f7c2540887bf962085f369993823ab190f5bb65c50d",
           "warnings": []
         }
       }
@@ -671,7 +671,7 @@
           "originalHeightPx": 1402,
           "transparent": true,
           "sha256": "5e56faf04a3cac9d2a5e48f03b7b7df283827eb3028e00df97275277d0836c78",
-          "pngSha256": "2c8734a05b91502d20c52a31c721e5a0cf8eb67c9c80802ef26cc21fac780916",
+          "pngSha256": "940fe15d940f404aac30348d9802b5d6f0b4df00290b32562e0768445c9f2fb4",
           "warnings": []
         }
       }
@@ -715,11 +715,11 @@
           "status": "awaiting_review",
           "productionReady": false,
           "canonicalScaleApplied": false,
-          "originalWidthPx": 1254,
-          "originalHeightPx": 1254,
+          "originalWidthPx": 1635,
+          "originalHeightPx": 962,
           "transparent": true,
-          "sha256": "1f6f085209f79c42347a9870db00b1edca070f7427b28d0eec394984e1071a27",
-          "pngSha256": "d6d441a39e8bc32274692341cacc80ca3807fd02262cd19cee372d104c904c38",
+          "sha256": "0e2b2af009a24d50f55050aace0169e8bb746e5c4a1dcfcf4767ab6880391ebd",
+          "pngSha256": "d6aeb0587d4ea2bfbea1aa1a5faa9a55d3a718121377557225b1f8fb241a89b8",
           "warnings": []
         }
       }
@@ -739,11 +739,11 @@
           "status": "awaiting_review",
           "productionReady": false,
           "canonicalScaleApplied": false,
-          "originalWidthPx": 1536,
-          "originalHeightPx": 1024,
+          "originalWidthPx": 1881,
+          "originalHeightPx": 836,
           "transparent": true,
-          "sha256": "cb454949027a08a77a0733cac23c5ad4166b09f582ca5ee6e7cf27da0a915268",
-          "pngSha256": "c0585792e4ca1e8d028299147c5abe39e40d5bc8d33b7ee1667a695eefbd1927",
+          "sha256": "c3ed193b66fd64a2d88311b41159476650803f905931683b185110f64cf9f8ea",
+          "pngSha256": "d1b8878d912947daf0716f9492f49d24be5347525660edadd2f62a6c1e62b383",
           "warnings": []
         }
       }
@@ -907,11 +907,11 @@
           "status": "awaiting_review",
           "productionReady": false,
           "canonicalScaleApplied": false,
-          "originalWidthPx": 1448,
-          "originalHeightPx": 1086,
+          "originalWidthPx": 1774,
+          "originalHeightPx": 887,
           "transparent": true,
-          "sha256": "33489f6d24825fb9f5670016f001b79ff04124cfff54f6deae0e74bdbc33fc49",
-          "pngSha256": "4e7a6e5b05ec554fff1cd13ef23d0f017dadcb14430d1d45eb2566a56bcd24c2",
+          "sha256": "aa22971887d04a28bc6753e4df5c5eff01206b1fed6d16b9e689288726974657",
+          "pngSha256": "73243aad92d41fc2cf75cbc28b4dce54e75a970a1922e133d44ce29c475f8edb",
           "warnings": []
         }
       }
@@ -955,11 +955,11 @@
           "status": "awaiting_review",
           "productionReady": false,
           "canonicalScaleApplied": false,
-          "originalWidthPx": 1122,
-          "originalHeightPx": 1402,
+          "originalWidthPx": 1536,
+          "originalHeightPx": 1024,
           "transparent": true,
-          "sha256": "f01ff2fc40f4cb99f6b928187febe90780658c237d86e5deaa650803744ca1a3",
-          "pngSha256": "042438e2818c6a10bf70c482ac23b3c8f8b73b4c1e3e1d63172b54109ef001b2",
+          "sha256": "bdbb17a63932148210349b19a8aa3b635540567c8f721e0183efa1aa93569108",
+          "pngSha256": "f457d2abf99fc969c1bfba5705640db8a365e86853d14daacadccecb19a56ae5",
           "warnings": []
         }
       }
@@ -1006,8 +1006,8 @@
           "originalWidthPx": 1122,
           "originalHeightPx": 1402,
           "transparent": true,
-          "sha256": "1740d76281c88e26f72439d7a346fbd92d236bf33ac56fb404ab40b71594b11c",
-          "pngSha256": "e36dff0c0759a00fdf1e6630c81e505e68217896dd8f78a657f8bc606fe4a9e4",
+          "sha256": "f772296ee8d22a3327770b90dc66517319f671253b7e45e6296b5a29e6e7926b",
+          "pngSha256": "7a40055187014b2bd626a011640fd88d753e403ce7d3109630ef1957e849f96e",
           "warnings": []
         }
       }
@@ -1051,11 +1051,11 @@
           "status": "awaiting_review",
           "productionReady": false,
           "canonicalScaleApplied": false,
-          "originalWidthPx": 1122,
-          "originalHeightPx": 1402,
+          "originalWidthPx": 1254,
+          "originalHeightPx": 1254,
           "transparent": true,
-          "sha256": "861e2f8fd248a2416f3282602c2e29d490b52fd7344be1e0600b89d8d4c6db29",
-          "pngSha256": "8dde8fb6468703c888bbcc19700205d089ec2144a4ae17c377c2f01cda3d5551",
+          "sha256": "858f76e5d90008d0c324f4eb5fe23f3038efe1c1b54de9ce50553eadad77371e",
+          "pngSha256": "572f9600aa6e023331e067fbf2cf7692a7748ead2ddd7dfe35df6f08cb362e0f",
           "warnings": []
         }
       }
@@ -1171,11 +1171,11 @@
           "status": "awaiting_review",
           "productionReady": false,
           "canonicalScaleApplied": false,
-          "originalWidthPx": 1086,
-          "originalHeightPx": 1448,
+          "originalWidthPx": 1254,
+          "originalHeightPx": 1254,
           "transparent": true,
-          "sha256": "4ffcd5ffc9890b29571fa01e8f7c52a21eb66dc19c00f44d912140872b81d393",
-          "pngSha256": "df0353676d5b9ab850dd35496820fa8398fbc2542516384a8e3783432f14eec5",
+          "sha256": "ce97f266ff0a604c79b7444185d84878f1080d7d120d94ad175ed6d1732bd7c9",
+          "pngSha256": "df72668cba9b37da505784523af6a0ffc339f26e1dc9abbefb035eb69c85c983",
           "warnings": []
         }
       }
@@ -1363,11 +1363,11 @@
           "status": "awaiting_review",
           "productionReady": false,
           "canonicalScaleApplied": false,
-          "originalWidthPx": 1122,
-          "originalHeightPx": 1402,
+          "originalWidthPx": 1774,
+          "originalHeightPx": 887,
           "transparent": true,
-          "sha256": "703fec36bee9b9dd2333edfb44f2c3009772f0525780697d97e50000c244b1f4",
-          "pngSha256": "ff12a87f849b84d5771d9616890620cc81318cfbb269c5c9c8dba98e58c22026",
+          "sha256": "1c4333846ffe9adc4eeffd7eec8edd3cf3c499f2674b9fa5f16ec4338d614e49",
+          "pngSha256": "96370151dbc502f69dbf2a996fb7624b9c21e6b00dcea81c8bf927aa05680d40",
           "warnings": []
         }
       }
@@ -1651,11 +1651,11 @@
           "status": "awaiting_review",
           "productionReady": false,
           "canonicalScaleApplied": false,
-          "originalWidthPx": 1122,
-          "originalHeightPx": 1402,
+          "originalWidthPx": 1134,
+          "originalHeightPx": 1387,
           "transparent": true,
-          "sha256": "69e43ea0c714b057962d097201e7cadfc8ac9642e3d7a819b38156d936fb417e",
-          "pngSha256": "307803acfe9675e35c421ff416a4846b79a4b5bffdbe6816e928f80ca5b72982",
+          "sha256": "5c04eb6d3ae985731ec61e0a8fb5c8decff8f152231f346840a84724517a1fdb",
+          "pngSha256": "51255c8d506b50addf70af4454c746f61f58402b1500270fb9e6c50f4507f9cd",
           "warnings": []
         }
       }
@@ -1678,8 +1678,8 @@
           "originalWidthPx": 1254,
           "originalHeightPx": 1254,
           "transparent": true,
-          "sha256": "cabde12216d018cbc5ff81e7d1fe16f038b36cd332e1786bc7f389b28a23665d",
-          "pngSha256": "efc9dab79442d6257b3283f829ff4cd849d6bd20b39c5e1cf587065b53d24cfa",
+          "sha256": "6750fcbbc2b23f04f95cbf5115498119048c8e65bba82956101834920099b2be",
+          "pngSha256": "013d1b7a036164564e4046028fedae78e7eb459b7dd7c15fddfd866bef849f64",
           "warnings": []
         }
       }
@@ -2099,11 +2099,11 @@
           "status": "awaiting_review",
           "productionReady": false,
           "canonicalScaleApplied": false,
-          "originalWidthPx": 1254,
-          "originalHeightPx": 1254,
+          "originalWidthPx": 1122,
+          "originalHeightPx": 1402,
           "transparent": true,
-          "sha256": "129038f81bf090e13f0abadff9c7ae74f148106268d1c53875178d5999d3dc62",
-          "pngSha256": "8600270ebf4482caca771d05e95e5d97f1091b0a1dd872379c03ad2d1ae8fea8",
+          "sha256": "f53772435b130e4cdcf7d104fca3f2d322e51b81c15f716767987fc0c5324125",
+          "pngSha256": "f32bdcce96bfb0361b7232f87fc38cc3cfc71a95eaa845d40a30f52f866d1b3b",
           "warnings": []
         }
       }
@@ -2153,11 +2153,11 @@
           "status": "awaiting_review",
           "productionReady": false,
           "canonicalScaleApplied": false,
-          "originalWidthPx": 1254,
-          "originalHeightPx": 1254,
+          "originalWidthPx": 1122,
+          "originalHeightPx": 1402,
           "transparent": true,
-          "sha256": "4a22fe91b335344a39162db4a46307a0c09317f6f2021348960e4a29c0229c6f",
-          "pngSha256": "8ba3e197ba82ef035015771246c118bf01a5b311f7290196d4893f9ed4e3814f",
+          "sha256": "44652645528f8414d6dde89d71f134f7063ed055336cbcb2471b018d09454a21",
+          "pngSha256": "bf3307d14ae69f086b4b98162e6ac2d34b6c4c7d9b1eaa4bdd0fc784f32b1721",
           "warnings": []
         }
       }
@@ -2345,8 +2345,8 @@
           "originalWidthPx": 1254,
           "originalHeightPx": 1254,
           "transparent": true,
-          "sha256": "e364340e6384f1f014fc1244e95d83b28a1668800f6129198916dc413ae2d54d",
-          "pngSha256": "281f2cc5bb0d9f3baf5e447e347a39639ae0531e18a98ef4e9aa82b1445a9c7c",
+          "sha256": "3be7b36b2771d2a4e580fb1a93488c34896b7bbda960ac0d790820b32ce0566b",
+          "pngSha256": "1cf692430de339e3fa7b9d386c5711ccee876a38beb7578bab216dae50afefc6",
           "warnings": []
         }
       }
@@ -2369,11 +2369,11 @@
           "status": "awaiting_review",
           "productionReady": false,
           "canonicalScaleApplied": false,
-          "originalWidthPx": 1254,
-          "originalHeightPx": 1254,
+          "originalWidthPx": 1286,
+          "originalHeightPx": 1223,
           "transparent": true,
-          "sha256": "210531cb654af54a2988d6c347c0d7381e124b8f82f75a022360e41b26790cd2",
-          "pngSha256": "9d46f5de7a9912aa2e1be2a0b6472bc44083c3fd53d12231f2344840b5df2790",
+          "sha256": "37d1d12abc2e97c4e1a976eb131fada2125c2e47391502c143efc4d5cb895014",
+          "pngSha256": "430fef10a3e7af6da833c45a1ac9811ceb3f3005bbaf54ac0b8b0f495fd18849",
           "warnings": []
         }
       }
@@ -2396,11 +2396,11 @@
           "status": "awaiting_review",
           "productionReady": false,
           "canonicalScaleApplied": false,
-          "originalWidthPx": 1254,
-          "originalHeightPx": 1254,
+          "originalWidthPx": 1448,
+          "originalHeightPx": 1086,
           "transparent": true,
-          "sha256": "5afbb5bb1687f22d09a48e70c38aa7431e13f05f3fc9d1706d5ec6004546f401",
-          "pngSha256": "55a99ad68b3f5f1b9679028aff25072d3d2cab706b669e6b2346c972d58afd57",
+          "sha256": "3e33f6237ab5b92f530771e697bd2d2f532061852012561b8d1b260551ebf7c2",
+          "pngSha256": "6c30a12954573fb8ff524559affd3428952c4185bdcdce752552b2f91580ca77",
           "warnings": []
         }
       }
@@ -2477,11 +2477,11 @@
           "status": "awaiting_review",
           "productionReady": false,
           "canonicalScaleApplied": false,
-          "originalWidthPx": 1254,
-          "originalHeightPx": 1254,
+          "originalWidthPx": 2172,
+          "originalHeightPx": 724,
           "transparent": true,
-          "sha256": "1b4038f7727ebe978c8582741a29150fb1d17c295c9d44fd9ba99ce952b5df19",
-          "pngSha256": "6f5bf70d9069adeef46ea6f58c8abaf80e732b15acc0ba8bd92c5cedb4631183",
+          "sha256": "b7d7ccaddcfffa8286a526060b54dde9c83ced56a81ab95721ca75282e25200a",
+          "pngSha256": "c2b5654cef7137363dd40e8790310da6afdc4f1f162dad872aa9ccaee9faeaf9",
           "warnings": []
         }
       }
