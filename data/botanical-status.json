@@ -23,23 +23,23 @@
     "file": "docs/briefs/BOTANICAL_ASSET_BRIEF.md",
     "version": "35ac6dd"
   },
-  "updated": "2026-10-22T15:42:22Z",
+  "updated": "2026-10-28T07:15:53Z",
   "summary": {
     "total": 105,
     "missing": 0,
-    "pending_review": 73,
-    "approved": 32,
+    "pending_review": 0,
+    "approved": 105,
     "rejected": 0,
     "uncertain_match": 0,
     "reserved_not_imported": 0,
-    "filename_match_only": 39
+    "filename_match_only": 0
   },
   "plants": [
     {
       "order": 1,
       "plantId": "salvia-caradonna",
       "botanicalName": "Salvia nemorosa 'Caradonna'",
-      "status": "pending_review",
+      "status": "approved",
       "expectsBotanical": true,
       "expectsWatercolour": true,
       "assetForm": "both",
@@ -48,16 +48,16 @@
       "webpPath": "assets/plant-watercolours/salvia-caradonna.webp",
       "webpSha256": "abe33d30f028c443880bbd3fe3a3ef3acf51a5ab03ca58e83612f856fbf155e9",
       "verificationState": "confirmed",
-      "approvalBasis": "filename_match_only",
+      "approvalBasis": "explicit_manual_approval",
       "matchConfidence": "filename_match_unreviewed",
       "pipelineQa": "ready",
       "watercolour": {
         "status": "confirmed",
         "webpPath": "assets/plant-watercolours/salvia-caradonna-watercolour.webp"
       },
-      "manualApprovalAt": null,
-      "notes": "manual botanical approval absent: confirmed in botanical-verification.json by filename match only; not a verified match, keeps its image, not regenerated",
-      "lastUpdated": "2026-10-15T07:10:00Z"
+      "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "notes": "",
+      "lastUpdated": "2026-10-28T07:15:53Z"
     },
     {
       "order": 2,
@@ -87,7 +87,7 @@
       "order": 3,
       "plantId": "geranium-rozanne",
       "botanicalName": "Geranium 'Rozanne'",
-      "status": "pending_review",
+      "status": "approved",
       "expectsBotanical": true,
       "expectsWatercolour": true,
       "assetForm": "both",
@@ -96,16 +96,16 @@
       "webpPath": "assets/plant-watercolours/geranium-rozanne.webp",
       "webpSha256": "6f53924d062c64c22967371c94713eb24bda63d0bc1e5acbcfbfae9cdb7aa613",
       "verificationState": "confirmed",
-      "approvalBasis": "filename_match_only",
+      "approvalBasis": "explicit_manual_approval",
       "matchConfidence": "filename_match_unreviewed",
       "pipelineQa": "warning",
       "watercolour": {
         "status": "confirmed",
         "webpPath": "assets/plant-watercolours/geranium-rozanne-watercolour.webp"
       },
-      "manualApprovalAt": null,
-      "notes": "manual botanical approval absent: confirmed in botanical-verification.json by filename match only; not a verified match, keeps its image, not regenerated; pipeline QA: warning (ratio error 0.104)",
-      "lastUpdated": "2026-10-15T07:08:42Z"
+      "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "notes": "pipeline QA: warning (ratio error 0.104)",
+      "lastUpdated": "2026-10-28T07:15:53Z"
     },
     {
       "order": 4,
@@ -135,7 +135,7 @@
       "order": 5,
       "plantId": "nepeta-walkers-low",
       "botanicalName": "Nepeta × faassenii 'Walker's Low'",
-      "status": "pending_review",
+      "status": "approved",
       "expectsBotanical": true,
       "expectsWatercolour": true,
       "assetForm": "both",
@@ -144,22 +144,22 @@
       "webpPath": "assets/plant-watercolours/nepeta-walkers-low.webp",
       "webpSha256": "3afab6091d044ba526d7c0bf23da139104344727d16fa3f9b4a237fe90ad1d70",
       "verificationState": "confirmed",
-      "approvalBasis": "filename_match_only",
+      "approvalBasis": "explicit_manual_approval",
       "matchConfidence": "filename_match_unreviewed",
       "pipelineQa": "warning",
       "watercolour": {
         "status": "confirmed",
         "webpPath": "assets/plant-watercolours/nepeta-walkers-low-watercolour.webp"
       },
-      "manualApprovalAt": null,
-      "notes": "manual botanical approval absent: confirmed in botanical-verification.json by filename match only; not a verified match, keeps its image, not regenerated; pipeline QA: warning (ratio error 0.206)",
-      "lastUpdated": "2026-10-15T07:10:00Z"
+      "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "notes": "pipeline QA: warning (ratio error 0.206)",
+      "lastUpdated": "2026-10-28T07:15:53Z"
     },
     {
       "order": 6,
       "plantId": "geum-totally-tangerine",
       "botanicalName": "Geum 'Totally Tangerine'",
-      "status": "pending_review",
+      "status": "approved",
       "expectsBotanical": true,
       "expectsWatercolour": true,
       "assetForm": "both",
@@ -168,22 +168,22 @@
       "webpPath": "assets/plant-watercolours/geum-totally-tangerine.webp",
       "webpSha256": "b3726324216159dbeefdb8198831e52e2b0e90990e1021898d916b3b944f7e84",
       "verificationState": "confirmed",
-      "approvalBasis": "filename_match_only",
+      "approvalBasis": "explicit_manual_approval",
       "matchConfidence": "filename_match_unreviewed",
       "pipelineQa": "ready",
       "watercolour": {
         "status": "confirmed",
         "webpPath": "assets/plant-watercolours/geum-totally-tangerine-watercolour.webp"
       },
-      "manualApprovalAt": null,
-      "notes": "manual botanical approval absent: confirmed in botanical-verification.json by filename match only; not a verified match, keeps its image, not regenerated",
-      "lastUpdated": "2026-10-15T07:08:42Z"
+      "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "notes": "",
+      "lastUpdated": "2026-10-28T07:15:53Z"
     },
     {
       "order": 7,
       "plantId": "knautia-macedonica",
       "botanicalName": "Knautia macedonica",
-      "status": "pending_review",
+      "status": "approved",
       "expectsBotanical": true,
       "expectsWatercolour": true,
       "assetForm": "both",
@@ -192,22 +192,22 @@
       "webpPath": "assets/plant-watercolours/knautia-macedonica.webp",
       "webpSha256": "095057297c6c1a6bfb07410b076cf4618c513fe5474ca3bfaf1d8815907db1a4",
       "verificationState": "confirmed",
-      "approvalBasis": "filename_match_only",
+      "approvalBasis": "explicit_manual_approval",
       "matchConfidence": "filename_match_unreviewed",
       "pipelineQa": "imported",
       "watercolour": {
         "status": "confirmed",
         "webpPath": "assets/plant-watercolours/knautia-macedonica-watercolour.webp"
       },
-      "manualApprovalAt": null,
-      "notes": "manual botanical approval absent: confirmed in botanical-verification.json by filename match only; not a verified match, keeps its image, not regenerated",
-      "lastUpdated": "2026-10-15T07:10:00Z"
+      "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "notes": "",
+      "lastUpdated": "2026-10-28T07:15:53Z"
     },
     {
       "order": 8,
       "plantId": "verbena-bonariensis",
       "botanicalName": "Verbena bonariensis",
-      "status": "pending_review",
+      "status": "approved",
       "expectsBotanical": true,
       "expectsWatercolour": true,
       "assetForm": "both",
@@ -216,22 +216,22 @@
       "webpPath": "assets/plant-watercolours/verbena-bonariensis.webp",
       "webpSha256": "c02b3c67a6e1b52e7ef9abbc28669f3b2209657b6623fb3c1d49ae7c7306c499",
       "verificationState": "confirmed",
-      "approvalBasis": "filename_match_only",
+      "approvalBasis": "explicit_manual_approval",
       "matchConfidence": "filename_match_unreviewed",
       "pipelineQa": "imported",
       "watercolour": {
         "status": "confirmed",
         "webpPath": "assets/plant-watercolours/verbena-bonariensis-watercolour.webp"
       },
-      "manualApprovalAt": null,
-      "notes": "manual botanical approval absent: confirmed in botanical-verification.json by filename match only; not a verified match, keeps its image, not regenerated",
-      "lastUpdated": "2026-10-15T07:10:00Z"
+      "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "notes": "",
+      "lastUpdated": "2026-10-28T07:15:53Z"
     },
     {
       "order": 9,
       "plantId": "echinacea-purpurea",
       "botanicalName": "Echinacea purpurea",
-      "status": "pending_review",
+      "status": "approved",
       "expectsBotanical": true,
       "expectsWatercolour": true,
       "assetForm": "both",
@@ -240,22 +240,22 @@
       "webpPath": "assets/plant-watercolours/echinacea-purpurea.webp",
       "webpSha256": "f611151decf7b5e448d960174385e7663214a344a1d68dce9e087df803b8a2f0",
       "verificationState": "confirmed",
-      "approvalBasis": "filename_match_only",
+      "approvalBasis": "explicit_manual_approval",
       "matchConfidence": "filename_match_unreviewed",
       "pipelineQa": "needs-review",
       "watercolour": {
         "status": "confirmed",
         "webpPath": "assets/plant-watercolours/echinacea-purpurea-watercolour.webp"
       },
-      "manualApprovalAt": null,
-      "notes": "manual botanical approval absent: confirmed in botanical-verification.json by filename match only; not a verified match, keeps its image, not regenerated; pipeline QA: needs-review (ratio error 0.329)",
-      "lastUpdated": "2026-10-15T06:36:06Z"
+      "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "notes": "pipeline QA: needs-review (ratio error 0.329)",
+      "lastUpdated": "2026-10-28T07:15:53Z"
     },
     {
       "order": 10,
       "plantId": "echinacea-white-swan",
       "botanicalName": "Echinacea purpurea 'White Swan'",
-      "status": "pending_review",
+      "status": "approved",
       "expectsBotanical": true,
       "expectsWatercolour": true,
       "assetForm": "both",
@@ -264,22 +264,22 @@
       "webpPath": "assets/plant-watercolours/echinacea-white-swan.webp",
       "webpSha256": "3efc8b7d3c80902e00c3eb772d4eada51d4eda83aa81085ca43bc0ba8b8445ed",
       "verificationState": "confirmed",
-      "approvalBasis": "filename_match_only",
+      "approvalBasis": "explicit_manual_approval",
       "matchConfidence": "filename_match_unreviewed",
       "pipelineQa": "ready",
       "watercolour": {
         "status": "confirmed",
         "webpPath": "assets/plant-watercolours/echinacea-white-swan-watercolour.webp"
       },
-      "manualApprovalAt": null,
-      "notes": "manual botanical approval absent: confirmed in botanical-verification.json by filename match only; not a verified match, keeps its image, not regenerated",
-      "lastUpdated": "2026-10-15T06:36:06Z"
+      "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "notes": "",
+      "lastUpdated": "2026-10-28T07:15:53Z"
     },
     {
       "order": 11,
       "plantId": "achillea-terracotta",
       "botanicalName": "Achillea millefolium 'Terracotta'",
-      "status": "pending_review",
+      "status": "approved",
       "expectsBotanical": true,
       "expectsWatercolour": true,
       "assetForm": "both",
@@ -288,16 +288,16 @@
       "webpPath": "assets/plant-watercolours/achillea-terracotta.webp",
       "webpSha256": "ab13d5fc41777d7cf22209265f1b273cf89b8524457633e37abcb1e7319e99c6",
       "verificationState": "confirmed",
-      "approvalBasis": "filename_match_only",
+      "approvalBasis": "explicit_manual_approval",
       "matchConfidence": "filename_match_unreviewed",
       "pipelineQa": "imported",
       "watercolour": {
         "status": "confirmed",
         "webpPath": "assets/plant-watercolours/achillea-terracotta-watercolour.webp"
       },
-      "manualApprovalAt": null,
-      "notes": "manual botanical approval absent: confirmed in botanical-verification.json by filename match only; not a verified match, keeps its image, not regenerated",
-      "lastUpdated": "2026-10-15T06:30:03Z"
+      "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "notes": "",
+      "lastUpdated": "2026-10-28T07:15:53Z"
     },
     {
       "order": 12,
@@ -351,7 +351,7 @@
       "order": 14,
       "plantId": "rudbeckia-goldsturm",
       "botanicalName": "Rudbeckia fulgida var. sullivantii 'Goldsturm'",
-      "status": "pending_review",
+      "status": "approved",
       "expectsBotanical": true,
       "expectsWatercolour": true,
       "assetForm": "both",
@@ -360,16 +360,16 @@
       "webpPath": "assets/plant-watercolours/rudbeckia-goldsturm.webp",
       "webpSha256": "b2e1f6616a78895f98765f79d563cccf345474519b7a4023042e171a3fb02032",
       "verificationState": "confirmed",
-      "approvalBasis": "filename_match_only",
+      "approvalBasis": "explicit_manual_approval",
       "matchConfidence": "filename_match_unreviewed",
       "pipelineQa": "imported",
       "watercolour": {
         "status": "confirmed",
         "webpPath": "assets/plant-watercolours/rudbeckia-goldsturm-watercolour.webp"
       },
-      "manualApprovalAt": null,
-      "notes": "manual botanical approval absent: confirmed in botanical-verification.json by filename match only; not a verified match, keeps its image, not regenerated",
-      "lastUpdated": "2026-10-15T07:10:00Z"
+      "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "notes": "",
+      "lastUpdated": "2026-10-28T07:15:53Z"
     },
     {
       "order": 15,
@@ -399,7 +399,7 @@
       "order": 16,
       "plantId": "persicaria-firetail",
       "botanicalName": "Persicaria amplexicaulis 'Firetail'",
-      "status": "pending_review",
+      "status": "approved",
       "expectsBotanical": true,
       "expectsWatercolour": true,
       "assetForm": "both",
@@ -408,22 +408,22 @@
       "webpPath": "assets/plant-watercolours/persicaria-firetail.webp",
       "webpSha256": "4532372ae8015e5f17a0f94cbafe71d1e2193fcd0d094c7e50a34ead3cc270e9",
       "verificationState": "confirmed",
-      "approvalBasis": "filename_match_only",
+      "approvalBasis": "explicit_manual_approval",
       "matchConfidence": "filename_match_unreviewed",
       "pipelineQa": "imported",
       "watercolour": {
         "status": "confirmed",
         "webpPath": "assets/plant-watercolours/persicaria-firetail-watercolour.webp"
       },
-      "manualApprovalAt": null,
-      "notes": "manual botanical approval absent: confirmed in botanical-verification.json by filename match only; not a verified match, keeps its image, not regenerated",
-      "lastUpdated": "2026-10-15T07:10:00Z"
+      "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "notes": "",
+      "lastUpdated": "2026-10-28T07:15:53Z"
     },
     {
       "order": 17,
       "plantId": "anemone-honorine",
       "botanicalName": "Anemone × hybrida 'Honorine Jobert'",
-      "status": "pending_review",
+      "status": "approved",
       "expectsBotanical": true,
       "expectsWatercolour": true,
       "assetForm": "both",
@@ -432,22 +432,22 @@
       "webpPath": "assets/plant-watercolours/anemone-honorine.webp",
       "webpSha256": "b94f4f019a1c8aebbbf65f7ee3ca3f7849c4205bfa296fc5ac1d40d09e53a0b6",
       "verificationState": "confirmed",
-      "approvalBasis": "filename_match_only",
+      "approvalBasis": "explicit_manual_approval",
       "matchConfidence": "filename_match_unreviewed",
       "pipelineQa": "imported",
       "watercolour": {
         "status": "confirmed",
         "webpPath": "assets/plant-watercolours/anemone-honorine-watercolour.webp"
       },
-      "manualApprovalAt": null,
-      "notes": "manual botanical approval absent: confirmed in botanical-verification.json by filename match only; not a verified match, keeps its image, not regenerated",
-      "lastUpdated": "2026-10-15T06:30:03Z"
+      "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "notes": "",
+      "lastUpdated": "2026-10-28T07:15:53Z"
     },
     {
       "order": 18,
       "plantId": "anemone-hadspen",
       "botanicalName": "Anemone hupehensis 'Hadspen Abundance'",
-      "status": "pending_review",
+      "status": "approved",
       "expectsBotanical": true,
       "expectsWatercolour": true,
       "assetForm": "both",
@@ -456,22 +456,22 @@
       "webpPath": "assets/plant-watercolours/anemone-hadspen.webp",
       "webpSha256": "cdc3f22bc2ffbbf720a7756b07b5430e8ef1f928bdfa5294539a322dcf070432",
       "verificationState": "confirmed",
-      "approvalBasis": "filename_match_only",
+      "approvalBasis": "explicit_manual_approval",
       "matchConfidence": "filename_match_unreviewed",
       "pipelineQa": "imported",
       "watercolour": {
         "status": "confirmed",
         "webpPath": "assets/plant-watercolours/anemone-hadspen-watercolour.webp"
       },
-      "manualApprovalAt": null,
-      "notes": "manual botanical approval absent: confirmed in botanical-verification.json by filename match only; not a verified match, keeps its image, not regenerated",
-      "lastUpdated": "2026-10-15T06:30:03Z"
+      "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "notes": "",
+      "lastUpdated": "2026-10-28T07:15:53Z"
     },
     {
       "order": 19,
       "plantId": "hylotelephium-herbstfreude",
       "botanicalName": "Hylotelephium 'Herbstfreude'",
-      "status": "pending_review",
+      "status": "approved",
       "expectsBotanical": true,
       "expectsWatercolour": true,
       "assetForm": "both",
@@ -480,22 +480,22 @@
       "webpPath": "assets/plant-watercolours/hylotelephium-herbstfreude.webp",
       "webpSha256": "c4f05190fcb4e65310687c4791b3087f9715157129e99958c4f853a34e402e0f",
       "verificationState": "confirmed",
-      "approvalBasis": "filename_match_only",
+      "approvalBasis": "explicit_manual_approval",
       "matchConfidence": "filename_match_unreviewed",
       "pipelineQa": "imported",
       "watercolour": {
         "status": "confirmed",
         "webpPath": "assets/plant-watercolours/hylotelephium-herbstfreude-watercolour.webp"
       },
-      "manualApprovalAt": null,
-      "notes": "manual botanical approval absent: confirmed in botanical-verification.json by filename match only; not a verified match, keeps its image, not regenerated",
-      "lastUpdated": "2026-10-15T07:08:42Z"
+      "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "notes": "",
+      "lastUpdated": "2026-10-28T07:15:53Z"
     },
     {
       "order": 20,
       "plantId": "agastache-blackadder",
       "botanicalName": "Agastache 'Blackadder'",
-      "status": "pending_review",
+      "status": "approved",
       "expectsBotanical": true,
       "expectsWatercolour": true,
       "assetForm": "both",
@@ -504,22 +504,22 @@
       "webpPath": "assets/plant-watercolours/agastache-blackadder.webp",
       "webpSha256": "1b8a070eeb0e93c0c8ef02a2855da0de83cea1d33619d6c16117db5b066440ca",
       "verificationState": "confirmed",
-      "approvalBasis": "filename_match_only",
+      "approvalBasis": "explicit_manual_approval",
       "matchConfidence": "filename_match_unreviewed",
       "pipelineQa": "imported",
       "watercolour": {
         "status": "confirmed",
         "webpPath": "assets/plant-watercolours/agastache-blackadder-watercolour.webp"
       },
-      "manualApprovalAt": null,
-      "notes": "manual botanical approval absent: confirmed in botanical-verification.json by filename match only; not a verified match, keeps its image, not regenerated",
-      "lastUpdated": "2026-10-15T06:30:03Z"
+      "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "notes": "",
+      "lastUpdated": "2026-10-28T07:15:53Z"
     },
     {
       "order": 21,
       "plantId": "gaura-whirling",
       "botanicalName": "Oenothera lindheimeri 'Whirling Butterflies'",
-      "status": "pending_review",
+      "status": "approved",
       "expectsBotanical": true,
       "expectsWatercolour": true,
       "assetForm": "both",
@@ -528,22 +528,22 @@
       "webpPath": "assets/plant-watercolours/gaura-whirling.webp",
       "webpSha256": "efba0fb32b68cd160fc9c230115b72354747c05650eb1919c140fbab00ee9990",
       "verificationState": "confirmed",
-      "approvalBasis": "filename_match_only",
+      "approvalBasis": "explicit_manual_approval",
       "matchConfidence": "filename_match_unreviewed",
       "pipelineQa": "imported",
       "watercolour": {
         "status": "confirmed",
         "webpPath": "assets/plant-watercolours/gaura-whirling-watercolour.webp"
       },
-      "manualApprovalAt": null,
-      "notes": "manual botanical approval absent: confirmed in botanical-verification.json by filename match only; not a verified match, keeps its image, not regenerated",
-      "lastUpdated": "2026-10-15T07:08:42Z"
+      "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "notes": "",
+      "lastUpdated": "2026-10-28T07:15:53Z"
     },
     {
       "order": 22,
       "plantId": "eryngium-planum",
       "botanicalName": "Eryngium planum 'Blaukappe'",
-      "status": "pending_review",
+      "status": "approved",
       "expectsBotanical": true,
       "expectsWatercolour": true,
       "assetForm": "both",
@@ -552,16 +552,16 @@
       "webpPath": "assets/plant-watercolours/eryngium-planum.webp",
       "webpSha256": "daf68791f07458836b5d7f1bb0ad1de15ca1e41d28c6f1e68f04a4bfe63c6845",
       "verificationState": "confirmed",
-      "approvalBasis": "filename_match_only",
+      "approvalBasis": "explicit_manual_approval",
       "matchConfidence": "filename_match_unreviewed",
       "pipelineQa": "imported",
       "watercolour": {
         "status": "confirmed",
         "webpPath": "assets/plant-watercolours/eryngium-planum-watercolour.webp"
       },
-      "manualApprovalAt": null,
-      "notes": "manual botanical approval absent: confirmed in botanical-verification.json by filename match only; not a verified match, keeps its image, not regenerated",
-      "lastUpdated": "2026-10-15T06:36:06Z"
+      "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "notes": "",
+      "lastUpdated": "2026-10-28T07:15:53Z"
     },
     {
       "order": 23,
@@ -615,7 +615,7 @@
       "order": 25,
       "plantId": "thalictrum-delavayi",
       "botanicalName": "Thalictrum delavayi",
-      "status": "pending_review",
+      "status": "approved",
       "expectsBotanical": true,
       "expectsWatercolour": true,
       "assetForm": "both",
@@ -624,16 +624,16 @@
       "webpPath": "assets/plant-watercolours/thalictrum-delavayi.webp",
       "webpSha256": "d4e24e29945e9458697244a5119175fdc21c347179f18d085294a39039181b94",
       "verificationState": "confirmed",
-      "approvalBasis": "filename_match_only",
+      "approvalBasis": "explicit_manual_approval",
       "matchConfidence": "filename_match_unreviewed",
       "pipelineQa": "imported",
       "watercolour": {
         "status": "confirmed",
         "webpPath": "assets/plant-watercolours/thalictrum-delavayi-watercolour.webp"
       },
-      "manualApprovalAt": null,
-      "notes": "manual botanical approval absent: confirmed in botanical-verification.json by filename match only; not a verified match, keeps its image, not regenerated",
-      "lastUpdated": "2026-10-15T07:10:00Z"
+      "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "notes": "",
+      "lastUpdated": "2026-10-28T07:15:53Z"
     },
     {
       "order": 26,
@@ -663,7 +663,7 @@
       "order": 27,
       "plantId": "veronicastrum-album",
       "botanicalName": "Veronicastrum virginicum 'Album'",
-      "status": "pending_review",
+      "status": "approved",
       "expectsBotanical": true,
       "expectsWatercolour": true,
       "assetForm": "both",
@@ -672,16 +672,16 @@
       "webpPath": "assets/plant-watercolours/veronicastrum-album.webp",
       "webpSha256": "1c1ae626d9377b3b8aca7947c90fd4bdafd1daee5de82ba985bbf5006bee1101",
       "verificationState": "confirmed",
-      "approvalBasis": "filename_match_only",
+      "approvalBasis": "explicit_manual_approval",
       "matchConfidence": "filename_match_unreviewed",
       "pipelineQa": "imported",
       "watercolour": {
         "status": "confirmed",
         "webpPath": "assets/plant-watercolours/veronicastrum-album-watercolour.webp"
       },
-      "manualApprovalAt": null,
-      "notes": "manual botanical approval absent: confirmed in botanical-verification.json by filename match only; not a verified match, keeps its image, not regenerated",
-      "lastUpdated": "2026-10-15T07:10:00Z"
+      "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "notes": "",
+      "lastUpdated": "2026-10-28T07:15:53Z"
     },
     {
       "order": 28,
@@ -759,7 +759,7 @@
       "order": 31,
       "plantId": "crocosmia-lucifer",
       "botanicalName": "Crocosmia 'Lucifer'",
-      "status": "pending_review",
+      "status": "approved",
       "expectsBotanical": true,
       "expectsWatercolour": true,
       "assetForm": "both",
@@ -768,16 +768,16 @@
       "webpPath": "assets/plant-watercolours/crocosmia-lucifer.webp",
       "webpSha256": "2a0b2298708821e01fdaa5e763b0cd9fd3b057c74b54496a4cd217d2239da4e1",
       "verificationState": "confirmed",
-      "approvalBasis": "filename_match_only",
+      "approvalBasis": "explicit_manual_approval",
       "matchConfidence": "filename_match_unreviewed",
       "pipelineQa": "imported",
       "watercolour": {
         "status": "confirmed",
         "webpPath": "assets/plant-watercolours/crocosmia-lucifer-watercolour.webp"
       },
-      "manualApprovalAt": null,
-      "notes": "manual botanical approval absent: confirmed in botanical-verification.json by filename match only; not a verified match, keeps its image, not regenerated",
-      "lastUpdated": "2026-10-15T06:36:06Z"
+      "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "notes": "",
+      "lastUpdated": "2026-10-28T07:15:53Z"
     },
     {
       "order": 32,
@@ -807,7 +807,7 @@
       "order": 33,
       "plantId": "aster-monch",
       "botanicalName": "Aster × frikartii 'Mönch'",
-      "status": "pending_review",
+      "status": "approved",
       "expectsBotanical": true,
       "expectsWatercolour": true,
       "assetForm": "both",
@@ -816,22 +816,22 @@
       "webpPath": "assets/plant-watercolours/aster-monch.webp",
       "webpSha256": "1c249bbebbef53d18ba5a00089493ff157c716e1b92a84fbc9cb45f473a74ac7",
       "verificationState": "confirmed",
-      "approvalBasis": "filename_match_only",
+      "approvalBasis": "explicit_manual_approval",
       "matchConfidence": "filename_match_unreviewed",
       "pipelineQa": "imported",
       "watercolour": {
         "status": "confirmed",
         "webpPath": "assets/plant-watercolours/aster-monch-watercolour.webp"
       },
-      "manualApprovalAt": null,
-      "notes": "manual botanical approval absent: confirmed in botanical-verification.json by filename match only; not a verified match, keeps its image, not regenerated",
-      "lastUpdated": "2026-10-15T06:30:03Z"
+      "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "notes": "",
+      "lastUpdated": "2026-10-28T07:15:53Z"
     },
     {
       "order": 34,
       "plantId": "penstemon-garnet",
       "botanicalName": "Penstemon 'Andenken an Friedrich Hahn'",
-      "status": "pending_review",
+      "status": "approved",
       "expectsBotanical": true,
       "expectsWatercolour": true,
       "assetForm": "both",
@@ -840,16 +840,16 @@
       "webpPath": "assets/plant-watercolours/penstemon-garnet.webp",
       "webpSha256": "ed99745b5a7ea1d23c23c0d6894c6cd92ff86bffedf0d923042e1c6b4f2a061c",
       "verificationState": "confirmed",
-      "approvalBasis": "filename_match_only",
+      "approvalBasis": "explicit_manual_approval",
       "matchConfidence": "filename_match_unreviewed",
       "pipelineQa": "imported",
       "watercolour": {
         "status": "confirmed",
         "webpPath": "assets/plant-watercolours/penstemon-garnet-watercolour.webp"
       },
-      "manualApprovalAt": null,
-      "notes": "manual botanical approval absent: confirmed in botanical-verification.json by filename match only; not a verified match, keeps its image, not regenerated",
-      "lastUpdated": "2026-10-15T07:10:00Z"
+      "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "notes": "",
+      "lastUpdated": "2026-10-28T07:15:53Z"
     },
     {
       "order": 35,
@@ -879,7 +879,7 @@
       "order": 36,
       "plantId": "iris-sibirica",
       "botanicalName": "Iris sibirica 'Silver Edge'",
-      "status": "pending_review",
+      "status": "approved",
       "expectsBotanical": true,
       "expectsWatercolour": true,
       "assetForm": "both",
@@ -888,22 +888,22 @@
       "webpPath": "assets/plant-watercolours/iris-sibirica.webp",
       "webpSha256": "cdfbf96ecf920dc62c13298e1eaa35ecc5348f53967f4d450fd2d5642fd32195",
       "verificationState": "confirmed",
-      "approvalBasis": "filename_match_only",
+      "approvalBasis": "explicit_manual_approval",
       "matchConfidence": "filename_match_unreviewed",
       "pipelineQa": "imported",
       "watercolour": {
         "status": "confirmed",
         "webpPath": "assets/plant-watercolours/iris-sibirica-watercolour.webp"
       },
-      "manualApprovalAt": null,
-      "notes": "manual botanical approval absent: confirmed in botanical-verification.json by filename match only; not a verified match, keeps its image, not regenerated",
-      "lastUpdated": "2026-10-15T07:10:00Z"
+      "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "notes": "",
+      "lastUpdated": "2026-10-28T07:15:53Z"
     },
     {
       "order": 37,
       "plantId": "allium-purple-sensation",
       "botanicalName": "Allium hollandicum 'Purple Sensation'",
-      "status": "pending_review",
+      "status": "approved",
       "expectsBotanical": true,
       "expectsWatercolour": true,
       "assetForm": "both",
@@ -912,16 +912,16 @@
       "webpPath": "assets/plant-watercolours/allium-purple-sensation.webp",
       "webpSha256": "7dc93a6d090df2e01a7d43bad4be6df98a3aedd32e2734e4371d21588e624aa7",
       "verificationState": "confirmed",
-      "approvalBasis": "filename_match_only",
+      "approvalBasis": "explicit_manual_approval",
       "matchConfidence": "filename_match_unreviewed",
       "pipelineQa": "imported",
       "watercolour": {
         "status": "confirmed",
         "webpPath": "assets/plant-watercolours/allium-purple-sensation-watercolour.webp"
       },
-      "manualApprovalAt": null,
-      "notes": "manual botanical approval absent: confirmed in botanical-verification.json by filename match only; not a verified match, keeps its image, not regenerated",
-      "lastUpdated": "2026-10-15T06:30:03Z"
+      "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "notes": "",
+      "lastUpdated": "2026-10-28T07:15:53Z"
     },
     {
       "order": 38,
@@ -951,7 +951,7 @@
       "order": 39,
       "plantId": "aruncus-dioicus",
       "botanicalName": "Aruncus dioicus",
-      "status": "pending_review",
+      "status": "approved",
       "expectsBotanical": true,
       "expectsWatercolour": true,
       "assetForm": "both",
@@ -960,22 +960,22 @@
       "webpPath": "assets/plant-watercolours/aruncus-dioicus.webp",
       "webpSha256": "dd77b98fe8b611f140c2ada2005be49de96c63912786bb090c2f5bf32d9bed9d",
       "verificationState": "confirmed",
-      "approvalBasis": "filename_match_only",
+      "approvalBasis": "explicit_manual_approval",
       "matchConfidence": "filename_match_unreviewed",
       "pipelineQa": "imported",
       "watercolour": {
         "status": "confirmed",
         "webpPath": "assets/plant-watercolours/aruncus-dioicus-watercolour.webp"
       },
-      "manualApprovalAt": null,
-      "notes": "manual botanical approval absent: confirmed in botanical-verification.json by filename match only; not a verified match, keeps its image, not regenerated",
-      "lastUpdated": "2026-10-15T06:30:03Z"
+      "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "notes": "",
+      "lastUpdated": "2026-10-28T07:15:53Z"
     },
     {
       "order": 40,
       "plantId": "phlomis-russeliana",
       "botanicalName": "Phlomis russeliana",
-      "status": "pending_review",
+      "status": "approved",
       "expectsBotanical": true,
       "expectsWatercolour": true,
       "assetForm": "both",
@@ -984,16 +984,16 @@
       "webpPath": "assets/plant-watercolours/phlomis-russeliana.webp",
       "webpSha256": "f343b35e73c3397a6c8392875fd16f63a7654ca3832492b7e07bacb3bad48109",
       "verificationState": "confirmed",
-      "approvalBasis": "filename_match_only",
+      "approvalBasis": "explicit_manual_approval",
       "matchConfidence": "filename_match_unreviewed",
       "pipelineQa": "imported",
       "watercolour": {
         "status": "confirmed",
         "webpPath": "assets/plant-watercolours/phlomis-russeliana-watercolour.webp"
       },
-      "manualApprovalAt": null,
-      "notes": "manual botanical approval absent: confirmed in botanical-verification.json by filename match only; not a verified match, keeps its image, not regenerated",
-      "lastUpdated": "2026-10-15T07:10:00Z"
+      "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "notes": "",
+      "lastUpdated": "2026-10-28T07:15:53Z"
     },
     {
       "order": 41,
@@ -1023,7 +1023,7 @@
       "order": 42,
       "plantId": "euphorbia-wulfenii",
       "botanicalName": "Euphorbia characias subsp. wulfenii",
-      "status": "pending_review",
+      "status": "approved",
       "expectsBotanical": true,
       "expectsWatercolour": true,
       "assetForm": "both",
@@ -1032,16 +1032,16 @@
       "webpPath": "assets/plant-watercolours/euphorbia-wulfenii.webp",
       "webpSha256": "6f1dd374f55ab574068b5222e35bdfa0fe81f156e28240b93a9fa6ddacc2bcd7",
       "verificationState": "confirmed",
-      "approvalBasis": "filename_match_only",
+      "approvalBasis": "explicit_manual_approval",
       "matchConfidence": "filename_match_unreviewed",
       "pipelineQa": "imported",
       "watercolour": {
         "status": "confirmed",
         "webpPath": "assets/plant-watercolours/euphorbia-wulfenii-watercolour.webp"
       },
-      "manualApprovalAt": null,
-      "notes": "manual botanical approval absent: confirmed in botanical-verification.json by filename match only; not a verified match, keeps its image, not regenerated",
-      "lastUpdated": "2026-10-15T07:08:42Z"
+      "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "notes": "",
+      "lastUpdated": "2026-10-28T07:15:53Z"
     },
     {
       "order": 43,
@@ -1071,7 +1071,7 @@
       "order": 44,
       "plantId": "alchemilla-mollis",
       "botanicalName": "Alchemilla mollis",
-      "status": "pending_review",
+      "status": "approved",
       "expectsBotanical": true,
       "expectsWatercolour": true,
       "assetForm": "both",
@@ -1080,22 +1080,22 @@
       "webpPath": "assets/plant-watercolours/alchemilla-mollis.webp",
       "webpSha256": "93ec65808a07faa986f7dd76cfbcdc3411df11a6f96e15dae773997ea014e482",
       "verificationState": "confirmed",
-      "approvalBasis": "filename_match_only",
+      "approvalBasis": "explicit_manual_approval",
       "matchConfidence": "filename_match_unreviewed",
       "pipelineQa": "ready",
       "watercolour": {
         "status": "confirmed",
         "webpPath": "assets/plant-watercolours/alchemilla-mollis-watercolour.webp"
       },
-      "manualApprovalAt": null,
-      "notes": "manual botanical approval absent: confirmed in botanical-verification.json by filename match only; not a verified match, keeps its image, not regenerated",
-      "lastUpdated": "2026-10-15T06:30:03Z"
+      "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "notes": "",
+      "lastUpdated": "2026-10-28T07:15:53Z"
     },
     {
       "order": 45,
       "plantId": "heuchera-palace-purple",
       "botanicalName": "Heuchera micrantha 'Palace Purple'",
-      "status": "pending_review",
+      "status": "approved",
       "expectsBotanical": true,
       "expectsWatercolour": true,
       "assetForm": "both",
@@ -1104,16 +1104,16 @@
       "webpPath": "assets/plant-watercolours/heuchera-palace-purple.webp",
       "webpSha256": "53a47b2dbe74853bf42607078ef40015a083393e06d51320f49c0351dc3d2ec0",
       "verificationState": "confirmed",
-      "approvalBasis": "filename_match_only",
+      "approvalBasis": "explicit_manual_approval",
       "matchConfidence": "filename_match_unreviewed",
       "pipelineQa": "imported",
       "watercolour": {
         "status": "confirmed",
         "webpPath": "assets/plant-watercolours/heuchera-palace-purple-watercolour.webp"
       },
-      "manualApprovalAt": null,
-      "notes": "manual botanical approval absent: confirmed in botanical-verification.json by filename match only; not a verified match, keeps its image, not regenerated",
-      "lastUpdated": "2026-10-15T07:08:42Z"
+      "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "notes": "",
+      "lastUpdated": "2026-10-28T07:15:53Z"
     },
     {
       "order": 46,
@@ -1143,7 +1143,7 @@
       "order": 47,
       "plantId": "pulmonaria-blue-ensign",
       "botanicalName": "Pulmonaria 'Blue Ensign'",
-      "status": "pending_review",
+      "status": "approved",
       "expectsBotanical": true,
       "expectsWatercolour": true,
       "assetForm": "both",
@@ -1152,22 +1152,22 @@
       "webpPath": "assets/plant-watercolours/pulmonaria-blue-ensign.webp",
       "webpSha256": "dd3bc94db1e5789b12aecbd1b26a589adf472302c0776cc716a65779b783fa92",
       "verificationState": "confirmed",
-      "approvalBasis": "filename_match_only",
+      "approvalBasis": "explicit_manual_approval",
       "matchConfidence": "filename_match_unreviewed",
       "pipelineQa": "imported",
       "watercolour": {
         "status": "confirmed",
         "webpPath": "assets/plant-watercolours/pulmonaria-blue-ensign-watercolour.webp"
       },
-      "manualApprovalAt": null,
-      "notes": "manual botanical approval absent: confirmed in botanical-verification.json by filename match only; not a verified match, keeps its image, not regenerated",
-      "lastUpdated": "2026-10-15T07:10:00Z"
+      "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "notes": "",
+      "lastUpdated": "2026-10-28T07:15:53Z"
     },
     {
       "order": 48,
       "plantId": "helleborus-hybridus",
       "botanicalName": "Helleborus × hybridus",
-      "status": "pending_review",
+      "status": "approved",
       "expectsBotanical": true,
       "expectsWatercolour": true,
       "assetForm": "both",
@@ -1176,16 +1176,16 @@
       "webpPath": "assets/plant-watercolours/helleborus-hybridus.webp",
       "webpSha256": "48b8decaed15b19e38194d90910da2972d7d53a4814d1745cb0fa935849582bc",
       "verificationState": "confirmed",
-      "approvalBasis": "filename_match_only",
+      "approvalBasis": "explicit_manual_approval",
       "matchConfidence": "filename_match_unreviewed",
       "pipelineQa": "imported",
       "watercolour": {
         "status": "confirmed",
         "webpPath": "assets/plant-watercolours/helleborus-hybridus-watercolour.webp"
       },
-      "manualApprovalAt": null,
-      "notes": "manual botanical approval absent: confirmed in botanical-verification.json by filename match only; not a verified match, keeps its image, not regenerated",
-      "lastUpdated": "2026-10-15T07:08:42Z"
+      "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "notes": "",
+      "lastUpdated": "2026-10-28T07:15:53Z"
     },
     {
       "order": 49,
@@ -1215,7 +1215,7 @@
       "order": 50,
       "plantId": "stipa-gigantea",
       "botanicalName": "Stipa gigantea",
-      "status": "pending_review",
+      "status": "approved",
       "expectsBotanical": true,
       "expectsWatercolour": true,
       "assetForm": "both",
@@ -1224,16 +1224,16 @@
       "webpPath": "assets/plant-watercolours/stipa-gigantea.webp",
       "webpSha256": "4a406f6e37b25a94202f11930a34cecdf48e2e130e5b75664d9b38a815db9f7a",
       "verificationState": "confirmed",
-      "approvalBasis": "filename_match_only",
+      "approvalBasis": "explicit_manual_approval",
       "matchConfidence": "filename_match_unreviewed",
       "pipelineQa": "imported",
       "watercolour": {
         "status": "confirmed",
         "webpPath": "assets/plant-watercolours/stipa-gigantea-watercolour.webp"
       },
-      "manualApprovalAt": null,
-      "notes": "manual botanical approval absent: confirmed in botanical-verification.json by filename match only; not a verified match, keeps its image, not regenerated",
-      "lastUpdated": "2026-10-15T07:10:00Z"
+      "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "notes": "",
+      "lastUpdated": "2026-10-28T07:15:53Z"
     },
     {
       "order": 51,
@@ -1263,7 +1263,7 @@
       "order": 52,
       "plantId": "calamagrostis-karl-foerster",
       "botanicalName": "Calamagrostis × acutiflora 'Karl Foerster'",
-      "status": "pending_review",
+      "status": "approved",
       "expectsBotanical": true,
       "expectsWatercolour": true,
       "assetForm": "both",
@@ -1272,16 +1272,16 @@
       "webpPath": "assets/plant-watercolours/calamagrostis-karl-foerster.webp",
       "webpSha256": "ee8eccc39dc9e31d6016413cbf5307781fcbb2532e23688f1ed15e3684f87229",
       "verificationState": "confirmed",
-      "approvalBasis": "filename_match_only",
+      "approvalBasis": "explicit_manual_approval",
       "matchConfidence": "filename_match_unreviewed",
       "pipelineQa": "imported",
       "watercolour": {
         "status": "confirmed",
         "webpPath": "assets/plant-watercolours/calamagrostis-karl-foerster-watercolour.webp"
       },
-      "manualApprovalAt": null,
-      "notes": "manual botanical approval absent: confirmed in botanical-verification.json by filename match only; not a verified match, keeps its image, not regenerated",
-      "lastUpdated": "2026-10-15T06:36:06Z"
+      "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "notes": "",
+      "lastUpdated": "2026-10-28T07:15:53Z"
     },
     {
       "order": 53,
@@ -1359,7 +1359,7 @@
       "order": 56,
       "plantId": "hakonechloa-macra",
       "botanicalName": "Hakonechloa macra",
-      "status": "pending_review",
+      "status": "approved",
       "expectsBotanical": true,
       "expectsWatercolour": true,
       "assetForm": "both",
@@ -1368,16 +1368,16 @@
       "webpPath": "assets/plant-watercolours/hakonechloa-macra.webp",
       "webpSha256": "eca0d84d4b5b728ccfa7c41cfcabc571056a19399324740a0944e05a44dcd327",
       "verificationState": "confirmed",
-      "approvalBasis": "filename_match_only",
+      "approvalBasis": "explicit_manual_approval",
       "matchConfidence": "filename_match_unreviewed",
       "pipelineQa": "imported",
       "watercolour": {
         "status": "confirmed",
         "webpPath": "assets/plant-watercolours/hakonechloa-macra-watercolour.webp"
       },
-      "manualApprovalAt": null,
-      "notes": "manual botanical approval absent: confirmed in botanical-verification.json by filename match only; not a verified match, keeps its image, not regenerated",
-      "lastUpdated": "2026-10-15T07:08:42Z"
+      "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "notes": "",
+      "lastUpdated": "2026-10-28T07:15:53Z"
     },
     {
       "order": 57,
@@ -1455,7 +1455,7 @@
       "order": 60,
       "plantId": "kniphofia-tawny-king",
       "botanicalName": "Kniphofia 'Tawny King'",
-      "status": "pending_review",
+      "status": "approved",
       "expectsBotanical": true,
       "expectsWatercolour": true,
       "assetForm": "both",
@@ -1464,22 +1464,22 @@
       "webpPath": "assets/plant-watercolours/kniphofia-tawny-king.webp",
       "webpSha256": "b7751e168c35417360f7b77afb4a3802da490ba3fec79f236eaef66de2962c5c",
       "verificationState": "confirmed",
-      "approvalBasis": "filename_match_only",
+      "approvalBasis": "explicit_manual_approval",
       "matchConfidence": "filename_match_unreviewed",
       "pipelineQa": "imported",
       "watercolour": {
         "status": "confirmed",
         "webpPath": "assets/plant-watercolours/kniphofia-tawny-king-watercolour.webp"
       },
-      "manualApprovalAt": null,
-      "notes": "manual botanical approval absent: confirmed in botanical-verification.json by filename match only; not a verified match, keeps its image, not regenerated",
-      "lastUpdated": "2026-10-15T07:10:00Z"
+      "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "notes": "",
+      "lastUpdated": "2026-10-28T07:15:53Z"
     },
     {
       "order": 61,
       "plantId": "digitalis-ferruginea",
       "botanicalName": "Digitalis ferruginea",
-      "status": "pending_review",
+      "status": "approved",
       "expectsBotanical": true,
       "expectsWatercolour": true,
       "assetForm": "both",
@@ -1488,22 +1488,22 @@
       "webpPath": "assets/plant-watercolours/digitalis-ferruginea.webp",
       "webpSha256": "e62a0822cf201f698bdae09b095be288af8938601bdbbcc513424effd3eabb3c",
       "verificationState": "confirmed",
-      "approvalBasis": "filename_match_only",
+      "approvalBasis": "explicit_manual_approval",
       "matchConfidence": "filename_match_unreviewed",
       "pipelineQa": "imported",
       "watercolour": {
         "status": "confirmed",
         "webpPath": "assets/plant-watercolours/digitalis-ferruginea-watercolour.webp"
       },
-      "manualApprovalAt": null,
-      "notes": "manual botanical approval absent: confirmed in botanical-verification.json by filename match only; not a verified match, keeps its image, not regenerated",
-      "lastUpdated": "2026-10-15T06:36:06Z"
+      "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "notes": "",
+      "lastUpdated": "2026-10-28T07:15:53Z"
     },
     {
       "order": 62,
       "plantId": "euphorbia-fireglow",
       "botanicalName": "Euphorbia griffithii 'Fireglow'",
-      "status": "pending_review",
+      "status": "approved",
       "expectsBotanical": true,
       "expectsWatercolour": true,
       "assetForm": "both",
@@ -1512,22 +1512,22 @@
       "webpPath": "assets/plant-watercolours/euphorbia-fireglow.webp",
       "webpSha256": "c5efcd8c697d097f68d5e398dd8853edc96ad1949f09d6ed349b9bcc51ad6143",
       "verificationState": "confirmed",
-      "approvalBasis": "filename_match_only",
+      "approvalBasis": "explicit_manual_approval",
       "matchConfidence": "filename_match_unreviewed",
       "pipelineQa": "imported",
       "watercolour": {
         "status": "confirmed",
         "webpPath": "assets/plant-watercolours/euphorbia-fireglow-watercolour.webp"
       },
-      "manualApprovalAt": null,
-      "notes": "manual botanical approval absent: confirmed in botanical-verification.json by filename match only; not a verified match, keeps its image, not regenerated",
-      "lastUpdated": "2026-10-15T07:08:42Z"
+      "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "notes": "",
+      "lastUpdated": "2026-10-28T07:15:53Z"
     },
     {
       "order": 63,
       "plantId": "geranium-psilostemon",
       "botanicalName": "Geranium psilostemon",
-      "status": "pending_review",
+      "status": "approved",
       "expectsBotanical": true,
       "expectsWatercolour": true,
       "assetForm": "both",
@@ -1536,16 +1536,16 @@
       "webpPath": "assets/plant-watercolours/geranium-psilostemon.webp",
       "webpSha256": "6224a67c4304d08d19f502a91a16887e534da4db911a9de50e100086d5b1f317",
       "verificationState": "confirmed",
-      "approvalBasis": "filename_match_only",
+      "approvalBasis": "explicit_manual_approval",
       "matchConfidence": "filename_match_unreviewed",
       "pipelineQa": "imported",
       "watercolour": {
         "status": "confirmed",
         "webpPath": "assets/plant-watercolours/geranium-psilostemon-watercolour.webp"
       },
-      "manualApprovalAt": null,
-      "notes": "manual botanical approval absent: confirmed in botanical-verification.json by filename match only; not a verified match, keeps its image, not regenerated",
-      "lastUpdated": "2026-10-15T07:08:42Z"
+      "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "notes": "",
+      "lastUpdated": "2026-10-28T07:15:53Z"
     },
     {
       "order": 64,
@@ -1575,7 +1575,7 @@
       "order": 65,
       "plantId": "taxus-baccata-topiary",
       "botanicalName": "Taxus baccata",
-      "status": "pending_review",
+      "status": "approved",
       "expectsBotanical": true,
       "expectsWatercolour": true,
       "assetForm": "both",
@@ -1584,16 +1584,16 @@
       "webpPath": "assets/plant-watercolours/taxus-baccata-topiary.webp",
       "webpSha256": "4a87d71ceab84cca7c4490739ea1f0ae4223f9a38aa106f4878c8febd95da286",
       "verificationState": "confirmed",
-      "approvalBasis": "filename_match_only",
+      "approvalBasis": "explicit_manual_approval",
       "matchConfidence": "filename_match_unreviewed",
       "pipelineQa": "ready",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "webpPath": "assets/plant-watercolours/taxus-baccata-topiary-watercolour.webp"
       },
-      "manualApprovalAt": null,
-      "notes": "manual botanical approval absent: confirmed in botanical-verification.json by filename match only; not a verified match, keeps its image, not regenerated",
-      "lastUpdated": "2026-10-15T07:10:00Z"
+      "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "notes": "",
+      "lastUpdated": "2026-10-28T07:15:53Z"
     },
     {
       "order": 66,
@@ -1743,7 +1743,7 @@
       "order": 72,
       "plantId": "delphinium-black-knight",
       "botanicalName": "Delphinium Black Knight Group",
-      "status": "pending_review",
+      "status": "approved",
       "expectsBotanical": true,
       "expectsWatercolour": true,
       "assetForm": "both",
@@ -1751,23 +1751,23 @@
       "pngSha256": "83af4e6d4b66724be10c3f8bf07f5e4a959a112641a1f037686501163981875a",
       "webpPath": "assets/plant-watercolours/delphinium-black-knight.webp",
       "webpSha256": "e271c76b47c33738caee2638666589560e6d0568f612aceddee7863c2a0a8929",
-      "verificationState": "pending_review",
-      "approvalBasis": null,
+      "verificationState": "confirmed",
+      "approvalBasis": "explicit_manual_approval",
       "matchConfidence": "provisional_cultivar_or_species_check",
       "pipelineQa": "imported",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "webpPath": "assets/plant-watercolours/delphinium-black-knight-watercolour.webp"
       },
-      "manualApprovalAt": null,
+      "manualApprovalAt": "2026-10-28T07:15:53Z",
       "notes": "",
-      "lastUpdated": "2026-10-22T13:24:00Z"
+      "lastUpdated": "2026-10-28T07:15:53Z"
     },
     {
       "order": 73,
       "plantId": "alcea-rosea-halo-white",
       "botanicalName": "Alcea rosea 'Halo White'",
-      "status": "pending_review",
+      "status": "approved",
       "expectsBotanical": true,
       "expectsWatercolour": true,
       "assetForm": "both",
@@ -1775,23 +1775,23 @@
       "pngSha256": "8496895927182dcff9ba66a62e6ceeef631330f9582c6ed51fe0faa7a65f5eb7",
       "webpPath": "assets/plant-watercolours/alcea-rosea-halo-white.webp",
       "webpSha256": "05d99c7913ac14dd02f0a05547691f8dd43dc09587c735c19eab04ef94bfa02d",
-      "verificationState": "pending_review",
-      "approvalBasis": null,
+      "verificationState": "confirmed",
+      "approvalBasis": "explicit_manual_approval",
       "matchConfidence": "provisional_cultivar_or_species_check",
       "pipelineQa": "imported",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "webpPath": "assets/plant-watercolours/alcea-rosea-halo-white-watercolour.webp"
       },
-      "manualApprovalAt": null,
+      "manualApprovalAt": "2026-10-28T07:15:53Z",
       "notes": "",
-      "lastUpdated": "2026-10-22T13:24:00Z"
+      "lastUpdated": "2026-10-28T07:15:53Z"
     },
     {
       "order": 74,
       "plantId": "lupinus-the-governor",
       "botanicalName": "Lupinus 'The Governor'",
-      "status": "pending_review",
+      "status": "approved",
       "expectsBotanical": true,
       "expectsWatercolour": true,
       "assetForm": "both",
@@ -1799,23 +1799,23 @@
       "pngSha256": "2f74326f0bf0b763c13305b9a174142d69a226dea3300db71f279403292943fe",
       "webpPath": "assets/plant-watercolours/lupinus-the-governor.webp",
       "webpSha256": "d70a64924a80a69b52eb0be2c2f094d1d546c18d699714fb406825223e69698d",
-      "verificationState": "pending_review",
-      "approvalBasis": null,
+      "verificationState": "confirmed",
+      "approvalBasis": "explicit_manual_approval",
       "matchConfidence": "provisional_cultivar_or_species_check",
       "pipelineQa": "imported",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "webpPath": "assets/plant-watercolours/lupinus-the-governor-watercolour.webp"
       },
-      "manualApprovalAt": null,
+      "manualApprovalAt": "2026-10-28T07:15:53Z",
       "notes": "",
-      "lastUpdated": "2026-10-22T13:24:00Z"
+      "lastUpdated": "2026-10-28T07:15:53Z"
     },
     {
       "order": 75,
       "plantId": "lupinus-gallery-blue",
       "botanicalName": "Lupinus 'Gallery Blue'",
-      "status": "pending_review",
+      "status": "approved",
       "expectsBotanical": true,
       "expectsWatercolour": true,
       "assetForm": "both",
@@ -1823,23 +1823,23 @@
       "pngSha256": "66f940a9a0ab365dbf5ce96a352a5cc9bf65b8e1f1cff5329574dcc34950744c",
       "webpPath": "assets/plant-watercolours/lupinus-gallery-blue.webp",
       "webpSha256": "0d1d3a27393031993c366782144954100eabda2d92af6f5483c4fc15d73a010c",
-      "verificationState": "pending_review",
-      "approvalBasis": null,
+      "verificationState": "confirmed",
+      "approvalBasis": "explicit_manual_approval",
       "matchConfidence": "provisional_cultivar_or_species_check",
       "pipelineQa": "imported",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "webpPath": "assets/plant-watercolours/lupinus-gallery-blue-watercolour.webp"
       },
-      "manualApprovalAt": null,
+      "manualApprovalAt": "2026-10-28T07:15:53Z",
       "notes": "",
-      "lastUpdated": "2026-10-22T15:42:22Z"
+      "lastUpdated": "2026-10-28T07:15:53Z"
     },
     {
       "order": 76,
       "plantId": "hydrangea-paniculata-little-lime",
       "botanicalName": "Hydrangea paniculata Little Lime ('Jane')",
-      "status": "pending_review",
+      "status": "approved",
       "expectsBotanical": true,
       "expectsWatercolour": true,
       "assetForm": "both",
@@ -1847,23 +1847,23 @@
       "pngSha256": "cd6cbe336d482839df65ab0524dd84b7a9d438330f17bb90ce3adcb6b4153ba6",
       "webpPath": "assets/plant-watercolours/hydrangea-paniculata-little-lime.webp",
       "webpSha256": "35fd4bcf89ac661146504a071a0a757159d69183fa82abbfa812777c3a2dd98d",
-      "verificationState": "pending_review",
-      "approvalBasis": null,
+      "verificationState": "confirmed",
+      "approvalBasis": "explicit_manual_approval",
       "matchConfidence": "provisional_cultivar_or_species_check",
       "pipelineQa": "imported",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "webpPath": "assets/plant-watercolours/hydrangea-paniculata-little-lime-watercolour.webp"
       },
-      "manualApprovalAt": null,
+      "manualApprovalAt": "2026-10-28T07:15:53Z",
       "notes": "",
-      "lastUpdated": "2026-10-22T13:24:00Z"
+      "lastUpdated": "2026-10-28T07:15:53Z"
     },
     {
       "order": 77,
       "plantId": "syringa-meyeri-palibin",
       "botanicalName": "Syringa meyeri 'Palibin'",
-      "status": "pending_review",
+      "status": "approved",
       "expectsBotanical": true,
       "expectsWatercolour": true,
       "assetForm": "both",
@@ -1871,23 +1871,23 @@
       "pngSha256": "362fd27b0d1c34252b0b4726be8e0e263527ce2f1eb552acbeaabfd55f12d32b",
       "webpPath": "assets/plant-watercolours/syringa-meyeri-palibin.webp",
       "webpSha256": "9e590ed86a7bff4b97331a57b1b5a9b6e755780e108f7c0874b0d8b93de95a1a",
-      "verificationState": "pending_review",
-      "approvalBasis": null,
+      "verificationState": "confirmed",
+      "approvalBasis": "explicit_manual_approval",
       "matchConfidence": "provisional_cultivar_or_species_check",
       "pipelineQa": "imported",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "webpPath": "assets/plant-watercolours/syringa-meyeri-palibin-watercolour.webp"
       },
-      "manualApprovalAt": null,
+      "manualApprovalAt": "2026-10-28T07:15:53Z",
       "notes": "",
-      "lastUpdated": "2026-10-22T13:24:00Z"
+      "lastUpdated": "2026-10-28T07:15:53Z"
     },
     {
       "order": 78,
       "plantId": "centaurea-montana",
       "botanicalName": "Centaurea montana",
-      "status": "pending_review",
+      "status": "approved",
       "expectsBotanical": true,
       "expectsWatercolour": true,
       "assetForm": "both",
@@ -1895,23 +1895,23 @@
       "pngSha256": "9d5a580cbd3dd8f8e72df26da4f5f29a8a0c9e08fbbab1dfbce51574d9066de2",
       "webpPath": "assets/plant-watercolours/centaurea-montana.webp",
       "webpSha256": "2dcdfef08ec5713e8557776e0d07730b91f1471ba9327a4522254bc88241db28",
-      "verificationState": "pending_review",
-      "approvalBasis": null,
+      "verificationState": "confirmed",
+      "approvalBasis": "explicit_manual_approval",
       "matchConfidence": "provisional_cultivar_or_species_check",
       "pipelineQa": "imported",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "webpPath": "assets/plant-watercolours/centaurea-montana-watercolour.webp"
       },
-      "manualApprovalAt": null,
+      "manualApprovalAt": "2026-10-28T07:15:53Z",
       "notes": "",
-      "lastUpdated": "2026-10-22T15:42:22Z"
+      "lastUpdated": "2026-10-28T07:15:53Z"
     },
     {
       "order": 79,
       "plantId": "lychnis-coronaria",
       "botanicalName": "Silene coronaria",
-      "status": "pending_review",
+      "status": "approved",
       "expectsBotanical": true,
       "expectsWatercolour": true,
       "assetForm": "both",
@@ -1919,23 +1919,23 @@
       "pngSha256": "46a652209b1406cc3a9e39f57eb82fb8b0bbfd5a0f88bca407ce9ed0c99d32b0",
       "webpPath": "assets/plant-watercolours/lychnis-coronaria.webp",
       "webpSha256": "d57789205788c77b97cad057604f37497ebf8849d276b11f3448012a83942760",
-      "verificationState": "pending_review",
-      "approvalBasis": null,
+      "verificationState": "confirmed",
+      "approvalBasis": "explicit_manual_approval",
       "matchConfidence": "provisional_cultivar_or_species_check",
       "pipelineQa": "imported",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "webpPath": "assets/plant-watercolours/lychnis-coronaria-watercolour.webp"
       },
-      "manualApprovalAt": null,
+      "manualApprovalAt": "2026-10-28T07:15:53Z",
       "notes": "",
-      "lastUpdated": "2026-10-22T13:24:00Z"
+      "lastUpdated": "2026-10-28T07:15:53Z"
     },
     {
       "order": 80,
       "plantId": "polemonium-caeruleum",
       "botanicalName": "Polemonium caeruleum",
-      "status": "pending_review",
+      "status": "approved",
       "expectsBotanical": true,
       "expectsWatercolour": true,
       "assetForm": "both",
@@ -1943,23 +1943,23 @@
       "pngSha256": "4e75d666f220adea666b5458d180b665f5fc81489040b39c90055fb520348c64",
       "webpPath": "assets/plant-watercolours/polemonium-caeruleum.webp",
       "webpSha256": "56587a0a5f7cad58ed091c37f3bae6fdf816a51bcfd576771171591a96681985",
-      "verificationState": "pending_review",
-      "approvalBasis": null,
+      "verificationState": "confirmed",
+      "approvalBasis": "explicit_manual_approval",
       "matchConfidence": "provisional_cultivar_or_species_check",
       "pipelineQa": "imported",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "webpPath": "assets/plant-watercolours/polemonium-caeruleum-watercolour.webp"
       },
-      "manualApprovalAt": null,
+      "manualApprovalAt": "2026-10-28T07:15:53Z",
       "notes": "",
-      "lastUpdated": "2026-10-22T13:24:00Z"
+      "lastUpdated": "2026-10-28T07:15:53Z"
     },
     {
       "order": 81,
       "plantId": "linaria-purpurea",
       "botanicalName": "Linaria purpurea",
-      "status": "pending_review",
+      "status": "approved",
       "expectsBotanical": true,
       "expectsWatercolour": true,
       "assetForm": "both",
@@ -1967,23 +1967,23 @@
       "pngSha256": "e4e7befa65ca091701b4458d866bbf5ab82cff7a70c1e59d82ceb2cbe1ecf2c5",
       "webpPath": "assets/plant-watercolours/linaria-purpurea.webp",
       "webpSha256": "25dfb16d4de3747c0a112408302d328df88ef2bf817e717ffb8c64abd75b297b",
-      "verificationState": "pending_review",
-      "approvalBasis": null,
+      "verificationState": "confirmed",
+      "approvalBasis": "explicit_manual_approval",
       "matchConfidence": "provisional_cultivar_or_species_check",
       "pipelineQa": "imported",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "webpPath": "assets/plant-watercolours/linaria-purpurea-watercolour.webp"
       },
-      "manualApprovalAt": null,
+      "manualApprovalAt": "2026-10-28T07:15:53Z",
       "notes": "",
-      "lastUpdated": "2026-10-22T13:24:00Z"
+      "lastUpdated": "2026-10-28T07:15:53Z"
     },
     {
       "order": 82,
       "plantId": "cerastium-tomentosum",
       "botanicalName": "Cerastium tomentosum",
-      "status": "pending_review",
+      "status": "approved",
       "expectsBotanical": true,
       "expectsWatercolour": true,
       "assetForm": "both",
@@ -1991,23 +1991,23 @@
       "pngSha256": "15c660686daa737d4016988c1a00008fa61ea4f9dee31efbc202cffd1e8dd4c0",
       "webpPath": "assets/plant-watercolours/cerastium-tomentosum.webp",
       "webpSha256": "1272a94294512a10b90874d81a0ac42d91922433b7085d8c9709eba8185d7398",
-      "verificationState": "pending_review",
-      "approvalBasis": null,
+      "verificationState": "confirmed",
+      "approvalBasis": "explicit_manual_approval",
       "matchConfidence": "provisional_cultivar_or_species_check",
       "pipelineQa": "imported",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "webpPath": "assets/plant-watercolours/cerastium-tomentosum-watercolour.webp"
       },
-      "manualApprovalAt": null,
+      "manualApprovalAt": "2026-10-28T07:15:53Z",
       "notes": "",
-      "lastUpdated": "2026-10-22T15:42:22Z"
+      "lastUpdated": "2026-10-28T07:15:53Z"
     },
     {
       "order": 83,
       "plantId": "malva-sylvestris",
       "botanicalName": "Malva sylvestris",
-      "status": "pending_review",
+      "status": "approved",
       "expectsBotanical": true,
       "expectsWatercolour": true,
       "assetForm": "both",
@@ -2015,23 +2015,23 @@
       "pngSha256": "7580af595b17b44001931729645498cef582c3b618ece28d0bfc6c8da768c8ad",
       "webpPath": "assets/plant-watercolours/malva-sylvestris.webp",
       "webpSha256": "3b0576a88a944a71a9e41956c2e0eedf4eb63e40cfbbc8f52a4075edee5e1af7",
-      "verificationState": "pending_review",
-      "approvalBasis": null,
+      "verificationState": "confirmed",
+      "approvalBasis": "explicit_manual_approval",
       "matchConfidence": "provisional_cultivar_or_species_check",
       "pipelineQa": "imported",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "webpPath": "assets/plant-watercolours/malva-sylvestris-watercolour.webp"
       },
-      "manualApprovalAt": null,
+      "manualApprovalAt": "2026-10-28T07:15:53Z",
       "notes": "",
-      "lastUpdated": "2026-10-22T13:24:00Z"
+      "lastUpdated": "2026-10-28T07:15:53Z"
     },
     {
       "order": 84,
       "plantId": "veronica-longifolia",
       "botanicalName": "Veronica longifolia",
-      "status": "pending_review",
+      "status": "approved",
       "expectsBotanical": true,
       "expectsWatercolour": true,
       "assetForm": "both",
@@ -2039,23 +2039,23 @@
       "pngSha256": "554c6fb5f50b0bb9ce30eb8336935822c9fcb7d724d83bbea1aaa0d426427cc2",
       "webpPath": "assets/plant-watercolours/veronica-longifolia.webp",
       "webpSha256": "c7bea1ae3e5fadb1881556d5ef1bf9f397b8c52a519a8e1f0871a189595808b6",
-      "verificationState": "pending_review",
-      "approvalBasis": null,
+      "verificationState": "confirmed",
+      "approvalBasis": "explicit_manual_approval",
       "matchConfidence": "provisional_cultivar_or_species_check",
       "pipelineQa": "imported",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "webpPath": "assets/plant-watercolours/veronica-longifolia-watercolour.webp"
       },
-      "manualApprovalAt": null,
+      "manualApprovalAt": "2026-10-28T07:15:53Z",
       "notes": "",
-      "lastUpdated": "2026-10-22T13:24:00Z"
+      "lastUpdated": "2026-10-28T07:15:53Z"
     },
     {
       "order": 85,
       "plantId": "acanthus-mollis",
       "botanicalName": "Acanthus mollis",
-      "status": "pending_review",
+      "status": "approved",
       "expectsBotanical": true,
       "expectsWatercolour": true,
       "assetForm": "both",
@@ -2063,23 +2063,23 @@
       "pngSha256": "f6f8f889f82f351cf1235ccff15585d09d81121f80e664dd4b88d0215fe9105a",
       "webpPath": "assets/plant-watercolours/acanthus-mollis.webp",
       "webpSha256": "532a937f0be225f9f4ee430ccc20340e4a4a37ca656ccf77c1b86ceba82a5d29",
-      "verificationState": "pending_review",
-      "approvalBasis": null,
+      "verificationState": "confirmed",
+      "approvalBasis": "explicit_manual_approval",
       "matchConfidence": "provisional_cultivar_or_species_check",
       "pipelineQa": "imported",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "webpPath": "assets/plant-watercolours/acanthus-mollis-watercolour.webp"
       },
-      "manualApprovalAt": null,
+      "manualApprovalAt": "2026-10-28T07:15:53Z",
       "notes": "",
-      "lastUpdated": "2026-10-22T13:24:00Z"
+      "lastUpdated": "2026-10-28T07:15:53Z"
     },
     {
       "order": 86,
       "plantId": "campanula-lactiflora-prichards-variety",
       "botanicalName": "Campanula lactiflora 'Prichard's Variety'",
-      "status": "pending_review",
+      "status": "approved",
       "expectsBotanical": true,
       "expectsWatercolour": true,
       "assetForm": "both",
@@ -2087,23 +2087,23 @@
       "pngSha256": "27b687e1a3784b78bf4bdf6e81a368c07174221987ce2713e5703ac0f6557bbc",
       "webpPath": "assets/plant-watercolours/campanula-lactiflora-prichards-variety.webp",
       "webpSha256": "de4626b28f919803e7a8320c1351c3501007af0cb05da5a06daa6a689a72e702",
-      "verificationState": "pending_review",
-      "approvalBasis": null,
+      "verificationState": "confirmed",
+      "approvalBasis": "explicit_manual_approval",
       "matchConfidence": "provisional_cultivar_or_species_check",
       "pipelineQa": "imported",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "webpPath": "assets/plant-watercolours/campanula-lactiflora-prichards-variety-watercolour.webp"
       },
-      "manualApprovalAt": null,
+      "manualApprovalAt": "2026-10-28T07:15:53Z",
       "notes": "",
-      "lastUpdated": "2026-10-22T13:24:00Z"
+      "lastUpdated": "2026-10-28T07:15:53Z"
     },
     {
       "order": 87,
       "plantId": "campanula-persicifolia-alba",
       "botanicalName": "Campanula persicifolia var. alba",
-      "status": "pending_review",
+      "status": "approved",
       "expectsBotanical": true,
       "expectsWatercolour": true,
       "assetForm": "both",
@@ -2111,23 +2111,23 @@
       "pngSha256": "a364b92b56f8101030cf2252ff35c2e59ccb67e4fe582d329ad87cba6b65e0b5",
       "webpPath": "assets/plant-watercolours/campanula-persicifolia-alba.webp",
       "webpSha256": "66eb9305328f318e60d9eac5cdebb3cf7297be375fb479ad34447435b755ed41",
-      "verificationState": "pending_review",
-      "approvalBasis": null,
+      "verificationState": "confirmed",
+      "approvalBasis": "explicit_manual_approval",
       "matchConfidence": "provisional_cultivar_or_species_check",
       "pipelineQa": "imported",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "webpPath": "assets/plant-watercolours/campanula-persicifolia-alba-watercolour.webp"
       },
-      "manualApprovalAt": null,
+      "manualApprovalAt": "2026-10-28T07:15:53Z",
       "notes": "",
-      "lastUpdated": "2026-10-22T15:42:22Z"
+      "lastUpdated": "2026-10-28T07:15:53Z"
     },
     {
       "order": 88,
       "plantId": "digitalis-lutea",
       "botanicalName": "Digitalis lutea",
-      "status": "pending_review",
+      "status": "approved",
       "expectsBotanical": true,
       "expectsWatercolour": true,
       "assetForm": "both",
@@ -2135,23 +2135,23 @@
       "pngSha256": "41e26b40835139b4a919269c1edf95ecbed602b95ee274c02bc3d359c802ded9",
       "webpPath": "assets/plant-watercolours/digitalis-lutea.webp",
       "webpSha256": "1e02cfc9b23451fe801204bfb3abcf90a73d02dcc358c198a2b0d8c26e070d39",
-      "verificationState": "pending_review",
-      "approvalBasis": null,
+      "verificationState": "confirmed",
+      "approvalBasis": "explicit_manual_approval",
       "matchConfidence": "provisional_cultivar_or_species_check",
       "pipelineQa": "imported",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "webpPath": "assets/plant-watercolours/digitalis-lutea-watercolour.webp"
       },
-      "manualApprovalAt": null,
+      "manualApprovalAt": "2026-10-28T07:15:53Z",
       "notes": "",
-      "lastUpdated": "2026-10-22T15:42:22Z"
+      "lastUpdated": "2026-10-28T07:15:53Z"
     },
     {
       "order": 89,
       "plantId": "verbascum-chaixii-album",
       "botanicalName": "Verbascum chaixii 'Album'",
-      "status": "pending_review",
+      "status": "approved",
       "expectsBotanical": true,
       "expectsWatercolour": true,
       "assetForm": "both",
@@ -2159,23 +2159,23 @@
       "pngSha256": "7fa8ca341d12c0f100e95dd5d7fef51850f3c88fa386be1b8684688e079775ac",
       "webpPath": "assets/plant-watercolours/verbascum-chaixii-album.webp",
       "webpSha256": "8e94cefc6ebe1b1fce1d3dcd74d486443eb462cbd4a96660f2b7c70a46dbe7c3",
-      "verificationState": "pending_review",
-      "approvalBasis": null,
+      "verificationState": "confirmed",
+      "approvalBasis": "explicit_manual_approval",
       "matchConfidence": "provisional_cultivar_or_species_check",
       "pipelineQa": "imported",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "webpPath": "assets/plant-watercolours/verbascum-chaixii-album-watercolour.webp"
       },
-      "manualApprovalAt": null,
+      "manualApprovalAt": "2026-10-28T07:15:53Z",
       "notes": "",
-      "lastUpdated": "2026-10-22T13:24:00Z"
+      "lastUpdated": "2026-10-28T07:15:53Z"
     },
     {
       "order": 90,
       "plantId": "aquilegia-vulgaris-nora-barlow",
       "botanicalName": "Aquilegia vulgaris var. stellata 'Nora Barlow' (Barlow Series)",
-      "status": "pending_review",
+      "status": "approved",
       "expectsBotanical": true,
       "expectsWatercolour": true,
       "assetForm": "both",
@@ -2183,23 +2183,23 @@
       "pngSha256": "6475ebc769ee3cab282d3db37059e4994e727dca4c28455f167c7c7fb3aa61e9",
       "webpPath": "assets/plant-watercolours/aquilegia-vulgaris-nora-barlow.webp",
       "webpSha256": "aa2f5f037602c7eb268a22e9a680e3f50bf287529e39f61163ac5c09dc21a845",
-      "verificationState": "pending_review",
-      "approvalBasis": null,
+      "verificationState": "confirmed",
+      "approvalBasis": "explicit_manual_approval",
       "matchConfidence": "provisional_cultivar_or_species_check",
       "pipelineQa": "imported",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "webpPath": "assets/plant-watercolours/aquilegia-vulgaris-nora-barlow-watercolour.webp"
       },
-      "manualApprovalAt": null,
+      "manualApprovalAt": "2026-10-28T07:15:53Z",
       "notes": "",
-      "lastUpdated": "2026-10-22T13:24:00Z"
+      "lastUpdated": "2026-10-28T07:15:53Z"
     },
     {
       "order": 91,
       "plantId": "gillenia-trifoliata",
       "botanicalName": "Gillenia trifoliata",
-      "status": "pending_review",
+      "status": "approved",
       "expectsBotanical": true,
       "expectsWatercolour": true,
       "assetForm": "both",
@@ -2207,23 +2207,23 @@
       "pngSha256": "9e9ad8f3e7b83a3859e0238d928e0b6a7754c6ba42e5898293293483e4fa10f7",
       "webpPath": "assets/plant-watercolours/gillenia-trifoliata.webp",
       "webpSha256": "9f4a75944798e6222e4973043fa6129457885b4e9d77ec694ab2fc9b3fa0f439",
-      "verificationState": "pending_review",
-      "approvalBasis": null,
+      "verificationState": "confirmed",
+      "approvalBasis": "explicit_manual_approval",
       "matchConfidence": "provisional_cultivar_or_species_check",
       "pipelineQa": "imported",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "webpPath": "assets/plant-watercolours/gillenia-trifoliata-watercolour.webp"
       },
-      "manualApprovalAt": null,
+      "manualApprovalAt": "2026-10-28T07:15:53Z",
       "notes": "",
-      "lastUpdated": "2026-10-22T13:24:00Z"
+      "lastUpdated": "2026-10-28T07:15:53Z"
     },
     {
       "order": 92,
       "plantId": "scabiosa-butterfly-blue",
       "botanicalName": "Scabiosa 'Butterfly Blue'",
-      "status": "pending_review",
+      "status": "approved",
       "expectsBotanical": true,
       "expectsWatercolour": true,
       "assetForm": "both",
@@ -2231,23 +2231,23 @@
       "pngSha256": "8397f04accd10dc6fbb37b77e390fdabde00882382147e62acad9c7dbc2e57b7",
       "webpPath": "assets/plant-watercolours/scabiosa-butterfly-blue.webp",
       "webpSha256": "50171441d64f74929a514ab7af2707502a6079de62b3c1fb8d85a818347f2007",
-      "verificationState": "pending_review",
-      "approvalBasis": null,
+      "verificationState": "confirmed",
+      "approvalBasis": "explicit_manual_approval",
       "matchConfidence": "provisional_cultivar_or_species_check",
       "pipelineQa": "imported",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "webpPath": "assets/plant-watercolours/scabiosa-butterfly-blue-watercolour.webp"
       },
-      "manualApprovalAt": null,
+      "manualApprovalAt": "2026-10-28T07:15:53Z",
       "notes": "",
-      "lastUpdated": "2026-10-22T13:24:00Z"
+      "lastUpdated": "2026-10-28T07:15:53Z"
     },
     {
       "order": 93,
       "plantId": "betonica-officinalis-hummelo",
       "botanicalName": "Betonica officinalis 'Hummelo'",
-      "status": "pending_review",
+      "status": "approved",
       "expectsBotanical": true,
       "expectsWatercolour": true,
       "assetForm": "both",
@@ -2255,23 +2255,23 @@
       "pngSha256": "12c64f09bc12d5fdff94df19dd771215f069b0591f77d99ff60fe39c196c7c28",
       "webpPath": "assets/plant-watercolours/betonica-officinalis-hummelo.webp",
       "webpSha256": "7b225c20c8728496b78e9486bba5ee931729edc0dbef3db4bec9bdbd7ae4e1db",
-      "verificationState": "pending_review",
-      "approvalBasis": null,
+      "verificationState": "confirmed",
+      "approvalBasis": "explicit_manual_approval",
       "matchConfidence": "provisional_cultivar_or_species_check",
       "pipelineQa": "imported",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "webpPath": "assets/plant-watercolours/betonica-officinalis-hummelo-watercolour.webp"
       },
-      "manualApprovalAt": null,
+      "manualApprovalAt": "2026-10-28T07:15:53Z",
       "notes": "",
-      "lastUpdated": "2026-10-22T15:42:22Z"
+      "lastUpdated": "2026-10-28T07:15:53Z"
     },
     {
       "order": 94,
       "plantId": "geum-rivale-leonards-variety",
       "botanicalName": "Geum rivale 'Leonard's Variety'",
-      "status": "pending_review",
+      "status": "approved",
       "expectsBotanical": true,
       "expectsWatercolour": true,
       "assetForm": "both",
@@ -2279,23 +2279,23 @@
       "pngSha256": "8e847b2a8423a03595627bf577fb05388d7d18e65ef466ab41ef1bbb46ac4382",
       "webpPath": "assets/plant-watercolours/geum-rivale-leonards-variety.webp",
       "webpSha256": "b60eb3323cf0d2941aa34b8a056e9447b4de05335cfd0d804a9f4a1a08d54a63",
-      "verificationState": "pending_review",
-      "approvalBasis": null,
+      "verificationState": "confirmed",
+      "approvalBasis": "explicit_manual_approval",
       "matchConfidence": "provisional_cultivar_or_species_check",
       "pipelineQa": "imported",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "webpPath": "assets/plant-watercolours/geum-rivale-leonards-variety-watercolour.webp"
       },
-      "manualApprovalAt": null,
+      "manualApprovalAt": "2026-10-28T07:15:53Z",
       "notes": "",
-      "lastUpdated": "2026-10-22T13:24:00Z"
+      "lastUpdated": "2026-10-28T07:15:53Z"
     },
     {
       "order": 95,
       "plantId": "geranium-nodosum",
       "botanicalName": "Geranium nodosum",
-      "status": "pending_review",
+      "status": "approved",
       "expectsBotanical": true,
       "expectsWatercolour": true,
       "assetForm": "both",
@@ -2303,23 +2303,23 @@
       "pngSha256": "553330eef07a97f7ed890cdb31d6e637ef0907bb05ec742f41be536e7a262033",
       "webpPath": "assets/plant-watercolours/geranium-nodosum.webp",
       "webpSha256": "a2a786ac0d8452ab7bad0bf36974bf707fdc49d832239184032d5fe68652db56",
-      "verificationState": "pending_review",
-      "approvalBasis": null,
+      "verificationState": "confirmed",
+      "approvalBasis": "explicit_manual_approval",
       "matchConfidence": "provisional_cultivar_or_species_check",
       "pipelineQa": "imported",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "webpPath": "assets/plant-watercolours/geranium-nodosum-watercolour.webp"
       },
-      "manualApprovalAt": null,
+      "manualApprovalAt": "2026-10-28T07:15:53Z",
       "notes": "",
-      "lastUpdated": "2026-10-22T13:24:00Z"
+      "lastUpdated": "2026-10-28T07:15:53Z"
     },
     {
       "order": 96,
       "plantId": "geranium-phaeum-samobor",
       "botanicalName": "Geranium phaeum var. phaeum 'Samobor'",
-      "status": "pending_review",
+      "status": "approved",
       "expectsBotanical": true,
       "expectsWatercolour": true,
       "assetForm": "both",
@@ -2327,23 +2327,23 @@
       "pngSha256": "f801aefa02004eb1a6f82db18c24beeed44812c82c59060c243d4c8c2387fead",
       "webpPath": "assets/plant-watercolours/geranium-phaeum-samobor.webp",
       "webpSha256": "d9ae82d3a73d18d051bc4103ae5b67a2f82d6f2aa17808406cfc5ceea210cd9f",
-      "verificationState": "pending_review",
-      "approvalBasis": null,
+      "verificationState": "confirmed",
+      "approvalBasis": "explicit_manual_approval",
       "matchConfidence": "provisional_cultivar_or_species_check",
       "pipelineQa": "imported",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "webpPath": "assets/plant-watercolours/geranium-phaeum-samobor-watercolour.webp"
       },
-      "manualApprovalAt": null,
+      "manualApprovalAt": "2026-10-28T07:15:53Z",
       "notes": "",
-      "lastUpdated": "2026-10-22T13:24:00Z"
+      "lastUpdated": "2026-10-28T07:15:53Z"
     },
     {
       "order": 97,
       "plantId": "geranium-sanguineum-max-frei",
       "botanicalName": "Geranium sanguineum 'Max Frei'",
-      "status": "pending_review",
+      "status": "approved",
       "expectsBotanical": true,
       "expectsWatercolour": true,
       "assetForm": "both",
@@ -2351,23 +2351,23 @@
       "pngSha256": "8558eaecfeedc0d5f7104303295e72f0a941876049ef7d241580853bb41feb49",
       "webpPath": "assets/plant-watercolours/geranium-sanguineum-max-frei.webp",
       "webpSha256": "94f1288c66aadc8dd0f57ff553a9b42380daa7ed15335c51913ad7d2759b8d19",
-      "verificationState": "pending_review",
-      "approvalBasis": null,
+      "verificationState": "confirmed",
+      "approvalBasis": "explicit_manual_approval",
       "matchConfidence": "provisional_cultivar_or_species_check",
       "pipelineQa": "imported",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "webpPath": "assets/plant-watercolours/geranium-sanguineum-max-frei-watercolour.webp"
       },
-      "manualApprovalAt": null,
+      "manualApprovalAt": "2026-10-28T07:15:53Z",
       "notes": "",
-      "lastUpdated": "2026-10-22T15:42:22Z"
+      "lastUpdated": "2026-10-28T07:15:53Z"
     },
     {
       "order": 98,
       "plantId": "stachys-byzantina-silver-carpet",
       "botanicalName": "Stachys byzantina 'Silver Carpet'",
-      "status": "pending_review",
+      "status": "approved",
       "expectsBotanical": true,
       "expectsWatercolour": true,
       "assetForm": "both",
@@ -2375,23 +2375,23 @@
       "pngSha256": "2123772d5c5832c18ccb4be095acdab4cf0fb7bde0805ef384319c0f52bf4cfa",
       "webpPath": "assets/plant-watercolours/stachys-byzantina-silver-carpet.webp",
       "webpSha256": "f9ff77d10eac395ebd9c3a020340b8a28f1373226b34859b1dc7792bd4ed55dd",
-      "verificationState": "pending_review",
-      "approvalBasis": null,
+      "verificationState": "confirmed",
+      "approvalBasis": "explicit_manual_approval",
       "matchConfidence": "provisional_cultivar_or_species_check",
       "pipelineQa": "imported",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "webpPath": "assets/plant-watercolours/stachys-byzantina-silver-carpet-watercolour.webp"
       },
-      "manualApprovalAt": null,
+      "manualApprovalAt": "2026-10-28T07:15:53Z",
       "notes": "",
-      "lastUpdated": "2026-10-22T15:42:22Z"
+      "lastUpdated": "2026-10-28T07:15:53Z"
     },
     {
       "order": 99,
       "plantId": "bergenia-bressingham-white",
       "botanicalName": "Bergenia 'Bressingham White'",
-      "status": "pending_review",
+      "status": "approved",
       "expectsBotanical": true,
       "expectsWatercolour": true,
       "assetForm": "both",
@@ -2399,23 +2399,23 @@
       "pngSha256": "a380b5f6176f3ed6afc070dd89cd85645acc8518b0d79807676012c243002de3",
       "webpPath": "assets/plant-watercolours/bergenia-bressingham-white.webp",
       "webpSha256": "925a281ce0939e737ec7bfb524819e05fb5cd23cb79d9b0f79285a4178678dab",
-      "verificationState": "pending_review",
-      "approvalBasis": null,
+      "verificationState": "confirmed",
+      "approvalBasis": "explicit_manual_approval",
       "matchConfidence": "provisional_cultivar_or_species_check",
       "pipelineQa": "imported",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "webpPath": "assets/plant-watercolours/bergenia-bressingham-white-watercolour.webp"
       },
-      "manualApprovalAt": null,
+      "manualApprovalAt": "2026-10-28T07:15:53Z",
       "notes": "",
-      "lastUpdated": "2026-10-22T15:42:22Z"
+      "lastUpdated": "2026-10-28T07:15:53Z"
     },
     {
       "order": 100,
       "plantId": "phlox-subulata-emerald-cushion-blue",
       "botanicalName": "Phlox subulata 'Emerald Cushion Blue'",
-      "status": "pending_review",
+      "status": "approved",
       "expectsBotanical": true,
       "expectsWatercolour": true,
       "assetForm": "both",
@@ -2423,23 +2423,23 @@
       "pngSha256": "7c4235edf2b63389f35ce002d4b630ca5f622c6b6b432538c57c107967189019",
       "webpPath": "assets/plant-watercolours/phlox-subulata-emerald-cushion-blue.webp",
       "webpSha256": "62295ca0a3a4674a06af15a3272d1f154e1063ede6bc69b1e3936c9a5039b310",
-      "verificationState": "pending_review",
-      "approvalBasis": null,
+      "verificationState": "confirmed",
+      "approvalBasis": "explicit_manual_approval",
       "matchConfidence": "provisional_cultivar_or_species_check",
       "pipelineQa": "imported",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "webpPath": "assets/plant-watercolours/phlox-subulata-emerald-cushion-blue-watercolour.webp"
       },
-      "manualApprovalAt": null,
+      "manualApprovalAt": "2026-10-28T07:15:53Z",
       "notes": "",
-      "lastUpdated": "2026-10-22T15:42:22Z"
+      "lastUpdated": "2026-10-28T07:15:53Z"
     },
     {
       "order": 101,
       "plantId": "iberis-sempervirens-snowflake",
       "botanicalName": "Iberis sempervirens 'Snowflake'",
-      "status": "pending_review",
+      "status": "approved",
       "expectsBotanical": true,
       "expectsWatercolour": true,
       "assetForm": "both",
@@ -2447,23 +2447,23 @@
       "pngSha256": "93130b472e95c1e72e1ea57bb918e582bc79453ca9a5efd94cb1adbb82eba04a",
       "webpPath": "assets/plant-watercolours/iberis-sempervirens-snowflake.webp",
       "webpSha256": "4ad75c9d9a1b00fbccec6e207e9312f96eb0a6b225881b1ddd76395c2f05cddd",
-      "verificationState": "pending_review",
-      "approvalBasis": null,
+      "verificationState": "confirmed",
+      "approvalBasis": "explicit_manual_approval",
       "matchConfidence": "provisional_cultivar_or_species_check",
       "pipelineQa": "imported",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "webpPath": "assets/plant-watercolours/iberis-sempervirens-snowflake-watercolour.webp"
       },
-      "manualApprovalAt": null,
+      "manualApprovalAt": "2026-10-28T07:15:53Z",
       "notes": "",
-      "lastUpdated": "2026-10-22T13:24:00Z"
+      "lastUpdated": "2026-10-28T07:15:53Z"
     },
     {
       "order": 102,
       "plantId": "briza-media",
       "botanicalName": "Briza media",
-      "status": "pending_review",
+      "status": "approved",
       "expectsBotanical": true,
       "expectsWatercolour": true,
       "assetForm": "both",
@@ -2471,23 +2471,23 @@
       "pngSha256": "eb3e1d229e235f6425161ddaec2c815a3a9e4fa28f9d8e0dd80730a093c8be34",
       "webpPath": "assets/plant-watercolours/briza-media.webp",
       "webpSha256": "d527f10236be3820db8bff82ac8ed351bbe1f6689172b23cbdc447304aeae93b",
-      "verificationState": "pending_review",
-      "approvalBasis": null,
+      "verificationState": "confirmed",
+      "approvalBasis": "explicit_manual_approval",
       "matchConfidence": "provisional_cultivar_or_species_check",
       "pipelineQa": "imported",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "webpPath": "assets/plant-watercolours/briza-media-watercolour.webp"
       },
-      "manualApprovalAt": null,
+      "manualApprovalAt": "2026-10-28T07:15:53Z",
       "notes": "",
-      "lastUpdated": "2026-10-22T13:24:00Z"
+      "lastUpdated": "2026-10-28T07:15:53Z"
     },
     {
       "order": 103,
       "plantId": "luzula-nivea",
       "botanicalName": "Luzula nivea",
-      "status": "pending_review",
+      "status": "approved",
       "expectsBotanical": true,
       "expectsWatercolour": true,
       "assetForm": "both",
@@ -2495,23 +2495,23 @@
       "pngSha256": "7321810d41510e05e60b988c63be893bd01bf9cf084efc7a249df765e960306b",
       "webpPath": "assets/plant-watercolours/luzula-nivea.webp",
       "webpSha256": "294fde0f31372cec419288419a9bebdbad88939810cf2ffaf54bcf050cb1103b",
-      "verificationState": "pending_review",
-      "approvalBasis": null,
+      "verificationState": "confirmed",
+      "approvalBasis": "explicit_manual_approval",
       "matchConfidence": "provisional_cultivar_or_species_check",
       "pipelineQa": "imported",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "webpPath": "assets/plant-watercolours/luzula-nivea-watercolour.webp"
       },
-      "manualApprovalAt": null,
+      "manualApprovalAt": "2026-10-28T07:15:53Z",
       "notes": "",
-      "lastUpdated": "2026-10-22T13:24:00Z"
+      "lastUpdated": "2026-10-28T07:15:53Z"
     },
     {
       "order": 104,
       "plantId": "rosa-the-fairy",
       "botanicalName": "Rosa 'The Fairy'",
-      "status": "pending_review",
+      "status": "approved",
       "expectsBotanical": true,
       "expectsWatercolour": true,
       "assetForm": "both",
@@ -2519,23 +2519,23 @@
       "pngSha256": "450a323022d0e45e301a8b171f1ff4bfa981ed7c3ac4f4f4899a8030fa7b84ae",
       "webpPath": "assets/plant-watercolours/rosa-the-fairy.webp",
       "webpSha256": "1b787ec3b40ef75bec661c858ed5caae2c7c4208299246d67cdbee4debd164c2",
-      "verificationState": "pending_review",
-      "approvalBasis": null,
+      "verificationState": "confirmed",
+      "approvalBasis": "explicit_manual_approval",
       "matchConfidence": "provisional_cultivar_or_species_check",
       "pipelineQa": "imported",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "webpPath": "assets/plant-watercolours/rosa-the-fairy-watercolour.webp"
       },
-      "manualApprovalAt": null,
+      "manualApprovalAt": "2026-10-28T07:15:53Z",
       "notes": "",
-      "lastUpdated": "2026-10-22T13:24:00Z"
+      "lastUpdated": "2026-10-28T07:15:53Z"
     },
     {
       "order": 105,
       "plantId": "dianthus-mrs-sinkins",
       "botanicalName": "Dianthus 'Mrs Sinkins'",
-      "status": "pending_review",
+      "status": "approved",
       "expectsBotanical": true,
       "expectsWatercolour": true,
       "assetForm": "both",
@@ -2543,17 +2543,17 @@
       "pngSha256": "8b416b6533fa6131261f06c9e425546f640e68dbb3557f7febccb370ed3f54c0",
       "webpPath": "assets/plant-watercolours/dianthus-mrs-sinkins.webp",
       "webpSha256": "e6b380d403cb1858ca360a3435064053422eb6ed25eec4c270718f4ce28b61d2",
-      "verificationState": "pending_review",
-      "approvalBasis": null,
+      "verificationState": "confirmed",
+      "approvalBasis": "explicit_manual_approval",
       "matchConfidence": "provisional_cultivar_or_species_check",
       "pipelineQa": "imported",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "webpPath": "assets/plant-watercolours/dianthus-mrs-sinkins-watercolour.webp"
       },
-      "manualApprovalAt": null,
+      "manualApprovalAt": "2026-10-28T07:15:53Z",
       "notes": "",
-      "lastUpdated": "2026-10-22T13:24:00Z"
+      "lastUpdated": "2026-10-28T07:15:53Z"
     }
   ]
 }
