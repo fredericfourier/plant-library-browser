@@ -161,7 +161,7 @@ def build(prev, bd=None, bd_ref=None):
         if v and v.get("previous"):
             notes.append("earlier image version superseded (hash history in botanical-verification.json)")
         if status == "missing":
-            notes.append(f"no {V['word']} asset in either repository; new in E3 catalogue v1.0")
+            notes.append(f"no {V['word']} asset in either repository")
         stamps = [t for t in ((v or {}).get("importedAt"), (v or {}).get("approvedAt")) if t]
         rec = {
             "order": n, "plantId": pid, "botanicalName": p["botanicalName"], "status": status,

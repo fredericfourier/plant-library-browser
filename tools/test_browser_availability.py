@@ -100,7 +100,7 @@ class Availability(unittest.TestCase):
         self.assertEqual(self.art("wc").locator("img").count(), 0)
         self.assertIn("Botanical missing", self.art("wc").inner_text())
         self.assertIn("Watercolour: available", self.art("wc").inner_text())
-        self.assertIn("No illustrations yet", self.art("none").inner_text())
+        self.assertIn("Illustration unavailable", self.art("none").inner_text())
         self.assertEqual(self.requested("p-wc.webp"), [], "a nonexistent botanical image is never requested")
         self.assertEqual(self.requested("p-none"), [])
 
@@ -111,7 +111,7 @@ class Availability(unittest.TestCase):
         self.assertIn("p-wc-watercolour.webp", self.art("wc").locator("img").get_attribute("src"))
         self.assertEqual(self.art("bot").locator("img").count(), 0)
         self.assertIn("Watercolour missing", self.art("bot").inner_text())
-        self.assertIn("No illustrations yet", self.art("none").inner_text())
+        self.assertIn("Illustration unavailable", self.art("none").inner_text())
         self.assertEqual(self.requested("p-wc.webp"), [])
 
     def test_counts_and_filter(self):
@@ -134,7 +134,7 @@ class Availability(unittest.TestCase):
         self.assertIn("Watercolour missing", pane("bot", "watercolour").inner_text())
         self.assertEqual(pane("bot", "botanical").locator("img").count(), 1)
         self.assertEqual(self.card("none").locator(".pane").count(), 0)
-        self.assertIn("No illustrations yet", self.art("none").inner_text())
+        self.assertIn("Illustration unavailable", self.art("none").inner_text())
         self.assertEqual(self.requested("p-wc.webp"), [])
 
     def test_enlarged_viewer(self):
