@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Checks for the three E3 v1.2-candidate plants added to the browser catalogue (run: python3 tools/test_e3_v12_additions.py).
 
-Data-only checks: ids, working sizes, conditional suitability wording, 'Newly added' batch, and illustration status (imported, awaiting review, not queued) in both manifests.
+Data-only checks: ids, working sizes, conditional suitability wording, 'Newly added' batch, and illustration status (imported, owner-approved 2026-10-30, not queued) in both manifests.
 The illustration ZIP build is covered by .github/workflows/verify-illustrations-zip.yml."""
 import json, subprocess, sys, unittest
 from pathlib import Path
@@ -30,18 +30,18 @@ class Additions(unittest.TestCase):
         b = [x for x in load("data/additions.json")["batches"] if set(NEW) <= set(x["plantIds"])]
         self.assertEqual(len(b), 1); self.assertEqual(sorted(b[0]["plantIds"]), sorted(NEW))
 
-    def test_illustrations_imported_and_awaiting_review(self):
+    def test_illustrations_imported_and_approved(self):
         import hashlib
         assets = load("assets/plant-watercolours/manifest.json")["assets"]; ver = load("data/botanical-verification.json")["plants"]
         for i in NEW:
             for suffix, sha in (("", assets[i]["sha256"]), ("-watercolour", assets[i]["variants"]["watercolour"]["sha256"])):
                 f = ROOT / f"assets/plant-watercolours/{i}{suffix}.webp"
                 self.assertEqual(hashlib.sha256(f.read_bytes()).hexdigest(), sha, f.name)
-            self.assertEqual(ver[i]["status"], "pending_review"); self.assertNotIn("approvedAt", ver[i])
-            self.assertEqual(ver[i]["watercolour"]["status"], "awaiting_review"); self.assertNotIn("approvedAt", ver[i]["watercolour"])
+            self.assertEqual(ver[i]["status"], "confirmed"); self.assertIn("approvedAt", ver[i])
+            self.assertEqual(ver[i]["watercolour"]["status"], "confirmed"); self.assertIn("approvedAt", ver[i]["watercolour"])
         for f in ("data/botanical-status.json", "data/watercolour-status.json"):
             rows = {p["plantId"]: p for p in load(f)["plants"]}
-            for i in NEW: self.assertEqual(rows[i]["status"], "pending_review", (f, i)); self.assertNotEqual(rows[i]["assetForm"], "none", (f, i))
+            for i in NEW: self.assertIn(rows[i]["status"], ("pending_review", "approved"), (f, i)); self.assertNotEqual(rows[i]["assetForm"], "none", (f, i))
 
     def test_queues_no_longer_list_them(self):
         for t in ("botanical", "watercolour"):
