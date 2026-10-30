@@ -23,11 +23,11 @@
     "file": "docs/briefs/BOTANICAL_ASSET_BRIEF.md",
     "version": "35ac6dd"
   },
-  "updated": "2026-10-30T00:00:00Z",
+  "updated": "2026-10-30T14:23:46Z",
   "summary": {
     "total": 108,
-    "missing": 3,
-    "pending_review": 0,
+    "missing": 0,
+    "pending_review": 3,
     "approved": 105,
     "rejected": 0,
     "uncertain_match": 0,
@@ -2559,73 +2559,73 @@
       "order": 106,
       "plantId": "sarcococca-hookeriana-var-humilis",
       "botanicalName": "Sarcococca hookeriana var. humilis",
-      "status": "missing",
+      "status": "pending_review",
       "expectsBotanical": true,
       "expectsWatercolour": true,
-      "assetForm": "none",
+      "assetForm": "webp_only",
       "pngMasterPath": null,
       "pngSha256": null,
-      "webpPath": null,
-      "webpSha256": null,
-      "verificationState": "none",
+      "webpPath": "assets/plant-watercolours/sarcococca-hookeriana-var-humilis.webp",
+      "webpSha256": "c154ea069d09d71f8fc0187baa05e11c742339f5d23dc37d21412d1605c8981a",
+      "verificationState": "pending_review",
       "approvalBasis": null,
-      "matchConfidence": null,
-      "pipelineQa": null,
+      "matchConfidence": "filename_match_unreviewed",
+      "pipelineQa": "needs-review",
       "watercolour": {
-        "status": "missing",
-        "webpPath": null
+        "status": "awaiting_review",
+        "webpPath": "assets/plant-watercolours/sarcococca-hookeriana-var-humilis-watercolour.webp"
       },
       "manualApprovalAt": null,
-      "notes": "no botanical asset in either repository",
-      "lastUpdated": "2026-10-30T00:00:00Z"
+      "notes": "incomplete: webp without png master; pipeline QA: needs-review (ratio error 0.272)",
+      "lastUpdated": "2026-10-30T14:23:46Z"
     },
     {
       "order": 107,
       "plantId": "hydrangea-incrediball",
       "botanicalName": "Hydrangea arborescens Incrediball ('Abetwo')",
-      "status": "missing",
+      "status": "pending_review",
       "expectsBotanical": true,
       "expectsWatercolour": true,
-      "assetForm": "none",
+      "assetForm": "webp_only",
       "pngMasterPath": null,
       "pngSha256": null,
-      "webpPath": null,
-      "webpSha256": null,
-      "verificationState": "none",
+      "webpPath": "assets/plant-watercolours/hydrangea-incrediball.webp",
+      "webpSha256": "023037ec9a4848d988bf51eb42ea612104b9ef9882b24a68e48cbdc0acab4027",
+      "verificationState": "pending_review",
       "approvalBasis": null,
-      "matchConfidence": null,
-      "pipelineQa": null,
+      "matchConfidence": "filename_match_unreviewed",
+      "pipelineQa": "imported",
       "watercolour": {
-        "status": "missing",
-        "webpPath": null
+        "status": "awaiting_review",
+        "webpPath": "assets/plant-watercolours/hydrangea-incrediball-watercolour.webp"
       },
       "manualApprovalAt": null,
-      "notes": "no botanical asset in either repository",
-      "lastUpdated": "2026-10-30T00:00:00Z"
+      "notes": "incomplete: webp without png master",
+      "lastUpdated": "2026-10-30T14:23:46Z"
     },
     {
       "order": 108,
       "plantId": "astilbe-weisse-gloria",
       "botanicalName": "Astilbe 'Weisse Gloria'",
-      "status": "missing",
+      "status": "pending_review",
       "expectsBotanical": true,
       "expectsWatercolour": true,
-      "assetForm": "none",
+      "assetForm": "webp_only",
       "pngMasterPath": null,
       "pngSha256": null,
-      "webpPath": null,
-      "webpSha256": null,
-      "verificationState": "none",
+      "webpPath": "assets/plant-watercolours/astilbe-weisse-gloria.webp",
+      "webpSha256": "bc427764a0e837c18daea34e19d2dcfe4a156ba2cd4c9a9e047e6359cc79f5b4",
+      "verificationState": "pending_review",
       "approvalBasis": null,
-      "matchConfidence": null,
-      "pipelineQa": null,
+      "matchConfidence": "filename_match_unreviewed",
+      "pipelineQa": "imported",
       "watercolour": {
-        "status": "missing",
-        "webpPath": null
+        "status": "awaiting_review",
+        "webpPath": "assets/plant-watercolours/astilbe-weisse-gloria-watercolour.webp"
       },
       "manualApprovalAt": null,
-      "notes": "no botanical asset in either repository",
-      "lastUpdated": "2026-10-30T00:00:00Z"
+      "notes": "incomplete: webp without png master",
+      "lastUpdated": "2026-10-30T14:23:46Z"
     }
   ]
 }

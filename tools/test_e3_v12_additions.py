@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Checks for the three E3 v1.2-candidate plants added to the browser catalogue (run: python3 tools/test_e3_v12_additions.py).
 
-Data-only checks: ids, working sizes, conditional suitability wording, 'Newly added' batch, and missing-illustration status in both manifests and the queues.
+Data-only checks: ids, working sizes, conditional suitability wording, 'Newly added' batch, and illustration status (imported, awaiting review, not queued) in both manifests.
 The illustration ZIP build is covered by .github/workflows/verify-illustrations-zip.yml."""
 import json, subprocess, sys, unittest
 from pathlib import Path
@@ -30,17 +30,23 @@ class Additions(unittest.TestCase):
         b = [x for x in load("data/additions.json")["batches"] if set(NEW) <= set(x["plantIds"])]
         self.assertEqual(len(b), 1); self.assertEqual(sorted(b[0]["plantIds"]), sorted(NEW))
 
-    def test_illustrations_missing_in_every_record(self):
-        assets = load("assets/plant-watercolours/manifest.json")["assets"]
-        for i in NEW: self.assertNotIn(i, assets)
+    def test_illustrations_imported_and_awaiting_review(self):
+        import hashlib
+        assets = load("assets/plant-watercolours/manifest.json")["assets"]; ver = load("data/botanical-verification.json")["plants"]
+        for i in NEW:
+            for suffix, sha in (("", assets[i]["sha256"]), ("-watercolour", assets[i]["variants"]["watercolour"]["sha256"])):
+                f = ROOT / f"assets/plant-watercolours/{i}{suffix}.webp"
+                self.assertEqual(hashlib.sha256(f.read_bytes()).hexdigest(), sha, f.name)
+            self.assertEqual(ver[i]["status"], "pending_review"); self.assertNotIn("approvedAt", ver[i])
+            self.assertEqual(ver[i]["watercolour"]["status"], "awaiting_review"); self.assertNotIn("approvedAt", ver[i]["watercolour"])
         for f in ("data/botanical-status.json", "data/watercolour-status.json"):
             rows = {p["plantId"]: p for p in load(f)["plants"]}
-            for i in NEW: self.assertEqual((rows[i]["status"], rows[i]["assetForm"]), ("missing", "none"), (f, i))
+            for i in NEW: self.assertEqual(rows[i]["status"], "pending_review", (f, i)); self.assertNotEqual(rows[i]["assetForm"], "none", (f, i))
 
-    def test_queues_list_them(self):
+    def test_queues_no_longer_list_them(self):
         for t in ("botanical", "watercolour"):
             r = subprocess.run([sys.executable, str(ROOT / "tools/botanical_status.py"), "--type", t, "queue", "10"], capture_output=True, text=True)
-            self.assertEqual(r.returncode, 0, r.stderr); self.assertTrue(set(NEW) <= set(r.stdout.split()), (t, r.stdout))
+            self.assertEqual(r.returncode, 0, r.stderr); self.assertFalse(set(NEW) & set(r.stdout.split()), (t, r.stdout))
 
 
 if __name__ == "__main__": unittest.main(verbosity=2)
