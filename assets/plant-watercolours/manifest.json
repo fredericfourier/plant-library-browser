@@ -1327,11 +1327,11 @@
     "polystichum-setiferum": {
       "file": "assets/plant-watercolours/polystichum-setiferum.webp",
       "status": "imported",
-      "actualWidthPx": 1536,
-      "actualHeightPx": 1024,
-      "ratioErrorRelative": 0.213,
-      "sha256": "df36203d7c61b2eb45f538aef8e44edf86c9b55013dab051c7a2cd017b666109",
-      "updated": "2026-10-15T20:22:03Z",
+      "actualWidthPx": 1086,
+      "actualHeightPx": 1448,
+      "ratioErrorRelative": 0.088,
+      "sha256": "792fec02023867fe54ce04600cdd2a36e976769d81e8ed1ece2312cdb160d880",
+      "updated": "2026-10-30T16:36:51Z",
       "variants": {
         "watercolour": {
           "label": "Watercolour",
@@ -1339,14 +1339,17 @@
           "status": "awaiting_review",
           "productionReady": false,
           "canonicalScaleApplied": false,
-          "originalWidthPx": 1536,
-          "originalHeightPx": 1024,
+          "originalWidthPx": 1086,
+          "originalHeightPx": 1448,
           "transparent": true,
-          "sha256": "62bcb0daaea08ac7d23e9780154403b6ea19b6dcbd6e78221a43f27906e14268",
-          "pngSha256": "cfaa5de71d3cac44248d0e855d30238e05934a4b0d16dde8f2f2c18d737cbc00",
+          "sha256": "5e6e9163676fc74126bd17bdf80b44a7202db4e7736bc88c1c1140e38ac0658a",
+          "pngSha256": "6b99960c911989e0ed86a09c8da444a0aa9d69f06f817a1cac8046de02e15dbb",
           "warnings": []
         }
-      }
+      },
+      "pixelsPerCm": 10,
+      "canonicalHeightPx": 1000,
+      "expectedSpreadPx": 750
     },
     "pulmonaria-blue-ensign": {
       "file": "assets/plant-watercolours/pulmonaria-blue-ensign.webp",
