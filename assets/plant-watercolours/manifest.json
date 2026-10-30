@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "updated": "2026-10-22",
+  "updated": "2026-10-30",
   "assets": {
     "alchemilla-mollis": {
       "file": "assets/plant-watercolours/alchemilla-mollis.webp",
@@ -2644,6 +2644,87 @@
           "transparent": true,
           "sha256": "aad8b8d76a91b0dbcdb779179c089e9b5bba25fad35dbcde054f3573da29ee02",
           "pngSha256": "24eef49f0a7fa85e21b231f019948b82c3b6baf0374c051637d24fb5d672df59",
+          "warnings": []
+        }
+      }
+    },
+    "astilbe-weisse-gloria": {
+      "file": "assets/plant-watercolours/astilbe-weisse-gloria.webp",
+      "status": "imported",
+      "pixelsPerCm": 10,
+      "canonicalHeightPx": 700,
+      "expectedSpreadPx": 450,
+      "actualWidthPx": 1006,
+      "actualHeightPx": 1564,
+      "ratioErrorRelative": 0.097,
+      "updated": "2026-10-30T14:23:46Z",
+      "sha256": "bc427764a0e837c18daea34e19d2dcfe4a156ba2cd4c9a9e047e6359cc79f5b4",
+      "variants": {
+        "watercolour": {
+          "label": "Watercolour",
+          "file": "assets/plant-watercolours/astilbe-weisse-gloria-watercolour.webp",
+          "status": "awaiting_review",
+          "productionReady": false,
+          "canonicalScaleApplied": false,
+          "originalWidthPx": 1004,
+          "originalHeightPx": 1566,
+          "transparent": true,
+          "sha256": "2e7265791773f03225be74b07501b8c0c7503685c9a2b33707742c8b3c3eadd5",
+          "pngSha256": "26e0d9dabd56adc06cb3b35d15fb1dcce7e83f02a3380e642c79c4b7a7bdcb43",
+          "warnings": []
+        }
+      }
+    },
+    "hydrangea-incrediball": {
+      "file": "assets/plant-watercolours/hydrangea-incrediball.webp",
+      "status": "imported",
+      "pixelsPerCm": 10,
+      "canonicalHeightPx": 1250,
+      "expectedSpreadPx": 1250,
+      "actualWidthPx": 1254,
+      "actualHeightPx": 1254,
+      "ratioErrorRelative": 0.039,
+      "updated": "2026-10-30T14:23:46Z",
+      "sha256": "023037ec9a4848d988bf51eb42ea612104b9ef9882b24a68e48cbdc0acab4027",
+      "variants": {
+        "watercolour": {
+          "label": "Watercolour",
+          "file": "assets/plant-watercolours/hydrangea-incrediball-watercolour.webp",
+          "status": "awaiting_review",
+          "productionReady": false,
+          "canonicalScaleApplied": false,
+          "originalWidthPx": 1312,
+          "originalHeightPx": 1199,
+          "transparent": true,
+          "sha256": "82ef4d6a145b946a7bd5fb49b9a03587082d2d9f5e1b882d7af0b62bf51af486",
+          "pngSha256": "6c1360de1884db043f1f78e8e9f36aed483f23207a2136b58768299b4bc57454",
+          "warnings": []
+        }
+      }
+    },
+    "sarcococca-hookeriana-var-humilis": {
+      "file": "assets/plant-watercolours/sarcococca-hookeriana-var-humilis.webp",
+      "status": "needs-review",
+      "pixelsPerCm": 10,
+      "canonicalHeightPx": 600,
+      "expectedSpreadPx": 900,
+      "actualWidthPx": 1536,
+      "actualHeightPx": 1024,
+      "ratioErrorRelative": 0.272,
+      "updated": "2026-10-30T14:23:46Z",
+      "sha256": "c154ea069d09d71f8fc0187baa05e11c742339f5d23dc37d21412d1605c8981a",
+      "variants": {
+        "watercolour": {
+          "label": "Watercolour",
+          "file": "assets/plant-watercolours/sarcococca-hookeriana-var-humilis-watercolour.webp",
+          "status": "awaiting_review",
+          "productionReady": false,
+          "canonicalScaleApplied": false,
+          "originalWidthPx": 1254,
+          "originalHeightPx": 1254,
+          "transparent": true,
+          "sha256": "5f2ab410c13ae4f84b5abb79076ac7c5bb096bf04c36e0f719c0cffc041bfc26",
+          "pngSha256": "d2b6a88c64da48e5a59180260c22e90cc7d9ef80bae6e06253956fbc8dfd71aa",
           "warnings": []
         }
       }

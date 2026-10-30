@@ -2085,8 +2085,50 @@
         "approvedAt": "2026-10-28T07:15:53Z"
       },
       "approvedAt": "2026-10-28T07:15:53Z"
+    },
+    "astilbe-weisse-gloria": {
+      "status": "pending_review",
+      "imageSha256": "bc427764a0e837c18daea34e19d2dcfe4a156ba2cd4c9a9e047e6359cc79f5b4",
+      "pngSha256": "3a6c88f2e533d04d9ca6f2264e13b851f08f9d21c060f24df5e8cec63f371b70",
+      "bundleMatchStatus": "filename_match_unreviewed",
+      "sourceFilename": "astilbe_blanche_en_bouquet_a\u00e9rien.png",
+      "importedAt": "2026-10-30T14:23:46Z",
+      "watercolour": {
+        "status": "awaiting_review",
+        "imageSha256": "2e7265791773f03225be74b07501b8c0c7503685c9a2b33707742c8b3c3eadd5",
+        "pngSha256": "26e0d9dabd56adc06cb3b35d15fb1dcce7e83f02a3380e642c79c4b7a7bdcb43",
+        "importedAt": "2026-10-30T14:23:32Z"
+      }
+    },
+    "hydrangea-incrediball": {
+      "status": "pending_review",
+      "imageSha256": "023037ec9a4848d988bf51eb42ea612104b9ef9882b24a68e48cbdc0acab4027",
+      "pngSha256": "011dfadf3b69cd1ec753256e5602ea1973b62c66b955e32364251c8f133f3e8a",
+      "bundleMatchStatus": "filename_match_unreviewed",
+      "sourceFilename": "buisson_d_hortensia_blanc_isol\u00e9_giulia.png",
+      "importedAt": "2026-10-30T14:23:46Z",
+      "watercolour": {
+        "status": "awaiting_review",
+        "imageSha256": "82ef4d6a145b946a7bd5fb49b9a03587082d2d9f5e1b882d7af0b62bf51af486",
+        "pngSha256": "6c1360de1884db043f1f78e8e9f36aed483f23207a2136b58768299b4bc57454",
+        "importedAt": "2026-10-30T14:23:32Z"
+      }
+    },
+    "sarcococca-hookeriana-var-humilis": {
+      "status": "pending_review",
+      "imageSha256": "c154ea069d09d71f8fc0187baa05e11c742339f5d23dc37d21412d1605c8981a",
+      "pngSha256": "aecabc622aba41558015a5bc5ead55a1713ccbaeb768087cf72e65994ea699b1",
+      "bundleMatchStatus": "filename_match_unreviewed",
+      "sourceFilename": "arbuste_persistant_fleuri_et_fruit\u00e9.png",
+      "importedAt": "2026-10-30T14:23:46Z",
+      "watercolour": {
+        "status": "awaiting_review",
+        "imageSha256": "5f2ab410c13ae4f84b5abb79076ac7c5bb096bf04c36e0f719c0cffc041bfc26",
+        "pngSha256": "d2b6a88c64da48e5a59180260c22e90cc7d9ef80bae6e06253956fbc8dfd71aa",
+        "importedAt": "2026-10-30T14:23:32Z"
+      }
     }
   },
-  "updated": "2026-10-22T16:47:29Z",
+  "updated": "2026-10-30T14:23:46Z",
   "watercolourNote": "plants[id].watercolour.status is awaiting_review until approved by editing this file (never automatically)."
 }
