@@ -1,6 +1,6 @@
 {
   "schemaVersion": 7,
-  "updated": "2026-10-22",
+  "updated": "2026-10-30",
   "plants": [
     {
       "id": "salvia-caradonna",
@@ -10761,6 +10761,308 @@
         "canonicalPixelsPerCm": 10,
         "canonicalHeightPx": 350,
         "expectedSpreadPx": 350,
+        "ratioTolerance": 0.12,
+        "hardFailTolerance": 0.25,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
+      }
+    },
+    {
+      "id": "sarcococca-hookeriana-var-humilis",
+      "botanicalName": "Sarcococca hookeriana var. humilis",
+      "commonName": "Dwarf sweet box",
+      "type": "shrub",
+      "heightCm": 60,
+      "spreadCm": 90,
+      "light": [
+        "part_shade",
+        "full_shade"
+      ],
+      "soil": [
+        "clay",
+        "loam",
+        "sandy"
+      ],
+      "moisture": [
+        "average",
+        "moist",
+        "dry"
+      ],
+      "flowerColours": [
+        "white"
+      ],
+      "floweringStart": 1,
+      "floweringEnd": 3,
+      "foliage": "evergreen",
+      "foliageColour": "dark-green",
+      "hardiness": "H5",
+      "maintenance": "low",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "pollinatorValue": 2,
+      "plantsPerSqM": 1,
+      "description": "Compact suckering evergreen shrub forming a neat clump of glossy dark-green leaves. Very fragrant, creamy-white flowers with crimson anthers open from December to March, followed by black berries. Part or full shade; once established it tolerates dry shade, but it is not suited to newly planted dry soil or to full sun unless the soil stays damp. Working size 60 x 90 cm is a planting-design size, not an exact mature measurement (published about 60 cm tall, 0.5-1 m spread).",
+      "notes": "Winter flowering runs December to March in UK sources; the numeric flowering months (1-3) cannot show the December start. Flower colour is creamy-white (listed as white). Full sun is not listed: RHS says it may be tolerated in damp soil only. Dry is listed for established plants in shade only.",
+      "maturity": {
+        "minYears": 5,
+        "maxYears": 10,
+        "sources": [
+          {
+            "name": "RHS",
+            "url": "https://www.rhs.org.uk/plants/96875/sarcococca-hookeriana-var-humilis/details",
+            "checked": "2026-10-29"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS time to maturity 5-10 years (single publisher)"
+      },
+      "design": {
+        "styles": [
+          "cottage"
+        ],
+        "position": [
+          "front_middle",
+          "middle"
+        ],
+        "habit": "clumping",
+        "visualDensity": "high",
+        "placementFlexibility": "low",
+        "layer": "structural",
+        "groupingMode": "specimen",
+        "allowSingleton": true,
+        "designRoles": [
+          "structure",
+          "winter_interest",
+          "seasonal_interest"
+        ],
+        "roles": {
+          "preferred": "structural_anchor",
+          "supported": [
+            "structural_anchor"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0.45,
+            0.9
+          ],
+          "hard": [
+            0.25,
+            1
+          ]
+        },
+        "transparency": {
+          "base": 0.05,
+          "upper": 0.15
+        },
+        "spreadHabit": "clumping"
+      },
+      "watercolourEnvelope": {
+        "ratio": 1.5,
+        "shapeClass": "broad_spreading",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 600,
+        "expectedSpreadPx": 900,
+        "ratioTolerance": 0.2,
+        "hardFailTolerance": 0.3,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
+      }
+    },
+    {
+      "id": "hydrangea-incrediball",
+      "botanicalName": "Hydrangea arborescens Incrediball ('Abetwo')",
+      "commonName": "Smooth hydrangea 'Incrediball' (Strong Annabelle)",
+      "type": "shrub",
+      "heightCm": 125,
+      "spreadCm": 125,
+      "light": [
+        "full_sun",
+        "part_shade"
+      ],
+      "soil": [
+        "clay",
+        "loam",
+        "sandy"
+      ],
+      "moisture": [
+        "average",
+        "moist"
+      ],
+      "flowerColours": [
+        "white"
+      ],
+      "floweringStart": 7,
+      "floweringEnd": 9,
+      "foliage": "deciduous",
+      "foliageColour": "green",
+      "hardiness": "H6",
+      "maintenance": "moderate",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "pollinatorValue": 1,
+      "plantsPerSqM": 1,
+      "description": "Deciduous shrub with very large rounded heads of sterile white flowers, opening with a hint of green and ageing to green, held on strong upright stems in summer. Sold as Incrediball, Strong Annabelle or 'Abetwo' (one plant). Full sun suits it only where the soil stays reliably moist; otherwise grow it in part shade in moist but well-drained soil. Not for dry sites. Working size 125 x 125 cm is a planting-design size, not an exact mature measurement (published about 1-1.5 m, up to 2 m in some UK nurseries).",
+      "notes": "RHS accepted name Hydrangea arborescens Strong Annabelle ('Abetwo'PBR); Incrediball is listed as a synonym. Full sun is conditional on reliably moist soil; dry is not listed. Visible spread sources disagree (1.2-2 m).",
+      "maturity": {
+        "minYears": 10,
+        "maxYears": 20,
+        "sources": [
+          {
+            "name": "RHS",
+            "url": "https://www.rhs.org.uk/plants/372603/details",
+            "checked": "2026-10-30"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS time to ultimate height 10-20 years (single publisher)"
+      },
+      "design": {
+        "styles": [
+          "cottage"
+        ],
+        "position": [
+          "middle",
+          "back"
+        ],
+        "habit": "clumping",
+        "visualDensity": "high",
+        "placementFlexibility": "low",
+        "layer": "structural",
+        "groupingMode": "specimen",
+        "allowSingleton": true,
+        "designRoles": [
+          "structure",
+          "focal",
+          "seasonal_interest"
+        ],
+        "roles": {
+          "preferred": "structural_anchor",
+          "supported": [
+            "structural_anchor"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0.45,
+            0.9
+          ],
+          "hard": [
+            0.25,
+            1
+          ]
+        },
+        "transparency": {
+          "base": 0.05,
+          "upper": 0.15
+        },
+        "spreadHabit": "clumping"
+      },
+      "watercolourEnvelope": {
+        "ratio": 1.0,
+        "shapeClass": "balanced_mounded",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 1250,
+        "expectedSpreadPx": 1250,
+        "ratioTolerance": 0.2,
+        "hardFailTolerance": 0.3,
+        "scaleMode": "uniform",
+        "groundAnchor": "bottom"
+      }
+    },
+    {
+      "id": "astilbe-weisse-gloria",
+      "botanicalName": "Astilbe 'Weisse Gloria'",
+      "commonName": "Astilbe 'Weisse Gloria'",
+      "type": "perennial",
+      "heightCm": 70,
+      "spreadCm": 45,
+      "light": [
+        "full_sun",
+        "part_shade"
+      ],
+      "soil": [
+        "clay",
+        "loam"
+      ],
+      "moisture": [
+        "moist"
+      ],
+      "flowerColours": [
+        "white"
+      ],
+      "floweringStart": 6,
+      "floweringEnd": 8,
+      "foliage": "deciduous",
+      "foliageColour": "dark-green",
+      "hardiness": "H7",
+      "maintenance": "moderate",
+      "requiresStaking": false,
+      "winterProtection": false,
+      "pollinatorValue": 2,
+      "plantsPerSqM": 5,
+      "description": "Clump-forming perennial with glossy, divided, dark-green foliage and dense, branched plumes of pure white flowers from June to August. Needs soil that stays moist all summer: it is drought intolerant and not for dry sites. Full sun only where the soil stays moisture-retentive; part shade is best. Working size 70 x 45 cm is a planting-design size, not an exact mature measurement (published about 70 cm tall, 45-50 cm spread).",
+      "notes": "RHS accepted name Astilbe 'Weisse Gloria' (x arendsii); 'White Gloria' is a synonym. Moist soil only; boggy tolerance is not permission for persistently waterlogged borders.",
+      "maturity": {
+        "minYears": 2,
+        "maxYears": 5,
+        "sources": [
+          {
+            "name": "RHS",
+            "url": "https://www.rhs.org.uk/plants/112765/details",
+            "checked": "2026-10-30"
+          }
+        ],
+        "confidence": "medium",
+        "basis": "RHS time to ultimate height 2-5 years (single publisher)"
+      },
+      "design": {
+        "styles": [
+          "cottage"
+        ],
+        "position": [
+          "front_middle",
+          "middle"
+        ],
+        "habit": "upright",
+        "visualDensity": "medium",
+        "placementFlexibility": "medium",
+        "layer": "matrix",
+        "groupingMode": "clump",
+        "allowSingleton": false,
+        "designRoles": [
+          "repetition",
+          "seasonal_interest"
+        ],
+        "roles": {
+          "preferred": "repeated_clump",
+          "supported": [
+            "repeated_clump",
+            "primary_drift"
+          ]
+        },
+        "depth": {
+          "preferred": [
+            0.15,
+            0.6
+          ],
+          "hard": [
+            0,
+            0.85
+          ]
+        },
+        "transparency": {
+          "base": 0.1,
+          "upper": 0.5
+        },
+        "spreadHabit": "clumping"
+      },
+      "watercolourEnvelope": {
+        "ratio": 0.643,
+        "shapeClass": "narrow_upright",
+        "canonicalPixelsPerCm": 10,
+        "canonicalHeightPx": 700,
+        "expectedSpreadPx": 450,
         "ratioTolerance": 0.12,
         "hardFailTolerance": 0.25,
         "scaleMode": "uniform",

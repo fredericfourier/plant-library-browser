@@ -61,6 +61,16 @@
         "rosa-the-fairy",
         "dianthus-mrs-sinkins"
       ]
+    },
+    {
+      "id": "2026-10-30-e3-v1-2-candidate-three-species",
+      "label": "Added 30 Oct 2026",
+      "date": "2026-10-30",
+      "plantIds": [
+        "sarcococca-hookeriana-var-humilis",
+        "hydrangea-incrediball",
+        "astilbe-weisse-gloria"
+      ]
     }
   ]
 }

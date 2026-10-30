@@ -10,7 +10,7 @@
   },
   "catalogue": {
     "path": "data/plants.json",
-    "count": 105
+    "count": 108
   },
   "pngMasters": {
     "repo": "fredericfourier/border-designer",
@@ -23,10 +23,10 @@
     "file": "docs/briefs/BOTANICAL_ASSET_BRIEF.md",
     "version": "35ac6dd"
   },
-  "updated": "2026-10-28T07:15:53Z",
+  "updated": "2026-10-30T00:00:00Z",
   "summary": {
-    "total": 105,
-    "missing": 0,
+    "total": 108,
+    "missing": 3,
     "pending_review": 0,
     "approved": 105,
     "rejected": 0,
@@ -2554,6 +2554,78 @@
       "manualApprovalAt": "2026-10-28T07:15:53Z",
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z"
+    },
+    {
+      "order": 106,
+      "plantId": "sarcococca-hookeriana-var-humilis",
+      "botanicalName": "Sarcococca hookeriana var. humilis",
+      "status": "missing",
+      "expectsBotanical": true,
+      "expectsWatercolour": true,
+      "assetForm": "none",
+      "pngMasterPath": null,
+      "pngSha256": null,
+      "webpPath": null,
+      "webpSha256": null,
+      "verificationState": "none",
+      "approvalBasis": null,
+      "matchConfidence": null,
+      "pipelineQa": null,
+      "watercolour": {
+        "status": "missing",
+        "webpPath": null
+      },
+      "manualApprovalAt": null,
+      "notes": "no botanical asset in either repository",
+      "lastUpdated": "2026-10-30T00:00:00Z"
+    },
+    {
+      "order": 107,
+      "plantId": "hydrangea-incrediball",
+      "botanicalName": "Hydrangea arborescens Incrediball ('Abetwo')",
+      "status": "missing",
+      "expectsBotanical": true,
+      "expectsWatercolour": true,
+      "assetForm": "none",
+      "pngMasterPath": null,
+      "pngSha256": null,
+      "webpPath": null,
+      "webpSha256": null,
+      "verificationState": "none",
+      "approvalBasis": null,
+      "matchConfidence": null,
+      "pipelineQa": null,
+      "watercolour": {
+        "status": "missing",
+        "webpPath": null
+      },
+      "manualApprovalAt": null,
+      "notes": "no botanical asset in either repository",
+      "lastUpdated": "2026-10-30T00:00:00Z"
+    },
+    {
+      "order": 108,
+      "plantId": "astilbe-weisse-gloria",
+      "botanicalName": "Astilbe 'Weisse Gloria'",
+      "status": "missing",
+      "expectsBotanical": true,
+      "expectsWatercolour": true,
+      "assetForm": "none",
+      "pngMasterPath": null,
+      "pngSha256": null,
+      "webpPath": null,
+      "webpSha256": null,
+      "verificationState": "none",
+      "approvalBasis": null,
+      "matchConfidence": null,
+      "pipelineQa": null,
+      "watercolour": {
+        "status": "missing",
+        "webpPath": null
+      },
+      "manualApprovalAt": null,
+      "notes": "no botanical asset in either repository",
+      "lastUpdated": "2026-10-30T00:00:00Z"
     }
   ]
 }
