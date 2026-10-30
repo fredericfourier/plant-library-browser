@@ -23,7 +23,7 @@
     "file": "docs/briefs/BOTANICAL_ASSET_BRIEF.md",
     "version": "35ac6dd"
   },
-  "updated": "2026-10-30T16:36:51Z",
+  "updated": "2026-10-30T16:41:41Z",
   "summary": {
     "total": 108,
     "missing": 0,
@@ -1439,17 +1439,17 @@
       "pngSha256": "7b5e651d6fb6ca33018379836f2b7a8e9e6cd33b97163446b6caf4ebab013b40",
       "webpPath": "assets/plant-watercolours/polystichum-setiferum.webp",
       "webpSha256": "792fec02023867fe54ce04600cdd2a36e976769d81e8ed1ece2312cdb160d880",
-      "verificationState": "pending_review",
-      "approvalBasis": null,
+      "verificationState": "confirmed",
+      "approvalBasis": "explicit_manual_approval",
       "matchConfidence": "filename_match_unreviewed",
       "pipelineQa": "imported",
       "watercolour": {
-        "status": "awaiting_review",
+        "status": "confirmed",
         "webpPath": "assets/plant-watercolours/polystichum-setiferum-watercolour.webp"
       },
-      "manualApprovalAt": null,
+      "manualApprovalAt": "2026-10-30T16:41:41Z",
       "notes": "png master hash differs from botanical-verification.json; earlier image version superseded (hash history in botanical-verification.json)",
-      "lastUpdated": "2026-10-30T16:36:51Z"
+      "lastUpdated": "2026-10-30T16:41:41Z"
     },
     {
       "order": 60,
