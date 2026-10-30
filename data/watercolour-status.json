@@ -28,14 +28,14 @@
       "sha256": "9a7bbbc660adae5fa360b29a2287412e0e5c9918f3649b1d0a1f85168f9a87f7"
     }
   },
-  "updated": "2026-10-30T14:59:46Z",
+  "updated": "2026-10-30T16:36:51Z",
   "summary": {
     "total": 108,
     "missing": 0,
     "pending_review": 3,
     "approved": 80,
-    "rejected": 1,
-    "uncertain_match": 24,
+    "rejected": 0,
+    "uncertain_match": 25,
     "reserved_not_imported": 0,
     "filename_match_only": 0
   },
@@ -1146,26 +1146,20 @@
       "order": 59,
       "plantId": "polystichum-setiferum",
       "botanicalName": "Polystichum setiferum",
-      "status": "rejected",
+      "status": "uncertain_match",
       "expectsWatercolour": true,
       "assetForm": "both",
       "pngMasterPath": "assets/plant-watercolours/masters/polystichum-setiferum-watercolour.png",
       "pngSha256": "cfaa5de71d3cac44248d0e855d30238e05934a4b0d16dde8f2f2c18d737cbc00",
       "webpPath": "assets/plant-watercolours/polystichum-setiferum-watercolour.webp",
-      "webpSha256": "62bcb0daaea08ac7d23e9780154403b6ea19b6dcbd6e78221a43f27906e14268",
+      "webpSha256": "5e6e9163676fc74126bd17bdf80b44a7202db4e7736bc88c1c1140e38ac0658a",
       "verificationState": "awaiting_review",
       "approvalBasis": null,
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": null,
-      "notes": "manual rejected: Working size changed to 100 x 75 cm (owner, 2026-10-30; was 60 x 75). Existing art was painted for 60 x 75 (aspect 1.55) and does not fit the 0.75 envelope. Regenerate/review required; do not stretch or upscale.; earlier image version superseded (hash history in botanical-verification.json)",
-      "lastUpdated": "2026-10-15T20:21:46Z",
-      "illustrationType": "watercolour",
-      "manualStatus": {
-        "status": "rejected",
-        "imageSha256": "62bcb0daaea08ac7d23e9780154403b6ea19b6dcbd6e78221a43f27906e14268",
-        "note": "Working size changed to 100 x 75 cm (owner, 2026-10-30; was 60 x 75). Existing art was painted for 60 x 75 (aspect 1.55) and does not fit the 0.75 envelope. Regenerate/review required; do not stretch or upscale.",
-        "setAt": "2026-10-30T15:51:22Z"
-      }
+      "notes": "png master hash differs from botanical-verification.json; earlier image version superseded (hash history in botanical-verification.json)",
+      "lastUpdated": "2026-10-30T16:36:51Z",
+      "illustrationType": "watercolour"
     },
     {
       "order": 60,

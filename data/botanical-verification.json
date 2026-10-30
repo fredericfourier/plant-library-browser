@@ -1094,28 +1094,44 @@
     },
     "polystichum-setiferum": {
       "status": "pending_review",
-      "imageSha256": "df36203d7c61b2eb45f538aef8e44edf86c9b55013dab051c7a2cd017b666109",
-      "pngSha256": "7b5e651d6fb6ca33018379836f2b7a8e9e6cd33b97163446b6caf4ebab013b40",
-      "bundleMatchStatus": "provisional_cultivar_or_species_check",
-      "sourceFilename": "lush_fountain_fern_cutout.png",
-      "importedAt": "2026-10-15T20:22:03Z",
+      "imageSha256": "792fec02023867fe54ce04600cdd2a36e976769d81e8ed1ece2312cdb160d880",
+      "pngSha256": "8765d20e3cdf44f5df65a62149cfde930f322fd6e8c57c61e72b5fa59a6f40ef",
+      "bundleMatchStatus": "filename_match_unreviewed",
+      "sourceFilename": "polystichum-setiferum.png",
+      "importedAt": "2026-10-30T16:36:51Z",
       "previous": {
-        "status": "confirmed",
-        "imageSha256": "627cf86b3320226104ef332c286924322c144812a99b9fbea6e3c481dcfaeff0",
-        "importedAt": "2026-10-15T07:10:00Z",
-        "supersededAt": "2026-10-15T20:22:03Z"
+        "status": "pending_review",
+        "imageSha256": "df36203d7c61b2eb45f538aef8e44edf86c9b55013dab051c7a2cd017b666109",
+        "pngSha256": "7b5e651d6fb6ca33018379836f2b7a8e9e6cd33b97163446b6caf4ebab013b40",
+        "bundleMatchStatus": "provisional_cultivar_or_species_check",
+        "sourceFilename": "lush_fountain_fern_cutout.png",
+        "importedAt": "2026-10-15T20:22:03Z",
+        "previous": {
+          "status": "confirmed",
+          "imageSha256": "627cf86b3320226104ef332c286924322c144812a99b9fbea6e3c481dcfaeff0",
+          "importedAt": "2026-10-15T07:10:00Z",
+          "supersededAt": "2026-10-15T20:22:03Z"
+        },
+        "supersededAt": "2026-10-30T16:36:51Z"
       },
       "watercolour": {
         "status": "awaiting_review",
-        "imageSha256": "62bcb0daaea08ac7d23e9780154403b6ea19b6dcbd6e78221a43f27906e14268",
-        "pngSha256": "cfaa5de71d3cac44248d0e855d30238e05934a4b0d16dde8f2f2c18d737cbc00",
-        "importedAt": "2026-10-15T20:21:46Z",
+        "imageSha256": "5e6e9163676fc74126bd17bdf80b44a7202db4e7736bc88c1c1140e38ac0658a",
+        "pngSha256": "6b99960c911989e0ed86a09c8da444a0aa9d69f06f817a1cac8046de02e15dbb",
+        "importedAt": "2026-10-30T16:36:51Z",
         "previous": {
           "status": "awaiting_review",
-          "imageSha256": "f400a70504f6d32dbcc30577b3c521a3debc480375e10e2410e8dbe9e3b714f2",
-          "pngSha256": "252c47ff3518fdb1deb424e4d0f05ed084331a598ee5711626f854b3d87970fa",
-          "importedAt": "2026-10-15T13:44:49Z",
-          "supersededAt": "2026-10-15T20:21:46Z"
+          "imageSha256": "62bcb0daaea08ac7d23e9780154403b6ea19b6dcbd6e78221a43f27906e14268",
+          "pngSha256": "cfaa5de71d3cac44248d0e855d30238e05934a4b0d16dde8f2f2c18d737cbc00",
+          "importedAt": "2026-10-15T20:21:46Z",
+          "previous": {
+            "status": "awaiting_review",
+            "imageSha256": "f400a70504f6d32dbcc30577b3c521a3debc480375e10e2410e8dbe9e3b714f2",
+            "pngSha256": "252c47ff3518fdb1deb424e4d0f05ed084331a598ee5711626f854b3d87970fa",
+            "importedAt": "2026-10-15T13:44:49Z",
+            "supersededAt": "2026-10-15T20:21:46Z"
+          },
+          "supersededAt": "2026-10-30T16:36:51Z"
         }
       }
     },
@@ -2133,6 +2149,6 @@
       "approvedAt": "2026-10-30T14:59:45Z"
     }
   },
-  "updated": "2026-10-30T14:59:46Z",
+  "updated": "2026-10-30T16:36:51Z",
   "watercolourNote": "plants[id].watercolour.status is awaiting_review until approved by editing this file (never automatically)."
 }

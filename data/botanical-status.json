@@ -23,14 +23,14 @@
     "file": "docs/briefs/BOTANICAL_ASSET_BRIEF.md",
     "version": "35ac6dd"
   },
-  "updated": "2026-10-30T14:59:45Z",
+  "updated": "2026-10-30T16:36:51Z",
   "summary": {
     "total": 108,
     "missing": 0,
     "pending_review": 3,
     "approved": 104,
-    "rejected": 1,
-    "uncertain_match": 0,
+    "rejected": 0,
+    "uncertain_match": 1,
     "reserved_not_imported": 0,
     "filename_match_only": 0
   },
@@ -1431,31 +1431,25 @@
       "order": 59,
       "plantId": "polystichum-setiferum",
       "botanicalName": "Polystichum setiferum",
-      "status": "rejected",
+      "status": "uncertain_match",
       "expectsBotanical": true,
       "expectsWatercolour": true,
       "assetForm": "both",
       "pngMasterPath": "assets/plant-watercolours/masters/polystichum-setiferum.png",
       "pngSha256": "7b5e651d6fb6ca33018379836f2b7a8e9e6cd33b97163446b6caf4ebab013b40",
       "webpPath": "assets/plant-watercolours/polystichum-setiferum.webp",
-      "webpSha256": "df36203d7c61b2eb45f538aef8e44edf86c9b55013dab051c7a2cd017b666109",
+      "webpSha256": "792fec02023867fe54ce04600cdd2a36e976769d81e8ed1ece2312cdb160d880",
       "verificationState": "pending_review",
       "approvalBasis": null,
-      "matchConfidence": "provisional_cultivar_or_species_check",
+      "matchConfidence": "filename_match_unreviewed",
       "pipelineQa": "imported",
       "watercolour": {
         "status": "awaiting_review",
         "webpPath": "assets/plant-watercolours/polystichum-setiferum-watercolour.webp"
       },
       "manualApprovalAt": null,
-      "notes": "manual rejected: Working size changed to 100 x 75 cm (owner, 2026-10-30; was 60 x 75). Existing art was painted for 60 x 75 (aspect 1.55) and does not fit the 0.75 envelope. Regenerate/review required; do not stretch or upscale.; earlier image version superseded (hash history in botanical-verification.json)",
-      "lastUpdated": "2026-10-15T20:22:03Z",
-      "manualStatus": {
-        "status": "rejected",
-        "imageSha256": "df36203d7c61b2eb45f538aef8e44edf86c9b55013dab051c7a2cd017b666109",
-        "note": "Working size changed to 100 x 75 cm (owner, 2026-10-30; was 60 x 75). Existing art was painted for 60 x 75 (aspect 1.55) and does not fit the 0.75 envelope. Regenerate/review required; do not stretch or upscale.",
-        "setAt": "2026-10-30T15:51:22Z"
-      }
+      "notes": "png master hash differs from botanical-verification.json; earlier image version superseded (hash history in botanical-verification.json)",
+      "lastUpdated": "2026-10-30T16:36:51Z"
     },
     {
       "order": 60,
