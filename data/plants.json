@@ -5952,7 +5952,7 @@
       "botanicalName": "Polystichum setiferum",
       "commonName": "Soft shield fern",
       "type": "fern",
-      "heightCm": 60,
+      "heightCm": 100,
       "spreadCm": 75,
       "light": [
         "part_shade",
@@ -5979,6 +5979,27 @@
       "plantsPerSqM": 3,
       "description": "Evergreen, finely divided fronds with a soft, mossy texture.",
       "notes": "",
+      "workingSize": {
+        "heightCm": 100,
+        "spreadCm": 75,
+        "state": "USER_OVERRIDE",
+        "approvedBy": "owner (Frederic)",
+        "approvedOn": "2026-10-30",
+        "publishedHeightCm": {
+          "derived": 120,
+          "rangeCm": [
+            60,
+            120
+          ],
+          "rhsBandCm": [
+            100,
+            150
+          ],
+          "rhsDescription": "to 1.2 m"
+        },
+        "previousLibraryHeightCm": 60,
+        "source": "catalogue/e3/v1.3-candidate (polystichum-setiferum, change C08): published values are kept beside the working size and are not replaced by it"
+      },
       "design": {
         "styles": [
           "naturalistic",
@@ -6023,10 +6044,10 @@
         "spreadHabit": "clumping"
       },
       "watercolourEnvelope": {
-        "ratio": 1.25,
-        "shapeClass": "broad_mounded",
+        "ratio": 0.75,
+        "shapeClass": "narrow_upright",
         "canonicalPixelsPerCm": 10,
-        "canonicalHeightPx": 600,
+        "canonicalHeightPx": 1000,
         "expectedSpreadPx": 750,
         "ratioTolerance": 0.12,
         "hardFailTolerance": 0.25,

@@ -1093,7 +1093,7 @@
       "approvedAt": "2026-10-28T07:15:53Z"
     },
     "polystichum-setiferum": {
-      "status": "confirmed",
+      "status": "pending_review",
       "imageSha256": "df36203d7c61b2eb45f538aef8e44edf86c9b55013dab051c7a2cd017b666109",
       "pngSha256": "7b5e651d6fb6ca33018379836f2b7a8e9e6cd33b97163446b6caf4ebab013b40",
       "bundleMatchStatus": "provisional_cultivar_or_species_check",
@@ -1106,7 +1106,7 @@
         "supersededAt": "2026-10-15T20:22:03Z"
       },
       "watercolour": {
-        "status": "confirmed",
+        "status": "awaiting_review",
         "imageSha256": "62bcb0daaea08ac7d23e9780154403b6ea19b6dcbd6e78221a43f27906e14268",
         "pngSha256": "cfaa5de71d3cac44248d0e855d30238e05934a4b0d16dde8f2f2c18d737cbc00",
         "importedAt": "2026-10-15T20:21:46Z",
@@ -1116,10 +1116,8 @@
           "pngSha256": "252c47ff3518fdb1deb424e4d0f05ed084331a598ee5711626f854b3d87970fa",
           "importedAt": "2026-10-15T13:44:49Z",
           "supersededAt": "2026-10-15T20:21:46Z"
-        },
-        "approvedAt": "2026-10-16T10:47:39Z"
-      },
-      "approvedAt": "2026-10-16T10:47:39Z"
+        }
+      }
     },
     "pulmonaria-blue-ensign": {
       "status": "confirmed",
