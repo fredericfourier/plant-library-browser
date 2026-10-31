@@ -1,6 +1,28 @@
 {
-  "schemaVersion": 7,
-  "updated": "2026-10-30",
+  "schemaVersion": 8,
+  "updated": "2026-10-31",
+  "catalogue": {
+    "name": "E3",
+    "version": "1.4.0-candidate",
+    "recordCount": 108,
+    "engineCatalogueDatasetSha256": "8b4e9d9d02cd630494a33b34051b7c816e3ed2e50f5471c18e90c4de64e53d81",
+    "sharedDataSha256": "e03406b2819cdcdee47e9aaa5b98f4507eae5345458840a66c5756a412884c81",
+    "workingSizeSchemaVersion": 1,
+    "exportVersion": "1",
+    "engineCatalogueRef": {
+      "path": "catalogue/e3/v1.4-candidate/plants-e3-v1.4-candidate.json",
+      "fileSha256": "308b4297041e5e28768360939dc1213383ed7a95f72a1447c02b47c09718ffe4"
+    },
+    "artworkManifest": {
+      "path": "assets/plant-watercolours/manifest.json",
+      "sha256": "6f7123797d790d8d5196e6eb451967101f855663395c55e99b102d098b44be2e"
+    },
+    "lightFields": {
+      "light": "TOLERATES: conditions in which the plant may grow (hard eligibility)",
+      "preferredLight": "PREFERS: conditions best suited to its design use; optional, provisional, never a hard exclusion"
+    },
+    "status": "CANDIDATE: reconciled catalogue for browser/engine synchronisation; pending review; no plant newly enabled or customer-activated; no engine-consumed value changed; not a release"
+  },
   "plants": [
     {
       "id": "salvia-caradonna",
@@ -10,7 +32,8 @@
       "heightCm": 60,
       "spreadCm": 40,
       "light": [
-        "full_sun"
+        "full_sun",
+        "part_shade"
       ],
       "soil": [
         "clay",
@@ -28,7 +51,7 @@
       "floweringEnd": 9,
       "foliage": "deciduous",
       "foliageColour": "green",
-      "hardiness": "H7",
+      "hardiness": "H6",
       "maintenance": "low",
       "requiresStaking": false,
       "winterProtection": false,
@@ -102,6 +125,14 @@
         ],
         "confidence": "medium",
         "basis": "RHS profile/cultivar-group review; 2–5 years is the matching RHS maturity band pending exact-profile refinement"
+      },
+      "preferredLight": {
+        "values": [
+          "full_sun"
+        ],
+        "state": "PROVISIONAL",
+        "active": false,
+        "basis": "CP4-F2D audit design judgement (not a verified fact); owner confirmation pending; not used in selection"
       }
     },
     {
@@ -119,7 +150,8 @@
         "sandy"
       ],
       "moisture": [
-        "average"
+        "average",
+        "dry"
       ],
       "flowerColours": [
         "purple"
@@ -203,6 +235,14 @@
         ],
         "confidence": "medium",
         "basis": "RHS profile/cultivar-group review; 2–5 years is the matching RHS maturity band pending exact-profile refinement"
+      },
+      "preferredLight": {
+        "values": [
+          "full_sun"
+        ],
+        "state": "PROVISIONAL",
+        "active": false,
+        "basis": "CP4-F2D audit design judgement (not a verified fact); owner confirmation pending; not used in selection"
       }
     },
     {
@@ -311,6 +351,15 @@
         "hardFailTolerance": 0.25,
         "scaleMode": "uniform",
         "groundAnchor": "bottom"
+      },
+      "preferredLight": {
+        "values": [
+          "full_sun",
+          "part_shade"
+        ],
+        "state": "PROVISIONAL",
+        "active": false,
+        "basis": "CP4-F2D audit design judgement (not a verified fact); owner confirmation pending; not used in selection"
       }
     },
     {
@@ -318,7 +367,7 @@
       "botanicalName": "Geranium macrorrhizum 'Ingwersen's Variety'",
       "commonName": "Rock cranesbill",
       "type": "groundcover",
-      "heightCm": 30,
+      "heightCm": 40,
       "spreadCm": 60,
       "light": [
         "full_sun",
@@ -394,10 +443,10 @@
         "spreadHabit": "running"
       },
       "watercolourEnvelope": {
-        "ratio": 2,
+        "ratio": 1.5,
         "shapeClass": "broad_spreading",
         "canonicalPixelsPerCm": 10,
-        "canonicalHeightPx": 300,
+        "canonicalHeightPx": 400,
         "expectedSpreadPx": 600,
         "ratioTolerance": 0.12,
         "hardFailTolerance": 0.25,
@@ -416,11 +465,20 @@
         ],
         "confidence": "high",
         "basis": "RHS profile"
+      },
+      "preferredLight": {
+        "values": [
+          "part_shade",
+          "full_shade"
+        ],
+        "state": "PROVISIONAL",
+        "active": false,
+        "basis": "CP4-F2D audit design judgement (not a verified fact); owner confirmation pending; not used in selection"
       }
     },
     {
       "id": "nepeta-walkers-low",
-      "botanicalName": "Nepeta × faassenii 'Walker's Low'",
+      "botanicalName": "Nepeta racemosa 'Walker's Low'",
       "commonName": "Catmint",
       "type": "perennial",
       "heightCm": 60,
@@ -521,6 +579,14 @@
         "hardFailTolerance": 0.25,
         "scaleMode": "uniform",
         "groundAnchor": "bottom"
+      },
+      "preferredLight": {
+        "values": [
+          "full_sun"
+        ],
+        "state": "PROVISIONAL",
+        "active": false,
+        "basis": "CP4-F2D audit design judgement (not a verified fact); owner confirmation pending; not used in selection"
       }
     },
     {
@@ -536,11 +602,13 @@
       ],
       "soil": [
         "clay",
-        "loam"
+        "loam",
+        "sandy"
       ],
       "moisture": [
         "average",
-        "moist"
+        "moist",
+        "dry"
       ],
       "flowerColours": [
         "apricot",
@@ -548,9 +616,9 @@
       ],
       "floweringStart": 5,
       "floweringEnd": 9,
-      "foliage": "semi-evergreen",
+      "foliage": "deciduous",
       "foliageColour": "green",
-      "hardiness": "H6",
+      "hardiness": "H7",
       "maintenance": "low",
       "requiresStaking": false,
       "winterProtection": false,
@@ -761,10 +829,10 @@
       "floweringEnd": 10,
       "foliage": "deciduous",
       "foliageColour": "green",
-      "hardiness": "H5",
+      "hardiness": "H4",
       "maintenance": "low",
       "requiresStaking": false,
-      "winterProtection": false,
+      "winterProtection": true,
       "pollinatorValue": 5,
       "plantsPerSqM": 5,
       "description": "Tall, see-through stems topped with purple clusters. Self-seeds gently.",
@@ -852,10 +920,10 @@
       "heightCm": 100,
       "spreadCm": 45,
       "light": [
-        "full_sun"
+        "full_sun",
+        "part_shade"
       ],
       "soil": [
-        "clay",
         "loam",
         "sandy"
       ],
@@ -871,7 +939,7 @@
       "floweringEnd": 9,
       "foliage": "deciduous",
       "foliageColour": "green",
-      "hardiness": "H7",
+      "hardiness": "H5",
       "maintenance": "moderate",
       "requiresStaking": false,
       "winterProtection": false,
@@ -956,10 +1024,10 @@
       "heightCm": 70,
       "spreadCm": 45,
       "light": [
-        "full_sun"
+        "full_sun",
+        "part_shade"
       ],
       "soil": [
-        "clay",
         "loam",
         "sandy"
       ],
@@ -974,7 +1042,7 @@
       "floweringEnd": 9,
       "foliage": "deciduous",
       "foliageColour": "green",
-      "hardiness": "H7",
+      "hardiness": "H5",
       "maintenance": "moderate",
       "requiresStaking": false,
       "winterProtection": false,
@@ -1073,7 +1141,7 @@
       ],
       "floweringStart": 6,
       "floweringEnd": 9,
-      "foliage": "deciduous",
+      "foliage": "semi-evergreen",
       "foliageColour": "green",
       "hardiness": "H7",
       "maintenance": "low",
@@ -1263,7 +1331,8 @@
       ],
       "soil": [
         "clay",
-        "loam"
+        "loam",
+        "sandy"
       ],
       "moisture": [
         "average",
@@ -1355,7 +1424,7 @@
       "botanicalName": "Rudbeckia fulgida var. sullivantii 'Goldsturm'",
       "commonName": "Black-eyed Susan",
       "type": "perennial",
-      "heightCm": 70,
+      "heightCm": 60,
       "spreadCm": 50,
       "light": [
         "full_sun",
@@ -1376,7 +1445,7 @@
       "floweringEnd": 10,
       "foliage": "deciduous",
       "foliageColour": "green",
-      "hardiness": "H7",
+      "hardiness": "H6",
       "maintenance": "low",
       "requiresStaking": false,
       "winterProtection": false,
@@ -1427,10 +1496,10 @@
         "spreadHabit": "spreading"
       },
       "watercolourEnvelope": {
-        "ratio": 0.714,
-        "shapeClass": "narrow_upright",
+        "ratio": 0.833,
+        "shapeClass": "balanced_mounded",
         "canonicalPixelsPerCm": 10,
-        "canonicalHeightPx": 700,
+        "canonicalHeightPx": 600,
         "expectedSpreadPx": 500,
         "ratioTolerance": 0.12,
         "hardFailTolerance": 0.25,
@@ -1463,7 +1532,8 @@
       ],
       "soil": [
         "clay",
-        "loam"
+        "loam",
+        "sandy"
       ],
       "moisture": [
         "average",
@@ -1667,7 +1737,8 @@
       ],
       "soil": [
         "clay",
-        "loam"
+        "loam",
+        "sandy"
       ],
       "moisture": [
         "average",
@@ -1761,7 +1832,7 @@
       "botanicalName": "Anemone hupehensis 'Hadspen Abundance'",
       "commonName": "Japanese anemone",
       "type": "perennial",
-      "heightCm": 75,
+      "heightCm": 95,
       "spreadCm": 50,
       "light": [
         "full_sun",
@@ -1769,7 +1840,8 @@
       ],
       "soil": [
         "clay",
-        "loam"
+        "loam",
+        "sandy"
       ],
       "moisture": [
         "average",
@@ -1832,10 +1904,10 @@
         "spreadHabit": "running"
       },
       "watercolourEnvelope": {
-        "ratio": 0.667,
-        "shapeClass": "narrow_upright",
+        "ratio": 0.526,
+        "shapeClass": "very_narrow_upright",
         "canonicalPixelsPerCm": 10,
-        "canonicalHeightPx": 750,
+        "canonicalHeightPx": 950,
         "expectedSpreadPx": 500,
         "ratioTolerance": 0.12,
         "hardFailTolerance": 0.25,
@@ -1861,13 +1933,12 @@
       "botanicalName": "Hylotelephium 'Herbstfreude'",
       "commonName": "Sedum, ice plant",
       "type": "perennial",
-      "heightCm": 50,
+      "heightCm": 60,
       "spreadCm": 50,
       "light": [
         "full_sun"
       ],
       "soil": [
-        "clay",
         "loam",
         "sandy"
       ],
@@ -1935,10 +2006,10 @@
         "spreadHabit": "clumping"
       },
       "watercolourEnvelope": {
-        "ratio": 1,
+        "ratio": 0.833,
         "shapeClass": "balanced_mounded",
         "canonicalPixelsPerCm": 10,
-        "canonicalHeightPx": 500,
+        "canonicalHeightPx": 600,
         "expectedSpreadPx": 500,
         "ratioTolerance": 0.12,
         "hardFailTolerance": 0.25,
@@ -2085,7 +2156,7 @@
       "floweringEnd": 10,
       "foliage": "deciduous",
       "foliageColour": "green",
-      "hardiness": "H5",
+      "hardiness": "H4",
       "maintenance": "moderate",
       "requiresStaking": false,
       "winterProtection": false,
@@ -2192,7 +2263,7 @@
       "floweringEnd": 9,
       "foliage": "deciduous",
       "foliageColour": "green",
-      "hardiness": "H7",
+      "hardiness": "H5",
       "maintenance": "low",
       "requiresStaking": false,
       "winterProtection": false,
@@ -2274,7 +2345,7 @@
     },
     {
       "id": "perovskia-blue-spire",
-      "botanicalName": "Salvia yangii 'Blue Spire'",
+      "botanicalName": "Salvia 'Blue Spire'",
       "commonName": "Russian sage",
       "type": "perennial",
       "heightCm": 120,
@@ -2384,7 +2455,8 @@
       ],
       "soil": [
         "loam",
-        "sandy"
+        "sandy",
+        "clay"
       ],
       "moisture": [
         "dry"
@@ -2498,7 +2570,7 @@
       "floweringEnd": 8,
       "foliage": "deciduous",
       "foliageColour": "green",
-      "hardiness": "H6",
+      "hardiness": "H7",
       "maintenance": "moderate",
       "requiresStaking": true,
       "winterProtection": false,
@@ -2577,6 +2649,14 @@
         ],
         "confidence": "medium",
         "basis": "RHS profile/cultivar-group review; 2–5 years is the matching RHS maturity band pending exact-profile refinement"
+      },
+      "preferredLight": {
+        "values": [
+          "part_shade"
+        ],
+        "state": "PROVISIONAL",
+        "active": false,
+        "basis": "CP4-F2D audit design judgement (not a verified fact); owner confirmation pending; not used in selection"
       }
     },
     {
@@ -2592,7 +2672,8 @@
       ],
       "soil": [
         "clay",
-        "loam"
+        "loam",
+        "sandy"
       ],
       "moisture": [
         "average",
@@ -2892,11 +2973,13 @@
       "heightCm": 90,
       "spreadCm": 60,
       "light": [
-        "full_sun"
+        "full_sun",
+        "part_shade"
       ],
       "soil": [
         "clay",
-        "loam"
+        "loam",
+        "sandy"
       ],
       "moisture": [
         "average"
@@ -2908,7 +2991,7 @@
       "floweringEnd": 9,
       "foliage": "deciduous",
       "foliageColour": "green",
-      "hardiness": "H7",
+      "hardiness": "H4",
       "maintenance": "moderate",
       "requiresStaking": true,
       "winterProtection": false,
@@ -2989,8 +3072,7 @@
       "heightCm": 70,
       "spreadCm": 60,
       "light": [
-        "full_sun",
-        "part_shade"
+        "full_sun"
       ],
       "soil": [
         "clay",
@@ -3007,7 +3089,7 @@
       "floweringEnd": 8,
       "foliage": "deciduous",
       "foliageColour": "green",
-      "hardiness": "H7",
+      "hardiness": "H6",
       "maintenance": "low",
       "requiresStaking": false,
       "winterProtection": false,
@@ -3086,7 +3168,7 @@
       "botanicalName": "Crocosmia 'Lucifer'",
       "commonName": "Montbretia",
       "type": "perennial",
-      "heightCm": 100,
+      "heightCm": 120,
       "spreadCm": 30,
       "light": [
         "full_sun",
@@ -3094,10 +3176,12 @@
       ],
       "soil": [
         "loam",
-        "sandy"
+        "sandy",
+        "clay"
       ],
       "moisture": [
-        "average"
+        "average",
+        "dry"
       ],
       "flowerColours": [
         "red"
@@ -3106,7 +3190,7 @@
       "floweringEnd": 8,
       "foliage": "deciduous",
       "foliageColour": "green",
-      "hardiness": "H6",
+      "hardiness": "H5",
       "maintenance": "low",
       "requiresStaking": false,
       "winterProtection": false,
@@ -3157,10 +3241,10 @@
         "spreadHabit": "naturalising"
       },
       "watercolourEnvelope": {
-        "ratio": 0.3,
+        "ratio": 0.25,
         "shapeClass": "very_narrow_upright",
         "canonicalPixelsPerCm": 10,
-        "canonicalHeightPx": 1000,
+        "canonicalHeightPx": 1200,
         "expectedSpreadPx": 300,
         "ratioTolerance": 0.12,
         "hardFailTolerance": 0.25,
@@ -3194,7 +3278,8 @@
       ],
       "soil": [
         "clay",
-        "loam"
+        "loam",
+        "sandy"
       ],
       "moisture": [
         "average",
@@ -3291,15 +3376,15 @@
       "heightCm": 70,
       "spreadCm": 45,
       "light": [
-        "full_sun",
-        "part_shade"
+        "full_sun"
       ],
       "soil": [
         "loam",
         "sandy"
       ],
       "moisture": [
-        "average"
+        "average",
+        "dry"
       ],
       "flowerColours": [
         "lavender"
@@ -3389,10 +3474,11 @@
       "botanicalName": "Penstemon 'Andenken an Friedrich Hahn'",
       "commonName": "Beardtongue",
       "type": "perennial",
-      "heightCm": 70,
+      "heightCm": 90,
       "spreadCm": 50,
       "light": [
-        "full_sun"
+        "full_sun",
+        "part_shade"
       ],
       "soil": [
         "loam",
@@ -3408,10 +3494,10 @@
       "floweringEnd": 10,
       "foliage": "semi-evergreen",
       "foliageColour": "green",
-      "hardiness": "H4",
+      "hardiness": "H5",
       "maintenance": "moderate",
       "requiresStaking": false,
-      "winterProtection": false,
+      "winterProtection": true,
       "pollinatorValue": 3,
       "plantsPerSqM": 4,
       "description": "Wine-red tubular flowers all summer. Leave old stems until spring.",
@@ -3459,10 +3545,10 @@
         "spreadHabit": "clumping"
       },
       "watercolourEnvelope": {
-        "ratio": 0.714,
-        "shapeClass": "narrow_upright",
+        "ratio": 0.556,
+        "shapeClass": "very_narrow_upright",
         "canonicalPixelsPerCm": 10,
-        "canonicalHeightPx": 700,
+        "canonicalHeightPx": 900,
         "expectedSpreadPx": 500,
         "ratioTolerance": 0.12,
         "hardFailTolerance": 0.25,
@@ -3495,7 +3581,8 @@
       ],
       "soil": [
         "loam",
-        "sandy"
+        "sandy",
+        "clay"
       ],
       "moisture": [
         "dry",
@@ -3598,7 +3685,8 @@
       ],
       "soil": [
         "clay",
-        "loam"
+        "loam",
+        "sandy"
       ],
       "moisture": [
         "average",
@@ -3693,7 +3781,7 @@
       "botanicalName": "Allium hollandicum 'Purple Sensation'",
       "commonName": "Ornamental onion (bulb)",
       "type": "bulb",
-      "heightCm": 80,
+      "heightCm": 100,
       "spreadCm": 20,
       "light": [
         "full_sun"
@@ -3765,10 +3853,10 @@
         "spreadHabit": "naturalising"
       },
       "watercolourEnvelope": {
-        "ratio": 0.25,
+        "ratio": 0.2,
         "shapeClass": "very_narrow_upright",
         "canonicalPixelsPerCm": 10,
-        "canonicalHeightPx": 800,
+        "canonicalHeightPx": 1000,
         "expectedSpreadPx": 200,
         "ratioTolerance": 0.12,
         "hardFailTolerance": 0.25,
@@ -3803,7 +3891,8 @@
       ],
       "soil": [
         "clay",
-        "loam"
+        "loam",
+        "sandy"
       ],
       "moisture": [
         "average",
@@ -3896,6 +3985,15 @@
         ],
         "confidence": "high",
         "basis": "RHS profile"
+      },
+      "preferredLight": {
+        "values": [
+          "full_sun",
+          "part_shade"
+        ],
+        "state": "PROVISIONAL",
+        "active": false,
+        "basis": "CP4-F2D audit design judgement (not a verified fact); owner confirmation pending; not used in selection"
       }
     },
     {
@@ -3907,7 +4005,7 @@
       "spreadCm": 100,
       "light": [
         "part_shade",
-        "full_shade"
+        "full_sun"
       ],
       "soil": [
         "clay",
@@ -3924,7 +4022,7 @@
       "floweringEnd": 7,
       "foliage": "deciduous",
       "foliageColour": "green",
-      "hardiness": "H7",
+      "hardiness": "H5",
       "maintenance": "low",
       "requiresStaking": false,
       "winterProtection": false,
@@ -4006,8 +4104,7 @@
       "heightCm": 90,
       "spreadCm": 60,
       "light": [
-        "full_sun",
-        "part_shade"
+        "full_sun"
       ],
       "soil": [
         "clay",
@@ -4023,9 +4120,9 @@
       ],
       "floweringStart": 6,
       "floweringEnd": 8,
-      "foliage": "evergreen",
+      "foliage": "deciduous",
       "foliageColour": "green",
-      "hardiness": "H7",
+      "hardiness": "H6",
       "maintenance": "low",
       "requiresStaking": false,
       "winterProtection": false,
@@ -4126,9 +4223,9 @@
       ],
       "floweringStart": 6,
       "floweringEnd": 8,
-      "foliage": "deciduous",
+      "foliage": "semi-evergreen",
       "foliageColour": "green",
-      "hardiness": "H7",
+      "hardiness": "H6",
       "maintenance": "low",
       "requiresStaking": false,
       "winterProtection": false,
@@ -4332,7 +4429,7 @@
       "floweringEnd": 5,
       "foliage": "deciduous",
       "foliageColour": "green",
-      "hardiness": "H7",
+      "hardiness": "H6",
       "maintenance": "low",
       "requiresStaking": false,
       "winterProtection": false,
@@ -4417,7 +4514,8 @@
       "spreadCm": 50,
       "light": [
         "full_sun",
-        "part_shade"
+        "part_shade",
+        "full_shade"
       ],
       "soil": [
         "clay",
@@ -4509,6 +4607,15 @@
         ],
         "confidence": "medium",
         "basis": "RHS profile/cultivar-group review; 2–5 years is the matching RHS maturity band pending exact-profile refinement"
+      },
+      "preferredLight": {
+        "values": [
+          "full_sun",
+          "part_shade"
+        ],
+        "state": "PROVISIONAL",
+        "active": false,
+        "basis": "CP4-F2D audit design judgement (not a verified fact); owner confirmation pending; not used in selection"
       }
     },
     {
@@ -4516,7 +4623,7 @@
       "botanicalName": "Heuchera micrantha 'Palace Purple'",
       "commonName": "Coral bells",
       "type": "groundcover",
-      "heightCm": 45,
+      "heightCm": 60,
       "spreadCm": 45,
       "light": [
         "full_sun",
@@ -4529,9 +4636,12 @@
       "moisture": [
         "average"
       ],
-      "flowerColours": [],
-      "floweringStart": null,
-      "floweringEnd": null,
+      "flowerColours": [
+        "white",
+        "pink"
+      ],
+      "floweringStart": 6,
+      "floweringEnd": 8,
       "foliage": "evergreen",
       "foliageColour": "purple",
       "hardiness": "H7",
@@ -4585,10 +4695,10 @@
         "spreadHabit": "clumping"
       },
       "watercolourEnvelope": {
-        "ratio": 1,
-        "shapeClass": "balanced_mounded",
+        "ratio": 0.75,
+        "shapeClass": "narrow_upright",
         "canonicalPixelsPerCm": 10,
-        "canonicalHeightPx": 450,
+        "canonicalHeightPx": 600,
         "expectedSpreadPx": 450,
         "ratioTolerance": 0.12,
         "hardFailTolerance": 0.25,
@@ -4607,6 +4717,14 @@
         ],
         "confidence": "medium",
         "basis": "RHS profile/cultivar-group review; 2–5 years is the matching RHS maturity band pending exact-profile refinement"
+      },
+      "preferredLight": {
+        "values": [
+          "part_shade"
+        ],
+        "state": "PROVISIONAL",
+        "active": false,
+        "basis": "CP4-F2D audit design judgement (not a verified fact); owner confirmation pending; not used in selection"
       }
     },
     {
@@ -4622,7 +4740,8 @@
       ],
       "soil": [
         "clay",
-        "loam"
+        "loam",
+        "sandy"
       ],
       "moisture": [
         "average",
@@ -4635,7 +4754,7 @@
       "floweringEnd": 5,
       "foliage": "deciduous",
       "foliageColour": "silver",
-      "hardiness": "H7",
+      "hardiness": "H6",
       "maintenance": "low",
       "requiresStaking": false,
       "winterProtection": false,
@@ -4710,6 +4829,15 @@
         ],
         "confidence": "medium",
         "basis": "RHS profile/cultivar-group review; 2–5 years is the matching RHS maturity band pending exact-profile refinement"
+      },
+      "preferredLight": {
+        "values": [
+          "part_shade",
+          "full_shade"
+        ],
+        "state": "PROVISIONAL",
+        "active": false,
+        "basis": "CP4-F2D audit design judgement (not a verified fact); owner confirmation pending; not used in selection"
       }
     },
     {
@@ -4736,9 +4864,9 @@
       ],
       "floweringStart": 3,
       "floweringEnd": 5,
-      "foliage": "semi-evergreen",
+      "foliage": "deciduous",
       "foliageColour": "green",
-      "hardiness": "H7",
+      "hardiness": "H6",
       "maintenance": "low",
       "requiresStaking": false,
       "winterProtection": false,
@@ -4810,6 +4938,15 @@
         ],
         "confidence": "medium",
         "basis": "RHS profile/cultivar-group review; 2–5 years is the matching RHS maturity band pending exact-profile refinement"
+      },
+      "preferredLight": {
+        "values": [
+          "part_shade",
+          "full_shade"
+        ],
+        "state": "PROVISIONAL",
+        "active": false,
+        "basis": "CP4-F2D audit design judgement (not a verified fact); owner confirmation pending; not used in selection"
       }
     },
     {
@@ -4821,7 +4958,8 @@
       "spreadCm": 45,
       "light": [
         "part_shade",
-        "full_shade"
+        "full_shade",
+        "full_sun"
       ],
       "soil": [
         "clay",
@@ -4914,6 +5052,15 @@
         ],
         "confidence": "medium",
         "basis": "RHS profile/cultivar-group review; 2–5 years is the matching RHS maturity band pending exact-profile refinement"
+      },
+      "preferredLight": {
+        "values": [
+          "part_shade",
+          "full_shade"
+        ],
+        "state": "PROVISIONAL",
+        "active": false,
+        "basis": "CP4-F2D audit design judgement (not a verified fact); owner confirmation pending; not used in selection"
       }
     },
     {
@@ -4925,11 +5072,13 @@
       "spreadCm": 60,
       "light": [
         "part_shade",
-        "full_shade"
+        "full_shade",
+        "full_sun"
       ],
       "soil": [
         "clay",
-        "loam"
+        "loam",
+        "sandy"
       ],
       "moisture": [
         "dry",
@@ -4940,7 +5089,7 @@
       ],
       "floweringStart": 4,
       "floweringEnd": 5,
-      "foliage": "evergreen",
+      "foliage": "semi-evergreen",
       "foliageColour": "green",
       "hardiness": "H7",
       "maintenance": "low",
@@ -5042,9 +5191,9 @@
       ],
       "floweringStart": 6,
       "floweringEnd": 9,
-      "foliage": "semi-evergreen",
+      "foliage": "evergreen",
       "foliageColour": "green",
-      "hardiness": "H6",
+      "hardiness": "H4",
       "maintenance": "low",
       "requiresStaking": false,
       "winterProtection": false,
@@ -5138,7 +5287,8 @@
       ],
       "soil": [
         "loam",
-        "sandy"
+        "sandy",
+        "clay"
       ],
       "moisture": [
         "dry",
@@ -5149,9 +5299,9 @@
       ],
       "floweringStart": 6,
       "floweringEnd": 9,
-      "foliage": "semi-evergreen",
+      "foliage": "deciduous",
       "foliageColour": "green",
-      "hardiness": "H5",
+      "hardiness": "H4",
       "maintenance": "low",
       "requiresStaking": false,
       "winterProtection": false,
@@ -5256,7 +5406,7 @@
       "floweringEnd": 10,
       "foliage": "deciduous",
       "foliageColour": "green",
-      "hardiness": "H7",
+      "hardiness": "H6",
       "maintenance": "low",
       "requiresStaking": false,
       "winterProtection": false,
@@ -5455,7 +5605,8 @@
       ],
       "soil": [
         "clay",
-        "loam"
+        "loam",
+        "sandy"
       ],
       "moisture": [
         "average",
@@ -5466,9 +5617,9 @@
       ],
       "floweringStart": 6,
       "floweringEnd": 9,
-      "foliage": "semi-evergreen",
+      "foliage": "evergreen",
       "foliageColour": "green",
-      "hardiness": "H7",
+      "hardiness": "H5",
       "maintenance": "low",
       "requiresStaking": false,
       "winterProtection": false,
@@ -5565,11 +5716,11 @@
         "average"
       ],
       "flowerColours": [
-        "buff"
+        "white"
       ],
       "floweringStart": 8,
       "floweringEnd": 10,
-      "foliage": "semi-evergreen",
+      "foliage": "evergreen",
       "foliageColour": "green",
       "hardiness": "H7",
       "maintenance": "low",
@@ -5657,10 +5808,13 @@
       "spreadCm": 45,
       "light": [
         "part_shade",
-        "full_shade"
+        "full_shade",
+        "full_sun"
       ],
       "soil": [
-        "loam"
+        "loam",
+        "clay",
+        "sandy"
       ],
       "moisture": [
         "average",
@@ -5762,7 +5916,8 @@
       ],
       "soil": [
         "clay",
-        "loam"
+        "loam",
+        "sandy"
       ],
       "moisture": [
         "average",
@@ -5773,7 +5928,7 @@
       "floweringEnd": null,
       "foliage": "evergreen",
       "foliageColour": "variegated",
-      "hardiness": "H5",
+      "hardiness": "H7",
       "maintenance": "low",
       "requiresStaking": false,
       "winterProtection": false,
@@ -5846,6 +6001,14 @@
         ],
         "confidence": "medium",
         "basis": "RHS profile/cultivar-group review; 2–5 years is the matching RHS maturity band pending exact-profile refinement"
+      },
+      "preferredLight": {
+        "values": [
+          "part_shade"
+        ],
+        "state": "PROVISIONAL",
+        "active": false,
+        "basis": "CP4-F2D audit design judgement (not a verified fact); owner confirmation pending; not used in selection"
       }
     },
     {
@@ -5861,7 +6024,8 @@
       ],
       "soil": [
         "clay",
-        "loam"
+        "loam",
+        "sandy"
       ],
       "moisture": [
         "dry",
@@ -5960,7 +6124,8 @@
       ],
       "soil": [
         "clay",
-        "loam"
+        "loam",
+        "sandy"
       ],
       "moisture": [
         "average",
@@ -5979,27 +6144,6 @@
       "plantsPerSqM": 3,
       "description": "Evergreen, finely divided fronds with a soft, mossy texture.",
       "notes": "",
-      "workingSize": {
-        "heightCm": 100,
-        "spreadCm": 75,
-        "state": "USER_OVERRIDE",
-        "approvedBy": "owner (Frederic)",
-        "approvedOn": "2026-10-30",
-        "publishedHeightCm": {
-          "derived": 120,
-          "rangeCm": [
-            60,
-            120
-          ],
-          "rhsBandCm": [
-            100,
-            150
-          ],
-          "rhsDescription": "to 1.2 m"
-        },
-        "previousLibraryHeightCm": 60,
-        "source": "catalogue/e3/v1.3-candidate (polystichum-setiferum, change C08): published values are kept beside the working size and are not replaced by it"
-      },
       "design": {
         "styles": [
           "naturalistic",
@@ -6066,6 +6210,26 @@
         ],
         "confidence": "medium",
         "basis": "RHS profile/cultivar-group review; 2–5 years is the matching RHS maturity band pending exact-profile refinement"
+      },
+      "preferredLight": {
+        "values": [
+          "part_shade",
+          "full_shade"
+        ],
+        "state": "PROVISIONAL",
+        "active": false,
+        "basis": "CP4-F2D audit design judgement (not a verified fact); owner confirmation pending; not used in selection"
+      },
+      "workingSize": {
+        "schema": 1,
+        "heightCm": 100,
+        "spreadCm": 75,
+        "state": "USER_OVERRIDE",
+        "botanicalHeightCm": 120,
+        "publishedRangeCm": [
+          60,
+          120
+        ]
       }
     },
     {
@@ -6073,7 +6237,7 @@
       "botanicalName": "Kniphofia 'Tawny King'",
       "commonName": "Red hot poker",
       "type": "perennial",
-      "heightCm": 100,
+      "heightCm": 120,
       "spreadCm": 50,
       "light": [
         "full_sun"
@@ -6092,7 +6256,7 @@
       ],
       "floweringStart": 7,
       "floweringEnd": 10,
-      "foliage": "semi-evergreen",
+      "foliage": "deciduous",
       "foliageColour": "green",
       "hardiness": "H5",
       "maintenance": "low",
@@ -6147,10 +6311,10 @@
         "spreadHabit": "clumping"
       },
       "watercolourEnvelope": {
-        "ratio": 0.5,
+        "ratio": 0.417,
         "shapeClass": "very_narrow_upright",
         "canonicalPixelsPerCm": 10,
-        "canonicalHeightPx": 1000,
+        "canonicalHeightPx": 1200,
         "expectedSpreadPx": 500,
         "ratioTolerance": 0.12,
         "hardFailTolerance": 0.25,
@@ -6180,7 +6344,8 @@
       "spreadCm": 40,
       "light": [
         "full_sun",
-        "part_shade"
+        "part_shade",
+        "full_shade"
       ],
       "soil": [
         "clay",
@@ -6276,6 +6441,15 @@
         ],
         "confidence": "high",
         "basis": "RHS profile"
+      },
+      "preferredLight": {
+        "values": [
+          "full_sun",
+          "part_shade"
+        ],
+        "state": "PROVISIONAL",
+        "active": false,
+        "basis": "CP4-F2D audit design judgement (not a verified fact); owner confirmation pending; not used in selection"
       }
     },
     {
@@ -6501,7 +6675,7 @@
       ],
       "floweringStart": 6,
       "floweringEnd": 9,
-      "foliage": "deciduous",
+      "foliage": "semi-evergreen",
       "foliageColour": "grey-green",
       "hardiness": "H7",
       "maintenance": "low",
@@ -6596,7 +6770,8 @@
         "sandy"
       ],
       "moisture": [
-        "average"
+        "average",
+        "dry"
       ],
       "flowerColours": [],
       "floweringStart": 3,
@@ -6917,7 +7092,7 @@
       "foliageColour": "green",
       "hardiness": "H7",
       "maintenance": "moderate",
-      "requiresStaking": false,
+      "requiresStaking": true,
       "winterProtection": false,
       "pollinatorValue": 4,
       "plantsPerSqM": 3,
@@ -7121,7 +7296,7 @@
       "floweringEnd": 9,
       "foliage": "deciduous",
       "foliageColour": "green",
-      "hardiness": "H7",
+      "hardiness": "H5",
       "maintenance": "moderate",
       "requiresStaking": false,
       "winterProtection": false,
@@ -7215,7 +7390,8 @@
       ],
       "soil": [
         "clay",
-        "loam"
+        "loam",
+        "sandy"
       ],
       "moisture": [
         "average",
@@ -7226,7 +7402,7 @@
       ],
       "floweringStart": 5,
       "floweringEnd": 7,
-      "foliage": "semi-evergreen",
+      "foliage": "deciduous",
       "foliageColour": "green",
       "hardiness": "H7",
       "maintenance": "moderate",
@@ -7285,10 +7461,10 @@
         }
       },
       "watercolourEnvelope": {
-        "ratio": 0.2,
+        "ratio": 0.333,
         "shapeClass": "very_narrow_upright",
         "canonicalPixelsPerCm": 10,
-        "canonicalHeightPx": 2500,
+        "canonicalHeightPx": 1500,
         "expectedSpreadPx": 500,
         "ratioTolerance": 0.12,
         "hardFailTolerance": 0.25,
@@ -7307,6 +7483,17 @@
         ],
         "confidence": "low",
         "basis": "Short-lived biennial/perennial: flowers in its second year; by analogy with the Digitalis purpurea record, to be verified"
+      },
+      "workingSize": {
+        "schema": 1,
+        "heightCm": 150,
+        "spreadCm": 50,
+        "state": "USER_OVERRIDE",
+        "botanicalHeightCm": null,
+        "publishedRangeCm": [
+          100,
+          150
+        ]
       }
     },
     {
@@ -7614,6 +7801,14 @@
         "hardFailTolerance": 0.25,
         "scaleMode": "uniform",
         "groundAnchor": "bottom"
+      },
+      "preferredLight": {
+        "values": [
+          "full_sun"
+        ],
+        "state": "PROVISIONAL",
+        "active": false,
+        "basis": "CP4-F2D audit design judgement (not a verified fact); owner confirmation pending; not used in selection"
       }
     },
     {
@@ -7716,6 +7911,14 @@
         "hardFailTolerance": 0.25,
         "scaleMode": "uniform",
         "groundAnchor": "bottom"
+      },
+      "preferredLight": {
+        "values": [
+          "full_sun"
+        ],
+        "state": "PROVISIONAL",
+        "active": false,
+        "basis": "CP4-F2D audit design judgement (not a verified fact); owner confirmation pending; not used in selection"
       }
     },
     {
@@ -8734,6 +8937,15 @@
         "hardFailTolerance": 0.25,
         "scaleMode": "uniform",
         "groundAnchor": "bottom"
+      },
+      "preferredLight": {
+        "values": [
+          "full_sun",
+          "part_shade"
+        ],
+        "state": "PROVISIONAL",
+        "active": false,
+        "basis": "CP4-F2D audit design judgement (not a verified fact); owner confirmation pending; not used in selection"
       }
     },
     {
@@ -9048,6 +9260,15 @@
         "hardFailTolerance": 0.25,
         "scaleMode": "uniform",
         "groundAnchor": "bottom"
+      },
+      "preferredLight": {
+        "values": [
+          "part_shade",
+          "full_shade"
+        ],
+        "state": "PROVISIONAL",
+        "active": false,
+        "basis": "CP4-F2D audit design judgement (not a verified fact); owner confirmation pending; not used in selection"
       }
     },
     {
@@ -9876,6 +10097,15 @@
         "hardFailTolerance": 0.25,
         "scaleMode": "uniform",
         "groundAnchor": "bottom"
+      },
+      "preferredLight": {
+        "values": [
+          "part_shade",
+          "full_shade"
+        ],
+        "state": "PROVISIONAL",
+        "active": false,
+        "basis": "CP4-F2D audit design judgement (not a verified fact); owner confirmation pending; not used in selection"
       }
     },
     {
@@ -9978,6 +10208,15 @@
         "hardFailTolerance": 0.25,
         "scaleMode": "uniform",
         "groundAnchor": "bottom"
+      },
+      "preferredLight": {
+        "values": [
+          "full_sun",
+          "part_shade"
+        ],
+        "state": "PROVISIONAL",
+        "active": false,
+        "basis": "CP4-F2D audit design judgement (not a verified fact); owner confirmation pending; not used in selection"
       }
     },
     {
@@ -10483,6 +10722,14 @@
         "hardFailTolerance": 0.25,
         "scaleMode": "uniform",
         "groundAnchor": "bottom"
+      },
+      "preferredLight": {
+        "values": [
+          "full_sun"
+        ],
+        "state": "PROVISIONAL",
+        "active": false,
+        "basis": "CP4-F2D audit design judgement (not a verified fact); owner confirmation pending; not used in selection"
       }
     },
     {
@@ -10586,6 +10833,15 @@
         "hardFailTolerance": 0.25,
         "scaleMode": "uniform",
         "groundAnchor": "bottom"
+      },
+      "preferredLight": {
+        "values": [
+          "part_shade",
+          "full_shade"
+        ],
+        "state": "PROVISIONAL",
+        "active": false,
+        "basis": "CP4-F2D audit design judgement (not a verified fact); owner confirmation pending; not used in selection"
       }
     },
     {
