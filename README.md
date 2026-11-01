@@ -2,7 +2,7 @@
 
 Public browser for the Border Designer plant library.
 
-The browser loads `data/plants.json` live at runtime. The private Border Designer repository remains the canonical source; this public repository contains the published browser copy used for cross-device access.
+The browser loads `data/plants.json` live at runtime. The private Border Designer repository remains the canonical source (E3 catalogue; `data/plants.json` is a generated export, never edited by hand: `python3 tools/check_catalogue_sync.py` fails on drift; see its `catalogue` manifest for version and checksum). `light` means what the plant TOLERATES; optional `preferredLight` is a provisional PREFERENCE; this public repository contains the published browser copy used for cross-device access.
 
 ## Watercolour convention
 Production assets are expected at:
