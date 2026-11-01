@@ -49,6 +49,11 @@ def check(root, strict_art=False):
         if e.get('canonicalHeightPx') != h * 10 or e.get('expectedSpreadPx') != s * 10: p6.append(f'{p["id"]}: envelope {e.get("canonicalHeightPx")} x {e.get("expectedSpreadPx")} px != 10 px/cm of {h} x {s}')
         ws = p.get('workingSize')
         if ws and (ws.get('heightCm'), ws.get('spreadCm')) != (h, s): p6.append(f'{p["id"]}: workingSize {ws.get("heightCm")} x {ws.get("spreadCm")} != {h} x {s}')
+        eds = p.get('engineDesignSize')
+        if eds:
+            if not all(isinstance(eds.get(k), int) and eds[k] > 0 for k in ('heightCm', 'spreadCm', 'referenceHeightCm', 'referenceSpreadCm')): p6.append(f'{p["id"]}: engineDesignSize needs positive integer design and reference sizes')
+            elif (eds['referenceHeightCm'], eds['referenceSpreadCm']) != (h, s): p6.append(f'{p["id"]}: engineDesignSize reference {eds["referenceHeightCm"]} x {eds["referenceSpreadCm"]} != botanical reference {h} x {s}')
+            elif (eds['heightCm'], eds['spreadCm']) == (h, s): p6.append(f'{p["id"]}: engineDesignSize equals the reference size (block is redundant)')
     rec('M6_sizes_and_envelope', p6)
     man = root / 'assets/plant-watercolours/manifest.json'; assets = (json.loads(man.read_text(encoding='utf-8')).get('assets') or {}) if man.is_file() else {}; p7 = []; missing = []
     for i in ids:

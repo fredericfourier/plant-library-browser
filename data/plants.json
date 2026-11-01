@@ -6,7 +6,7 @@
     "version": "1.5.0-candidate",
     "recordCount": 108,
     "engineCatalogueDatasetSha256": "828ee2099f9c9a0bcab0f8fa374d228906d9131450ff878184244c8e1fe5788d",
-    "sharedDataSha256": "5c12f2ec4bbc55f79f280badd651d3ebe948dcb81e1ce46231fe2cd35eb16c49",
+    "sharedDataSha256": "abba545e8709f16739f92a0268ab0398a579cdbef95a018a28ec840bbb518919",
     "workingSizeSchemaVersion": 1,
     "exportVersion": "1",
     "engineCatalogueRef": {
@@ -6975,6 +6975,16 @@
         "hardFailTolerance": 0.3,
         "scaleMode": "uniform",
         "groundAnchor": "bottom"
+      },
+      "engineDesignSize": {
+        "schema": 1,
+        "heightCm": 60,
+        "spreadCm": 60,
+        "referenceHeightCm": 100,
+        "referenceSpreadCm": 100,
+        "source": "E3 engine design layer (designSizeCm)",
+        "decision": "Frederic, 2026-10-16",
+        "note": "The planner places this plant at the engine design size. The catalogue/library size is a botanical reference and is not used for placement."
       }
     },
     {
