@@ -24,6 +24,8 @@ jobs:
         uses: actions/checkout@v4
       - name: Published plant data is a faithful, checksummed export of the versioned catalogue
         run: python3 tools/check_catalogue_sync.py
+      - name: Install Pillow (needed by test_browser_availability.py)
+        run: python3 -m pip install pillow
       - name: Existing data tests
         run: |
           python3 tools/test_e3_v12_additions.py
