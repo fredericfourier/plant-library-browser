@@ -1,0 +1,33 @@
+name: Validate catalogue sync
+
+on:
+  pull_request:
+    paths:
+      - 'data/plants.json'
+      - 'tools/check_catalogue_sync.py'
+      - 'assets/plant-watercolours/manifest.json'
+      - '.github/workflows/validate-catalogue-sync.yml'
+  push:
+    branches: ["main"]
+    paths:
+      - 'data/plants.json'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Published plant data is a faithful, checksummed export of the versioned catalogue
+        run: python3 tools/check_catalogue_sync.py
+      - name: Install Pillow (needed by test_browser_availability.py)
+        run: python3 -m pip install pillow
+      - name: Existing data tests
+        run: |
+          python3 tools/test_e3_v12_additions.py
+          python3 tools/test_illustration_status.py
+          python3 tools/test_browser_availability.py

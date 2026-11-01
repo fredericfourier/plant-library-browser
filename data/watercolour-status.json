@@ -119,7 +119,7 @@
     {
       "order": 5,
       "plantId": "nepeta-walkers-low",
-      "botanicalName": "Nepeta × faassenii 'Walker's Low'",
+      "botanicalName": "Nepeta racemosa 'Walker's Low'",
       "status": "uncertain_match",
       "expectsWatercolour": true,
       "assetForm": "both",
@@ -461,7 +461,7 @@
     {
       "order": 23,
       "plantId": "perovskia-blue-spire",
-      "botanicalName": "Salvia yangii 'Blue Spire'",
+      "botanicalName": "Salvia 'Blue Spire'",
       "status": "approved",
       "expectsWatercolour": true,
       "assetForm": "both",
