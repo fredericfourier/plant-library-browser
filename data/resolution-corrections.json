@@ -1,0 +1,399 @@
+{
+ "schemaVersion": 1,
+ "purpose": "permanent one-time resolution correction (uniform X/Y enlargement of the whole canvas) of published watercolours below 10 px/cm at the engine design height",
+ "method": {
+  "filter": "Lanczos (Pillow, premultiplied alpha)",
+  "unit": "whole canvas, one factor, aspect preserved to within one pixel",
+  "target": "visible height (alpha > 8) = round(designHeightCm x 10) px",
+  "format": "lossless WebP",
+  "pillow": "12.3.0",
+  "negligibleToleranceRelative": 0.01,
+  "runtimeScaling": "none: the runtime build is crop + padding at scale 1.0 for these files"
+ },
+ "originals": {
+  "repo": "fredericfourier/plant-library-browser",
+  "commit": "8d6ed268372db61f4e7d21e8c55322efc7665c87",
+  "path": "assets/plant-watercolours/<id>-watercolour.webp"
+ },
+ "corrected": {
+  "acanthus-mollis": {
+   "file": "acanthus-mollis-watercolour.webp",
+   "designHeightCm": 150,
+   "engineEnabled": true,
+   "originalSha256": "0853d33e7d9c57272d0800106833a0b41e95e48080b86b07405cee4cf538dab6",
+   "correctedSha256": "e9fa55ad75789259469f123fab17eae1085949dc8bfdb351018c3065a2b9286f",
+   "correctedBytes": 2182576,
+   "originalBytes": 744512,
+   "originalSize": [
+    1254,
+    1254
+   ],
+   "correctedSize": [
+    1524,
+    1524
+   ],
+   "originalVisiblePx": [
+    1225,
+    1235
+   ],
+   "correctedVisiblePx": [
+    1489,
+    1500
+   ],
+   "factorY": 1.21531,
+   "factorX": 1.21531,
+   "aspectErrorRelative": 0.0,
+   "anchorShiftBottomPx": 0.06,
+   "anchorShiftCentreXPx": 0.03,
+   "correctedAlphaMassRatio": null
+  },
+  "alcea-rosea-halo-white": {
+   "file": "alcea-rosea-halo-white-watercolour.webp",
+   "designHeightCm": 200,
+   "engineEnabled": true,
+   "originalSha256": "465de123acdfa3937a6557cbe4957528ebbb9ee5f87ba58e21aa1ca50578b3d2",
+   "correctedSha256": "d8cf6589874a500503dffdefcc0b703372773c3bebbe1b7503a77805966c22ab",
+   "correctedBytes": 1983252,
+   "originalBytes": 572118,
+   "originalSize": [
+    1024,
+    1536
+   ],
+   "correctedSize": [
+    1348,
+    2022
+   ],
+   "originalVisiblePx": [
+    720,
+    1520
+   ],
+   "correctedVisiblePx": [
+    947,
+    2000
+   ],
+   "factorY": 1.31641,
+   "factorX": 1.31641,
+   "aspectErrorRelative": 0.0,
+   "anchorShiftBottomPx": 0.15,
+   "anchorShiftCentreXPx": 0.03,
+   "correctedAlphaMassRatio": null
+  },
+  "aruncus-dioicus": {
+   "file": "aruncus-dioicus-watercolour.webp",
+   "designHeightCm": 150,
+   "engineEnabled": true,
+   "originalSha256": "6d3fff6d0dff32535249b4be2427b106925cf7a9bf60d95e4bc6d926f207db38",
+   "correctedSha256": "cc97ddd85b9435daaa94c14f99701f7cfc8c59c1fdd474158dcef0957ae3a433",
+   "correctedBytes": 2051012,
+   "originalBytes": 735732,
+   "originalSize": [
+    1122,
+    1402
+   ],
+   "correctedSize": [
+    1227,
+    1533
+   ],
+   "originalVisiblePx": [
+    1095,
+    1372
+   ],
+   "correctedVisiblePx": [
+    1198,
+    1500
+   ],
+   "factorY": 1.09344,
+   "factorX": 1.09358,
+   "aspectErrorRelative": 0.000133,
+   "anchorShiftBottomPx": 0.22,
+   "anchorShiftCentreXPx": 0.33,
+   "correctedAlphaMassRatio": null
+  },
+  "calamagrostis-karl-foerster": {
+   "file": "calamagrostis-karl-foerster-watercolour.webp",
+   "designHeightCm": 180,
+   "engineEnabled": true,
+   "originalSha256": "6a669b2673651df9ef7b826ecd26980c7104d49aeff0230e3d73a46a6d7c68e5",
+   "correctedSha256": "c6e4249fc20185fe1bdb9c0675d7f9b815343283d264bb114bbd6a7c0dd4ef86",
+   "correctedBytes": 2680340,
+   "originalBytes": 764598,
+   "originalSize": [
+    1122,
+    1402
+   ],
+   "correctedSize": [
+    1473,
+    1840
+   ],
+   "originalVisiblePx": [
+    912,
+    1371
+   ],
+   "correctedVisiblePx": [
+    1198,
+    1800
+   ],
+   "factorY": 1.31241,
+   "factorX": 1.31283,
+   "aspectErrorRelative": 0.000323,
+   "anchorShiftBottomPx": 0.31,
+   "anchorShiftCentreXPx": 0.31,
+   "correctedAlphaMassRatio": null
+  },
+  "digitalis-purpurea-alba": {
+   "file": "digitalis-purpurea-alba-watercolour.webp",
+   "designHeightCm": 150,
+   "engineEnabled": true,
+   "originalSha256": "663e9949164555cda0c4d78bc23a2de76bdd735a5f4cc1c27511721bef84ce4a",
+   "correctedSha256": "236f6944532aabbd3a620ca4818cdebd8e433de4771cc908219b35bfb43fb674",
+   "correctedBytes": 1003434,
+   "originalBytes": 431264,
+   "originalSize": [
+    1122,
+    1402
+   ],
+   "correctedSize": [
+    1211,
+    1513
+   ],
+   "originalVisiblePx": [
+    651,
+    1391
+   ],
+   "correctedVisiblePx": [
+    702,
+    1500
+   ],
+   "factorY": 1.07917,
+   "factorX": 1.07932,
+   "aspectErrorRelative": 0.000139,
+   "anchorShiftBottomPx": 0.52,
+   "anchorShiftCentreXPx": 0.2,
+   "correctedAlphaMassRatio": null
+  },
+  "eupatorium-atropurpureum": {
+   "file": "eupatorium-atropurpureum-watercolour.webp",
+   "designHeightCm": 200,
+   "engineEnabled": true,
+   "originalSha256": "a06b4676de4ec2c687da52310d34b26ddd11307f29d7dc58c35b1eb9bf3159c9",
+   "correctedSha256": "328423139e0d0059fc353872f218eedd5ccfc719cdf250997965e44ec165a4de",
+   "correctedBytes": 3588096,
+   "originalBytes": 962472,
+   "originalSize": [
+    1086,
+    1448
+   ],
+   "correctedSize": [
+    1504,
+    2006
+   ],
+   "originalVisiblePx": [
+    1024,
+    1444
+   ],
+   "correctedVisiblePx": [
+    1417,
+    2000
+   ],
+   "factorY": 1.38536,
+   "factorX": 1.3849,
+   "aspectErrorRelative": -0.000332,
+   "anchorShiftBottomPx": 0.46,
+   "anchorShiftCentreXPx": 0.43,
+   "correctedAlphaMassRatio": null
+  },
+  "hydrangea-incrediball": {
+   "file": "hydrangea-incrediball-watercolour.webp",
+   "designHeightCm": 125,
+   "engineEnabled": false,
+   "originalSha256": "82ef4d6a145b946a7bd5fb49b9a03587082d2d9f5e1b882d7af0b62bf51af486",
+   "correctedSha256": "6e6040d9b9fd3fb44fc674470d645a8358a06ad2550fb8f6e6787fcc224c3b23",
+   "correctedBytes": 2256698,
+   "originalBytes": 2001836,
+   "originalSize": [
+    1312,
+    1199
+   ],
+   "correctedSize": [
+    1409,
+    1288
+   ],
+   "originalVisiblePx": [
+    1292,
+    1164
+   ],
+   "correctedVisiblePx": [
+    1388,
+    1250
+   ],
+   "factorY": 1.07423,
+   "factorX": 1.07393,
+   "aspectErrorRelative": -0.000275,
+   "anchorShiftBottomPx": 0.11,
+   "anchorShiftCentreXPx": 0.24,
+   "correctedAlphaMassRatio": null
+  },
+  "hydrangea-paniculata-little-lime": {
+   "file": "hydrangea-paniculata-little-lime-watercolour.webp",
+   "designHeightCm": 120,
+   "engineEnabled": true,
+   "originalSha256": "d98fa8b7593831c3d2b8deab3e38c263e09ccc018e65861add5588ff18199594",
+   "correctedSha256": "e1cfc4c34655da766fc7c58891f2b7ea67bae4f72306717d90ac0cac8abb2555",
+   "correctedBytes": 1904234,
+   "originalBytes": 759258,
+   "originalSize": [
+    1254,
+    1254
+   ],
+   "correctedSize": [
+    1381,
+    1381
+   ],
+   "originalVisiblePx": [
+    1200,
+    1090
+   ],
+   "correctedVisiblePx": [
+    1324,
+    1200
+   ],
+   "factorY": 1.10128,
+   "factorX": 1.10128,
+   "aspectErrorRelative": 0.0,
+   "anchorShiftBottomPx": 0.32,
+   "anchorShiftCentreXPx": 1.11,
+   "correctedAlphaMassRatio": null
+  },
+  "molinia-transparent": {
+   "file": "molinia-transparent-watercolour.webp",
+   "designHeightCm": 180,
+   "engineEnabled": false,
+   "originalSha256": "11cedd7d6eb19dad8264c13a6f8fd8b3add91b6e4358ab3a9644461dbb65a491",
+   "correctedSha256": "0311a8180713e94f1f23fa83c4d114dbaac6f75b0c736281f9dbdb82bcfeee60",
+   "correctedBytes": 3059570,
+   "originalBytes": 945716,
+   "originalSize": [
+    1122,
+    1402
+   ],
+   "correctedSize": [
+    1462,
+    1827
+   ],
+   "originalVisiblePx": [
+    1003,
+    1381
+   ],
+   "correctedVisiblePx": [
+    1306,
+    1800
+   ],
+   "factorY": 1.30314,
+   "factorX": 1.30303,
+   "aspectErrorRelative": -8.3e-05,
+   "anchorShiftBottomPx": 0.64,
+   "anchorShiftCentreXPx": 0.02,
+   "correctedAlphaMassRatio": null
+  },
+  "philadelphus-manteau-dhermine": {
+   "file": "philadelphus-manteau-dhermine-watercolour.webp",
+   "designHeightCm": 100,
+   "engineEnabled": true,
+   "originalSha256": "8965666286a7728e216fa62cf777c425209265ef49ad03a1ecdfd9b053420b34",
+   "correctedSha256": "4f7777505fc8cfed3d52515f7006be381ee8763b097491038c915ff543a0c24a",
+   "correctedBytes": 1848126,
+   "originalBytes": 818646,
+   "originalSize": [
+    1448,
+    1086
+   ],
+   "correctedSize": [
+    1603,
+    1202
+   ],
+   "originalVisiblePx": [
+    1378,
+    904
+   ],
+   "correctedVisiblePx": [
+    1526,
+    1000
+   ],
+   "factorY": 1.10681,
+   "factorX": 1.10704,
+   "aspectErrorRelative": 0.000208,
+   "anchorShiftBottomPx": 0.65,
+   "anchorShiftCentreXPx": 0.47,
+   "correctedAlphaMassRatio": null
+  },
+  "stipa-gigantea": {
+   "file": "stipa-gigantea-watercolour.webp",
+   "designHeightCm": 200,
+   "engineEnabled": true,
+   "originalSha256": "38d0e8440f3d4d883500ec834afa0bd9a37d7a788f3df1ee0297a991b182a2f2",
+   "correctedSha256": "0b5d60d2bf759eff158b172911b2a22d2da89c9cbd44242e62817ad0e6208012",
+   "correctedBytes": 3635476,
+   "originalBytes": 867712,
+   "originalSize": [
+    1086,
+    1448
+   ],
+   "correctedSize": [
+    1604,
+    2138
+   ],
+   "originalVisiblePx": [
+    999,
+    1355
+   ],
+   "correctedVisiblePx": [
+    1477,
+    2000
+   ],
+   "factorY": 1.47652,
+   "factorX": 1.47698,
+   "aspectErrorRelative": 0.000312,
+   "anchorShiftBottomPx": 0.15,
+   "anchorShiftCentreXPx": 1.24,
+   "correctedAlphaMassRatio": null
+  },
+  "syringa-meyeri-palibin": {
+   "file": "syringa-meyeri-palibin-watercolour.webp",
+   "designHeightCm": 150,
+   "engineEnabled": true,
+   "originalSha256": "11936667119cc5db29a901f0b35b5d4461f60edb4681632d9814ad3a7944f8ad",
+   "correctedSha256": "d771ae6f24b6f4ac26a780ca608013ad4ba43f7b11c3f6fa8d2a090d7265f21b",
+   "correctedBytes": 2942320,
+   "originalBytes": 861348,
+   "originalSize": [
+    1254,
+    1254
+   ],
+   "correctedSize": [
+    1687,
+    1687
+   ],
+   "originalVisiblePx": [
+    1208,
+    1115
+   ],
+   "correctedVisiblePx": [
+    1624,
+    1500
+   ],
+   "factorY": 1.3453,
+   "factorX": 1.3453,
+   "aspectErrorRelative": 0.0,
+   "anchorShiftBottomPx": 0.21,
+   "anchorShiftCentreXPx": 0.77,
+   "correctedAlphaMassRatio": null
+  }
+ },
+ "notCorrected": [
+  {
+   "plantId": "thalictrum-delavayi",
+   "shortfallRelative": 0.002,
+   "reason": "within the 1 % negligible tolerance; handled by the unchanged build-time fit"
+  }
+ ]
+}
