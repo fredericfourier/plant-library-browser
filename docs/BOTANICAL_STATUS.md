@@ -120,3 +120,7 @@ and the botanical build ignores it.
 
 Browser caveat (index.html, not changed): the page treats any `assets[id]` entry as "has an illustration" for its default (botanical) view, so a watercolour-only plant shows a
 missing-image placeholder under the Botanical view until its botanical image exists; its Watercolour view works.
+
+## Status vs source integrity (approval lifecycle)
+`status` reports **visual approval of the published WebP bytes** (from `data/approval-ledger.json`); each record also carries `visualApproval`
+and `sourceIntegrity` (PNG master facts). `approved` no longer requires a PNG master. See `docs/BOTANICAL_VERIFICATION.md`.

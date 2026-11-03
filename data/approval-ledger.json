@@ -1,0 +1,1765 @@
+{
+  "schemaVersion": 1,
+  "description": "Append-only record of owner visual approvals, each pinned to the exact WebP SHA-256 that was approved. Entries are never edited or removed; an approval ends only through an explicit entry in `revocations`. Approval is independent of PNG-master presence or provenance.",
+  "entries": [
+    {
+      "plantId": "acanthus-mollis",
+      "variant": "botanical",
+      "imageSha256": "532a937f0be225f9f4ee430ccc20340e4a4a37ca656ccf77c1b86ceba82a5d29",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "achillea-moonshine",
+      "variant": "botanical",
+      "imageSha256": "ce9a4dd3e2a2d1be971886d4a7165be5dabd041277cc38288ffbf8b7ec69fad9",
+      "approvedAt": "2026-10-15T08:19:20Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "achillea-terracotta",
+      "variant": "botanical",
+      "imageSha256": "ab13d5fc41777d7cf22209265f1b273cf89b8524457633e37abcb1e7319e99c6",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "achillea-walther-funcke",
+      "variant": "botanical",
+      "imageSha256": "a95f93e25eaabeb840fec3f636eb6d58522329aad8d8b2d2ef83150d32077370",
+      "approvedAt": "2026-10-15T08:19:20Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "agastache-blackadder",
+      "variant": "botanical",
+      "imageSha256": "1b8a070eeb0e93c0c8ef02a2855da0de83cea1d33619d6c16117db5b066440ca",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "alcea-rosea-halo-white",
+      "variant": "botanical",
+      "imageSha256": "05d99c7913ac14dd02f0a05547691f8dd43dc09587c735c19eab04ef94bfa02d",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "alchemilla-mollis",
+      "variant": "botanical",
+      "imageSha256": "93ec65808a07faa986f7dd76cfbcdc3411df11a6f96e15dae773997ea014e482",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "allium-purple-sensation",
+      "variant": "botanical",
+      "imageSha256": "7dc93a6d090df2e01a7d43bad4be6df98a3aedd32e2734e4371d21588e624aa7",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "anemone-hadspen",
+      "variant": "botanical",
+      "imageSha256": "cdc3f22bc2ffbbf720a7756b07b5430e8ef1f928bdfa5294539a322dcf070432",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "anemone-honorine",
+      "variant": "botanical",
+      "imageSha256": "b94f4f019a1c8aebbbf65f7ee3ca3f7849c4205bfa296fc5ac1d40d09e53a0b6",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "aquilegia-vulgaris-nora-barlow",
+      "variant": "botanical",
+      "imageSha256": "aa2f5f037602c7eb268a22e9a680e3f50bf287529e39f61163ac5c09dc21a845",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "aruncus-dioicus",
+      "variant": "botanical",
+      "imageSha256": "dd77b98fe8b611f140c2ada2005be49de96c63912786bb090c2f5bf32d9bed9d",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "aster-little-carlow",
+      "variant": "botanical",
+      "imageSha256": "1119f5d7a8c959e8fe7ff0bd1a692d8ca7898cdb621b78386a3468438ed94ad2",
+      "approvedAt": "2026-10-15T08:19:20Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "aster-monch",
+      "variant": "botanical",
+      "imageSha256": "1c249bbebbef53d18ba5a00089493ff157c716e1b92a84fbc9cb45f473a74ac7",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "astilbe-weisse-gloria",
+      "variant": "botanical",
+      "imageSha256": "bc427764a0e837c18daea34e19d2dcfe4a156ba2cd4c9a9e047e6359cc79f5b4",
+      "approvedAt": "2026-10-30T14:59:45Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "astrantia-major",
+      "variant": "botanical",
+      "imageSha256": "9ffe9c6a10adddfdbb5854dd04ed80b18cd66e049f0c8638ea03f45e6d8d1671",
+      "approvedAt": "2026-10-15T08:19:20Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "bergenia-bressingham-white",
+      "variant": "botanical",
+      "imageSha256": "925a281ce0939e737ec7bfb524819e05fb5cd23cb79d9b0f79285a4178678dab",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "betonica-officinalis-hummelo",
+      "variant": "botanical",
+      "imageSha256": "7b225c20c8728496b78e9486bba5ee931729edc0dbef3db4bec9bdbd7ae4e1db",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "briza-media",
+      "variant": "botanical",
+      "imageSha256": "d527f10236be3820db8bff82ac8ed351bbe1f6689172b23cbdc447304aeae93b",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "brunnera-jack-frost",
+      "variant": "botanical",
+      "imageSha256": "8fa057237d754369015358e537ceff875d94ee2fa833b63b81886a99d2beab15",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "calamagrostis-karl-foerster",
+      "variant": "botanical",
+      "imageSha256": "ee8eccc39dc9e31d6016413cbf5307781fcbb2532e23688f1ed15e3684f87229",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "campanula-lactiflora-prichards-variety",
+      "variant": "botanical",
+      "imageSha256": "de4626b28f919803e7a8320c1351c3501007af0cb05da5a06daa6a689a72e702",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "campanula-persicifolia-alba",
+      "variant": "botanical",
+      "imageSha256": "66eb9305328f318e60d9eac5cdebb3cf7297be375fb479ad34447435b755ed41",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "carex-evergold",
+      "variant": "botanical",
+      "imageSha256": "608ceb12b19a16e6cb63cb968ad8ea704908a229eea5d87326f6d4cfbe6943a6",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "cenolophium-denudatum",
+      "variant": "botanical",
+      "imageSha256": "a05cc276defd4abbb127c93e7a2169c6154f5b49e4a1bf8a014a1fd5c821a492",
+      "approvedAt": "2026-10-15T08:19:20Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "centaurea-montana",
+      "variant": "botanical",
+      "imageSha256": "2dcdfef08ec5713e8557776e0d07730b91f1471ba9327a4522254bc88241db28",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "cerastium-tomentosum",
+      "variant": "botanical",
+      "imageSha256": "1272a94294512a10b90874d81a0ac42d91922433b7085d8c9709eba8185d7398",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "crocosmia-lucifer",
+      "variant": "botanical",
+      "imageSha256": "2a0b2298708821e01fdaa5e763b0cd9fd3b057c74b54496a4cd217d2239da4e1",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "delphinium-black-knight",
+      "variant": "botanical",
+      "imageSha256": "e271c76b47c33738caee2638666589560e6d0568f612aceddee7863c2a0a8929",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "deschampsia-goldtau",
+      "variant": "botanical",
+      "imageSha256": "539dee4baecc1d6313981267fa97c4544fe0e33c5c021bfc31a878a02ee1d5de",
+      "approvedAt": "2026-10-15T08:19:20Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "dianthus-mrs-sinkins",
+      "variant": "botanical",
+      "imageSha256": "e6b380d403cb1858ca360a3435064053422eb6ed25eec4c270718f4ce28b61d2",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "digitalis-ferruginea",
+      "variant": "botanical",
+      "imageSha256": "e62a0822cf201f698bdae09b095be288af8938601bdbbcc513424effd3eabb3c",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "digitalis-lutea",
+      "variant": "botanical",
+      "imageSha256": "1e02cfc9b23451fe801204bfb3abcf90a73d02dcc358c198a2b0d8c26e070d39",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "digitalis-purpurea",
+      "variant": "botanical",
+      "imageSha256": "91c512e788b1597d7135464242f5e20a34bac8b631b75e7e0494c8301cc2cb6d",
+      "approvedAt": "2026-10-15T08:19:20Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "digitalis-purpurea-alba",
+      "variant": "botanical",
+      "imageSha256": "0c0eded90de7e25736e9c9bf8a7e7b2ab468ff2e9d66cddd0481cbbb437294c6",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "dryopteris-filix-mas",
+      "variant": "botanical",
+      "imageSha256": "c84b1259876dfb41a8b13e1936d99714b17356a56fe2afac7d08339f2872152e",
+      "approvedAt": "2026-10-15T08:19:20Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "echinacea-powwow-white",
+      "variant": "botanical",
+      "imageSha256": "c2172f70e51e2e44e64afba42b019cc947d2248d6ad2ceea33f463176057290e",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "echinacea-purpurea",
+      "variant": "botanical",
+      "imageSha256": "f611151decf7b5e448d960174385e7663214a344a1d68dce9e087df803b8a2f0",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "echinacea-white-swan",
+      "variant": "botanical",
+      "imageSha256": "3efc8b7d3c80902e00c3eb772d4eada51d4eda83aa81085ca43bc0ba8b8445ed",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "epimedium-sulphureum",
+      "variant": "botanical",
+      "imageSha256": "3551947232fb48723975dc658989e1e4c43d23a0f2717f0abb61c5a7467acb08",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "erigeron-karvinskianus",
+      "variant": "botanical",
+      "imageSha256": "035aeaf729239ed5a596b3d85f09ae67f2f9e3f7f32cf3aa6ae9df986ee3a867",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "eryngium-planum",
+      "variant": "botanical",
+      "imageSha256": "daf68791f07458836b5d7f1bb0ad1de15ca1e41d28c6f1e68f04a4bfe63c6845",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "eupatorium-atropurpureum",
+      "variant": "botanical",
+      "imageSha256": "5ed65f9ac5e6267521befb3a52803cdaec31efd25f1e960508c9ae9a1cc37d33",
+      "approvedAt": "2026-10-15T08:19:20Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "euphorbia-fireglow",
+      "variant": "botanical",
+      "imageSha256": "c5efcd8c697d097f68d5e398dd8853edc96ad1949f09d6ed349b9bcc51ad6143",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "euphorbia-polychroma",
+      "variant": "botanical",
+      "imageSha256": "f8318c05e62ed962d6cca9fdf3fe99d876def7a06c24ce07ff760494860bc047",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "euphorbia-wulfenii",
+      "variant": "botanical",
+      "imageSha256": "6f1dd374f55ab574068b5222e35bdfa0fe81f156e28240b93a9fa6ddacc2bcd7",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "gaura-whirling",
+      "variant": "botanical",
+      "imageSha256": "efba0fb32b68cd160fc9c230115b72354747c05650eb1919c140fbab00ee9990",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "geranium-macrorrhizum",
+      "variant": "botanical",
+      "imageSha256": "5a75d2ecea17b4f8f1934fecdbb106b2df92aa0e2cddda9aa70be61578733f91",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "geranium-nodosum",
+      "variant": "botanical",
+      "imageSha256": "a2a786ac0d8452ab7bad0bf36974bf707fdc49d832239184032d5fe68652db56",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "geranium-phaeum-samobor",
+      "variant": "botanical",
+      "imageSha256": "d9ae82d3a73d18d051bc4103ae5b67a2f82d6f2aa17808406cfc5ceea210cd9f",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "geranium-psilostemon",
+      "variant": "botanical",
+      "imageSha256": "6224a67c4304d08d19f502a91a16887e534da4db911a9de50e100086d5b1f317",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "geranium-rozanne",
+      "variant": "botanical",
+      "imageSha256": "6f53924d062c64c22967371c94713eb24bda63d0bc1e5acbcfbfae9cdb7aa613",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "geranium-sanguineum-max-frei",
+      "variant": "botanical",
+      "imageSha256": "94f1288c66aadc8dd0f57ff553a9b42380daa7ed15335c51913ad7d2759b8d19",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "geum-rivale-leonards-variety",
+      "variant": "botanical",
+      "imageSha256": "b60eb3323cf0d2941aa34b8a056e9447b4de05335cfd0d804a9f4a1a08d54a63",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "geum-totally-tangerine",
+      "variant": "botanical",
+      "imageSha256": "b3726324216159dbeefdb8198831e52e2b0e90990e1021898d916b3b944f7e84",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "gillenia-trifoliata",
+      "variant": "botanical",
+      "imageSha256": "9f4a75944798e6222e4973043fa6129457885b4e9d77ec694ab2fc9b3fa0f439",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "hakonechloa-macra",
+      "variant": "botanical",
+      "imageSha256": "eca0d84d4b5b728ccfa7c41cfcabc571056a19399324740a0944e05a44dcd327",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "helenium-moerheim",
+      "variant": "botanical",
+      "imageSha256": "8093a837f7c4b4c9d3e60683a62599cc2c698f1379aff5bffdabc30f7a7b109a",
+      "approvedAt": "2026-10-15T08:19:20Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "helleborus-hybridus",
+      "variant": "botanical",
+      "imageSha256": "48b8decaed15b19e38194d90910da2972d7d53a4814d1745cb0fa935849582bc",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "hemerocallis-stafford",
+      "variant": "botanical",
+      "imageSha256": "b91c7542f70ca72d84fab5e77eee85bfa94074ce734519aed2f3e22e346291eb",
+      "approvedAt": "2026-10-15T08:19:20Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "heuchera-palace-purple",
+      "variant": "botanical",
+      "imageSha256": "53a47b2dbe74853bf42607078ef40015a083393e06d51320f49c0351dc3d2ec0",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "hydrangea-incrediball",
+      "variant": "botanical",
+      "imageSha256": "023037ec9a4848d988bf51eb42ea612104b9ef9882b24a68e48cbdc0acab4027",
+      "approvedAt": "2026-10-30T14:59:45Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "hydrangea-paniculata-little-lime",
+      "variant": "botanical",
+      "imageSha256": "35fd4bcf89ac661146504a071a0a757159d69183fa82abbfa812777c3a2dd98d",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "hylotelephium-herbstfreude",
+      "variant": "botanical",
+      "imageSha256": "c4f05190fcb4e65310687c4791b3087f9715157129e99958c4f853a34e402e0f",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "iberis-sempervirens-snowflake",
+      "variant": "botanical",
+      "imageSha256": "4ad75c9d9a1b00fbccec6e207e9312f96eb0a6b225881b1ddd76395c2f05cddd",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "iris-sibirica",
+      "variant": "botanical",
+      "imageSha256": "cdfbf96ecf920dc62c13298e1eaa35ecc5348f53967f4d450fd2d5642fd32195",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "knautia-macedonica",
+      "variant": "botanical",
+      "imageSha256": "095057297c6c1a6bfb07410b076cf4618c513fe5474ca3bfaf1d8815907db1a4",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "kniphofia-tawny-king",
+      "variant": "botanical",
+      "imageSha256": "b7751e168c35417360f7b77afb4a3802da490ba3fec79f236eaef66de2962c5c",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "lavandula-hidcote",
+      "variant": "botanical",
+      "imageSha256": "13651a3c3712f2b490225a6d823e604d75c19ddf5ced77ca324cc514ae6b91d6",
+      "approvedAt": "2026-10-15T08:19:20Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "leucanthemum-becky",
+      "variant": "botanical",
+      "imageSha256": "6a87c8cf5de23aac29aa9bc8a75e12ffb4392982bf32c150fdc33dcd3599bda5",
+      "approvedAt": "2026-10-15T08:19:20Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "linaria-purpurea",
+      "variant": "botanical",
+      "imageSha256": "25dfb16d4de3747c0a112408302d328df88ef2bf817e717ffb8c64abd75b297b",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "lupinus-gallery-blue",
+      "variant": "botanical",
+      "imageSha256": "0d1d3a27393031993c366782144954100eabda2d92af6f5483c4fc15d73a010c",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "lupinus-the-governor",
+      "variant": "botanical",
+      "imageSha256": "d70a64924a80a69b52eb0be2c2f094d1d546c18d699714fb406825223e69698d",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "luzula-nivea",
+      "variant": "botanical",
+      "imageSha256": "294fde0f31372cec419288419a9bebdbad88939810cf2ffaf54bcf050cb1103b",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "lychnis-coronaria",
+      "variant": "botanical",
+      "imageSha256": "d57789205788c77b97cad057604f37497ebf8849d276b11f3448012a83942760",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "malva-sylvestris",
+      "variant": "botanical",
+      "imageSha256": "3b0576a88a944a71a9e41956c2e0eedf4eb63e40cfbbc8f52a4075edee5e1af7",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "molinia-transparent",
+      "variant": "botanical",
+      "imageSha256": "f0af2ccc3a896497546feaeeb8136a6948dd9f2d3e52e2d6a58f19e2bc34774f",
+      "approvedAt": "2026-10-15T08:19:20Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "nepeta-walkers-low",
+      "variant": "botanical",
+      "imageSha256": "3afab6091d044ba526d7c0bf23da139104344727d16fa3f9b4a237fe90ad1d70",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "paeonia-duchesse-de-nemours",
+      "variant": "botanical",
+      "imageSha256": "13d100fc903569b978374e9ee9793229b4b1b2432e998c03ca10a76c1c29d362",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "penstemon-garnet",
+      "variant": "botanical",
+      "imageSha256": "ed99745b5a7ea1d23c23c0d6894c6cd92ff86bffedf0d923042e1c6b4f2a061c",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "perovskia-blue-spire",
+      "variant": "botanical",
+      "imageSha256": "511b0be8acb096c69a59523d2bca7ad19a37d7b4d8b25a7a6113778c04c30a90",
+      "approvedAt": "2026-10-15T08:19:20Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "persicaria-firetail",
+      "variant": "botanical",
+      "imageSha256": "4532372ae8015e5f17a0f94cbafe71d1e2193fcd0d094c7e50a34ead3cc270e9",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "philadelphus-manteau-dhermine",
+      "variant": "botanical",
+      "imageSha256": "ca7ed06a35a70e9afa542a2312b2971e40d8da54e031bba1ee5b511fe9bdfa5f",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "phlomis-russeliana",
+      "variant": "botanical",
+      "imageSha256": "f343b35e73c3397a6c8392875fd16f63a7654ca3832492b7e07bacb3bad48109",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "phlox-blue-paradise",
+      "variant": "botanical",
+      "imageSha256": "af50d7f6f4108039c92ed619dd3183ae8581ccd4da1f957659a4aac755801114",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "phlox-subulata-emerald-cushion-blue",
+      "variant": "botanical",
+      "imageSha256": "62295ca0a3a4674a06af15a3272d1f154e1063ede6bc69b1e3936c9a5039b310",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "polemonium-caeruleum",
+      "variant": "botanical",
+      "imageSha256": "56587a0a5f7cad58ed091c37f3bae6fdf816a51bcfd576771171591a96681985",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "polystichum-setiferum",
+      "variant": "botanical",
+      "imageSha256": "792fec02023867fe54ce04600cdd2a36e976769d81e8ed1ece2312cdb160d880",
+      "approvedAt": "2026-10-30T16:41:41Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "pulmonaria-blue-ensign",
+      "variant": "botanical",
+      "imageSha256": "dd3bc94db1e5789b12aecbd1b26a589adf472302c0776cc716a65779b783fa92",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "rosa-bonica",
+      "variant": "botanical",
+      "imageSha256": "c56f1b467899270e44ecced142e004809a545353f529443bb61f485142e17ed9",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "rosa-the-fairy",
+      "variant": "botanical",
+      "imageSha256": "1b787ec3b40ef75bec661c858ed5caae2c7c4208299246d67cdbee4debd164c2",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "rudbeckia-goldsturm",
+      "variant": "botanical",
+      "imageSha256": "b2e1f6616a78895f98765f79d563cccf345474519b7a4023042e171a3fb02032",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "salvia-amistad",
+      "variant": "botanical",
+      "imageSha256": "aab88297dca97ac3df6c2ff6d01be32778485fd7935e1ccac41c780738510e11",
+      "approvedAt": "2026-10-15T08:19:20Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "salvia-caradonna",
+      "variant": "botanical",
+      "imageSha256": "abe33d30f028c443880bbd3fe3a3ef3acf51a5ab03ca58e83612f856fbf155e9",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "sanguisorba-red-thunder",
+      "variant": "botanical",
+      "imageSha256": "5919e10b550e518dfacc13e6a3c26e2bd6a1d2447ab14c56180171667faae4ba",
+      "approvedAt": "2026-10-15T08:19:20Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "sarcococca-hookeriana-var-humilis",
+      "variant": "botanical",
+      "imageSha256": "c154ea069d09d71f8fc0187baa05e11c742339f5d23dc37d21412d1605c8981a",
+      "approvedAt": "2026-10-30T14:59:45Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "scabiosa-butterfly-blue",
+      "variant": "botanical",
+      "imageSha256": "50171441d64f74929a514ab7af2707502a6079de62b3c1fb8d85a818347f2007",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "sesleria-autumnalis",
+      "variant": "botanical",
+      "imageSha256": "ef90d117158a5c2e2c1e33f940a4c973ee95082a1d588e4a3247369828a646e2",
+      "approvedAt": "2026-10-15T08:19:20Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "stachys-byzantina-silver-carpet",
+      "variant": "botanical",
+      "imageSha256": "f9ff77d10eac395ebd9c3a020340b8a28f1373226b34859b1dc7792bd4ed55dd",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "stipa-gigantea",
+      "variant": "botanical",
+      "imageSha256": "4a406f6e37b25a94202f11930a34cecdf48e2e130e5b75664d9b38a815db9f7a",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "stipa-tenuissima",
+      "variant": "botanical",
+      "imageSha256": "cbe5e059356aace5d5c0398545bcab411bb193d57509c0c42ba67c667f45318d",
+      "approvedAt": "2026-10-15T08:19:20Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "syringa-meyeri-palibin",
+      "variant": "botanical",
+      "imageSha256": "9e590ed86a7bff4b97331a57b1b5a9b6e755780e108f7c0874b0d8b93de95a1a",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "taxus-baccata-topiary",
+      "variant": "botanical",
+      "imageSha256": "4a87d71ceab84cca7c4490739ea1f0ae4223f9a38aa106f4878c8febd95da286",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "thalictrum-delavayi",
+      "variant": "botanical",
+      "imageSha256": "d4e24e29945e9458697244a5119175fdc21c347179f18d085294a39039181b94",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "verbascum-chaixii-album",
+      "variant": "botanical",
+      "imageSha256": "8e94cefc6ebe1b1fce1d3dcd74d486443eb462cbd4a96660f2b7c70a46dbe7c3",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "verbena-bonariensis",
+      "variant": "botanical",
+      "imageSha256": "c02b3c67a6e1b52e7ef9abbc28669f3b2209657b6623fb3c1d49ae7c7306c499",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "veronica-longifolia",
+      "variant": "botanical",
+      "imageSha256": "c7bea1ae3e5fadb1881556d5ef1bf9f397b8c52a519a8e1f0871a189595808b6",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "veronicastrum-album",
+      "variant": "botanical",
+      "imageSha256": "1c1ae626d9377b3b8aca7947c90fd4bdafd1daee5de82ba985bbf5006bee1101",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "acanthus-mollis",
+      "variant": "watercolour",
+      "imageSha256": "0853d33e7d9c57272d0800106833a0b41e95e48080b86b07405cee4cf538dab6",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "achillea-moonshine",
+      "variant": "watercolour",
+      "imageSha256": "06fe5826035cf6e07f5c71713d82a2bca2532deeb8a2ca58cfbf173e1896e375",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "achillea-terracotta",
+      "variant": "watercolour",
+      "imageSha256": "7dbc9c22037599d22788c8f440274820b40c345dd4b6ab5e908b0352ef740164",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "achillea-walther-funcke",
+      "variant": "watercolour",
+      "imageSha256": "0dfcd2b225334d0e284bc360fcc9098270b0ec638a9622c93c2d47b7302143bf",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "agastache-blackadder",
+      "variant": "watercolour",
+      "imageSha256": "bb059b37fdee0609673c002adf6d9be49a8632679b3fb7ee1f268be942bde677",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "alcea-rosea-halo-white",
+      "variant": "watercolour",
+      "imageSha256": "465de123acdfa3937a6557cbe4957528ebbb9ee5f87ba58e21aa1ca50578b3d2",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "alchemilla-mollis",
+      "variant": "watercolour",
+      "imageSha256": "7680e2443f8e0590455bbea6fcf1417b335f36791fa7bdea769bb44f676d2bf9",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt (superseded version)"
+    },
+    {
+      "plantId": "alchemilla-mollis",
+      "variant": "watercolour",
+      "imageSha256": "87cddd289fd2fe8dcbf87abf39f3f958ed70ecbb12cc687736126f8fb5e3f8cd",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "allium-purple-sensation",
+      "variant": "watercolour",
+      "imageSha256": "04df55b9494852ebaa2f23e123a6456d92c55c0bc1f8ec9141b3cbcfc78517fe",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt (superseded version)"
+    },
+    {
+      "plantId": "allium-purple-sensation",
+      "variant": "watercolour",
+      "imageSha256": "6de092c34b7516198abe0dd23caa198b0c168f8b6fd5b04921ff7e9e7498ebb6",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "anemone-hadspen",
+      "variant": "watercolour",
+      "imageSha256": "a66b09f8830d6db1f3e1729a9d844fb400811e3aa5d6a766ba9d7bac70a65284",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "anemone-honorine",
+      "variant": "watercolour",
+      "imageSha256": "13a8ec32511ccfd118924605655faacb28f6ff13e5cd29b88da88323262eced0",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "aquilegia-vulgaris-nora-barlow",
+      "variant": "watercolour",
+      "imageSha256": "799c26ab89189b795a3860407346f765c31c72492a4053c89fc24765ba969d25",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "aruncus-dioicus",
+      "variant": "watercolour",
+      "imageSha256": "6d3fff6d0dff32535249b4be2427b106925cf7a9bf60d95e4bc6d926f207db38",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "aster-little-carlow",
+      "variant": "watercolour",
+      "imageSha256": "c973b0f62f1a941dc4f8f8c90f1d7e3a66d34989584047a7802d04ebde067a7f",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "aster-monch",
+      "variant": "watercolour",
+      "imageSha256": "7dd7a726eef2ef3b6fcbefb27091c9fbf0dbcc85672b13520c82b1663c53b8ad",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "astilbe-weisse-gloria",
+      "variant": "watercolour",
+      "imageSha256": "2e7265791773f03225be74b07501b8c0c7503685c9a2b33707742c8b3c3eadd5",
+      "approvedAt": "2026-10-30T14:59:46Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "astrantia-major",
+      "variant": "watercolour",
+      "imageSha256": "a52795e9710702351094eaf1a9ff78732195e70606438ce9bb43fd0a0c848b12",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "bergenia-bressingham-white",
+      "variant": "watercolour",
+      "imageSha256": "959a314487a61034217504f9823dd418c0ee1d965186ce7744c3e7af397c4959",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "betonica-officinalis-hummelo",
+      "variant": "watercolour",
+      "imageSha256": "1ef0cb8587831b6ded82cde0c3a02ca8cefb98dcbfcdb95ddf32d32574df0d9e",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "briza-media",
+      "variant": "watercolour",
+      "imageSha256": "54e3a6559680819c042c17a8ed01bdca309faa475fd8042a05c8a60ab40599ce",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "brunnera-jack-frost",
+      "variant": "watercolour",
+      "imageSha256": "ce911942e1cd413d744c840e21e0d1fc782e2b6c27ce57eda33c8aa40c926947",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "calamagrostis-karl-foerster",
+      "variant": "watercolour",
+      "imageSha256": "6a669b2673651df9ef7b826ecd26980c7104d49aeff0230e3d73a46a6d7c68e5",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "campanula-lactiflora-prichards-variety",
+      "variant": "watercolour",
+      "imageSha256": "e8539eaa11c907c67a602f3cdb0f1a4f7e75b33546cfe592a1a5c38e7b74347e",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "campanula-persicifolia-alba",
+      "variant": "watercolour",
+      "imageSha256": "f53772435b130e4cdcf7d104fca3f2d322e51b81c15f716767987fc0c5324125",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "carex-evergold",
+      "variant": "watercolour",
+      "imageSha256": "906655ddff3fd1c945186515aba1c8040e3681e39331bce04ffe7973f0cf1ade",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt (superseded version)"
+    },
+    {
+      "plantId": "carex-evergold",
+      "variant": "watercolour",
+      "imageSha256": "b44e0726a3a4837920c7fdcef15d5b132bc8b9ab9e8d63948c62e71772a4af5b",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "cenolophium-denudatum",
+      "variant": "watercolour",
+      "imageSha256": "4ef47148a1026f00fc94bc445bcc9175fd8df1914237b65e56364a1d520fcd29",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "centaurea-montana",
+      "variant": "watercolour",
+      "imageSha256": "3daf40979cbabe8c3935478b2cff1237146f78b3cfd9dfec6146ffe6fad53be5",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "cerastium-tomentosum",
+      "variant": "watercolour",
+      "imageSha256": "b5e51878d084feb7ec01d05fe2ce420776b4083e24b655f0825f48bd7eecba9e",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "crocosmia-lucifer",
+      "variant": "watercolour",
+      "imageSha256": "5eefb7a3f84731cdfee42d631d212ef656bf1e8a89c5d4ffdb753bd9ea5f1b1b",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "delphinium-black-knight",
+      "variant": "watercolour",
+      "imageSha256": "c158bf593e428f8f2fe88465dd34b6e0ee5264dd32d3fff1e4dfe6981d322133",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "deschampsia-goldtau",
+      "variant": "watercolour",
+      "imageSha256": "a8765fb48401cb263563161be6349844eb3f4089c2192814991575338c93d970",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "dianthus-mrs-sinkins",
+      "variant": "watercolour",
+      "imageSha256": "490cb26c0538e983054f4ff768525960923199258eb05f5b9fe8b7371724f211",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "digitalis-ferruginea",
+      "variant": "watercolour",
+      "imageSha256": "dc0c29454b96f5b354a9d5b8234f09be5cea3e6e74ee429603f594667bd688d8",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt (superseded version)"
+    },
+    {
+      "plantId": "digitalis-ferruginea",
+      "variant": "watercolour",
+      "imageSha256": "574e6905d9e22c82bacaa5a68c25064e18cdc60bd020166b265ef587080a05fe",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "digitalis-lutea",
+      "variant": "watercolour",
+      "imageSha256": "44652645528f8414d6dde89d71f134f7063ed055336cbcb2471b018d09454a21",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "digitalis-purpurea",
+      "variant": "watercolour",
+      "imageSha256": "bad48e8d5971ce7343d4c3dd40f8b4e8d0a17dad5a73e9c5c08817003c3e20e0",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt (superseded version)"
+    },
+    {
+      "plantId": "digitalis-purpurea",
+      "variant": "watercolour",
+      "imageSha256": "5e56faf04a3cac9d2a5e48f03b7b7df283827eb3028e00df97275277d0836c78",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "digitalis-purpurea-alba",
+      "variant": "watercolour",
+      "imageSha256": "663e9949164555cda0c4d78bc23a2de76bdd735a5f4cc1c27511721bef84ce4a",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "dryopteris-filix-mas",
+      "variant": "watercolour",
+      "imageSha256": "09824b7bfc87a9ad0a8d5593e19ab21e6c0e778a2b6a3b4b64ec7e0435d019a1",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "echinacea-powwow-white",
+      "variant": "watercolour",
+      "imageSha256": "21732d10e3b1b91c0e1bf422fd20f7b44660d30fb40fe4ef295cd35c2d86b153",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "echinacea-purpurea",
+      "variant": "watercolour",
+      "imageSha256": "9cf90c1348e452bfa3f9a6afadf2a8bd766ded0a46dc67397380809b35f49cae",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "echinacea-white-swan",
+      "variant": "watercolour",
+      "imageSha256": "da963850792eb0471e7895daf501b9fa54ba82ee01da5da1738710c87f9af33a",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "epimedium-sulphureum",
+      "variant": "watercolour",
+      "imageSha256": "1f6f085209f79c42347a9870db00b1edca070f7427b28d0eec394984e1071a27",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt (superseded version)"
+    },
+    {
+      "plantId": "epimedium-sulphureum",
+      "variant": "watercolour",
+      "imageSha256": "0e2b2af009a24d50f55050aace0169e8bb746e5c4a1dcfcf4767ab6880391ebd",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "erigeron-karvinskianus",
+      "variant": "watercolour",
+      "imageSha256": "cb454949027a08a77a0733cac23c5ad4166b09f582ca5ee6e7cf27da0a915268",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt (superseded version)"
+    },
+    {
+      "plantId": "erigeron-karvinskianus",
+      "variant": "watercolour",
+      "imageSha256": "c3ed193b66fd64a2d88311b41159476650803f905931683b185110f64cf9f8ea",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "eryngium-planum",
+      "variant": "watercolour",
+      "imageSha256": "64305a9c4522192d306ce673ece3025b1a10e792c6eeb7cd4ac25104be8322bf",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "eupatorium-atropurpureum",
+      "variant": "watercolour",
+      "imageSha256": "a06b4676de4ec2c687da52310d34b26ddd11307f29d7dc58c35b1eb9bf3159c9",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "euphorbia-fireglow",
+      "variant": "watercolour",
+      "imageSha256": "08fa40e7fd776d37ba21177807ca204e7d2f7c2197db92914a6e1b35baee21b9",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "euphorbia-polychroma",
+      "variant": "watercolour",
+      "imageSha256": "30e073b5d1bf047e2c906defcc373d80e6ad800fbf1e7c535d7dad9bae906008",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "euphorbia-wulfenii",
+      "variant": "watercolour",
+      "imageSha256": "58ca957459c21ff738f0427cc2d24524b7366cc644b89c3373fbe84257528341",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "gaura-whirling",
+      "variant": "watercolour",
+      "imageSha256": "d5a6a564002877c9b88af4106b20f373a43b91c75a1aaa0e98f60bf4eb7bc9c1",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "geranium-macrorrhizum",
+      "variant": "watercolour",
+      "imageSha256": "33489f6d24825fb9f5670016f001b79ff04124cfff54f6deae0e74bdbc33fc49",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt (superseded version)"
+    },
+    {
+      "plantId": "geranium-macrorrhizum",
+      "variant": "watercolour",
+      "imageSha256": "aa22971887d04a28bc6753e4df5c5eff01206b1fed6d16b9e689288726974657",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "geranium-nodosum",
+      "variant": "watercolour",
+      "imageSha256": "3be7b36b2771d2a4e580fb1a93488c34896b7bbda960ac0d790820b32ce0566b",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "geranium-phaeum-samobor",
+      "variant": "watercolour",
+      "imageSha256": "37d1d12abc2e97c4e1a976eb131fada2125c2e47391502c143efc4d5cb895014",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "geranium-psilostemon",
+      "variant": "watercolour",
+      "imageSha256": "5fe29032a810893baea1d3f70fda43795c01cf7ade15819176cebc3f44073c5c",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "geranium-rozanne",
+      "variant": "watercolour",
+      "imageSha256": "b59ddadcc4a6287490ea4523a1e9c483a9ccbd6ba95fe86b88ad6317e5fdb311",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt (superseded version)"
+    },
+    {
+      "plantId": "geranium-rozanne",
+      "variant": "watercolour",
+      "imageSha256": "4f694a94cacf5e16367cd805fda72a40f57d3aef5f0fd2dabfdfcfc15ca6041e",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "geranium-sanguineum-max-frei",
+      "variant": "watercolour",
+      "imageSha256": "3e33f6237ab5b92f530771e697bd2d2f532061852012561b8d1b260551ebf7c2",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "geum-rivale-leonards-variety",
+      "variant": "watercolour",
+      "imageSha256": "cf1e845ee1b0038c03125aac4a23997672f7f5ff14dcf7e3994aab339f20f426",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "geum-totally-tangerine",
+      "variant": "watercolour",
+      "imageSha256": "9829794ee2553223762b1a64553759b5023724565f7ce3f72d92718296f424df",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "gillenia-trifoliata",
+      "variant": "watercolour",
+      "imageSha256": "41d7ce66b344192ce1b76c9bd3803972c478ae29b5505c2ce282c7c315c7a9a2",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "hakonechloa-macra",
+      "variant": "watercolour",
+      "imageSha256": "f01ff2fc40f4cb99f6b928187febe90780658c237d86e5deaa650803744ca1a3",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt (superseded version)"
+    },
+    {
+      "plantId": "hakonechloa-macra",
+      "variant": "watercolour",
+      "imageSha256": "bdbb17a63932148210349b19a8aa3b635540567c8f721e0183efa1aa93569108",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "helenium-moerheim",
+      "variant": "watercolour",
+      "imageSha256": "f1a002085f6687843b45ac26674cc97e461db5422365946e61884d338c7c070d",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "helleborus-hybridus",
+      "variant": "watercolour",
+      "imageSha256": "1740d76281c88e26f72439d7a346fbd92d236bf33ac56fb404ab40b71594b11c",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt (superseded version)"
+    },
+    {
+      "plantId": "helleborus-hybridus",
+      "variant": "watercolour",
+      "imageSha256": "f772296ee8d22a3327770b90dc66517319f671253b7e45e6296b5a29e6e7926b",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "hemerocallis-stafford",
+      "variant": "watercolour",
+      "imageSha256": "e9a65d559a2497740c4b5b538a7a4835882c3a42e620bffb62047379abbbbb23",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "heuchera-palace-purple",
+      "variant": "watercolour",
+      "imageSha256": "861e2f8fd248a2416f3282602c2e29d490b52fd7344be1e0600b89d8d4c6db29",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt (superseded version)"
+    },
+    {
+      "plantId": "heuchera-palace-purple",
+      "variant": "watercolour",
+      "imageSha256": "858f76e5d90008d0c324f4eb5fe23f3038efe1c1b54de9ce50553eadad77371e",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "hydrangea-incrediball",
+      "variant": "watercolour",
+      "imageSha256": "82ef4d6a145b946a7bd5fb49b9a03587082d2d9f5e1b882d7af0b62bf51af486",
+      "approvedAt": "2026-10-30T14:59:46Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "hydrangea-paniculata-little-lime",
+      "variant": "watercolour",
+      "imageSha256": "d98fa8b7593831c3d2b8deab3e38c263e09ccc018e65861add5588ff18199594",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "hylotelephium-herbstfreude",
+      "variant": "watercolour",
+      "imageSha256": "9f6c74f45bd3a58b02a83b663a77530738f24e4accbbb3c1398a855e6e63815b",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "iberis-sempervirens-snowflake",
+      "variant": "watercolour",
+      "imageSha256": "ce6dcb0e60728b29ffc70dba226ca329743fce2f127eb3b198f3c17847cb9b64",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "iris-sibirica",
+      "variant": "watercolour",
+      "imageSha256": "fae30267692fee3ad9c7484fac7dc6a12a1966105d7efac7350e4073cad67ae9",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "knautia-macedonica",
+      "variant": "watercolour",
+      "imageSha256": "8414c61fa30f3f5b60858464fc8c2586340e8e0771a9f9b6eff3b0ca08262ccd",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "kniphofia-tawny-king",
+      "variant": "watercolour",
+      "imageSha256": "dd639aaf1b59251db7f82cb9c53ad28662c433c47e906a4d2b0c255f1b5dc2f4",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "lavandula-hidcote",
+      "variant": "watercolour",
+      "imageSha256": "4ffcd5ffc9890b29571fa01e8f7c52a21eb66dc19c00f44d912140872b81d393",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt (superseded version)"
+    },
+    {
+      "plantId": "lavandula-hidcote",
+      "variant": "watercolour",
+      "imageSha256": "ce97f266ff0a604c79b7444185d84878f1080d7d120d94ad175ed6d1732bd7c9",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "leucanthemum-becky",
+      "variant": "watercolour",
+      "imageSha256": "d4c3b7fb772b5202bce7094213bc1048fff97000aae56e095c8e5e40e91c2c2c",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "linaria-purpurea",
+      "variant": "watercolour",
+      "imageSha256": "57eb2b482d679bfd8a5e28c821033afdcc200495e8b8e13b097a9c74e4c6d88c",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "lupinus-gallery-blue",
+      "variant": "watercolour",
+      "imageSha256": "e313b80793d9af3192ca4dd1502f626a2218282388bdf789f8d07a167e8cdb29",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "lupinus-the-governor",
+      "variant": "watercolour",
+      "imageSha256": "210158369a474494bc4dbe39d59f84d914d7414e76bb70bf3f7e13f97131302e",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "luzula-nivea",
+      "variant": "watercolour",
+      "imageSha256": "2a95fa5495921376b68587a18ae4ae1084c767b459f137ab0d1ebef4b176ada3",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "lychnis-coronaria",
+      "variant": "watercolour",
+      "imageSha256": "341e632401a86a3ff65343a179938dc22069ec4fa8b8a5fbeec3f205315e5ca2",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "malva-sylvestris",
+      "variant": "watercolour",
+      "imageSha256": "2200d2a25c215fdf149690d5f46d379a3d7b345f01d22ac37983473669cd6575",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "molinia-transparent",
+      "variant": "watercolour",
+      "imageSha256": "11cedd7d6eb19dad8264c13a6f8fd8b3add91b6e4358ab3a9644461dbb65a491",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "nepeta-walkers-low",
+      "variant": "watercolour",
+      "imageSha256": "ce2a5ecc57a9596aee80b28ac31c577bc4c172c91dd8c917fec97a863b61e5b1",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt (superseded version)"
+    },
+    {
+      "plantId": "nepeta-walkers-low",
+      "variant": "watercolour",
+      "imageSha256": "b70b7b79fe5277105b56e4b2293f03edfb842eb7bb6a0567dec3d8c70136c282",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "paeonia-duchesse-de-nemours",
+      "variant": "watercolour",
+      "imageSha256": "cabde12216d018cbc5ff81e7d1fe16f038b36cd332e1786bc7f389b28a23665d",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt (superseded version)"
+    },
+    {
+      "plantId": "paeonia-duchesse-de-nemours",
+      "variant": "watercolour",
+      "imageSha256": "6750fcbbc2b23f04f95cbf5115498119048c8e65bba82956101834920099b2be",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "penstemon-garnet",
+      "variant": "watercolour",
+      "imageSha256": "1be86f7b83f0fceb830c21fb5ec078fc31c675891889493f0c96d399741a9138",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "perovskia-blue-spire",
+      "variant": "watercolour",
+      "imageSha256": "0023d6495d76601bf3373eb36a5e642c6327cb6813e1dc0e289af66c8f34b25b",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "persicaria-firetail",
+      "variant": "watercolour",
+      "imageSha256": "caa6fbee596837aa38be545e39b06d1f76f553d931b22d5712fb7b1eea19aa42",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "philadelphus-manteau-dhermine",
+      "variant": "watercolour",
+      "imageSha256": "8965666286a7728e216fa62cf777c425209265ef49ad03a1ecdfd9b053420b34",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "phlomis-russeliana",
+      "variant": "watercolour",
+      "imageSha256": "ed6859fbd7a13a7c2c6ab600969a7b1ae1469e20763490c09363da32a77f5cff",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "phlox-blue-paradise",
+      "variant": "watercolour",
+      "imageSha256": "69e43ea0c714b057962d097201e7cadfc8ac9642e3d7a819b38156d936fb417e",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt (superseded version)"
+    },
+    {
+      "plantId": "phlox-blue-paradise",
+      "variant": "watercolour",
+      "imageSha256": "5c04eb6d3ae985731ec61e0a8fb5c8decff8f152231f346840a84724517a1fdb",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "phlox-subulata-emerald-cushion-blue",
+      "variant": "watercolour",
+      "imageSha256": "b7d7ccaddcfffa8286a526060b54dde9c83ced56a81ab95721ca75282e25200a",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "polemonium-caeruleum",
+      "variant": "watercolour",
+      "imageSha256": "2fab1b0e9673140a50fbabb03afce51a4db363e853419e75ad3901e70b9b31cc",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "polystichum-setiferum",
+      "variant": "watercolour",
+      "imageSha256": "5e6e9163676fc74126bd17bdf80b44a7202db4e7736bc88c1c1140e38ac0658a",
+      "approvedAt": "2026-10-30T16:41:41Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "pulmonaria-blue-ensign",
+      "variant": "watercolour",
+      "imageSha256": "703fec36bee9b9dd2333edfb44f2c3009772f0525780697d97e50000c244b1f4",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt (superseded version)"
+    },
+    {
+      "plantId": "pulmonaria-blue-ensign",
+      "variant": "watercolour",
+      "imageSha256": "1c4333846ffe9adc4eeffd7eec8edd3cf3c499f2674b9fa5f16ec4338d614e49",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "rosa-bonica",
+      "variant": "watercolour",
+      "imageSha256": "cc53a8f4b8cd68b5482f84ef7fb31dbda73aa14a749a7816a5128b966898f7a5",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "rosa-the-fairy",
+      "variant": "watercolour",
+      "imageSha256": "aad8b8d76a91b0dbcdb779179c089e9b5bba25fad35dbcde054f3573da29ee02",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "rudbeckia-goldsturm",
+      "variant": "watercolour",
+      "imageSha256": "bfff5e0a5cd859e13644126591c313fa96ef53abbd59e1ea629610ba551c61c5",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "salvia-amistad",
+      "variant": "watercolour",
+      "imageSha256": "638e53963fee8b37acc0b98bdec28255d94e925bbcdb856ce94f80cb94724b4f",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "salvia-caradonna",
+      "variant": "watercolour",
+      "imageSha256": "cce6310da8b85152c377c7bb221349c8daccb71f73c054f8909ab0af971268df",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "sanguisorba-red-thunder",
+      "variant": "watercolour",
+      "imageSha256": "3af2386c4b30439c4d42b79cb2944f14bd5cd217d27d0a51abd5c62f1a6e5086",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "sarcococca-hookeriana-var-humilis",
+      "variant": "watercolour",
+      "imageSha256": "5f2ab410c13ae4f84b5abb79076ac7c5bb096bf04c36e0f719c0cffc041bfc26",
+      "approvedAt": "2026-10-30T14:59:46Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "scabiosa-butterfly-blue",
+      "variant": "watercolour",
+      "imageSha256": "15f09dce18f0a249c6b6b9ce82488068df14414ff2291c5b7e843b0ff1e0fd9c",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "sesleria-autumnalis",
+      "variant": "watercolour",
+      "imageSha256": "8d4becf53e280f28c6ba5a04a52d1a9cabc51d88e8b39c60d993940778791135",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "stachys-byzantina-silver-carpet",
+      "variant": "watercolour",
+      "imageSha256": "3a5837e8473d800aed1bbbad2bafd90a30fc1ac1368dba4bc8be3275f8ff32f3",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "stipa-gigantea",
+      "variant": "watercolour",
+      "imageSha256": "38d0e8440f3d4d883500ec834afa0bd9a37d7a788f3df1ee0297a991b182a2f2",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "stipa-tenuissima",
+      "variant": "watercolour",
+      "imageSha256": "96cf32ef8af2401a7efb62da52aae47125aca78585b391c210887d5bb4436838",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "syringa-meyeri-palibin",
+      "variant": "watercolour",
+      "imageSha256": "11936667119cc5db29a901f0b35b5d4461f60edb4681632d9814ad3a7944f8ad",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "taxus-baccata-topiary",
+      "variant": "watercolour",
+      "imageSha256": "dc1527d0df3abbe4f6e3fe18af154525241db0e2b80263913430c059a04d9179",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt (superseded version)"
+    },
+    {
+      "plantId": "taxus-baccata-topiary",
+      "variant": "watercolour",
+      "imageSha256": "d1b080e59b6bb62ce8af5ab39809537df03260ab7551376ccb0395b1c91cd685",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "thalictrum-delavayi",
+      "variant": "watercolour",
+      "imageSha256": "94654df6dd559b21a5055c33153e0269387faae49b7472065cdb111db97a27ee",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "verbascum-chaixii-album",
+      "variant": "watercolour",
+      "imageSha256": "b543bbe9523b06080e1d6876e44a35772503ba1f87699b291e3eba5d018069d2",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "verbena-bonariensis",
+      "variant": "watercolour",
+      "imageSha256": "0122dad1831dc98ba71a467842d51436e217719ec9c1cf4c630eb7ddcf77a718",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "veronica-longifolia",
+      "variant": "watercolour",
+      "imageSha256": "162f39b7ffc8a33277e51217f1a2d0a596ec7b768fa9a045cc7299f423eb4b04",
+      "approvedAt": "2026-10-28T07:15:53Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "veronicastrum-album",
+      "variant": "watercolour",
+      "imageSha256": "0cc8951b50aaff3d1b13ba4446bedd39348c84a720403ebea5d2a7493683064f",
+      "approvedAt": "2026-10-16T10:47:39Z",
+      "source": "data/botanical-verification.json explicit approvedAt"
+    },
+    {
+      "plantId": "acanthus-mollis",
+      "variant": "watercolour",
+      "imageSha256": "e9fa55ad75789259469f123fab17eae1085949dc8bfdb351018c3065a2b9286f",
+      "approvedAt": "2026-11-03T10:48:21Z",
+      "source": "owner acceptance of replacement bytes, recorded (no new visual review)",
+      "supersedesImageSha256": "0853d33e7d9c57272d0800106833a0b41e95e48080b86b07405cee4cf538dab6",
+      "supersededApprovedAt": "2026-10-28T07:15:53Z",
+      "basis": "Owner confirmation (project thread message cmsg_01KAYN5TijVMSB8FWxXvMkbSDJw7ZdmgRd3YtY753zyx86, 2026-11-03T10:48:21Z) of the owner's existing acceptance of the 12 CP9.1 resolution-corrected WebPs: all 108 published illustrations approved 2026-11-02 (15:57Z), correction made permanent at source by owner ruling 2026-11-02 17:59Z. Recorded here against the exact corrected hash; no new visual approval. Corrected bytes: PLB branch assets/e3-resolution-correction 41409a4 (data/resolution-corrections.json)."
+    },
+    {
+      "plantId": "alcea-rosea-halo-white",
+      "variant": "watercolour",
+      "imageSha256": "d8cf6589874a500503dffdefcc0b703372773c3bebbe1b7503a77805966c22ab",
+      "approvedAt": "2026-11-03T10:48:21Z",
+      "source": "owner acceptance of replacement bytes, recorded (no new visual review)",
+      "supersedesImageSha256": "465de123acdfa3937a6557cbe4957528ebbb9ee5f87ba58e21aa1ca50578b3d2",
+      "supersededApprovedAt": "2026-10-28T07:15:53Z",
+      "basis": "Owner confirmation (project thread message cmsg_01KAYN5TijVMSB8FWxXvMkbSDJw7ZdmgRd3YtY753zyx86, 2026-11-03T10:48:21Z) of the owner's existing acceptance of the 12 CP9.1 resolution-corrected WebPs: all 108 published illustrations approved 2026-11-02 (15:57Z), correction made permanent at source by owner ruling 2026-11-02 17:59Z. Recorded here against the exact corrected hash; no new visual approval. Corrected bytes: PLB branch assets/e3-resolution-correction 41409a4 (data/resolution-corrections.json)."
+    },
+    {
+      "plantId": "aruncus-dioicus",
+      "variant": "watercolour",
+      "imageSha256": "cc97ddd85b9435daaa94c14f99701f7cfc8c59c1fdd474158dcef0957ae3a433",
+      "approvedAt": "2026-11-03T10:48:21Z",
+      "source": "owner acceptance of replacement bytes, recorded (no new visual review)",
+      "supersedesImageSha256": "6d3fff6d0dff32535249b4be2427b106925cf7a9bf60d95e4bc6d926f207db38",
+      "supersededApprovedAt": "2026-10-16T10:47:39Z",
+      "basis": "Owner confirmation (project thread message cmsg_01KAYN5TijVMSB8FWxXvMkbSDJw7ZdmgRd3YtY753zyx86, 2026-11-03T10:48:21Z) of the owner's existing acceptance of the 12 CP9.1 resolution-corrected WebPs: all 108 published illustrations approved 2026-11-02 (15:57Z), correction made permanent at source by owner ruling 2026-11-02 17:59Z. Recorded here against the exact corrected hash; no new visual approval. Corrected bytes: PLB branch assets/e3-resolution-correction 41409a4 (data/resolution-corrections.json)."
+    },
+    {
+      "plantId": "calamagrostis-karl-foerster",
+      "variant": "watercolour",
+      "imageSha256": "c6e4249fc20185fe1bdb9c0675d7f9b815343283d264bb114bbd6a7c0dd4ef86",
+      "approvedAt": "2026-11-03T10:48:21Z",
+      "source": "owner acceptance of replacement bytes, recorded (no new visual review)",
+      "supersedesImageSha256": "6a669b2673651df9ef7b826ecd26980c7104d49aeff0230e3d73a46a6d7c68e5",
+      "supersededApprovedAt": "2026-10-16T10:47:39Z",
+      "basis": "Owner confirmation (project thread message cmsg_01KAYN5TijVMSB8FWxXvMkbSDJw7ZdmgRd3YtY753zyx86, 2026-11-03T10:48:21Z) of the owner's existing acceptance of the 12 CP9.1 resolution-corrected WebPs: all 108 published illustrations approved 2026-11-02 (15:57Z), correction made permanent at source by owner ruling 2026-11-02 17:59Z. Recorded here against the exact corrected hash; no new visual approval. Corrected bytes: PLB branch assets/e3-resolution-correction 41409a4 (data/resolution-corrections.json)."
+    },
+    {
+      "plantId": "digitalis-purpurea-alba",
+      "variant": "watercolour",
+      "imageSha256": "236f6944532aabbd3a620ca4818cdebd8e433de4771cc908219b35bfb43fb674",
+      "approvedAt": "2026-11-03T10:48:21Z",
+      "source": "owner acceptance of replacement bytes, recorded (no new visual review)",
+      "supersedesImageSha256": "663e9949164555cda0c4d78bc23a2de76bdd735a5f4cc1c27511721bef84ce4a",
+      "supersededApprovedAt": "2026-10-16T10:47:39Z",
+      "basis": "Owner confirmation (project thread message cmsg_01KAYN5TijVMSB8FWxXvMkbSDJw7ZdmgRd3YtY753zyx86, 2026-11-03T10:48:21Z) of the owner's existing acceptance of the 12 CP9.1 resolution-corrected WebPs: all 108 published illustrations approved 2026-11-02 (15:57Z), correction made permanent at source by owner ruling 2026-11-02 17:59Z. Recorded here against the exact corrected hash; no new visual approval. Corrected bytes: PLB branch assets/e3-resolution-correction 41409a4 (data/resolution-corrections.json)."
+    },
+    {
+      "plantId": "eupatorium-atropurpureum",
+      "variant": "watercolour",
+      "imageSha256": "328423139e0d0059fc353872f218eedd5ccfc719cdf250997965e44ec165a4de",
+      "approvedAt": "2026-11-03T10:48:21Z",
+      "source": "owner acceptance of replacement bytes, recorded (no new visual review)",
+      "supersedesImageSha256": "a06b4676de4ec2c687da52310d34b26ddd11307f29d7dc58c35b1eb9bf3159c9",
+      "supersededApprovedAt": "2026-10-16T10:47:39Z",
+      "basis": "Owner confirmation (project thread message cmsg_01KAYN5TijVMSB8FWxXvMkbSDJw7ZdmgRd3YtY753zyx86, 2026-11-03T10:48:21Z) of the owner's existing acceptance of the 12 CP9.1 resolution-corrected WebPs: all 108 published illustrations approved 2026-11-02 (15:57Z), correction made permanent at source by owner ruling 2026-11-02 17:59Z. Recorded here against the exact corrected hash; no new visual approval. Corrected bytes: PLB branch assets/e3-resolution-correction 41409a4 (data/resolution-corrections.json)."
+    },
+    {
+      "plantId": "hydrangea-incrediball",
+      "variant": "watercolour",
+      "imageSha256": "6e6040d9b9fd3fb44fc674470d645a8358a06ad2550fb8f6e6787fcc224c3b23",
+      "approvedAt": "2026-11-03T10:48:21Z",
+      "source": "owner acceptance of replacement bytes, recorded (no new visual review)",
+      "supersedesImageSha256": "82ef4d6a145b946a7bd5fb49b9a03587082d2d9f5e1b882d7af0b62bf51af486",
+      "supersededApprovedAt": "2026-10-30T14:59:46Z",
+      "basis": "Owner confirmation (project thread message cmsg_01KAYN5TijVMSB8FWxXvMkbSDJw7ZdmgRd3YtY753zyx86, 2026-11-03T10:48:21Z) of the owner's existing acceptance of the 12 CP9.1 resolution-corrected WebPs: all 108 published illustrations approved 2026-11-02 (15:57Z), correction made permanent at source by owner ruling 2026-11-02 17:59Z. Recorded here against the exact corrected hash; no new visual approval. Corrected bytes: PLB branch assets/e3-resolution-correction 41409a4 (data/resolution-corrections.json)."
+    },
+    {
+      "plantId": "hydrangea-paniculata-little-lime",
+      "variant": "watercolour",
+      "imageSha256": "e1cfc4c34655da766fc7c58891f2b7ea67bae4f72306717d90ac0cac8abb2555",
+      "approvedAt": "2026-11-03T10:48:21Z",
+      "source": "owner acceptance of replacement bytes, recorded (no new visual review)",
+      "supersedesImageSha256": "d98fa8b7593831c3d2b8deab3e38c263e09ccc018e65861add5588ff18199594",
+      "supersededApprovedAt": "2026-10-28T07:15:53Z",
+      "basis": "Owner confirmation (project thread message cmsg_01KAYN5TijVMSB8FWxXvMkbSDJw7ZdmgRd3YtY753zyx86, 2026-11-03T10:48:21Z) of the owner's existing acceptance of the 12 CP9.1 resolution-corrected WebPs: all 108 published illustrations approved 2026-11-02 (15:57Z), correction made permanent at source by owner ruling 2026-11-02 17:59Z. Recorded here against the exact corrected hash; no new visual approval. Corrected bytes: PLB branch assets/e3-resolution-correction 41409a4 (data/resolution-corrections.json)."
+    },
+    {
+      "plantId": "molinia-transparent",
+      "variant": "watercolour",
+      "imageSha256": "0311a8180713e94f1f23fa83c4d114dbaac6f75b0c736281f9dbdb82bcfeee60",
+      "approvedAt": "2026-11-03T10:48:21Z",
+      "source": "owner acceptance of replacement bytes, recorded (no new visual review)",
+      "supersedesImageSha256": "11cedd7d6eb19dad8264c13a6f8fd8b3add91b6e4358ab3a9644461dbb65a491",
+      "supersededApprovedAt": "2026-10-16T10:47:39Z",
+      "basis": "Owner confirmation (project thread message cmsg_01KAYN5TijVMSB8FWxXvMkbSDJw7ZdmgRd3YtY753zyx86, 2026-11-03T10:48:21Z) of the owner's existing acceptance of the 12 CP9.1 resolution-corrected WebPs: all 108 published illustrations approved 2026-11-02 (15:57Z), correction made permanent at source by owner ruling 2026-11-02 17:59Z. Recorded here against the exact corrected hash; no new visual approval. Corrected bytes: PLB branch assets/e3-resolution-correction 41409a4 (data/resolution-corrections.json)."
+    },
+    {
+      "plantId": "philadelphus-manteau-dhermine",
+      "variant": "watercolour",
+      "imageSha256": "4f7777505fc8cfed3d52515f7006be381ee8763b097491038c915ff543a0c24a",
+      "approvedAt": "2026-11-03T10:48:21Z",
+      "source": "owner acceptance of replacement bytes, recorded (no new visual review)",
+      "supersedesImageSha256": "8965666286a7728e216fa62cf777c425209265ef49ad03a1ecdfd9b053420b34",
+      "supersededApprovedAt": "2026-10-16T10:47:39Z",
+      "basis": "Owner confirmation (project thread message cmsg_01KAYN5TijVMSB8FWxXvMkbSDJw7ZdmgRd3YtY753zyx86, 2026-11-03T10:48:21Z) of the owner's existing acceptance of the 12 CP9.1 resolution-corrected WebPs: all 108 published illustrations approved 2026-11-02 (15:57Z), correction made permanent at source by owner ruling 2026-11-02 17:59Z. Recorded here against the exact corrected hash; no new visual approval. Corrected bytes: PLB branch assets/e3-resolution-correction 41409a4 (data/resolution-corrections.json)."
+    },
+    {
+      "plantId": "stipa-gigantea",
+      "variant": "watercolour",
+      "imageSha256": "0b5d60d2bf759eff158b172911b2a22d2da89c9cbd44242e62817ad0e6208012",
+      "approvedAt": "2026-11-03T10:48:21Z",
+      "source": "owner acceptance of replacement bytes, recorded (no new visual review)",
+      "supersedesImageSha256": "38d0e8440f3d4d883500ec834afa0bd9a37d7a788f3df1ee0297a991b182a2f2",
+      "supersededApprovedAt": "2026-10-16T10:47:39Z",
+      "basis": "Owner confirmation (project thread message cmsg_01KAYN5TijVMSB8FWxXvMkbSDJw7ZdmgRd3YtY753zyx86, 2026-11-03T10:48:21Z) of the owner's existing acceptance of the 12 CP9.1 resolution-corrected WebPs: all 108 published illustrations approved 2026-11-02 (15:57Z), correction made permanent at source by owner ruling 2026-11-02 17:59Z. Recorded here against the exact corrected hash; no new visual approval. Corrected bytes: PLB branch assets/e3-resolution-correction 41409a4 (data/resolution-corrections.json)."
+    },
+    {
+      "plantId": "syringa-meyeri-palibin",
+      "variant": "watercolour",
+      "imageSha256": "d771ae6f24b6f4ac26a780ca608013ad4ba43f7b11c3f6fa8d2a090d7265f21b",
+      "approvedAt": "2026-11-03T10:48:21Z",
+      "source": "owner acceptance of replacement bytes, recorded (no new visual review)",
+      "supersedesImageSha256": "11936667119cc5db29a901f0b35b5d4461f60edb4681632d9814ad3a7944f8ad",
+      "supersededApprovedAt": "2026-10-28T07:15:53Z",
+      "basis": "Owner confirmation (project thread message cmsg_01KAYN5TijVMSB8FWxXvMkbSDJw7ZdmgRd3YtY753zyx86, 2026-11-03T10:48:21Z) of the owner's existing acceptance of the 12 CP9.1 resolution-corrected WebPs: all 108 published illustrations approved 2026-11-02 (15:57Z), correction made permanent at source by owner ruling 2026-11-02 17:59Z. Recorded here against the exact corrected hash; no new visual approval. Corrected bytes: PLB branch assets/e3-resolution-correction 41409a4 (data/resolution-corrections.json)."
+    }
+  ],
+  "revocations": []
+}

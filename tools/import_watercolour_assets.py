@@ -95,6 +95,7 @@ def main(argv):
     assets = man.get("assets", man)
     writes = []  # (destination path, bytes)
     added, replaced, unchanged, created_records = [], [], [], []
+    provenance = []
     for pid in sorted(rec):
         png, webp = found[pid]; r = rec[pid]
         wdest = dest_dir / f"{pid}-watercolour.webp"
@@ -107,6 +108,13 @@ def main(argv):
             old_png_sha = (cur or {}).get("pngSha256") or ((assets.get(pid) or {}).get("variants", {}).get("watercolour") or {}).get("pngSha256")
         if old_webp is not None and sha(old_webp) == r["webp"] and old_png_sha == r["png"] and cur:
             unchanged.append(pid); continue  # identical artwork: files and records stay exactly as they are
+        if old_webp is not None and sha(old_webp) == r["webp"] and cur and cur.get("imageSha256") == r["webp"]:
+            # SAME published WebP bytes, different PNG master: a source-provenance update only. The WebP, its approval and its
+            # imageSha256/pngSha256/approvedAt stay exactly as recorded (approval belongs to the WebP bytes); the master is stored and
+            # its hash is appended to sourceMasters so the history is kept and sourceIntegrity can follow it.
+            if pdest is not None: writes.append((pdest, png.read_bytes()))
+            ver["plants"][pid]["watercolour"].setdefault("sourceMasters", []).append({"pngSha256": r["png"], "recordedAt": now})
+            provenance.append(pid); continue
         (replaced if old_webp is not None else added).append(pid)
         writes.append((wdest, webp.read_bytes()))
         if pdest is not None: writes.append((pdest, png.read_bytes()))
@@ -121,7 +129,7 @@ def main(argv):
         if cur: new["previous"] = {**cur, "supersededAt": now}
         elif prev.get("sha256"): new["previous"] = {"status": prev.get("status"), "imageSha256": prev.get("sha256"), "supersededAt": now}
         entry["watercolour"] = new
-    if writes:
+    if writes or provenance:
         man["updated"] = now[:10]; ver["updated"] = now
         ver["watercolourNote"] = "plants[id].watercolour.status is awaiting_review until approved by editing this file (never automatically)."
         writes.append((mpath, (json.dumps(man, indent=2) + "\n").encode()))
@@ -149,7 +157,7 @@ def main(argv):
         for _, tmp in staged: tmp.unlink(missing_ok=True)
         Path(report_path).write_text(json.dumps({"problems": [{"id": None, "problems": [f"write failed, rolled back: {e}"]}]}, indent=1))
         sys.exit(f"import failed and was rolled back; no files changed: {e}")
-    out = {"imported": len(added) + len(replaced), "added": added, "replaced_existing": replaced, "unchanged": unchanged,
+    out = {"imported": len(added) + len(replaced), "added": added, "replaced_existing": replaced, "unchanged": unchanged, "provenance_only": provenance,
            "created_records_for": created_records, "problems": []}
     Path(report_path).write_text(json.dumps(out, indent=1)); print(json.dumps({k: (len(v) if isinstance(v, list) else v) for k, v in out.items()}))
     print("replaced:", replaced)

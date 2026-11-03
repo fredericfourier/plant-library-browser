@@ -42,6 +42,7 @@ class ImportCase(unittest.TestCase):
         for d in (self.plb / "data", self.plb / "tools", self.plb / A, self.bd / A / "masters", self.bd / "docs/briefs", self.bd / "docs/references"):
             d.mkdir(parents=True)
         shutil.copy(REPO / "tools/botanical_status.py", self.plb / "tools")
+        shutil.copy(REPO / "tools/approval_ledger.py", self.plb / "tools")
         self.ids = ["old-plant", "new-a", "new-b", "new-c"]  # old-plant has a botanical image; the others have nothing
         (self.plb / "data/plants.json").write_text(json.dumps({"plants": [
             {"id": i, "botanicalName": f"Plantus {i}", "heightCm": 50, "spreadCm": 40} for i in self.ids]}))
@@ -96,6 +97,7 @@ class ImportCase(unittest.TestCase):
         v = self.ver()
         v["plants"][pid]["watercolour"].update({"status": "confirmed", "approvedAt": "2026-10-17T00:00:00Z"})
         (self.plb / "data/botanical-verification.json").write_text(json.dumps(v, indent=2) + "\n")
+        sh(self.plb, "python3", "tools/approval_ledger.py", "sync")  # owner approval is recorded in the append-only ledger
 
     def tool(self, kind, *a):
         return sh(self.plb, "python3", "tools/botanical_status.py", "--type", kind, *a)
@@ -172,10 +174,12 @@ class WatercolourOnlyImport(ImportCase):
         self.assertEqual((self.plb / A / "old-plant-watercolour.webp").read_bytes(), (d2 / "old-plant-watercolour.webp").read_bytes())
         self.assertEqual(json.loads((self.tmp / "report.json").read_text())["replaced_existing"], ["old-plant"])
 
-    def test_same_webp_but_changed_png_counts_as_replacement(self):
+    def test_same_webp_but_changed_png_keeps_the_approval(self):
+        """Approval belongs to the WebP bytes: a new PNG master for an unchanged, approved WebP is a provenance update, not a revocation."""
         d = self.bundle("p1", [("new-a", 1)])
         self.assertEqual(self.importer(d).returncode, 0)
         self.approve("new-a")
+        before = self.ver()["plants"]["new-a"]["watercolour"]
         im = Image.open(d / "new-a-watercolour.png").convert("RGBA")
         im = Image.merge("RGBA", (*[c.point(lambda v: 255 - v) for c in im.split()[:3]], im.split()[3]))  # same alpha, different colours
         d2 = self.inc / "p2"
@@ -184,9 +188,12 @@ class WatercolourOnlyImport(ImportCase):
         shutil.copy(d / "new-a-watercolour.webp", d2 / "new-a-watercolour.webp")  # identical WebP bytes
         self.assertEqual(self.importer(d2).returncode, 0)
         w = self.ver()["plants"]["new-a"]["watercolour"]
-        self.assertEqual(w["status"], "awaiting_review")
-        self.assertEqual(w["pngSha256"], sha(d2 / "new-a-watercolour.png"))
-        self.assertEqual(w["previous"]["status"], "confirmed")
+        self.assertEqual(w["status"], "confirmed")
+        for k in ("imageSha256", "pngSha256", "approvedAt", "importedAt"):
+            self.assertEqual(w[k], before[k], k)
+        self.assertEqual(w["sourceMasters"][-1]["pngSha256"], sha(d2 / "new-a-watercolour.png"))
+        self.assertNotIn("previous", w)
+        self.assertEqual(json.loads((self.tmp / "report.json").read_text())["provenance_only"], ["new-a"])
 
 
 class FailureAtomicity(ImportCase):
