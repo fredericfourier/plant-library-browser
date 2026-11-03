@@ -14,8 +14,8 @@
   },
   "pngMasters": {
     "repo": "fredericfourier/border-designer",
-    "ref": "claude/watercolour-masters-batches-01-04",
-    "commit": "4239250d2cf337ae2683f9c7c2e674ea46f60fff",
+    "ref": "main",
+    "commit": "c907fbb0a050e5140adf962117109a760ad10180",
     "dir": "assets/plant-watercolours/masters"
   },
   "brief": {
@@ -38,7 +38,7 @@
     "uncertain_match": 0,
     "reserved_not_imported": 0,
     "filename_match_only": 0,
-    "provenance_maintenance_warnings": 28
+    "provenance_maintenance_warnings": 4
   },
   "plants": [
     {
@@ -113,7 +113,7 @@
       "expectsWatercolour": true,
       "assetForm": "both",
       "pngMasterPath": "assets/plant-watercolours/masters/geranium-rozanne-watercolour.png",
-      "pngSha256": "8266315331ea076c13d306c61faeedda0892d6f8aed2f57e1309ecc296a871e0",
+      "pngSha256": "8cd5424f3d35fbfc778ab52c4c724f613a364470b1da9155cf186d8f811c3c03",
       "webpPath": "assets/plant-watercolours/geranium-rozanne-watercolour.webp",
       "webpSha256": "4f694a94cacf5e16367cd805fda72a40f57d3aef5f0fd2dabfdfcfc15ca6041e",
       "verificationState": "confirmed",
@@ -127,11 +127,11 @@
         "earlierApprovalsForOtherBytes": 1
       },
       "sourceIntegrity": {
-        "state": "master_stale",
+        "state": "ok",
         "blocking": false,
-        "masterSha256": "8266315331ea076c13d306c61faeedda0892d6f8aed2f57e1309ecc296a871e0",
+        "masterSha256": "8cd5424f3d35fbfc778ab52c4c724f613a364470b1da9155cf186d8f811c3c03",
         "recordedPngSha256": "8cd5424f3d35fbfc778ab52c4c724f613a364470b1da9155cf186d8f811c3c03",
-        "detail": "registered master matches a superseded version of this plant's artwork: the current master was never imported"
+        "detail": ""
       },
       "notes": "earlier image version superseded (hash history in botanical-verification.json)",
       "lastUpdated": "2026-10-28T07:15:53Z",
@@ -145,7 +145,7 @@
       "expectsWatercolour": true,
       "assetForm": "both",
       "pngMasterPath": "assets/plant-watercolours/masters/geranium-macrorrhizum-watercolour.png",
-      "pngSha256": "4e7a6e5b05ec554fff1cd13ef23d0f017dadcb14430d1d45eb2566a56bcd24c2",
+      "pngSha256": "73243aad92d41fc2cf75cbc28b4dce54e75a970a1922e133d44ce29c475f8edb",
       "webpPath": "assets/plant-watercolours/geranium-macrorrhizum-watercolour.webp",
       "webpSha256": "aa22971887d04a28bc6753e4df5c5eff01206b1fed6d16b9e689288726974657",
       "verificationState": "confirmed",
@@ -159,11 +159,11 @@
         "earlierApprovalsForOtherBytes": 1
       },
       "sourceIntegrity": {
-        "state": "master_stale",
+        "state": "ok",
         "blocking": false,
-        "masterSha256": "4e7a6e5b05ec554fff1cd13ef23d0f017dadcb14430d1d45eb2566a56bcd24c2",
+        "masterSha256": "73243aad92d41fc2cf75cbc28b4dce54e75a970a1922e133d44ce29c475f8edb",
         "recordedPngSha256": "73243aad92d41fc2cf75cbc28b4dce54e75a970a1922e133d44ce29c475f8edb",
-        "detail": "registered master matches a superseded version of this plant's artwork: the current master was never imported"
+        "detail": ""
       },
       "notes": "earlier image version superseded (hash history in botanical-verification.json)",
       "lastUpdated": "2026-10-28T07:15:53Z",
@@ -177,7 +177,7 @@
       "expectsWatercolour": true,
       "assetForm": "both",
       "pngMasterPath": "assets/plant-watercolours/masters/nepeta-walkers-low-watercolour.png",
-      "pngSha256": "3bef7a18975926fa75389e5783a4c9449b92b051e52be0bb5a93bce77d4c2875",
+      "pngSha256": "0249b2de9cab173dd6f33aa9433a815eaaa962d374d9af0330ccb9743cb85d4c",
       "webpPath": "assets/plant-watercolours/nepeta-walkers-low-watercolour.webp",
       "webpSha256": "b70b7b79fe5277105b56e4b2293f03edfb842eb7bb6a0567dec3d8c70136c282",
       "verificationState": "confirmed",
@@ -191,11 +191,11 @@
         "earlierApprovalsForOtherBytes": 1
       },
       "sourceIntegrity": {
-        "state": "master_stale",
+        "state": "ok",
         "blocking": false,
-        "masterSha256": "3bef7a18975926fa75389e5783a4c9449b92b051e52be0bb5a93bce77d4c2875",
+        "masterSha256": "0249b2de9cab173dd6f33aa9433a815eaaa962d374d9af0330ccb9743cb85d4c",
         "recordedPngSha256": "0249b2de9cab173dd6f33aa9433a815eaaa962d374d9af0330ccb9743cb85d4c",
-        "detail": "registered master matches a superseded version of this plant's artwork: the current master was never imported"
+        "detail": ""
       },
       "notes": "earlier image version superseded (hash history in botanical-verification.json)",
       "lastUpdated": "2026-10-28T07:15:53Z",
@@ -785,7 +785,7 @@
       "expectsWatercolour": true,
       "assetForm": "both",
       "pngMasterPath": "assets/plant-watercolours/masters/lavandula-hidcote-watercolour.png",
-      "pngSha256": "df0353676d5b9ab850dd35496820fa8398fbc2542516384a8e3783432f14eec5",
+      "pngSha256": "df72668cba9b37da505784523af6a0ffc339f26e1dc9abbefb035eb69c85c983",
       "webpPath": "assets/plant-watercolours/lavandula-hidcote-watercolour.webp",
       "webpSha256": "ce97f266ff0a604c79b7444185d84878f1080d7d120d94ad175ed6d1732bd7c9",
       "verificationState": "confirmed",
@@ -799,11 +799,11 @@
         "earlierApprovalsForOtherBytes": 1
       },
       "sourceIntegrity": {
-        "state": "master_stale",
+        "state": "ok",
         "blocking": false,
-        "masterSha256": "df0353676d5b9ab850dd35496820fa8398fbc2542516384a8e3783432f14eec5",
+        "masterSha256": "df72668cba9b37da505784523af6a0ffc339f26e1dc9abbefb035eb69c85c983",
         "recordedPngSha256": "df72668cba9b37da505784523af6a0ffc339f26e1dc9abbefb035eb69c85c983",
-        "detail": "registered master matches a superseded version of this plant's artwork: the current master was never imported"
+        "detail": ""
       },
       "notes": "earlier image version superseded (hash history in botanical-verification.json)",
       "lastUpdated": "2026-10-28T07:15:53Z",
@@ -1137,7 +1137,7 @@
       "expectsWatercolour": true,
       "assetForm": "both",
       "pngMasterPath": "assets/plant-watercolours/masters/erigeron-karvinskianus-watercolour.png",
-      "pngSha256": "c0585792e4ca1e8d028299147c5abe39e40d5bc8d33b7ee1667a695eefbd1927",
+      "pngSha256": "d1b8878d912947daf0716f9492f49d24be5347525660edadd2f62a6c1e62b383",
       "webpPath": "assets/plant-watercolours/erigeron-karvinskianus-watercolour.webp",
       "webpSha256": "c3ed193b66fd64a2d88311b41159476650803f905931683b185110f64cf9f8ea",
       "verificationState": "confirmed",
@@ -1151,11 +1151,11 @@
         "earlierApprovalsForOtherBytes": 1
       },
       "sourceIntegrity": {
-        "state": "master_stale",
+        "state": "ok",
         "blocking": false,
-        "masterSha256": "c0585792e4ca1e8d028299147c5abe39e40d5bc8d33b7ee1667a695eefbd1927",
+        "masterSha256": "d1b8878d912947daf0716f9492f49d24be5347525660edadd2f62a6c1e62b383",
         "recordedPngSha256": "d1b8878d912947daf0716f9492f49d24be5347525660edadd2f62a6c1e62b383",
-        "detail": "registered master matches a superseded version of this plant's artwork: the current master was never imported"
+        "detail": ""
       },
       "notes": "earlier image version superseded (hash history in botanical-verification.json)",
       "lastUpdated": "2026-10-28T07:15:53Z",
@@ -1201,7 +1201,7 @@
       "expectsWatercolour": true,
       "assetForm": "both",
       "pngMasterPath": "assets/plant-watercolours/masters/allium-purple-sensation-watercolour.png",
-      "pngSha256": "29140be0f4a289e238f1e4147e8cb2a995e151f7470f995a0aca98f14ee6b460",
+      "pngSha256": "978a777db40cd9254efc926c480270c8ed7433c3876eb04c2512ce6f762a42cf",
       "webpPath": "assets/plant-watercolours/allium-purple-sensation-watercolour.webp",
       "webpSha256": "6de092c34b7516198abe0dd23caa198b0c168f8b6fd5b04921ff7e9e7498ebb6",
       "verificationState": "confirmed",
@@ -1215,11 +1215,11 @@
         "earlierApprovalsForOtherBytes": 1
       },
       "sourceIntegrity": {
-        "state": "master_stale",
+        "state": "ok",
         "blocking": false,
-        "masterSha256": "29140be0f4a289e238f1e4147e8cb2a995e151f7470f995a0aca98f14ee6b460",
+        "masterSha256": "978a777db40cd9254efc926c480270c8ed7433c3876eb04c2512ce6f762a42cf",
         "recordedPngSha256": "978a777db40cd9254efc926c480270c8ed7433c3876eb04c2512ce6f762a42cf",
-        "detail": "registered master matches a superseded version of this plant's artwork: the current master was never imported"
+        "detail": ""
       },
       "notes": "earlier image version superseded (hash history in botanical-verification.json)",
       "lastUpdated": "2026-10-28T07:15:53Z",
@@ -1233,7 +1233,7 @@
       "expectsWatercolour": true,
       "assetForm": "both",
       "pngMasterPath": "assets/plant-watercolours/masters/digitalis-purpurea-watercolour.png",
-      "pngSha256": "2c8734a05b91502d20c52a31c721e5a0cf8eb67c9c80802ef26cc21fac780916",
+      "pngSha256": "940fe15d940f404aac30348d9802b5d6f0b4df00290b32562e0768445c9f2fb4",
       "webpPath": "assets/plant-watercolours/digitalis-purpurea-watercolour.webp",
       "webpSha256": "5e56faf04a3cac9d2a5e48f03b7b7df283827eb3028e00df97275277d0836c78",
       "verificationState": "confirmed",
@@ -1247,11 +1247,11 @@
         "earlierApprovalsForOtherBytes": 1
       },
       "sourceIntegrity": {
-        "state": "master_stale",
+        "state": "ok",
         "blocking": false,
-        "masterSha256": "2c8734a05b91502d20c52a31c721e5a0cf8eb67c9c80802ef26cc21fac780916",
+        "masterSha256": "940fe15d940f404aac30348d9802b5d6f0b4df00290b32562e0768445c9f2fb4",
         "recordedPngSha256": "940fe15d940f404aac30348d9802b5d6f0b4df00290b32562e0768445c9f2fb4",
-        "detail": "registered master matches a superseded version of this plant's artwork: the current master was never imported"
+        "detail": ""
       },
       "notes": "earlier image version superseded (hash history in botanical-verification.json)",
       "lastUpdated": "2026-10-28T07:15:53Z",
@@ -1425,7 +1425,7 @@
       "expectsWatercolour": true,
       "assetForm": "both",
       "pngMasterPath": "assets/plant-watercolours/masters/alchemilla-mollis-watercolour.png",
-      "pngSha256": "d9546181f891934b95ea847ee043efd5b83606d79eb796b8f29f5aff37caf213",
+      "pngSha256": "cb143065fe620db5cf5687d74dfb22ed9d5a880ddc850dd6d1ab67eb819ecd20",
       "webpPath": "assets/plant-watercolours/alchemilla-mollis-watercolour.webp",
       "webpSha256": "87cddd289fd2fe8dcbf87abf39f3f958ed70ecbb12cc687736126f8fb5e3f8cd",
       "verificationState": "confirmed",
@@ -1439,11 +1439,11 @@
         "earlierApprovalsForOtherBytes": 1
       },
       "sourceIntegrity": {
-        "state": "master_stale",
+        "state": "ok",
         "blocking": false,
-        "masterSha256": "d9546181f891934b95ea847ee043efd5b83606d79eb796b8f29f5aff37caf213",
+        "masterSha256": "cb143065fe620db5cf5687d74dfb22ed9d5a880ddc850dd6d1ab67eb819ecd20",
         "recordedPngSha256": "cb143065fe620db5cf5687d74dfb22ed9d5a880ddc850dd6d1ab67eb819ecd20",
-        "detail": "registered master matches a superseded version of this plant's artwork: the current master was never imported"
+        "detail": ""
       },
       "notes": "earlier image version superseded (hash history in botanical-verification.json)",
       "lastUpdated": "2026-10-28T07:15:53Z",
@@ -1457,7 +1457,7 @@
       "expectsWatercolour": true,
       "assetForm": "both",
       "pngMasterPath": "assets/plant-watercolours/masters/heuchera-palace-purple-watercolour.png",
-      "pngSha256": "8dde8fb6468703c888bbcc19700205d089ec2144a4ae17c377c2f01cda3d5551",
+      "pngSha256": "572f9600aa6e023331e067fbf2cf7692a7748ead2ddd7dfe35df6f08cb362e0f",
       "webpPath": "assets/plant-watercolours/heuchera-palace-purple-watercolour.webp",
       "webpSha256": "858f76e5d90008d0c324f4eb5fe23f3038efe1c1b54de9ce50553eadad77371e",
       "verificationState": "confirmed",
@@ -1471,11 +1471,11 @@
         "earlierApprovalsForOtherBytes": 1
       },
       "sourceIntegrity": {
-        "state": "master_stale",
+        "state": "ok",
         "blocking": false,
-        "masterSha256": "8dde8fb6468703c888bbcc19700205d089ec2144a4ae17c377c2f01cda3d5551",
+        "masterSha256": "572f9600aa6e023331e067fbf2cf7692a7748ead2ddd7dfe35df6f08cb362e0f",
         "recordedPngSha256": "572f9600aa6e023331e067fbf2cf7692a7748ead2ddd7dfe35df6f08cb362e0f",
-        "detail": "registered master matches a superseded version of this plant's artwork: the current master was never imported"
+        "detail": ""
       },
       "notes": "earlier image version superseded (hash history in botanical-verification.json)",
       "lastUpdated": "2026-10-28T07:15:53Z",
@@ -1521,7 +1521,7 @@
       "expectsWatercolour": true,
       "assetForm": "both",
       "pngMasterPath": "assets/plant-watercolours/masters/pulmonaria-blue-ensign-watercolour.png",
-      "pngSha256": "ff12a87f849b84d5771d9616890620cc81318cfbb269c5c9c8dba98e58c22026",
+      "pngSha256": "96370151dbc502f69dbf2a996fb7624b9c21e6b00dcea81c8bf927aa05680d40",
       "webpPath": "assets/plant-watercolours/pulmonaria-blue-ensign-watercolour.webp",
       "webpSha256": "1c4333846ffe9adc4eeffd7eec8edd3cf3c499f2674b9fa5f16ec4338d614e49",
       "verificationState": "confirmed",
@@ -1535,11 +1535,11 @@
         "earlierApprovalsForOtherBytes": 1
       },
       "sourceIntegrity": {
-        "state": "master_stale",
+        "state": "ok",
         "blocking": false,
-        "masterSha256": "ff12a87f849b84d5771d9616890620cc81318cfbb269c5c9c8dba98e58c22026",
+        "masterSha256": "96370151dbc502f69dbf2a996fb7624b9c21e6b00dcea81c8bf927aa05680d40",
         "recordedPngSha256": "96370151dbc502f69dbf2a996fb7624b9c21e6b00dcea81c8bf927aa05680d40",
-        "detail": "registered master matches a superseded version of this plant's artwork: the current master was never imported"
+        "detail": ""
       },
       "notes": "earlier image version superseded (hash history in botanical-verification.json)",
       "lastUpdated": "2026-10-28T07:15:53Z",
@@ -1553,7 +1553,7 @@
       "expectsWatercolour": true,
       "assetForm": "both",
       "pngMasterPath": "assets/plant-watercolours/masters/helleborus-hybridus-watercolour.png",
-      "pngSha256": "e36dff0c0759a00fdf1e6630c81e505e68217896dd8f78a657f8bc606fe4a9e4",
+      "pngSha256": "7a40055187014b2bd626a011640fd88d753e403ce7d3109630ef1957e849f96e",
       "webpPath": "assets/plant-watercolours/helleborus-hybridus-watercolour.webp",
       "webpSha256": "f772296ee8d22a3327770b90dc66517319f671253b7e45e6296b5a29e6e7926b",
       "verificationState": "confirmed",
@@ -1567,11 +1567,11 @@
         "earlierApprovalsForOtherBytes": 1
       },
       "sourceIntegrity": {
-        "state": "master_stale",
+        "state": "ok",
         "blocking": false,
-        "masterSha256": "e36dff0c0759a00fdf1e6630c81e505e68217896dd8f78a657f8bc606fe4a9e4",
+        "masterSha256": "7a40055187014b2bd626a011640fd88d753e403ce7d3109630ef1957e849f96e",
         "recordedPngSha256": "7a40055187014b2bd626a011640fd88d753e403ce7d3109630ef1957e849f96e",
-        "detail": "registered master matches a superseded version of this plant's artwork: the current master was never imported"
+        "detail": ""
       },
       "notes": "earlier image version superseded (hash history in botanical-verification.json)",
       "lastUpdated": "2026-10-28T07:15:53Z",
@@ -1585,7 +1585,7 @@
       "expectsWatercolour": true,
       "assetForm": "both",
       "pngMasterPath": "assets/plant-watercolours/masters/epimedium-sulphureum-watercolour.png",
-      "pngSha256": "d6d441a39e8bc32274692341cacc80ca3807fd02262cd19cee372d104c904c38",
+      "pngSha256": "d6aeb0587d4ea2bfbea1aa1a5faa9a55d3a718121377557225b1f8fb241a89b8",
       "webpPath": "assets/plant-watercolours/epimedium-sulphureum-watercolour.webp",
       "webpSha256": "0e2b2af009a24d50f55050aace0169e8bb746e5c4a1dcfcf4767ab6880391ebd",
       "verificationState": "confirmed",
@@ -1599,11 +1599,11 @@
         "earlierApprovalsForOtherBytes": 1
       },
       "sourceIntegrity": {
-        "state": "master_stale",
+        "state": "ok",
         "blocking": false,
-        "masterSha256": "d6d441a39e8bc32274692341cacc80ca3807fd02262cd19cee372d104c904c38",
+        "masterSha256": "d6aeb0587d4ea2bfbea1aa1a5faa9a55d3a718121377557225b1f8fb241a89b8",
         "recordedPngSha256": "d6aeb0587d4ea2bfbea1aa1a5faa9a55d3a718121377557225b1f8fb241a89b8",
-        "detail": "registered master matches a superseded version of this plant's artwork: the current master was never imported"
+        "detail": ""
       },
       "notes": "earlier image version superseded (hash history in botanical-verification.json)",
       "lastUpdated": "2026-10-28T07:15:53Z",
@@ -1809,7 +1809,7 @@
       "expectsWatercolour": true,
       "assetForm": "both",
       "pngMasterPath": "assets/plant-watercolours/masters/hakonechloa-macra-watercolour.png",
-      "pngSha256": "042438e2818c6a10bf70c482ac23b3c8f8b73b4c1e3e1d63172b54109ef001b2",
+      "pngSha256": "f457d2abf99fc969c1bfba5705640db8a365e86853d14daacadccecb19a56ae5",
       "webpPath": "assets/plant-watercolours/hakonechloa-macra-watercolour.webp",
       "webpSha256": "bdbb17a63932148210349b19a8aa3b635540567c8f721e0183efa1aa93569108",
       "verificationState": "confirmed",
@@ -1823,11 +1823,11 @@
         "earlierApprovalsForOtherBytes": 1
       },
       "sourceIntegrity": {
-        "state": "master_stale",
+        "state": "ok",
         "blocking": false,
-        "masterSha256": "042438e2818c6a10bf70c482ac23b3c8f8b73b4c1e3e1d63172b54109ef001b2",
+        "masterSha256": "f457d2abf99fc969c1bfba5705640db8a365e86853d14daacadccecb19a56ae5",
         "recordedPngSha256": "f457d2abf99fc969c1bfba5705640db8a365e86853d14daacadccecb19a56ae5",
-        "detail": "registered master matches a superseded version of this plant's artwork: the current master was never imported"
+        "detail": ""
       },
       "notes": "earlier image version superseded (hash history in botanical-verification.json)",
       "lastUpdated": "2026-10-28T07:15:53Z",
@@ -1841,7 +1841,7 @@
       "expectsWatercolour": true,
       "assetForm": "both",
       "pngMasterPath": "assets/plant-watercolours/masters/carex-evergold-watercolour.png",
-      "pngSha256": "6f4a220176c93af2a462f625a22e1fa08537952b182db3fdf0532d8b9c08f106",
+      "pngSha256": "538edf4612c1e3cf4a2b23e9965940cfba4e8fc2d4fcec3d05bfbdc808a1358e",
       "webpPath": "assets/plant-watercolours/carex-evergold-watercolour.webp",
       "webpSha256": "b44e0726a3a4837920c7fdcef15d5b132bc8b9ab9e8d63948c62e71772a4af5b",
       "verificationState": "confirmed",
@@ -1855,11 +1855,11 @@
         "earlierApprovalsForOtherBytes": 1
       },
       "sourceIntegrity": {
-        "state": "master_stale",
+        "state": "ok",
         "blocking": false,
-        "masterSha256": "6f4a220176c93af2a462f625a22e1fa08537952b182db3fdf0532d8b9c08f106",
+        "masterSha256": "538edf4612c1e3cf4a2b23e9965940cfba4e8fc2d4fcec3d05bfbdc808a1358e",
         "recordedPngSha256": "538edf4612c1e3cf4a2b23e9965940cfba4e8fc2d4fcec3d05bfbdc808a1358e",
-        "detail": "registered master matches a superseded version of this plant's artwork: the current master was never imported"
+        "detail": ""
       },
       "notes": "earlier image version superseded (hash history in botanical-verification.json)",
       "lastUpdated": "2026-10-28T07:15:53Z",
@@ -1969,7 +1969,7 @@
       "expectsWatercolour": true,
       "assetForm": "both",
       "pngMasterPath": "assets/plant-watercolours/masters/digitalis-ferruginea-watercolour.png",
-      "pngSha256": "d798ae04539f84178b79b8cc7154f3a8a377bcf95cb6914cc93539f5f84fddcd",
+      "pngSha256": "35f7c84113de4b8eaf239f7c2540887bf962085f369993823ab190f5bb65c50d",
       "webpPath": "assets/plant-watercolours/digitalis-ferruginea-watercolour.webp",
       "webpSha256": "574e6905d9e22c82bacaa5a68c25064e18cdc60bd020166b265ef587080a05fe",
       "verificationState": "confirmed",
@@ -1983,11 +1983,11 @@
         "earlierApprovalsForOtherBytes": 1
       },
       "sourceIntegrity": {
-        "state": "master_stale",
+        "state": "ok",
         "blocking": false,
-        "masterSha256": "d798ae04539f84178b79b8cc7154f3a8a377bcf95cb6914cc93539f5f84fddcd",
+        "masterSha256": "35f7c84113de4b8eaf239f7c2540887bf962085f369993823ab190f5bb65c50d",
         "recordedPngSha256": "35f7c84113de4b8eaf239f7c2540887bf962085f369993823ab190f5bb65c50d",
-        "detail": "registered master matches a superseded version of this plant's artwork: the current master was never imported"
+        "detail": ""
       },
       "notes": "earlier image version superseded (hash history in botanical-verification.json)",
       "lastUpdated": "2026-10-28T07:15:53Z",
@@ -2097,7 +2097,7 @@
       "expectsWatercolour": true,
       "assetForm": "both",
       "pngMasterPath": "assets/plant-watercolours/masters/taxus-baccata-topiary-watercolour.png",
-      "pngSha256": "d3c7da444fca90ee3b178552908f260ac9ed81badb2b7c6e0a8afef7e1653f62",
+      "pngSha256": "f8e6922acd2dc3d9fbbd267fd6a4da8addddf8504aa4823f6c907ac763edb7cd",
       "webpPath": "assets/plant-watercolours/taxus-baccata-topiary-watercolour.webp",
       "webpSha256": "d1b080e59b6bb62ce8af5ab39809537df03260ab7551376ccb0395b1c91cd685",
       "verificationState": "confirmed",
@@ -2111,11 +2111,11 @@
         "earlierApprovalsForOtherBytes": 1
       },
       "sourceIntegrity": {
-        "state": "master_stale",
+        "state": "ok",
         "blocking": false,
-        "masterSha256": "d3c7da444fca90ee3b178552908f260ac9ed81badb2b7c6e0a8afef7e1653f62",
+        "masterSha256": "f8e6922acd2dc3d9fbbd267fd6a4da8addddf8504aa4823f6c907ac763edb7cd",
         "recordedPngSha256": "f8e6922acd2dc3d9fbbd267fd6a4da8addddf8504aa4823f6c907ac763edb7cd",
-        "detail": "registered master matches a superseded version of this plant's artwork: the current master was never imported"
+        "detail": ""
       },
       "notes": "earlier image version superseded (hash history in botanical-verification.json)",
       "lastUpdated": "2026-10-28T07:15:53Z",
@@ -2193,7 +2193,7 @@
       "expectsWatercolour": true,
       "assetForm": "both",
       "pngMasterPath": "assets/plant-watercolours/masters/phlox-blue-paradise-watercolour.png",
-      "pngSha256": "307803acfe9675e35c421ff416a4846b79a4b5bffdbe6816e928f80ca5b72982",
+      "pngSha256": "51255c8d506b50addf70af4454c746f61f58402b1500270fb9e6c50f4507f9cd",
       "webpPath": "assets/plant-watercolours/phlox-blue-paradise-watercolour.webp",
       "webpSha256": "5c04eb6d3ae985731ec61e0a8fb5c8decff8f152231f346840a84724517a1fdb",
       "verificationState": "confirmed",
@@ -2207,11 +2207,11 @@
         "earlierApprovalsForOtherBytes": 1
       },
       "sourceIntegrity": {
-        "state": "master_stale",
+        "state": "ok",
         "blocking": false,
-        "masterSha256": "307803acfe9675e35c421ff416a4846b79a4b5bffdbe6816e928f80ca5b72982",
+        "masterSha256": "51255c8d506b50addf70af4454c746f61f58402b1500270fb9e6c50f4507f9cd",
         "recordedPngSha256": "51255c8d506b50addf70af4454c746f61f58402b1500270fb9e6c50f4507f9cd",
-        "detail": "registered master matches a superseded version of this plant's artwork: the current master was never imported"
+        "detail": ""
       },
       "notes": "earlier image version superseded (hash history in botanical-verification.json)",
       "lastUpdated": "2026-10-28T07:15:53Z",
@@ -2225,7 +2225,7 @@
       "expectsWatercolour": true,
       "assetForm": "both",
       "pngMasterPath": "assets/plant-watercolours/masters/paeonia-duchesse-de-nemours-watercolour.png",
-      "pngSha256": "efc9dab79442d6257b3283f829ff4cd849d6bd20b39c5e1cf587065b53d24cfa",
+      "pngSha256": "013d1b7a036164564e4046028fedae78e7eb459b7dd7c15fddfd866bef849f64",
       "webpPath": "assets/plant-watercolours/paeonia-duchesse-de-nemours-watercolour.webp",
       "webpSha256": "6750fcbbc2b23f04f95cbf5115498119048c8e65bba82956101834920099b2be",
       "verificationState": "confirmed",
@@ -2239,11 +2239,11 @@
         "earlierApprovalsForOtherBytes": 1
       },
       "sourceIntegrity": {
-        "state": "master_stale",
+        "state": "ok",
         "blocking": false,
-        "masterSha256": "efc9dab79442d6257b3283f829ff4cd849d6bd20b39c5e1cf587065b53d24cfa",
+        "masterSha256": "013d1b7a036164564e4046028fedae78e7eb459b7dd7c15fddfd866bef849f64",
         "recordedPngSha256": "013d1b7a036164564e4046028fedae78e7eb459b7dd7c15fddfd866bef849f64",
-        "detail": "registered master matches a superseded version of this plant's artwork: the current master was never imported"
+        "detail": ""
       },
       "notes": "earlier image version superseded (hash history in botanical-verification.json)",
       "lastUpdated": "2026-10-28T07:15:53Z",
@@ -2801,7 +2801,7 @@
       "expectsWatercolour": true,
       "assetForm": "both",
       "pngMasterPath": "assets/plant-watercolours/masters/campanula-persicifolia-alba-watercolour.png",
-      "pngSha256": "8600270ebf4482caca771d05e95e5d97f1091b0a1dd872379c03ad2d1ae8fea8",
+      "pngSha256": "f32bdcce96bfb0361b7232f87fc38cc3cfc71a95eaa845d40a30f52f866d1b3b",
       "webpPath": "assets/plant-watercolours/campanula-persicifolia-alba-watercolour.webp",
       "webpSha256": "f53772435b130e4cdcf7d104fca3f2d322e51b81c15f716767987fc0c5324125",
       "verificationState": "confirmed",
@@ -2815,11 +2815,11 @@
         "earlierApprovalsForOtherBytes": 0
       },
       "sourceIntegrity": {
-        "state": "master_stale",
+        "state": "ok",
         "blocking": false,
-        "masterSha256": "8600270ebf4482caca771d05e95e5d97f1091b0a1dd872379c03ad2d1ae8fea8",
+        "masterSha256": "f32bdcce96bfb0361b7232f87fc38cc3cfc71a95eaa845d40a30f52f866d1b3b",
         "recordedPngSha256": "f32bdcce96bfb0361b7232f87fc38cc3cfc71a95eaa845d40a30f52f866d1b3b",
-        "detail": "registered master matches a superseded version of this plant's artwork: the current master was never imported"
+        "detail": ""
       },
       "notes": "earlier image version superseded (hash history in botanical-verification.json)",
       "lastUpdated": "2026-10-28T07:15:53Z",
@@ -2833,7 +2833,7 @@
       "expectsWatercolour": true,
       "assetForm": "both",
       "pngMasterPath": "assets/plant-watercolours/masters/digitalis-lutea-watercolour.png",
-      "pngSha256": "8ba3e197ba82ef035015771246c118bf01a5b311f7290196d4893f9ed4e3814f",
+      "pngSha256": "bf3307d14ae69f086b4b98162e6ac2d34b6c4c7d9b1eaa4bdd0fc784f32b1721",
       "webpPath": "assets/plant-watercolours/digitalis-lutea-watercolour.webp",
       "webpSha256": "44652645528f8414d6dde89d71f134f7063ed055336cbcb2471b018d09454a21",
       "verificationState": "confirmed",
@@ -2847,11 +2847,11 @@
         "earlierApprovalsForOtherBytes": 0
       },
       "sourceIntegrity": {
-        "state": "master_stale",
+        "state": "ok",
         "blocking": false,
-        "masterSha256": "8ba3e197ba82ef035015771246c118bf01a5b311f7290196d4893f9ed4e3814f",
+        "masterSha256": "bf3307d14ae69f086b4b98162e6ac2d34b6c4c7d9b1eaa4bdd0fc784f32b1721",
         "recordedPngSha256": "bf3307d14ae69f086b4b98162e6ac2d34b6c4c7d9b1eaa4bdd0fc784f32b1721",
-        "detail": "registered master matches a superseded version of this plant's artwork: the current master was never imported"
+        "detail": ""
       },
       "notes": "earlier image version superseded (hash history in botanical-verification.json)",
       "lastUpdated": "2026-10-28T07:15:53Z",
@@ -3057,7 +3057,7 @@
       "expectsWatercolour": true,
       "assetForm": "both",
       "pngMasterPath": "assets/plant-watercolours/masters/geranium-nodosum-watercolour.png",
-      "pngSha256": "9d46f5de7a9912aa2e1be2a0b6472bc44083c3fd53d12231f2344840b5df2790",
+      "pngSha256": "1cf692430de339e3fa7b9d386c5711ccee876a38beb7578bab216dae50afefc6",
       "webpPath": "assets/plant-watercolours/geranium-nodosum-watercolour.webp",
       "webpSha256": "3be7b36b2771d2a4e580fb1a93488c34896b7bbda960ac0d790820b32ce0566b",
       "verificationState": "confirmed",
@@ -3071,11 +3071,11 @@
         "earlierApprovalsForOtherBytes": 0
       },
       "sourceIntegrity": {
-        "state": "master_stale",
+        "state": "ok",
         "blocking": false,
-        "masterSha256": "9d46f5de7a9912aa2e1be2a0b6472bc44083c3fd53d12231f2344840b5df2790",
+        "masterSha256": "1cf692430de339e3fa7b9d386c5711ccee876a38beb7578bab216dae50afefc6",
         "recordedPngSha256": "1cf692430de339e3fa7b9d386c5711ccee876a38beb7578bab216dae50afefc6",
-        "detail": "registered master matches a superseded version of this plant's artwork: the current master was never imported"
+        "detail": ""
       },
       "notes": "earlier image version superseded (hash history in botanical-verification.json)",
       "lastUpdated": "2026-10-28T07:15:53Z",
@@ -3089,7 +3089,7 @@
       "expectsWatercolour": true,
       "assetForm": "both",
       "pngMasterPath": "assets/plant-watercolours/masters/geranium-phaeum-samobor-watercolour.png",
-      "pngSha256": "281f2cc5bb0d9f3baf5e447e347a39639ae0531e18a98ef4e9aa82b1445a9c7c",
+      "pngSha256": "430fef10a3e7af6da833c45a1ac9811ceb3f3005bbaf54ac0b8b0f495fd18849",
       "webpPath": "assets/plant-watercolours/geranium-phaeum-samobor-watercolour.webp",
       "webpSha256": "37d1d12abc2e97c4e1a976eb131fada2125c2e47391502c143efc4d5cb895014",
       "verificationState": "confirmed",
@@ -3103,11 +3103,11 @@
         "earlierApprovalsForOtherBytes": 0
       },
       "sourceIntegrity": {
-        "state": "master_stale",
+        "state": "ok",
         "blocking": false,
-        "masterSha256": "281f2cc5bb0d9f3baf5e447e347a39639ae0531e18a98ef4e9aa82b1445a9c7c",
+        "masterSha256": "430fef10a3e7af6da833c45a1ac9811ceb3f3005bbaf54ac0b8b0f495fd18849",
         "recordedPngSha256": "430fef10a3e7af6da833c45a1ac9811ceb3f3005bbaf54ac0b8b0f495fd18849",
-        "detail": "registered master matches a superseded version of this plant's artwork: the current master was never imported"
+        "detail": ""
       },
       "notes": "earlier image version superseded (hash history in botanical-verification.json)",
       "lastUpdated": "2026-10-28T07:15:53Z",
@@ -3121,7 +3121,7 @@
       "expectsWatercolour": true,
       "assetForm": "both",
       "pngMasterPath": "assets/plant-watercolours/masters/geranium-sanguineum-max-frei-watercolour.png",
-      "pngSha256": "55a99ad68b3f5f1b9679028aff25072d3d2cab706b669e6b2346c972d58afd57",
+      "pngSha256": "6c30a12954573fb8ff524559affd3428952c4185bdcdce752552b2f91580ca77",
       "webpPath": "assets/plant-watercolours/geranium-sanguineum-max-frei-watercolour.webp",
       "webpSha256": "3e33f6237ab5b92f530771e697bd2d2f532061852012561b8d1b260551ebf7c2",
       "verificationState": "confirmed",
@@ -3135,11 +3135,11 @@
         "earlierApprovalsForOtherBytes": 0
       },
       "sourceIntegrity": {
-        "state": "master_stale",
+        "state": "ok",
         "blocking": false,
-        "masterSha256": "55a99ad68b3f5f1b9679028aff25072d3d2cab706b669e6b2346c972d58afd57",
+        "masterSha256": "6c30a12954573fb8ff524559affd3428952c4185bdcdce752552b2f91580ca77",
         "recordedPngSha256": "6c30a12954573fb8ff524559affd3428952c4185bdcdce752552b2f91580ca77",
-        "detail": "registered master matches a superseded version of this plant's artwork: the current master was never imported"
+        "detail": ""
       },
       "notes": "earlier image version superseded (hash history in botanical-verification.json)",
       "lastUpdated": "2026-10-28T07:15:53Z",
@@ -3217,7 +3217,7 @@
       "expectsWatercolour": true,
       "assetForm": "both",
       "pngMasterPath": "assets/plant-watercolours/masters/phlox-subulata-emerald-cushion-blue-watercolour.png",
-      "pngSha256": "6f5bf70d9069adeef46ea6f58c8abaf80e732b15acc0ba8bd92c5cedb4631183",
+      "pngSha256": "c2b5654cef7137363dd40e8790310da6afdc4f1f162dad872aa9ccaee9faeaf9",
       "webpPath": "assets/plant-watercolours/phlox-subulata-emerald-cushion-blue-watercolour.webp",
       "webpSha256": "b7d7ccaddcfffa8286a526060b54dde9c83ced56a81ab95721ca75282e25200a",
       "verificationState": "confirmed",
@@ -3231,11 +3231,11 @@
         "earlierApprovalsForOtherBytes": 0
       },
       "sourceIntegrity": {
-        "state": "master_stale",
+        "state": "ok",
         "blocking": false,
-        "masterSha256": "6f5bf70d9069adeef46ea6f58c8abaf80e732b15acc0ba8bd92c5cedb4631183",
+        "masterSha256": "c2b5654cef7137363dd40e8790310da6afdc4f1f162dad872aa9ccaee9faeaf9",
         "recordedPngSha256": "c2b5654cef7137363dd40e8790310da6afdc4f1f162dad872aa9ccaee9faeaf9",
-        "detail": "registered master matches a superseded version of this plant's artwork: the current master was never imported"
+        "detail": ""
       },
       "notes": "earlier image version superseded (hash history in botanical-verification.json)",
       "lastUpdated": "2026-10-28T07:15:53Z",
