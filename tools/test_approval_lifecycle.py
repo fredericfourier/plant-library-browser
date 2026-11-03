@@ -176,6 +176,9 @@ class Lifecycle(Sandbox):
         """The owner's existing acceptance of replacement bytes (e.g. CP9.1 resolution correction) is recorded against the exact new hash."""
         f = self.r / A / "acanthus-mollis-watercolour.webp"
         old = sha(f)
+        old_approval_at = next(e["approvedAt"] for e in self.js("data/approval-ledger.json")["entries"]
+                               if e["plantId"] == "acanthus-mollis" and e["variant"] == "watercolour"
+                               and e["imageSha256"] == old)
         data = f.read_bytes(); f.unlink(); f.write_bytes(data + b"\2"); new = sha(f)
         v = self.js("data/botanical-verification.json")            # a CP9.1-style record: re-pinned to the new bytes, original approval named
         w = v["plants"]["acanthus-mollis"]["watercolour"]
@@ -191,7 +194,7 @@ class Lifecycle(Sandbox):
         p = self.rebuild("watercolour")["acanthus-mollis"]
         self.assertEqual((p["status"], p["manualApprovalAt"]), ("approved", "2026-11-03T10:48:21Z"))
         e = [e for e in self.js("data/approval-ledger.json")["entries"] if e["imageSha256"] == new][0]
-        self.assertEqual((e["supersedesImageSha256"], e["supersededApprovedAt"]), (old, "2026-10-28T07:15:53Z"))   # honest provenance, the superseded approval timestamp is kept
+        self.assertEqual((e["supersedesImageSha256"], e["supersededApprovedAt"]), (old, old_approval_at))   # honest provenance: the actual superseded approval timestamp is kept
         self.assertEqual(self.ledger("check", "--base", "HEAD").returncode, 0, self.ledger("check").stderr)
 
     def test_provenance_warnings_are_non_blocking(self):
