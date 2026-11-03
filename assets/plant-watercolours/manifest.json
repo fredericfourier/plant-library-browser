@@ -406,9 +406,22 @@
           "originalWidthPx": 1122,
           "originalHeightPx": 1402,
           "transparent": true,
-          "sha256": "6d3fff6d0dff32535249b4be2427b106925cf7a9bf60d95e4bc6d926f207db38",
+          "sha256": "cc97ddd85b9435daaa94c14f99701f7cfc8c59c1fdd474158dcef0957ae3a433",
           "pngSha256": "be23db5ca245aaa093d3dbf74b88c57312f07cd94c68ea8b0d2fb0864eb95c32",
-          "warnings": []
+          "warnings": [],
+          "resolutionCorrection": {
+            "originalSha256": "6d3fff6d0dff32535249b4be2427b106925cf7a9bf60d95e4bc6d926f207db38",
+            "originalSizePx": [
+              1122,
+              1402
+            ],
+            "factor": 1.09344,
+            "correctedSizePx": [
+              1227,
+              1533
+            ],
+            "method": "uniform whole-canvas Lanczos enlargement, saved once; see data/resolution-corrections.json"
+          }
         }
       }
     },
@@ -526,9 +539,22 @@
           "originalWidthPx": 1122,
           "originalHeightPx": 1402,
           "transparent": true,
-          "sha256": "6a669b2673651df9ef7b826ecd26980c7104d49aeff0230e3d73a46a6d7c68e5",
+          "sha256": "c6e4249fc20185fe1bdb9c0675d7f9b815343283d264bb114bbd6a7c0dd4ef86",
           "pngSha256": "a6df1e676175ce79684ecaebab1a1d4e0c022e3eec61aa89e828822ec7a1d9a4",
-          "warnings": []
+          "warnings": [],
+          "resolutionCorrection": {
+            "originalSha256": "6a669b2673651df9ef7b826ecd26980c7104d49aeff0230e3d73a46a6d7c68e5",
+            "originalSizePx": [
+              1122,
+              1402
+            ],
+            "factor": 1.31241,
+            "correctedSizePx": [
+              1473,
+              1840
+            ],
+            "method": "uniform whole-canvas Lanczos enlargement, saved once; see data/resolution-corrections.json"
+          }
         }
       }
     },
@@ -790,9 +816,22 @@
           "originalWidthPx": 1086,
           "originalHeightPx": 1448,
           "transparent": true,
-          "sha256": "a06b4676de4ec2c687da52310d34b26ddd11307f29d7dc58c35b1eb9bf3159c9",
+          "sha256": "328423139e0d0059fc353872f218eedd5ccfc719cdf250997965e44ec165a4de",
           "pngSha256": "05ce1d0b518dfda3d3c5048018d22c2bc48218c0105d763f0cdf3573e6cb0432",
-          "warnings": []
+          "warnings": [],
+          "resolutionCorrection": {
+            "originalSha256": "a06b4676de4ec2c687da52310d34b26ddd11307f29d7dc58c35b1eb9bf3159c9",
+            "originalSizePx": [
+              1086,
+              1448
+            ],
+            "factor": 1.38536,
+            "correctedSizePx": [
+              1504,
+              2006
+            ],
+            "method": "uniform whole-canvas Lanczos enlargement, saved once; see data/resolution-corrections.json"
+          }
         }
       }
     },
@@ -1222,9 +1261,22 @@
           "originalWidthPx": 1122,
           "originalHeightPx": 1402,
           "transparent": true,
-          "sha256": "11cedd7d6eb19dad8264c13a6f8fd8b3add91b6e4358ab3a9644461dbb65a491",
+          "sha256": "0311a8180713e94f1f23fa83c4d114dbaac6f75b0c736281f9dbdb82bcfeee60",
           "pngSha256": "d69d859cce754e1ef0de36e51c9172b05d9e70d0d8ad9c78446c590f8772d825",
-          "warnings": []
+          "warnings": [],
+          "resolutionCorrection": {
+            "originalSha256": "11cedd7d6eb19dad8264c13a6f8fd8b3add91b6e4358ab3a9644461dbb65a491",
+            "originalSizePx": [
+              1122,
+              1402
+            ],
+            "factor": 1.30314,
+            "correctedSizePx": [
+              1462,
+              1827
+            ],
+            "method": "uniform whole-canvas Lanczos enlargement, saved once; see data/resolution-corrections.json"
+          }
         }
       }
     },
@@ -1489,9 +1541,22 @@
           "originalWidthPx": 1086,
           "originalHeightPx": 1448,
           "transparent": true,
-          "sha256": "38d0e8440f3d4d883500ec834afa0bd9a37d7a788f3df1ee0297a991b182a2f2",
+          "sha256": "0b5d60d2bf759eff158b172911b2a22d2da89c9cbd44242e62817ad0e6208012",
           "pngSha256": "8ec9047dd7a7d1b828979ca0067e152bf6ff70463b9596f89b0a81ba66433d56",
-          "warnings": []
+          "warnings": [],
+          "resolutionCorrection": {
+            "originalSha256": "38d0e8440f3d4d883500ec834afa0bd9a37d7a788f3df1ee0297a991b182a2f2",
+            "originalSizePx": [
+              1086,
+              1448
+            ],
+            "factor": 1.47652,
+            "correctedSizePx": [
+              1604,
+              2138
+            ],
+            "method": "uniform whole-canvas Lanczos enlargement, saved once; see data/resolution-corrections.json"
+          }
         }
       }
     },
@@ -1633,9 +1698,22 @@
           "originalWidthPx": 1448,
           "originalHeightPx": 1086,
           "transparent": true,
-          "sha256": "8965666286a7728e216fa62cf777c425209265ef49ad03a1ecdfd9b053420b34",
+          "sha256": "4f7777505fc8cfed3d52515f7006be381ee8763b097491038c915ff543a0c24a",
           "pngSha256": "1fd4a3187664c5a07f05c0755adbdf0a46d0afdf7ddda3ea8df462ebfadc21f0",
-          "warnings": []
+          "warnings": [],
+          "resolutionCorrection": {
+            "originalSha256": "8965666286a7728e216fa62cf777c425209265ef49ad03a1ecdfd9b053420b34",
+            "originalSizePx": [
+              1448,
+              1086
+            ],
+            "factor": 1.10681,
+            "correctedSizePx": [
+              1603,
+              1202
+            ],
+            "method": "uniform whole-canvas Lanczos enlargement, saved once; see data/resolution-corrections.json"
+          }
         }
       }
     },
@@ -1704,9 +1782,22 @@
           "originalWidthPx": 1122,
           "originalHeightPx": 1402,
           "transparent": true,
-          "sha256": "663e9949164555cda0c4d78bc23a2de76bdd735a5f4cc1c27511721bef84ce4a",
+          "sha256": "236f6944532aabbd3a620ca4818cdebd8e433de4771cc908219b35bfb43fb674",
           "pngSha256": "d1bd77c74c026fa96aea8da020ecbcbd474bda2661b25c62cf76aa4f171b8cf7",
-          "warnings": []
+          "warnings": [],
+          "resolutionCorrection": {
+            "originalSha256": "663e9949164555cda0c4d78bc23a2de76bdd735a5f4cc1c27511721bef84ce4a",
+            "originalSizePx": [
+              1122,
+              1402
+            ],
+            "factor": 1.07917,
+            "correctedSizePx": [
+              1211,
+              1513
+            ],
+            "method": "uniform whole-canvas Lanczos enlargement, saved once; see data/resolution-corrections.json"
+          }
         }
       }
     },
@@ -1754,9 +1845,22 @@
           "originalWidthPx": 1024,
           "originalHeightPx": 1536,
           "transparent": true,
-          "sha256": "465de123acdfa3937a6557cbe4957528ebbb9ee5f87ba58e21aa1ca50578b3d2",
+          "sha256": "d8cf6589874a500503dffdefcc0b703372773c3bebbe1b7503a77805966c22ab",
           "pngSha256": "b88df37abfc6f59dcd0a863fd3e4603408e2733d20ebbb54d239c084e9564c63",
-          "warnings": []
+          "warnings": [],
+          "resolutionCorrection": {
+            "originalSha256": "465de123acdfa3937a6557cbe4957528ebbb9ee5f87ba58e21aa1ca50578b3d2",
+            "originalSizePx": [
+              1024,
+              1536
+            ],
+            "factor": 1.31641,
+            "correctedSizePx": [
+              1348,
+              2022
+            ],
+            "method": "uniform whole-canvas Lanczos enlargement, saved once; see data/resolution-corrections.json"
+          }
         }
       }
     },
@@ -1835,9 +1939,22 @@
           "originalWidthPx": 1254,
           "originalHeightPx": 1254,
           "transparent": true,
-          "sha256": "d98fa8b7593831c3d2b8deab3e38c263e09ccc018e65861add5588ff18199594",
+          "sha256": "e1cfc4c34655da766fc7c58891f2b7ea67bae4f72306717d90ac0cac8abb2555",
           "pngSha256": "56e8099e015db97b125aebc2ce52c1e93dec08bf0a52af5b40b74714ce54dac9",
-          "warnings": []
+          "warnings": [],
+          "resolutionCorrection": {
+            "originalSha256": "d98fa8b7593831c3d2b8deab3e38c263e09ccc018e65861add5588ff18199594",
+            "originalSizePx": [
+              1254,
+              1254
+            ],
+            "factor": 1.10128,
+            "correctedSizePx": [
+              1381,
+              1381
+            ],
+            "method": "uniform whole-canvas Lanczos enlargement, saved once; see data/resolution-corrections.json"
+          }
         }
       }
     },
@@ -1997,9 +2114,22 @@
           "originalWidthPx": 1254,
           "originalHeightPx": 1254,
           "transparent": true,
-          "sha256": "11936667119cc5db29a901f0b35b5d4461f60edb4681632d9814ad3a7944f8ad",
+          "sha256": "d771ae6f24b6f4ac26a780ca608013ad4ba43f7b11c3f6fa8d2a090d7265f21b",
           "pngSha256": "e7924504ce937cd58bafefe3efe414c2e60f15021675bd10353339dcab6f0451",
-          "warnings": []
+          "warnings": [],
+          "resolutionCorrection": {
+            "originalSha256": "11936667119cc5db29a901f0b35b5d4461f60edb4681632d9814ad3a7944f8ad",
+            "originalSizePx": [
+              1254,
+              1254
+            ],
+            "factor": 1.3453,
+            "correctedSizePx": [
+              1687,
+              1687
+            ],
+            "method": "uniform whole-canvas Lanczos enlargement, saved once; see data/resolution-corrections.json"
+          }
         }
       }
     },
@@ -2024,9 +2154,22 @@
           "originalWidthPx": 1254,
           "originalHeightPx": 1254,
           "transparent": true,
-          "sha256": "0853d33e7d9c57272d0800106833a0b41e95e48080b86b07405cee4cf538dab6",
+          "sha256": "e9fa55ad75789259469f123fab17eae1085949dc8bfdb351018c3065a2b9286f",
           "pngSha256": "6ed636dbac8730d8114f4c0a9a078be0d04d9503949b78eb4785b1a12d06ce50",
-          "warnings": []
+          "warnings": [],
+          "resolutionCorrection": {
+            "originalSha256": "0853d33e7d9c57272d0800106833a0b41e95e48080b86b07405cee4cf538dab6",
+            "originalSizePx": [
+              1254,
+              1254
+            ],
+            "factor": 1.21531,
+            "correctedSizePx": [
+              1524,
+              1524
+            ],
+            "method": "uniform whole-canvas Lanczos enlargement, saved once; see data/resolution-corrections.json"
+          }
         }
       }
     },
@@ -2699,9 +2842,22 @@
           "originalWidthPx": 1312,
           "originalHeightPx": 1199,
           "transparent": true,
-          "sha256": "82ef4d6a145b946a7bd5fb49b9a03587082d2d9f5e1b882d7af0b62bf51af486",
+          "sha256": "6e6040d9b9fd3fb44fc674470d645a8358a06ad2550fb8f6e6787fcc224c3b23",
           "pngSha256": "6c1360de1884db043f1f78e8e9f36aed483f23207a2136b58768299b4bc57454",
-          "warnings": []
+          "warnings": [],
+          "resolutionCorrection": {
+            "originalSha256": "82ef4d6a145b946a7bd5fb49b9a03587082d2d9f5e1b882d7af0b62bf51af486",
+            "originalSizePx": [
+              1312,
+              1199
+            ],
+            "factor": 1.07423,
+            "correctedSizePx": [
+              1409,
+              1288
+            ],
+            "method": "uniform whole-canvas Lanczos enlargement, saved once; see data/resolution-corrections.json"
+          }
         }
       }
     },
