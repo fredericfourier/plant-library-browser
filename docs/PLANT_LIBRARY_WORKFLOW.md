@@ -81,6 +81,16 @@ record `confirmed` with a matching `imageSha256`). Master PNGs are not read. See
 
 **Preserve approval and provenance history.** Keep `previous` chains, `sourceMasters`, `approvedOriginalImageSha256`, ledger entries and `supersededApprovedAt`. Do not rewrite Git history of these files.
 
+## 3a. Complete checklist: adding a plant end to end (no prior context needed)
+Preconditions: you can read both repositories, work only on isolated branches, and do not push/merge/deploy without the owner's instruction. Do not regenerate or edit illustrations.
+1. **Catalogue (private repo `fredericfourier/border-designer`, E3 line):** add the record through a new catalogue version/delta (attributes drive engine rules, never plant ids), then re-export this repository's `data/plants.json` with that repo's export tool (`tools/e3_sync/export_browser.py` on the E3 integration line). Never hand-edit `data/plants.json`.
+2. **This repository:** add the id to a batch in `data/additions.json`; run `python3 tools/check_catalogue_sync.py` (must pass). The plant is now `missing` in both status manifests.
+3. **Artwork (supplied by the owner or an approved generation step, per `docs/briefs/BOTANICAL_ASSET_BRIEF.md` / `WATERCOLOUR_B_ASSET_BRIEF.md` in the private repo):** one botanical and one watercolour image, transparent background, 10 px/cm height convention, never stretched.
+4. **Publish** the WebPs (section 3, "Register dimensions and asset metadata, publish WebPs"). Bytes are copied unchanged; the manifest and verification record are written as `awaiting_review`.
+5. **Owner visual approval, once per final image:** `python3 tools/approval_ledger.py approve botanical <id>` and `... approve watercolour <id>`. Only on the owner's decision. Do not add a second approval step anywhere.
+6. **Rebuild and verify:** `python3 tools/botanical_status.py build`, `python3 tools/botanical_status.py --type watercolour build`, then the checks and tests in section 3. All must pass; PNG-master warnings do not fail them.
+7. **Engine side (private repo):** follow `docs/E3_PLANT_CATALOGUE_ARTWORK_INTERFACE.md` section 4. Approved art does not by itself enable a plant for the engine; qualifying plants are enabled by data after technical validation (customer activation of qualifying E3 plants is already authorised by the owner, so no new owner approval is needed for it, only passing the validation checks).
+
 ## 4. Accepted history (2026-11-03)
 - 108 botanical and 108 watercolour WebPs are owner-approved (each pinned to its hash).
 - 12 CP9.1 resolution-corrected watercolours are accepted: `accept` entries dated 2026-11-03T10:48:21Z cite the owner message, the 2026-11-02 approval of all 108 and the 2026-11-02 ruling that the correction is permanent at source; the earlier approvals are kept. The corrected bytes live on branch `assets/e3-resolution-correction` (41409a4) and are not in `main` until merged.
