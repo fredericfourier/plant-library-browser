@@ -5,7 +5,10 @@ on:
     paths:
       - 'data/plants.json'
       - 'tools/check_catalogue_sync.py'
-      - 'assets/plant-watercolours/manifest.json'
+      - 'assets/plant-watercolours/**'
+      - 'data/*.json'
+      - 'tools/**'
+      - 'index.html'
       - '.github/workflows/validate-catalogue-sync.yml'
   push:
     branches: ["main"]
@@ -22,6 +25,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - name: Published plant data is a faithful, checksummed export of the versioned catalogue
         run: python3 tools/check_catalogue_sync.py
       - name: Install Pillow (needed by test_browser_availability.py)
@@ -31,3 +36,14 @@ jobs:
           python3 tools/test_e3_v12_additions.py
           python3 tools/test_illustration_status.py
           python3 tools/test_browser_availability.py
+      - name: Approvals are permanent for unchanged WebP bytes (ledger append-only, no revocation by tools)
+        run: |
+          git fetch origin main --depth=1 || true
+          BASE=$(git rev-parse --verify -q origin/main || true)
+          python3 tools/approval_ledger.py check ${BASE:+--base "$BASE"}
+      - name: Status manifests are current
+        run: |
+          python3 tools/botanical_status.py check
+          python3 tools/botanical_status.py --type watercolour check
+      - name: Approval lifecycle regression
+        run: python3 tools/test_approval_lifecycle.py

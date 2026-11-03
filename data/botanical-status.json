@@ -4,9 +4,9 @@
   "statusDefinitions": {
     "missing": "no botanical PNG master and no botanical WebP in either repository and no reservation; the status the generation queue picks up",
     "pending_review": "not approved by a person: a generated image delivered but not imported yet (reservation, assetForm none), an imported image awaiting approval, an image confirmed by filename match only (approvalBasis=filename_match_only), or a half-published image",
-    "approved": "PNG master and WebP both exist, hashes agree and data/botanical-verification.json carries an explicit manual approval (approvedAt)",
+    "approved": "the owner approved the exact published WebP bytes (recorded in the append-only data/approval-ledger.json). Independent of PNG-master presence or provenance, which are reported separately in sourceIntegrity. Changed WebP bytes are never approved",
     "rejected": "manual: image rejected; regenerate only when explicitly requested",
-    "uncertain_match": "manual or hash-mismatch: identity or file integrity in doubt; never counted as approved"
+    "uncertain_match": "manual, or the published WebP bytes differ from every recorded/approved version: identity in doubt; never counted as approved"
   },
   "catalogue": {
     "path": "data/plants.json",
@@ -27,12 +27,13 @@
   "summary": {
     "total": 108,
     "missing": 0,
-    "pending_review": 3,
-    "approved": 104,
+    "pending_review": 0,
+    "approved": 108,
     "rejected": 0,
-    "uncertain_match": 1,
+    "uncertain_match": 0,
     "reserved_not_imported": 0,
-    "filename_match_only": 0
+    "filename_match_only": 0,
+    "provenance_maintenance_warnings": 4
   },
   "plants": [
     {
@@ -56,6 +57,19 @@
         "webpPath": "assets/plant-watercolours/salvia-caradonna-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "abe33d30f028c443880bbd3fe3a3ef3acf51a5ab03ca58e83612f856fbf155e9",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "d519bb9b27ea121e70fb231891091b68621f30017d053773742d2638eec95783",
+        "recordedPngSha256": "d519bb9b27ea121e70fb231891091b68621f30017d053773742d2638eec95783",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z"
     },
@@ -80,6 +94,19 @@
         "webpPath": "assets/plant-watercolours/salvia-amistad-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-15T08:19:20Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "aab88297dca97ac3df6c2ff6d01be32778485fd7935e1ccac41c780738510e11",
+        "approvedAt": "2026-10-15T08:19:20Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "95b7842f2c28a4eba4ae858630257b88207ccc0e53319195786bd33befc08025",
+        "recordedPngSha256": "95b7842f2c28a4eba4ae858630257b88207ccc0e53319195786bd33befc08025",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-15T08:19:20Z"
     },
@@ -104,6 +131,19 @@
         "webpPath": "assets/plant-watercolours/geranium-rozanne-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "6f53924d062c64c22967371c94713eb24bda63d0bc1e5acbcfbfae9cdb7aa613",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "c82ad0afe94b4c22fd232a365122d218892c384f8ca11cf529ff394c0f3b8b54",
+        "recordedPngSha256": "c82ad0afe94b4c22fd232a365122d218892c384f8ca11cf529ff394c0f3b8b54",
+        "detail": ""
+      },
       "notes": "pipeline QA: warning (ratio error 0.104)",
       "lastUpdated": "2026-10-28T07:15:53Z"
     },
@@ -128,6 +168,19 @@
         "webpPath": "assets/plant-watercolours/geranium-macrorrhizum-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-16T10:47:39Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "5a75d2ecea17b4f8f1934fecdbb106b2df92aa0e2cddda9aa70be61578733f91",
+        "approvedAt": "2026-10-16T10:47:39Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "be7da8c46f897496761a27968be8a61eb35246e85e9d1b7e2bc7f7bfd9f79d2a",
+        "recordedPngSha256": "be7da8c46f897496761a27968be8a61eb35246e85e9d1b7e2bc7f7bfd9f79d2a",
+        "detail": ""
+      },
       "notes": "earlier image version superseded (hash history in botanical-verification.json)",
       "lastUpdated": "2026-10-16T10:47:39Z"
     },
@@ -152,6 +205,19 @@
         "webpPath": "assets/plant-watercolours/nepeta-walkers-low-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "3afab6091d044ba526d7c0bf23da139104344727d16fa3f9b4a237fe90ad1d70",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "3a862db9109b5947781aa4e208bd8c599bee4c236b90695af3c12b1a39991a96",
+        "recordedPngSha256": "3a862db9109b5947781aa4e208bd8c599bee4c236b90695af3c12b1a39991a96",
+        "detail": ""
+      },
       "notes": "pipeline QA: warning (ratio error 0.206)",
       "lastUpdated": "2026-10-28T07:15:53Z"
     },
@@ -176,6 +242,19 @@
         "webpPath": "assets/plant-watercolours/geum-totally-tangerine-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "b3726324216159dbeefdb8198831e52e2b0e90990e1021898d916b3b944f7e84",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "57cb2458fb17e9d533c7a6c574aca53f18d373b952cca87cbabb57481c9400c7",
+        "recordedPngSha256": "57cb2458fb17e9d533c7a6c574aca53f18d373b952cca87cbabb57481c9400c7",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z"
     },
@@ -200,6 +279,19 @@
         "webpPath": "assets/plant-watercolours/knautia-macedonica-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "095057297c6c1a6bfb07410b076cf4618c513fe5474ca3bfaf1d8815907db1a4",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "b25ad101922a852e5db385098b4500a88caf4b9bdcb05760473640e23c088196",
+        "recordedPngSha256": "b25ad101922a852e5db385098b4500a88caf4b9bdcb05760473640e23c088196",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z"
     },
@@ -224,6 +316,19 @@
         "webpPath": "assets/plant-watercolours/verbena-bonariensis-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "c02b3c67a6e1b52e7ef9abbc28669f3b2209657b6623fb3c1d49ae7c7306c499",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "5ce3d6006d73a550549c5ffcc14e9764e1206ebc371c6bf74dc126d5f6b8423f",
+        "recordedPngSha256": "5ce3d6006d73a550549c5ffcc14e9764e1206ebc371c6bf74dc126d5f6b8423f",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z"
     },
@@ -248,6 +353,19 @@
         "webpPath": "assets/plant-watercolours/echinacea-purpurea-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "f611151decf7b5e448d960174385e7663214a344a1d68dce9e087df803b8a2f0",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "a68f48e021ba752d8514dc31ef9bb49e82d6234ce42baac0a6ad6452ba89563a",
+        "recordedPngSha256": "a68f48e021ba752d8514dc31ef9bb49e82d6234ce42baac0a6ad6452ba89563a",
+        "detail": ""
+      },
       "notes": "pipeline QA: needs-review (ratio error 0.329)",
       "lastUpdated": "2026-10-28T07:15:53Z"
     },
@@ -272,6 +390,19 @@
         "webpPath": "assets/plant-watercolours/echinacea-white-swan-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "3efc8b7d3c80902e00c3eb772d4eada51d4eda83aa81085ca43bc0ba8b8445ed",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "c48d17b36446b8bfd47498729843f531f288357ef6f0aab09eb72c00da566be9",
+        "recordedPngSha256": "c48d17b36446b8bfd47498729843f531f288357ef6f0aab09eb72c00da566be9",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z"
     },
@@ -296,6 +427,19 @@
         "webpPath": "assets/plant-watercolours/achillea-terracotta-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "ab13d5fc41777d7cf22209265f1b273cf89b8524457633e37abcb1e7319e99c6",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "e8a632914766c219bde521f9f524d3c2a4dbf478863d6bb72a332dedc7b63c22",
+        "recordedPngSha256": "e8a632914766c219bde521f9f524d3c2a4dbf478863d6bb72a332dedc7b63c22",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z"
     },
@@ -320,6 +464,19 @@
         "webpPath": "assets/plant-watercolours/achillea-moonshine-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-15T08:19:20Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "ce9a4dd3e2a2d1be971886d4a7165be5dabd041277cc38288ffbf8b7ec69fad9",
+        "approvedAt": "2026-10-15T08:19:20Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "e86987aa2c794fa4aaa87ca54335e6aea6baa0a22a9791ac61e01b23c03f68a5",
+        "recordedPngSha256": "e86987aa2c794fa4aaa87ca54335e6aea6baa0a22a9791ac61e01b23c03f68a5",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-15T08:19:20Z"
     },
@@ -344,6 +501,19 @@
         "webpPath": "assets/plant-watercolours/astrantia-major-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-15T08:19:20Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "9ffe9c6a10adddfdbb5854dd04ed80b18cd66e049f0c8638ea03f45e6d8d1671",
+        "approvedAt": "2026-10-15T08:19:20Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "85f57b188ad678ee9f06e6f6e8b17e5e957bb3481ff0a315bab869297b4488c9",
+        "recordedPngSha256": "85f57b188ad678ee9f06e6f6e8b17e5e957bb3481ff0a315bab869297b4488c9",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-15T08:19:20Z"
     },
@@ -368,6 +538,19 @@
         "webpPath": "assets/plant-watercolours/rudbeckia-goldsturm-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "b2e1f6616a78895f98765f79d563cccf345474519b7a4023042e171a3fb02032",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "116293576cc01ba1707ca1ecbef53628717ed308ce9e413f91124f6c68ea380f",
+        "recordedPngSha256": "116293576cc01ba1707ca1ecbef53628717ed308ce9e413f91124f6c68ea380f",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z"
     },
@@ -392,6 +575,19 @@
         "webpPath": "assets/plant-watercolours/helenium-moerheim-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-15T08:19:20Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "8093a837f7c4b4c9d3e60683a62599cc2c698f1379aff5bffdabc30f7a7b109a",
+        "approvedAt": "2026-10-15T08:19:20Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "da8f27b9d9e6bf52bf25eb56fdbbe2191919904e764e6ee0746f6ef96de6b638",
+        "recordedPngSha256": "da8f27b9d9e6bf52bf25eb56fdbbe2191919904e764e6ee0746f6ef96de6b638",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-15T08:19:20Z"
     },
@@ -416,6 +612,19 @@
         "webpPath": "assets/plant-watercolours/persicaria-firetail-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "4532372ae8015e5f17a0f94cbafe71d1e2193fcd0d094c7e50a34ead3cc270e9",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "3e49fd13f5f3b9647e51c14a45e53dda3fd847f63aa0f3be467bf2a3bc373287",
+        "recordedPngSha256": "3e49fd13f5f3b9647e51c14a45e53dda3fd847f63aa0f3be467bf2a3bc373287",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z"
     },
@@ -440,6 +649,19 @@
         "webpPath": "assets/plant-watercolours/anemone-honorine-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "b94f4f019a1c8aebbbf65f7ee3ca3f7849c4205bfa296fc5ac1d40d09e53a0b6",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "125124ebf2051d025f7e9e50ee46fa392eb63bc2b49356dec584056dac1659d9",
+        "recordedPngSha256": "125124ebf2051d025f7e9e50ee46fa392eb63bc2b49356dec584056dac1659d9",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z"
     },
@@ -464,6 +686,19 @@
         "webpPath": "assets/plant-watercolours/anemone-hadspen-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "cdc3f22bc2ffbbf720a7756b07b5430e8ef1f928bdfa5294539a322dcf070432",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "7983937ed91ef11c828641d61c4fb6ba1106210dcda04520ea72554b94be4df5",
+        "recordedPngSha256": "7983937ed91ef11c828641d61c4fb6ba1106210dcda04520ea72554b94be4df5",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z"
     },
@@ -488,6 +723,19 @@
         "webpPath": "assets/plant-watercolours/hylotelephium-herbstfreude-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "c4f05190fcb4e65310687c4791b3087f9715157129e99958c4f853a34e402e0f",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "6e2458576d1f7b5290600c228a7f1e202d3dbb4b9e111390d23adc280e6eb2a6",
+        "recordedPngSha256": "6e2458576d1f7b5290600c228a7f1e202d3dbb4b9e111390d23adc280e6eb2a6",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z"
     },
@@ -512,6 +760,19 @@
         "webpPath": "assets/plant-watercolours/agastache-blackadder-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "1b8a070eeb0e93c0c8ef02a2855da0de83cea1d33619d6c16117db5b066440ca",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "c242d05d42cac87cecbdbb4a47ae78f746b65d90a3d1a5ad978d2b7b12e91115",
+        "recordedPngSha256": "c242d05d42cac87cecbdbb4a47ae78f746b65d90a3d1a5ad978d2b7b12e91115",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z"
     },
@@ -536,6 +797,19 @@
         "webpPath": "assets/plant-watercolours/gaura-whirling-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "efba0fb32b68cd160fc9c230115b72354747c05650eb1919c140fbab00ee9990",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "60aedc12f3233c29d7d21c9b5fea5ab45aa565185d39deaf103bbb8160aaa7ac",
+        "recordedPngSha256": "60aedc12f3233c29d7d21c9b5fea5ab45aa565185d39deaf103bbb8160aaa7ac",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z"
     },
@@ -560,6 +834,19 @@
         "webpPath": "assets/plant-watercolours/eryngium-planum-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "daf68791f07458836b5d7f1bb0ad1de15ca1e41d28c6f1e68f04a4bfe63c6845",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "e6de1a8b522b08b18b57b945c18d8a124353aa0c13bde3f3237f600136edf5b7",
+        "recordedPngSha256": "e6de1a8b522b08b18b57b945c18d8a124353aa0c13bde3f3237f600136edf5b7",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z"
     },
@@ -584,6 +871,19 @@
         "webpPath": "assets/plant-watercolours/perovskia-blue-spire-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-15T08:19:20Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "511b0be8acb096c69a59523d2bca7ad19a37d7b4d8b25a7a6113778c04c30a90",
+        "approvedAt": "2026-10-15T08:19:20Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "22bac632b7a169e264c055a6ba2ec4176c139f3fd33a3b3d7ffa890b02f0a276",
+        "recordedPngSha256": "22bac632b7a169e264c055a6ba2ec4176c139f3fd33a3b3d7ffa890b02f0a276",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-15T08:19:20Z"
     },
@@ -608,6 +908,19 @@
         "webpPath": "assets/plant-watercolours/lavandula-hidcote-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-15T08:19:20Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "13651a3c3712f2b490225a6d823e604d75c19ddf5ced77ca324cc514ae6b91d6",
+        "approvedAt": "2026-10-15T08:19:20Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "a02299bf798db83672219c0ff58a5a94a3d2520cc03cb42929a25aaad19f9c59",
+        "recordedPngSha256": "a02299bf798db83672219c0ff58a5a94a3d2520cc03cb42929a25aaad19f9c59",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-15T08:19:20Z"
     },
@@ -632,6 +945,19 @@
         "webpPath": "assets/plant-watercolours/thalictrum-delavayi-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "d4e24e29945e9458697244a5119175fdc21c347179f18d085294a39039181b94",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "67ed58f4f3bca5e3eb7459868bed8ef6f7d91320952416b1886b4f49fe7777d0",
+        "recordedPngSha256": "67ed58f4f3bca5e3eb7459868bed8ef6f7d91320952416b1886b4f49fe7777d0",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z"
     },
@@ -656,6 +982,19 @@
         "webpPath": "assets/plant-watercolours/sanguisorba-red-thunder-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-15T08:19:20Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "5919e10b550e518dfacc13e6a3c26e2bd6a1d2447ab14c56180171667faae4ba",
+        "approvedAt": "2026-10-15T08:19:20Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "3e8e299c63c38a452b9110a39de6df3c97e8b110ae5e45084e65f50697387a89",
+        "recordedPngSha256": "3e8e299c63c38a452b9110a39de6df3c97e8b110ae5e45084e65f50697387a89",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-15T08:19:20Z"
     },
@@ -680,6 +1019,19 @@
         "webpPath": "assets/plant-watercolours/veronicastrum-album-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "1c1ae626d9377b3b8aca7947c90fd4bdafd1daee5de82ba985bbf5006bee1101",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "26d7dc19887f95a2018e703da0c1a6724e0abeb86e4cc0a70da260a773fff458",
+        "recordedPngSha256": "26d7dc19887f95a2018e703da0c1a6724e0abeb86e4cc0a70da260a773fff458",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z"
     },
@@ -704,6 +1056,19 @@
         "webpPath": "assets/plant-watercolours/eupatorium-atropurpureum-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-15T08:19:20Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "5ed65f9ac5e6267521befb3a52803cdaec31efd25f1e960508c9ae9a1cc37d33",
+        "approvedAt": "2026-10-15T08:19:20Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "adff092a1e3ffb03f70ae4f31090f4690e2cd9526fef0ef99b83166449ed37ba",
+        "recordedPngSha256": "adff092a1e3ffb03f70ae4f31090f4690e2cd9526fef0ef99b83166449ed37ba",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-15T08:19:20Z"
     },
@@ -728,6 +1093,19 @@
         "webpPath": "assets/plant-watercolours/leucanthemum-becky-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-15T08:19:20Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "6a87c8cf5de23aac29aa9bc8a75e12ffb4392982bf32c150fdc33dcd3599bda5",
+        "approvedAt": "2026-10-15T08:19:20Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "acc991a729bd120ad393f82b19146fd3dcd5c0cbf06bfd5eec5d89c5cec19bcd",
+        "recordedPngSha256": "acc991a729bd120ad393f82b19146fd3dcd5c0cbf06bfd5eec5d89c5cec19bcd",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-15T08:19:20Z"
     },
@@ -752,6 +1130,19 @@
         "webpPath": "assets/plant-watercolours/hemerocallis-stafford-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-15T08:19:20Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "b91c7542f70ca72d84fab5e77eee85bfa94074ce734519aed2f3e22e346291eb",
+        "approvedAt": "2026-10-15T08:19:20Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "8395c08577bbdc40741faf424f476dba389439a1be011b7b1b9044da3557fb71",
+        "recordedPngSha256": "8395c08577bbdc40741faf424f476dba389439a1be011b7b1b9044da3557fb71",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-15T08:19:20Z"
     },
@@ -776,6 +1167,19 @@
         "webpPath": "assets/plant-watercolours/crocosmia-lucifer-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "2a0b2298708821e01fdaa5e763b0cd9fd3b057c74b54496a4cd217d2239da4e1",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "69d235f812a5182c36ae2526d65f4821412c6f5b523638a26169f39f905308df",
+        "recordedPngSha256": "69d235f812a5182c36ae2526d65f4821412c6f5b523638a26169f39f905308df",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z"
     },
@@ -800,6 +1204,19 @@
         "webpPath": "assets/plant-watercolours/aster-little-carlow-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-15T08:19:20Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "1119f5d7a8c959e8fe7ff0bd1a692d8ca7898cdb621b78386a3468438ed94ad2",
+        "approvedAt": "2026-10-15T08:19:20Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "2728dc3adb906302570373573e7c3bfaad12c148ad71d4afc2a082dc9e17a363",
+        "recordedPngSha256": "2728dc3adb906302570373573e7c3bfaad12c148ad71d4afc2a082dc9e17a363",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-15T08:19:20Z"
     },
@@ -824,6 +1241,19 @@
         "webpPath": "assets/plant-watercolours/aster-monch-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "1c249bbebbef53d18ba5a00089493ff157c716e1b92a84fbc9cb45f473a74ac7",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "0c1233f5bc62a5fe5e855b789d9e3dce989c8e0e9b7d8daac73092ffed3a8c6a",
+        "recordedPngSha256": "0c1233f5bc62a5fe5e855b789d9e3dce989c8e0e9b7d8daac73092ffed3a8c6a",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z"
     },
@@ -848,6 +1278,19 @@
         "webpPath": "assets/plant-watercolours/penstemon-garnet-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "ed99745b5a7ea1d23c23c0d6894c6cd92ff86bffedf0d923042e1c6b4f2a061c",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "e1f2c60fa3d49025cc93375d4959de07e27ae034151629060df536924fe1be6b",
+        "recordedPngSha256": "e1f2c60fa3d49025cc93375d4959de07e27ae034151629060df536924fe1be6b",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z"
     },
@@ -872,6 +1315,19 @@
         "webpPath": "assets/plant-watercolours/erigeron-karvinskianus-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-16T10:47:39Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "035aeaf729239ed5a596b3d85f09ae67f2f9e3f7f32cf3aa6ae9df986ee3a867",
+        "approvedAt": "2026-10-16T10:47:39Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "62355b04bb80384674c60ebc5d30ee432e99c22ae3e112fef927f8dd9dc70236",
+        "recordedPngSha256": "62355b04bb80384674c60ebc5d30ee432e99c22ae3e112fef927f8dd9dc70236",
+        "detail": ""
+      },
       "notes": "earlier image version superseded (hash history in botanical-verification.json)",
       "lastUpdated": "2026-10-16T10:47:39Z"
     },
@@ -896,6 +1352,19 @@
         "webpPath": "assets/plant-watercolours/iris-sibirica-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "cdfbf96ecf920dc62c13298e1eaa35ecc5348f53967f4d450fd2d5642fd32195",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "af635444c261e88bdf352a5eb01d65d77ddcf698a1b932f4ddc677496ca08e7c",
+        "recordedPngSha256": "af635444c261e88bdf352a5eb01d65d77ddcf698a1b932f4ddc677496ca08e7c",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z"
     },
@@ -920,6 +1389,19 @@
         "webpPath": "assets/plant-watercolours/allium-purple-sensation-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "7dc93a6d090df2e01a7d43bad4be6df98a3aedd32e2734e4371d21588e624aa7",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "697c9979ea9e5157998ad0af17bf8c448821dc926d3db50a9e9b52b0858636a7",
+        "recordedPngSha256": "697c9979ea9e5157998ad0af17bf8c448821dc926d3db50a9e9b52b0858636a7",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z"
     },
@@ -944,6 +1426,19 @@
         "webpPath": "assets/plant-watercolours/digitalis-purpurea-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-15T08:19:20Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "91c512e788b1597d7135464242f5e20a34bac8b631b75e7e0494c8301cc2cb6d",
+        "approvedAt": "2026-10-15T08:19:20Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "aa96c004388291c103d53a39f1099810fea551dcb50b8e42578689c2378971f7",
+        "recordedPngSha256": "aa96c004388291c103d53a39f1099810fea551dcb50b8e42578689c2378971f7",
+        "detail": ""
+      },
       "notes": "earlier image version superseded (hash history in botanical-verification.json)",
       "lastUpdated": "2026-10-15T08:19:20Z"
     },
@@ -968,6 +1463,19 @@
         "webpPath": "assets/plant-watercolours/aruncus-dioicus-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "dd77b98fe8b611f140c2ada2005be49de96c63912786bb090c2f5bf32d9bed9d",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "a19cf2ed75c5808287d9282ce00d90bc5ef5c35ceddb7d7412b4812f24a2ff7a",
+        "recordedPngSha256": "a19cf2ed75c5808287d9282ce00d90bc5ef5c35ceddb7d7412b4812f24a2ff7a",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z"
     },
@@ -992,6 +1500,19 @@
         "webpPath": "assets/plant-watercolours/phlomis-russeliana-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "f343b35e73c3397a6c8392875fd16f63a7654ca3832492b7e07bacb3bad48109",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "03282f73985b6f7cc74bafb095116ab3ba85fe76338107b4d5f9d30175d198ec",
+        "recordedPngSha256": "03282f73985b6f7cc74bafb095116ab3ba85fe76338107b4d5f9d30175d198ec",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z"
     },
@@ -1016,6 +1537,19 @@
         "webpPath": "assets/plant-watercolours/cenolophium-denudatum-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-15T08:19:20Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "a05cc276defd4abbb127c93e7a2169c6154f5b49e4a1bf8a014a1fd5c821a492",
+        "approvedAt": "2026-10-15T08:19:20Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "40263b1eee257c2f1879bb2b7a4739395f24fbdca96d81bf50e560e94c0b09be",
+        "recordedPngSha256": "40263b1eee257c2f1879bb2b7a4739395f24fbdca96d81bf50e560e94c0b09be",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-15T08:19:20Z"
     },
@@ -1040,6 +1574,19 @@
         "webpPath": "assets/plant-watercolours/euphorbia-wulfenii-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "6f1dd374f55ab574068b5222e35bdfa0fe81f156e28240b93a9fa6ddacc2bcd7",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "877527ae3b0a796ae4c41a6b7823f242b36b5b843bcf33814074eb081034ee21",
+        "recordedPngSha256": "877527ae3b0a796ae4c41a6b7823f242b36b5b843bcf33814074eb081034ee21",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z"
     },
@@ -1064,6 +1611,19 @@
         "webpPath": "assets/plant-watercolours/euphorbia-polychroma-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-16T10:47:39Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "f8318c05e62ed962d6cca9fdf3fe99d876def7a06c24ce07ff760494860bc047",
+        "approvedAt": "2026-10-16T10:47:39Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "f54f8423e564ff730ea3d436abb3ab7ae858f3610fcf825c07b31b65e017a7b4",
+        "recordedPngSha256": "f54f8423e564ff730ea3d436abb3ab7ae858f3610fcf825c07b31b65e017a7b4",
+        "detail": ""
+      },
       "notes": "earlier image version superseded (hash history in botanical-verification.json)",
       "lastUpdated": "2026-10-16T10:47:39Z"
     },
@@ -1088,6 +1648,19 @@
         "webpPath": "assets/plant-watercolours/alchemilla-mollis-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "93ec65808a07faa986f7dd76cfbcdc3411df11a6f96e15dae773997ea014e482",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "790e50e047aa67132993e930a4eb7b651ada421220a35ad8faee46a08fccff77",
+        "recordedPngSha256": "790e50e047aa67132993e930a4eb7b651ada421220a35ad8faee46a08fccff77",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z"
     },
@@ -1112,6 +1685,19 @@
         "webpPath": "assets/plant-watercolours/heuchera-palace-purple-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "53a47b2dbe74853bf42607078ef40015a083393e06d51320f49c0351dc3d2ec0",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "cb8ba9a419ba4f285e5a12ffb6ba0f192ab13a76afd469506baf05a8c2ba6c30",
+        "recordedPngSha256": "cb8ba9a419ba4f285e5a12ffb6ba0f192ab13a76afd469506baf05a8c2ba6c30",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z"
     },
@@ -1136,6 +1722,19 @@
         "webpPath": "assets/plant-watercolours/brunnera-jack-frost-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-16T10:47:39Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "8fa057237d754369015358e537ceff875d94ee2fa833b63b81886a99d2beab15",
+        "approvedAt": "2026-10-16T10:47:39Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "24c566ef8f141acf30588f9425c4a1d743f4752b881a6f1a7460fb123c4c8970",
+        "recordedPngSha256": "24c566ef8f141acf30588f9425c4a1d743f4752b881a6f1a7460fb123c4c8970",
+        "detail": ""
+      },
       "notes": "earlier image version superseded (hash history in botanical-verification.json)",
       "lastUpdated": "2026-10-16T10:47:39Z"
     },
@@ -1160,6 +1759,19 @@
         "webpPath": "assets/plant-watercolours/pulmonaria-blue-ensign-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "dd3bc94db1e5789b12aecbd1b26a589adf472302c0776cc716a65779b783fa92",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "f425fd9d0057477beae0ca0402f3c0d6ae4249b3a6f2708cf135cf774717fd06",
+        "recordedPngSha256": "f425fd9d0057477beae0ca0402f3c0d6ae4249b3a6f2708cf135cf774717fd06",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z"
     },
@@ -1184,6 +1796,19 @@
         "webpPath": "assets/plant-watercolours/helleborus-hybridus-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "48b8decaed15b19e38194d90910da2972d7d53a4814d1745cb0fa935849582bc",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "adb4247c6c81034cafda6a9189d87d61daedd9f56ba4aa73aa3b4f2de7bdf6e7",
+        "recordedPngSha256": "adb4247c6c81034cafda6a9189d87d61daedd9f56ba4aa73aa3b4f2de7bdf6e7",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z"
     },
@@ -1208,6 +1833,19 @@
         "webpPath": "assets/plant-watercolours/epimedium-sulphureum-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-16T10:47:39Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "3551947232fb48723975dc658989e1e4c43d23a0f2717f0abb61c5a7467acb08",
+        "approvedAt": "2026-10-16T10:47:39Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "d1f438d9d2ce1b921a40241b9319b186d4508f8980167853c8ffa8a06681d169",
+        "recordedPngSha256": "d1f438d9d2ce1b921a40241b9319b186d4508f8980167853c8ffa8a06681d169",
+        "detail": ""
+      },
       "notes": "earlier image version superseded (hash history in botanical-verification.json)",
       "lastUpdated": "2026-10-16T10:47:39Z"
     },
@@ -1232,6 +1870,19 @@
         "webpPath": "assets/plant-watercolours/stipa-gigantea-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "4a406f6e37b25a94202f11930a34cecdf48e2e130e5b75664d9b38a815db9f7a",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "90319c0ff9337f0b0b33da51ea2eade461819ca9c7db5003b61f75faf278185c",
+        "recordedPngSha256": "90319c0ff9337f0b0b33da51ea2eade461819ca9c7db5003b61f75faf278185c",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z"
     },
@@ -1256,6 +1907,19 @@
         "webpPath": "assets/plant-watercolours/stipa-tenuissima-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-15T08:19:20Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "cbe5e059356aace5d5c0398545bcab411bb193d57509c0c42ba67c667f45318d",
+        "approvedAt": "2026-10-15T08:19:20Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "923a95f55deacc569f0a50ce36962224d7e817f5e6c8a51ff1c850ec07b86da2",
+        "recordedPngSha256": "923a95f55deacc569f0a50ce36962224d7e817f5e6c8a51ff1c850ec07b86da2",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-15T08:19:20Z"
     },
@@ -1280,6 +1944,19 @@
         "webpPath": "assets/plant-watercolours/calamagrostis-karl-foerster-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "ee8eccc39dc9e31d6016413cbf5307781fcbb2532e23688f1ed15e3684f87229",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "b352f931449851b55f1067cd51224d2ffc30e3761e305b954c58338bd11166ed",
+        "recordedPngSha256": "b352f931449851b55f1067cd51224d2ffc30e3761e305b954c58338bd11166ed",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z"
     },
@@ -1304,6 +1981,19 @@
         "webpPath": "assets/plant-watercolours/molinia-transparent-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-15T08:19:20Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "f0af2ccc3a896497546feaeeb8136a6948dd9f2d3e52e2d6a58f19e2bc34774f",
+        "approvedAt": "2026-10-15T08:19:20Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "dd26796705325f776c9d2bfc89e36ff6f553d40a7f05a2dc110db6ed14205d4f",
+        "recordedPngSha256": "dd26796705325f776c9d2bfc89e36ff6f553d40a7f05a2dc110db6ed14205d4f",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-15T08:19:20Z"
     },
@@ -1328,6 +2018,19 @@
         "webpPath": "assets/plant-watercolours/deschampsia-goldtau-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-15T08:19:20Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "539dee4baecc1d6313981267fa97c4544fe0e33c5c021bfc31a878a02ee1d5de",
+        "approvedAt": "2026-10-15T08:19:20Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "067318d3298653651148b5b960e576d84a6c20fcf817237f6d02fd62733d5d83",
+        "recordedPngSha256": "067318d3298653651148b5b960e576d84a6c20fcf817237f6d02fd62733d5d83",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-15T08:19:20Z"
     },
@@ -1352,6 +2055,19 @@
         "webpPath": "assets/plant-watercolours/sesleria-autumnalis-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-15T08:19:20Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "ef90d117158a5c2e2c1e33f940a4c973ee95082a1d588e4a3247369828a646e2",
+        "approvedAt": "2026-10-15T08:19:20Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "244f098d3bef257e501614000cb15ab7be6a1b40a1f0ce9eb9df84c18708665f",
+        "recordedPngSha256": "244f098d3bef257e501614000cb15ab7be6a1b40a1f0ce9eb9df84c18708665f",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-15T08:19:20Z"
     },
@@ -1376,6 +2092,19 @@
         "webpPath": "assets/plant-watercolours/hakonechloa-macra-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "eca0d84d4b5b728ccfa7c41cfcabc571056a19399324740a0944e05a44dcd327",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "d8b8f564039e729bd86f8a7d14e7ae349bd75422cf4919853844ba8d552a2f1f",
+        "recordedPngSha256": "d8b8f564039e729bd86f8a7d14e7ae349bd75422cf4919853844ba8d552a2f1f",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z"
     },
@@ -1400,6 +2129,19 @@
         "webpPath": "assets/plant-watercolours/carex-evergold-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-16T10:47:39Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "608ceb12b19a16e6cb63cb968ad8ea704908a229eea5d87326f6d4cfbe6943a6",
+        "approvedAt": "2026-10-16T10:47:39Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "86db274ae03d43fdfa0917776b13b28a54309f45326d6af760853be2e1ea77dd",
+        "recordedPngSha256": "86db274ae03d43fdfa0917776b13b28a54309f45326d6af760853be2e1ea77dd",
+        "detail": ""
+      },
       "notes": "earlier image version superseded (hash history in botanical-verification.json)",
       "lastUpdated": "2026-10-16T10:47:39Z"
     },
@@ -1424,6 +2166,19 @@
         "webpPath": "assets/plant-watercolours/dryopteris-filix-mas-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-15T08:19:20Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "c84b1259876dfb41a8b13e1936d99714b17356a56fe2afac7d08339f2872152e",
+        "approvedAt": "2026-10-15T08:19:20Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "cacb76abca3fcd25e250391abe9068548319fd96ec6b9689bf16125e13688fa3",
+        "recordedPngSha256": "cacb76abca3fcd25e250391abe9068548319fd96ec6b9689bf16125e13688fa3",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-15T08:19:20Z"
     },
@@ -1431,7 +2186,7 @@
       "order": 59,
       "plantId": "polystichum-setiferum",
       "botanicalName": "Polystichum setiferum",
-      "status": "uncertain_match",
+      "status": "approved",
       "expectsBotanical": true,
       "expectsWatercolour": true,
       "assetForm": "both",
@@ -1448,7 +2203,20 @@
         "webpPath": "assets/plant-watercolours/polystichum-setiferum-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-30T16:41:41Z",
-      "notes": "png master hash differs from botanical-verification.json; earlier image version superseded (hash history in botanical-verification.json)",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "792fec02023867fe54ce04600cdd2a36e976769d81e8ed1ece2312cdb160d880",
+        "approvedAt": "2026-10-30T16:41:41Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "master_stale",
+        "blocking": false,
+        "masterSha256": "7b5e651d6fb6ca33018379836f2b7a8e9e6cd33b97163446b6caf4ebab013b40",
+        "recordedPngSha256": "8765d20e3cdf44f5df65a62149cfde930f322fd6e8c57c61e72b5fa59a6f40ef",
+        "detail": "registered master matches a superseded version of this plant's artwork: the current master was never imported"
+      },
+      "notes": "earlier image version superseded (hash history in botanical-verification.json)",
       "lastUpdated": "2026-10-30T16:41:41Z"
     },
     {
@@ -1472,6 +2240,19 @@
         "webpPath": "assets/plant-watercolours/kniphofia-tawny-king-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "b7751e168c35417360f7b77afb4a3802da490ba3fec79f236eaef66de2962c5c",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "55561c16c5a7a45145db1e6b6efd05f0c61d8772fbcbd15a825147ddc01a86c9",
+        "recordedPngSha256": "55561c16c5a7a45145db1e6b6efd05f0c61d8772fbcbd15a825147ddc01a86c9",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z"
     },
@@ -1496,6 +2277,19 @@
         "webpPath": "assets/plant-watercolours/digitalis-ferruginea-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "e62a0822cf201f698bdae09b095be288af8938601bdbbcc513424effd3eabb3c",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "18f0f6209f86f5795de6ac328d958371f91c8cffa4e1fbffdd785f56fadd4bbf",
+        "recordedPngSha256": "18f0f6209f86f5795de6ac328d958371f91c8cffa4e1fbffdd785f56fadd4bbf",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z"
     },
@@ -1520,6 +2314,19 @@
         "webpPath": "assets/plant-watercolours/euphorbia-fireglow-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "c5efcd8c697d097f68d5e398dd8853edc96ad1949f09d6ed349b9bcc51ad6143",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "7aae7adbb6e1dc0ce7818dfffdfb1a959225005035a880ef817b98f1125f70a5",
+        "recordedPngSha256": "7aae7adbb6e1dc0ce7818dfffdfb1a959225005035a880ef817b98f1125f70a5",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z"
     },
@@ -1544,6 +2351,19 @@
         "webpPath": "assets/plant-watercolours/geranium-psilostemon-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "6224a67c4304d08d19f502a91a16887e534da4db911a9de50e100086d5b1f317",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "8896b5f634960e0c81e03b8657ff4786dcfffdff89baa68edc380bd706b1893d",
+        "recordedPngSha256": "8896b5f634960e0c81e03b8657ff4786dcfffdff89baa68edc380bd706b1893d",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z"
     },
@@ -1568,6 +2388,19 @@
         "webpPath": "assets/plant-watercolours/achillea-walther-funcke-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-15T08:19:20Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "a95f93e25eaabeb840fec3f636eb6d58522329aad8d8b2d2ef83150d32077370",
+        "approvedAt": "2026-10-15T08:19:20Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "248eab1fa48ca161f857d330661b4b478162a4ecd9bf499fc580b1423aa71fae",
+        "recordedPngSha256": "248eab1fa48ca161f857d330661b4b478162a4ecd9bf499fc580b1423aa71fae",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-15T08:19:20Z"
     },
@@ -1592,6 +2425,19 @@
         "webpPath": "assets/plant-watercolours/taxus-baccata-topiary-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "4a87d71ceab84cca7c4490739ea1f0ae4223f9a38aa106f4878c8febd95da286",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "7cd90b2dee10f2243cb410b31b8c85ef4d618d512619c328ff6976be92037a3a",
+        "recordedPngSha256": "7cd90b2dee10f2243cb410b31b8c85ef4d618d512619c328ff6976be92037a3a",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z"
     },
@@ -1616,6 +2462,19 @@
         "webpPath": "assets/plant-watercolours/rosa-bonica-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-16T10:47:39Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "c56f1b467899270e44ecced142e004809a545353f529443bb61f485142e17ed9",
+        "approvedAt": "2026-10-16T10:47:39Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "7694045b77dee3c72642c310e8cc01753a37f4ccbbd360b87aa31e5064ea508c",
+        "recordedPngSha256": "7694045b77dee3c72642c310e8cc01753a37f4ccbbd360b87aa31e5064ea508c",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-16T10:47:39Z"
     },
@@ -1640,6 +2499,19 @@
         "webpPath": "assets/plant-watercolours/philadelphus-manteau-dhermine-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-16T10:47:39Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "ca7ed06a35a70e9afa542a2312b2971e40d8da54e031bba1ee5b511fe9bdfa5f",
+        "approvedAt": "2026-10-16T10:47:39Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "4f3446feb3f3786256eaa79f98cce537a83874e44abfa059cb93b076751b50ea",
+        "recordedPngSha256": "4f3446feb3f3786256eaa79f98cce537a83874e44abfa059cb93b076751b50ea",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-16T10:47:39Z"
     },
@@ -1664,6 +2536,19 @@
         "webpPath": "assets/plant-watercolours/phlox-blue-paradise-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-16T10:47:39Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "af50d7f6f4108039c92ed619dd3183ae8581ccd4da1f957659a4aac755801114",
+        "approvedAt": "2026-10-16T10:47:39Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "05343606051d43592431e9a467abe73eace8cb4d7a4fdd49a267cb5debccf77c",
+        "recordedPngSha256": "05343606051d43592431e9a467abe73eace8cb4d7a4fdd49a267cb5debccf77c",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-16T10:47:39Z"
     },
@@ -1688,6 +2573,19 @@
         "webpPath": "assets/plant-watercolours/paeonia-duchesse-de-nemours-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-16T10:47:39Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "13d100fc903569b978374e9ee9793229b4b1b2432e998c03ca10a76c1c29d362",
+        "approvedAt": "2026-10-16T10:47:39Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "3d565c73a54939298bb998681853e94478b56808a6ff263e3b7346c43e871221",
+        "recordedPngSha256": "3d565c73a54939298bb998681853e94478b56808a6ff263e3b7346c43e871221",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-16T10:47:39Z"
     },
@@ -1712,6 +2610,19 @@
         "webpPath": "assets/plant-watercolours/echinacea-powwow-white-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-16T10:47:39Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "c2172f70e51e2e44e64afba42b019cc947d2248d6ad2ceea33f463176057290e",
+        "approvedAt": "2026-10-16T10:47:39Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "f5c4985cfe9add83b578361c5a8fb64ece37348037398ac21ebf0d8052484d15",
+        "recordedPngSha256": "f5c4985cfe9add83b578361c5a8fb64ece37348037398ac21ebf0d8052484d15",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-16T10:47:39Z"
     },
@@ -1736,6 +2647,19 @@
         "webpPath": "assets/plant-watercolours/digitalis-purpurea-alba-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-16T10:47:39Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "0c0eded90de7e25736e9c9bf8a7e7b2ab468ff2e9d66cddd0481cbbb437294c6",
+        "approvedAt": "2026-10-16T10:47:39Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "19cc19cac6d3532806e5bfadbfcc6d6416d430adc980020c83f7d1278193b30d",
+        "recordedPngSha256": "19cc19cac6d3532806e5bfadbfcc6d6416d430adc980020c83f7d1278193b30d",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-16T10:47:39Z"
     },
@@ -1760,6 +2684,19 @@
         "webpPath": "assets/plant-watercolours/delphinium-black-knight-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "e271c76b47c33738caee2638666589560e6d0568f612aceddee7863c2a0a8929",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "83af4e6d4b66724be10c3f8bf07f5e4a959a112641a1f037686501163981875a",
+        "recordedPngSha256": "83af4e6d4b66724be10c3f8bf07f5e4a959a112641a1f037686501163981875a",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z"
     },
@@ -1784,6 +2721,19 @@
         "webpPath": "assets/plant-watercolours/alcea-rosea-halo-white-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "05d99c7913ac14dd02f0a05547691f8dd43dc09587c735c19eab04ef94bfa02d",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "8496895927182dcff9ba66a62e6ceeef631330f9582c6ed51fe0faa7a65f5eb7",
+        "recordedPngSha256": "8496895927182dcff9ba66a62e6ceeef631330f9582c6ed51fe0faa7a65f5eb7",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z"
     },
@@ -1808,6 +2758,19 @@
         "webpPath": "assets/plant-watercolours/lupinus-the-governor-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "d70a64924a80a69b52eb0be2c2f094d1d546c18d699714fb406825223e69698d",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "2f74326f0bf0b763c13305b9a174142d69a226dea3300db71f279403292943fe",
+        "recordedPngSha256": "2f74326f0bf0b763c13305b9a174142d69a226dea3300db71f279403292943fe",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z"
     },
@@ -1832,6 +2795,19 @@
         "webpPath": "assets/plant-watercolours/lupinus-gallery-blue-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "0d1d3a27393031993c366782144954100eabda2d92af6f5483c4fc15d73a010c",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "66f940a9a0ab365dbf5ce96a352a5cc9bf65b8e1f1cff5329574dcc34950744c",
+        "recordedPngSha256": "66f940a9a0ab365dbf5ce96a352a5cc9bf65b8e1f1cff5329574dcc34950744c",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z"
     },
@@ -1856,6 +2832,19 @@
         "webpPath": "assets/plant-watercolours/hydrangea-paniculata-little-lime-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "35fd4bcf89ac661146504a071a0a757159d69183fa82abbfa812777c3a2dd98d",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "cd6cbe336d482839df65ab0524dd84b7a9d438330f17bb90ce3adcb6b4153ba6",
+        "recordedPngSha256": "cd6cbe336d482839df65ab0524dd84b7a9d438330f17bb90ce3adcb6b4153ba6",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z"
     },
@@ -1880,6 +2869,19 @@
         "webpPath": "assets/plant-watercolours/syringa-meyeri-palibin-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "9e590ed86a7bff4b97331a57b1b5a9b6e755780e108f7c0874b0d8b93de95a1a",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "362fd27b0d1c34252b0b4726be8e0e263527ce2f1eb552acbeaabfd55f12d32b",
+        "recordedPngSha256": "362fd27b0d1c34252b0b4726be8e0e263527ce2f1eb552acbeaabfd55f12d32b",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z"
     },
@@ -1904,6 +2906,19 @@
         "webpPath": "assets/plant-watercolours/centaurea-montana-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "2dcdfef08ec5713e8557776e0d07730b91f1471ba9327a4522254bc88241db28",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "9d5a580cbd3dd8f8e72df26da4f5f29a8a0c9e08fbbab1dfbce51574d9066de2",
+        "recordedPngSha256": "9d5a580cbd3dd8f8e72df26da4f5f29a8a0c9e08fbbab1dfbce51574d9066de2",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z"
     },
@@ -1928,6 +2943,19 @@
         "webpPath": "assets/plant-watercolours/lychnis-coronaria-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "d57789205788c77b97cad057604f37497ebf8849d276b11f3448012a83942760",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "46a652209b1406cc3a9e39f57eb82fb8b0bbfd5a0f88bca407ce9ed0c99d32b0",
+        "recordedPngSha256": "46a652209b1406cc3a9e39f57eb82fb8b0bbfd5a0f88bca407ce9ed0c99d32b0",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z"
     },
@@ -1952,6 +2980,19 @@
         "webpPath": "assets/plant-watercolours/polemonium-caeruleum-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "56587a0a5f7cad58ed091c37f3bae6fdf816a51bcfd576771171591a96681985",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "4e75d666f220adea666b5458d180b665f5fc81489040b39c90055fb520348c64",
+        "recordedPngSha256": "4e75d666f220adea666b5458d180b665f5fc81489040b39c90055fb520348c64",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z"
     },
@@ -1976,6 +3017,19 @@
         "webpPath": "assets/plant-watercolours/linaria-purpurea-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "25dfb16d4de3747c0a112408302d328df88ef2bf817e717ffb8c64abd75b297b",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "e4e7befa65ca091701b4458d866bbf5ab82cff7a70c1e59d82ceb2cbe1ecf2c5",
+        "recordedPngSha256": "e4e7befa65ca091701b4458d866bbf5ab82cff7a70c1e59d82ceb2cbe1ecf2c5",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z"
     },
@@ -2000,6 +3054,19 @@
         "webpPath": "assets/plant-watercolours/cerastium-tomentosum-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "1272a94294512a10b90874d81a0ac42d91922433b7085d8c9709eba8185d7398",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "15c660686daa737d4016988c1a00008fa61ea4f9dee31efbc202cffd1e8dd4c0",
+        "recordedPngSha256": "15c660686daa737d4016988c1a00008fa61ea4f9dee31efbc202cffd1e8dd4c0",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z"
     },
@@ -2024,6 +3091,19 @@
         "webpPath": "assets/plant-watercolours/malva-sylvestris-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "3b0576a88a944a71a9e41956c2e0eedf4eb63e40cfbbc8f52a4075edee5e1af7",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "7580af595b17b44001931729645498cef582c3b618ece28d0bfc6c8da768c8ad",
+        "recordedPngSha256": "7580af595b17b44001931729645498cef582c3b618ece28d0bfc6c8da768c8ad",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z"
     },
@@ -2048,6 +3128,19 @@
         "webpPath": "assets/plant-watercolours/veronica-longifolia-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "c7bea1ae3e5fadb1881556d5ef1bf9f397b8c52a519a8e1f0871a189595808b6",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "554c6fb5f50b0bb9ce30eb8336935822c9fcb7d724d83bbea1aaa0d426427cc2",
+        "recordedPngSha256": "554c6fb5f50b0bb9ce30eb8336935822c9fcb7d724d83bbea1aaa0d426427cc2",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z"
     },
@@ -2072,6 +3165,19 @@
         "webpPath": "assets/plant-watercolours/acanthus-mollis-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "532a937f0be225f9f4ee430ccc20340e4a4a37ca656ccf77c1b86ceba82a5d29",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "f6f8f889f82f351cf1235ccff15585d09d81121f80e664dd4b88d0215fe9105a",
+        "recordedPngSha256": "f6f8f889f82f351cf1235ccff15585d09d81121f80e664dd4b88d0215fe9105a",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z"
     },
@@ -2096,6 +3202,19 @@
         "webpPath": "assets/plant-watercolours/campanula-lactiflora-prichards-variety-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "de4626b28f919803e7a8320c1351c3501007af0cb05da5a06daa6a689a72e702",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "27b687e1a3784b78bf4bdf6e81a368c07174221987ce2713e5703ac0f6557bbc",
+        "recordedPngSha256": "27b687e1a3784b78bf4bdf6e81a368c07174221987ce2713e5703ac0f6557bbc",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z"
     },
@@ -2120,6 +3239,19 @@
         "webpPath": "assets/plant-watercolours/campanula-persicifolia-alba-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "66eb9305328f318e60d9eac5cdebb3cf7297be375fb479ad34447435b755ed41",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "a364b92b56f8101030cf2252ff35c2e59ccb67e4fe582d329ad87cba6b65e0b5",
+        "recordedPngSha256": "a364b92b56f8101030cf2252ff35c2e59ccb67e4fe582d329ad87cba6b65e0b5",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z"
     },
@@ -2144,6 +3276,19 @@
         "webpPath": "assets/plant-watercolours/digitalis-lutea-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "1e02cfc9b23451fe801204bfb3abcf90a73d02dcc358c198a2b0d8c26e070d39",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "41e26b40835139b4a919269c1edf95ecbed602b95ee274c02bc3d359c802ded9",
+        "recordedPngSha256": "41e26b40835139b4a919269c1edf95ecbed602b95ee274c02bc3d359c802ded9",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z"
     },
@@ -2168,6 +3313,19 @@
         "webpPath": "assets/plant-watercolours/verbascum-chaixii-album-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "8e94cefc6ebe1b1fce1d3dcd74d486443eb462cbd4a96660f2b7c70a46dbe7c3",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "7fa8ca341d12c0f100e95dd5d7fef51850f3c88fa386be1b8684688e079775ac",
+        "recordedPngSha256": "7fa8ca341d12c0f100e95dd5d7fef51850f3c88fa386be1b8684688e079775ac",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z"
     },
@@ -2192,6 +3350,19 @@
         "webpPath": "assets/plant-watercolours/aquilegia-vulgaris-nora-barlow-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "aa2f5f037602c7eb268a22e9a680e3f50bf287529e39f61163ac5c09dc21a845",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "6475ebc769ee3cab282d3db37059e4994e727dca4c28455f167c7c7fb3aa61e9",
+        "recordedPngSha256": "6475ebc769ee3cab282d3db37059e4994e727dca4c28455f167c7c7fb3aa61e9",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z"
     },
@@ -2216,6 +3387,19 @@
         "webpPath": "assets/plant-watercolours/gillenia-trifoliata-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "9f4a75944798e6222e4973043fa6129457885b4e9d77ec694ab2fc9b3fa0f439",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "9e9ad8f3e7b83a3859e0238d928e0b6a7754c6ba42e5898293293483e4fa10f7",
+        "recordedPngSha256": "9e9ad8f3e7b83a3859e0238d928e0b6a7754c6ba42e5898293293483e4fa10f7",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z"
     },
@@ -2240,6 +3424,19 @@
         "webpPath": "assets/plant-watercolours/scabiosa-butterfly-blue-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "50171441d64f74929a514ab7af2707502a6079de62b3c1fb8d85a818347f2007",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "8397f04accd10dc6fbb37b77e390fdabde00882382147e62acad9c7dbc2e57b7",
+        "recordedPngSha256": "8397f04accd10dc6fbb37b77e390fdabde00882382147e62acad9c7dbc2e57b7",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z"
     },
@@ -2264,6 +3461,19 @@
         "webpPath": "assets/plant-watercolours/betonica-officinalis-hummelo-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "7b225c20c8728496b78e9486bba5ee931729edc0dbef3db4bec9bdbd7ae4e1db",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "12c64f09bc12d5fdff94df19dd771215f069b0591f77d99ff60fe39c196c7c28",
+        "recordedPngSha256": "12c64f09bc12d5fdff94df19dd771215f069b0591f77d99ff60fe39c196c7c28",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z"
     },
@@ -2288,6 +3498,19 @@
         "webpPath": "assets/plant-watercolours/geum-rivale-leonards-variety-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "b60eb3323cf0d2941aa34b8a056e9447b4de05335cfd0d804a9f4a1a08d54a63",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "8e847b2a8423a03595627bf577fb05388d7d18e65ef466ab41ef1bbb46ac4382",
+        "recordedPngSha256": "8e847b2a8423a03595627bf577fb05388d7d18e65ef466ab41ef1bbb46ac4382",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z"
     },
@@ -2312,6 +3535,19 @@
         "webpPath": "assets/plant-watercolours/geranium-nodosum-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "a2a786ac0d8452ab7bad0bf36974bf707fdc49d832239184032d5fe68652db56",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "553330eef07a97f7ed890cdb31d6e637ef0907bb05ec742f41be536e7a262033",
+        "recordedPngSha256": "553330eef07a97f7ed890cdb31d6e637ef0907bb05ec742f41be536e7a262033",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z"
     },
@@ -2336,6 +3572,19 @@
         "webpPath": "assets/plant-watercolours/geranium-phaeum-samobor-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "d9ae82d3a73d18d051bc4103ae5b67a2f82d6f2aa17808406cfc5ceea210cd9f",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "f801aefa02004eb1a6f82db18c24beeed44812c82c59060c243d4c8c2387fead",
+        "recordedPngSha256": "f801aefa02004eb1a6f82db18c24beeed44812c82c59060c243d4c8c2387fead",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z"
     },
@@ -2360,6 +3609,19 @@
         "webpPath": "assets/plant-watercolours/geranium-sanguineum-max-frei-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "94f1288c66aadc8dd0f57ff553a9b42380daa7ed15335c51913ad7d2759b8d19",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "8558eaecfeedc0d5f7104303295e72f0a941876049ef7d241580853bb41feb49",
+        "recordedPngSha256": "8558eaecfeedc0d5f7104303295e72f0a941876049ef7d241580853bb41feb49",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z"
     },
@@ -2384,6 +3646,19 @@
         "webpPath": "assets/plant-watercolours/stachys-byzantina-silver-carpet-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "f9ff77d10eac395ebd9c3a020340b8a28f1373226b34859b1dc7792bd4ed55dd",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "2123772d5c5832c18ccb4be095acdab4cf0fb7bde0805ef384319c0f52bf4cfa",
+        "recordedPngSha256": "2123772d5c5832c18ccb4be095acdab4cf0fb7bde0805ef384319c0f52bf4cfa",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z"
     },
@@ -2408,6 +3683,19 @@
         "webpPath": "assets/plant-watercolours/bergenia-bressingham-white-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "925a281ce0939e737ec7bfb524819e05fb5cd23cb79d9b0f79285a4178678dab",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "a380b5f6176f3ed6afc070dd89cd85645acc8518b0d79807676012c243002de3",
+        "recordedPngSha256": "a380b5f6176f3ed6afc070dd89cd85645acc8518b0d79807676012c243002de3",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z"
     },
@@ -2432,6 +3720,19 @@
         "webpPath": "assets/plant-watercolours/phlox-subulata-emerald-cushion-blue-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "62295ca0a3a4674a06af15a3272d1f154e1063ede6bc69b1e3936c9a5039b310",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "7c4235edf2b63389f35ce002d4b630ca5f622c6b6b432538c57c107967189019",
+        "recordedPngSha256": "7c4235edf2b63389f35ce002d4b630ca5f622c6b6b432538c57c107967189019",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z"
     },
@@ -2456,6 +3757,19 @@
         "webpPath": "assets/plant-watercolours/iberis-sempervirens-snowflake-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "4ad75c9d9a1b00fbccec6e207e9312f96eb0a6b225881b1ddd76395c2f05cddd",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "93130b472e95c1e72e1ea57bb918e582bc79453ca9a5efd94cb1adbb82eba04a",
+        "recordedPngSha256": "93130b472e95c1e72e1ea57bb918e582bc79453ca9a5efd94cb1adbb82eba04a",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z"
     },
@@ -2480,6 +3794,19 @@
         "webpPath": "assets/plant-watercolours/briza-media-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "d527f10236be3820db8bff82ac8ed351bbe1f6689172b23cbdc447304aeae93b",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "eb3e1d229e235f6425161ddaec2c815a3a9e4fa28f9d8e0dd80730a093c8be34",
+        "recordedPngSha256": "eb3e1d229e235f6425161ddaec2c815a3a9e4fa28f9d8e0dd80730a093c8be34",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z"
     },
@@ -2504,6 +3831,19 @@
         "webpPath": "assets/plant-watercolours/luzula-nivea-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "294fde0f31372cec419288419a9bebdbad88939810cf2ffaf54bcf050cb1103b",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "7321810d41510e05e60b988c63be893bd01bf9cf084efc7a249df765e960306b",
+        "recordedPngSha256": "7321810d41510e05e60b988c63be893bd01bf9cf084efc7a249df765e960306b",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z"
     },
@@ -2528,6 +3868,19 @@
         "webpPath": "assets/plant-watercolours/rosa-the-fairy-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "1b787ec3b40ef75bec661c858ed5caae2c7c4208299246d67cdbee4debd164c2",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "450a323022d0e45e301a8b171f1ff4bfa981ed7c3ac4f4f4899a8030fa7b84ae",
+        "recordedPngSha256": "450a323022d0e45e301a8b171f1ff4bfa981ed7c3ac4f4f4899a8030fa7b84ae",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z"
     },
@@ -2552,6 +3905,19 @@
         "webpPath": "assets/plant-watercolours/dianthus-mrs-sinkins-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "e6b380d403cb1858ca360a3435064053422eb6ed25eec4c270718f4ce28b61d2",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "8b416b6533fa6131261f06c9e425546f640e68dbb3557f7febccb370ed3f54c0",
+        "recordedPngSha256": "8b416b6533fa6131261f06c9e425546f640e68dbb3557f7febccb370ed3f54c0",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z"
     },
@@ -2559,7 +3925,7 @@
       "order": 106,
       "plantId": "sarcococca-hookeriana-var-humilis",
       "botanicalName": "Sarcococca hookeriana var. humilis",
-      "status": "pending_review",
+      "status": "approved",
       "expectsBotanical": true,
       "expectsWatercolour": true,
       "assetForm": "webp_only",
@@ -2576,14 +3942,27 @@
         "webpPath": "assets/plant-watercolours/sarcococca-hookeriana-var-humilis-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-30T14:59:45Z",
-      "notes": "incomplete: webp without png master; pipeline QA: needs-review (ratio error 0.272)",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "c154ea069d09d71f8fc0187baa05e11c742339f5d23dc37d21412d1605c8981a",
+        "approvedAt": "2026-10-30T14:59:45Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "master_not_registered",
+        "blocking": false,
+        "masterSha256": null,
+        "recordedPngSha256": "aecabc622aba41558015a5bc5ead55a1713ccbaeb768087cf72e65994ea699b1",
+        "detail": "no PNG master registered in border-designer"
+      },
+      "notes": "source integrity: no PNG master registered in border-designer; pipeline QA: needs-review (ratio error 0.272)",
       "lastUpdated": "2026-10-30T14:59:45Z"
     },
     {
       "order": 107,
       "plantId": "hydrangea-incrediball",
       "botanicalName": "Hydrangea arborescens Incrediball ('Abetwo')",
-      "status": "pending_review",
+      "status": "approved",
       "expectsBotanical": true,
       "expectsWatercolour": true,
       "assetForm": "webp_only",
@@ -2600,14 +3979,27 @@
         "webpPath": "assets/plant-watercolours/hydrangea-incrediball-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-30T14:59:45Z",
-      "notes": "incomplete: webp without png master",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "023037ec9a4848d988bf51eb42ea612104b9ef9882b24a68e48cbdc0acab4027",
+        "approvedAt": "2026-10-30T14:59:45Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "master_not_registered",
+        "blocking": false,
+        "masterSha256": null,
+        "recordedPngSha256": "011dfadf3b69cd1ec753256e5602ea1973b62c66b955e32364251c8f133f3e8a",
+        "detail": "no PNG master registered in border-designer"
+      },
+      "notes": "source integrity: no PNG master registered in border-designer",
       "lastUpdated": "2026-10-30T14:59:45Z"
     },
     {
       "order": 108,
       "plantId": "astilbe-weisse-gloria",
       "botanicalName": "Astilbe 'Weisse Gloria'",
-      "status": "pending_review",
+      "status": "approved",
       "expectsBotanical": true,
       "expectsWatercolour": true,
       "assetForm": "webp_only",
@@ -2624,7 +4016,20 @@
         "webpPath": "assets/plant-watercolours/astilbe-weisse-gloria-watercolour.webp"
       },
       "manualApprovalAt": "2026-10-30T14:59:45Z",
-      "notes": "incomplete: webp without png master",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "bc427764a0e837c18daea34e19d2dcfe4a156ba2cd4c9a9e047e6359cc79f5b4",
+        "approvedAt": "2026-10-30T14:59:45Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "master_not_registered",
+        "blocking": false,
+        "masterSha256": null,
+        "recordedPngSha256": "3a6c88f2e533d04d9ca6f2264e13b851f08f9d21c060f24df5e8cec63f371b70",
+        "detail": "no PNG master registered in border-designer"
+      },
+      "notes": "source integrity: no PNG master registered in border-designer",
       "lastUpdated": "2026-10-30T14:59:45Z"
     }
   ]

@@ -31,6 +31,9 @@ Only `rejected` and `uncertain_match` are manual; everything else is recomputed.
 import argparse, datetime, hashlib, json, subprocess, sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import approval_ledger  # noqa: E402
+
 ROOT = Path(__file__).resolve().parent.parent
 MANIFEST = ROOT / "data/botanical-status.json"
 ASSETS = ROOT / "assets/plant-watercolours"
@@ -85,10 +88,37 @@ def read_masters(bd, ref):
     return out, git(bd, "rev-parse", ref).decode().strip()
 
 
+def chain_png_hashes(rec):
+    """pngSha256 values of a verification record and its superseded versions (newest first)."""
+    return [r.get("pngSha256") for r in approval_ledger.chain(rec) if r.get("pngSha256")]
+
+
+def source_integrity(form, png_sha, rec):
+    """Technical provenance of the private PNG master. Never an input to visual approval."""
+    recorded = (rec or {}).get("pngSha256")
+    # NON-BLOCKING maintenance warning: published artwork is eligible and approved whatever the master's state. Never read by approval, rendering or queue logic.
+    out = {"state": "ok", "blocking": False, "masterSha256": png_sha, "recordedPngSha256": recorded, "detail": ""}
+    if not png_sha:
+        out["state"] = "master_not_registered"
+        out["detail"] = "no PNG master registered in border-designer" if form != "png_only" else ""
+    elif recorded and recorded != png_sha and png_sha not in [m.get("pngSha256") for m in (rec or {}).get("sourceMasters", [])]:
+        older = png_sha in chain_png_hashes((rec or {}).get("previous"))
+        out["state"] = "master_stale" if older else "master_hash_mismatch"
+        out["detail"] = ("registered master matches a superseded version of this plant's artwork: the current master was never imported"
+                         if older else "registered master matches no recorded version of this artwork")
+    elif not recorded:
+        out["state"] = "record_unpinned"
+        out["detail"] = "verification record carries no pngSha256 to compare against"
+    return out
+
+
 def build(prev, bd=None, bd_ref=None):
     cat = load(ROOT / "data/plants.json")["plants"]
     ver = load(ROOT / "data/botanical-verification.json")["plants"]
     amf = load(ASSETS / "manifest.json")["assets"]
+    ledger_doc = approval_ledger.load_ledger()
+    ledger_all = approval_ledger.approved_hashes(ledger_doc)
+    variant_name = "watercolour" if is_wc() else "botanical"
     added = {pid: b["date"] for b in load(ROOT / "data/additions.json")["batches"] for pid in b["plantIds"]}
     old = {p["plantId"]: p for p in (prev or {}).get("plants", [])}
     if bd:
@@ -129,20 +159,30 @@ def build(prev, bd=None, bd_ref=None):
         if basis == "filename_match_only":
             notes.append(f"manual {V['word']} approval absent: confirmed in botanical-verification.json by filename match only; "
                          "not a verified match, keeps its image, not regenerated")
+        # VISUAL APPROVAL: pinned to the exact published WebP bytes only (ledger entry, or explicit approvedAt on a record pinned to that hash).
+        # PNG master presence/provenance is a separate technical fact (sourceIntegrity) and never decides approval.
+        led = ledger_all.get((variant_name, pid), {})
+        revoked = any(r["variant"] == variant_name and r["plantId"] == pid and r["imageSha256"] == webp_sha for r in ledger_doc.get("revocations", []))
+        pinned = bool(webp_sha) and not revoked and webp_sha in led  # the ledger is the sole authority: editing a record can never approve bytes
+        approved_at = led.get(webp_sha) if pinned else None
+        approved_other = [h for h in led if h != webp_sha]
         problems = []
-        if v and webp_sha and v.get("imageSha256") != webp_sha:
-            problems.append("webp hash differs from botanical-verification.json")
-        if v and png_sha and v.get("pngSha256") and v["pngSha256"] != png_sha:
-            problems.append("png master hash differs from botanical-verification.json")
-        if webp_sha and asset.get("sha256") not in (None, webp_sha):
+        if v and webp_sha and v.get("imageSha256") != webp_sha and not pinned:
+            problems.append("webp bytes differ from the bytes recorded in botanical-verification.json: any earlier approval does not apply, new approval needed")
+        if webp_sha and asset.get("sha256") not in (None, webp_sha) and not pinned:
             problems.append("webp hash differs from assets manifest")
+        integrity = source_integrity(form, png_sha, v)
+        if pinned and webp_sha and v and (v.get("imageSha256") != webp_sha or v.get("status") != "confirmed"):
+            integrity.setdefault("recordWarnings", []).append("verification record out of step with the approval ledger (ledger approval still stands)")
         if form == "none":
             status = "missing"
         elif problems:
             status = "uncertain_match"
             notes += problems
-        elif basis == "explicit_manual_approval" and form == "both":
+        elif pinned:
             status = "approved"
+            if form != "both":
+                notes.append("source integrity: " + integrity["detail"])
         else:
             status = "pending_review"
             if form != "both":
@@ -172,7 +212,11 @@ def build(prev, bd=None, bd_ref=None):
             "matchConfidence": (v or {}).get("bundleMatchStatus"), "pipelineQa": qa,
             "watercolour": {"status": ((v or {}).get("watercolour") or {}).get("status", "missing") if wc.is_file() else "missing",
                             "webpPath": f"assets/plant-watercolours/{pid}-watercolour.webp" if wc.is_file() else None},
-            "manualApprovalAt": (v or {}).get("approvedAt") if basis == "explicit_manual_approval" else None,
+            "manualApprovalAt": approved_at if pinned else None,
+            "visualApproval": {"state": "approved" if pinned else ("approval_for_other_bytes" if approved_other else "not_approved"),
+                               "approvedImageSha256": webp_sha if pinned else None, "approvedAt": approved_at if pinned else None,
+                               "earlierApprovalsForOtherBytes": len(approved_other)},
+            "sourceIntegrity": integrity,
             "notes": "; ".join(notes),
             "lastUpdated": max(stamps) if stamps else (res["reservedAt"] if res else added.get(pid, "")) + "T00:00:00Z",
         }
@@ -188,6 +232,7 @@ def build(prev, bd=None, bd_ref=None):
     counts = {s: sum(r["status"] == s for r in plants) for s in STATUSES}
     counts["reserved_not_imported"] = sum("reservation" in r for r in plants)
     counts["filename_match_only"] =sum(r["approvalBasis"] == "filename_match_only" for r in plants)
+    counts["provenance_maintenance_warnings"] = sum(r["sourceIntegrity"]["state"] not in ("ok", "record_unpinned") for r in plants if r["status"] != "missing")
     out = {
         "schemaVersion": 1,
         "description": "Botanical illustration status per catalogue plant, in catalogue order. Derived from repository state by tools/botanical_status.py; "
@@ -196,9 +241,10 @@ def build(prev, bd=None, bd_ref=None):
             "missing": "no botanical PNG master and no botanical WebP in either repository and no reservation; the status the generation queue picks up",
             "pending_review": "not approved by a person: a generated image delivered but not imported yet (reservation, assetForm none), an imported image "
                               "awaiting approval, an image confirmed by filename match only (approvalBasis=filename_match_only), or a half-published image",
-            "approved": "PNG master and WebP both exist, hashes agree and data/botanical-verification.json carries an explicit manual approval (approvedAt)",
+            "approved": "the owner approved the exact published WebP bytes (recorded in the append-only data/approval-ledger.json). "
+                        "Independent of PNG-master presence or provenance, which are reported separately in sourceIntegrity. Changed WebP bytes are never approved",
             "rejected": "manual: image rejected; regenerate only when explicitly requested",
-            "uncertain_match": "manual or hash-mismatch: identity or file integrity in doubt; never counted as approved"},
+            "uncertain_match": "manual, or the published WebP bytes differ from every recorded/approved version: identity in doubt; never counted as approved"},
         "catalogue": {"path": "data/plants.json", "count": len(cat)},
         "pngMasters": repo, "brief": brief,
         "updated": max(r["lastUpdated"] for r in plants),
@@ -265,8 +311,10 @@ def check(today):
             claimed.add(f"assets/plant-watercolours/{pid}.webp")  # botanical files are another manifest's concern, not orphans
         if p["status"] == "missing" and (p["assetForm"] != "none" or (c if is_wc() else w) or p["pngMasterPath"]):
             errs.append(f"{pid}: status missing but an asset exists")
-        if p["status"] == "approved" and (p["approvalBasis"] != "explicit_manual_approval" or not p["manualApprovalAt"] or p["assetForm"] != "both"):
-            errs.append(f"{pid}: approved without explicit manual approval and both files")
+        if p["status"] == "approved" and (not p["manualApprovalAt"] or p["visualApproval"]["state"] != "approved" or not p["webpSha256"]):
+            errs.append(f"{pid}: approved without an owner approval pinned to the published WebP bytes")
+        if p["visualApproval"]["state"] == "approved" and p["status"] not in ("approved", "rejected", "uncertain_match"):
+            errs.append(f"{pid}: approval for the published bytes exists but status is {p['status']}: a rebuild must not revoke an approval")
         r = p.get("reservation")
         if r:
             if p["assetForm"] != "none" or p["status"] != "pending_review":

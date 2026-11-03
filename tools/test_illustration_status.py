@@ -117,6 +117,10 @@ class Fixture:
         rec = {"imageSha256": sha(webp), "pngSha256": sha(png), "importedAt": "2026-10-15T00:00:00Z"}
         if approved:
             rec["approvedAt"] = "2026-10-16T00:00:00Z"
+            lp = self.plb / "data/approval-ledger.json"  # owner approvals live in the append-only ledger, pinned to the WebP hash
+            led = json.loads(lp.read_text()) if lp.is_file() else {"schemaVersion": 1, "entries": [], "revocations": []}
+            led["entries"].append({"plantId": pid, "variant": kind, "imageSha256": sha(webp), "approvedAt": rec["approvedAt"], "source": "fixture"})
+            lp.write_text(json.dumps(led, indent=2) + "\n")
         status = "confirmed" if (approved or confirmed) else ("awaiting_review" if kind == "watercolour" else "pending_review")
         pr = ver["plants"].setdefault(pid, {})
         asset = man["assets"].setdefault(pid, {})
@@ -195,10 +199,9 @@ class QueueSelection(FixtureCase):
         self.wc("build")
         self.assertEqual(self.wc.status()[pid]["status"], "pending_review")
         self.assertNotIn(pid, self.wc.q(200))
-        ver = json.loads((self.fx.plb / "data/botanical-verification.json").read_text())  # withdrawn approval -> pending_review, never missing
-        ver["plants"]["e01"]["watercolour"].pop("approvedAt")
-        ver["plants"]["e01"]["watercolour"]["status"] = "awaiting_review"
-        (self.fx.plb / "data/botanical-verification.json").write_text(json.dumps(ver, indent=2) + "\n")
+        r = subprocess.run(["python3", "tools/approval_ledger.py", "revoke", "watercolour", "e01", "--reason", "test: explicit owner revocation"],
+                           cwd=self.fx.plb, capture_output=True, text=True)  # the only way to withdraw an approval -> pending_review, never missing
+        self.assertEqual(r.returncode, 0, r.stderr)
         self.wc("build")
         self.assertEqual(self.wc.status()["e01"]["status"], "pending_review")
         self.assertNotIn("e01", self.wc.q(200))

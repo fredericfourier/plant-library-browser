@@ -4,9 +4,9 @@
   "statusDefinitions": {
     "missing": "no watercolour PNG master and no watercolour WebP in either repository and no reservation; the status the generation queue picks up",
     "pending_review": "not approved by a person: a generated image delivered but not imported yet (reservation, assetForm none), an imported image awaiting approval, an image confirmed by filename match only (approvalBasis=filename_match_only), or a half-published image",
-    "approved": "PNG master and WebP both exist, hashes agree and data/botanical-verification.json plants[id].watercolour carries an explicit manual approval (approvedAt)",
+    "approved": "the owner approved the exact published WebP bytes (recorded in the append-only data/approval-ledger.json). Independent of PNG-master presence or provenance, which are reported separately in sourceIntegrity. Changed WebP bytes are never approved",
     "rejected": "manual: image rejected; regenerate only when explicitly requested",
-    "uncertain_match": "manual or hash-mismatch: identity or file integrity in doubt; never counted as approved"
+    "uncertain_match": "manual, or the published WebP bytes differ from every recorded/approved version: identity in doubt; never counted as approved"
   },
   "catalogue": {
     "path": "data/plants.json",
@@ -32,12 +32,13 @@
   "summary": {
     "total": 108,
     "missing": 0,
-    "pending_review": 3,
-    "approved": 80,
+    "pending_review": 0,
+    "approved": 108,
     "rejected": 0,
-    "uncertain_match": 25,
+    "uncertain_match": 0,
     "reserved_not_imported": 0,
-    "filename_match_only": 0
+    "filename_match_only": 0,
+    "provenance_maintenance_warnings": 28
   },
   "plants": [
     {
@@ -55,6 +56,19 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-16T10:47:39Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "cce6310da8b85152c377c7bb221349c8daccb71f73c054f8909ab0af971268df",
+        "approvedAt": "2026-10-16T10:47:39Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "c87bcb96fed969c67cd6971f1c35e467fa0a02335115f98e96eeb15c0e68c7b1",
+        "recordedPngSha256": "c87bcb96fed969c67cd6971f1c35e467fa0a02335115f98e96eeb15c0e68c7b1",
+        "detail": ""
+      },
       "notes": "earlier image version superseded (hash history in botanical-verification.json)",
       "lastUpdated": "2026-10-16T10:47:39Z",
       "illustrationType": "watercolour"
@@ -74,6 +88,19 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-16T10:47:39Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "638e53963fee8b37acc0b98bdec28255d94e925bbcdb856ce94f80cb94724b4f",
+        "approvedAt": "2026-10-16T10:47:39Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "b818df0aee141508f8e5f615ff5846c8636524c2d2ce9188c26c53e2e28a5365",
+        "recordedPngSha256": "b818df0aee141508f8e5f615ff5846c8636524c2d2ce9188c26c53e2e28a5365",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-16T10:47:39Z",
       "illustrationType": "watercolour"
@@ -82,7 +109,7 @@
       "order": 3,
       "plantId": "geranium-rozanne",
       "botanicalName": "Geranium 'Rozanne'",
-      "status": "uncertain_match",
+      "status": "approved",
       "expectsWatercolour": true,
       "assetForm": "both",
       "pngMasterPath": "assets/plant-watercolours/masters/geranium-rozanne-watercolour.png",
@@ -93,7 +120,20 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-28T07:15:53Z",
-      "notes": "png master hash differs from botanical-verification.json; earlier image version superseded (hash history in botanical-verification.json)",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "4f694a94cacf5e16367cd805fda72a40f57d3aef5f0fd2dabfdfcfc15ca6041e",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 1
+      },
+      "sourceIntegrity": {
+        "state": "master_stale",
+        "blocking": false,
+        "masterSha256": "8266315331ea076c13d306c61faeedda0892d6f8aed2f57e1309ecc296a871e0",
+        "recordedPngSha256": "8cd5424f3d35fbfc778ab52c4c724f613a364470b1da9155cf186d8f811c3c03",
+        "detail": "registered master matches a superseded version of this plant's artwork: the current master was never imported"
+      },
+      "notes": "earlier image version superseded (hash history in botanical-verification.json)",
       "lastUpdated": "2026-10-28T07:15:53Z",
       "illustrationType": "watercolour"
     },
@@ -101,7 +141,7 @@
       "order": 4,
       "plantId": "geranium-macrorrhizum",
       "botanicalName": "Geranium macrorrhizum 'Ingwersen's Variety'",
-      "status": "uncertain_match",
+      "status": "approved",
       "expectsWatercolour": true,
       "assetForm": "both",
       "pngMasterPath": "assets/plant-watercolours/masters/geranium-macrorrhizum-watercolour.png",
@@ -112,7 +152,20 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-28T07:15:53Z",
-      "notes": "png master hash differs from botanical-verification.json; earlier image version superseded (hash history in botanical-verification.json)",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "aa22971887d04a28bc6753e4df5c5eff01206b1fed6d16b9e689288726974657",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 1
+      },
+      "sourceIntegrity": {
+        "state": "master_stale",
+        "blocking": false,
+        "masterSha256": "4e7a6e5b05ec554fff1cd13ef23d0f017dadcb14430d1d45eb2566a56bcd24c2",
+        "recordedPngSha256": "73243aad92d41fc2cf75cbc28b4dce54e75a970a1922e133d44ce29c475f8edb",
+        "detail": "registered master matches a superseded version of this plant's artwork: the current master was never imported"
+      },
+      "notes": "earlier image version superseded (hash history in botanical-verification.json)",
       "lastUpdated": "2026-10-28T07:15:53Z",
       "illustrationType": "watercolour"
     },
@@ -120,7 +173,7 @@
       "order": 5,
       "plantId": "nepeta-walkers-low",
       "botanicalName": "Nepeta racemosa 'Walker's Low'",
-      "status": "uncertain_match",
+      "status": "approved",
       "expectsWatercolour": true,
       "assetForm": "both",
       "pngMasterPath": "assets/plant-watercolours/masters/nepeta-walkers-low-watercolour.png",
@@ -131,7 +184,20 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-28T07:15:53Z",
-      "notes": "png master hash differs from botanical-verification.json; earlier image version superseded (hash history in botanical-verification.json)",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "b70b7b79fe5277105b56e4b2293f03edfb842eb7bb6a0567dec3d8c70136c282",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 1
+      },
+      "sourceIntegrity": {
+        "state": "master_stale",
+        "blocking": false,
+        "masterSha256": "3bef7a18975926fa75389e5783a4c9449b92b051e52be0bb5a93bce77d4c2875",
+        "recordedPngSha256": "0249b2de9cab173dd6f33aa9433a815eaaa962d374d9af0330ccb9743cb85d4c",
+        "detail": "registered master matches a superseded version of this plant's artwork: the current master was never imported"
+      },
+      "notes": "earlier image version superseded (hash history in botanical-verification.json)",
       "lastUpdated": "2026-10-28T07:15:53Z",
       "illustrationType": "watercolour"
     },
@@ -150,6 +216,19 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-16T10:47:39Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "9829794ee2553223762b1a64553759b5023724565f7ce3f72d92718296f424df",
+        "approvedAt": "2026-10-16T10:47:39Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "4b79731cf925905f729feae198b4414c62f1cf1609c26efe9640c1069166e46b",
+        "recordedPngSha256": "4b79731cf925905f729feae198b4414c62f1cf1609c26efe9640c1069166e46b",
+        "detail": ""
+      },
       "notes": "earlier image version superseded (hash history in botanical-verification.json)",
       "lastUpdated": "2026-10-16T10:47:39Z",
       "illustrationType": "watercolour"
@@ -169,6 +248,19 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-16T10:47:39Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "8414c61fa30f3f5b60858464fc8c2586340e8e0771a9f9b6eff3b0ca08262ccd",
+        "approvedAt": "2026-10-16T10:47:39Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "16b678ecc1645f20bdd04889933c06d37e8e7d9c983602326f6f961d2b7129eb",
+        "recordedPngSha256": "16b678ecc1645f20bdd04889933c06d37e8e7d9c983602326f6f961d2b7129eb",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-16T10:47:39Z",
       "illustrationType": "watercolour"
@@ -188,6 +280,19 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-16T10:47:39Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "0122dad1831dc98ba71a467842d51436e217719ec9c1cf4c630eb7ddcf77a718",
+        "approvedAt": "2026-10-16T10:47:39Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "1485a71e09f2d1b302da50bd82fd67206ef117a8fe6d2429347e73460309473c",
+        "recordedPngSha256": "1485a71e09f2d1b302da50bd82fd67206ef117a8fe6d2429347e73460309473c",
+        "detail": ""
+      },
       "notes": "earlier image version superseded (hash history in botanical-verification.json)",
       "lastUpdated": "2026-10-16T10:47:39Z",
       "illustrationType": "watercolour"
@@ -207,6 +312,19 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-16T10:47:39Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "9cf90c1348e452bfa3f9a6afadf2a8bd766ded0a46dc67397380809b35f49cae",
+        "approvedAt": "2026-10-16T10:47:39Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "0755ff6f522d44f6c76c44b3003b92e7190ec7dc35ccc783246ed5aabb8fd7b4",
+        "recordedPngSha256": "0755ff6f522d44f6c76c44b3003b92e7190ec7dc35ccc783246ed5aabb8fd7b4",
+        "detail": ""
+      },
       "notes": "earlier image version superseded (hash history in botanical-verification.json)",
       "lastUpdated": "2026-10-16T10:47:39Z",
       "illustrationType": "watercolour"
@@ -226,6 +344,19 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-16T10:47:39Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "da963850792eb0471e7895daf501b9fa54ba82ee01da5da1738710c87f9af33a",
+        "approvedAt": "2026-10-16T10:47:39Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "24e159fde89895eab8f5f3dbde4bf4260bdfabda8c94b46f63afb608387d9fa0",
+        "recordedPngSha256": "24e159fde89895eab8f5f3dbde4bf4260bdfabda8c94b46f63afb608387d9fa0",
+        "detail": ""
+      },
       "notes": "earlier image version superseded (hash history in botanical-verification.json)",
       "lastUpdated": "2026-10-16T10:47:39Z",
       "illustrationType": "watercolour"
@@ -245,6 +376,19 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-16T10:47:39Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "7dbc9c22037599d22788c8f440274820b40c345dd4b6ab5e908b0352ef740164",
+        "approvedAt": "2026-10-16T10:47:39Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "9f23d1f4cd106d48e74685e933b264115d48530ab3eda871dae828358906d97a",
+        "recordedPngSha256": "9f23d1f4cd106d48e74685e933b264115d48530ab3eda871dae828358906d97a",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-16T10:47:39Z",
       "illustrationType": "watercolour"
@@ -264,6 +408,19 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-16T10:47:39Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "06fe5826035cf6e07f5c71713d82a2bca2532deeb8a2ca58cfbf173e1896e375",
+        "approvedAt": "2026-10-16T10:47:39Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "f3f0b3848a9e22384b09861eab1ef653eb4ddc347ea1467f7fe34bbf25922b65",
+        "recordedPngSha256": "f3f0b3848a9e22384b09861eab1ef653eb4ddc347ea1467f7fe34bbf25922b65",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-16T10:47:39Z",
       "illustrationType": "watercolour"
@@ -283,6 +440,19 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-16T10:47:39Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "a52795e9710702351094eaf1a9ff78732195e70606438ce9bb43fd0a0c848b12",
+        "approvedAt": "2026-10-16T10:47:39Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "89d2c3f1da57e02f4cbb72136409cd5db08ec76e2045f0a1128d3e7177bd678b",
+        "recordedPngSha256": "89d2c3f1da57e02f4cbb72136409cd5db08ec76e2045f0a1128d3e7177bd678b",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-16T10:47:39Z",
       "illustrationType": "watercolour"
@@ -302,6 +472,19 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-16T10:47:39Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "bfff5e0a5cd859e13644126591c313fa96ef53abbd59e1ea629610ba551c61c5",
+        "approvedAt": "2026-10-16T10:47:39Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "29414832e39cfd32cb7a95c7bfeab917aa5aba3223d99218953096fd29f6dc45",
+        "recordedPngSha256": "29414832e39cfd32cb7a95c7bfeab917aa5aba3223d99218953096fd29f6dc45",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-16T10:47:39Z",
       "illustrationType": "watercolour"
@@ -321,6 +504,19 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-16T10:47:39Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "f1a002085f6687843b45ac26674cc97e461db5422365946e61884d338c7c070d",
+        "approvedAt": "2026-10-16T10:47:39Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "086d34612acda726646732a768a41c86d108a98b0468872d39412d75b14c63fc",
+        "recordedPngSha256": "086d34612acda726646732a768a41c86d108a98b0468872d39412d75b14c63fc",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-16T10:47:39Z",
       "illustrationType": "watercolour"
@@ -340,6 +536,19 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-16T10:47:39Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "caa6fbee596837aa38be545e39b06d1f76f553d931b22d5712fb7b1eea19aa42",
+        "approvedAt": "2026-10-16T10:47:39Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "60c46a98ffcc5e6a849c87cbc17aeae0dd2035f2b06d01dbbb121a70ca512839",
+        "recordedPngSha256": "60c46a98ffcc5e6a849c87cbc17aeae0dd2035f2b06d01dbbb121a70ca512839",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-16T10:47:39Z",
       "illustrationType": "watercolour"
@@ -359,6 +568,19 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-16T10:47:39Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "13a8ec32511ccfd118924605655faacb28f6ff13e5cd29b88da88323262eced0",
+        "approvedAt": "2026-10-16T10:47:39Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "81f47057a6de054742a13b52c5743640a92f782850c8baf04d002c9316f98a2e",
+        "recordedPngSha256": "81f47057a6de054742a13b52c5743640a92f782850c8baf04d002c9316f98a2e",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-16T10:47:39Z",
       "illustrationType": "watercolour"
@@ -378,6 +600,19 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-16T10:47:39Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "a66b09f8830d6db1f3e1729a9d844fb400811e3aa5d6a766ba9d7bac70a65284",
+        "approvedAt": "2026-10-16T10:47:39Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "b4ae52236d9bb3441cea47d0aeadae0b0c14f678be2505a843846dac6d83097f",
+        "recordedPngSha256": "b4ae52236d9bb3441cea47d0aeadae0b0c14f678be2505a843846dac6d83097f",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-16T10:47:39Z",
       "illustrationType": "watercolour"
@@ -397,6 +632,19 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-16T10:47:39Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "9f6c74f45bd3a58b02a83b663a77530738f24e4accbbb3c1398a855e6e63815b",
+        "approvedAt": "2026-10-16T10:47:39Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "3fc05bef43854e2b1ddb96afb8b4781f88051d2a7a1fe06fe397c9a9bf5cae39",
+        "recordedPngSha256": "3fc05bef43854e2b1ddb96afb8b4781f88051d2a7a1fe06fe397c9a9bf5cae39",
+        "detail": ""
+      },
       "notes": "earlier image version superseded (hash history in botanical-verification.json)",
       "lastUpdated": "2026-10-16T10:47:39Z",
       "illustrationType": "watercolour"
@@ -416,6 +664,19 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-16T10:47:39Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "bb059b37fdee0609673c002adf6d9be49a8632679b3fb7ee1f268be942bde677",
+        "approvedAt": "2026-10-16T10:47:39Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "26594b9799e658fbcbfcdf07f5c61be0534d867187eff8c11cd1e1121c09569c",
+        "recordedPngSha256": "26594b9799e658fbcbfcdf07f5c61be0534d867187eff8c11cd1e1121c09569c",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-16T10:47:39Z",
       "illustrationType": "watercolour"
@@ -435,6 +696,19 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-16T10:47:39Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "d5a6a564002877c9b88af4106b20f373a43b91c75a1aaa0e98f60bf4eb7bc9c1",
+        "approvedAt": "2026-10-16T10:47:39Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "0913fc2a33eb9925c273b5290ee9efa530411fa68f9af0f813a398799c830c46",
+        "recordedPngSha256": "0913fc2a33eb9925c273b5290ee9efa530411fa68f9af0f813a398799c830c46",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-16T10:47:39Z",
       "illustrationType": "watercolour"
@@ -454,6 +728,19 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-16T10:47:39Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "64305a9c4522192d306ce673ece3025b1a10e792c6eeb7cd4ac25104be8322bf",
+        "approvedAt": "2026-10-16T10:47:39Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "0070760b75920ed39a6c79b6d84a86fe68fb98f192f3bd60874d7b40fc455c8a",
+        "recordedPngSha256": "0070760b75920ed39a6c79b6d84a86fe68fb98f192f3bd60874d7b40fc455c8a",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-16T10:47:39Z",
       "illustrationType": "watercolour"
@@ -473,6 +760,19 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-16T10:47:39Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "0023d6495d76601bf3373eb36a5e642c6327cb6813e1dc0e289af66c8f34b25b",
+        "approvedAt": "2026-10-16T10:47:39Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "d7afad8679fab74de2e488e0bb5f3270ea7d4359650d904cb3e39f41c3d46acb",
+        "recordedPngSha256": "d7afad8679fab74de2e488e0bb5f3270ea7d4359650d904cb3e39f41c3d46acb",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-16T10:47:39Z",
       "illustrationType": "watercolour"
@@ -481,7 +781,7 @@
       "order": 24,
       "plantId": "lavandula-hidcote",
       "botanicalName": "Lavandula angustifolia 'Hidcote'",
-      "status": "uncertain_match",
+      "status": "approved",
       "expectsWatercolour": true,
       "assetForm": "both",
       "pngMasterPath": "assets/plant-watercolours/masters/lavandula-hidcote-watercolour.png",
@@ -492,7 +792,20 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-28T07:15:53Z",
-      "notes": "png master hash differs from botanical-verification.json; earlier image version superseded (hash history in botanical-verification.json)",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "ce97f266ff0a604c79b7444185d84878f1080d7d120d94ad175ed6d1732bd7c9",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 1
+      },
+      "sourceIntegrity": {
+        "state": "master_stale",
+        "blocking": false,
+        "masterSha256": "df0353676d5b9ab850dd35496820fa8398fbc2542516384a8e3783432f14eec5",
+        "recordedPngSha256": "df72668cba9b37da505784523af6a0ffc339f26e1dc9abbefb035eb69c85c983",
+        "detail": "registered master matches a superseded version of this plant's artwork: the current master was never imported"
+      },
+      "notes": "earlier image version superseded (hash history in botanical-verification.json)",
       "lastUpdated": "2026-10-28T07:15:53Z",
       "illustrationType": "watercolour"
     },
@@ -511,6 +824,19 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-16T10:47:39Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "94654df6dd559b21a5055c33153e0269387faae49b7472065cdb111db97a27ee",
+        "approvedAt": "2026-10-16T10:47:39Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "b81e99b874e5886504de2040153093b72f7ca3be62f03928fd80cc55eca6bb93",
+        "recordedPngSha256": "b81e99b874e5886504de2040153093b72f7ca3be62f03928fd80cc55eca6bb93",
+        "detail": ""
+      },
       "notes": "earlier image version superseded (hash history in botanical-verification.json)",
       "lastUpdated": "2026-10-16T10:47:39Z",
       "illustrationType": "watercolour"
@@ -530,6 +856,19 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-16T10:47:39Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "3af2386c4b30439c4d42b79cb2944f14bd5cd217d27d0a51abd5c62f1a6e5086",
+        "approvedAt": "2026-10-16T10:47:39Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "d28abc7d16684768a2c3f324e0c24ba6ef0b07523be31a33f4de7f74f56b0469",
+        "recordedPngSha256": "d28abc7d16684768a2c3f324e0c24ba6ef0b07523be31a33f4de7f74f56b0469",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-16T10:47:39Z",
       "illustrationType": "watercolour"
@@ -549,6 +888,19 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-16T10:47:39Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "0cc8951b50aaff3d1b13ba4446bedd39348c84a720403ebea5d2a7493683064f",
+        "approvedAt": "2026-10-16T10:47:39Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "9df960b46effc8851b8f9779149692a75db234e7d7e08673e1810d182026f33d",
+        "recordedPngSha256": "9df960b46effc8851b8f9779149692a75db234e7d7e08673e1810d182026f33d",
+        "detail": ""
+      },
       "notes": "earlier image version superseded (hash history in botanical-verification.json)",
       "lastUpdated": "2026-10-16T10:47:39Z",
       "illustrationType": "watercolour"
@@ -568,6 +920,19 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-16T10:47:39Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "a06b4676de4ec2c687da52310d34b26ddd11307f29d7dc58c35b1eb9bf3159c9",
+        "approvedAt": "2026-10-16T10:47:39Z",
+        "earlierApprovalsForOtherBytes": 1
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "05ce1d0b518dfda3d3c5048018d22c2bc48218c0105d763f0cdf3573e6cb0432",
+        "recordedPngSha256": "05ce1d0b518dfda3d3c5048018d22c2bc48218c0105d763f0cdf3573e6cb0432",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-16T10:47:39Z",
       "illustrationType": "watercolour"
@@ -587,6 +952,19 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-16T10:47:39Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "d4c3b7fb772b5202bce7094213bc1048fff97000aae56e095c8e5e40e91c2c2c",
+        "approvedAt": "2026-10-16T10:47:39Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "c066278058ff407427ee7ae315c4ab600e05d785ec417c2f0efb96a20c5c9e89",
+        "recordedPngSha256": "c066278058ff407427ee7ae315c4ab600e05d785ec417c2f0efb96a20c5c9e89",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-16T10:47:39Z",
       "illustrationType": "watercolour"
@@ -606,6 +984,19 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-16T10:47:39Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "e9a65d559a2497740c4b5b538a7a4835882c3a42e620bffb62047379abbbbb23",
+        "approvedAt": "2026-10-16T10:47:39Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "c5af9296189fd4e7ad674b21cea82afcbb392e63da90f8a03be01feb9d7e593c",
+        "recordedPngSha256": "c5af9296189fd4e7ad674b21cea82afcbb392e63da90f8a03be01feb9d7e593c",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-16T10:47:39Z",
       "illustrationType": "watercolour"
@@ -625,6 +1016,19 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-16T10:47:39Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "5eefb7a3f84731cdfee42d631d212ef656bf1e8a89c5d4ffdb753bd9ea5f1b1b",
+        "approvedAt": "2026-10-16T10:47:39Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "a2867b87f8c5eb9ee72053129b6478310ce0227416c0e1dfa22f3b2143bbcee7",
+        "recordedPngSha256": "a2867b87f8c5eb9ee72053129b6478310ce0227416c0e1dfa22f3b2143bbcee7",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-16T10:47:39Z",
       "illustrationType": "watercolour"
@@ -644,6 +1048,19 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-16T10:47:39Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "c973b0f62f1a941dc4f8f8c90f1d7e3a66d34989584047a7802d04ebde067a7f",
+        "approvedAt": "2026-10-16T10:47:39Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "170a6f6cf67578884855fd4430280c045b865939eeb72a568a9420b14b172659",
+        "recordedPngSha256": "170a6f6cf67578884855fd4430280c045b865939eeb72a568a9420b14b172659",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-16T10:47:39Z",
       "illustrationType": "watercolour"
@@ -663,6 +1080,19 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-16T10:47:39Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "7dd7a726eef2ef3b6fcbefb27091c9fbf0dbcc85672b13520c82b1663c53b8ad",
+        "approvedAt": "2026-10-16T10:47:39Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "7cab6a338b1c8973a4b3480c800b7d70803afde772f0250fff1a9774546bd84b",
+        "recordedPngSha256": "7cab6a338b1c8973a4b3480c800b7d70803afde772f0250fff1a9774546bd84b",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-16T10:47:39Z",
       "illustrationType": "watercolour"
@@ -682,6 +1112,19 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-16T10:47:39Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "1be86f7b83f0fceb830c21fb5ec078fc31c675891889493f0c96d399741a9138",
+        "approvedAt": "2026-10-16T10:47:39Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "32855b87ecc9dc0f79377afcaa09903e8745a5056619204d655cdc78a952986a",
+        "recordedPngSha256": "32855b87ecc9dc0f79377afcaa09903e8745a5056619204d655cdc78a952986a",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-16T10:47:39Z",
       "illustrationType": "watercolour"
@@ -690,7 +1133,7 @@
       "order": 35,
       "plantId": "erigeron-karvinskianus",
       "botanicalName": "Erigeron karvinskianus",
-      "status": "uncertain_match",
+      "status": "approved",
       "expectsWatercolour": true,
       "assetForm": "both",
       "pngMasterPath": "assets/plant-watercolours/masters/erigeron-karvinskianus-watercolour.png",
@@ -701,7 +1144,20 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-28T07:15:53Z",
-      "notes": "png master hash differs from botanical-verification.json; earlier image version superseded (hash history in botanical-verification.json)",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "c3ed193b66fd64a2d88311b41159476650803f905931683b185110f64cf9f8ea",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 1
+      },
+      "sourceIntegrity": {
+        "state": "master_stale",
+        "blocking": false,
+        "masterSha256": "c0585792e4ca1e8d028299147c5abe39e40d5bc8d33b7ee1667a695eefbd1927",
+        "recordedPngSha256": "d1b8878d912947daf0716f9492f49d24be5347525660edadd2f62a6c1e62b383",
+        "detail": "registered master matches a superseded version of this plant's artwork: the current master was never imported"
+      },
+      "notes": "earlier image version superseded (hash history in botanical-verification.json)",
       "lastUpdated": "2026-10-28T07:15:53Z",
       "illustrationType": "watercolour"
     },
@@ -720,6 +1176,19 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-16T10:47:39Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "fae30267692fee3ad9c7484fac7dc6a12a1966105d7efac7350e4073cad67ae9",
+        "approvedAt": "2026-10-16T10:47:39Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "fa5d39b0c2a2b18f4c4620cdd30d62fcb190b82c3ac3835484dc37aeebe84952",
+        "recordedPngSha256": "fa5d39b0c2a2b18f4c4620cdd30d62fcb190b82c3ac3835484dc37aeebe84952",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-16T10:47:39Z",
       "illustrationType": "watercolour"
@@ -728,7 +1197,7 @@
       "order": 37,
       "plantId": "allium-purple-sensation",
       "botanicalName": "Allium hollandicum 'Purple Sensation'",
-      "status": "uncertain_match",
+      "status": "approved",
       "expectsWatercolour": true,
       "assetForm": "both",
       "pngMasterPath": "assets/plant-watercolours/masters/allium-purple-sensation-watercolour.png",
@@ -739,7 +1208,20 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-28T07:15:53Z",
-      "notes": "png master hash differs from botanical-verification.json; earlier image version superseded (hash history in botanical-verification.json)",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "6de092c34b7516198abe0dd23caa198b0c168f8b6fd5b04921ff7e9e7498ebb6",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 1
+      },
+      "sourceIntegrity": {
+        "state": "master_stale",
+        "blocking": false,
+        "masterSha256": "29140be0f4a289e238f1e4147e8cb2a995e151f7470f995a0aca98f14ee6b460",
+        "recordedPngSha256": "978a777db40cd9254efc926c480270c8ed7433c3876eb04c2512ce6f762a42cf",
+        "detail": "registered master matches a superseded version of this plant's artwork: the current master was never imported"
+      },
+      "notes": "earlier image version superseded (hash history in botanical-verification.json)",
       "lastUpdated": "2026-10-28T07:15:53Z",
       "illustrationType": "watercolour"
     },
@@ -747,7 +1229,7 @@
       "order": 38,
       "plantId": "digitalis-purpurea",
       "botanicalName": "Digitalis purpurea 'Pam's Choice'",
-      "status": "uncertain_match",
+      "status": "approved",
       "expectsWatercolour": true,
       "assetForm": "both",
       "pngMasterPath": "assets/plant-watercolours/masters/digitalis-purpurea-watercolour.png",
@@ -758,7 +1240,20 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-28T07:15:53Z",
-      "notes": "png master hash differs from botanical-verification.json; earlier image version superseded (hash history in botanical-verification.json)",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "5e56faf04a3cac9d2a5e48f03b7b7df283827eb3028e00df97275277d0836c78",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 1
+      },
+      "sourceIntegrity": {
+        "state": "master_stale",
+        "blocking": false,
+        "masterSha256": "2c8734a05b91502d20c52a31c721e5a0cf8eb67c9c80802ef26cc21fac780916",
+        "recordedPngSha256": "940fe15d940f404aac30348d9802b5d6f0b4df00290b32562e0768445c9f2fb4",
+        "detail": "registered master matches a superseded version of this plant's artwork: the current master was never imported"
+      },
+      "notes": "earlier image version superseded (hash history in botanical-verification.json)",
       "lastUpdated": "2026-10-28T07:15:53Z",
       "illustrationType": "watercolour"
     },
@@ -777,6 +1272,19 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-16T10:47:39Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "6d3fff6d0dff32535249b4be2427b106925cf7a9bf60d95e4bc6d926f207db38",
+        "approvedAt": "2026-10-16T10:47:39Z",
+        "earlierApprovalsForOtherBytes": 1
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "be23db5ca245aaa093d3dbf74b88c57312f07cd94c68ea8b0d2fb0864eb95c32",
+        "recordedPngSha256": "be23db5ca245aaa093d3dbf74b88c57312f07cd94c68ea8b0d2fb0864eb95c32",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-16T10:47:39Z",
       "illustrationType": "watercolour"
@@ -796,6 +1304,19 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-16T10:47:39Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "ed6859fbd7a13a7c2c6ab600969a7b1ae1469e20763490c09363da32a77f5cff",
+        "approvedAt": "2026-10-16T10:47:39Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "14aab4a6c7d1657b3ef16959c9ba1101cc7d2793edd9dc3a255a46d8774d0096",
+        "recordedPngSha256": "14aab4a6c7d1657b3ef16959c9ba1101cc7d2793edd9dc3a255a46d8774d0096",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-16T10:47:39Z",
       "illustrationType": "watercolour"
@@ -815,6 +1336,19 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-16T10:47:39Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "4ef47148a1026f00fc94bc445bcc9175fd8df1914237b65e56364a1d520fcd29",
+        "approvedAt": "2026-10-16T10:47:39Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "3c931c387441f52ccf0b69c16fe45efcba2485c516e4900df626d6736741c2da",
+        "recordedPngSha256": "3c931c387441f52ccf0b69c16fe45efcba2485c516e4900df626d6736741c2da",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-16T10:47:39Z",
       "illustrationType": "watercolour"
@@ -834,6 +1368,19 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-16T10:47:39Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "58ca957459c21ff738f0427cc2d24524b7366cc644b89c3373fbe84257528341",
+        "approvedAt": "2026-10-16T10:47:39Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "02dbe8512680baa9e32bc56a4231cedf99c670bba5786dd999dc46de63321631",
+        "recordedPngSha256": "02dbe8512680baa9e32bc56a4231cedf99c670bba5786dd999dc46de63321631",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-16T10:47:39Z",
       "illustrationType": "watercolour"
@@ -853,6 +1400,19 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-16T10:47:39Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "30e073b5d1bf047e2c906defcc373d80e6ad800fbf1e7c535d7dad9bae906008",
+        "approvedAt": "2026-10-16T10:47:39Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "d01075cc3233426bde7779d4d4ccbb913dc5e435b29d48b5d7ec168b44c8ec1c",
+        "recordedPngSha256": "d01075cc3233426bde7779d4d4ccbb913dc5e435b29d48b5d7ec168b44c8ec1c",
+        "detail": ""
+      },
       "notes": "earlier image version superseded (hash history in botanical-verification.json)",
       "lastUpdated": "2026-10-16T10:47:39Z",
       "illustrationType": "watercolour"
@@ -861,7 +1421,7 @@
       "order": 44,
       "plantId": "alchemilla-mollis",
       "botanicalName": "Alchemilla mollis",
-      "status": "uncertain_match",
+      "status": "approved",
       "expectsWatercolour": true,
       "assetForm": "both",
       "pngMasterPath": "assets/plant-watercolours/masters/alchemilla-mollis-watercolour.png",
@@ -872,7 +1432,20 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-28T07:15:53Z",
-      "notes": "png master hash differs from botanical-verification.json; earlier image version superseded (hash history in botanical-verification.json)",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "87cddd289fd2fe8dcbf87abf39f3f958ed70ecbb12cc687736126f8fb5e3f8cd",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 1
+      },
+      "sourceIntegrity": {
+        "state": "master_stale",
+        "blocking": false,
+        "masterSha256": "d9546181f891934b95ea847ee043efd5b83606d79eb796b8f29f5aff37caf213",
+        "recordedPngSha256": "cb143065fe620db5cf5687d74dfb22ed9d5a880ddc850dd6d1ab67eb819ecd20",
+        "detail": "registered master matches a superseded version of this plant's artwork: the current master was never imported"
+      },
+      "notes": "earlier image version superseded (hash history in botanical-verification.json)",
       "lastUpdated": "2026-10-28T07:15:53Z",
       "illustrationType": "watercolour"
     },
@@ -880,7 +1453,7 @@
       "order": 45,
       "plantId": "heuchera-palace-purple",
       "botanicalName": "Heuchera micrantha 'Palace Purple'",
-      "status": "uncertain_match",
+      "status": "approved",
       "expectsWatercolour": true,
       "assetForm": "both",
       "pngMasterPath": "assets/plant-watercolours/masters/heuchera-palace-purple-watercolour.png",
@@ -891,7 +1464,20 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-28T07:15:53Z",
-      "notes": "png master hash differs from botanical-verification.json; earlier image version superseded (hash history in botanical-verification.json)",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "858f76e5d90008d0c324f4eb5fe23f3038efe1c1b54de9ce50553eadad77371e",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 1
+      },
+      "sourceIntegrity": {
+        "state": "master_stale",
+        "blocking": false,
+        "masterSha256": "8dde8fb6468703c888bbcc19700205d089ec2144a4ae17c377c2f01cda3d5551",
+        "recordedPngSha256": "572f9600aa6e023331e067fbf2cf7692a7748ead2ddd7dfe35df6f08cb362e0f",
+        "detail": "registered master matches a superseded version of this plant's artwork: the current master was never imported"
+      },
+      "notes": "earlier image version superseded (hash history in botanical-verification.json)",
       "lastUpdated": "2026-10-28T07:15:53Z",
       "illustrationType": "watercolour"
     },
@@ -910,6 +1496,19 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-16T10:47:39Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "ce911942e1cd413d744c840e21e0d1fc782e2b6c27ce57eda33c8aa40c926947",
+        "approvedAt": "2026-10-16T10:47:39Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "d024104e75d7eba4069795c40cd38423b6f0f1d1dc0ee59940f8fe42f6d739c9",
+        "recordedPngSha256": "d024104e75d7eba4069795c40cd38423b6f0f1d1dc0ee59940f8fe42f6d739c9",
+        "detail": ""
+      },
       "notes": "earlier image version superseded (hash history in botanical-verification.json)",
       "lastUpdated": "2026-10-16T10:47:39Z",
       "illustrationType": "watercolour"
@@ -918,7 +1517,7 @@
       "order": 47,
       "plantId": "pulmonaria-blue-ensign",
       "botanicalName": "Pulmonaria 'Blue Ensign'",
-      "status": "uncertain_match",
+      "status": "approved",
       "expectsWatercolour": true,
       "assetForm": "both",
       "pngMasterPath": "assets/plant-watercolours/masters/pulmonaria-blue-ensign-watercolour.png",
@@ -929,7 +1528,20 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-28T07:15:53Z",
-      "notes": "png master hash differs from botanical-verification.json; earlier image version superseded (hash history in botanical-verification.json)",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "1c4333846ffe9adc4eeffd7eec8edd3cf3c499f2674b9fa5f16ec4338d614e49",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 1
+      },
+      "sourceIntegrity": {
+        "state": "master_stale",
+        "blocking": false,
+        "masterSha256": "ff12a87f849b84d5771d9616890620cc81318cfbb269c5c9c8dba98e58c22026",
+        "recordedPngSha256": "96370151dbc502f69dbf2a996fb7624b9c21e6b00dcea81c8bf927aa05680d40",
+        "detail": "registered master matches a superseded version of this plant's artwork: the current master was never imported"
+      },
+      "notes": "earlier image version superseded (hash history in botanical-verification.json)",
       "lastUpdated": "2026-10-28T07:15:53Z",
       "illustrationType": "watercolour"
     },
@@ -937,7 +1549,7 @@
       "order": 48,
       "plantId": "helleborus-hybridus",
       "botanicalName": "Helleborus × hybridus",
-      "status": "uncertain_match",
+      "status": "approved",
       "expectsWatercolour": true,
       "assetForm": "both",
       "pngMasterPath": "assets/plant-watercolours/masters/helleborus-hybridus-watercolour.png",
@@ -948,7 +1560,20 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-28T07:15:53Z",
-      "notes": "png master hash differs from botanical-verification.json; earlier image version superseded (hash history in botanical-verification.json)",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "f772296ee8d22a3327770b90dc66517319f671253b7e45e6296b5a29e6e7926b",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 1
+      },
+      "sourceIntegrity": {
+        "state": "master_stale",
+        "blocking": false,
+        "masterSha256": "e36dff0c0759a00fdf1e6630c81e505e68217896dd8f78a657f8bc606fe4a9e4",
+        "recordedPngSha256": "7a40055187014b2bd626a011640fd88d753e403ce7d3109630ef1957e849f96e",
+        "detail": "registered master matches a superseded version of this plant's artwork: the current master was never imported"
+      },
+      "notes": "earlier image version superseded (hash history in botanical-verification.json)",
       "lastUpdated": "2026-10-28T07:15:53Z",
       "illustrationType": "watercolour"
     },
@@ -956,7 +1581,7 @@
       "order": 49,
       "plantId": "epimedium-sulphureum",
       "botanicalName": "Epimedium × versicolor 'Sulphureum'",
-      "status": "uncertain_match",
+      "status": "approved",
       "expectsWatercolour": true,
       "assetForm": "both",
       "pngMasterPath": "assets/plant-watercolours/masters/epimedium-sulphureum-watercolour.png",
@@ -967,7 +1592,20 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-28T07:15:53Z",
-      "notes": "png master hash differs from botanical-verification.json; earlier image version superseded (hash history in botanical-verification.json)",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "0e2b2af009a24d50f55050aace0169e8bb746e5c4a1dcfcf4767ab6880391ebd",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 1
+      },
+      "sourceIntegrity": {
+        "state": "master_stale",
+        "blocking": false,
+        "masterSha256": "d6d441a39e8bc32274692341cacc80ca3807fd02262cd19cee372d104c904c38",
+        "recordedPngSha256": "d6aeb0587d4ea2bfbea1aa1a5faa9a55d3a718121377557225b1f8fb241a89b8",
+        "detail": "registered master matches a superseded version of this plant's artwork: the current master was never imported"
+      },
+      "notes": "earlier image version superseded (hash history in botanical-verification.json)",
       "lastUpdated": "2026-10-28T07:15:53Z",
       "illustrationType": "watercolour"
     },
@@ -986,6 +1624,19 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-16T10:47:39Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "38d0e8440f3d4d883500ec834afa0bd9a37d7a788f3df1ee0297a991b182a2f2",
+        "approvedAt": "2026-10-16T10:47:39Z",
+        "earlierApprovalsForOtherBytes": 1
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "8ec9047dd7a7d1b828979ca0067e152bf6ff70463b9596f89b0a81ba66433d56",
+        "recordedPngSha256": "8ec9047dd7a7d1b828979ca0067e152bf6ff70463b9596f89b0a81ba66433d56",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-16T10:47:39Z",
       "illustrationType": "watercolour"
@@ -1005,6 +1656,19 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-16T10:47:39Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "96cf32ef8af2401a7efb62da52aae47125aca78585b391c210887d5bb4436838",
+        "approvedAt": "2026-10-16T10:47:39Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "d4851bcfe8ebc533d60570719bdd5a3034409aa2b2d6afe352a0d1dcf9e18fe0",
+        "recordedPngSha256": "d4851bcfe8ebc533d60570719bdd5a3034409aa2b2d6afe352a0d1dcf9e18fe0",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-16T10:47:39Z",
       "illustrationType": "watercolour"
@@ -1024,6 +1688,19 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-16T10:47:39Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "6a669b2673651df9ef7b826ecd26980c7104d49aeff0230e3d73a46a6d7c68e5",
+        "approvedAt": "2026-10-16T10:47:39Z",
+        "earlierApprovalsForOtherBytes": 1
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "a6df1e676175ce79684ecaebab1a1d4e0c022e3eec61aa89e828822ec7a1d9a4",
+        "recordedPngSha256": "a6df1e676175ce79684ecaebab1a1d4e0c022e3eec61aa89e828822ec7a1d9a4",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-16T10:47:39Z",
       "illustrationType": "watercolour"
@@ -1043,6 +1720,19 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-16T10:47:39Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "11cedd7d6eb19dad8264c13a6f8fd8b3add91b6e4358ab3a9644461dbb65a491",
+        "approvedAt": "2026-10-16T10:47:39Z",
+        "earlierApprovalsForOtherBytes": 1
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "d69d859cce754e1ef0de36e51c9172b05d9e70d0d8ad9c78446c590f8772d825",
+        "recordedPngSha256": "d69d859cce754e1ef0de36e51c9172b05d9e70d0d8ad9c78446c590f8772d825",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-16T10:47:39Z",
       "illustrationType": "watercolour"
@@ -1062,6 +1752,19 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-16T10:47:39Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "a8765fb48401cb263563161be6349844eb3f4089c2192814991575338c93d970",
+        "approvedAt": "2026-10-16T10:47:39Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "262183018543e84e6db7caa1d9aa9d4872a7ac52b6abdf7b098aecd615f3e4fa",
+        "recordedPngSha256": "262183018543e84e6db7caa1d9aa9d4872a7ac52b6abdf7b098aecd615f3e4fa",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-16T10:47:39Z",
       "illustrationType": "watercolour"
@@ -1081,6 +1784,19 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-16T10:47:39Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "8d4becf53e280f28c6ba5a04a52d1a9cabc51d88e8b39c60d993940778791135",
+        "approvedAt": "2026-10-16T10:47:39Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "0034a767011d1cf2f53ab3875fbcb5bd580eeca21afc6322bc94652e01ea47d1",
+        "recordedPngSha256": "0034a767011d1cf2f53ab3875fbcb5bd580eeca21afc6322bc94652e01ea47d1",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-16T10:47:39Z",
       "illustrationType": "watercolour"
@@ -1089,7 +1805,7 @@
       "order": 56,
       "plantId": "hakonechloa-macra",
       "botanicalName": "Hakonechloa macra",
-      "status": "uncertain_match",
+      "status": "approved",
       "expectsWatercolour": true,
       "assetForm": "both",
       "pngMasterPath": "assets/plant-watercolours/masters/hakonechloa-macra-watercolour.png",
@@ -1100,7 +1816,20 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-28T07:15:53Z",
-      "notes": "png master hash differs from botanical-verification.json; earlier image version superseded (hash history in botanical-verification.json)",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "bdbb17a63932148210349b19a8aa3b635540567c8f721e0183efa1aa93569108",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 1
+      },
+      "sourceIntegrity": {
+        "state": "master_stale",
+        "blocking": false,
+        "masterSha256": "042438e2818c6a10bf70c482ac23b3c8f8b73b4c1e3e1d63172b54109ef001b2",
+        "recordedPngSha256": "f457d2abf99fc969c1bfba5705640db8a365e86853d14daacadccecb19a56ae5",
+        "detail": "registered master matches a superseded version of this plant's artwork: the current master was never imported"
+      },
+      "notes": "earlier image version superseded (hash history in botanical-verification.json)",
       "lastUpdated": "2026-10-28T07:15:53Z",
       "illustrationType": "watercolour"
     },
@@ -1108,7 +1837,7 @@
       "order": 57,
       "plantId": "carex-evergold",
       "botanicalName": "Carex oshimensis 'Evergold'",
-      "status": "uncertain_match",
+      "status": "approved",
       "expectsWatercolour": true,
       "assetForm": "both",
       "pngMasterPath": "assets/plant-watercolours/masters/carex-evergold-watercolour.png",
@@ -1119,7 +1848,20 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-28T07:15:53Z",
-      "notes": "png master hash differs from botanical-verification.json; earlier image version superseded (hash history in botanical-verification.json)",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "b44e0726a3a4837920c7fdcef15d5b132bc8b9ab9e8d63948c62e71772a4af5b",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 1
+      },
+      "sourceIntegrity": {
+        "state": "master_stale",
+        "blocking": false,
+        "masterSha256": "6f4a220176c93af2a462f625a22e1fa08537952b182db3fdf0532d8b9c08f106",
+        "recordedPngSha256": "538edf4612c1e3cf4a2b23e9965940cfba4e8fc2d4fcec3d05bfbdc808a1358e",
+        "detail": "registered master matches a superseded version of this plant's artwork: the current master was never imported"
+      },
+      "notes": "earlier image version superseded (hash history in botanical-verification.json)",
       "lastUpdated": "2026-10-28T07:15:53Z",
       "illustrationType": "watercolour"
     },
@@ -1138,6 +1880,19 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-16T10:47:39Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "09824b7bfc87a9ad0a8d5593e19ab21e6c0e778a2b6a3b4b64ec7e0435d019a1",
+        "approvedAt": "2026-10-16T10:47:39Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "09361c5b1da04e978f3611a64f04e1af3e8d31426369aee249d42ed3bcf02251",
+        "recordedPngSha256": "09361c5b1da04e978f3611a64f04e1af3e8d31426369aee249d42ed3bcf02251",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-16T10:47:39Z",
       "illustrationType": "watercolour"
@@ -1146,7 +1901,7 @@
       "order": 59,
       "plantId": "polystichum-setiferum",
       "botanicalName": "Polystichum setiferum",
-      "status": "uncertain_match",
+      "status": "approved",
       "expectsWatercolour": true,
       "assetForm": "both",
       "pngMasterPath": "assets/plant-watercolours/masters/polystichum-setiferum-watercolour.png",
@@ -1157,7 +1912,20 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-30T16:41:41Z",
-      "notes": "png master hash differs from botanical-verification.json; earlier image version superseded (hash history in botanical-verification.json)",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "5e6e9163676fc74126bd17bdf80b44a7202db4e7736bc88c1c1140e38ac0658a",
+        "approvedAt": "2026-10-30T16:41:41Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "master_stale",
+        "blocking": false,
+        "masterSha256": "cfaa5de71d3cac44248d0e855d30238e05934a4b0d16dde8f2f2c18d737cbc00",
+        "recordedPngSha256": "6b99960c911989e0ed86a09c8da444a0aa9d69f06f817a1cac8046de02e15dbb",
+        "detail": "registered master matches a superseded version of this plant's artwork: the current master was never imported"
+      },
+      "notes": "earlier image version superseded (hash history in botanical-verification.json)",
       "lastUpdated": "2026-10-30T16:41:41Z",
       "illustrationType": "watercolour"
     },
@@ -1176,6 +1944,19 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-16T10:47:39Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "dd639aaf1b59251db7f82cb9c53ad28662c433c47e906a4d2b0c255f1b5dc2f4",
+        "approvedAt": "2026-10-16T10:47:39Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "d900f6b803e847862e47fbb5d58d867c64afc0d1d5fbb8324b7a363793addfee",
+        "recordedPngSha256": "d900f6b803e847862e47fbb5d58d867c64afc0d1d5fbb8324b7a363793addfee",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-16T10:47:39Z",
       "illustrationType": "watercolour"
@@ -1184,7 +1965,7 @@
       "order": 61,
       "plantId": "digitalis-ferruginea",
       "botanicalName": "Digitalis ferruginea",
-      "status": "uncertain_match",
+      "status": "approved",
       "expectsWatercolour": true,
       "assetForm": "both",
       "pngMasterPath": "assets/plant-watercolours/masters/digitalis-ferruginea-watercolour.png",
@@ -1195,7 +1976,20 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-28T07:15:53Z",
-      "notes": "png master hash differs from botanical-verification.json; earlier image version superseded (hash history in botanical-verification.json)",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "574e6905d9e22c82bacaa5a68c25064e18cdc60bd020166b265ef587080a05fe",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 1
+      },
+      "sourceIntegrity": {
+        "state": "master_stale",
+        "blocking": false,
+        "masterSha256": "d798ae04539f84178b79b8cc7154f3a8a377bcf95cb6914cc93539f5f84fddcd",
+        "recordedPngSha256": "35f7c84113de4b8eaf239f7c2540887bf962085f369993823ab190f5bb65c50d",
+        "detail": "registered master matches a superseded version of this plant's artwork: the current master was never imported"
+      },
+      "notes": "earlier image version superseded (hash history in botanical-verification.json)",
       "lastUpdated": "2026-10-28T07:15:53Z",
       "illustrationType": "watercolour"
     },
@@ -1214,6 +2008,19 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-16T10:47:39Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "08fa40e7fd776d37ba21177807ca204e7d2f7c2197db92914a6e1b35baee21b9",
+        "approvedAt": "2026-10-16T10:47:39Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "dc1b666b666b815c272f0d2870e280f73ae8acb772d02ea50a84180077560674",
+        "recordedPngSha256": "dc1b666b666b815c272f0d2870e280f73ae8acb772d02ea50a84180077560674",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-16T10:47:39Z",
       "illustrationType": "watercolour"
@@ -1233,6 +2040,19 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-16T10:47:39Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "5fe29032a810893baea1d3f70fda43795c01cf7ade15819176cebc3f44073c5c",
+        "approvedAt": "2026-10-16T10:47:39Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "2cf5fcd3f3bb682742cadce6442a0ce2dd964c512e4d9d1ef2020c08619d3ad1",
+        "recordedPngSha256": "2cf5fcd3f3bb682742cadce6442a0ce2dd964c512e4d9d1ef2020c08619d3ad1",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-16T10:47:39Z",
       "illustrationType": "watercolour"
@@ -1252,6 +2072,19 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-16T10:47:39Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "0dfcd2b225334d0e284bc360fcc9098270b0ec638a9622c93c2d47b7302143bf",
+        "approvedAt": "2026-10-16T10:47:39Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "3043ccb3563d3411b7858cff01a51d691cdc590b53df6dbb1c7a5c86b692928e",
+        "recordedPngSha256": "3043ccb3563d3411b7858cff01a51d691cdc590b53df6dbb1c7a5c86b692928e",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-16T10:47:39Z",
       "illustrationType": "watercolour"
@@ -1260,7 +2093,7 @@
       "order": 65,
       "plantId": "taxus-baccata-topiary",
       "botanicalName": "Taxus baccata",
-      "status": "uncertain_match",
+      "status": "approved",
       "expectsWatercolour": true,
       "assetForm": "both",
       "pngMasterPath": "assets/plant-watercolours/masters/taxus-baccata-topiary-watercolour.png",
@@ -1271,7 +2104,20 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-28T07:15:53Z",
-      "notes": "png master hash differs from botanical-verification.json; earlier image version superseded (hash history in botanical-verification.json)",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "d1b080e59b6bb62ce8af5ab39809537df03260ab7551376ccb0395b1c91cd685",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 1
+      },
+      "sourceIntegrity": {
+        "state": "master_stale",
+        "blocking": false,
+        "masterSha256": "d3c7da444fca90ee3b178552908f260ac9ed81badb2b7c6e0a8afef7e1653f62",
+        "recordedPngSha256": "f8e6922acd2dc3d9fbbd267fd6a4da8addddf8504aa4823f6c907ac763edb7cd",
+        "detail": "registered master matches a superseded version of this plant's artwork: the current master was never imported"
+      },
+      "notes": "earlier image version superseded (hash history in botanical-verification.json)",
       "lastUpdated": "2026-10-28T07:15:53Z",
       "illustrationType": "watercolour"
     },
@@ -1290,6 +2136,19 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-16T10:47:39Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "cc53a8f4b8cd68b5482f84ef7fb31dbda73aa14a749a7816a5128b966898f7a5",
+        "approvedAt": "2026-10-16T10:47:39Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "862af3dbfe293674adc9e1be0fec4847b7c3df05fb56a38b44d721af586940e2",
+        "recordedPngSha256": "862af3dbfe293674adc9e1be0fec4847b7c3df05fb56a38b44d721af586940e2",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-16T10:47:39Z",
       "illustrationType": "watercolour"
@@ -1309,6 +2168,19 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-16T10:47:39Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "8965666286a7728e216fa62cf777c425209265ef49ad03a1ecdfd9b053420b34",
+        "approvedAt": "2026-10-16T10:47:39Z",
+        "earlierApprovalsForOtherBytes": 1
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "1fd4a3187664c5a07f05c0755adbdf0a46d0afdf7ddda3ea8df462ebfadc21f0",
+        "recordedPngSha256": "1fd4a3187664c5a07f05c0755adbdf0a46d0afdf7ddda3ea8df462ebfadc21f0",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-16T10:47:39Z",
       "illustrationType": "watercolour"
@@ -1317,7 +2189,7 @@
       "order": 68,
       "plantId": "phlox-blue-paradise",
       "botanicalName": "Phlox paniculata 'Blue Paradise'",
-      "status": "uncertain_match",
+      "status": "approved",
       "expectsWatercolour": true,
       "assetForm": "both",
       "pngMasterPath": "assets/plant-watercolours/masters/phlox-blue-paradise-watercolour.png",
@@ -1328,7 +2200,20 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-28T07:15:53Z",
-      "notes": "png master hash differs from botanical-verification.json; earlier image version superseded (hash history in botanical-verification.json)",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "5c04eb6d3ae985731ec61e0a8fb5c8decff8f152231f346840a84724517a1fdb",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 1
+      },
+      "sourceIntegrity": {
+        "state": "master_stale",
+        "blocking": false,
+        "masterSha256": "307803acfe9675e35c421ff416a4846b79a4b5bffdbe6816e928f80ca5b72982",
+        "recordedPngSha256": "51255c8d506b50addf70af4454c746f61f58402b1500270fb9e6c50f4507f9cd",
+        "detail": "registered master matches a superseded version of this plant's artwork: the current master was never imported"
+      },
+      "notes": "earlier image version superseded (hash history in botanical-verification.json)",
       "lastUpdated": "2026-10-28T07:15:53Z",
       "illustrationType": "watercolour"
     },
@@ -1336,7 +2221,7 @@
       "order": 69,
       "plantId": "paeonia-duchesse-de-nemours",
       "botanicalName": "Paeonia lactiflora 'Duchesse de Nemours'",
-      "status": "uncertain_match",
+      "status": "approved",
       "expectsWatercolour": true,
       "assetForm": "both",
       "pngMasterPath": "assets/plant-watercolours/masters/paeonia-duchesse-de-nemours-watercolour.png",
@@ -1347,7 +2232,20 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-28T07:15:53Z",
-      "notes": "png master hash differs from botanical-verification.json; earlier image version superseded (hash history in botanical-verification.json)",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "6750fcbbc2b23f04f95cbf5115498119048c8e65bba82956101834920099b2be",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 1
+      },
+      "sourceIntegrity": {
+        "state": "master_stale",
+        "blocking": false,
+        "masterSha256": "efc9dab79442d6257b3283f829ff4cd849d6bd20b39c5e1cf587065b53d24cfa",
+        "recordedPngSha256": "013d1b7a036164564e4046028fedae78e7eb459b7dd7c15fddfd866bef849f64",
+        "detail": "registered master matches a superseded version of this plant's artwork: the current master was never imported"
+      },
+      "notes": "earlier image version superseded (hash history in botanical-verification.json)",
       "lastUpdated": "2026-10-28T07:15:53Z",
       "illustrationType": "watercolour"
     },
@@ -1366,6 +2264,19 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-16T10:47:39Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "21732d10e3b1b91c0e1bf422fd20f7b44660d30fb40fe4ef295cd35c2d86b153",
+        "approvedAt": "2026-10-16T10:47:39Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "11d503b95a2ef43fa6597f67a72de94af3457ac592f736331f5b292819287923",
+        "recordedPngSha256": "11d503b95a2ef43fa6597f67a72de94af3457ac592f736331f5b292819287923",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-16T10:47:39Z",
       "illustrationType": "watercolour"
@@ -1385,6 +2296,19 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-16T10:47:39Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "663e9949164555cda0c4d78bc23a2de76bdd735a5f4cc1c27511721bef84ce4a",
+        "approvedAt": "2026-10-16T10:47:39Z",
+        "earlierApprovalsForOtherBytes": 1
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "d1bd77c74c026fa96aea8da020ecbcbd474bda2661b25c62cf76aa4f171b8cf7",
+        "recordedPngSha256": "d1bd77c74c026fa96aea8da020ecbcbd474bda2661b25c62cf76aa4f171b8cf7",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-16T10:47:39Z",
       "illustrationType": "watercolour"
@@ -1404,6 +2328,19 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "c158bf593e428f8f2fe88465dd34b6e0ee5264dd32d3fff1e4dfe6981d322133",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "2f32da47ae9cb152e9346a3c3864e812fcd35612f15353c9157eb350e8197fbe",
+        "recordedPngSha256": "2f32da47ae9cb152e9346a3c3864e812fcd35612f15353c9157eb350e8197fbe",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z",
       "illustrationType": "watercolour"
@@ -1423,6 +2360,19 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "465de123acdfa3937a6557cbe4957528ebbb9ee5f87ba58e21aa1ca50578b3d2",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 1
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "b88df37abfc6f59dcd0a863fd3e4603408e2733d20ebbb54d239c084e9564c63",
+        "recordedPngSha256": "b88df37abfc6f59dcd0a863fd3e4603408e2733d20ebbb54d239c084e9564c63",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z",
       "illustrationType": "watercolour"
@@ -1442,6 +2392,19 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "210158369a474494bc4dbe39d59f84d914d7414e76bb70bf3f7e13f97131302e",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "fffff93d020e5d24d88ccd63b8e0b4bcd99775ceff89a9e0f7560ed9f47077a6",
+        "recordedPngSha256": "fffff93d020e5d24d88ccd63b8e0b4bcd99775ceff89a9e0f7560ed9f47077a6",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z",
       "illustrationType": "watercolour"
@@ -1461,6 +2424,19 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "e313b80793d9af3192ca4dd1502f626a2218282388bdf789f8d07a167e8cdb29",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "f34167d8c54a11c364fef24466567db3a71477f9928407be7ad9a1c5bb6b4c5d",
+        "recordedPngSha256": "f34167d8c54a11c364fef24466567db3a71477f9928407be7ad9a1c5bb6b4c5d",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z",
       "illustrationType": "watercolour"
@@ -1480,6 +2456,19 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "d98fa8b7593831c3d2b8deab3e38c263e09ccc018e65861add5588ff18199594",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 1
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "56e8099e015db97b125aebc2ce52c1e93dec08bf0a52af5b40b74714ce54dac9",
+        "recordedPngSha256": "56e8099e015db97b125aebc2ce52c1e93dec08bf0a52af5b40b74714ce54dac9",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z",
       "illustrationType": "watercolour"
@@ -1499,6 +2488,19 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "11936667119cc5db29a901f0b35b5d4461f60edb4681632d9814ad3a7944f8ad",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 1
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "e7924504ce937cd58bafefe3efe414c2e60f15021675bd10353339dcab6f0451",
+        "recordedPngSha256": "e7924504ce937cd58bafefe3efe414c2e60f15021675bd10353339dcab6f0451",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z",
       "illustrationType": "watercolour"
@@ -1518,6 +2520,19 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "3daf40979cbabe8c3935478b2cff1237146f78b3cfd9dfec6146ffe6fad53be5",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "9264a21830a5e5d498ea219c80370a2c5f348a4fe05ec038159b308d37a88337",
+        "recordedPngSha256": "9264a21830a5e5d498ea219c80370a2c5f348a4fe05ec038159b308d37a88337",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z",
       "illustrationType": "watercolour"
@@ -1537,6 +2552,19 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "341e632401a86a3ff65343a179938dc22069ec4fa8b8a5fbeec3f205315e5ca2",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "41ec1095144d13c6bbcd4e86666efe11051ea9e20d5ef3b4a2e55d9233c6e065",
+        "recordedPngSha256": "41ec1095144d13c6bbcd4e86666efe11051ea9e20d5ef3b4a2e55d9233c6e065",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z",
       "illustrationType": "watercolour"
@@ -1556,6 +2584,19 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "2fab1b0e9673140a50fbabb03afce51a4db363e853419e75ad3901e70b9b31cc",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "7b99f4a328cc3be4e003b9f6f948c497c3f73a6d058d74f6043f44a767333245",
+        "recordedPngSha256": "7b99f4a328cc3be4e003b9f6f948c497c3f73a6d058d74f6043f44a767333245",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z",
       "illustrationType": "watercolour"
@@ -1575,6 +2616,19 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "57eb2b482d679bfd8a5e28c821033afdcc200495e8b8e13b097a9c74e4c6d88c",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "cb1f56af3d095b52a3581984a69cc8cde31b97ffcdfecc4cd3499c4079edca2e",
+        "recordedPngSha256": "cb1f56af3d095b52a3581984a69cc8cde31b97ffcdfecc4cd3499c4079edca2e",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z",
       "illustrationType": "watercolour"
@@ -1594,6 +2648,19 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "b5e51878d084feb7ec01d05fe2ce420776b4083e24b655f0825f48bd7eecba9e",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "15565be328a7291ddbe7d98f62d0597e53f5a86b6648bff6ada9f823e2d8da70",
+        "recordedPngSha256": "15565be328a7291ddbe7d98f62d0597e53f5a86b6648bff6ada9f823e2d8da70",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z",
       "illustrationType": "watercolour"
@@ -1613,6 +2680,19 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "2200d2a25c215fdf149690d5f46d379a3d7b345f01d22ac37983473669cd6575",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "e12503008a86ea693c75379e600f0dd7f974f81adef2dd3ed926700498951cee",
+        "recordedPngSha256": "e12503008a86ea693c75379e600f0dd7f974f81adef2dd3ed926700498951cee",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z",
       "illustrationType": "watercolour"
@@ -1632,6 +2712,19 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "162f39b7ffc8a33277e51217f1a2d0a596ec7b768fa9a045cc7299f423eb4b04",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "467d752b5a8a99bb266791721b24f1cb0be77ec1c145ba84a31a64e716bb5859",
+        "recordedPngSha256": "467d752b5a8a99bb266791721b24f1cb0be77ec1c145ba84a31a64e716bb5859",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z",
       "illustrationType": "watercolour"
@@ -1651,6 +2744,19 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "0853d33e7d9c57272d0800106833a0b41e95e48080b86b07405cee4cf538dab6",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 1
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "6ed636dbac8730d8114f4c0a9a078be0d04d9503949b78eb4785b1a12d06ce50",
+        "recordedPngSha256": "6ed636dbac8730d8114f4c0a9a078be0d04d9503949b78eb4785b1a12d06ce50",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z",
       "illustrationType": "watercolour"
@@ -1670,6 +2776,19 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "e8539eaa11c907c67a602f3cdb0f1a4f7e75b33546cfe592a1a5c38e7b74347e",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "080dcf44d2c2b43f4bfae0e2464151590d0b89a057cae12ab45bf06071eff5cc",
+        "recordedPngSha256": "080dcf44d2c2b43f4bfae0e2464151590d0b89a057cae12ab45bf06071eff5cc",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z",
       "illustrationType": "watercolour"
@@ -1678,7 +2797,7 @@
       "order": 87,
       "plantId": "campanula-persicifolia-alba",
       "botanicalName": "Campanula persicifolia var. alba",
-      "status": "uncertain_match",
+      "status": "approved",
       "expectsWatercolour": true,
       "assetForm": "both",
       "pngMasterPath": "assets/plant-watercolours/masters/campanula-persicifolia-alba-watercolour.png",
@@ -1689,7 +2808,20 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-28T07:15:53Z",
-      "notes": "png master hash differs from botanical-verification.json; earlier image version superseded (hash history in botanical-verification.json)",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "f53772435b130e4cdcf7d104fca3f2d322e51b81c15f716767987fc0c5324125",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "master_stale",
+        "blocking": false,
+        "masterSha256": "8600270ebf4482caca771d05e95e5d97f1091b0a1dd872379c03ad2d1ae8fea8",
+        "recordedPngSha256": "f32bdcce96bfb0361b7232f87fc38cc3cfc71a95eaa845d40a30f52f866d1b3b",
+        "detail": "registered master matches a superseded version of this plant's artwork: the current master was never imported"
+      },
+      "notes": "earlier image version superseded (hash history in botanical-verification.json)",
       "lastUpdated": "2026-10-28T07:15:53Z",
       "illustrationType": "watercolour"
     },
@@ -1697,7 +2829,7 @@
       "order": 88,
       "plantId": "digitalis-lutea",
       "botanicalName": "Digitalis lutea",
-      "status": "uncertain_match",
+      "status": "approved",
       "expectsWatercolour": true,
       "assetForm": "both",
       "pngMasterPath": "assets/plant-watercolours/masters/digitalis-lutea-watercolour.png",
@@ -1708,7 +2840,20 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-28T07:15:53Z",
-      "notes": "png master hash differs from botanical-verification.json; earlier image version superseded (hash history in botanical-verification.json)",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "44652645528f8414d6dde89d71f134f7063ed055336cbcb2471b018d09454a21",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "master_stale",
+        "blocking": false,
+        "masterSha256": "8ba3e197ba82ef035015771246c118bf01a5b311f7290196d4893f9ed4e3814f",
+        "recordedPngSha256": "bf3307d14ae69f086b4b98162e6ac2d34b6c4c7d9b1eaa4bdd0fc784f32b1721",
+        "detail": "registered master matches a superseded version of this plant's artwork: the current master was never imported"
+      },
+      "notes": "earlier image version superseded (hash history in botanical-verification.json)",
       "lastUpdated": "2026-10-28T07:15:53Z",
       "illustrationType": "watercolour"
     },
@@ -1727,6 +2872,19 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "b543bbe9523b06080e1d6876e44a35772503ba1f87699b291e3eba5d018069d2",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "f6609c204fcebc44443237ecd31d7254f409da04b28a6b77e4100a626db39aa1",
+        "recordedPngSha256": "f6609c204fcebc44443237ecd31d7254f409da04b28a6b77e4100a626db39aa1",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z",
       "illustrationType": "watercolour"
@@ -1746,6 +2904,19 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "799c26ab89189b795a3860407346f765c31c72492a4053c89fc24765ba969d25",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "27b89165508bc66528993c3c9c721a36614ddea96c9581d1278855e709d19253",
+        "recordedPngSha256": "27b89165508bc66528993c3c9c721a36614ddea96c9581d1278855e709d19253",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z",
       "illustrationType": "watercolour"
@@ -1765,6 +2936,19 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "41d7ce66b344192ce1b76c9bd3803972c478ae29b5505c2ce282c7c315c7a9a2",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "f967b4cf1b9e5a65f121370be1ee4ed5f26715b1be5f5d7d929754a73c368e78",
+        "recordedPngSha256": "f967b4cf1b9e5a65f121370be1ee4ed5f26715b1be5f5d7d929754a73c368e78",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z",
       "illustrationType": "watercolour"
@@ -1784,6 +2968,19 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "15f09dce18f0a249c6b6b9ce82488068df14414ff2291c5b7e843b0ff1e0fd9c",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "2353145f6d2bab7839de2cfca06b33506cbb6927499140de90e856db9eecd35c",
+        "recordedPngSha256": "2353145f6d2bab7839de2cfca06b33506cbb6927499140de90e856db9eecd35c",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z",
       "illustrationType": "watercolour"
@@ -1803,6 +3000,19 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "1ef0cb8587831b6ded82cde0c3a02ca8cefb98dcbfcdb95ddf32d32574df0d9e",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "8cff25d5fe4918a23a9b6ead30951f171b809c23d68a403b80c7b1d0aea7b843",
+        "recordedPngSha256": "8cff25d5fe4918a23a9b6ead30951f171b809c23d68a403b80c7b1d0aea7b843",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z",
       "illustrationType": "watercolour"
@@ -1822,6 +3032,19 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "cf1e845ee1b0038c03125aac4a23997672f7f5ff14dcf7e3994aab339f20f426",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "ab66dc356659fa906ceb67aba23ff6e54f446ff16ee3b4909a0c6f18d8f32c81",
+        "recordedPngSha256": "ab66dc356659fa906ceb67aba23ff6e54f446ff16ee3b4909a0c6f18d8f32c81",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z",
       "illustrationType": "watercolour"
@@ -1830,7 +3053,7 @@
       "order": 95,
       "plantId": "geranium-nodosum",
       "botanicalName": "Geranium nodosum",
-      "status": "uncertain_match",
+      "status": "approved",
       "expectsWatercolour": true,
       "assetForm": "both",
       "pngMasterPath": "assets/plant-watercolours/masters/geranium-nodosum-watercolour.png",
@@ -1841,7 +3064,20 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-28T07:15:53Z",
-      "notes": "png master hash differs from botanical-verification.json; earlier image version superseded (hash history in botanical-verification.json)",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "3be7b36b2771d2a4e580fb1a93488c34896b7bbda960ac0d790820b32ce0566b",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "master_stale",
+        "blocking": false,
+        "masterSha256": "9d46f5de7a9912aa2e1be2a0b6472bc44083c3fd53d12231f2344840b5df2790",
+        "recordedPngSha256": "1cf692430de339e3fa7b9d386c5711ccee876a38beb7578bab216dae50afefc6",
+        "detail": "registered master matches a superseded version of this plant's artwork: the current master was never imported"
+      },
+      "notes": "earlier image version superseded (hash history in botanical-verification.json)",
       "lastUpdated": "2026-10-28T07:15:53Z",
       "illustrationType": "watercolour"
     },
@@ -1849,7 +3085,7 @@
       "order": 96,
       "plantId": "geranium-phaeum-samobor",
       "botanicalName": "Geranium phaeum var. phaeum 'Samobor'",
-      "status": "uncertain_match",
+      "status": "approved",
       "expectsWatercolour": true,
       "assetForm": "both",
       "pngMasterPath": "assets/plant-watercolours/masters/geranium-phaeum-samobor-watercolour.png",
@@ -1860,7 +3096,20 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-28T07:15:53Z",
-      "notes": "png master hash differs from botanical-verification.json; earlier image version superseded (hash history in botanical-verification.json)",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "37d1d12abc2e97c4e1a976eb131fada2125c2e47391502c143efc4d5cb895014",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "master_stale",
+        "blocking": false,
+        "masterSha256": "281f2cc5bb0d9f3baf5e447e347a39639ae0531e18a98ef4e9aa82b1445a9c7c",
+        "recordedPngSha256": "430fef10a3e7af6da833c45a1ac9811ceb3f3005bbaf54ac0b8b0f495fd18849",
+        "detail": "registered master matches a superseded version of this plant's artwork: the current master was never imported"
+      },
+      "notes": "earlier image version superseded (hash history in botanical-verification.json)",
       "lastUpdated": "2026-10-28T07:15:53Z",
       "illustrationType": "watercolour"
     },
@@ -1868,7 +3117,7 @@
       "order": 97,
       "plantId": "geranium-sanguineum-max-frei",
       "botanicalName": "Geranium sanguineum 'Max Frei'",
-      "status": "uncertain_match",
+      "status": "approved",
       "expectsWatercolour": true,
       "assetForm": "both",
       "pngMasterPath": "assets/plant-watercolours/masters/geranium-sanguineum-max-frei-watercolour.png",
@@ -1879,7 +3128,20 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-28T07:15:53Z",
-      "notes": "png master hash differs from botanical-verification.json; earlier image version superseded (hash history in botanical-verification.json)",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "3e33f6237ab5b92f530771e697bd2d2f532061852012561b8d1b260551ebf7c2",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "master_stale",
+        "blocking": false,
+        "masterSha256": "55a99ad68b3f5f1b9679028aff25072d3d2cab706b669e6b2346c972d58afd57",
+        "recordedPngSha256": "6c30a12954573fb8ff524559affd3428952c4185bdcdce752552b2f91580ca77",
+        "detail": "registered master matches a superseded version of this plant's artwork: the current master was never imported"
+      },
+      "notes": "earlier image version superseded (hash history in botanical-verification.json)",
       "lastUpdated": "2026-10-28T07:15:53Z",
       "illustrationType": "watercolour"
     },
@@ -1898,6 +3160,19 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "3a5837e8473d800aed1bbbad2bafd90a30fc1ac1368dba4bc8be3275f8ff32f3",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "e3700957c2ff7b2149f9fe9c5003799f463fb20bcafea11d4b37a75cc01c2155",
+        "recordedPngSha256": "e3700957c2ff7b2149f9fe9c5003799f463fb20bcafea11d4b37a75cc01c2155",
+        "detail": ""
+      },
       "notes": "earlier image version superseded (hash history in botanical-verification.json)",
       "lastUpdated": "2026-10-28T07:15:53Z",
       "illustrationType": "watercolour"
@@ -1917,6 +3192,19 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "959a314487a61034217504f9823dd418c0ee1d965186ce7744c3e7af397c4959",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "a84aa0b4305c062f949f4795d763be86737cb4ecd4686a259833e52e51be7e0c",
+        "recordedPngSha256": "a84aa0b4305c062f949f4795d763be86737cb4ecd4686a259833e52e51be7e0c",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z",
       "illustrationType": "watercolour"
@@ -1925,7 +3213,7 @@
       "order": 100,
       "plantId": "phlox-subulata-emerald-cushion-blue",
       "botanicalName": "Phlox subulata 'Emerald Cushion Blue'",
-      "status": "uncertain_match",
+      "status": "approved",
       "expectsWatercolour": true,
       "assetForm": "both",
       "pngMasterPath": "assets/plant-watercolours/masters/phlox-subulata-emerald-cushion-blue-watercolour.png",
@@ -1936,7 +3224,20 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-28T07:15:53Z",
-      "notes": "png master hash differs from botanical-verification.json; earlier image version superseded (hash history in botanical-verification.json)",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "b7d7ccaddcfffa8286a526060b54dde9c83ced56a81ab95721ca75282e25200a",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "master_stale",
+        "blocking": false,
+        "masterSha256": "6f5bf70d9069adeef46ea6f58c8abaf80e732b15acc0ba8bd92c5cedb4631183",
+        "recordedPngSha256": "c2b5654cef7137363dd40e8790310da6afdc4f1f162dad872aa9ccaee9faeaf9",
+        "detail": "registered master matches a superseded version of this plant's artwork: the current master was never imported"
+      },
+      "notes": "earlier image version superseded (hash history in botanical-verification.json)",
       "lastUpdated": "2026-10-28T07:15:53Z",
       "illustrationType": "watercolour"
     },
@@ -1955,6 +3256,19 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "ce6dcb0e60728b29ffc70dba226ca329743fce2f127eb3b198f3c17847cb9b64",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "d01b731bf09c9633787d382cb6e9354dd36d7ce1f0b3abfd9eef3398c1581184",
+        "recordedPngSha256": "d01b731bf09c9633787d382cb6e9354dd36d7ce1f0b3abfd9eef3398c1581184",
+        "detail": ""
+      },
       "notes": "earlier image version superseded (hash history in botanical-verification.json)",
       "lastUpdated": "2026-10-28T07:15:53Z",
       "illustrationType": "watercolour"
@@ -1974,6 +3288,19 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "54e3a6559680819c042c17a8ed01bdca309faa475fd8042a05c8a60ab40599ce",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "ff82577d75aff5eab16b2d297eb1e2469d13b906be6989fcff208249bafd9802",
+        "recordedPngSha256": "ff82577d75aff5eab16b2d297eb1e2469d13b906be6989fcff208249bafd9802",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z",
       "illustrationType": "watercolour"
@@ -1993,6 +3320,19 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "2a95fa5495921376b68587a18ae4ae1084c767b459f137ab0d1ebef4b176ada3",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "4ac2afe0deac88ea84576ea8bcfe5707c9b6baf65b27de6872cc2698c17d0347",
+        "recordedPngSha256": "4ac2afe0deac88ea84576ea8bcfe5707c9b6baf65b27de6872cc2698c17d0347",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z",
       "illustrationType": "watercolour"
@@ -2012,6 +3352,19 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "aad8b8d76a91b0dbcdb779179c089e9b5bba25fad35dbcde054f3573da29ee02",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "24eef49f0a7fa85e21b231f019948b82c3b6baf0374c051637d24fb5d672df59",
+        "recordedPngSha256": "24eef49f0a7fa85e21b231f019948b82c3b6baf0374c051637d24fb5d672df59",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z",
       "illustrationType": "watercolour"
@@ -2031,6 +3384,19 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-28T07:15:53Z",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "490cb26c0538e983054f4ff768525960923199258eb05f5b9fe8b7371724f211",
+        "approvedAt": "2026-10-28T07:15:53Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "ok",
+        "blocking": false,
+        "masterSha256": "45d3f6f8b3d386d127ab8162bf872d04310bde7a2f3dec6f960fba659560187f",
+        "recordedPngSha256": "45d3f6f8b3d386d127ab8162bf872d04310bde7a2f3dec6f960fba659560187f",
+        "detail": ""
+      },
       "notes": "",
       "lastUpdated": "2026-10-28T07:15:53Z",
       "illustrationType": "watercolour"
@@ -2039,7 +3405,7 @@
       "order": 106,
       "plantId": "sarcococca-hookeriana-var-humilis",
       "botanicalName": "Sarcococca hookeriana var. humilis",
-      "status": "pending_review",
+      "status": "approved",
       "expectsWatercolour": true,
       "assetForm": "webp_only",
       "pngMasterPath": null,
@@ -2050,7 +3416,20 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-30T14:59:46Z",
-      "notes": "incomplete: webp without png master",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "5f2ab410c13ae4f84b5abb79076ac7c5bb096bf04c36e0f719c0cffc041bfc26",
+        "approvedAt": "2026-10-30T14:59:46Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "master_not_registered",
+        "blocking": false,
+        "masterSha256": null,
+        "recordedPngSha256": "d2b6a88c64da48e5a59180260c22e90cc7d9ef80bae6e06253956fbc8dfd71aa",
+        "detail": "no PNG master registered in border-designer"
+      },
+      "notes": "source integrity: no PNG master registered in border-designer",
       "lastUpdated": "2026-10-30T14:59:46Z",
       "illustrationType": "watercolour"
     },
@@ -2058,7 +3437,7 @@
       "order": 107,
       "plantId": "hydrangea-incrediball",
       "botanicalName": "Hydrangea arborescens Incrediball ('Abetwo')",
-      "status": "pending_review",
+      "status": "approved",
       "expectsWatercolour": true,
       "assetForm": "webp_only",
       "pngMasterPath": null,
@@ -2069,7 +3448,20 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-30T14:59:46Z",
-      "notes": "incomplete: webp without png master",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "82ef4d6a145b946a7bd5fb49b9a03587082d2d9f5e1b882d7af0b62bf51af486",
+        "approvedAt": "2026-10-30T14:59:46Z",
+        "earlierApprovalsForOtherBytes": 1
+      },
+      "sourceIntegrity": {
+        "state": "master_not_registered",
+        "blocking": false,
+        "masterSha256": null,
+        "recordedPngSha256": "6c1360de1884db043f1f78e8e9f36aed483f23207a2136b58768299b4bc57454",
+        "detail": "no PNG master registered in border-designer"
+      },
+      "notes": "source integrity: no PNG master registered in border-designer",
       "lastUpdated": "2026-10-30T14:59:46Z",
       "illustrationType": "watercolour"
     },
@@ -2077,7 +3469,7 @@
       "order": 108,
       "plantId": "astilbe-weisse-gloria",
       "botanicalName": "Astilbe 'Weisse Gloria'",
-      "status": "pending_review",
+      "status": "approved",
       "expectsWatercolour": true,
       "assetForm": "webp_only",
       "pngMasterPath": null,
@@ -2088,7 +3480,20 @@
       "approvalBasis": "explicit_manual_approval",
       "pipelineQa": "awaiting_review",
       "manualApprovalAt": "2026-10-30T14:59:46Z",
-      "notes": "incomplete: webp without png master",
+      "visualApproval": {
+        "state": "approved",
+        "approvedImageSha256": "2e7265791773f03225be74b07501b8c0c7503685c9a2b33707742c8b3c3eadd5",
+        "approvedAt": "2026-10-30T14:59:46Z",
+        "earlierApprovalsForOtherBytes": 0
+      },
+      "sourceIntegrity": {
+        "state": "master_not_registered",
+        "blocking": false,
+        "masterSha256": null,
+        "recordedPngSha256": "26e0d9dabd56adc06cb3b35d15fb1dcce7e83f02a3380e642c79c4b7a7bdcb43",
+        "detail": "no PNG master registered in border-designer"
+      },
+      "notes": "source integrity: no PNG master registered in border-designer",
       "lastUpdated": "2026-10-30T14:59:46Z",
       "illustrationType": "watercolour"
     }

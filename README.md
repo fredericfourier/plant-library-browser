@@ -1,5 +1,7 @@
 # Plant Library Browser
 
+> **Maintainers and coding agents: start with `docs/PLANT_LIBRARY_WORKFLOW.md`** (how to add plants and artwork, the permanent approval contract, and the checks to run). The private engine-side interface is `docs/E3_PLANT_CATALOGUE_ARTWORK_INTERFACE.md` in `fredericfourier/border-designer`.
+
 Public browser for the Border Designer plant library.
 
 The browser loads `data/plants.json` live at runtime. The private Border Designer repository remains the canonical source (E3 catalogue; `data/plants.json` is a generated export, never edited by hand: `python3 tools/check_catalogue_sync.py` fails on drift; see its `catalogue` manifest for version and checksum). `light` means what the plant TOLERATES; optional `preferredLight` is a provisional PREFERENCE; this public repository contains the published browser copy used for cross-device access.
@@ -43,6 +45,9 @@ memory, making it more reliable on mobile devices.
 
 ## Contact sheet
 The contact-sheet popup shows a dynamic title ("Botanical contact sheet" / "Watercolour contact sheet") and a `Botanical | Watercolour` switcher that re-renders in place (popup, browser filters, selection and scroll are kept). Images come from the manifest; a plant without the chosen type shows "Illustration unavailable" and is never substituted.
+
+## Workflow and approval contract
+How plants, artwork, approvals and status are added, replaced and verified (permanent rules for any maintainer or coding agent): `docs/PLANT_LIBRARY_WORKFLOW.md`.
 
 ## Botanical illustration status
 `data/botanical-status.json` tracks the botanical illustration state of every catalogue plant (missing / pending_review / approved /
