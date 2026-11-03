@@ -1,5 +1,7 @@
 # Botanical image verification
 
+> The permanent approval contract and the full workflow are in `docs/PLANT_LIBRARY_WORKFLOW.md` (primary document). This file describes the record format and history.
+
 `data/botanical-verification.json` holds one record per plant: `status` is `confirmed` or `pending_review`, plus the SHA-256 of the
 public WebP (`imageSha256`). The browser shows a small orange, non-interactive **Needs verification** label on every
 `pending_review` plant. There is no approval UI, service or login.

@@ -158,7 +158,20 @@ def main():
                 sys.exit(f"{pid}: no published {a.variant} WebP to approve")
             if h in approved_hashes(ledger).get((a.variant, pid), {}):
                 print(pid, "already approved for these bytes"); continue
-            ledger["entries"].append({"plantId": pid, "variant": a.variant, "imageSha256": h, "approvedAt": now(), "source": "approval_ledger.py approve (owner request)"})
+            at = now()
+            ledger["entries"].append({"plantId": pid, "variant": a.variant, "imageSha256": h, "approvedAt": at, "source": "approval_ledger.py approve (owner request)"})
+            # the single approval step also keeps the human-readable record in step (no second manual stage)
+            ver = json.loads(VERIF.read_text(encoding="utf-8"))
+            holder = ver["plants"].setdefault(pid, {})
+            rec = holder if a.variant == "botanical" else holder.setdefault("watercolour", {})
+            if rec.get("imageSha256") and rec["imageSha256"] != h:
+                keep = {k: v for k, v in rec.items() if k != "watercolour"}
+                for k in keep:
+                    del rec[k]
+                rec["previous"] = {**keep, "supersededAt": at}   # superseded record (with its approvedAt) kept as history
+            rec.update({"status": "confirmed", "imageSha256": h, "approvedAt": at})
+            rec.setdefault("importedAt", at)
+            VERIF.write_text(json.dumps(ver, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
             print(pid, a.variant, "approved for", h[:12])
         LEDGER.write_text(dump(ledger), encoding="utf-8")
     elif a.cmd == "accept":

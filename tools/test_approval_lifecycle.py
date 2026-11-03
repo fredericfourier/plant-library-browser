@@ -138,11 +138,13 @@ class Lifecycle(Sandbox):
             self.assertIsNone(p["manualApprovalAt"])
             self.assertEqual(self.status(kind, "queue", "5").returncode, 0)
             self.assertEqual(self.ledger("approve", kind, "acanthus-mollis").returncode, 0)
+            self.assertEqual(self.ledger("check").returncode, 0, self.ledger("check").stderr)
             led = self.js("data/approval-ledger.json")["entries"]
             self.assertTrue(any(e["imageSha256"] == old and e["plantId"] == "acanthus-mollis" and e["variant"] == kind for e in led), "old approval kept")
             new = [e for e in led if e["plantId"] == "acanthus-mollis" and e["variant"] == kind and e["imageSha256"] == sha(f)]
             self.assertEqual(len(new), 1)
             f.unlink(); f.symlink_to(REPO / A / f.name)
+            sh(self.r, "git", "checkout", "-q", "--", "data/botanical-verification.json")     # the original bytes are back: so is their record
             self.assertEqual(self.rebuild(kind)["acanthus-mollis"]["status"], "approved", "the original approved bytes are still approved")
         self.each(go)
 
@@ -164,8 +166,9 @@ class Lifecycle(Sandbox):
             m = self.rebuild(kind)
             self.assertEqual(m["future-plant"]["status"], "pending_review")      # published but never approved by anyone
             self.assertEqual(m["future-plant"]["visualApproval"]["state"], "not_approved")
-            self.assertEqual(self.ledger("approve", kind, "future-plant").returncode, 0)
+            self.assertEqual(self.ledger("approve", kind, "future-plant").returncode, 0)    # ONE explicit approval step per final artwork version
             self.assertEqual(self.rebuild(kind)["future-plant"]["status"], "approved")
+            self.assertEqual(self.ledger("check").returncode, 0, self.ledger("check").stderr)  # the record is kept in step by the same command
             self.assertEqual(self.rebuild(kind)["future-plant"]["sourceIntegrity"]["state"], "master_not_registered")
         self.each(go)
 

@@ -44,6 +44,9 @@ memory, making it more reliable on mobile devices.
 ## Contact sheet
 The contact-sheet popup shows a dynamic title ("Botanical contact sheet" / "Watercolour contact sheet") and a `Botanical | Watercolour` switcher that re-renders in place (popup, browser filters, selection and scroll are kept). Images come from the manifest; a plant without the chosen type shows "Illustration unavailable" and is never substituted.
 
+## Workflow and approval contract
+How plants, artwork, approvals and status are added, replaced and verified (permanent rules for any maintainer or coding agent): `docs/PLANT_LIBRARY_WORKFLOW.md`.
+
 ## Botanical illustration status
 `data/botanical-status.json` tracks the botanical illustration state of every catalogue plant (missing / pending_review / approved /
 rejected / uncertain_match) and defines the generation queue (`python3 tools/botanical_status.py queue 10`). See `docs/BOTANICAL_STATUS.md`.
