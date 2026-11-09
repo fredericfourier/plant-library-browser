@@ -1,12 +1,12 @@
 {
-  "schemaVersion": 8,
-  "updated": "2026-11-01",
+  "schemaVersion": 9,
+  "updated": "2026-11-09",
   "catalogue": {
     "name": "E3",
     "version": "1.5.0-candidate",
     "recordCount": 108,
     "engineCatalogueDatasetSha256": "828ee2099f9c9a0bcab0f8fa374d228906d9131450ff878184244c8e1fe5788d",
-    "sharedDataSha256": "abba545e8709f16739f92a0268ab0398a579cdbef95a018a28ec840bbb518919",
+    "sharedDataSha256": "c424e96de4f256c2df99fc8df86b141f689019eef40ed51bde00ef207fca4b4f",
     "workingSizeSchemaVersion": 1,
     "exportVersion": "1",
     "engineCatalogueRef": {
@@ -15,13 +15,18 @@
     },
     "artworkManifest": {
       "path": "assets/plant-watercolours/manifest.json",
-      "sha256": "6f7123797d790d8d5196e6eb451967101f855663395c55e99b102d098b44be2e"
+      "sha256": "bd653cb163bd1b173b0ebb5084a9446cea9410157e7f5989f0dd4be41294a8c0"
     },
     "lightFields": {
       "light": "TOLERATES: conditions in which the plant may grow (hard eligibility)",
       "preferredLight": "PREFERS: conditions best suited to its design use; optional, provisional, never a hard exclusion"
     },
-    "status": "CANDIDATE: approved working sizes recorded; no value or enablement change; pending review; not a release"
+    "status": "CANDIDATE: approved working sizes recorded; no value or enablement change; pending review; not a release",
+    "activeRecordCount": 107,
+    "archivedRecordCount": 1,
+    "archivedIds": [
+      "allium-purple-sensation"
+    ]
   },
   "plants": [
     {
@@ -3953,6 +3958,15 @@
         ],
         "confidence": "high",
         "basis": "RHS profile"
+      },
+      "archived": {
+        "schema": 1,
+        "status": "archived",
+        "decidedAt": "2026-11-09",
+        "reason": "seasonal bulb habit is outside the current permanent-border composition model; excluded from generated designs and shopping lists; record and approved artwork retained",
+        "engineUse": "excluded",
+        "artworkApproval": "unchanged",
+        "note": "Kept for reference: hidden from the normal plant list, shown in the archive view. Not an artwork or botanical rejection."
       },
       "workingSize": {
         "schema": 1,
