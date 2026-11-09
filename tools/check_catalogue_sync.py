@@ -8,7 +8,9 @@ Fails (exit 1) when data/plants.json is not a faithful, internally consistent ex
   M4 no private engine data is published (e3, engineNotes, evidence, provenance, enablement keys)
   M5 vocabulary: light (TOLERATES) is a non-empty subset of full_sun/part_shade/full_shade; preferredLight (PREFERS) is optional, a subset of light, labelled provisional and never active unless approved
   M6 sizes: positive integers; the illustration envelope follows the 10 px/cm convention (canonicalHeightPx = 10 x heightCm, expectedSpreadPx = 10 x spreadCm); workingSize, where present, equals heightCm/spreadCm
-  M7 artwork links: every plant's registered botanical/watercolour file exists (missing art is reported, not failed, unless --strict-art)"""
+  M7 artwork links: every plant's registered botanical/watercolour file exists (missing art is reported, not failed, unless --strict-art)
+  M8 archive: an archived record keeps its record and registered artwork, carries a well-formed 'archived' block (status archived, artwork approval unchanged), and the manifest's
+     activeRecordCount / archivedRecordCount / archivedIds agree with the records (absent manifest keys = no archived records)"""
 import sys, json, hashlib, argparse
 from pathlib import Path
 LIGHT = {'full_sun', 'part_shade', 'full_shade'}
@@ -63,6 +65,16 @@ def check(root, strict_art=False):
         p7 += [f'{i}: registered file missing on disk: {f}' for f in files if f and not (root / f).is_file() and not (root / 'assets/plant-watercolours' / f).is_file()]
     if strict_art: p7 += [f'{i}: no registered artwork' for i in missing]
     rec('M7_artwork_links', p7, dict(plantsWithoutRegisteredArt=missing))
+    arch = [p['id'] for p in plants if 'archived' in p]; p8 = []
+    for p in plants:
+        a = p.get('archived')
+        if a is None: continue
+        if not isinstance(a, dict) or a.get('status') != 'archived' or a.get('artworkApproval') != 'unchanged' or not a.get('decidedAt') or not a.get('reason'): p8.append(f'{p["id"]}: malformed archived block')
+        if p['id'] not in assets: p8.append(f'{p["id"]}: archived record lost its registered artwork')
+    if arch or 'archivedIds' in cat:
+        if sorted(cat.get('archivedIds') or []) != sorted(arch): p8.append(f'catalogue.archivedIds {cat.get("archivedIds")} != archived records {arch}')
+        if cat.get('archivedRecordCount') != len(arch) or cat.get('activeRecordCount') != len(plants) - len(arch): p8.append('active/archived counts do not match the records')
+    rec('M8_archive', p8, dict(activeRecords=len(plants) - len(arch), archivedRecords=len(arch), archivedIds=arch))
     return res
 
 
