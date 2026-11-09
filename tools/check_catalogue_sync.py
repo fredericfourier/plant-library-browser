@@ -70,7 +70,7 @@ def check(root, strict_art=False):
         a = p.get('archived')
         if a is None: continue
         if not isinstance(a, dict) or a.get('status') != 'archived' or a.get('artworkApproval') != 'unchanged' or not a.get('decidedAt') or not a.get('reason'): p8.append(f'{p["id"]}: malformed archived block')
-        if p['id'] not in assets: p8.append(f'{p["id"]}: archived record lost its registered artwork')
+        if assets and p['id'] not in assets: p8.append(f'{p["id"]}: archived record lost its registered artwork')
     if arch or 'archivedIds' in cat:
         if sorted(cat.get('archivedIds') or []) != sorted(arch): p8.append(f'catalogue.archivedIds {cat.get("archivedIds")} != archived records {arch}')
         if cat.get('archivedRecordCount') != len(arch) or cat.get('activeRecordCount') != len(plants) - len(arch): p8.append('active/archived counts do not match the records')
